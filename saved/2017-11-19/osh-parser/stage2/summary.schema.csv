@@ -1,0 +1,6 @@
+"column_name","type"
+"host_label","character"
+"shell_label","character"
+"total_lines","integer"
+"total_ms","double"
+"lines_per_ms","double"
