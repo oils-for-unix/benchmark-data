@@ -1,0 +1,223 @@
+BUILD AUTOMATION
+   10 build/config1.sh
+   10 build/setup.py
+   33 build/common.sh
+   39 build/c_module_toc.py
+   42 install
+   49 build/prepare.sh
+   50 build/metrics.sh
+   51 build/make_zip.py
+   58 build/c_module_srcs.py
+   64 build/dev.sh
+   65 build/runpy_deps.py
+   85 build/test.sh
+  127 build/app_deps.py
+  185 build/actions.sh
+  204 build/doc.sh
+  284 configure
+  286 Makefile
+  336 build/quick_ref.py
+  377 build/compile.sh
+ 2380 total
+
+TEST AUTOMATION
+    26 test/shebang.sh
+    30 test/wild_types.py
+    50 test/count-procs.sh
+    51 test/common.sh
+    54 test/vagrant.sh
+    67 test/publish.sh
+    75 test/lint.sh
+    87 test/unit.sh
+   106 test/wild-runner.sh
+   110 test/wild2.sh
+   138 test/smoke.sh
+   139 test/gold.sh
+   147 test/alpine.sh
+   252 test/runtime-errors.sh
+   317 test/spec-runner.sh
+   514 test/spec.sh
+   589 test/wild.sh
+   603 test/wild_report.py
+   920 test/sh_spec.py
+   924 test/osh2oil.sh
+  5254 total
+
+RELEASE AUTOMATION
+639 scripts/release.sh
+
+BENCHMARKS
+   37 benchmarks/pypy.sh
+   97 benchmarks/awk-python.sh
+  126 benchmarks/pytrace.sh
+  165 benchmarks/startup.sh
+  233 benchmarks/id.sh
+  312 benchmarks/osh-parser.sh
+  970 total
+
+SPEC TESTS
+     5 spec/osh-only.test.sh
+     7 spec/subshell.test.sh
+    12 spec/comments.test.sh
+    13 spec/bugs.test.sh
+    13 spec/command_.test.sh
+    13 spec/explore-parsing.test.sh
+    16 spec/introspect.test.sh
+    24 spec/let.test.sh
+    26 spec/builtins2.test.sh
+    28 spec/for-expr.test.sh
+    28 spec/process-sub.test.sh
+    32 spec/tilde.test.sh
+    37 spec/dparen.test.sh
+    39 spec/builtin-bash.test.sh
+    40 spec/var-num.test.sh
+    49 spec/builtins-special.test.sh
+    50 spec/blog2.test.sh
+    53 spec/array-compat.test.sh
+    53 spec/command-parsing.test.sh
+    53 spec/type-compat.test.sh
+    54 spec/assoc-zsh.test.sh
+    56 spec/blog-other1.test.sh
+    61 spec/blog1.test.sh
+    63 spec/word-eval.test.sh
+    65 spec/case_.test.sh
+    69 spec/var-op-strip.test.sh
+    71 spec/if_.test.sh
+    79 spec/command-sub.test.sh
+    79 spec/var-ref.test.sh
+    80 spec/var-op-test.test.sh
+    81 spec/func.test.sh
+    81 spec/var-sub.test.sh
+    92 spec/arith-context.test.sh
+    99 spec/func-parsing.test.sh
+   100 spec/smoke.test.sh
+   102 spec/assoc.test.sh
+   105 spec/parse-errors.test.sh
+   109 spec/assign.test.sh
+   110 spec/special-vars.test.sh
+   115 spec/append.test.sh
+   117 spec/background.test.sh
+   122 spec/regex.test.sh
+   123 spec/pipeline.test.sh
+   126 spec/loop.test.sh
+   130 spec/var-op-other.test.sh
+   144 spec/posix.test.sh
+   153 spec/word-split.test.sh
+   156 spec/quote.test.sh
+   164 spec/var-sub-quote.test.sh
+   187 spec/sh-options.test.sh
+   189 spec/glob.test.sh
+   199 spec/builtin-getopts.test.sh
+   199 spec/builtin-test.test.sh
+   206 spec/errexit.test.sh
+   206 spec/shell-grammar.test.sh
+   234 spec/extended-glob.test.sh
+   239 spec/builtin-vars.test.sh
+   243 spec/brace-expansion.test.sh
+   244 spec/builtins.test.sh
+   255 spec/dbracket.test.sh
+   279 spec/redirect.test.sh
+   292 spec/here-doc.test.sh
+   325 spec/arith.test.sh
+   360 spec/array.test.sh
+  7154 total
+
+GOLD TESTS
+  22 gold/comments.sh
+  24 gold/readonly.sh
+  26 gold/glob.sh
+  28 gold/declare.sh
+  32 gold/nix.sh
+  65 gold/export.sh
+ 126 gold/scope.sh
+ 192 gold/complex-here-docs.sh
+ 515 total
+
+ASDL
+  273 asdl/encode.py
+  327 asdl/py_meta.py
+  435 asdl/asdl_.py
+  473 asdl/gen_cpp.py
+  561 asdl/format.py
+ 2069 total
+
+TOOLS
+1210 tools/osh2oil.py
+
+WEB
+   81 web/osh-to-oil.js
+  149 web/ajax.js
+  311 web/table/csv2html.py
+  433 web/table/table-sort.js
+  974 total
+
+OTHER UNIT TESTS
+   16 asdl/py_meta_test.py
+   25 build/app_deps_test.py
+   32 asdl/encode_test.py
+   55 test/sh_spec_test.py
+   79 tools/osh2oil_test.py
+  163 asdl/arith_ast_test.py
+  173 asdl/arith_parse_test.py
+  543 total
+
+OIL UNIT TESTS
+    18 core/word_test.py
+    46 core/lexer_test.py
+    50 core/reader_test.py
+    55 core/alloc_test.py
+    74 core/shell_test.py
+    79 core/util_test.py
+    79 tools/osh2oil_test.py
+    89 core/id_kind_test.py
+    89 native/libc_test.py
+    98 core/cmd_exec_test.py
+    98 core/word_eval_test.py
+   121 core/glob_test.py
+   123 core/process_test.py
+   125 osh/bool_parse_test.py
+   149 core/braces_test.py
+   176 osh/arith_parse_test.py
+   181 core/args_test.py
+   249 osh/lex_test.py
+   256 core/state_test.py
+   275 core/completion_test.py
+   519 osh/word_parse_test.py
+  1304 osh/cmd_parse_test.py
+  4253 total
+
+OIL
+    14 bin/opy_.py
+    30 core/runtime.py
+    70 core/runtime.asdl
+    88 osh/parse_lib.py
+   120 core/reader.py
+   143 osh/ast_.py
+   147 core/ui.py
+   176 core/alloc.py
+   187 osh/arith_parse.py
+   199 core/test_builtin.py
+   219 osh/osh.asdl
+   226 core/glob_.py
+   255 core/util.py
+   264 core/lexer.py
+   269 core/braces.py
+   273 osh/bool_parse.py
+   305 native/libc.c
+   355 core/tdop.py
+   411 osh/lex.py
+   475 core/args.py
+   476 bin/oil.py
+   518 core/id_kind.py
+   560 core/word.py
+   576 core/state.py
+   606 core/expr_eval.py
+   636 core/process.py
+   822 core/completion.py
+   946 core/builtin.py
+  1044 core/cmd_exec.py
+  1157 core/word_eval.py
+  1231 osh/word_parse.py
+  1549 osh/cmd_parse.py
+ 14347 total
+
