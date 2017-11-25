@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OSH Parser Performance</title>
+    <script type="text/javascript" src="../../web/table/table-sort.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../web/table/table-sort.css" />
+
+    <style>
+      body {
+        margin: 0 auto;
+        width: 60em;
+      }
+      code {
+        color: green;
+      }
+      table {
+        margin-left: 3em;
+        font-family: sans-serif;
+      }
+      td {
+        padding: 8px;  /* override default of 5px */
+      }
+      h3, h4 {
+        color: darkgreen;
+      }
+
+      /* these two tables are side by side */
+      #shells, #hosts, #raw_times {
+        display: inline-block;
+        vertical-align: top;
+      }
+      #home-link {
+        text-align: right;
+      }
+
+      /* columns */
+      #osh-ovm, #osh-cpython {
+        background-color: oldlace;
+      }
+      /* rows */
+      .osh-row {
+        background-color: oldlace;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p id="home-link">
+      <a href="/">oilshell.org</a>
+    </p>
+    <h2>OSH Parser Performance</h2>
+
+    <p>We run <code>$sh -n $file</code> for various files under various
+    shells.  This means that shell startup time is included in the
+    elapsed time measurements, but long files are chosen to minimize its
+    effect.</p>
+
+    <h3>Parse Time Summary</h3>
+<table id="summary">
+  <thead>
+    <tr>
+    <td>host label</td>
+    <td>shell label</td>
+    <td class="num">total lines</td>
+    <td class="num">total ms</td>
+    <td class="num">lines per ms</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td> bash </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 245.5 </td>
+      <td class="num"> 204.5 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> dash </td>
+      <td class="num"> 43,011 </td>
+      <td class="num"> 35.0 </td>
+      <td class="num"> 1,228.9 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> mksh </td>
+      <td class="num"> 43,011 </td>
+      <td class="num"> 107.1 </td>
+      <td class="num"> 401.6 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> flanders </td>
+      <td> osh-cpython </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 30,196.6 </td>
+      <td class="num"> 1.7 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> flanders </td>
+      <td> osh-ovm </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 33,660.7 </td>
+      <td class="num"> 1.5 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> zsh </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 783.5 </td>
+      <td class="num"> 64.1 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> bash </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 107.4 </td>
+      <td class="num"> 467.4 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> dash </td>
+      <td class="num"> 43,011 </td>
+      <td class="num"> 22.9 </td>
+      <td class="num"> 1,878.2 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> mksh </td>
+      <td class="num"> 43,011 </td>
+      <td class="num"> 56.6 </td>
+      <td class="num"> 759.9 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> lisa </td>
+      <td> osh-cpython </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 14,379.6 </td>
+      <td class="num"> 3.5 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> lisa </td>
+      <td> osh-ovm </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 13,741.9 </td>
+      <td class="num"> 3.7 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> zsh </td>
+      <td class="num"> 50,200 </td>
+      <td class="num"> 365.8 </td>
+      <td class="num"> 137.2 </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host_label" type="case-insensitive" />
+    <col id="shell_label" type="case-insensitive" />
+    <col id="total_lines" type="number" />
+    <col id="total_ms" type="number" />
+    <col id="lines_per_ms" type="number" />
+  </colgroup>
+</table>
+    <h3>Memory Used to Parse</h3>
+
+    <p>For <code>osh-ovm</code>.</p>
+<table id="virtual-memory">
+  <thead>
+    <tr>
+    <td>host</td>
+    <td class="num">VmPeak</td>
+    <td class="num">VmRSS</td>
+    <td class="num">num lines</td>
+    <td>filename</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 37,976 </td>
+      <td class="num"> 25,424 </td>
+      <td class="num"> 1,116 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/build.sh">build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 28,328 </td>
+      <td class="num"> 15,932 </td>
+      <td class="num"> 1,679 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t4014-format-patch.sh">t4014-format-patch.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 43,508 </td>
+      <td class="num"> 30,840 </td>
+      <td class="num"> 1,733 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/functions">functions</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 47,584 </td>
+      <td class="num"> 35,180 </td>
+      <td class="num"> 2,029 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure-helper.sh">configure-helper.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 55,956 </td>
+      <td class="num"> 43,472 </td>
+      <td class="num"> 2,512 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/abuild">abuild</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 48,996 </td>
+      <td class="num"> 36,388 </td>
+      <td class="num"> 2,698 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/Build.sh">Build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 30,628 </td>
+      <td class="num"> 17,964 </td>
+      <td class="num"> 3,123 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t9300-fast-import.sh">t9300-fast-import.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 118,436 </td>
+      <td class="num"> 105,996 </td>
+      <td class="num"> 5,160 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/test-cmd-util.sh">test-cmd-util.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 113,896 </td>
+      <td class="num"> 101,284 </td>
+      <td class="num"> 9,661 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/ltmain.sh">ltmain.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 227,956 </td>
+      <td class="num"> 215,188 </td>
+      <td class="num"> 20,489 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure">configure</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 38,232 </td>
+      <td class="num"> 25,600 </td>
+      <td class="num"> 1,116 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/build.sh">build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 28,584 </td>
+      <td class="num"> 15,888 </td>
+      <td class="num"> 1,679 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t4014-format-patch.sh">t4014-format-patch.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 43,508 </td>
+      <td class="num"> 30,920 </td>
+      <td class="num"> 1,733 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/functions">functions</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 47,584 </td>
+      <td class="num"> 35,060 </td>
+      <td class="num"> 2,029 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure-helper.sh">configure-helper.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 56,208 </td>
+      <td class="num"> 43,380 </td>
+      <td class="num"> 2,512 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/abuild">abuild</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 48,996 </td>
+      <td class="num"> 36,396 </td>
+      <td class="num"> 2,698 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/Build.sh">Build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 30,640 </td>
+      <td class="num"> 18,116 </td>
+      <td class="num"> 3,123 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t9300-fast-import.sh">t9300-fast-import.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 118,708 </td>
+      <td class="num"> 106,128 </td>
+      <td class="num"> 5,160 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/test-cmd-util.sh">test-cmd-util.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 113,896 </td>
+      <td class="num"> 101,608 </td>
+      <td class="num"> 9,661 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/ltmain.sh">ltmain.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 227,956 </td>
+      <td class="num"> 215,136 </td>
+      <td class="num"> 20,489 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure">configure</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host" type="case-insensitive" />
+    <col id="VmPeak" type="number" />
+    <col id="VmRSS" type="number" />
+    <col id="num_lines" type="number" />
+    <col id="filename" type="case-insensitive" />
+  </colgroup>
+</table>
+
+    <h3>Shell and Host Details</h3>
+<table id="shells">
+  <thead>
+    <tr>
+    <td>shell label</td>
+    <td>shell id</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> bash </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/bash-d685a43c/">bash-d685a43c</a> </td>
+    </tr>
+    <tr >
+      <td> dash </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/dash-2887d9e6/">dash-2887d9e6</a> </td>
+    </tr>
+    <tr >
+      <td> mksh </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/mksh-ae7d165b/">mksh-ae7d165b</a> </td>
+    </tr>
+    <tr >
+      <td> zsh </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/zsh-ca7b4198/">zsh-ca7b4198</a> </td>
+    </tr>
+    <tr class="osh-row">
+      <td> osh-cpython </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/osh-85b9c7dd/">osh-85b9c7dd</a> </td>
+    </tr>
+    <tr class="osh-row">
+      <td> osh-ovm </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/osh-b180da65/">osh-b180da65</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="shell_label" type="case-insensitive" />
+    <col id="shell_id" type="case-insensitive" />
+  </colgroup>
+</table>
+<table id="hosts">
+  <thead>
+    <tr>
+    <td>host label</td>
+    <td>host id</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/host-id/flanders-8cad9f6e/">flanders-8cad9f6e</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/host-id/lisa-8cad9f6e/">lisa-8cad9f6e</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host_label" type="case-insensitive" />
+    <col id="host_id" type="case-insensitive" />
+  </colgroup>
+</table>
+    <h3>Raw Data</h3>
+<table id="raw-data">
+  <thead>
+    <tr>
+    <td>filename</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/osh-parser/flanders.2017-11-24__22-27-41.times.csv">flanders.2017-11-24__22-27-41.times.csv</a> </td>
+    </tr>
+    <tr >
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/osh-parser/lisa.2017-11-24__22-37-15.times.csv">lisa.2017-11-24__22-37-15.times.csv</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="filename" type="case-insensitive" />
+  </colgroup>
+</table>
+    <h3>Parse Time Breakdown by File</h3>
+
+    <h4>Elasped Time in milliseconds</h4>
+<table id="elapsed">
+  <thead>
+    <tr>
+    <td>host label</td>
+    <td class="num">bash</td>
+    <td class="num">dash</td>
+    <td class="num">mksh</td>
+    <td class="num">zsh</td>
+    <td class="num">osh-ovm</td>
+    <td class="num">osh-cpython</td>
+    <td class="num">num lines</td>
+    <td>filename</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 8.7 </td>
+      <td class="num"> 2.6 </td>
+      <td class="num"> 5.6 </td>
+      <td class="num"> 16.4 </td>
+      <td class="num"> 966.6 </td>
+      <td class="num"> 923.5 </td>
+      <td class="num"> 1,116 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/build.sh">build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 7.3 </td>
+      <td class="num"> 2.1 </td>
+      <td class="num"> 7.9 </td>
+      <td class="num"> 84.3 </td>
+      <td class="num"> 312.7 </td>
+      <td class="num"> 362.4 </td>
+      <td class="num"> 1,679 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t4014-format-patch.sh">t4014-format-patch.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 8.5 </td>
+      <td class="num"> 2.6 </td>
+      <td class="num"> 8.1 </td>
+      <td class="num"> 16.3 </td>
+      <td class="num"> 1,202.3 </td>
+      <td class="num"> 1,266.5 </td>
+      <td class="num"> 1,733 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/functions">functions</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 12.1 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 33.0 </td>
+      <td class="num"> 1,355.1 </td>
+      <td class="num"> 1,484.8 </td>
+      <td class="num"> 2,029 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure-helper.sh">configure-helper.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 12.3 </td>
+      <td class="num"> 3.2 </td>
+      <td class="num"> 8.5 </td>
+      <td class="num"> 29.5 </td>
+      <td class="num"> 2,055.7 </td>
+      <td class="num"> 2,171.6 </td>
+      <td class="num"> 2,512 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/abuild">abuild</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 10.4 </td>
+      <td class="num"> 2.9 </td>
+      <td class="num"> 6.5 </td>
+      <td class="num"> 69.7 </td>
+      <td class="num"> 1,562.2 </td>
+      <td class="num"> 1,491.9 </td>
+      <td class="num"> 2,698 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/Build.sh">Build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 10.3 </td>
+      <td class="num"> 2.2 </td>
+      <td class="num"> 3.9 </td>
+      <td class="num"> 84.6 </td>
+      <td class="num"> 430.1 </td>
+      <td class="num"> 432.7 </td>
+      <td class="num"> 3,123 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t9300-fast-import.sh">t9300-fast-import.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 35.4 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 73.7 </td>
+      <td class="num"> 6,456.4 </td>
+      <td class="num"> 4,856.4 </td>
+      <td class="num"> 5,160 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/test-cmd-util.sh">test-cmd-util.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 48.6 </td>
+      <td class="num"> 6.7 </td>
+      <td class="num"> 21.9 </td>
+      <td class="num"> 122.2 </td>
+      <td class="num"> 5,986.2 </td>
+      <td class="num"> 5,217.8 </td>
+      <td class="num"> 9,661 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/ltmain.sh">ltmain.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 91.9 </td>
+      <td class="num"> 12.7 </td>
+      <td class="num"> 44.7 </td>
+      <td class="num"> 253.8 </td>
+      <td class="num"> 13,333.4 </td>
+      <td class="num"> 11,989.0 </td>
+      <td class="num"> 20,489 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure">configure</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 4.2 </td>
+      <td class="num"> 1.4 </td>
+      <td class="num"> 2.8 </td>
+      <td class="num"> 9.4 </td>
+      <td class="num"> 406.3 </td>
+      <td class="num"> 492.3 </td>
+      <td class="num"> 1,116 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/build.sh">build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 3.5 </td>
+      <td class="num"> 1.2 </td>
+      <td class="num"> 1.8 </td>
+      <td class="num"> 34.1 </td>
+      <td class="num"> 146.2 </td>
+      <td class="num"> 188.8 </td>
+      <td class="num"> 1,679 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t4014-format-patch.sh">t4014-format-patch.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 6.7 </td>
+      <td class="num"> 1.6 </td>
+      <td class="num"> 2.9 </td>
+      <td class="num"> 11.3 </td>
+      <td class="num"> 596.4 </td>
+      <td class="num"> 659.9 </td>
+      <td class="num"> 1,733 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/functions">functions</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 6.4 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 17.0 </td>
+      <td class="num"> 698.4 </td>
+      <td class="num"> 620.2 </td>
+      <td class="num"> 2,029 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure-helper.sh">configure-helper.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 5.8 </td>
+      <td class="num"> 1.9 </td>
+      <td class="num"> 4.3 </td>
+      <td class="num"> 13.3 </td>
+      <td class="num"> 860.3 </td>
+      <td class="num"> 846.6 </td>
+      <td class="num"> 2,512 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/abuild">abuild</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 5.2 </td>
+      <td class="num"> 2.0 </td>
+      <td class="num"> 3.4 </td>
+      <td class="num"> 35.4 </td>
+      <td class="num"> 602.4 </td>
+      <td class="num"> 591.1 </td>
+      <td class="num"> 2,698 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/Build.sh">Build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 4.7 </td>
+      <td class="num"> 1.3 </td>
+      <td class="num"> 2.5 </td>
+      <td class="num"> 39.8 </td>
+      <td class="num"> 189.6 </td>
+      <td class="num"> 184.4 </td>
+      <td class="num"> 3,123 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t9300-fast-import.sh">t9300-fast-import.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 15.3 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 41.8 </td>
+      <td class="num"> 2,263.7 </td>
+      <td class="num"> 2,620.4 </td>
+      <td class="num"> 5,160 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/test-cmd-util.sh">test-cmd-util.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 17.6 </td>
+      <td class="num"> 4.6 </td>
+      <td class="num"> 13.2 </td>
+      <td class="num"> 52.4 </td>
+      <td class="num"> 2,409.1 </td>
+      <td class="num"> 2,354.6 </td>
+      <td class="num"> 9,661 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/ltmain.sh">ltmain.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 38.0 </td>
+      <td class="num"> 8.9 </td>
+      <td class="num"> 25.7 </td>
+      <td class="num"> 111.3 </td>
+      <td class="num"> 5,569.5 </td>
+      <td class="num"> 5,821.3 </td>
+      <td class="num"> 20,489 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure">configure</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host_label" type="case-insensitive" />
+    <col id="bash" type="number" />
+    <col id="dash" type="number" />
+    <col id="mksh" type="number" />
+    <col id="zsh" type="number" />
+    <col id="osh-ovm" type="number" />
+    <col id="osh-cpython" type="number" />
+    <col id="num_lines" type="number" />
+    <col id="filename" type="case-insensitive" />
+  </colgroup>
+</table>
+
+    <h4>Parsing Rate in lines/millisecond</h4>
+<table id="rate">
+  <thead>
+    <tr>
+    <td>host label</td>
+    <td class="num">bash</td>
+    <td class="num">dash</td>
+    <td class="num">mksh</td>
+    <td class="num">zsh</td>
+    <td class="num">osh-ovm</td>
+    <td class="num">osh-cpython</td>
+    <td class="num">num lines</td>
+    <td>filename</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 128.3 </td>
+      <td class="num"> 429.2 </td>
+      <td class="num"> 199.3 </td>
+      <td class="num"> 68.0 </td>
+      <td class="num"> 1.2 </td>
+      <td class="num"> 1.2 </td>
+      <td class="num"> 1,116 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/build.sh">build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 230.0 </td>
+      <td class="num"> 799.5 </td>
+      <td class="num"> 212.5 </td>
+      <td class="num"> 19.9 </td>
+      <td class="num"> 5.4 </td>
+      <td class="num"> 4.6 </td>
+      <td class="num"> 1,679 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t4014-format-patch.sh">t4014-format-patch.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 203.9 </td>
+      <td class="num"> 666.5 </td>
+      <td class="num"> 214.0 </td>
+      <td class="num"> 106.3 </td>
+      <td class="num"> 1.4 </td>
+      <td class="num"> 1.4 </td>
+      <td class="num"> 1,733 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/functions">functions</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 167.7 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 61.5 </td>
+      <td class="num"> 1.5 </td>
+      <td class="num"> 1.4 </td>
+      <td class="num"> 2,029 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure-helper.sh">configure-helper.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 204.2 </td>
+      <td class="num"> 785.0 </td>
+      <td class="num"> 295.5 </td>
+      <td class="num"> 85.2 </td>
+      <td class="num"> 1.2 </td>
+      <td class="num"> 1.2 </td>
+      <td class="num"> 2,512 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/abuild">abuild</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 259.4 </td>
+      <td class="num"> 930.3 </td>
+      <td class="num"> 415.1 </td>
+      <td class="num"> 38.7 </td>
+      <td class="num"> 1.7 </td>
+      <td class="num"> 1.8 </td>
+      <td class="num"> 2,698 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/Build.sh">Build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 303.2 </td>
+      <td class="num"> 1,419.5 </td>
+      <td class="num"> 800.8 </td>
+      <td class="num"> 36.9 </td>
+      <td class="num"> 7.3 </td>
+      <td class="num"> 7.2 </td>
+      <td class="num"> 3,123 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t9300-fast-import.sh">t9300-fast-import.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 145.8 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 70.0 </td>
+      <td class="num"> 0.8 </td>
+      <td class="num"> 1.1 </td>
+      <td class="num"> 5,160 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/test-cmd-util.sh">test-cmd-util.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 198.8 </td>
+      <td class="num"> 1,441.9 </td>
+      <td class="num"> 441.1 </td>
+      <td class="num"> 79.1 </td>
+      <td class="num"> 1.6 </td>
+      <td class="num"> 1.9 </td>
+      <td class="num"> 9,661 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/ltmain.sh">ltmain.sh</a> </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td class="num"> 222.9 </td>
+      <td class="num"> 1,613.3 </td>
+      <td class="num"> 458.4 </td>
+      <td class="num"> 80.7 </td>
+      <td class="num"> 1.5 </td>
+      <td class="num"> 1.7 </td>
+      <td class="num"> 20,489 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure">configure</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 265.7 </td>
+      <td class="num"> 797.1 </td>
+      <td class="num"> 398.6 </td>
+      <td class="num"> 118.7 </td>
+      <td class="num"> 2.7 </td>
+      <td class="num"> 2.3 </td>
+      <td class="num"> 1,116 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/build.sh">build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 479.7 </td>
+      <td class="num"> 1,399.2 </td>
+      <td class="num"> 932.8 </td>
+      <td class="num"> 49.2 </td>
+      <td class="num"> 11.5 </td>
+      <td class="num"> 8.9 </td>
+      <td class="num"> 1,679 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t4014-format-patch.sh">t4014-format-patch.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 258.7 </td>
+      <td class="num"> 1,083.1 </td>
+      <td class="num"> 597.6 </td>
+      <td class="num"> 153.4 </td>
+      <td class="num"> 2.9 </td>
+      <td class="num"> 2.6 </td>
+      <td class="num"> 1,733 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/functions">functions</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 317.0 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 119.4 </td>
+      <td class="num"> 2.9 </td>
+      <td class="num"> 3.3 </td>
+      <td class="num"> 2,029 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure-helper.sh">configure-helper.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 433.1 </td>
+      <td class="num"> 1,322.1 </td>
+      <td class="num"> 584.2 </td>
+      <td class="num"> 188.9 </td>
+      <td class="num"> 2.9 </td>
+      <td class="num"> 3.0 </td>
+      <td class="num"> 2,512 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/abuild">abuild</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 518.8 </td>
+      <td class="num"> 1,349.0 </td>
+      <td class="num"> 793.5 </td>
+      <td class="num"> 76.2 </td>
+      <td class="num"> 4.5 </td>
+      <td class="num"> 4.6 </td>
+      <td class="num"> 2,698 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/Build.sh">Build.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 664.5 </td>
+      <td class="num"> 2,402.3 </td>
+      <td class="num"> 1,249.2 </td>
+      <td class="num"> 78.5 </td>
+      <td class="num"> 16.5 </td>
+      <td class="num"> 16.9 </td>
+      <td class="num"> 3,123 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/t9300-fast-import.sh">t9300-fast-import.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 337.3 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+      <td class="num"> 123.4 </td>
+      <td class="num"> 2.3 </td>
+      <td class="num"> 2.0 </td>
+      <td class="num"> 5,160 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/test-cmd-util.sh">test-cmd-util.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 548.9 </td>
+      <td class="num"> 2,100.2 </td>
+      <td class="num"> 731.9 </td>
+      <td class="num"> 184.4 </td>
+      <td class="num"> 4.0 </td>
+      <td class="num"> 4.1 </td>
+      <td class="num"> 9,661 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/ltmain.sh">ltmain.sh</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td class="num"> 539.2 </td>
+      <td class="num"> 2,302.1 </td>
+      <td class="num"> 797.2 </td>
+      <td class="num"> 184.1 </td>
+      <td class="num"> 3.7 </td>
+      <td class="num"> 3.5 </td>
+      <td class="num"> 20,489 </td>
+      <td> <a href="https://github.com/oilshell/oil/blob/master/benchmarks/testdata/configure">configure</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host_label" type="case-insensitive" />
+    <col id="bash" type="number" />
+    <col id="dash" type="number" />
+    <col id="mksh" type="number" />
+    <col id="zsh" type="number" />
+    <col id="osh-ovm" type="number" />
+    <col id="osh-cpython" type="number" />
+    <col id="num_lines" type="number" />
+    <col id="filename" type="case-insensitive" />
+  </colgroup>
+</table>
+  </body>
+</html>

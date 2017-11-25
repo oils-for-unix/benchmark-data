@@ -1,0 +1,7 @@
+"column_name","type"
+"host","character"
+"VmPeak","integer"
+"VmRSS","integer"
+"num_lines","integer"
+"filename","character"
+"filename_HREF","character"
