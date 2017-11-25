@@ -1,0 +1,10 @@
+benchmarks/testdata/build.sh
+benchmarks/testdata/t4014-format-patch.sh
+benchmarks/testdata/functions
+benchmarks/testdata/configure-helper.sh
+benchmarks/testdata/abuild
+benchmarks/testdata/Build.sh
+benchmarks/testdata/t9300-fast-import.sh
+benchmarks/testdata/test-cmd-util.sh
+benchmarks/testdata/ltmain.sh
+benchmarks/testdata/configure
