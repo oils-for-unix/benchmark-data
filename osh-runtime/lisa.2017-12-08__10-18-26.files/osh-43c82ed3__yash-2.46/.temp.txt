@@ -1,0 +1,2 @@
+_TEST_:
+	@echo >/dev/null
