@@ -1,0 +1,11 @@
+"host","task_arg","parser_VmRSS_MB","parser_VmPeak_MB","runtime_VmRSS_MB","runtime_VmPeak_MB"
+"flanders","abuild-help",19.82464,32.804864,NA,NA
+"flanders","cpython-configure",58.769408,71.86432,NA,NA
+"flanders","ocaml-4.06.0",17.862656,31.080448,18.423808,31.080448
+"flanders","tcc-0.9.26",12.20608,25.075712,12.455936,25.075712
+"flanders","yash-2.46",15.007744,27.787264,15.478784,28.184576
+"lisa","abuild-help",19.70176,32.804864,NA,NA
+"lisa","cpython-configure",58.724352,71.86432,NA,NA
+"lisa","ocaml-4.06.0",17.813504,31.080448,18.395136,31.080448
+"lisa","tcc-0.9.26",12.0832,25.038848,12.3904,25.174016
+"lisa","yash-2.46",15.200256,27.865088,15.572992,28.127232

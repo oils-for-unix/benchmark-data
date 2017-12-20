@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OSH Runtime Performance</title>
+    <script type="text/javascript" src="../../web/table/table-sort.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../web/table/table-sort.css" />
+    <link rel="stylesheet" type="text/css" href="../../web/benchmarks.css" />
+
+  </head>
+  <body>
+    <p id="home-link">
+      <a href="/">oilshell.org</a>
+    </p>
+    <h2>OSH Runtime Performance</h2>
+
+    <h3>Elapsed Time by Shell (milliseconds)</h3>
+
+    <p>Some benchmarks call many external tools, while some exercise the shell
+    interpreter itself.  Parse time is included.</p>
+<table id="times">
+  <thead>
+    <tr>
+    <td>host label</td>
+    <td>task arg</td>
+    <td class="num">bash</td>
+    <td class="num">dash</td>
+    <td class="num">osh</td>
+    <td class="num">osh to bash ratio</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td> abuild-help </td>
+      <td class="num"> 35 </td>
+      <td class="num"> 10 </td>
+      <td class="num"> 1,644 </td>
+      <td class="num"> 46.5 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> cpython-configure </td>
+      <td class="num"> 23,415 </td>
+      <td class="num"> 23,093 </td>
+      <td class="num"> 30,174 </td>
+      <td class="num"> 1.3 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> ocaml-4.06.0 </td>
+      <td class="num"> 5,493 </td>
+      <td class="num"> 5,133 </td>
+      <td class="num"> 9,073 </td>
+      <td class="num"> 1.7 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> tcc-0.9.26 </td>
+      <td class="num"> 66 </td>
+      <td class="num"> 82 </td>
+      <td class="num"> 486 </td>
+      <td class="num"> 7.4 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> yash-2.46 </td>
+      <td class="num"> 3,013 </td>
+      <td class="num"> 2,996 </td>
+      <td class="num"> 6,297 </td>
+      <td class="num"> 2.1 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> abuild-help </td>
+      <td class="num"> 16 </td>
+      <td class="num"> 6 </td>
+      <td class="num"> 720 </td>
+      <td class="num"> 43.9 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> cpython-configure </td>
+      <td class="num"> 10,381 </td>
+      <td class="num"> 10,689 </td>
+      <td class="num"> 13,448 </td>
+      <td class="num"> 1.3 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> ocaml-4.06.0 </td>
+      <td class="num"> 2,937 </td>
+      <td class="num"> 2,900 </td>
+      <td class="num"> 5,348 </td>
+      <td class="num"> 1.8 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> tcc-0.9.26 </td>
+      <td class="num"> 33 </td>
+      <td class="num"> 28 </td>
+      <td class="num"> 213 </td>
+      <td class="num"> 6.5 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> yash-2.46 </td>
+      <td class="num"> 1,288 </td>
+      <td class="num"> 1,213 </td>
+      <td class="num"> 2,979 </td>
+      <td class="num"> 2.3 </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host_label" type="case-insensitive" />
+    <col id="task_arg" type="case-insensitive" />
+    <col id="bash" type="number" />
+    <col id="dash" type="number" />
+    <col id="osh" type="number" />
+    <col id="osh_to_bash_ratio" type="number" />
+  </colgroup>
+</table>
+    <h3>Memory Used to Run</h3>
+
+    <p>Running under <code>osh-ovm</code>.  Memory usage is measured in MB
+    (powers of 10), not MiB (powers of 2).</p>
+
+<table id="virtual-memory">
+  <thead>
+    <tr>
+    <td>host</td>
+    <td>task arg</td>
+    <td class="num">parser VmRSS MB</td>
+    <td class="num">parser VmPeak MB</td>
+    <td class="num">runtime VmRSS MB</td>
+    <td class="num">runtime VmPeak MB</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td> abuild-help </td>
+      <td class="num"> 19.8 </td>
+      <td class="num"> 32.8 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> cpython-configure </td>
+      <td class="num"> 58.8 </td>
+      <td class="num"> 71.9 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> ocaml-4.06.0 </td>
+      <td class="num"> 17.9 </td>
+      <td class="num"> 31.1 </td>
+      <td class="num"> 18.4 </td>
+      <td class="num"> 31.1 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> tcc-0.9.26 </td>
+      <td class="num"> 12.2 </td>
+      <td class="num"> 25.1 </td>
+      <td class="num"> 12.5 </td>
+      <td class="num"> 25.1 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> yash-2.46 </td>
+      <td class="num"> 15.0 </td>
+      <td class="num"> 27.8 </td>
+      <td class="num"> 15.5 </td>
+      <td class="num"> 28.2 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> abuild-help </td>
+      <td class="num"> 19.7 </td>
+      <td class="num"> 32.8 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> cpython-configure </td>
+      <td class="num"> 58.7 </td>
+      <td class="num"> 71.9 </td>
+      <td class="num na"> NA </td>
+      <td class="num na"> NA </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> ocaml-4.06.0 </td>
+      <td class="num"> 17.8 </td>
+      <td class="num"> 31.1 </td>
+      <td class="num"> 18.4 </td>
+      <td class="num"> 31.1 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> tcc-0.9.26 </td>
+      <td class="num"> 12.1 </td>
+      <td class="num"> 25.0 </td>
+      <td class="num"> 12.4 </td>
+      <td class="num"> 25.2 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> yash-2.46 </td>
+      <td class="num"> 15.2 </td>
+      <td class="num"> 27.9 </td>
+      <td class="num"> 15.6 </td>
+      <td class="num"> 28.1 </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host" type="case-insensitive" />
+    <col id="task_arg" type="case-insensitive" />
+    <col id="parser_VmRSS_MB" type="number" />
+    <col id="parser_VmPeak_MB" type="number" />
+    <col id="runtime_VmRSS_MB" type="number" />
+    <col id="runtime_VmPeak_MB" type="number" />
+  </colgroup>
+</table>
+
+    <h3>Shell and Host Details</h3>
+<table id="shells">
+  <thead>
+    <tr>
+    <td>shell label</td>
+    <td>shell id</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> bash </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/bash-d685a43c/">bash-d685a43c</a> </td>
+    </tr>
+    <tr >
+      <td> dash </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/dash-2887d9e6/">dash-2887d9e6</a> </td>
+    </tr>
+    <tr class="osh-row">
+      <td> osh </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/shell-id/osh-51839a07/">osh-51839a07</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="shell_label" type="case-insensitive" />
+    <col id="shell_id" type="case-insensitive" />
+  </colgroup>
+</table>
+<table id="hosts">
+  <thead>
+    <tr>
+    <td>host label</td>
+    <td>host id</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/host-id/flanders-b7af49aa/">flanders-b7af49aa</a> </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> <a href="https://github.com/oilshell/benchmark-data/blob/master/host-id/lisa-8cad9f6e/">lisa-8cad9f6e</a> </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host_label" type="case-insensitive" />
+    <col id="host_id" type="case-insensitive" />
+  </colgroup>
+</table>
+  </body>
+</html>

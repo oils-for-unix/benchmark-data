@@ -1,0 +1,6 @@
+"column_name","type","precision"
+"host_label","character","1"
+"shell_label","character","1"
+"total_lines","integer","1"
+"total_ms","double","0"
+"lines_per_ms","double","1"

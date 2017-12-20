@@ -1,0 +1,15 @@
+2017-12-20__08-38-20 lisa 8cad9f6e bash d685a43c abuild abuild-help
+2017-12-20__08-38-20 lisa 8cad9f6e bash d685a43c cpython cpython-configure
+2017-12-20__08-38-20 lisa 8cad9f6e bash d685a43c configure /home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+2017-12-20__08-38-20 lisa 8cad9f6e bash d685a43c configure /home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+2017-12-20__08-38-20 lisa 8cad9f6e bash d685a43c configure /home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+2017-12-20__08-38-20 lisa 8cad9f6e dash 2887d9e6 abuild abuild-help
+2017-12-20__08-38-20 lisa 8cad9f6e dash 2887d9e6 cpython cpython-configure
+2017-12-20__08-38-20 lisa 8cad9f6e dash 2887d9e6 configure /home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+2017-12-20__08-38-20 lisa 8cad9f6e dash 2887d9e6 configure /home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+2017-12-20__08-38-20 lisa 8cad9f6e dash 2887d9e6 configure /home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+2017-12-20__08-38-20 lisa 8cad9f6e /home/andy/git/oilshell/oil/_bin/osh 51839a07 abuild abuild-help
+2017-12-20__08-38-20 lisa 8cad9f6e /home/andy/git/oilshell/oil/_bin/osh 51839a07 cpython cpython-configure
+2017-12-20__08-38-20 lisa 8cad9f6e /home/andy/git/oilshell/oil/_bin/osh 51839a07 configure /home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+2017-12-20__08-38-20 lisa 8cad9f6e /home/andy/git/oilshell/oil/_bin/osh 51839a07 configure /home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+2017-12-20__08-38-20 lisa 8cad9f6e /home/andy/git/oilshell/oil/_bin/osh 51839a07 configure /home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46

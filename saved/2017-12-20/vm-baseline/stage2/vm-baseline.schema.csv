@@ -1,0 +1,6 @@
+"column_name","type","precision"
+"host","character","1"
+"shell_name","character","1"
+"shell_hash","character","1"
+"VmRSS_MB","double","1"
+"VmPeak_MB","double","1"

@@ -1,0 +1,7 @@
+"column_name","type","precision"
+"host","character","1"
+"task_arg","character","1"
+"parser_VmRSS_MB","double","1"
+"parser_VmPeak_MB","double","1"
+"runtime_VmRSS_MB","double","1"
+"runtime_VmPeak_MB","double","1"

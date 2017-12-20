@@ -1,0 +1,7 @@
+"column_name","type","precision"
+"host_label","character","1"
+"task_arg","character","1"
+"bash","double","0"
+"dash","double","0"
+"osh","double","0"
+"osh_to_bash_ratio","double","1"
