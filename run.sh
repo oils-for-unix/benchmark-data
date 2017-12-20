@@ -35,4 +35,15 @@ save-benchmarks() {
   rm -r -f -v $dest/*/raw
 }
 
+copy-web-and-sed() {
+  local dest=$1  # e.g. saved/2017-12-20
+
+  # We only want benchmarks.css and web/table
+  mkdir -p $dest/web/table
+  cp -v ../oil/web/benchmarks.css $dest/web
+  cp -v ../oil/web/table/*.{css,js} $dest/web/table
+
+  find $dest -name '*.html' | xargs sed -i 's|../../web/|../web/|g'
+}
+
 "$@"
