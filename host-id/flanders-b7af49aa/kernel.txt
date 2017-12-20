@@ -1,0 +1,2 @@
+4.10.0-42-generic
+#46~16.04.1-Ubuntu SMP Mon Dec 4 15:57:59 UTC 2017
