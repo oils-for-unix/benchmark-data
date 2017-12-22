@@ -1,0 +1,6 @@
+2017-12-21__22-11-29 lisa 8cad9f6e bash d685a43c
+2017-12-21__22-11-29 lisa 8cad9f6e dash 2887d9e6
+2017-12-21__22-11-29 lisa 8cad9f6e mksh ae7d165b
+2017-12-21__22-11-29 lisa 8cad9f6e zsh ca7b4198
+2017-12-21__22-11-29 lisa 8cad9f6e bin/osh 5c17b7c4
+2017-12-21__22-11-29 lisa 8cad9f6e _bin/osh 47d781e8
