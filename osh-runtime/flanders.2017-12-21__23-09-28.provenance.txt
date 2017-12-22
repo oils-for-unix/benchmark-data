@@ -1,0 +1,6 @@
+2017-12-21__23-09-28 flanders b7af49aa bash d685a43c
+2017-12-21__23-09-28 flanders b7af49aa dash 2887d9e6
+2017-12-21__23-09-28 flanders b7af49aa mksh ae7d165b
+2017-12-21__23-09-28 flanders b7af49aa zsh ca7b4198
+2017-12-21__23-09-28 flanders b7af49aa bin/osh 75f933ab
+2017-12-21__23-09-28 flanders b7af49aa _bin/osh a4ca57c9

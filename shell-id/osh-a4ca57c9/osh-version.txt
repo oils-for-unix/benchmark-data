@@ -1,0 +1,8 @@
+Oil version 0.3.0
+Release Date: 2017-12-22 07:09:28+00:00
+Arch: x86_64
+OS: Linux
+Platform: #46~16.04.1-Ubuntu SMP Mon Dec 4 15:57:59 UTC 2017
+Compiler: GCC 5.4.0 20160609
+Interpreter: OVM
+Interpreter version: 2.7.13
