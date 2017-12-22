@@ -1,0 +1,4 @@
+"column_name","type","precision"
+"host_label","character","1"
+"host_id","character","1"
+"host_id_HREF","character","1"

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual Memory Baseline</title>
+    <script type="text/javascript" src="../web/table/table-sort.js"></script>
+    <link rel="stylesheet" type="text/css" href="../web/table/table-sort.css" />
+    <link rel="stylesheet" type="text/css" href="../web/benchmarks.css" />
+
+  </head>
+  <body>
+    <p id="home-link">
+      <a href="/">oilshell.org</a>
+    </p>
+    <h2>Virtual Memory Baseline</h2>
+
+    <h3>Memory Used at Startup (MB)</h3>
+
+    <p>Running under <code>osh-ovm</code>.  Memory usage is measured in MB
+    (powers of 10), not MiB (powers of 2).</p>
+
+<table id="vm-baseline">
+  <thead>
+    <tr>
+    <td>host</td>
+    <td>shell name</td>
+    <td>shell hash</td>
+    <td class="num">VmRSS MB</td>
+    <td class="num">VmPeak MB</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td> flanders </td>
+      <td> dash </td>
+      <td> 2887d9e6 </td>
+      <td class="num"> 0.9 </td>
+      <td class="num"> 4.6 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> mksh </td>
+      <td> ae7d165b </td>
+      <td class="num"> 0.9 </td>
+      <td class="num"> 4.7 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> zsh </td>
+      <td> ca7b4198 </td>
+      <td class="num"> 0.8 </td>
+      <td class="num"> 7.6 </td>
+    </tr>
+    <tr >
+      <td> flanders </td>
+      <td> bash </td>
+      <td> d685a43c </td>
+      <td class="num"> 3.0 </td>
+      <td class="num"> 12.8 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> flanders </td>
+      <td> osh </td>
+      <td> 51839a07 </td>
+      <td class="num"> 10.2 </td>
+      <td class="num"> 22.9 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> flanders </td>
+      <td> osh </td>
+      <td> 3a067bd6 </td>
+      <td class="num"> 14.3 </td>
+      <td class="num"> 49.8 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> dash </td>
+      <td> 2887d9e6 </td>
+      <td class="num"> 0.8 </td>
+      <td class="num"> 4.6 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> mksh </td>
+      <td> ae7d165b </td>
+      <td class="num"> 0.8 </td>
+      <td class="num"> 4.7 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> zsh </td>
+      <td> ca7b4198 </td>
+      <td class="num"> 0.7 </td>
+      <td class="num"> 7.6 </td>
+    </tr>
+    <tr >
+      <td> lisa </td>
+      <td> bash </td>
+      <td> d685a43c </td>
+      <td class="num"> 3.1 </td>
+      <td class="num"> 12.8 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> lisa </td>
+      <td> osh </td>
+      <td> 51839a07 </td>
+      <td class="num"> 10.2 </td>
+      <td class="num"> 22.9 </td>
+    </tr>
+    <tr class="osh-row">
+      <td> lisa </td>
+      <td> osh </td>
+      <td> 3a067bd6 </td>
+      <td class="num"> 14.3 </td>
+      <td class="num"> 49.9 </td>
+    </tr>
+  </tbody>
+  <colgroup>
+    <col id="host" type="case-insensitive" />
+    <col id="shell_name" type="case-insensitive" />
+    <col id="shell_hash" type="case-insensitive" />
+    <col id="VmRSS_MB" type="number" />
+    <col id="VmPeak_MB" type="number" />
+  </colgroup>
+</table>
+    <!-- <h3>Shell and Host Details</h3> -->
+  </body>
+</html>

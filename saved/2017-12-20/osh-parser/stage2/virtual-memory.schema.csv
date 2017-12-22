@@ -1,0 +1,7 @@
+"column_name","type","precision"
+"host","character","1"
+"VmRSS_MB","double","1"
+"VmPeak_MB","double","1"
+"num_lines","integer","1"
+"filename","character","1"
+"filename_HREF","character","1"
