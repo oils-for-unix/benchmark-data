@@ -1,0 +1,6 @@
+2018-01-24__11-25-29 flanders d5e3a44e bash d685a43c
+2018-01-24__11-25-29 flanders d5e3a44e dash 2887d9e6
+2018-01-24__11-25-29 flanders d5e3a44e mksh ae7d165b
+2018-01-24__11-25-29 flanders d5e3a44e zsh ca7b4198
+2018-01-24__11-25-29 flanders d5e3a44e bin/osh 1aec03fe
+2018-01-24__11-25-29 flanders d5e3a44e _bin/osh c55743ff
