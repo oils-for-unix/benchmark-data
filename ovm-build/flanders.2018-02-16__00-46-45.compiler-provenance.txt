@@ -1,0 +1,2 @@
+2018-02-16__00-46-45 flanders 2ee9956b /usr/bin/gcc d41d8cd9
+2018-02-16__00-46-45 flanders 2ee9956b /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae
