@@ -1,4 +1,4 @@
-status elapsed_secs host_name host_hash compiler_path compiler_hash src_dir action
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
 0	1.2912	flanders	2ee9956b	/usr/bin/gcc	6cc3c060	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha1	configure
 0	55.0592	flanders	2ee9956b	/usr/bin/gcc	6cc3c060	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha1	_bin/oil.ovm
 0	17.3806	flanders	2ee9956b	/usr/bin/gcc	6cc3c060	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha1	_bin/oil.ovm-dbg
