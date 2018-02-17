@@ -1,4 +1,4 @@
-status,elapsed_secs,host_name,host_hash,compiler_path,compiler_hash,src_dir,action
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
 0	0.5241	lisa	02485150	/usr/bin/gcc	6cc3c060	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha1	configure
 0	28.0319	lisa	02485150	/usr/bin/gcc	6cc3c060	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha1	_bin/oil.ovm
 0	9.2380	lisa	02485150	/usr/bin/gcc	6cc3c060	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha1	_bin/oil.ovm-dbg
