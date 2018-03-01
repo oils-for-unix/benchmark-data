@@ -1,0 +1,11 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	1.2764	flanders	6afc5af0	/usr/bin/gcc	169c116f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha2	configure
+0	62.4425	flanders	6afc5af0	/usr/bin/gcc	169c116f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha2	_bin/oil.ovm
+0	19.3921	flanders	6afc5af0	/usr/bin/gcc	169c116f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha2	_bin/oil.ovm-dbg
+0	1.2678	flanders	6afc5af0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha2	configure
+0	49.4285	flanders	6afc5af0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha2	_bin/oil.ovm
+0	18.2552	flanders	6afc5af0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5.alpha2	_bin/oil.ovm-dbg
+0	31.0966	flanders	6afc5af0	/usr/bin/gcc	169c116f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	55.2019	flanders	6afc5af0	/usr/bin/gcc	169c116f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	5.5866	flanders	6afc5af0	/usr/bin/gcc	169c116f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	6.7861	flanders	6afc5af0	/usr/bin/gcc	169c116f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make
