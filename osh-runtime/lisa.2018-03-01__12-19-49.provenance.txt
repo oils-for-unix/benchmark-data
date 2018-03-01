@@ -1,0 +1,6 @@
+2018-03-01__12-19-49 lisa 6afc5af0 bash d685a43c
+2018-03-01__12-19-49 lisa 6afc5af0 dash 2887d9e6
+2018-03-01__12-19-49 lisa 6afc5af0 mksh ae7d165b
+2018-03-01__12-19-49 lisa 6afc5af0 zsh ca7b4198
+2018-03-01__12-19-49 lisa 6afc5af0 bin/osh ef60a86f
+2018-03-01__12-19-49 lisa 6afc5af0 _tmp/oil-tar-test/oil-0.5.alpha2/_bin/osh 2bdf6ea8
