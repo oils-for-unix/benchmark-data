@@ -1,0 +1,9 @@
+Oil version 0.5.alpha2
+Release Date: -
+Arch: x86_64
+OS: Linux
+Platform: #40~16.04.1-Ubuntu SMP Fri Feb 16 23:25:58 UTC 2018
+Compiler: GCC 5.4.0 20160609
+Interpreter: CPython
+Interpreter version: 2.7.12
+Bytecode: -

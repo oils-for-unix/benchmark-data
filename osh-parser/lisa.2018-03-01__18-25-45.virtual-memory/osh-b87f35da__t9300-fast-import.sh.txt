@@ -1,0 +1,53 @@
+Name:	osh
+Umask:	0002
+State:	R (running)
+Tgid:	22166
+Ngid:	0
+Pid:	22166
+PPid:	22165
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	64
+Groups:	4 24 27 30 46 113 128 1000 
+NStgid:	22166
+NSpid:	22166
+NSpgid:	28777
+NSsid:	3548
+VmPeak:	   25148 kB
+VmSize:	   25148 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   12456 kB
+VmRSS:	   12456 kB
+RssAnon:	    8564 kB
+RssFile:	    3892 kB
+RssShmem:	       0 kB
+VmData:	    8964 kB
+VmStk:	     132 kB
+VmExe:	    1492 kB
+VmLib:	    3400 kB
+VmPTE:	      68 kB
+VmPMD:	      12 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+Threads:	1
+SigQ:	1/95990
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000001001000
+SigCgt:	0000000000000002
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Cpus_allowed:	ff
+Cpus_allowed_list:	0-7
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	3
