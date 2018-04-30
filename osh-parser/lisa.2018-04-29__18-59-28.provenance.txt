@@ -1,0 +1,6 @@
+2018-04-29__18-59-28 lisa 48e2e6d7 bash d685a43c
+2018-04-29__18-59-28 lisa 48e2e6d7 dash 2887d9e6
+2018-04-29__18-59-28 lisa 48e2e6d7 mksh ae7d165b
+2018-04-29__18-59-28 lisa 48e2e6d7 zsh ca7b4198
+2018-04-29__18-59-28 lisa 48e2e6d7 bin/osh c5f18366
+2018-04-29__18-59-28 lisa 48e2e6d7 _tmp/oil-tar-test/oil-0.5.alpha3/_bin/osh 88a24461
