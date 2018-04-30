@@ -1,8 +1,8 @@
 Oil version 0.5.alpha3
-Release Date: 2018-04-30 01:47:21+00:00
+Release Date: 2018-04-30 02:00:24+00:00
 Arch: x86_64
 OS: Linux
-Platform: #43~16.04.1-Ubuntu SMP Wed Mar 14 17:48:43 UTC 2018
+Platform: #44~16.04.1-Ubuntu SMP Thu Apr 5 16:43:10 UTC 2018
 Compiler: GCC 5.4.0 20160609
 Interpreter: OVM
 Interpreter version: 2.7.13

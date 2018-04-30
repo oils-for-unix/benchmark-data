@@ -1,0 +1,6 @@
+2018-04-29__19-57-32 flanders 9b72f5aa bash d685a43c
+2018-04-29__19-57-32 flanders 9b72f5aa dash 2887d9e6
+2018-04-29__19-57-32 flanders 9b72f5aa mksh ae7d165b
+2018-04-29__19-57-32 flanders 9b72f5aa zsh ca7b4198
+2018-04-29__19-57-32 flanders 9b72f5aa bin/osh c5f18366
+2018-04-29__19-57-32 flanders 9b72f5aa _tmp/oil-tar-test/oil-0.5.alpha3/_bin/osh 88a24461
