@@ -1,0 +1,6 @@
+2018-07-10__23-51-34 broome e21a44c9 bash 6f84604a
+2018-07-10__23-51-34 broome e21a44c9 dash 3ca0b057
+2018-07-10__23-51-34 broome e21a44c9 mksh fc451c2d
+2018-07-10__23-51-34 broome e21a44c9 zsh c6846721
+2018-07-10__23-51-34 broome e21a44c9 bin/osh 12c7693d
+2018-07-10__23-51-34 broome e21a44c9 _tmp/oil-tar-test/oil-0.5/_bin/osh 646fccf5
