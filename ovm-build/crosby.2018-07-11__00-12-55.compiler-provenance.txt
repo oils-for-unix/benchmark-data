@@ -1,0 +1,2 @@
+2018-07-11__00-12-55 crosby da57b8d4 /usr/bin/gcc 065c97c4
+2018-07-11__00-12-55 crosby da57b8d4 /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae

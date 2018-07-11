@@ -1,0 +1,6 @@
+2018-07-11__00-10-33 crosby da57b8d4 bash 6f84604a
+2018-07-11__00-10-33 crosby da57b8d4 dash 3ca0b057
+2018-07-11__00-10-33 crosby da57b8d4 mksh fc451c2d
+2018-07-11__00-10-33 crosby da57b8d4 zsh c6846721
+2018-07-11__00-10-33 crosby da57b8d4 bin/osh 7f37d837
+2018-07-11__00-10-33 crosby da57b8d4 _tmp/oil-tar-test/oil-0.5/_bin/osh b4cc5651

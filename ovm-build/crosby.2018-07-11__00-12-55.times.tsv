@@ -1,0 +1,11 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	1.2805	crosby	da57b8d4	/usr/bin/gcc	065c97c4	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5	configure
+0	40.9330	crosby	da57b8d4	/usr/bin/gcc	065c97c4	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5	_bin/oil.ovm
+0	14.3102	crosby	da57b8d4	/usr/bin/gcc	065c97c4	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5	_bin/oil.ovm-dbg
+0	1.3553	crosby	da57b8d4	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5	configure
+0	0.0159	crosby	da57b8d4	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5	_bin/oil.ovm
+0	9.3050	crosby	da57b8d4	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.5	_bin/oil.ovm-dbg
+0	27.3102	crosby	da57b8d4	/usr/bin/gcc	065c97c4	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	40.8160	crosby	da57b8d4	/usr/bin/gcc	065c97c4	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	4.9391	crosby	da57b8d4	/usr/bin/gcc	065c97c4	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	5.3839	crosby	da57b8d4	/usr/bin/gcc	065c97c4	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make

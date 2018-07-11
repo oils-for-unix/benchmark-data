@@ -1,0 +1,3 @@
+host_label	num_bytes	path
+crosby	1146248	_tmp/ovm-build/bin/gcc/bash
+crosby	117376	_tmp/ovm-build/bin/gcc/dash
