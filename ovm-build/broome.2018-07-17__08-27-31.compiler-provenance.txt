@@ -1,0 +1,2 @@
+2018-07-17__08-27-31 broome d6f91c68 /usr/bin/gcc 065c97c4
+2018-07-17__08-27-31 broome d6f91c68 /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae

@@ -1,0 +1,16 @@
+status,elapsed_secs,host_name,host_hash,shell_name,shell_hash,task_type,task_arg
+0,0.0409,broome,d6f91c68,bash,6f84604a,abuild,abuild-help
+0,25.9192,broome,d6f91c68,bash,6f84604a,cpython,cpython-configure
+0,5.9664,broome,d6f91c68,bash,6f84604a,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.0835,broome,d6f91c68,bash,6f84604a,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,3.0506,broome,d6f91c68,bash,6f84604a,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+0,0.0176,broome,d6f91c68,dash,3ca0b057,abuild,abuild-help
+0,25.9799,broome,d6f91c68,dash,3ca0b057,cpython,cpython-configure
+0,5.8451,broome,d6f91c68,dash,3ca0b057,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.0771,broome,d6f91c68,dash,3ca0b057,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,2.9335,broome,d6f91c68,dash,3ca0b057,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+0,0.9199,broome,d6f91c68,osh,df536089,abuild,abuild-help
+0,29.2140,broome,d6f91c68,osh,df536089,cpython,cpython-configure
+0,9.5088,broome,d6f91c68,osh,df536089,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.3762,broome,d6f91c68,osh,df536089,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,6.1390,broome,d6f91c68,osh,df536089,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46

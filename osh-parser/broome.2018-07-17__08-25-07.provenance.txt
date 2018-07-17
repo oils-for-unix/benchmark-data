@@ -1,0 +1,6 @@
+2018-07-17__08-25-07 broome d6f91c68 bash 6f84604a
+2018-07-17__08-25-07 broome d6f91c68 dash 3ca0b057
+2018-07-17__08-25-07 broome d6f91c68 mksh fc451c2d
+2018-07-17__08-25-07 broome d6f91c68 zsh c6846721
+2018-07-17__08-25-07 broome d6f91c68 bin/osh be4dbedb
+2018-07-17__08-25-07 broome d6f91c68 _tmp/oil-tar-test/oil-0.5.0/_bin/osh df536089
