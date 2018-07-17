@@ -1,0 +1,54 @@
+Name:	osh
+Umask:	0002
+State:	R (running)
+Tgid:	31699
+Ngid:	0
+Pid:	31699
+PPid:	31698
+TracerPid:	0
+Uid:	3672	3672	3672	3672
+Gid:	3672	3672	3672	3672
+FDSize:	64
+Groups:	27 1001 3672 
+NStgid:	31699
+NSpid:	31699
+NSpgid:	6861
+NSsid:	1692
+VmPeak:	   45012 kB
+VmSize:	   45012 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   32340 kB
+VmRSS:	   32340 kB
+RssAnon:	   28308 kB
+RssFile:	    4032 kB
+RssShmem:	       0 kB
+VmData:	   28468 kB
+VmStk:	     132 kB
+VmExe:	    1416 kB
+VmLib:	    3816 kB
+VmPTE:	     104 kB
+VmPMD:	      12 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+Threads:	1
+SigQ:	1/62898
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000001001000
+SigCgt:	0000000000000002
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	vulnerable
+Cpus_allowed:	ffffff
+Cpus_allowed_list:	0-23
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	2

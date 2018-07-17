@@ -1,0 +1,16 @@
+status,elapsed_secs,host_name,host_hash,shell_name,shell_hash,task_type,task_arg
+0,0.0416,spring,d6f91c68,bash,6f84604a,abuild,abuild-help
+0,25.7217,spring,d6f91c68,bash,6f84604a,cpython,cpython-configure
+0,5.9272,spring,d6f91c68,bash,6f84604a,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.0811,spring,d6f91c68,bash,6f84604a,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,3.0128,spring,d6f91c68,bash,6f84604a,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+0,0.0174,spring,d6f91c68,dash,3ca0b057,abuild,abuild-help
+0,25.8218,spring,d6f91c68,dash,3ca0b057,cpython,cpython-configure
+0,5.8263,spring,d6f91c68,dash,3ca0b057,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.0772,spring,d6f91c68,dash,3ca0b057,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,2.9073,spring,d6f91c68,dash,3ca0b057,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+0,0.9057,spring,d6f91c68,osh,df536089,abuild,abuild-help
+0,28.9114,spring,d6f91c68,osh,df536089,cpython,cpython-configure
+0,9.5022,spring,d6f91c68,osh,df536089,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.3836,spring,d6f91c68,osh,df536089,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,6.0096,spring,d6f91c68,osh,df536089,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46

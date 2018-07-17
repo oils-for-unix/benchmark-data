@@ -1,0 +1,54 @@
+Name:	bash
+Umask:	0002
+State:	S (sleeping)
+Tgid:	6989
+Ngid:	0
+Pid:	6989
+PPid:	6987
+TracerPid:	0
+Uid:	3672	3672	3672	3672
+Gid:	3672	3672	3672	3672
+FDSize:	64
+Groups:	27 1001 3672 
+NStgid:	6989
+NSpid:	6989
+NSpgid:	6861
+NSsid:	1692
+VmPeak:	   12740 kB
+VmSize:	   12740 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	    3100 kB
+VmRSS:	    3100 kB
+RssAnon:	     220 kB
+RssFile:	    2880 kB
+RssShmem:	       0 kB
+VmData:	     224 kB
+VmStk:	     132 kB
+VmExe:	    1024 kB
+VmLib:	    2204 kB
+VmPTE:	      48 kB
+VmPMD:	      12 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+Threads:	1
+SigQ:	1/62898
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000010000
+SigIgn:	0000000000000004
+SigCgt:	0000000000010002
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	vulnerable
+Cpus_allowed:	ffffff
+Cpus_allowed_list:	0-23
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	2
+nonvoluntary_ctxt_switches:	0
