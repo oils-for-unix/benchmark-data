@@ -1,0 +1,11 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	0.5843	lisa	b43270f9	/usr/bin/gcc	70069db5	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.6.pre1	configure
+0	22.2799	lisa	b43270f9	/usr/bin/gcc	70069db5	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.6.pre1	_bin/oil.ovm
+0	6.8570	lisa	b43270f9	/usr/bin/gcc	70069db5	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.6.pre1	_bin/oil.ovm-dbg
+0	0.5874	lisa	b43270f9	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.6.pre1	configure
+0	16.6155	lisa	b43270f9	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.6.pre1	_bin/oil.ovm
+0	5.5355	lisa	b43270f9	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.6.pre1	_bin/oil.ovm-dbg
+0	13.4500	lisa	b43270f9	/usr/bin/gcc	70069db5	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	25.1046	lisa	b43270f9	/usr/bin/gcc	70069db5	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	2.7226	lisa	b43270f9	/usr/bin/gcc	70069db5	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	2.9590	lisa	b43270f9	/usr/bin/gcc	70069db5	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make
