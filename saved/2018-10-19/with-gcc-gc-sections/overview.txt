@@ -1,0 +1,135 @@
+===== Summary of symbols.tsv (from _build/oil/ovm-opt):
+
+-- Rows: 2939
+
+By Size On Disk:
+                 symbols vmsize filesize
+1      [section .rodata] 108887   108887
+2     PyEval_EvalFrameEx  38980    39023
+3  fastlex_MatchOshToken  23314    23360
+4        [section .text]  14478    14478
+5           PyType_Ready   9500     9537
+6            convertitem   9309     9345
+7      [section .symtab]      0     8352
+8        PyString_Format   7061     7101
+9            _PyExc_Init   6143     6179
+10       __libc_csu_init   5549     5943
+11              slotdefs   5600     5633
+12     [section .dynsym]   5568     5568
+13         marshal_dumps   5528     5566
+14          marshal_dump   5505     5542
+15     [section .strtab]      0     5366
+16              w_object   4763     4796
+17              type_new   4605     4638
+18              r_object   4284     4317
+19     float_richcompare   4235     4277
+20               collect   4064     4096
+
+-- Total filesize: 1255976
+
+By Size in Virtual Memory:
+                 symbols vmsize filesize
+1      [section .rodata] 108887   108887
+2           method_cache  98304       37
+3     PyEval_EvalFrameEx  38980    39023
+4  fastlex_MatchOshToken  23314    23360
+5        [section .text]  14478    14478
+6           PyType_Ready   9500     9537
+7            convertitem   9309     9345
+8        PyString_Format   7061     7101
+9            _PyExc_Init   6143     6179
+10              slotdefs   5600     5633
+11     [section .dynsym]   5568     5568
+12       __libc_csu_init   5549     5943
+13         marshal_dumps   5528     5566
+14          marshal_dump   5505     5542
+15              w_object   4763     4796
+16              type_new   4605     4638
+17              r_object   4284     4317
+18     float_richcompare   4235     4277
+19     emacs_meta_keymap   4178      108
+20               collect   4064     4096
+
+-- Total vmsize: 1237892
+
+===== Summary of compileunits.tsv (from _build/oil/ovm-dbg):
+
+-- Rows: 120
+
+By Size On Disk:
+               compileunits vmsize filesize
+1         [section .rodata] 181341   181341
+2      Objects/typeobject.c 195993   174302
+3            Python/ceval.c  60993   106398
+4    Objects/stringobject.c  57698   105463
+5     Modules/posixmodule.c  40757    90765
+6      Objects/longobject.c  49943    86999
+7     Objects/classobject.c  36263    71544
+8      Objects/dictobject.c  35538    68882
+9      Objects/listobject.c  35649    67319
+10      ../native/fastlex.c  29471    67219
+11       Objects/abstract.c  30197    67171
+12     Objects/exceptions.c  35064    58346
+13     Python/bltinmodule.c  30209    58117
+14      Objects/setobject.c  29804    56884
+15          Python/import.c  28608    56773
+16     Objects/fileobject.c  25836    50108
+17   Modules/getbuildinfo.c    394    48894
+18    Objects/floatobject.c  23863    45511
+19         Objects/object.c  19423    43514
+20 [section .debug_aranges]      0    43184
+
+-- Total filesize: 2517216
+
+By Size in Virtual Memory:
+              compileunits vmsize filesize
+1     Objects/typeobject.c 195993   174302
+2        [section .rodata] 181341   181341
+3           Python/ceval.c  60993   106398
+4   Objects/stringobject.c  57698   105463
+5     Objects/longobject.c  49943    86999
+6    Modules/posixmodule.c  40757    90765
+7    Objects/classobject.c  36263    71544
+8     Objects/listobject.c  35649    67319
+9     Objects/dictobject.c  35538    68882
+10    Objects/exceptions.c  35064    58346
+11    Python/bltinmodule.c  30209    58117
+12      Objects/abstract.c  30197    67171
+13     Objects/setobject.c  29804    56884
+14     ../native/fastlex.c  29471    67219
+15         Python/import.c  28608    56773
+16    Objects/fileobject.c  25836    50108
+17        Python/getargs.c  24379    42576
+18   Objects/floatobject.c  23863    45511
+19 Objects/weakrefobject.c  19483    41593
+20        Objects/object.c  19423    43514
+
+-- Total vmsize: 1335476
+
+===== Other analysis:
+
+Big Docstrings (approximate, based on name)
+                          symbols vmsize filesize
+1                    type_get_doc    207      244
+2          instancemethod_get_doc    130      177
+3            wrapperdescr_get_doc     95      140
+4                 meth_get__doc__     95      135
+5                  getset_get_doc     95      134
+6                  member_get_doc     95      134
+7                     wrapper_doc     95      131
+8                  method_get_doc     95      119
+9                      module_doc      4      107
+10 cStringIO_module_documentation      1       55
+11         get_history_length_doc      1       47
+12         set_history_length_doc      1       47
+13          PyCapsule_Type__doc__      1       46
+14          statvfs_result__doc__      1       46
+15           struct_passwd__doc__      1       45
+16           struct_rusage__doc__      1       45
+17            IO_readlines__doc__      1       44
+18            O_writelines__doc__      1       44
+19            version_info__doc__      1       44
+20             IO_StringIO__doc__      1       43
+
+-- 78 symbols in 3952 bytes
+
