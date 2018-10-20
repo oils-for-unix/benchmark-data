@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+lisa	2763004	_tmp/ovm-build/bin/clang/oil.ovm
+lisa	4679612	_tmp/ovm-build/bin/clang/oil.ovm-dbg
+lisa	2861316	_tmp/ovm-build/bin/gcc/oil.ovm
+lisa	4271188	_tmp/ovm-build/bin/gcc/oil.ovm-dbg
