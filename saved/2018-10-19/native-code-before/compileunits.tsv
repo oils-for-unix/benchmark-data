@@ -1,0 +1,120 @@
+compileunits	vmsize	filesize
+Objects/typeobject.c	195994	166748
+[section .rodata]	174301	174301
+Python/ceval.c	61229	104954
+Objects/stringobject.c	61626	104750
+Modules/posixmodule.c	44157	94950
+Objects/longobject.c	52550	86628
+Objects/abstract.c	35680	69705
+Objects/classobject.c	36609	68352
+Objects/dictobject.c	35813	66819
+../native/fastlex.c	29471	66722
+Objects/listobject.c	35662	64990
+Python/bltinmodule.c	30307	57854
+Objects/exceptions.c	35064	56991
+Objects/setobject.c	30967	56143
+Python/import.c	29492	55804
+Objects/fileobject.c	26148	49061
+Modules/getbuildinfo.c	484	48931
+Objects/floatobject.c	26285	46716
+Objects/object.c	21951	44311
+Python/getargs.c	25242	42793
+Python/pythonrun.c	16855	42491
+Objects/weakrefobject.c	19694	39232
+Objects/descrobject.c	17891	38240
+Python/sysmodule.c	18144	36605
+Python/marshal.c	20069	35175
+Objects/intobject.c	17419	31085
+Modules/gcmodule.c	11823	30118
+Objects/frameobject.c	12946	27897
+Modules/zipimport.c	12819	27346
+Objects/tupleobject.c	11592	25635
+Python/_warnings.c	10545	24345
+Objects/funcobject.c	10463	23586
+Objects/codeobject.c	11504	22750
+Modules/timemodule.c	12687	22702
+Modules/readline.c	12463	21844
+Modules/signalmodule.c	10856	21002
+Modules/cStringIO.c	8695	20879
+Objects/bufferobject.c	8686	20642
+Python/codecs.c	7096	19089
+Python/modsupport.c	8496	18735
+Python/errors.c	7629	18533
+Objects/structseq.c	7191	17272
+Objects/genobject.c	4901	14795
+Objects/methodobject.c	4960	14084
+Python/pystate.c	4496	13687
+Objects/sliceobject.c	5074	13183
+Python/traceback.c	3943	12480
+Objects/enumobject.c	4674	12445
+Modules/resource.c	4616	11829
+../native/libc.c	3412	11505
+Modules/fcntlmodule.c	4422	11316
+Python/structmember.c	4446	11232
+Objects/bytes_methods.c	2936	10908
+Objects/iterobject.c	3498	10645
+Objects/capsule.c	2743	10038
+Objects/rangeobject.c	3169	9939
+Parser/myreadline.c	1090	9707
+[section .symtab]	0	9264
+Objects/moduleobject.c	2780	9262
+Objects/obmalloc.c	5786	9069
+Modules/errnomodule.c	3735	8814
+Modules/main.c	2697	8677
+Modules/_codecsmodule.c	2050	8644
+Modules/pwdmodule.c	2257	8403
+Python/random.c	1844	8345
+Objects/cellobject.c	2024	8291
+Objects/boolobject.c	1823	7822
+Objects/cobject.c	1715	7748
+Python/pyarena.c	1302	6970
+Modules/_weakref.c	1050	6790
+[section .debug_str]	0	6687
+[section .dynsym]	5856	5856
+[section .strtab]	0	5802
+Python/ovm_stub_pystrtod.c	282	5135
+[section .data]	3929	3929
+[section .debug_aranges]	0	3840
+[section .plt]	3792	3792
+Python/pyfpe.c	3178	3400
+Python/mystrtoul.c	1684	3033
+[ELF Headers]	0	2368
+[Unmapped]	0	2301
+[section .dynstr]	2187	2187
+Python/pyctype.c	1536	2063
+[section .got.plt]	1912	1912
+Python/mysnprintf.c	516	1529
+Python/pystrcmp.c	403	1265
+[section .bss]	1069	0
+/home/andy/git/oilshell/oil/_build/oil/module_init.c	368	872
+Python/pymath.c	148	699
+[LOAD [RX]]	617	617
+Python/getversion.c	360	603
+[section .gnu.version]	528	528
+[section .dynamic]	496	496
+Modules/ovm.c	74	474
+Python/getcompiler.c	51	474
+Python/getplatform.c	51	473
+[section .text]	466	466
+[section .gnu.hash]	348	348
+[section .shstrtab]	0	346
+[section .eh_frame]	308	308
+/home/andy/git/oilshell/oil/_build/oil/main_name.c	16	277
+[section .debug_abbrev]	0	251
+	0	175
+[section .gnu.version_r]	144	144
+[section .eh_frame_hdr]	76	76
+[section .comment]	0	53
+[section .note.gnu.build-id]	36	36
+[section .note.ABI-tag]	32	32
+[section .interp]	28	28
+[section .init]	26	26
+[section .rela.dyn]	24	24
+[section .rela.plt]	24	24
+[section .fini]	9	9
+[LOAD [RW]]	8	8
+[section .fini_array]	8	8
+[section .got]	8	8
+[section .init_array]	8	8
+[section .jcr]	8	8
+[section .plt.got]	8	8
