@@ -1,0 +1,135 @@
+===== Summary of symbols.tsv (from _build/oil/ovm-opt):
+
+-- Rows: 3215
+
+By Size On Disk:
+                         symbols vmsize filesize
+1              [section .rodata] 108799   108799
+2             PyEval_EvalFrameEx  38980    39023
+3          fastlex_MatchOshToken  23314    23360
+4                [section .text]  16306    16306
+5                   PyType_Ready   9500     9537
+6                    convertitem   9309     9345
+7              [section .symtab]      0     8400
+8                PyString_Format   7061     7101
+9                    _PyExc_Init   6143     6179
+10               __libc_csu_init   5597     6089
+11                      slotdefs   5600     5633
+12             [section .dynsym]   5616     5616
+13                 marshal_dumps   5528     5566
+14 PyMarshal_WriteObjectToString   5491     5545
+15                  marshal_dump   5505     5542
+16             [section .strtab]      0     5416
+17   PyMarshal_WriteObjectToFile   5292     5344
+18                      w_object   4763     4796
+19                      type_new   4605     4638
+20                      r_object   4284     4317
+
+-- Total filesize: 1342792
+
+By Size in Virtual Memory:
+                         symbols vmsize filesize
+1              [section .rodata] 108799   108799
+2                   method_cache  98304       37
+3             PyEval_EvalFrameEx  38980    39023
+4          fastlex_MatchOshToken  23314    23360
+5                [section .text]  16306    16306
+6                   PyType_Ready   9500     9537
+7                    convertitem   9309     9345
+8                PyString_Format   7061     7101
+9                    _PyExc_Init   6143     6179
+10             [section .dynsym]   5616     5616
+11                      slotdefs   5600     5633
+12               __libc_csu_init   5597     6089
+13                 marshal_dumps   5528     5566
+14                  marshal_dump   5505     5542
+15 PyMarshal_WriteObjectToString   5491     5545
+16   PyMarshal_WriteObjectToFile   5292     5344
+17                      w_object   4763     4796
+18                      type_new   4605     4638
+19                      r_object   4284     4317
+20             emacs_meta_keymap   4178      108
+
+-- Total vmsize: 1312596
+
+===== Summary of compileunits.tsv (from _build/oil/ovm-dbg):
+
+-- Rows: 119
+
+By Size On Disk:
+             compileunits vmsize filesize
+1       [section .rodata] 173549   173549
+2    Objects/typeobject.c 195994   166841
+3          Python/ceval.c  61229   104954
+4  Objects/stringobject.c  61626   104826
+5   Modules/posixmodule.c  43581    94448
+6    Objects/longobject.c  52550    86700
+7      Objects/abstract.c  35680    69705
+8   Objects/classobject.c  36609    68352
+9    Objects/dictobject.c  35813    66987
+10    ../native/fastlex.c  29471    66772
+11   Objects/listobject.c  35662    65111
+12   Python/bltinmodule.c  30307    57929
+13   Objects/exceptions.c  35064    57120
+14    Objects/setobject.c  30967    56259
+15        Python/import.c  29492    55897
+16   Objects/fileobject.c  26148    49133
+17 Modules/getbuildinfo.c    484    48931
+18  Objects/floatobject.c  26285    46790
+19       Objects/object.c  21951    44311
+20       Python/getargs.c  25242    42793
+
+-- Total filesize: 2464080
+
+By Size in Virtual Memory:
+             compileunits vmsize filesize
+1    Objects/typeobject.c 195994   166841
+2       [section .rodata] 173549   173549
+3  Objects/stringobject.c  61626   104826
+4          Python/ceval.c  61229   104954
+5    Objects/longobject.c  52550    86700
+6   Modules/posixmodule.c  43581    94448
+7   Objects/classobject.c  36609    68352
+8    Objects/dictobject.c  35813    66987
+9      Objects/abstract.c  35680    69705
+10   Objects/listobject.c  35662    65111
+11   Objects/exceptions.c  35064    57120
+12    Objects/setobject.c  30967    56259
+13   Python/bltinmodule.c  30307    57929
+14        Python/import.c  29492    55897
+15    ../native/fastlex.c  29471    66772
+16  Objects/floatobject.c  26285    46790
+17   Objects/fileobject.c  26148    49133
+18       Python/getargs.c  25242    42793
+19       Objects/object.c  21951    44311
+20       Python/marshal.c  20069    35246
+
+-- Total vmsize: 1381332
+
+===== Other analysis:
+
+Big Docstrings (approximate, based on name)
+                          symbols vmsize filesize
+1                    type_get_doc    207      244
+2          instancemethod_get_doc    130      177
+3            wrapperdescr_get_doc     95      140
+4                 meth_get__doc__     95      135
+5                  getset_get_doc     95      134
+6                  member_get_doc     95      134
+7                     wrapper_doc     95      131
+8                  method_get_doc     95      119
+9                      module_doc      4      107
+10 cStringIO_module_documentation      1       55
+11          _Py_capitalize__doc__      1       47
+12         get_history_length_doc      1       47
+13         set_history_length_doc      1       47
+14          PyCObject_Type__doc__      1       46
+15          PyCapsule_Type__doc__      1       46
+16          statvfs_result__doc__      1       46
+17            _Py_swapcase__doc__      1       45
+18           struct_passwd__doc__      1       45
+19           struct_rusage__doc__      1       45
+20            IO_readlines__doc__      1       44
+
+-- 91 symbols in 4524 bytes
+

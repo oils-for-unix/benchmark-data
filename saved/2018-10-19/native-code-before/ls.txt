@@ -1,0 +1,17 @@
+total 5532
+-rw-rw-r--  1 andy andy     102 Oct 14 12:44 all-deps-c.txt
+-rw-rw-r--  1 andy andy    5147 Oct 16 02:48 all-deps-py.txt
+-rw-rw-r--  1 andy andy     571 Oct 14 12:44 app-deps-c.txt
+-rw-rw-r--  1 andy andy    9212 Oct 14 12:44 app-deps-cpython.txt
+drwxrwxr-x 10 andy andy    4096 Oct 14 12:04 bytecode-opy
+-rw-rw-r--  1 andy andy   15153 Oct 19 12:49 bytecode-opy-manifest.txt
+-rw-rw-r--  1 andy andy 1748064 Oct 19 12:49 bytecode-opy.zip
+-rw-rw-r--  1 andy andy     138 Oct 14 12:44 c-module-srcs.txt
+-rw-rw-r--  1 andy andy     142 Oct 14 12:04 main_name.c
+-rw-rw-r--  1 andy andy    2418 Oct 14 12:44 module_init.c
+-rw-rw-r--  1 andy andy    9586 Oct 16 02:48 opy-app-deps.txt
+-rwxrwxr-x  1 andy andy 2461624 Oct 19 18:44 ovm-dbg
+-rwxrwxr-x  1 andy andy 1363048 Oct 19 18:44 ovm-opt
+-rw-rw-r--  1 andy andy      92 Oct 14 12:44 ovm.d
+-rw-rw-r--  1 andy andy    4606 Oct 16 02:48 py-to-compile.txt
+-rw-rw-r--  1 andy andy      17 Oct 19 12:49 pyc-version.txt
