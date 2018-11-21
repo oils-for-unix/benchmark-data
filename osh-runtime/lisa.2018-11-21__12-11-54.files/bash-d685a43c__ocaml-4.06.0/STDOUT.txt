@@ -1,0 +1,84 @@
+Configuring OCaml version 4.06.0
+Configuring for host x86_64-unknown-linux-gnu ...
+Configuring for target x86_64-unknown-linux-gnu ...
+Using compiler gcc.
+Compiler family and version: gcc-5-4.
+The C compiler is ISO C99 compliant.
+Checking the sizes of integers and pointers...
+Wow! A 64 bit architecture!
+This is a little-endian architecture.
+Doubles can be word-aligned.
+64-bit integers can be word-aligned.
+Adding -fno-tree-vrp option to work around PR#7452
+ranlib found
+#! appears to work in shell scripts.
+POSIX signal handling found.
+expm1(), log1p(), hypot(), copysign() found.
+getrusage() found.
+times() found.
+secure_getenv() found.
+termcap functions found (with libraries '-lcurses')
+You have BSD sockets.
+socklen_t is defined in <sys/socket.h>
+inet_aton() found.
+IPv6 is supported.
+stdint.h found.
+unistd.h found.
+off_t is defined in <sys/types.h>
+dirent.h found.
+rewinddir() found.
+lockf() found.
+mkfifo() found.
+getcwd() found.
+getpriority() found.
+utime() found.
+utimes() found.
+dup2() found.
+fchmod() found.
+truncate() found.
+sys/select.h found.
+select() found.
+nanosleep() found.
+symlink() found.
+waitpid() found.
+wait4() found.
+getgroups() found.
+setgroups() found.
+initgroups() found.
+POSIX termios found.
+Asynchronous I/O are supported.
+setitimer() found.
+gethostname() found.
+uname() found.
+gettimeofday() found.
+mktime() found.
+setsid() found.
+putenv() found.
+setlocale() and <locale.h> found.
+dlopen() found in -ldl.
+Dynamic loading of shared libraries is supported.
+mmap() found.
+pwrite() found
+stat() supports nanosecond precision.
+gethostbyname_r() found (with 6 arguments).
+gethostbyaddr_r() found (with 8 arguments).
+mkstemp() found
+nice() found
+dup3() found
+pipe2() found
+accept4() found
+getauxval() found.
+sys/shm.h found.
+execvpe() found.
+Replay debugger supported.
+System stack overflow can be detected.
+POSIX threads library supported.
+Options for linking with POSIX threads: -lpthread
+sigwait() found
+Bytecode threads library supported.
+X11 works
+Options for compiling for X11: 
+Options for linking with X11: -lX11
+[WARNING] BFD library not found, 'objinfo' will be unable to display info  on .cmxs files.
+Assembler supports CFI
+mmap supports huge pages
