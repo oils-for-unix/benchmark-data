@@ -1,0 +1,16 @@
+status,elapsed_secs,host_name,host_hash,shell_name,shell_hash,task_type,task_arg
+0,0.0605,flanders,b43270f9,bash,d685a43c,abuild,abuild-help
+0,30.0161,flanders,b43270f9,bash,d685a43c,cpython,cpython-configure
+0,6.4562,flanders,b43270f9,bash,d685a43c,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.1046,flanders,b43270f9,bash,d685a43c,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,3.3320,flanders,b43270f9,bash,d685a43c,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+0,0.0265,flanders,b43270f9,dash,2887d9e6,abuild,abuild-help
+0,30.0783,flanders,b43270f9,dash,2887d9e6,cpython,cpython-configure
+0,6.3117,flanders,b43270f9,dash,2887d9e6,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.0785,flanders,b43270f9,dash,2887d9e6,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,3.1919,flanders,b43270f9,dash,2887d9e6,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46
+0,0.9815,flanders,b43270f9,osh,b270c3e5,abuild,abuild-help
+0,30.8002,flanders,b43270f9,osh,b270c3e5,cpython,cpython-configure
+0,9.8136,flanders,b43270f9,osh,b270c3e5,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/ocaml-4.06.0
+0,0.4285,flanders,b43270f9,osh,b270c3e5,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+0,6.7259,flanders,b43270f9,osh,b270c3e5,configure,/home/andy/git/oilshell/oil/_deps/osh-runtime/yash-2.46

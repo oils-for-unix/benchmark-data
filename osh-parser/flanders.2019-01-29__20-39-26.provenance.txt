@@ -1,0 +1,6 @@
+2019-01-29__20-39-26 flanders b43270f9 bash d685a43c
+2019-01-29__20-39-26 flanders b43270f9 dash 2887d9e6
+2019-01-29__20-39-26 flanders b43270f9 mksh ae7d165b
+2019-01-29__20-39-26 flanders b43270f9 zsh ca7b4198
+2019-01-29__20-39-26 flanders b43270f9 bin/osh 57d40762
+2019-01-29__20-39-26 flanders b43270f9 _tmp/oil-tar-test/oil-0.6.pre13/_bin/osh b270c3e5
