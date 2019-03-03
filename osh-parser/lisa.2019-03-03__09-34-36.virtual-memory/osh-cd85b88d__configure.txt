@@ -1,0 +1,53 @@
+Name:	oil.py
+Umask:	0002
+State:	R (running)
+Tgid:	26870
+Ngid:	0
+Pid:	26870
+PPid:	26869
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	64
+Groups:	4 24 27 30 46 113 128 1000 
+NStgid:	26870
+NSpid:	26870
+NSpgid:	1508
+NSsid:	11316
+VmPeak:	   39872 kB
+VmSize:	   39856 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	    9252 kB
+VmRSS:	    9252 kB
+RssAnon:	    4976 kB
+RssFile:	    4276 kB
+RssShmem:	       0 kB
+VmData:	    5536 kB
+VmStk:	     132 kB
+VmExe:	    2936 kB
+VmLib:	    3708 kB
+VmPTE:	      92 kB
+VmPMD:	      12 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+Threads:	1
+SigQ:	1/95989
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000001001002
+SigCgt:	0000000188000000
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Cpus_allowed:	ff
+Cpus_allowed_list:	0-7
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	3
+nonvoluntary_ctxt_switches:	1
