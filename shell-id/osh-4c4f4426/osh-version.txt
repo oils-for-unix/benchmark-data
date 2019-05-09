@@ -1,0 +1,9 @@
+Oil version 0.6.pre19
+Release Date: 2019-05-09 05:34:31+00:00
+Arch: x86_64
+OS: Linux
+Platform: #46~16.04.1-Ubuntu SMP Thu May 3 10:06:43 UTC 2018
+Compiler: GCC 5.4.0 20160609
+Interpreter: OVM
+Interpreter version: 2.7.13
+Bytecode: bytecode-opy.zip
