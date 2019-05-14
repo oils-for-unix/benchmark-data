@@ -1,0 +1,6 @@
+2019-05-08__22-43-47 lisa b43270f9 bash d685a43c
+2019-05-08__22-43-47 lisa b43270f9 dash 2887d9e6
+2019-05-08__22-43-47 lisa b43270f9 mksh ae7d165b
+2019-05-08__22-43-47 lisa b43270f9 zsh ca7b4198
+2019-05-08__22-43-47 lisa b43270f9 bin/osh be0ea457
+2019-05-08__22-43-47 lisa b43270f9 _tmp/oil-tar-test/oil-0.6.pre19/_bin/osh 4c4f4426
