@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+flanders	3046849	_tmp/ovm-build/bin/clang/oil.ovm
+flanders	4744233	_tmp/ovm-build/bin/clang/oil.ovm-dbg
+flanders	3108377	_tmp/ovm-build/bin/gcc/oil.ovm
+flanders	4491593	_tmp/ovm-build/bin/gcc/oil.ovm-dbg
