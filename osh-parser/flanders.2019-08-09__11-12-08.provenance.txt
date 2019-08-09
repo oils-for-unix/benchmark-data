@@ -1,0 +1,6 @@
+2019-08-09__11-12-08 flanders b43270f9 bash d685a43c
+2019-08-09__11-12-08 flanders b43270f9 dash 2887d9e6
+2019-08-09__11-12-08 flanders b43270f9 mksh ae7d165b
+2019-08-09__11-12-08 flanders b43270f9 zsh ca7b4198
+2019-08-09__11-12-08 flanders b43270f9 bin/osh 8e204e52
+2019-08-09__11-12-08 flanders b43270f9 /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.7.pre3/_bin/osh 6352b3d1
