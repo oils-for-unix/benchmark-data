@@ -1,0 +1,2 @@
+4.15.0-70-generic
+#79~16.04.1-Ubuntu SMP Tue Nov 12 14:01:10 UTC 2019
