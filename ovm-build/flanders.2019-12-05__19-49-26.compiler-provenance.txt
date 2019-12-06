@@ -1,0 +1,2 @@
+2019-12-05__19-49-26 flanders 3492acc1 /usr/bin/gcc 816edb3d
+2019-12-05__19-49-26 flanders 3492acc1 /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae
