@@ -2,7 +2,7 @@ Oil version 0.7.pre10
 Release Date: -
 Arch: x86_64
 OS: Linux
-Platform: #46~16.04.1-Ubuntu SMP Thu May 3 10:06:43 UTC 2018
+Platform: #81~16.04.1-Ubuntu SMP Tue Nov 26 16:34:21 UTC 2019
 Compiler: GCC 5.4.0 20160609
 Interpreter: CPython
 Interpreter version: 2.7.12
