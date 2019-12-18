@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+flanders	3494248	_tmp/ovm-build/bin/clang/osh_parse.dbg
+flanders	3224072	_tmp/ovm-build/bin/gcc/osh_parse.dbg
+flanders	577624	_tmp/ovm-build/bin/clang/osh_parse.opt.stripped
+flanders	487584	_tmp/ovm-build/bin/gcc/osh_parse.opt.stripped

@@ -1,0 +1,15 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	1.7350	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.7.pre10	configure
+0	67.5510	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.7.pre10	_bin/oil.ovm
+0	23.5985	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.7.pre10	_bin/oil.ovm-dbg
+0	13.7623	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.7.pre10	_bin/osh_parse.dbg
+0	32.4827	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.7.pre10	_bin/osh_parse.opt.stripped
+0	1.7615	flanders	f94966d0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.7.pre10	configure
+0	48.8218	flanders	f94966d0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.7.pre10	_bin/oil.ovm
+0	21.3967	flanders	f94966d0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.7.pre10	_bin/oil.ovm-dbg
+0	9.8535	flanders	f94966d0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.7.pre10	_bin/osh_parse.dbg
+0	28.9184	flanders	f94966d0	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.7.pre10	_bin/osh_parse.opt.stripped
+0	34.4741	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	71.0915	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	5.7111	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	9.0971	flanders	f94966d0	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make
