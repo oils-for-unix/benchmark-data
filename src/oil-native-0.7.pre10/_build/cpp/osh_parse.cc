@@ -167,93 +167,91 @@ Str* str159 = new Str("<LineLexer at pos %d of line %r (id = %d)>");
 Str* str160 = new Str("");
 Str* str161 = new Str("");
 Str* str162 = new Str("");
-Str* str163 = new Str("Unexpected token in slice: %r");
+Str* str163 = new Str("Expected : or } in slice");
 Str* str164 = new Str("/");
 Str* str165 = new Str("Pattern in ${x/pat/replace} must not be empty");
 Str* str166 = new Str("Expected } after replacement string, got %s");
-Str* str167 = new Str("Expected } after pat sub, got %s");
-Str* str168 = new Str("Expected ] after subscript, got %r");
-Str* str169 = new Str("Unexpected token %r (after %s)");
-Str* str170 = new Str("VTest");
-Str* str171 = new Str("Unexpected token %r (after %s)");
-Str* str172 = new Str("VOp1");
-Str* str173 = new Str("Unexpected token after slice: %r");
-Str* str174 = new Str("Unexpected token %r (%s)");
-Str* str175 = new Str("VOp2");
-Str* str176 = new Str("Unexpected token %r (%s)");
-Str* str177 = new Str("VOp3");
-Str* str178 = new Str("Expected } after var sub, got %r");
-Str* str179 = new Str("Expected } after length expression, got %r");
-Str* str180 = new Str("Unexpected token %r");
-Str* str181 = new Str("\\");
-Str* str182 = new Str("Strings with backslashes should look like r'\\n' or c'\\n'");
-Str* str183 = new Str("Unexpected EOF in single-quoted string that began here");
-Str* str184 = new Str("Unexpected EOF reading extended glob that began here");
-Str* str185 = new Str("Unexpected EOF reading double-quoted string that began here");
-Str* str186 = new Str("Unexpected EOF while looking for closing backtick");
-Str* str187 = new Str("");
-Str* str188 = new Str("Invalid proc name %r");
-Str* str189 = new Str("Expected first ) to end arith sub, got %r");
-Str* str190 = new Str("Expected second ) to end arith sub, got %r");
-Str* str191 = new Str("Expected first ) to end arith statement, got %r");
-Str* str192 = new Str("Expected second ) to end arith statement, got %r");
-Str* str193 = new Str("Expected ) to end for loop expression, got %r");
-Str* str194 = new Str("Expected ( after =, got %s");
-Str* str195 = new Str("Unexpected token in array literal: %r");
-Str* str196 = new Str("Expected associative array pair");
-Str* str197 = new Str("Unexpected token after array literal");
-Str* str198 = new Str("Unexpected token after array splice");
-Str* str199 = new Str("Word has unbalanced { }.  Maybe add a space or quote it like \\{");
-Str* str200 = new Str("Unexpected token in arithmetic context");
-Str* str201 = new Str("Unhandled: %s (%s)");
-Str* str202 = new Str("Invalid lex state %s");
-Str* str203 = new Str("Token can't be used in prefix position");
-Str* str204 = new Str("Token can't be used in infix position");
-Str* str205 = new Str("Left-hand side of this assignment is invalid");
-Str* str206 = new Str("Parser expected %s, got %s");
-Str* str207 = new Str("Unexpected end of input");
-Str* str208 = new Str("Invalid token %s");
-Str* str209 = new Str("This value can't be assigned to");
-Str* str210 = new Str("The [ operarator doesn't apply to this expression");
-Str* str211 = new Str("Expected ]]");
-Str* str212 = new Str("Unexpected trailing word %s");
-Str* str213 = new Str("Invalid argument to unary operator");
-Str* str214 = new Str("Expected ), got %s");
-Str* str215 = new Str("Unexpected token in boolean expression");
-Str* str216 = new Str("  ");
-Str* str217 = new Str("-");
-Str* str218 = new Str("%s%d %s %s\n");
-Str* str219 = new Str("");
-Str* str220 = new Str(" (%s)");
-Str* str221 = new Str("Unexpected token in expression mode%s");
-Str* str222 = new Str("Syntax error in expression");
-Str* str223 = new Str("alnum");
-Str* str224 = new Str("cntrl");
-Str* str225 = new Str("lower");
-Str* str226 = new Str("space");
-Str* str227 = new Str("alpha");
-Str* str228 = new Str("digit");
-Str* str229 = new Str("print");
-Str* str230 = new Str("upper");
-Str* str231 = new Str("blank");
-Str* str232 = new Str("graph");
-Str* str233 = new Str("punct");
-Str* str234 = new Str("xdigit");
-Str* str235 = new Str("Range start/end shouldn't have more than one character");
-Str* str236 = new Str("Write singleton tuples with tup(), not a trailing comma");
-Str* str237 = new Str("testlist_comp");
+Str* str167 = new Str("Expected } or / to close pattern");
+Str* str168 = new Str("Expected ] to close subscript");
+Str* str169 = new Str("Expected } to close ${");
+Str* str170 = new Str("Expected } to close ${");
+Str* str171 = new Str("Expected } to close ${");
+Str* str172 = new Str("Unexpected token in ${} (%s)");
+Str* str173 = new Str("VOp2");
+Str* str174 = new Str("Unexpected token in ${} (%s)");
+Str* str175 = new Str("VOp3");
+Str* str176 = new Str("Expected } to close ${");
+Str* str177 = new Str("Expected } after length expression");
+Str* str178 = new Str("Unexpected token in ${}");
+Str* str179 = new Str("\\");
+Str* str180 = new Str("Strings with backslashes should look like r'\\n' or c'\\n'");
+Str* str181 = new Str("Unexpected EOF in single-quoted string that began here");
+Str* str182 = new Str("Unexpected EOF reading extended glob that began here");
+Str* str183 = new Str("Unexpected EOF reading double-quoted string that began here");
+Str* str184 = new Str("Unexpected EOF while looking for closing backtick");
+Str* str185 = new Str("");
+Str* str186 = new Str("Invalid proc name %s");
+Str* str187 = new Str("Expected first ) to end arith sub");
+Str* str188 = new Str("Expected second ) to end arith sub");
+Str* str189 = new Str("Expected first ) to end arith statement");
+Str* str190 = new Str("Expected second ) to end arith statement");
+Str* str191 = new Str("Expected ) to end for loop expression");
+Str* str192 = new Str("Expected ( after =");
+Str* str193 = new Str("Unexpected token in array literal");
+Str* str194 = new Str("Expected associative array pair");
+Str* str195 = new Str("Unexpected token after array literal");
+Str* str196 = new Str("Unexpected token after array splice");
+Str* str197 = new Str("Word has unbalanced { }.  Maybe add a space or quote it like \\{");
+Str* str198 = new Str("Unexpected token in arithmetic context");
+Str* str199 = new Str("Unhandled: %s (%s)");
+Str* str200 = new Str("Invalid lex state %s");
+Str* str201 = new Str("Token can't be used in prefix position");
+Str* str202 = new Str("Token can't be used in infix position");
+Str* str203 = new Str("Left-hand side of this assignment is invalid");
+Str* str204 = new Str("Parser expected %s, got %s");
+Str* str205 = new Str("Unexpected end of input");
+Str* str206 = new Str("Invalid token %s");
+Str* str207 = new Str("This value can't be assigned to");
+Str* str208 = new Str("The [ operarator doesn't apply to this expression");
+Str* str209 = new Str("Expected ]]");
+Str* str210 = new Str("Unexpected trailing word %s");
+Str* str211 = new Str("Invalid argument to unary operator");
+Str* str212 = new Str("Expected ), got %s");
+Str* str213 = new Str("Unexpected token in boolean expression");
+Str* str214 = new Str("  ");
+Str* str215 = new Str("-");
+Str* str216 = new Str("%s%d %s %s\n");
+Str* str217 = new Str("");
+Str* str218 = new Str(" (%s)");
+Str* str219 = new Str("Unexpected token in expression mode%s");
+Str* str220 = new Str("Syntax error in expression");
+Str* str221 = new Str("alnum");
+Str* str222 = new Str("cntrl");
+Str* str223 = new Str("lower");
+Str* str224 = new Str("space");
+Str* str225 = new Str("alpha");
+Str* str226 = new Str("digit");
+Str* str227 = new Str("print");
+Str* str228 = new Str("upper");
+Str* str229 = new Str("blank");
+Str* str230 = new Str("graph");
+Str* str231 = new Str("punct");
+Str* str232 = new Str("xdigit");
+Str* str233 = new Str("Range start/end shouldn't have more than one character");
+Str* str234 = new Str("Write singleton tuples with tup(), not a trailing comma");
+Str* str235 = new Str("testlist_comp");
+Str* str236 = new Str("PNode type %d (%s) wasn't handled");
+Str* str237 = new Str("Can't assign to this expression");
 Str* str238 = new Str("PNode type %d (%s) wasn't handled");
-Str* str239 = new Str("Can't assign to this expression");
-Str* str240 = new Str("PNode type %d (%s) wasn't handled");
-Str* str241 = new Str("TODO");
-Str* str242 = new Str("dot");
-Str* str243 = new Str("Can't negate this symbol");
-Str* str244 = new Str("%r isn't a character class");
-Str* str245 = new Str("%r isn't a character class");
-Str* str246 = new Str("%start");
-Str* str247 = new Str("%end");
-Str* str248 = new Str("dot");
-Str* str249 = new Str("Unexpected token %r in regex");
+Str* str239 = new Str("TODO");
+Str* str240 = new Str("dot");
+Str* str241 = new Str("Can't negate this symbol");
+Str* str242 = new Str("%r isn't a character class");
+Str* str243 = new Str("%r isn't a character class");
+Str* str244 = new Str("%start");
+Str* str245 = new Str("%end");
+Str* str246 = new Str("dot");
+Str* str247 = new Str("Unexpected token %r in regex");
 
 namespace runtime {  // forward declare
 
@@ -1358,10 +1356,9 @@ class WordParser : public WordEmitter {
   id_kind_asdl::Kind_t token_kind;
   int token_type;
 };
-Str* fmt0(Str* a0) {
+Str* fmt0() {
   gBuf.reset();
-  gBuf.write_const("Unexpected token in slice: ", 27);
-  gBuf.format_r(a0);
+  gBuf.write_const("Expected : or } in slice", 24);
   return gBuf.getvalue();
 }
 
@@ -1378,85 +1375,67 @@ Str* fmt3(Str* a0) {
   return gBuf.getvalue();
 }
 
-Str* fmt4(Str* a0) {
+Str* fmt4() {
   gBuf.reset();
-  gBuf.write_const("Expected } after pat sub, got ", 30);
+  gBuf.write_const("Expected } or / to close pattern", 32);
+  return gBuf.getvalue();
+}
+
+Str* fmt5() {
+  gBuf.reset();
+  gBuf.write_const("Expected ] to close subscript", 29);
+  return gBuf.getvalue();
+}
+
+Str* fmt6() {
+  gBuf.reset();
+  gBuf.write_const("Expected } to close ${", 22);
+  return gBuf.getvalue();
+}
+
+Str* fmt7() {
+  gBuf.reset();
+  gBuf.write_const("Expected } to close ${", 22);
+  return gBuf.getvalue();
+}
+
+Str* fmt8() {
+  gBuf.reset();
+  gBuf.write_const("Expected } to close ${", 22);
+  return gBuf.getvalue();
+}
+
+Str* fmt9(Str* a0) {
+  gBuf.reset();
+  gBuf.write_const("Unexpected token in ${} (", 25);
   gBuf.format_s(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt5(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected ] after subscript, got ", 32);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt6(Str* a0, Str* a1) {
-  gBuf.reset();
-  gBuf.write_const("Unexpected token ", 17);
-  gBuf.format_r(a0);
-  gBuf.write_const(" (after ", 8);
-  gBuf.format_s(a1);
   gBuf.write_const(")", 1);
   return gBuf.getvalue();
 }
 
-Str* fmt7(Str* a0, Str* a1) {
+Str* fmt10(Str* a0) {
   gBuf.reset();
-  gBuf.write_const("Unexpected token ", 17);
-  gBuf.format_r(a0);
-  gBuf.write_const(" (after ", 8);
-  gBuf.format_s(a1);
+  gBuf.write_const("Unexpected token in ${} (", 25);
+  gBuf.format_s(a0);
   gBuf.write_const(")", 1);
   return gBuf.getvalue();
 }
 
-Str* fmt8(Str* a0) {
+Str* fmt11() {
   gBuf.reset();
-  gBuf.write_const("Unexpected token after slice: ", 30);
-  gBuf.format_r(a0);
+  gBuf.write_const("Expected } to close ${", 22);
   return gBuf.getvalue();
 }
 
-Str* fmt9(Str* a0, Str* a1) {
+Str* fmt12() {
   gBuf.reset();
-  gBuf.write_const("Unexpected token ", 17);
-  gBuf.format_r(a0);
-  gBuf.write_const(" (", 2);
-  gBuf.format_s(a1);
-  gBuf.write_const(")", 1);
+  gBuf.write_const("Expected } after length expression", 34);
   return gBuf.getvalue();
 }
 
-Str* fmt10(Str* a0, Str* a1) {
+Str* fmt13() {
   gBuf.reset();
-  gBuf.write_const("Unexpected token ", 17);
-  gBuf.format_r(a0);
-  gBuf.write_const(" (", 2);
-  gBuf.format_s(a1);
-  gBuf.write_const(")", 1);
-  return gBuf.getvalue();
-}
-
-Str* fmt11(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected } after var sub, got ", 30);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt12(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected } after length expression, got ", 40);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt13(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Unexpected token ", 17);
-  gBuf.format_r(a0);
+  gBuf.write_const("Unexpected token in ${}", 23);
   return gBuf.getvalue();
 }
 
@@ -1493,56 +1472,49 @@ Str* fmt18() {
 Str* fmt24(Str* a0) {
   gBuf.reset();
   gBuf.write_const("Invalid proc name ", 18);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt25(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected first ) to end arith sub, got ", 39);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt26(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected second ) to end arith sub, got ", 40);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt27(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected first ) to end arith statement, got ", 45);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt28(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected second ) to end arith statement, got ", 46);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt29(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected ) to end for loop expression, got ", 43);
-  gBuf.format_r(a0);
-  return gBuf.getvalue();
-}
-
-Str* fmt30(Str* a0) {
-  gBuf.reset();
-  gBuf.write_const("Expected ( after =, got ", 24);
   gBuf.format_s(a0);
   return gBuf.getvalue();
 }
 
-Str* fmt31(Str* a0) {
+Str* fmt25() {
   gBuf.reset();
-  gBuf.write_const("Unexpected token in array literal: ", 35);
-  gBuf.format_r(a0);
+  gBuf.write_const("Expected first ) to end arith sub", 33);
+  return gBuf.getvalue();
+}
+
+Str* fmt26() {
+  gBuf.reset();
+  gBuf.write_const("Expected second ) to end arith sub", 34);
+  return gBuf.getvalue();
+}
+
+Str* fmt27() {
+  gBuf.reset();
+  gBuf.write_const("Expected first ) to end arith statement", 39);
+  return gBuf.getvalue();
+}
+
+Str* fmt28() {
+  gBuf.reset();
+  gBuf.write_const("Expected second ) to end arith statement", 40);
+  return gBuf.getvalue();
+}
+
+Str* fmt29() {
+  gBuf.reset();
+  gBuf.write_const("Expected ) to end for loop expression", 37);
+  return gBuf.getvalue();
+}
+
+Str* fmt30() {
+  gBuf.reset();
+  gBuf.write_const("Expected ( after =", 18);
+  return gBuf.getvalue();
+}
+
+Str* fmt31() {
+  gBuf.reset();
+  gBuf.write_const("Unexpected token in array literal", 33);
   return gBuf.getvalue();
 }
 
@@ -5090,6 +5062,8 @@ syntax_asdl::word_part__BracedRange* _RangeParser::Parse() {
   syntax_asdl::word_part__BracedRange* part;
   int start;
   int end;
+  int start_num;
+  int end_num;
   bool upper1;
   bool upper2;
 
@@ -5123,7 +5097,9 @@ syntax_asdl::word_part__BracedRange* _RangeParser::Parse() {
   else {
     if (this->token_type == Id::Range_Char) {
       part = this->_ParseRange(this->token_type);
-      if (part->start < part->end) {
+      start_num = ord(part->start->index(0));
+      end_num = ord(part->end->index(0));
+      if (start_num < end_num) {
         if (part->step == NO_STEP) {
           part->step = 1;
         }
@@ -5132,7 +5108,7 @@ syntax_asdl::word_part__BracedRange* _RangeParser::Parse() {
         }
       }
       else {
-        if (part->start > part->end) {
+        if (start_num > end_num) {
           if (part->step == NO_STEP) {
             part->step = -1;
           }
@@ -6718,7 +6694,7 @@ syntax_asdl::suffix_op__Slice* WordParser::_ReadSliceVarOp() {
     length = this->_ReadArithExpr();
     return new suffix_op::Slice(begin, length);
   }
-  p_die(fmt0(this->cur_token->val), this->cur_token);
+  p_die(fmt0(), this->cur_token);
 }
 
 syntax_asdl::suffix_op__PatSub* WordParser::_ReadPatSubVarOp(types_asdl::lex_mode_t lex_mode) {
@@ -6767,7 +6743,7 @@ syntax_asdl::suffix_op__PatSub* WordParser::_ReadPatSubVarOp(types_asdl::lex_mod
     }
     return new suffix_op::PatSub(pat, replace, replace_mode);
   }
-  p_die(fmt4(ui::PrettyToken(this->cur_token, this->arena)), this->cur_token);
+  p_die(fmt4(), this->cur_token);
 }
 
 syntax_asdl::bracket_op_t* WordParser::_ReadSubscript() {
@@ -6789,7 +6765,7 @@ syntax_asdl::bracket_op_t* WordParser::_ReadSubscript() {
     op = new bracket_op::ArrayIndex(anode);
   }
   if (this->token_type != Id::Arith_RBracket) {
-    p_die(fmt5(this->cur_token->val), this->cur_token);
+    p_die(fmt5(), this->cur_token);
   }
   this->_Next(lex_mode_e::VSub_2);
   this->_Peek();
@@ -6840,7 +6816,7 @@ syntax_asdl::braced_var_sub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t ar
     op_id = this->token_type;
     arg_word = this->_ReadVarOpArg(arg_lex_mode);
     if (this->token_type != Id::Right_DollarBrace) {
-      p_die(fmt6(this->cur_token->val, str170), this->cur_token);
+      p_die(fmt6(), this->cur_token);
     }
     part->suffix_op = new suffix_op::Unary(op_id, arg_word);
   }
@@ -6856,7 +6832,7 @@ syntax_asdl::braced_var_sub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t ar
         op_id = this->token_type;
         arg_word = this->_ReadVarOpArg(arg_lex_mode);
         if (this->token_type != Id::Right_DollarBrace) {
-          p_die(fmt7(this->cur_token->val, str172), this->cur_token);
+          p_die(fmt7(), this->cur_token);
         }
         part->suffix_op = new suffix_op::Unary(op_id, arg_word);
       }
@@ -6873,11 +6849,11 @@ syntax_asdl::braced_var_sub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t ar
             if (this->token_type == Id::VOp2_Colon) {
               part->suffix_op = this->_ReadSliceVarOp();
               if (this->token_type != Id::Arith_RBrace) {
-                p_die(fmt8(this->cur_token->val), this->cur_token);
+                p_die(fmt8(), this->cur_token);
               }
             }
             else {
-              p_die(fmt9(this->cur_token->val, str175), this->cur_token);
+              p_die(fmt9(str173), this->cur_token);
             }
           }
         }
@@ -6890,7 +6866,7 @@ syntax_asdl::braced_var_sub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t ar
               this->_Peek();
             }
             else {
-              p_die(fmt10(this->cur_token->val, str177), this->cur_token);
+              p_die(fmt10(str175), this->cur_token);
             }
           }
         }
@@ -6898,7 +6874,7 @@ syntax_asdl::braced_var_sub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t ar
     }
   }
   if ((this->token_type != Id::Right_DollarBrace && this->token_type != Id::Arith_RBrace)) {
-    p_die(fmt11(this->cur_token->val), this->cur_token);
+    p_die(fmt11(), this->cur_token);
   }
   return part;
 }
@@ -6935,7 +6911,7 @@ syntax_asdl::braced_var_sub* WordParser::_ReadBracedVarSub(syntax_asdl::Token* l
       part = this->_ParseVarOf();
       this->_Peek();
       if (this->token_type != Id::Right_DollarBrace) {
-        p_die(fmt12(this->cur_token->val), this->cur_token);
+        p_die(fmt12(), this->cur_token);
       }
       part->prefix_op = new speck(ty, this->cur_token->span_id);
     }
@@ -6960,7 +6936,7 @@ syntax_asdl::braced_var_sub* WordParser::_ReadBracedVarSub(syntax_asdl::Token* l
         part = this->_ParseVarExpr(arg_lex_mode);
       }
       else {
-        p_die(fmt13(this->cur_token->val), this->cur_token);
+        p_die(fmt13(), this->cur_token);
       }
     }
   }
@@ -6994,7 +6970,7 @@ syntax_asdl::Token* WordParser::ReadSingleQuoted(types_asdl::lex_mode_t lex_mode
     this->_Peek();
     if ((this->token_kind == Kind::Lit || this->token_kind == Kind::Char)) {
       tok = this->cur_token;
-      if (no_backslashes and str_contains(tok->val, str181)) {
+      if (no_backslashes and str_contains(tok->val, str179)) {
         p_die(fmt14(), tok);
       }
       tokens->append(tok);
@@ -7249,7 +7225,7 @@ syntax_asdl::command_sub* WordParser::_ReadCommandSub(int left_id) {
           this->_Next(lex_mode_e::Backtick);
         }
         right_spid = this->cur_token->span_id;
-        code_str = str187->join(parts);
+        code_str = str185->join(parts);
         arena = this->parse_ctx->arena;
         line_reader = reader::StringLineReader(code_str, arena);
         c_parser = this->parse_ctx->MakeOshParser(line_reader);
@@ -7352,7 +7328,7 @@ void WordParser::ParseProc(syntax_asdl::command__Proc* node) {
   this->_Next(lex_mode_e::ShCommand);
   this->_Peek();
   if (this->token_type != Id::Lit_Chars) {
-    p_die(fmt24(this->cur_token->val), this->cur_token);
+    p_die(fmt24(ui::PrettyToken(this->cur_token, this->arena)), this->cur_token);
   }
   node->name = this->cur_token;
   last_token = this->parse_ctx->ParseProc(this->lexer, node);
@@ -7393,12 +7369,12 @@ syntax_asdl::word_part__ArithSub* WordParser::_ReadArithSub() {
   this->_Next(lex_mode_e::Arith);
   anode = this->_ReadArithExpr();
   if (this->token_type != Id::Arith_RParen) {
-    p_die(fmt25(this->cur_token->val), this->cur_token);
+    p_die(fmt25(), this->cur_token);
   }
   this->_Next(lex_mode_e::ShCommand);
   this->_Peek();
   if (this->token_type != Id::Right_DollarDParen) {
-    p_die(fmt26(this->cur_token->val), this->cur_token);
+    p_die(fmt26(), this->cur_token);
   }
   right_span_id = this->cur_token->span_id;
   node = new word_part::ArithSub(anode);
@@ -7414,12 +7390,12 @@ Tuple2<syntax_asdl::arith_expr_t*, int> WordParser::ReadDParen() {
   this->_Next(lex_mode_e::Arith);
   anode = this->_ReadArithExpr();
   if (this->token_type != Id::Arith_RParen) {
-    p_die(fmt27(this->cur_token->val), this->cur_token);
+    p_die(fmt27(), this->cur_token);
   }
   this->_Next(lex_mode_e::ShCommand);
   this->_Peek();
   if (this->token_type != Id::Op_DRightParen) {
-    p_die(fmt28(this->cur_token->val), this->cur_token);
+    p_die(fmt28(), this->cur_token);
   }
   this->_Next(lex_mode_e::ShCommand);
   return (Tuple2<syntax_asdl::arith_expr_t*, int>(anode, this->cur_token->span_id));
@@ -7468,7 +7444,7 @@ syntax_asdl::command__ForExpr* WordParser::ReadForExpression() {
   this->_NextNonSpace();
   this->_Peek();
   if (this->token_type != Id::Arith_RParen) {
-    p_die(fmt29(this->cur_token->val), this->cur_token);
+    p_die(fmt29(), this->cur_token);
   }
   this->_Next(lex_mode_e::ShCommand);
   node = new command::ForExpr();
@@ -7499,7 +7475,7 @@ syntax_asdl::word_part_t* WordParser::_ReadArrayLiteral() {
   this->_Next(lex_mode_e::ShCommand);
   this->_Peek();
   if (this->cur_token->id != Id::Op_LParen) {
-    p_die(fmt30(ui::PrettyToken(this->cur_token, this->arena)), this->cur_token);
+    p_die(fmt30(), this->cur_token);
   }
   left_token = this->cur_token;
   paren_spid = this->cur_token->span_id;
@@ -7517,7 +7493,7 @@ syntax_asdl::word_part_t* WordParser::_ReadArrayLiteral() {
           continue;
         }
         else {
-          p_die(fmt31(tok->val), w);
+          p_die(fmt31(), w);
         }
       }
     }
@@ -8325,12 +8301,12 @@ void ParseTreePrinter::_Print(parse::PNode* pnode, int indent, int i) {
   Str* ind;
   Str* v;
 
-  ind = str_repeat(str216, indent);
+  ind = str_repeat(str214, indent);
   if (pnode->tok) {
     v = pnode->tok->val;
   }
   else {
-    v = str217;
+    v = str215;
   }
   this->f->write(fmt0(ind, i, this->names->index(pnode->typ), v));
   if (pnode->children != nullptr) {
@@ -8359,7 +8335,7 @@ int _Classify(grammar::Grammar* gr, syntax_asdl::Token* tok) {
   if (dict_contains(gr->tokens, typ)) {
     return gr->tokens->index(typ);
   }
-  type_str = tok->id == Id::Unknown_Tok ? str219 : fmt1(mylib::NewStr(Id_str(tok->id)));
+  type_str = tok->id == Id::Unknown_Tok ? str217 : fmt1(mylib::NewStr(Id_str(tok->id)));
   p_die(fmt2(type_str), tok);
 }
 Dict<int, int>* _OTHER_BALANCE = new Dict<int, int>({});
@@ -8408,7 +8384,7 @@ Tuple2<parse::PNode*, syntax_asdl::Token*> ExprParser::Parse(lexer::Lexer* lexer
     last_token = _PushOilTokens(this->parse_ctx, this->gr, this->push_parser, lexer);
   }
   catch (parse::ParseError* e) {
-    throw new error::Parse(str222, e->tok);
+    throw new error::Parse(str220, e->tok);
   }
   return (Tuple2<parse::PNode*, syntax_asdl::Token*>(this->push_parser->rootnode, last_token));
 }
@@ -8460,8 +8436,8 @@ using syntax_asdl::named_arg;
 using syntax_asdl::arg_list;
 using parse::PNode;
 Dict<Str*, Str*>* PERL_CLASSES = new Dict<Str*, Str*>({});
-List<Str*>* POSIX_CLASSES = new List<Str*>({str223, str224, str225, str226, str227, str228, str229, str230, str231, str232, str233, str234});
-Str* RANGE_POINT_TOO_LONG = str235;
+List<Str*>* POSIX_CLASSES = new List<Str*>({str221, str222, str223, str224, str225, str226, str227, str228, str229, str230, str231, str232});
+Str* RANGE_POINT_TOO_LONG = str233;
 int NT_OFFSET = 256;
 
 bool ISNONTERMINAL(int x) {
@@ -8645,7 +8621,7 @@ syntax_asdl::expr_t* Transformer::_TestlistComp(parse::PNode* p_node, int id0) {
     if (children->index(1)->tok->id == Id::Arith_Comma) {
       return this->_Tuple(children);
     }
-    throw new NotImplementedError(str237);
+    throw new NotImplementedError(str235);
   }
   if (id0 == Id::Op_LBracket) {
     elts = new List<syntax_asdl::expr_t*>();
@@ -9519,7 +9495,7 @@ syntax_asdl::re_t* Transformer::_NameInRegex(syntax_asdl::Token* negated_tok, sy
     negated_speck = nullptr;
   }
   val = tok->val;
-  if (val == str242) {
+  if (val == str240) {
     if (negated_tok) {
       p_die(fmt6(), tok);
     }
@@ -9596,7 +9572,7 @@ syntax_asdl::re_t* Transformer::_ReAtom(parse::PNode* p_atom) {
       return this->_NameInRegex(nullptr, tok);
     }
     if (tok->id == Id::Expr_Symbol) {
-      if ((tok->val == str246 || tok->val == str247 || tok->val == str248)) {
+      if ((tok->val == str244 || tok->val == str245 || tok->val == str246)) {
         return tok;
       }
       p_die(fmt9(tok->val), tok);
