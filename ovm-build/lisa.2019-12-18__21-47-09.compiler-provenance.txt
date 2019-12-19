@@ -1,0 +1,2 @@
+2019-12-18__21-47-09 lisa b43270f9 /usr/bin/gcc 816edb3d
+2019-12-18__21-47-09 lisa b43270f9 /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae

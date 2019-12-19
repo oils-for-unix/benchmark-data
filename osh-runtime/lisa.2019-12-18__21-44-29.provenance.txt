@@ -1,0 +1,6 @@
+2019-12-18__21-44-29 lisa b43270f9 bash d685a43c
+2019-12-18__21-44-29 lisa b43270f9 dash 2887d9e6
+2019-12-18__21-44-29 lisa b43270f9 mksh ae7d165b
+2019-12-18__21-44-29 lisa b43270f9 zsh ca7b4198
+2019-12-18__21-44-29 lisa b43270f9 bin/osh f62e9ee4
+2019-12-18__21-44-29 lisa b43270f9 /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.7.pre10/_bin/osh 893a4b2d
