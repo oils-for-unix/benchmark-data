@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+lisa	3499992	_tmp/ovm-build/bin/clang/osh_parse.dbg
+lisa	3225600	_tmp/ovm-build/bin/gcc/osh_parse.dbg
+lisa	581736	_tmp/ovm-build/bin/clang/osh_parse.opt.stripped
+lisa	491680	_tmp/ovm-build/bin/gcc/osh_parse.opt.stripped
