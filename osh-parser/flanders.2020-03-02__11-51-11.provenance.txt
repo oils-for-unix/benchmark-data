@@ -1,0 +1,7 @@
+2020-03-02__11-51-11 flanders 46fb0378 bash d685a43c
+2020-03-02__11-51-11 flanders 46fb0378 dash 2887d9e6
+2020-03-02__11-51-11 flanders 46fb0378 mksh ae7d165b
+2020-03-02__11-51-11 flanders 46fb0378 zsh ca7b4198
+2020-03-02__11-51-11 flanders 46fb0378 bin/osh ca88d788
+2020-03-02__11-51-11 flanders 46fb0378 _bin/osh 6bea796a
+2020-03-02__11-51-11 flanders 46fb0378 _bin/osh_eval.opt.stripped e5b55d35
