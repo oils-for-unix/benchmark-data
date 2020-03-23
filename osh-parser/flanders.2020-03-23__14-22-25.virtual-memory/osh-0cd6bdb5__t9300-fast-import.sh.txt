@@ -1,0 +1,54 @@
+Name:	python2
+Umask:	0002
+State:	R (running)
+Tgid:	8450
+Ngid:	0
+Pid:	8450
+PPid:	8449
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	128
+Groups:	4 24 27 30 46 113 128 1000 
+NStgid:	8450
+NSpid:	8450
+NSpgid:	15886
+NSsid:	1568
+VmPeak:	   51408 kB
+VmSize:	   51408 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   15260 kB
+VmRSS:	   15260 kB
+RssAnon:	   10328 kB
+RssFile:	    4932 kB
+RssShmem:	       0 kB
+VmData:	   10840 kB
+VmStk:	     132 kB
+VmExe:	    2936 kB
+VmLib:	    3812 kB
+VmPTE:	     136 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+Threads:	1
+SigQ:	1/14429
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000001001000
+SigCgt:	0000000188000002
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	f
+Cpus_allowed_list:	0-3
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	3
+nonvoluntary_ctxt_switches:	8
