@@ -1,0 +1,6 @@
+2020-04-17__12-06-32 flanders 6db4bf9a bash d685a43c
+2020-04-17__12-06-32 flanders 6db4bf9a dash 2887d9e6
+2020-04-17__12-06-32 flanders 6db4bf9a mksh ae7d165b
+2020-04-17__12-06-32 flanders 6db4bf9a zsh ca7b4198
+2020-04-17__12-06-32 flanders 6db4bf9a bin/osh 3ab09724
+2020-04-17__12-06-32 flanders 6db4bf9a /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.8.pre4/_bin/osh 8696b56b
