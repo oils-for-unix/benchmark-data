@@ -33,6 +33,8 @@ const char* option_str(int tag) {
     return "option.interactive";
   case option::failglob:
     return "option.failglob";
+  case option::extglob:
+    return "option.extglob";
   case option::eval_unsafe_arith:
     return "option.eval_unsafe_arith";
   case option::parse_dynamic_arith:
@@ -89,10 +91,10 @@ const char* option_str(int tag) {
     return "option.parse_set";
   case option::parse_equals:
     return "option.parse_equals";
+  case option::parse_tea:
+    return "option.parse_tea";
   case option::expand_aliases:
     return "option.expand_aliases";
-  case option::extglob:
-    return "option.extglob";
   case option::lastpipe:
     return "option.lastpipe";
   case option::progcomp:

@@ -27,6 +27,7 @@ class Parse {
   bool parse_ignored() { return opt_array->index(option_i::parse_ignored); }
   bool parse_set() { return opt_array->index(option_i::parse_set); }
   bool parse_equals() { return opt_array->index(option_i::parse_equals); }
+  bool parse_tea() { return opt_array->index(option_i::parse_tea); }
 
   List<bool>* opt_array;
 };
@@ -53,6 +54,7 @@ class Exec {
   bool emacs() { return opt_array->index(option_i::emacs); }
   bool interactive() { return opt_array->index(option_i::interactive); }
   bool failglob() { return opt_array->index(option_i::failglob); }
+  bool extglob() { return opt_array->index(option_i::extglob); }
   bool eval_unsafe_arith() { return opt_array->index(option_i::eval_unsafe_arith); }
   bool compat_array() { return opt_array->index(option_i::compat_array); }
   bool nullglob() { return opt_array->index(option_i::nullglob); }

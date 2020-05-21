@@ -568,19 +568,19 @@ Str* str560 = new Str("");
 Str* str561 = new Str("\\");
 Str* str562 = new Str("\\\\");
 Str* str563 = new Str("");
-Str* str564 = new Str("The start index of a string slice can't be negative: %d");
-Str* str565 = new Str("The length of a string slice can't be negative: %d");
-Str* str566 = new Str("The length index of a array slice can't be negative: %d");
-Str* str567 = new Str("Can't slice associative arrays");
-Str* str568 = new Str("i");
-Str* str569 = new Str("e");
-Str* str570 = new Str("u");
-Str* str571 = new Str("x");
-Str* str572 = new Str("n");
-Str* str573 = new Str("");
-Str* str574 = new Str("~");
-Str* str575 = new Str("HOME");
-Str* str576 = new Str("");
+Str* str564 = new Str("");
+Str* str565 = new Str("The start index of a string slice can't be negative: %d");
+Str* str566 = new Str("The length of a string slice can't be negative: %d");
+Str* str567 = new Str("The length index of a array slice can't be negative: %d");
+Str* str568 = new Str("Can't slice associative arrays");
+Str* str569 = new Str("i");
+Str* str570 = new Str("e");
+Str* str571 = new Str("u");
+Str* str572 = new Str("x");
+Str* str573 = new Str("n");
+Str* str574 = new Str("");
+Str* str575 = new Str("~");
+Str* str576 = new Str("HOME");
 Str* str577 = new Str("Can't assign to special variable");
 Str* str578 = new Str("unset variable %r");
 Str* str579 = new Str("@");
@@ -595,102 +595,102 @@ Str* str587 = new Str("[");
 Str* str588 = new Str("]");
 Str* str589 = new Str("Bad indirect expansion: %r");
 Str* str590 = new Str("");
-Str* str591 = new Str("Undefined variable");
+Str* str591 = new Str("");
 Str* str592 = new Str("$");
 Str* str593 = new Str("Undefined variable %r");
-Str* str594 = new Str("");
-Str* str595 = new Str("Undefined array %r");
-Str* str596 = new Str("Can't index string with @");
-Str* str597 = new Str("Can't index string with *");
-Str* str598 = new Str("Can't index string %r with integer");
-Str* str599 = new Str("Array %r can't be referred to as a scalar (without @ or *)");
-Str* str600 = new Str("\u0001");
-Str* str601 = new Str("");
-Str* str602 = new Str("\u0002");
-Str* str603 = new Str("");
-Str* str604 = new Str("a");
-Str* str605 = new Str("A");
-Str* str606 = new Str("r");
-Str* str607 = new Str("x");
-Str* str608 = new Str("n");
-Str* str609 = new Str("");
-Str* str610 = new Str("Var op %r not implemented");
-Str* str611 = new Str("");
-Str* str612 = new Str("warning: ");
-Str* str613 = new Str("");
-Str* str614 = new Str("Illegal array word part (strict_array)");
-Str* str615 = new Str(" ");
-Str* str616 = new Str("");
-Str* str617 = new Str("Array %r can't be referred to as a scalar (without @ or *)");
-Str* str618 = new Str("Unexpected array literal");
-Str* str619 = new Str("Unexpected associative array literal");
-Str* str620 = new Str("|");
-Str* str621 = new Str(")");
-Str* str622 = new Str("Can't splice %r");
+Str* str594 = new Str("Undefined array %r");
+Str* str595 = new Str("Can't index string with @");
+Str* str596 = new Str("Can't index string with *");
+Str* str597 = new Str("Can't index string %r with integer");
+Str* str598 = new Str("Array %r can't be referred to as a scalar (without @ or *)");
+Str* str599 = new Str("\u0001");
+Str* str600 = new Str("");
+Str* str601 = new Str("\u0002");
+Str* str602 = new Str("");
+Str* str603 = new Str("a");
+Str* str604 = new Str("A");
+Str* str605 = new Str("r");
+Str* str606 = new Str("x");
+Str* str607 = new Str("n");
+Str* str608 = new Str("");
+Str* str609 = new Str("Var op %r not implemented");
+Str* str610 = new Str("");
+Str* str611 = new Str("warning: ");
+Str* str612 = new Str("");
+Str* str613 = new Str("Illegal array word part (strict_array)");
+Str* str614 = new Str(" ");
+Str* str615 = new Str("");
+Str* str616 = new Str("Array %r can't be referred to as a scalar (without @ or *)");
+Str* str617 = new Str("Unexpected array literal");
+Str* str618 = new Str("Unexpected associative array literal");
+Str* str619 = new Str("|");
+Str* str620 = new Str(")");
+Str* str621 = new Str("Can't splice %r");
+Str* str622 = new Str("");
 Str* str623 = new Str("");
-Str* str624 = new Str("");
-Str* str625 = new Str("This word should yield a string, but it contains an array");
-Str* str626 = new Str(" ");
-Str* str627 = new Str("");
-Str* str628 = new Str("<Runtime error: %s>");
+Str* str624 = new Str("This word should yield a string, but it contains an array");
+Str* str625 = new Str(" ");
+Str* str626 = new Str("");
+Str* str627 = new Str("<Runtime error: %s>");
+Str* str628 = new Str("<I/O error: %s>");
 Str* str629 = new Str("<I/O error: %s>");
-Str* str630 = new Str("<I/O error: %s>");
-Str* str631 = new Str("<Ctrl-C>");
+Str* str630 = new Str("<Ctrl-C>");
+Str* str631 = new Str("");
 Str* str632 = new Str("");
 Str* str633 = new Str("");
 Str* str634 = new Str("");
 Str* str635 = new Str("");
-Str* str636 = new Str("");
-Str* str637 = new Str("LHS array not allowed in assignment builtin");
-Str* str638 = new Str("+");
-Str* str639 = new Str("+= not allowed in assignment builtin");
-Str* str640 = new Str("-");
-Str* str641 = new Str("+");
-Str* str642 = new Str("f");
-Str* str643 = new Str("F");
-Str* str644 = new Str("");
-Str* str645 = new Str("=");
-Str* str646 = new Str("Invalid variable name %r");
-Str* str647 = new Str("__NO_COMMAND_SUB__");
-Str* str648 = new Str("__NO_PROCESS_SUB__");
-Str* str649 = new Str("Expected : or } in slice");
-Str* str650 = new Str("/");
-Str* str651 = new Str("Pattern in ${x/pat/replace} must not be empty");
-Str* str652 = new Str("Expected } after replacement string, got %s");
-Str* str653 = new Str("Expected } or / to close pattern");
-Str* str654 = new Str("Expected ] to close subscript");
+Str* str636 = new Str("LHS array not allowed in assignment builtin");
+Str* str637 = new Str("+");
+Str* str638 = new Str("+= not allowed in assignment builtin");
+Str* str639 = new Str("-");
+Str* str640 = new Str("+");
+Str* str641 = new Str("f");
+Str* str642 = new Str("F");
+Str* str643 = new Str("");
+Str* str644 = new Str("=");
+Str* str645 = new Str("Invalid variable name %r");
+Str* str646 = new Str("__NO_COMMAND_SUB__");
+Str* str647 = new Str("__NO_PROCESS_SUB__");
+Str* str648 = new Str("Expected : or } in slice");
+Str* str649 = new Str("/");
+Str* str650 = new Str("Pattern in ${x/pat/replace} must not be empty");
+Str* str651 = new Str("Expected } after replacement string, got %s");
+Str* str652 = new Str("Expected } or / to close pattern");
+Str* str653 = new Str("Expected ] to close subscript");
+Str* str654 = new Str("Expected } to close ${");
 Str* str655 = new Str("Expected } to close ${");
 Str* str656 = new Str("Expected } to close ${");
-Str* str657 = new Str("Expected } to close ${");
-Str* str658 = new Str("Unexpected token in ${} (%s)");
-Str* str659 = new Str("VOp2");
-Str* str660 = new Str("Unexpected token in ${} (%s)");
-Str* str661 = new Str("VOp3");
-Str* str662 = new Str("Expected } to close ${");
-Str* str663 = new Str("Expected } after length expression");
-Str* str664 = new Str("Unexpected token in ${}");
-Str* str665 = new Str("\\");
-Str* str666 = new Str("Strings with backslashes should look like r'\\n' or c'\\n'");
-Str* str667 = new Str("Unexpected EOF in single-quoted string that began here");
-Str* str668 = new Str("Unexpected EOF reading extended glob that began here");
-Str* str669 = new Str("Unexpected EOF reading double-quoted string that began here");
-Str* str670 = new Str("Unexpected EOF while looking for closing backtick");
-Str* str671 = new Str("");
-Str* str672 = new Str("Invalid proc name %s");
-Str* str673 = new Str("Expected first ) to end arith sub");
-Str* str674 = new Str("Expected second ) to end arith sub");
-Str* str675 = new Str("Expected first ) to end arith statement");
-Str* str676 = new Str("Expected second ) to end arith statement");
-Str* str677 = new Str("Expected ) to end for loop expression");
-Str* str678 = new Str("Expected ( after =");
-Str* str679 = new Str("Unexpected token in array literal");
-Str* str680 = new Str("Expected associative array pair");
-Str* str681 = new Str("Unexpected token after array literal");
-Str* str682 = new Str("Unexpected token after array splice");
-Str* str683 = new Str("Word has unbalanced { }.  Maybe add a space or quote it like \\{");
-Str* str684 = new Str("Unexpected token in arithmetic context");
-Str* str685 = new Str("Unhandled: %s (%s)");
-Str* str686 = new Str("Invalid lex state %s");
+Str* str657 = new Str("Unexpected token in ${} (%s)");
+Str* str658 = new Str("VOp2");
+Str* str659 = new Str("Unexpected token in ${} (%s)");
+Str* str660 = new Str("VOp3");
+Str* str661 = new Str("Expected } to close ${");
+Str* str662 = new Str("Expected } after length expression");
+Str* str663 = new Str("Unexpected token in ${}");
+Str* str664 = new Str("\\");
+Str* str665 = new Str("Strings with backslashes should look like r'\\n' or c'\\n'");
+Str* str666 = new Str("Unexpected EOF in single-quoted string that began here");
+Str* str667 = new Str("Unexpected EOF reading extended glob that began here");
+Str* str668 = new Str("Unexpected EOF reading double-quoted string that began here");
+Str* str669 = new Str("Unexpected EOF while looking for closing backtick");
+Str* str670 = new Str("");
+Str* str671 = new Str("Invalid proc name %s");
+Str* str672 = new Str("Expected first ) to end arith sub");
+Str* str673 = new Str("Expected second ) to end arith sub");
+Str* str674 = new Str("Expected first ) to end arith statement");
+Str* str675 = new Str("Expected second ) to end arith statement");
+Str* str676 = new Str("Expected ) to end for loop expression");
+Str* str677 = new Str("Expected ( after =");
+Str* str678 = new Str("Unexpected token in array literal");
+Str* str679 = new Str("Expected associative array pair");
+Str* str680 = new Str("Unexpected token after array literal");
+Str* str681 = new Str("Unexpected token after array splice");
+Str* str682 = new Str("Word has unbalanced { }.  Maybe add a space or quote it like \\{");
+Str* str683 = new Str("Unexpected token in arithmetic context");
+Str* str684 = new Str("Unhandled: %s (%s)");
+Str* str685 = new Str("Invalid lex state %s");
+Str* str686 = new Str("");
 Str* str687 = new Str("");
 Str* str688 = new Str("");
 Str* str689 = new Str("");
@@ -699,64 +699,63 @@ Str* str691 = new Str("");
 Str* str692 = new Str("");
 Str* str693 = new Str("");
 Str* str694 = new Str("");
-Str* str695 = new Str("");
-Str* str696 = new Str("Compound shouldn't be empty");
-Str* str697 = new Str("/");
-Str* str698 = new Str("");
-Str* str699 = new Str("EOF");
-Str* str700 = new Str("typ");
-Str* str701 = new Str("tok");
-Str* str702 = new Str("children");
-Str* str703 = new Str("-");
-Str* str704 = new Str("with %d children");
-Str* str705 = new Str("");
-Str* str706 = new Str("(PNode %s %s %s)");
-Str* str707 = new Str("&");
-Str* str708 = new Str("&amp;");
-Str* str709 = new Str("<");
-Str* str710 = new Str("&lt;");
-Str* str711 = new Str(">");
-Str* str712 = new Str("&gt;");
-Str* str713 = new Str("\\'\r\n\t\u0000");
-Str* str714 = new Str("$'");
+Str* str695 = new Str("Compound shouldn't be empty");
+Str* str696 = new Str("/");
+Str* str697 = new Str("");
+Str* str698 = new Str("EOF");
+Str* str699 = new Str("typ");
+Str* str700 = new Str("tok");
+Str* str701 = new Str("children");
+Str* str702 = new Str("-");
+Str* str703 = new Str("with %d children");
+Str* str704 = new Str("");
+Str* str705 = new Str("(PNode %s %s %s)");
+Str* str706 = new Str("&");
+Str* str707 = new Str("&amp;");
+Str* str708 = new Str("<");
+Str* str709 = new Str("&lt;");
+Str* str710 = new Str(">");
+Str* str711 = new Str("&gt;");
+Str* str712 = new Str("\\'\r\n\t\u0000");
+Str* str713 = new Str("$'");
+Str* str714 = new Str("'");
 Str* str715 = new Str("'");
-Str* str716 = new Str("'");
-Str* str717 = new Str("");
+Str* str716 = new Str("");
+Str* str717 = new Str("'");
 Str* str718 = new Str("'");
-Str* str719 = new Str("'");
-Str* str720 = new Str("");
+Str* str719 = new Str("");
+Str* str720 = new Str("'");
 Str* str721 = new Str("'");
-Str* str722 = new Str("'");
-Str* str723 = new Str("");
-Str* str724 = new Str("\\");
-Str* str725 = new Str("\\\\");
-Str* str726 = new Str("'");
-Str* str727 = new Str("\\'");
-Str* str728 = new Str("\n");
-Str* str729 = new Str("\\n");
-Str* str730 = new Str("\r");
-Str* str731 = new Str("\\r");
-Str* str732 = new Str("\t");
-Str* str733 = new Str("\\t");
-Str* str734 = new Str("\u0000");
-Str* str735 = new Str("\\x00");
-Str* str736 = new Str("\\0");
+Str* str722 = new Str("");
+Str* str723 = new Str("\\");
+Str* str724 = new Str("\\\\");
+Str* str725 = new Str("'");
+Str* str726 = new Str("\\'");
+Str* str727 = new Str("\n");
+Str* str728 = new Str("\\n");
+Str* str729 = new Str("\r");
+Str* str730 = new Str("\\r");
+Str* str731 = new Str("\t");
+Str* str732 = new Str("\\t");
+Str* str733 = new Str("\u0000");
+Str* str734 = new Str("\\x00");
+Str* str735 = new Str("\\0");
+Str* str736 = new Str("");
 Str* str737 = new Str("");
 Str* str738 = new Str("");
-Str* str739 = new Str("");
-Str* str740 = new Str("\\");
-Str* str741 = new Str("\\\\");
-Str* str742 = new Str("'");
-Str* str743 = new Str("\\'");
-Str* str744 = new Str("\n");
-Str* str745 = new Str("\\n");
-Str* str746 = new Str("\r");
-Str* str747 = new Str("\\r");
-Str* str748 = new Str("\t");
-Str* str749 = new Str("\\t");
-Str* str750 = new Str("\u0000");
-Str* str751 = new Str("\\x00");
-Str* str752 = new Str("\\0");
+Str* str739 = new Str("\\");
+Str* str740 = new Str("\\\\");
+Str* str741 = new Str("'");
+Str* str742 = new Str("\\'");
+Str* str743 = new Str("\n");
+Str* str744 = new Str("\\n");
+Str* str745 = new Str("\r");
+Str* str746 = new Str("\\r");
+Str* str747 = new Str("\t");
+Str* str748 = new Str("\\t");
+Str* str749 = new Str("\u0000");
+Str* str750 = new Str("\\x00");
+Str* str751 = new Str("\\0");
 
 namespace runtime {  // forward declare
 
@@ -3262,7 +3261,7 @@ int _NextUtf8Char(Str* s, int i);
 int _PreviousUtf8Char(Str* s, int i);
 int CountUtf8Chars(Str* s);
 int AdvanceUtf8Chars(Str* s, int num_chars, int byte_offset);
-Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg);
+Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg, bool extglob);
 List<Tuple2<int, int>*>* _AllMatchPositions(Str* s, Str* regex);
 Str* _PatSubAll(Str* s, Str* regex, Str* replace_str);
 
@@ -3438,6 +3437,7 @@ class AbstractWordEvaluator : public StringWordEvaluator {
   void _EvalWordPart(syntax_asdl::word_part_t* part, List<runtime_asdl::part_value_t*>* part_vals, bool quoted, bool is_subst);
   void _EvalWordToParts(syntax_asdl::word_t* w, bool quoted, List<runtime_asdl::part_value_t*>* part_vals);
   void _EvalWordToParts(syntax_asdl::word_t* w, bool quoted, List<runtime_asdl::part_value_t*>* part_vals, bool is_subst);
+  runtime_asdl::value__Str* EvalWordToPattern(syntax_asdl::word_t* UP_w);
   runtime_asdl::value__Str* EvalWordToString(syntax_asdl::word_t* UP_w);
   virtual runtime_asdl::value__Str* EvalWordToString(syntax_asdl::word_t* UP_w, runtime_asdl::quote_t quote_kind);
   runtime_asdl::value__Str* EvalForPlugin(syntax_asdl::compound_word* w);
@@ -11873,7 +11873,7 @@ Tuple2<int, bool> CommandEvaluator::_Dispatch(syntax_asdl::command_t* node) {
         for (ListIter<syntax_asdl::word_t*> it(case_arm->pat_list); !it.Done(); it.Next()) {
           syntax_asdl::word_t* pat_word = it.Value();
           pat_val = this->word_ev->EvalWordToString(pat_word, quote_e::FnMatch);
-          if (libc::fnmatch(pat_val->s, to_match)) {
+          if (libc::fnmatch(pat_val->s, to_match, this->exec_opts->extglob())) {
             status = this->_ExecuteList(case_arm->action);
             done = true;
             break;
@@ -13685,11 +13685,11 @@ syntax_asdl::command_t* CommandParser::ParseCommand() {
   if (this->c_id == Id::KW_Function) {
     return this->ParseKshFunctionDef();
   }
-  if (this->c_id == Id::KW_Func) {
-    return this->ParseOilFunc();
-  }
   if (this->c_id == Id::KW_Proc) {
     return this->ParseOilProc();
+  }
+  if (this->parse_opts->parse_tea() and this->c_id == Id::KW_Func) {
+    return this->ParseOilFunc();
   }
   if ((this->c_id == Id::KW_DLeftBracket || this->c_id == Id::Op_DLeftParen || this->c_id == Id::Op_LParen || this->c_id == Id::Lit_LBrace || this->c_id == Id::KW_For || this->c_id == Id::KW_While || this->c_id == Id::KW_Until || this->c_id == Id::KW_If || this->c_id == Id::KW_Case || this->c_id == Id::KW_Time || this->c_id == Id::KW_Var || this->c_id == Id::KW_Const || this->c_id == Id::KW_SetVar || this->c_id == Id::KW_SetLocal || this->c_id == Id::KW_SetGlobal || this->c_id == Id::KW_SetRef)) {
     return this->ParseCompoundCommand();
@@ -15428,10 +15428,10 @@ bool BoolEvaluator::EvalB(syntax_asdl::bool_expr_t* node) {
       }
       if (arg_type == bool_arg_type_e::Str) {
         if ((op_id == Id::BoolBinary_GlobEqual || op_id == Id::BoolBinary_GlobDEqual)) {
-          return libc::fnmatch(s2, s1);
+          return libc::fnmatch(s2, s1, this->exec_opts->extglob());
         }
         if (op_id == Id::BoolBinary_GlobNEqual) {
-          return !libc::fnmatch(s2, s1);
+          return !libc::fnmatch(s2, s1, this->exec_opts->extglob());
         }
         if ((op_id == Id::BoolBinary_Equal || op_id == Id::BoolBinary_DEqual)) {
           return str_equals(s1, s2);
@@ -15895,7 +15895,7 @@ int AdvanceUtf8Chars(Str* s, int num_chars, int byte_offset) {
   return i;
 }
 
-Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg) {
+Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg, bool extglob) {
   int n;
   int i;
 
@@ -15969,7 +15969,7 @@ Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg) {
   if (op->op_id == Id::VOp1_Pound) {
     i = 0;
     while (true) {
-      if (libc::fnmatch(arg, s->slice(0, i))) {
+      if (libc::fnmatch(arg, s->slice(0, i), extglob)) {
         return s->slice(i);
       }
       if (i >= n) {
@@ -15983,7 +15983,7 @@ Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg) {
     if (op->op_id == Id::VOp1_DPound) {
       i = n;
       while (true) {
-        if (libc::fnmatch(arg, s->slice(0, i))) {
+        if (libc::fnmatch(arg, s->slice(0, i), extglob)) {
           return s->slice(i);
         }
         if (i == 0) {
@@ -15997,7 +15997,7 @@ Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg) {
       if (op->op_id == Id::VOp1_Percent) {
         i = n;
         while (true) {
-          if (libc::fnmatch(arg, s->slice(i))) {
+          if (libc::fnmatch(arg, s->slice(i), extglob)) {
             return s->slice(0, i);
           }
           if (i == 0) {
@@ -16011,7 +16011,7 @@ Str* DoUnarySuffixOp(Str* s, syntax_asdl::suffix_op__Unary* op, Str* arg) {
         if (op->op_id == Id::VOp1_DPercent) {
           i = 0;
           while (true) {
-            if (libc::fnmatch(arg, s->slice(i))) {
+            if (libc::fnmatch(arg, s->slice(i), extglob)) {
               return s->slice(0, i);
             }
             if (i >= n) {
@@ -16524,6 +16524,10 @@ runtime_asdl::part_value_t* _ValueToPartValue(runtime_asdl::value_t* val, bool q
 
   UP_val = val;
   switch (val->tag_()) {
+    case value_e::Undef: {
+      return new part_value::String(str563, quoted, !quoted);
+    }
+      break;
     case value_e::Str: {
       value__Str* val = static_cast<value__Str*>(UP_val);
       return new part_value::String(val->s, quoted, !quoted);
@@ -16621,7 +16625,7 @@ Str* _DecayPartValuesToString(List<runtime_asdl::part_value_t*>* part_vals, Str*
       }
     }
   }
-  return str563->join(out);
+  return str564->join(out);
 }
 
 runtime_asdl::value_t* _PerformSlice(runtime_asdl::value_t* val, int begin, int length, bool has_length, syntax_asdl::braced_var_sub* part, runtime_asdl::value__Str* arg0_val) {
@@ -16717,21 +16721,21 @@ Str* _GetDollarHyphen(optview::Exec* exec_opts) {
 
   chars = new List<Str*>();
   if (exec_opts->interactive()) {
-    chars->append(str568);
-  }
-  if (exec_opts->errexit()) {
     chars->append(str569);
   }
-  if (exec_opts->nounset()) {
+  if (exec_opts->errexit()) {
     chars->append(str570);
   }
-  if (exec_opts->xtrace()) {
+  if (exec_opts->nounset()) {
     chars->append(str571);
   }
-  if (exec_opts->noexec()) {
+  if (exec_opts->xtrace()) {
     chars->append(str572);
   }
-  return str573->join(chars);
+  if (exec_opts->noexec()) {
+    chars->append(str573);
+  }
+  return str574->join(chars);
 }
 
 AbstractWordEvaluator::AbstractWordEvaluator(state::Mem* mem, optview::Exec* exec_opts, split::SplitContext* splitter, ui::ErrorFormatter* errfmt) {
@@ -16761,8 +16765,8 @@ Str* AbstractWordEvaluator::_EvalTildeSub(syntax_asdl::Token* token) {
   runtime_asdl::value_t* val;
   runtime_asdl::value_t* UP_val;
 
-  if (token->val == str574) {
-    val = this->mem->GetVar(str575);
+  if (token->val == str575) {
+    val = this->mem->GetVar(str576);
     UP_val = val;
     if (val->tag_() == value_e::Str) {
       value__Str* val = static_cast<value__Str*>(UP_val);
@@ -16856,8 +16860,7 @@ bool AbstractWordEvaluator::_ApplyTestOp(runtime_asdl::value_t* val, syntax_asdl
   else {
     if ((op->op_id == Id::VTest_ColonPlus || op->op_id == Id::VTest_Plus)) {
       if (is_falsey) {
-        part_vals->append(new part_value::String(str576, quoted, true));
-        return true;
+        return false;
       }
       else {
         this->_EvalWordToParts(op->arg_word, quoted, part_vals, true);
@@ -17096,6 +17099,7 @@ runtime_asdl::value_t* AbstractWordEvaluator::_ApplyPrefixOp(runtime_asdl::value
 runtime_asdl::value_t* AbstractWordEvaluator::_ApplyUnarySuffixOp(runtime_asdl::value_t* val, syntax_asdl::suffix_op__Unary* op) {
   id_kind_asdl::Kind_t op_kind;
   runtime_asdl::value__Str* arg_val;
+  bool extglob;
   runtime_asdl::value_t* UP_val;
   Str* s;
   runtime_asdl::value_t* new_val;
@@ -17104,11 +17108,12 @@ runtime_asdl::value_t* AbstractWordEvaluator::_ApplyUnarySuffixOp(runtime_asdl::
   op_kind = consts::GetKind(op->op_id);
   if (op_kind == Kind::VOp1) {
     arg_val = this->EvalWordToString(op->arg_word, quote_e::FnMatch);
+    extglob = this->exec_opts->extglob();
     UP_val = val;
     switch (val->tag_()) {
       case value_e::Str: {
         value__Str* val = static_cast<value__Str*>(UP_val);
-        s = string_ops::DoUnarySuffixOp(val->s, op, arg_val->s);
+        s = string_ops::DoUnarySuffixOp(val->s, op, arg_val->s, extglob);
         new_val = new value::Str(s);
       }
         break;
@@ -17118,7 +17123,7 @@ runtime_asdl::value_t* AbstractWordEvaluator::_ApplyUnarySuffixOp(runtime_asdl::
         for (ListIter<Str*> it(val->strs); !it.Done(); it.Next()) {
           Str* s = it.Value();
           if (s != nullptr) {
-            strs->append(string_ops::DoUnarySuffixOp(s, op, arg_val->s));
+            strs->append(string_ops::DoUnarySuffixOp(s, op, arg_val->s, extglob));
           }
         }
         new_val = new value::MaybeStrArray(strs);
@@ -17129,7 +17134,7 @@ runtime_asdl::value_t* AbstractWordEvaluator::_ApplyUnarySuffixOp(runtime_asdl::
         strs = new List<Str*>();
         for (ListIter<Str*> it(val->d->values()); !it.Done(); it.Next()) {
           Str* s = it.Value();
-          strs->append(string_ops::DoUnarySuffixOp(s, op, arg_val->s));
+          strs->append(string_ops::DoUnarySuffixOp(s, op, arg_val->s, extglob));
         }
         new_val = new value::MaybeStrArray(strs);
       }
@@ -17183,23 +17188,14 @@ runtime_asdl::value__Str* AbstractWordEvaluator::_DecayArray(runtime_asdl::value
 runtime_asdl::value_t* AbstractWordEvaluator::_EmptyStrOrError(runtime_asdl::value_t* val, syntax_asdl::Token* token) {
   Str* name;
 
-  if (val->tag_() == value_e::Undef) {
-    if (this->exec_opts->nounset()) {
-      if (token == nullptr) {
-        e_die(str591);
-      }
-      else {
-        name = token->val->startswith(str592) ? token->val->slice(1) : token->val;
-        e_die(fmt163(name), token);
-      }
-    }
-    else {
-      return new value::Str(str594);
-    }
-  }
-  else {
+  if (val->tag_() != value_e::Undef) {
     return val;
   }
+  if (!this->exec_opts->nounset()) {
+    return new value::Str(str591);
+  }
+  name = token->val->startswith(str592) ? token->val->slice(1) : token->val;
+  e_die(fmt163(name), token);
 }
 
 runtime_asdl::value_t* AbstractWordEvaluator::_EmptyMaybeStrArrayOrError(syntax_asdl::Token* token) {
@@ -17428,7 +17424,7 @@ void AbstractWordEvaluator::_EvalBracedVarSub(syntax_asdl::braced_var_sub* part,
         op_id = op->id;
         if (op_id == Id::VOp0_P) {
           prompt = this->prompt_ev->EvalPrompt(val);
-          p = prompt->replace(str600, str601)->replace(str602, str603);
+          p = prompt->replace(str599, str600)->replace(str601, str602);
           val = new value::Str(p);
         }
         else {
@@ -17442,27 +17438,27 @@ void AbstractWordEvaluator::_EvalBracedVarSub(syntax_asdl::braced_var_sub* part,
               chars = new List<Str*>();
               switch (val->tag_()) {
                 case value_e::MaybeStrArray: {
-                  chars->append(str604);
+                  chars->append(str603);
                 }
                   break;
                 case value_e::AssocArray: {
-                  chars->append(str605);
+                  chars->append(str604);
                 }
                   break;
               }
               if (var_name != nullptr) {
                 cell = this->mem->GetCell(var_name);
                 if (cell->readonly) {
-                  chars->append(str606);
+                  chars->append(str605);
                 }
                 if (cell->exported) {
-                  chars->append(str607);
+                  chars->append(str606);
                 }
                 if (cell->nameref) {
-                  chars->append(str608);
+                  chars->append(str607);
                 }
               }
-              val = new value::Str(str609->join(chars));
+              val = new value::Str(str608->join(chars));
             }
             else {
               e_die(fmt169(op->val), op);
@@ -17491,7 +17487,7 @@ void AbstractWordEvaluator::_EvalBracedVarSub(syntax_asdl::braced_var_sub* part,
           replace_str = replace_val->s;
         }
         else {
-          replace_str = str611;
+          replace_str = str610;
         }
         Tuple2<Str*, List<Str*>*> tup1 = glob_::GlobToERE(pat_val->s);
         regex = tup1.at0();
@@ -17561,10 +17557,10 @@ void AbstractWordEvaluator::_EvalBracedVarSub(syntax_asdl::braced_var_sub* part,
             throw ;
           }
           else {
-            this->errfmt->PrettyPrintError(e, str612);
+            this->errfmt->PrettyPrintError(e, str611);
             switch (val->tag_()) {
               case value_e::Str: {
-                val = new value::Str(str613);
+                val = new value::Str(str612);
               }
                 break;
               case value_e::MaybeStrArray: {
@@ -17622,14 +17618,14 @@ Str* AbstractWordEvaluator::_PartValsToString(List<runtime_asdl::part_value_t*>*
             Str* s = it.Value();
             tmp->append(s);
           }
-          s = str615->join(tmp);
+          s = str614->join(tmp);
         }
       }
         break;
     }
     strs->append(s);
   }
-  return str616->join(strs);
+  return str615->join(strs);
 }
 
 Str* AbstractWordEvaluator::EvalBracedVarSubToString(syntax_asdl::braced_var_sub* part) {
@@ -17799,11 +17795,11 @@ void AbstractWordEvaluator::_EvalWordPart(syntax_asdl::word_part_t* part, List<r
       for (ListIter<syntax_asdl::word_t*> it(part->arms); !it.Done(); it.Next(), ++i) {
         syntax_asdl::word_t* w = it.Value();
         if (i != 0) {
-          part_vals->append(new part_value::String(str620, false, false));
+          part_vals->append(new part_value::String(str619, false, false));
         }
         this->_EvalWordToParts(w, false, part_vals);
       }
-      part_vals->append(new part_value::String(str621, false, false));
+      part_vals->append(new part_value::String(str620, false, false));
     }
       break;
     case word_part_e::Splice: {
@@ -17868,13 +17864,17 @@ void AbstractWordEvaluator::_EvalWordToParts(syntax_asdl::word_t* w, bool quoted
     }
       break;
     case word_e::Empty: {
-      part_vals->append(new part_value::String(str623, quoted, !quoted));
+      part_vals->append(new part_value::String(str622, quoted, !quoted));
     }
       break;
     default: {
       throw new AssertionError();
     }
   }
+}
+
+runtime_asdl::value__Str* AbstractWordEvaluator::EvalWordToPattern(syntax_asdl::word_t* UP_w) {
+  ;  // pass
 }
 
 runtime_asdl::value__Str* AbstractWordEvaluator::EvalWordToString(syntax_asdl::word_t* UP_w) {
@@ -17889,7 +17889,7 @@ runtime_asdl::value__Str* AbstractWordEvaluator::EvalWordToString(syntax_asdl::w
   List<Str*>* tmp;
 
   if (UP_w->tag_() == word_e::Empty) {
-    return new value::Str(str624);
+    return new value::Str(str623);
   }
   compound_word* w = static_cast<compound_word*>(UP_w);
   part_vals = new List<runtime_asdl::part_value_t*>();
@@ -17928,14 +17928,14 @@ runtime_asdl::value__Str* AbstractWordEvaluator::EvalWordToString(syntax_asdl::w
             Str* s = it.Value();
             tmp->append(s);
           }
-          s = str626->join(tmp);
+          s = str625->join(tmp);
         }
       }
         break;
     }
     strs->append(s);
   }
-  return new value::Str(str627->join(strs));
+  return new value::Str(str626->join(strs));
 }
 
 runtime_asdl::value__Str* AbstractWordEvaluator::EvalForPlugin(syntax_asdl::compound_word* w) {
@@ -17956,7 +17956,7 @@ runtime_asdl::value__Str* AbstractWordEvaluator::EvalForPlugin(syntax_asdl::comp
       val = new value::Str(fmt178(pyutil::strerror_IO(e)));
     }
     catch (KeyboardInterrupt*) {
-      val = new value::Str(str631);
+      val = new value::Str(str630);
     }
   }
   catch (std::exception) { }  return val;
@@ -17976,7 +17976,7 @@ runtime_asdl::value_t* AbstractWordEvaluator::EvalRhsWord(syntax_asdl::word_t* U
   runtime_asdl::value__Str* v;
 
   if (UP_w->tag_() == word_e::Empty) {
-    return new value::Str(str632);
+    return new value::Str(str631);
   }
   compound_word* w = static_cast<compound_word*>(UP_w);
   if (len(w->parts) == 1) {
@@ -18049,7 +18049,7 @@ void AbstractWordEvaluator::_EvalWordFrame(List<Tuple3<Str*, bool, bool>*>* fram
       s = tup4->at0();
       tmp->append(s);
     }
-    a = str633->join(tmp);
+    a = str632->join(tmp);
     argv->append(a);
     return ;
   }
@@ -18074,10 +18074,10 @@ void AbstractWordEvaluator::_EvalWordFrame(List<Tuple3<Str*, bool, bool>*>* fram
     }
     frags->append(frag);
   }
-  flat = str634->join(frags);
+  flat = str633->join(frags);
   args = this->splitter->SplitForWordEval(flat);
   if (!args and any_quoted) {
-    argv->append(str635);
+    argv->append(str634);
     return ;
   }
   for (ListIter<Str*> it(args); !it.Done(); it.Next()) {
@@ -18106,7 +18106,7 @@ List<Str*>* AbstractWordEvaluator::_EvalWordToArgv(syntax_asdl::compound_word* w
         s = tup6->at0();
         tmp->append(s);
       }
-      argv->append(str636->join(tmp));
+      argv->append(str635->join(tmp));
     }
   }
   return argv;
@@ -18155,7 +18155,7 @@ runtime_asdl::cmd_value__Assign* AbstractWordEvaluator::_EvalAssignBuiltin(int b
           e_die(fmt179(), w);
         }
         tok_val = left_token->val;
-        if (str_equals(tok_val->index(-2), str638)) {
+        if (str_equals(tok_val->index(-2), str637)) {
           e_die(fmt180(), w);
         }
         var_name = tok_val->slice(0, -1);
@@ -18189,10 +18189,10 @@ runtime_asdl::cmd_value__Assign* AbstractWordEvaluator::_EvalAssignBuiltin(int b
       argv = this->_EvalWordToArgv(w);
       for (ListIter<Str*> it(argv); !it.Done(); it.Next()) {
         Str* arg = it.Value();
-        if (arg->startswith(str640) or arg->startswith(str641)) {
+        if (arg->startswith(str639) or arg->startswith(str640)) {
           flags->append(arg);
           flag_spids->append(word_spid);
-          if (str_contains(arg, str642) or str_contains(arg, str643)) {
+          if (str_contains(arg, str641) or str_contains(arg, str642)) {
             eval_to_pairs = false;
           }
         }
@@ -18274,7 +18274,7 @@ runtime_asdl::cmd_value_t* AbstractWordEvaluator::StaticEvalWordSequence2(List<s
           s = tup10->at0();
           tmp->append(s);
         }
-        strs->append(str644->join(tmp));
+        strs->append(str643->join(tmp));
         spids->append(word_spid);
       }
     }
@@ -18351,7 +18351,7 @@ Tuple2<Str*, runtime_asdl::value__Str*> _SplitAssignArg(Str* arg, syntax_asdl::c
   Str* prefix;
   runtime_asdl::value__Str* no_str;
 
-  i = arg->find(str645);
+  i = arg->find(str644);
   prefix = arg->slice(0, i);
   if (i != -1 and match::IsValidVarName(prefix)) {
     return (Tuple2<Str*, runtime_asdl::value__Str*>(prefix, new value::Str(arg->slice(i + 1))));
@@ -18392,11 +18392,11 @@ void CompletionWordEvaluator::CheckCircularDeps() {
 }
 
 runtime_asdl::part_value__String* CompletionWordEvaluator::_EvalCommandSub(syntax_asdl::command_t* node, bool quoted) {
-  return new part_value::String(str647, quoted, !quoted);
+  return new part_value::String(str646, quoted, !quoted);
 }
 
 runtime_asdl::part_value__String* CompletionWordEvaluator::_EvalProcessSub(syntax_asdl::command_t* node, int id_) {
-  return new part_value::String(str648, true, false);
+  return new part_value::String(str647, true, false);
 }
 
 }  // define namespace word_eval
@@ -18541,7 +18541,7 @@ syntax_asdl::suffix_op__PatSub* WordParser::_ReadPatSubVarOp() {
     ok = tup0.at0();
     s = tup0.at1();
     quoted = tup0.at2();
-    if (ok and str_equals(s, str650) and !quoted) {
+    if (ok and str_equals(s, str649) and !quoted) {
       this->_Next(lex_mode_e::VSub_ArgUnquoted);
       this->_Peek();
       pat->parts->append(this->cur_token);
@@ -18679,7 +18679,7 @@ syntax_asdl::braced_var_sub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t ar
               }
             }
             else {
-              p_die(fmt190(str659), this->cur_token);
+              p_die(fmt190(str658), this->cur_token);
             }
           }
         }
@@ -18691,7 +18691,7 @@ syntax_asdl::braced_var_sub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t ar
               this->_Peek();
             }
             else {
-              p_die(fmt191(str661), this->cur_token);
+              p_die(fmt191(str660), this->cur_token);
             }
           }
         }
@@ -18795,7 +18795,7 @@ syntax_asdl::Token* WordParser::ReadSingleQuoted(types_asdl::lex_mode_t lex_mode
     this->_Peek();
     if ((this->token_kind == Kind::Lit || this->token_kind == Kind::Char)) {
       tok = this->cur_token;
-      if (no_backslashes and str_contains(tok->val, str665)) {
+      if (no_backslashes and str_contains(tok->val, str664)) {
         p_die(fmt195(), tok);
       }
       tokens->append(tok);
@@ -19050,7 +19050,7 @@ syntax_asdl::command_sub* WordParser::_ReadCommandSub(int left_id) {
           this->_Next(lex_mode_e::Backtick);
         }
         right_spid = this->cur_token->span_id;
-        code_str = str671->join(parts);
+        code_str = str670->join(parts);
         arena = this->parse_ctx->arena;
         line_reader = reader::StringLineReader(code_str, arena);
         c_parser = this->parse_ctx->MakeOshParser(line_reader);
@@ -19726,11 +19726,11 @@ Tuple3<bool, Str*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
   UP_part = part;
   switch (part->tag_()) {
     case word_part_e::ShArrayLiteral: {
-      return (Tuple3<bool, Str*, bool>(false, str687, false));
+      return (Tuple3<bool, Str*, bool>(false, str686, false));
     }
       break;
     case word_part_e::AssocArrayLiteral: {
-      return (Tuple3<bool, Str*, bool>(false, str688, false));
+      return (Tuple3<bool, Str*, bool>(false, str687, false));
     }
       break;
     case word_part_e::Literal: {
@@ -19752,7 +19752,7 @@ Tuple3<bool, Str*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
         syntax_asdl::Token* t = it.Value();
         tmp->append(t->val);
       }
-      s = str689->join(tmp);
+      s = str688->join(tmp);
       return (Tuple3<bool, Str*, bool>(true, s, true));
     }
       break;
@@ -19765,11 +19765,11 @@ Tuple3<bool, Str*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
         ok = tup0.at0();
         s = tup0.at1();
         if (!ok) {
-          return (Tuple3<bool, Str*, bool>(false, str690, true));
+          return (Tuple3<bool, Str*, bool>(false, str689, true));
         }
         strs->append(s);
       }
-      return (Tuple3<bool, Str*, bool>(true, str691->join(strs), true));
+      return (Tuple3<bool, Str*, bool>(true, str690->join(strs), true));
     }
       break;
     case word_part_e::CommandSub: 
@@ -19779,7 +19779,7 @@ Tuple3<bool, Str*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
     case word_part_e::ArithSub: 
     case word_part_e::ExtGlob: 
     case word_part_e::Splice: {
-      return (Tuple3<bool, Str*, bool>(false, str692, false));
+      return (Tuple3<bool, Str*, bool>(false, str691, false));
     }
       break;
     default: {
@@ -19797,7 +19797,7 @@ Tuple3<bool, Str*, bool> StaticEval(syntax_asdl::word_t* UP_w) {
 
   quoted = false;
   if (UP_w->tag_() != word_e::Compound) {
-    return (Tuple3<bool, Str*, bool>(false, str693, quoted));
+    return (Tuple3<bool, Str*, bool>(false, str692, quoted));
   }
   compound_word* w = static_cast<compound_word*>(UP_w);
   strs = new List<Str*>();
@@ -19808,14 +19808,14 @@ Tuple3<bool, Str*, bool> StaticEval(syntax_asdl::word_t* UP_w) {
     s = tup1.at1();
     q = tup1.at2();
     if (!ok) {
-      return (Tuple3<bool, Str*, bool>(false, str694, quoted));
+      return (Tuple3<bool, Str*, bool>(false, str693, quoted));
     }
     if (q) {
       quoted = true;
     }
     strs->append(s);
   }
-  return (Tuple3<bool, Str*, bool>(true, str695->join(strs), quoted));
+  return (Tuple3<bool, Str*, bool>(true, str694->join(strs), quoted));
 }
 
 int LeftMostSpanForPart(syntax_asdl::word_part_t* part) {
@@ -20070,7 +20070,7 @@ syntax_asdl::compound_word* TildeDetect(syntax_asdl::word_t* UP_w) {
   UP_part1 = w->parts->index(1);
   if (_LiteralId(UP_part1) == Id::Lit_Chars) {
     Token* tok = static_cast<Token*>(UP_part1);
-    if (tok->val->startswith(str697)) {
+    if (tok->val->startswith(str696)) {
       tilde_part_ = new word_part::TildeSub(tok0);
       parts = new List<syntax_asdl::word_part_t*>({tilde_part_});
       parts->extend(w->parts->slice(1));
@@ -20118,7 +20118,7 @@ Str* ShFunctionName(syntax_asdl::compound_word* w) {
   s = tup2.at1();
   quoted = tup2.at2();
   if (!ok or quoted) {
-    return str698;
+    return str697;
   }
   return s;
 }
@@ -20401,7 +20401,7 @@ Str* Pretty(syntax_asdl::word_t* w) {
   if (w->tag_() == word_e::String) {
     word__String* w = static_cast<word__String*>(UP_w);
     if (w->id == Id::Eof_Real) {
-      return str699;
+      return str698;
     }
     else {
       return repr(w->s);
@@ -20443,9 +20443,9 @@ PNode::PNode(int typ, syntax_asdl::Token* tok, List<pnode::PNode*>* children) {
 namespace cgi {  // define
 
 Str* escape(Str* s) {
-  s = s->replace(str707, str708);
-  s = s->replace(str709, str710);
-  s = s->replace(str711, str712);
+  s = s->replace(str706, str707);
+  s = s->replace(str708, str709);
+  s = s->replace(str710, str711);
   return s;
 }
 
@@ -20492,7 +20492,7 @@ Str* maybe_shell_encode(Str* s, int flags) {
         continue;
       }
       quote = 1;
-      if (str_contains(str713, ch) or IsUnprintableLow(ch)) {
+      if (str_contains(str712, ch) or IsUnprintableLow(ch)) {
         quote = 2;
         break;
       }
@@ -20504,13 +20504,13 @@ Str* maybe_shell_encode(Str* s, int flags) {
   parts = new List<Str*>();
   valid_utf8 = _encode(s, bit8_display, true, parts);
   if (!valid_utf8 or quote == 2) {
-    prefix = str714;
+    prefix = str713;
   }
   else {
-    prefix = str715;
+    prefix = str714;
   }
-  parts->append(str716);
-  return str_concat(prefix, str717->join(parts));
+  parts->append(str715);
+  return str_concat(prefix, str716->join(parts));
 }
 
 Str* maybe_encode(Str* s) {
@@ -20538,20 +20538,20 @@ Str* maybe_encode(Str* s, int bit8_display) {
     return s;
   }
   parts = new List<Str*>();
-  parts->append(str718);
+  parts->append(str717);
   _encode(s, bit8_display, false, parts);
-  parts->append(str719);
-  return str720->join(parts);
+  parts->append(str718);
+  return str719->join(parts);
 }
 
 Str* encode(Str* s, int bit8_display) {
   List<Str*>* parts;
 
   parts = new List<Str*>();
-  parts->append(str721);
+  parts->append(str720);
   _encode(s, bit8_display, false, parts);
-  parts->append(str722);
-  return str723->join(parts);
+  parts->append(str721);
+  return str722->join(parts);
 }
 
 void _encode_bytes_x(Str* s, bool shell_compat, List<Str*>* parts) {
@@ -20559,28 +20559,28 @@ void _encode_bytes_x(Str* s, bool shell_compat, List<Str*>* parts) {
 
   for (StrIter it(s); !it.Done(); it.Next()) {
     Str* byte = it.Value();
-    if (str_equals(byte, str724)) {
-      part = str725;
+    if (str_equals(byte, str723)) {
+      part = str724;
     }
     else {
-      if (str_equals(byte, str726)) {
-        part = str727;
+      if (str_equals(byte, str725)) {
+        part = str726;
       }
       else {
-        if (str_equals(byte, str728)) {
-          part = str729;
+        if (str_equals(byte, str727)) {
+          part = str728;
         }
         else {
-          if (str_equals(byte, str730)) {
-            part = str731;
+          if (str_equals(byte, str729)) {
+            part = str730;
           }
           else {
-            if (str_equals(byte, str732)) {
-              part = str733;
+            if (str_equals(byte, str731)) {
+              part = str732;
             }
             else {
-              if (str_equals(byte, str734)) {
-                part = shell_compat ? str735 : str736;
+              if (str_equals(byte, str733)) {
+                part = shell_compat ? str734 : str735;
               }
               else {
                 if (IsUnprintableLow(byte)) {
@@ -20630,9 +20630,9 @@ bool _encode_runes(Str* s, int bit8_display, bool shell_compat, List<Str*>* part
 
   valid_utf8 = true;
   state = Start;
-  r1 = str737;
-  r2 = str738;
-  r3 = str739;
+  r1 = str736;
+  r2 = str737;
+  r3 = str738;
   for (StrIter it(s); !it.Done(); it.Next()) {
     Str* byte = it.Value();
     b = ord(byte);
@@ -20676,28 +20676,28 @@ bool _encode_runes(Str* s, int bit8_display, bool shell_compat, List<Str*>* part
     }
     if (typ == Ascii) {
       state = Start;
-      if (str_equals(byte, str740)) {
-        out = str741;
+      if (str_equals(byte, str739)) {
+        out = str740;
       }
       else {
-        if (str_equals(byte, str742)) {
-          out = str743;
+        if (str_equals(byte, str741)) {
+          out = str742;
         }
         else {
-          if (str_equals(byte, str744)) {
-            out = str745;
+          if (str_equals(byte, str743)) {
+            out = str744;
           }
           else {
-            if (str_equals(byte, str746)) {
-              out = str747;
+            if (str_equals(byte, str745)) {
+              out = str746;
             }
             else {
-              if (str_equals(byte, str748)) {
-                out = str749;
+              if (str_equals(byte, str747)) {
+                out = str748;
               }
               else {
-                if (str_equals(byte, str750)) {
-                  out = shell_compat ? str751 : str752;
+                if (str_equals(byte, str749)) {
+                  out = shell_compat ? str750 : str751;
                 }
                 else {
                   if (IsUnprintableLow(byte)) {
