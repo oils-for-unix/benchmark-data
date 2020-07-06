@@ -1,0 +1,6 @@
+2020-07-06__12-27-58 lisa 88603626 bash d685a43c
+2020-07-06__12-27-58 lisa 88603626 dash 2887d9e6
+2020-07-06__12-27-58 lisa 88603626 mksh ae7d165b
+2020-07-06__12-27-58 lisa 88603626 zsh ca7b4198
+2020-07-06__12-27-58 lisa 88603626 bin/osh cf0e857b
+2020-07-06__12-27-58 lisa 88603626 /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.8.pre7/_bin/osh c87d24a8
