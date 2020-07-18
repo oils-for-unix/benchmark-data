@@ -1,0 +1,9 @@
+Oil version 0.8.pre8
+Release Date: 2020-07-18 08:04:28+00:00
+Arch: x86_64
+OS: Linux
+Platform: #102~16.04.1-Ubuntu SMP Mon May 11 11:38:16 UTC 2020
+Compiler: GCC 5.4.0 20160609
+Interpreter: OVM
+Interpreter version: 2.7.13
+Bytecode: bytecode-opy.zip
