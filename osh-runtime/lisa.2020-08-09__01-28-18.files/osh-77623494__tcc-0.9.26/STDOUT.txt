@@ -1,0 +1,18 @@
+Binary  directory   /usr/local/bin
+TinyCC directory    /usr/local/lib/tcc
+Library directory   /usr/local/lib
+Include directory   /usr/local/include
+Manual directory    /usr/local/share/man
+Info directory      /usr/local/share/info
+Doc directory       /usr/local/share/doc/tcc
+Target root prefix  
+Source path      .
+C compiler       gcc
+Target OS        Linux
+CPU              x86-64
+Big Endian       no
+gprof enabled    no
+cross compilers  no
+use libgcc       no
+Creating config.mak and config.h
+config.h is unchanged
