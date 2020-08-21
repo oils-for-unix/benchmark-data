@@ -1,7 +1,7 @@
 status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
-0	2.1782	2.088895	0.105985	6132	05baceb956b7eb82c48e0b4e3b9ce147	flanders	cc016cb1	bash	d685a43c	word_freq	10	benchmarks/testdata/abuild
-0	0.3074	0.28573699999999996	0.027771999999999998	5988	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	bash	d685a43c	word_freq	10	configure
-0	1.9020	1.75687	0.147864	226420	194855512a7e9eb6791013af8c44f774	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	benchmarks/testdata/abuild
-0	0.1498	0.139424	0.012225999999999999	38092	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	configure
-0	0.0878	0.068525	0.0219	7436	05baceb956b7eb82c48e0b4e3b9ce147	flanders	cc016cb1	python	e4b9f5ce	word_freq	10	benchmarks/testdata/abuild
-0	0.0419	0.036657999999999996	0.0076089999999999994	6776	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	python	e4b9f5ce	word_freq	10	configure
+0	1.5659	1.512842	0.069035	6140	05baceb956b7eb82c48e0b4e3b9ce147	flanders	cc016cb1	bash	d685a43c	word_freq	10	benchmarks/testdata/abuild
+0	0.2470	0.238167	0.013364	6108	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	bash	d685a43c	word_freq	10	configure
+0	1.5634	1.394109	0.17121999999999998	226364	194855512a7e9eb6791013af8c44f774	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	benchmarks/testdata/abuild
+0	0.1249	0.089893	0.036740999999999996	38080	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	configure
+0	0.0781	0.07060999999999999	0.009509	7288	05baceb956b7eb82c48e0b4e3b9ce147	flanders	cc016cb1	python	e4b9f5ce	word_freq	10	benchmarks/testdata/abuild
+0	0.0401	0.033414	0.0083	6776	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	python	e4b9f5ce	word_freq	10	configure

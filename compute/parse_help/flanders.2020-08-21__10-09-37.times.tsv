@@ -1,7 +1,7 @@
 status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
-0	0.0201	0.007248999999999999	0.009717	6140	1afe5984e4dfa04a5c2084811ccc370b	flanders	cc016cb1	bash	d685a43c	parse_help	ls-short	_
-0	0.0473	0.047049999999999995	0.0	6000	2d4cfb983a4bde9516c34bef6bfe656b	flanders	cc016cb1	bash	d685a43c	parse_help	ls	_
-0	0.0554	0.042519999999999995	0.012695999999999999	6060	3307e41430578aa391c4dc7b9923b6c1	flanders	cc016cb1	bash	d685a43c	parse_help	mypy	_
-0	0.0173	0.005562	0.011559999999999999	6052	1afe5984e4dfa04a5c2084811ccc370b	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	parse_help	ls-short	_
-0	0.0503	0.032802	0.017414	7900	2d4cfb983a4bde9516c34bef6bfe656b	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	parse_help	ls	_
-0	0.0624	0.053939	0.008204	9360	3307e41430578aa391c4dc7b9923b6c1	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	parse_help	mypy	_
+0	0.0166	0.009481	0.006789	6132	1afe5984e4dfa04a5c2084811ccc370b	flanders	cc016cb1	bash	d685a43c	parse_help	ls-short	_
+0	0.0451	0.040144	0.00475	6128	2d4cfb983a4bde9516c34bef6bfe656b	flanders	cc016cb1	bash	d685a43c	parse_help	ls	_
+0	0.0501	0.046693	0.003035	6000	3307e41430578aa391c4dc7b9923b6c1	flanders	cc016cb1	bash	d685a43c	parse_help	mypy	_
+0	0.0157	0.010114999999999999	0.005392999999999999	6056	1afe5984e4dfa04a5c2084811ccc370b	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	parse_help	ls-short	_
+0	0.0442	0.021004	0.022827999999999998	7916	2d4cfb983a4bde9516c34bef6bfe656b	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	parse_help	ls	_
+0	0.0495	0.025422999999999998	0.023707	9344	3307e41430578aa391c4dc7b9923b6c1	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	parse_help	mypy	_
