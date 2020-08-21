@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	1.5827	1.531707	0.065466	6000	05baceb956b7eb82c48e0b4e3b9ce147	flanders	cc016cb1	bash	d685a43c	word_freq	10	benchmarks/testdata/abuild
+0	0.2515	0.237252	0.019535	6000	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	bash	d685a43c	word_freq	10	configure
+0	1.5367	1.414227	0.12448999999999999	226432	194855512a7e9eb6791013af8c44f774	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre10/_bin/osh_eval.opt.stripped	eb7a7ff7	word_freq	10	benchmarks/testdata/abuild
+0	0.1293	0.10982499999999999	0.021467999999999998	38100	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre10/_bin/osh_eval.opt.stripped	eb7a7ff7	word_freq	10	configure
+0	0.0771	0.07374599999999999	0.005627999999999999	7340	05baceb956b7eb82c48e0b4e3b9ce147	flanders	cc016cb1	python	e4b9f5ce	word_freq	10	benchmarks/testdata/abuild
+0	0.0418	0.034816	0.009319	6800	01a8a56b32f1fde2b1c1534d8ca922ca	flanders	cc016cb1	python	e4b9f5ce	word_freq	10	configure
