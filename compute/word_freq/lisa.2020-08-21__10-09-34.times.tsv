@@ -1,7 +1,7 @@
 status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
-0	0.7170	0.701305	0.017943999999999998	6124	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	bash	d685a43c	word_freq	10	benchmarks/testdata/abuild
-0	0.1070	0.10296799999999999	0.005490999999999999	6196	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	bash	d685a43c	word_freq	10	configure
-0	0.7578	0.681908	0.071604	226356	194855512a7e9eb6791013af8c44f774	lisa	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	benchmarks/testdata/abuild
-0	0.0595	0.044461	0.015543	38144	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	configure
-0	0.0335	0.025543	0.008797	7476	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	python	e4b9f5ce	word_freq	10	benchmarks/testdata/abuild
-0	0.0172	0.01379	0.004019	6760	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	python	e4b9f5ce	word_freq	10	configure
+0	0.6635	0.6367109999999999	0.030934	6196	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	bash	d685a43c	word_freq	10	benchmarks/testdata/abuild
+0	0.1070	0.091333	0.017959	6060	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	bash	d685a43c	word_freq	10	configure
+0	0.7650	0.701148	0.06434999999999999	226296	194855512a7e9eb6791013af8c44f774	lisa	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	benchmarks/testdata/abuild
+0	0.0590	0.050742999999999996	0.008257	38052	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre9/_bin/osh_eval.opt.stripped	1f21ee1d	word_freq	10	configure
+0	0.0369	0.027965999999999998	0.009549	7384	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	python	e4b9f5ce	word_freq	10	benchmarks/testdata/abuild
+0	0.0148	0.012051	0.00327	6996	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	python	e4b9f5ce	word_freq	10	configure
