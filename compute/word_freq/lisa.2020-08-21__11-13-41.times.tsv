@@ -1,7 +1,4 @@
 status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
-0	0.6595	0.629051	0.037804	6196	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	bash	d685a43c	word_freq	10	benchmarks/testdata/abuild
-0	0.1034	0.101033	0.004046	6128	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	bash	d685a43c	word_freq	10	configure
-0	0.7492	0.669214	0.080328	226332	194855512a7e9eb6791013af8c44f774	lisa	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre10/_bin/osh_eval.opt.stripped	eb7a7ff7	word_freq	10	benchmarks/testdata/abuild
-0	0.0608	0.049266	0.011946	38048	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre10/_bin/osh_eval.opt.stripped	eb7a7ff7	word_freq	10	configure
-0	0.0336	0.031633999999999995	0.002544	7560	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	python	e4b9f5ce	word_freq	10	benchmarks/testdata/abuild
-0	0.0152	0.006072999999999999	0.009654	6932	01a8a56b32f1fde2b1c1534d8ca922ca	lisa	cc016cb1	python	e4b9f5ce	word_freq	10	configure
+0	0.6698	0.6446219999999999	0.031879	6116	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	bash	d685a43c	word_freq	10	benchmarks/testdata/abuild
+0	0.7510	0.65671	0.09476599999999999	226284	194855512a7e9eb6791013af8c44f774	lisa	cc016cb1	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.pre10/_bin/osh_eval.opt.stripped	eb7a7ff7	word_freq	10	benchmarks/testdata/abuild
+0	0.0331	0.029734999999999998	0.004155	7468	05baceb956b7eb82c48e0b4e3b9ce147	lisa	cc016cb1	python	e4b9f5ce	word_freq	10	benchmarks/testdata/abuild
