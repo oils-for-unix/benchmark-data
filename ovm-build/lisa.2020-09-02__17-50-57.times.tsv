@@ -1,0 +1,15 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	0.6339	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.8.pre11	configure
+0	19.1855	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.8.pre11	_bin/oil.ovm
+0	6.5500	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.8.pre11	_bin/oil.ovm-dbg
+0	15.4830	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.8.pre11	_bin/osh_eval.dbg
+0	28.0604	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.8.pre11	_bin/osh_eval.opt.stripped
+0	0.6154	lisa	cc016cb1	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.8.pre11	configure
+0	14.6367	lisa	cc016cb1	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.8.pre11	_bin/oil.ovm
+0	5.0758	lisa	cc016cb1	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.8.pre11	_bin/oil.ovm-dbg
+0	14.4569	lisa	cc016cb1	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.8.pre11	_bin/osh_eval.dbg
+0	24.3461	lisa	cc016cb1	/home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang	768eb1ae	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.8.pre11	_bin/osh_eval.opt.stripped
+0	14.1911	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	25.0554	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	2.8133	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	3.0145	lisa	cc016cb1	/usr/bin/gcc	816edb3d	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make
