@@ -1,0 +1,2 @@
+4.15.0-122-generic
+#124~16.04.1-Ubuntu SMP Thu Oct 15 16:08:36 UTC 2020
