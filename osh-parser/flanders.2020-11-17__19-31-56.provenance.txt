@@ -1,0 +1,8 @@
+2020-11-17__19-31-56 flanders e67e6fdb bash d685a43c
+2020-11-17__19-31-56 flanders e67e6fdb dash 2887d9e6
+2020-11-17__19-31-56 flanders e67e6fdb mksh ae7d165b
+2020-11-17__19-31-56 flanders e67e6fdb zsh ca7b4198
+2020-11-17__19-31-56 flanders e67e6fdb bin/osh c091a459
+2020-11-17__19-31-56 flanders e67e6fdb /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.8.5/_bin/osh 2c79973e
+2020-11-17__19-31-56 flanders e67e6fdb /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.5/_bin/osh_eval.opt.stripped 69269f66
+2020-11-17__19-31-56 flanders e67e6fdb python e4b9f5ce
