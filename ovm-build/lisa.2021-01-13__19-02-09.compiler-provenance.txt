@@ -1,0 +1,2 @@
+2021-01-13__19-02-09 lisa 9d0956ac /usr/bin/gcc 816edb3d
+2021-01-13__19-02-09 lisa 9d0956ac /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae
