@@ -1,0 +1,8 @@
+2021-01-22__23-54-10 lisa 59823a5d bash d685a43c
+2021-01-22__23-54-10 lisa 59823a5d dash 2887d9e6
+2021-01-22__23-54-10 lisa 59823a5d mksh ae7d165b
+2021-01-22__23-54-10 lisa 59823a5d zsh ca7b4198
+2021-01-22__23-54-10 lisa 59823a5d bin/osh 26f3fb5b
+2021-01-22__23-54-10 lisa 59823a5d /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.8.7/_bin/osh 20bfc770
+2021-01-22__23-54-10 lisa 59823a5d /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.7/_bin/osh_eval.opt.stripped 76be85f8
+2021-01-22__23-54-10 lisa 59823a5d python e4b9f5ce
