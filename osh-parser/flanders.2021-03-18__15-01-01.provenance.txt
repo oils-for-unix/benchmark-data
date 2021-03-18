@@ -1,0 +1,8 @@
+2021-03-18__15-01-01 flanders f9790abf bash d685a43c
+2021-03-18__15-01-01 flanders f9790abf dash 2887d9e6
+2021-03-18__15-01-01 flanders f9790abf mksh ae7d165b
+2021-03-18__15-01-01 flanders f9790abf zsh ca7b4198
+2021-03-18__15-01-01 flanders f9790abf bin/osh fdccbdcd
+2021-03-18__15-01-01 flanders f9790abf /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.8.8/_bin/osh 0d3ffea9
+2021-03-18__15-01-01 flanders f9790abf /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.8/_bin/osh_eval.opt.stripped 9c917933
+2021-03-18__15-01-01 flanders f9790abf python e4b9f5ce
