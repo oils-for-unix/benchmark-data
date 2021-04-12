@@ -1,0 +1,10 @@
+status,elapsed_secs,user_secs,sys_secs,max_rss_KiB,host_name,host_hash,shell_name,shell_hash,task_type,task_arg
+0,0.000914,0.000908,0.000000,2980,lisa,c6f24b89,bash,d685a43c,hello-world,hello-world
+0,0.020123,0.016382,0.000722,4904,lisa,c6f24b89,bash,d685a43c,abuild,abuild-help
+0,12.813486,10.142430,3.087285,23712,lisa,c6f24b89,bash,d685a43c,cpython,cpython-configure
+0,0.000396,0.000396,0.000000,1600,lisa,c6f24b89,dash,2887d9e6,hello-world,hello-world
+0,0.007272,0.006861,0.000737,3408,lisa,c6f24b89,dash,2887d9e6,abuild,abuild-help
+0,11.452737,8.885864,2.681822,23712,lisa,c6f24b89,dash,2887d9e6,cpython,cpython-configure
+0,0.032308,0.027244,0.003892,11860,lisa,c6f24b89,osh,d6b1ef40,hello-world,hello-world
+0,0.597243,0.574724,0.025846,18544,lisa,c6f24b89,osh,d6b1ef40,abuild,abuild-help
+0,55.683645,43.575253,15.498362,42072,lisa,c6f24b89,osh,d6b1ef40,cpython,cpython-configure

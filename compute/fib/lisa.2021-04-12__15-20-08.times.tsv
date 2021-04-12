@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.078619	0.078579	0.000000	3088	ddce9d5262dc4820e4e538b12a61f9d4	lisa	c6f24b89	bash	d685a43c	fib	200	44
+0	0.021661	0.021653	0.000000	1540	ddce9d5262dc4820e4e538b12a61f9d4	lisa	c6f24b89	dash	2887d9e6	fib	200	44
+0	0.099185	0.061982	0.037189	96548	ddce9d5262dc4820e4e538b12a61f9d4	lisa	c6f24b89	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.8.9/_bin/osh_eval.opt.stripped	159be6f4	fib	200	44
+0	0.007964	0.003965	0.003965	6772	ddce9d5262dc4820e4e538b12a61f9d4	lisa	c6f24b89	python	e4b9f5ce	fib	200	44
