@@ -1,0 +1,2 @@
+2021-04-12__15-07-53 flanders c6f24b89 /usr/bin/gcc 816edb3d
+2021-04-12__15-07-53 flanders c6f24b89 /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae
