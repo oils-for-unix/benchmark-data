@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.002203	0.002172	0.000000	3372	b1946ac92492d2347c6235b4d2611184	spring	d80ab850	bash	9af8f89f	hello	_	_
+0	0.001078	0.001046	0.000000	1596	b1946ac92492d2347c6235b4d2611184	spring	d80ab850	dash	9ff48631	hello	_	_
+0	0.002907	0.002867	0.000000	4120	b1946ac92492d2347c6235b4d2611184	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.1/_bin/osh_eval.opt.stripped	b0ca4fa9	hello	_	_
+0	0.017811	0.014223	0.003555	7148	b1946ac92492d2347c6235b4d2611184	spring	d80ab850	python	e809d907	hello	_	_
