@@ -6086,7 +6086,6 @@ class WordParser : public WordEmitter {
   alloc::Arena* arena;
   syntax_asdl::word_t* buffered_word;
   syntax_asdl::Token* cur_token;
-  syntax_asdl::word_t* cursor;
   bool cursor_was_newline;
   bool emit_doc_token;
   lexer::Lexer* lexer;
@@ -28374,7 +28373,6 @@ void WordParser::Reset() {
   this->token_kind = Kind::Undefined;
   this->token_type = Id::Undefined_Tok;
   this->next_lex_mode = lex_mode_e::ShCommand;
-  this->cursor = nullptr;
   this->cursor_was_newline = false;
   this->buffered_word = nullptr;
   this->emit_doc_token = false;
@@ -29850,9 +29848,8 @@ syntax_asdl::word_t* WordParser::ReadWord(types_asdl::lex_mode_t lex_mode) {
       }
     }
   }
-  this->cursor = w;
-  this->cursor_was_newline = word_::CommandId(this->cursor) == Id::Op_Newline;
-  return this->cursor;
+  this->cursor_was_newline = word_::CommandId(w) == Id::Op_Newline;
+  return w;
 }
 
 void WordParser::ReadHereDocBody(List<syntax_asdl::word_part_t*>* parts) {
