@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.417622	0.414111	0.003994	3464	304f7b9574921ad21a2bc72f200483d7	spring	d80ab850	bash	9af8f89f	bubble_sort	int	200
+0	0.356950	0.353104	0.003984	3512	85509743b2f5735b32a108dbba770ee4	spring	d80ab850	bash	9af8f89f	bubble_sort	bytes	200
+0	0.325778	0.237381	0.088746	150200	304f7b9574921ad21a2bc72f200483d7	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.2/_bin/osh_eval.opt.stripped	bbc52eb6	bubble_sort	int	200
+0	0.295444	0.234674	0.061253	141812	85509743b2f5735b32a108dbba770ee4	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.2/_bin/osh_eval.opt.stripped	bbc52eb6	bubble_sort	bytes	200
+0	0.057086	0.049389	0.008036	7068	304f7b9574921ad21a2bc72f200483d7	spring	d80ab850	python	e809d907	bubble_sort	int	200
+0	0.029046	0.017898	0.011554	7092	85509743b2f5735b32a108dbba770ee4	spring	d80ab850	python	e809d907	bubble_sort	bytes	200
