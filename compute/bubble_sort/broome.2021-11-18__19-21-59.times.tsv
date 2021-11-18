@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.395146	0.393073	0.002487	3584	304f7b9574921ad21a2bc72f200483d7	broome	d80ab850	bash	9af8f89f	bubble_sort	int	200
+0	0.386596	0.385189	0.001698	3508	85509743b2f5735b32a108dbba770ee4	broome	d80ab850	bash	9af8f89f	bubble_sort	bytes	200
+0	0.353463	0.284654	0.069183	140480	304f7b9574921ad21a2bc72f200483d7	broome	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.4/_bin/osh_eval.opt.stripped	419ba42a	bubble_sort	int	200
+0	0.334863	0.280979	0.054258	159856	85509743b2f5735b32a108dbba770ee4	broome	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.4/_bin/osh_eval.opt.stripped	419ba42a	bubble_sort	bytes	200
+0	0.058605	0.057418	0.001483	7104	304f7b9574921ad21a2bc72f200483d7	broome	d80ab850	python	e809d907	bubble_sort	int	200
+0	0.029994	0.026556	0.003830	7116	85509743b2f5735b32a108dbba770ee4	broome	d80ab850	python	e809d907	bubble_sort	bytes	200
