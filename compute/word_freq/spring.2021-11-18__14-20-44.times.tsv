@@ -1,0 +1,4 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.156212	0.138251	0.023779	3512	01a8a56b32f1fde2b1c1534d8ca922ca	spring	d80ab850	bash	9af8f89f	word_freq	10	configure
+0	0.160854	0.118879	0.043998	63112	01a8a56b32f1fde2b1c1534d8ca922ca	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.4/_bin/osh_eval.opt.stripped	419ba42a	word_freq	10	configure
+0	0.032443	0.019533	0.015138	7260	01a8a56b32f1fde2b1c1534d8ca922ca	spring	d80ab850	python	e809d907	word_freq	10	configure

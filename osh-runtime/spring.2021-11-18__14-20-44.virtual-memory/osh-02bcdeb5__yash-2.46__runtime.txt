@@ -1,0 +1,54 @@
+Name:	osh
+Umask:	0002
+State:	R (running)
+Tgid:	9493
+Ngid:	0
+Pid:	9493
+PPid:	9492
+TracerPid:	0
+Uid:	3672	3672	3672	3672
+Gid:	3672	3672	3672	3672
+FDSize:	128
+Groups:	27 110 1001 3672 
+NStgid:	9493
+NSpid:	9493
+NSpgid:	7297
+NSsid:	7217
+VmPeak:	   36908 kB
+VmSize:	   36908 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   15912 kB
+VmRSS:	   15912 kB
+RssAnon:	   11672 kB
+RssFile:	    4240 kB
+RssShmem:	       0 kB
+VmData:	   11816 kB
+VmStk:	     132 kB
+VmExe:	    1156 kB
+VmLib:	    4392 kB
+VmPTE:	     116 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+Threads:	1
+SigQ:	2/62854
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000001001000
+SigCgt:	0000000008002003
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	ffffff
+Cpus_allowed_list:	0-23
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	204
+nonvoluntary_ctxt_switches:	2
