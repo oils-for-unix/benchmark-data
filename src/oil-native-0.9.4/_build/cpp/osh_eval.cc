@@ -2,6 +2,8 @@
 
 #include "preamble.h"  // hard-coded stuff
 
+#undef errno  // for e->errno to work; see mycpp/myerror.h
+
 // BEGIN mycpp output
 
 #include "mylib.h"
@@ -8543,7 +8545,7 @@ Str* ShellExecutor::RunCommandSub(syntax_asdl::command_sub* cs_part) {
     n = tup1.at0();
     err_num = tup1.at1();
     if (n < 0) {
-      if (err_num == errno_::EINTR) {
+      if (err_num == EINTR) {
         ;  // pass
       }
       else {
@@ -9280,7 +9282,7 @@ mylib::LineReader* FdState::Open(Str* path) {
   int fd_mode;
   StackRoots _roots({&path});
 
-  fd_mode = posix::O_RDONLY;
+  fd_mode = O_RDONLY;
   return this->_Open(path, str169, fd_mode);
 }
 
@@ -9329,7 +9331,7 @@ bool FdState::_PushSave(int fd) {
     new_fd = SaveFd(fd);
   }
   catch (IOError* e) {
-    if (e->errno == errno_::EBADF) {
+    if (e->errno == EBADF) {
       need_restore = false;
     }
     else {
@@ -9361,7 +9363,7 @@ int FdState::_PushDup(int fd1, syntax_asdl::redir_loc_t* loc) {
       new_fd = fcntl_::fcntl(fd1, fcntl_::F_DUPFD, _SHELL_MIN_FD);
     }
     catch (IOError* e) {
-      if (e->errno == errno_::EBADF) {
+      if (e->errno == EBADF) {
         this->errfmt->Print_(fmt39(fd1, pyutil::strerror(e)));
         return NO_FD;
       }
@@ -9463,23 +9465,23 @@ void FdState::_ApplyRedirect(runtime_asdl::redirect* r) {
     case redirect_arg_e::Path: {
       redirect_arg__Path* arg = static_cast<redirect_arg__Path*>(UP_arg);
       if ((r->op_id == Id::Redir_Great || r->op_id == Id::Redir_AndGreat)) {
-        mode = ((posix::O_CREAT | posix::O_WRONLY) | posix::O_TRUNC);
+        mode = ((O_CREAT | O_WRONLY) | O_TRUNC);
       }
       else {
         if (r->op_id == Id::Redir_Clobber) {
-          mode = ((posix::O_CREAT | posix::O_WRONLY) | posix::O_TRUNC);
+          mode = ((O_CREAT | O_WRONLY) | O_TRUNC);
         }
         else {
           if ((r->op_id == Id::Redir_DGreat || r->op_id == Id::Redir_AndDGreat)) {
-            mode = ((posix::O_CREAT | posix::O_WRONLY) | posix::O_APPEND);
+            mode = ((O_CREAT | O_WRONLY) | O_APPEND);
           }
           else {
             if (r->op_id == Id::Redir_Less) {
-              mode = posix::O_RDONLY;
+              mode = O_RDONLY;
             }
             else {
               if (r->op_id == Id::Redir_LessGreat) {
-                mode = (posix::O_CREAT | posix::O_RDWR);
+                mode = (O_CREAT | O_RDWR);
               }
               else {
                 throw Alloc<NotImplementedError>(r->op_id);
@@ -9696,17 +9698,17 @@ void ExternalProgram::_Exec(Str* argv0_path, List<Str*>* argv, int argv0_spid, D
     posix::execve(argv0_path, argv, environ);
   }
   catch (OSError* e) {
-    if ((e->errno == errno_::ENOEXEC and should_retry)) {
+    if ((e->errno == ENOEXEC and should_retry)) {
       new_argv = Alloc<List<Str*>>(std::initializer_list<Str*>{str178, argv0_path});
       new_argv->extend(argv->slice(1));
       this->_Exec(str179, new_argv, argv0_spid, environ, false);
     }
     this->errfmt->Print_(fmt45(argv0_path, pyutil::strerror(e)), argv0_spid);
-    if (e->errno == errno_::EACCES) {
+    if (e->errno == EACCES) {
       status = 126;
     }
     else {
-      if (e->errno == errno_::ENOENT) {
+      if (e->errno == ENOENT) {
         status = 127;
       }
       else {
@@ -10256,11 +10258,11 @@ int Waiter::WaitForOne(bool eintr_retry) {
     status = tup5.at1();
   }
   catch (OSError* e) {
-    if (e->errno == errno_::ECHILD) {
+    if (e->errno == ECHILD) {
       return -1;
     }
     else {
-      if (e->errno == errno_::EINTR) {
+      if (e->errno == EINTR) {
         return eintr_retry ? 0 : (128 + this->sig_state->last_sig_num);
       }
       else {
@@ -10743,7 +10745,7 @@ Str* SearchPath::Lookup(Str* name, bool exec_required) {
     StackRoots _for({&path_dir  });
     full_path = os_path::join(path_dir, name);
     if (exec_required) {
-      found = posix::access(full_path, posix::X_OK);
+      found = posix::access(full_path, X_OK);
     }
     else {
       found = path_stat::exists(full_path);
@@ -17997,7 +17999,7 @@ Str* _ReadN(int stdin_fd, int num_bytes, cmd_eval::CommandEvaluator* cmd_ev) {
     n = tup2.at0();
     err_num = tup2.at1();
     if (n < 0) {
-      if (err_num == errno_::EINTR) {
+      if (err_num == EINTR) {
         cmd_ev->RunPendingTraps();
       }
       else {
@@ -18030,7 +18032,7 @@ Tuple2<Str*, bool> _ReadUntilDelim(int delim_byte, cmd_eval::CommandEvaluator* c
     ch = tup3.at0();
     err_num = tup3.at1();
     if (ch < 0) {
-      if (err_num == errno_::EINTR) {
+      if (err_num == EINTR) {
         cmd_ev->RunPendingTraps();
       }
       else {
@@ -18067,7 +18069,7 @@ Str* _ReadLineSlowly(cmd_eval::CommandEvaluator* cmd_ev) {
     ch = tup4.at0();
     err_num = tup4.at1();
     if (ch < 0) {
-      if (err_num == errno_::EINTR) {
+      if (err_num == EINTR) {
         cmd_ev->RunPendingTraps();
       }
       else {
@@ -18101,7 +18103,7 @@ Str* _ReadAll() {
     n = tup5.at0();
     err_num = tup5.at1();
     if (n < 0) {
-      if (err_num == errno_::EINTR) {
+      if (err_num == EINTR) {
         ;  // pass
       }
       else {
@@ -18758,7 +18760,7 @@ int Cat::Run(runtime_asdl::cmd_value__Argv* cmd_val) {
     n = tup21.at0();
     err_num = tup21.at1();
     if (n < 0) {
-      if (err_num == errno_::EINTR) {
+      if (err_num == EINTR) {
         ;  // pass
       }
       else {
