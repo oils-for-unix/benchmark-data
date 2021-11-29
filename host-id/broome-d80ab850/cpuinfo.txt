@@ -5,7 +5,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1198.109
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -32,7 +31,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1198.074
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -59,7 +57,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1197.248
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -86,7 +83,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 2699.839
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -113,7 +109,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1197.389
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -140,7 +135,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1246.800
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -167,7 +161,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1198.485
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -194,7 +187,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1198.820
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -221,7 +213,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1445.574
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -248,7 +239,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1201.169
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -275,7 +265,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1316.290
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -302,7 +291,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1233.128
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -329,7 +317,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1197.631
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -356,7 +343,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1197.540
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -383,7 +369,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1200.982
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -410,7 +395,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 2496.650
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -437,7 +421,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1199.570
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -464,7 +447,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1251.649
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -491,7 +473,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1197.892
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -518,7 +499,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1197.559
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -545,7 +525,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1440.474
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -572,7 +551,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1200.942
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -599,7 +577,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1306.156
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
@@ -626,7 +603,6 @@ model		: 79
 model name	: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
 stepping	: 1
 microcode	: 0xb000038
-cpu MHz		: 1225.660
 cache size	: 30720 KB
 physical id	: 0
 siblings	: 24
