@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.013498	0.013046	0.000000	3668	1afe5984e4dfa04a5c2084811ccc370b	spring	d80ab850	bash	9af8f89f	parse_help	ls-short	_
+0	0.030739	0.018463	0.012342	3628	2d4cfb983a4bde9516c34bef6bfe656b	spring	d80ab850	bash	9af8f89f	parse_help	ls	_
+0	0.035436	0.027632	0.007308	3688	3307e41430578aa391c4dc7b9923b6c1	spring	d80ab850	bash	9af8f89f	parse_help	mypy	_
+0	0.012316	0.004257	0.008249	5128	1afe5984e4dfa04a5c2084811ccc370b	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.6/_bin/osh_eval.opt.stripped	d7f10784	parse_help	ls-short	_
+0	0.053556	0.042031	0.011752	10592	2d4cfb983a4bde9516c34bef6bfe656b	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.6/_bin/osh_eval.opt.stripped	d7f10784	parse_help	ls	_
+0	0.061913	0.057219	0.004992	12804	3307e41430578aa391c4dc7b9923b6c1	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.6/_bin/osh_eval.opt.stripped	d7f10784	parse_help	mypy	_

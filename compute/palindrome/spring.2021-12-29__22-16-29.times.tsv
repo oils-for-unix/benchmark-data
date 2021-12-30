@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.265154	0.256542	0.008987	3480	c716827d1eac3e2e0ff0d7d4356e842c	spring	d80ab850	bash	9af8f89f	palindrome	unicode	_
+0	0.240501	0.235138	0.004841	3500	ef69a4a6287351d77e6959beca205e15	spring	d80ab850	bash	9af8f89f	palindrome	bytes	_
+0	0.431650	0.344457	0.087529	231924	c716827d1eac3e2e0ff0d7d4356e842c	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.6/_bin/osh_eval.opt.stripped	d7f10784	palindrome	unicode	_
+0	0.447725	0.343943	0.104141	232012	c716827d1eac3e2e0ff0d7d4356e842c	spring	d80ab850	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.9.6/_bin/osh_eval.opt.stripped	d7f10784	palindrome	bytes	_
+0	0.033444	0.029691	0.004042	7524	c716827d1eac3e2e0ff0d7d4356e842c	spring	d80ab850	python2	e809d907	palindrome	unicode	_
+0	0.030645	0.028493	0.002490	7408	ef69a4a6287351d77e6959beca205e15	spring	d80ab850	python2	e809d907	palindrome	bytes	_

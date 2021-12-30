@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+spring	9394088	_tmp/ovm-build/bin/clang/osh_eval.dbg
+spring	8551016	_tmp/ovm-build/bin/gcc/osh_eval.dbg
+spring	1638992	_tmp/ovm-build/bin/clang/osh_eval.opt.stripped
+spring	1376720	_tmp/ovm-build/bin/gcc/osh_eval.opt.stripped
