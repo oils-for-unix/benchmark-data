@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+broome	9394088	_tmp/ovm-build/bin/clang/osh_eval.dbg
+broome	8551016	_tmp/ovm-build/bin/gcc/osh_eval.dbg
+broome	1638992	_tmp/ovm-build/bin/clang/osh_eval.opt.stripped
+broome	1376720	_tmp/ovm-build/bin/gcc/osh_eval.opt.stripped
