@@ -1,0 +1,2 @@
+2022-03-26__13-34-30 lenny 761a4bee /usr/bin/gcc 1c62c53f
+2022-03-26__13-34-30 lenny 761a4bee /home/andy/git/oilshell/oil/_deps/clang+llvm-5.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang 768eb1ae
