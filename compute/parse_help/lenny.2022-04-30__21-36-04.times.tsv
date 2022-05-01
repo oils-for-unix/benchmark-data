@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.006813	0.001806	0.004600	3568	1afe5984e4dfa04a5c2084811ccc370b	lenny	761a4bee	bash	9af8f89f	parse_help	ls-short	_
+0	0.016553	0.013645	0.002992	3672	2d4cfb983a4bde9516c34bef6bfe656b	lenny	761a4bee	bash	9af8f89f	parse_help	ls	_
+0	0.021377	0.019880	0.001554	3648	3307e41430578aa391c4dc7b9923b6c1	lenny	761a4bee	bash	9af8f89f	parse_help	mypy	_
+0	0.007806	0.006293	0.001830	5268	1afe5984e4dfa04a5c2084811ccc370b	lenny	761a4bee	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.10.0/_bin/osh_eval.opt.stripped	34b24f00	parse_help	ls-short	_
+0	0.025911	0.026174	0.000000	10552	2d4cfb983a4bde9516c34bef6bfe656b	lenny	761a4bee	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.10.0/_bin/osh_eval.opt.stripped	34b24f00	parse_help	ls	_
+0	0.033545	0.029853	0.004010	12828	3307e41430578aa391c4dc7b9923b6c1	lenny	761a4bee	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.10.0/_bin/osh_eval.opt.stripped	34b24f00	parse_help	mypy	_
