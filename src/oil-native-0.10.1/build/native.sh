@@ -31,13 +31,14 @@ compiler-trace-build() {
 
 # Demo for the oil-native tarball.
 # Notes:
-# - This should not rely on Ninja!  Ninja is for the dev build.
-# - It should also not require 'objcopy'
+# - Does not rely on Ninja, which is for the dev build
+# - It shouldn't require 'objcopy'
+# - TODO: do this in the Soil 'cpp' task
 
 tarball-demo() {
   mkdir -p _bin
 
-  time _build/oil-native.sh
+  time _build/oil-native.sh '' '' SKIP_REBUILD
 
   local bin=_bin/cxx-opt-sh/osh_eval.stripped
 
