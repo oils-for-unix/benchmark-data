@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.225724	0.210276	0.015985	3492	c716827d1eac3e2e0ff0d7d4356e842c	broome	d80ab850	bash	9af8f89f	palindrome	unicode	_
+0	0.204729	0.193324	0.011800	3444	ef69a4a6287351d77e6959beca205e15	broome	d80ab850	bash	9af8f89f	palindrome	bytes	_
+0	0.034699	0.028223	0.007055	7260	c716827d1eac3e2e0ff0d7d4356e842c	broome	d80ab850	python2	e809d907	palindrome	unicode	_
+0	0.034009	0.029174	0.005282	7248	ef69a4a6287351d77e6959beca205e15	broome	d80ab850	python2	e809d907	palindrome	bytes	_

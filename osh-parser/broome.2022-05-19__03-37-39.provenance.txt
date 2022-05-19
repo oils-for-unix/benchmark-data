@@ -1,0 +1,8 @@
+2022-05-19__03-37-39 broome d80ab850 bash 9af8f89f
+2022-05-19__03-37-39 broome d80ab850 dash 9ff48631
+2022-05-19__03-37-39 broome d80ab850 mksh e3755400
+2022-05-19__03-37-39 broome d80ab850 zsh a785003a
+2022-05-19__03-37-39 broome d80ab850 bin/osh 214c2cc1
+2022-05-19__03-37-39 broome d80ab850 /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.10.1/_bin/osh ba525fdf
+2022-05-19__03-37-39 broome d80ab850 /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.10.1/_bin/cxx-opt-sh/osh_eval.stripped e773ee0b
+2022-05-19__03-37-39 broome d80ab850 python2 e809d907

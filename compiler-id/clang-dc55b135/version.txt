@@ -1,0 +1,4 @@
+clang version 14.0.0
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin
