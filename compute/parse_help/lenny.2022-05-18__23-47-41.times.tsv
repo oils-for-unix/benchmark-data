@@ -1,0 +1,4 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.006049	0.003301	0.002966	3536	1afe5984e4dfa04a5c2084811ccc370b	lenny	6933449d	bash	9af8f89f	parse_help	ls-short	_
+0	0.017606	0.017838	0.000000	3760	2d4cfb983a4bde9516c34bef6bfe656b	lenny	6933449d	bash	9af8f89f	parse_help	ls	_
+0	0.022594	0.018906	0.003947	3712	3307e41430578aa391c4dc7b9923b6c1	lenny	6933449d	bash	9af8f89f	parse_help	mypy	_

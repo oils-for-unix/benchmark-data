@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.226469	0.226270	0.000472	3540	304f7b9574921ad21a2bc72f200483d7	lenny	6933449d	bash	9af8f89f	bubble_sort	int	200
+0	0.221181	0.214768	0.006666	3608	85509743b2f5735b32a108dbba770ee4	lenny	6933449d	bash	9af8f89f	bubble_sort	bytes	200
+0	0.028201	0.028424	0.000000	7180	304f7b9574921ad21a2bc72f200483d7	lenny	6933449d	python2	e809d907	bubble_sort	int	200
+0	0.013294	0.010782	0.002781	7240	85509743b2f5735b32a108dbba770ee4	lenny	6933449d	python2	e809d907	bubble_sort	bytes	200
