@@ -1,0 +1,8 @@
+2022-05-19__20-16-37 lenny 6933449d bash 9af8f89f
+2022-05-19__20-16-37 lenny 6933449d dash 9ff48631
+2022-05-19__20-16-37 lenny 6933449d mksh e3755400
+2022-05-19__20-16-37 lenny 6933449d zsh a785003a
+2022-05-19__20-16-37 lenny 6933449d bin/osh 856ed8d5
+2022-05-19__20-16-37 lenny 6933449d /home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.10.1/_bin/osh 6a13174c
+2022-05-19__20-16-37 lenny 6933449d /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.10.1/_bin/cxx-opt-sh/osh_eval.stripped cfec8796
+2022-05-19__20-16-37 lenny 6933449d python2 e809d907
