@@ -1,0 +1,15 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	1.349997	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.10.1	configure
+0	29.296078	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.10.1	_bin/oil.ovm
+0	12.241768	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.10.1	_bin/oil.ovm-dbg
+0	21.753978	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.10.1	osh_eval
+0	47.313696	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.10.1	osh_eval.stripped
+0	1.330344	broome	d80ab850	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.10.1	configure
+0	26.150121	broome	d80ab850	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.10.1	_bin/oil.ovm
+0	10.527796	broome	d80ab850	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.10.1	_bin/oil.ovm-dbg
+0	19.009271	broome	d80ab850	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.10.1	osh_eval
+0	61.682123	broome	d80ab850	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-native-0.10.1	osh_eval.stripped
+0	27.810413	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	38.401856	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	4.908410	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	5.099995	broome	d80ab850	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make

@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+broome	4515980	_tmp/ovm-build/bin/clang/oil.ovm
+broome	6317772	_tmp/ovm-build/bin/clang/oil.ovm-dbg
+broome	4673940	_tmp/ovm-build/bin/gcc/oil.ovm
+broome	6469372	_tmp/ovm-build/bin/gcc/oil.ovm-dbg
