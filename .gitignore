@@ -1,2 +1,3 @@
 .*.swp
 src/oil-native-*/_bin
+src/oil-native-*/_build/obj
