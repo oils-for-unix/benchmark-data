@@ -1,0 +1,2 @@
+2022-07-24__00-13-55 lenny 23f35694 /usr/bin/gcc 1c62c53f
+2022-07-24__00-13-55 lenny 23f35694 /home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang dc55b135
