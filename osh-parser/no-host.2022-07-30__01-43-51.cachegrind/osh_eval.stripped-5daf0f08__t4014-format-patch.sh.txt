@@ -1,0 +1,25 @@
+==2713== Cachegrind, a cache and branch-prediction profiler
+==2713== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2713== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==2713== Command: /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.12.1/_bin/cxx-opt-sh/osh_eval.stripped -n --ast-format none benchmarks/testdata/t4014-format-patch.sh
+==2713== Parent PID: 2704
+==2713== 
+--2713-- warning: L3 cache found, using its data for the LL simulation.
+--2713-- warning: specified LL cache: line_size 64  assoc 20  total_size 31,457,280
+--2713-- warning: simulated LL cache: line_size 64  assoc 30  total_size 31,457,280
+==2713== 
+==2713== I   refs:      8,218,832
+==2713== I1  misses:       65,447
+==2713== LLi misses:        4,556
+==2713== I1  miss rate:      0.80%
+==2713== LLi miss rate:      0.06%
+==2713== 
+==2713== D   refs:      3,505,754  (2,043,032 rd   + 1,462,722 wr)
+==2713== D1  misses:       41,167  (   18,364 rd   +    22,803 wr)
+==2713== LLd misses:       30,033  (    8,901 rd   +    21,132 wr)
+==2713== D1  miss rate:       1.2% (      0.9%     +       1.6%  )
+==2713== LLd miss rate:       0.9% (      0.4%     +       1.4%  )
+==2713== 
+==2713== LL refs:         106,614  (   83,811 rd   +    22,803 wr)
+==2713== LL misses:        34,589  (   13,457 rd   +    21,132 wr)
+==2713== LL miss rate:        0.3% (      0.1%     +       1.4%  )
