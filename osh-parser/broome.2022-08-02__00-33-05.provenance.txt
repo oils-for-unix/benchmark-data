@@ -1,0 +1,7 @@
+2022-08-02__00-33-05 broome 8a85d07d bash 9af8f89f
+2022-08-02__00-33-05 broome 8a85d07d dash 9ff48631
+2022-08-02__00-33-05 broome 8a85d07d mksh e3755400
+2022-08-02__00-33-05 broome 8a85d07d zsh a785003a
+2022-08-02__00-33-05 broome 8a85d07d bin/osh 159304a5
+2022-08-02__00-33-05 broome 8a85d07d _bin/osh e1637b93
+2022-08-02__00-33-05 broome 8a85d07d /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.12.2/_bin/cxx-opt-sh/osh_eval.stripped 0e35a7e9
