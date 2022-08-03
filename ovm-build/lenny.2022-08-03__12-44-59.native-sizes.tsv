@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+lenny	7477256	_tmp/ovm-build/bin/clang/osh_eval
+lenny	8159168	_tmp/ovm-build/bin/gcc/osh_eval
+lenny	1586096	_tmp/ovm-build/bin/clang/osh_eval.stripped
+lenny	1135280	_tmp/ovm-build/bin/gcc/osh_eval.stripped
