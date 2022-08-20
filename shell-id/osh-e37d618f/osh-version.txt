@@ -1,0 +1,9 @@
+Oil version 0.12.4
+Release Date: 2022-08-20 15:44:50+00:00
+Arch: x86_64
+OS: Linux
+Platform: #140~18.04.1-Ubuntu SMP Fri Aug 5 11:43:34 UTC 2022
+Compiler: GCC 7.5.0
+Interpreter: OVM
+Interpreter version: 2.7.13
+Bytecode: bytecode-opy.zip
