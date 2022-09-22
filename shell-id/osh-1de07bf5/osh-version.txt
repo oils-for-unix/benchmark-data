@@ -1,0 +1,9 @@
+Oil version 0.12.6
+Release Date: -
+Arch: x86_64
+OS: Linux
+Platform: #199-Ubuntu SMP Wed Jun 15 20:42:56 UTC 2022
+Compiler: GCC 7.5.0
+Interpreter: CPython
+Interpreter version: 2.7.17
+Bytecode: -
