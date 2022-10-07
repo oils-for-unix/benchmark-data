@@ -1,0 +1,6 @@
+2022-10-07__13-01-52 - - bash 9af8f89f
+2022-10-07__13-01-52 - - dash 9ff48631
+2022-10-07__13-01-52 - - mksh e3755400
+2022-10-07__13-01-52 - - zsh a785003a
+2022-10-07__13-01-52 - - /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.12.7/_bin/cxx-opt-sh/osh_eval.stripped 15aebd46
+2022-10-07__13-01-52 - - python2 e809d907
