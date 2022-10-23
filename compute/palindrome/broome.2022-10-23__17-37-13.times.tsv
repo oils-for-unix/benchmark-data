@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.270471	0.265717	0.005336	3536	c716827d1eac3e2e0ff0d7d4356e842c	broome	8a85d07d	bash	9af8f89f	palindrome	unicode	_
+0	0.202721	0.188273	0.014944	3604	ef69a4a6287351d77e6959beca205e15	broome	8a85d07d	bash	9af8f89f	palindrome	bytes	_
+0	1.575716	1.090117	0.485881	1113940	c716827d1eac3e2e0ff0d7d4356e842c	broome	8a85d07d	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.12.8/_bin/cxx-opt-sh/osh_eval.stripped	c80177d1	palindrome	unicode	_
+0	1.572077	1.111305	0.460532	1113976	c716827d1eac3e2e0ff0d7d4356e842c	broome	8a85d07d	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.12.8/_bin/cxx-opt-sh/osh_eval.stripped	c80177d1	palindrome	bytes	_
+0	0.038823	0.032634	0.006261	7392	c716827d1eac3e2e0ff0d7d4356e842c	broome	8a85d07d	python2	e809d907	palindrome	unicode	_
+0	0.034441	0.028744	0.006243	7236	ef69a4a6287351d77e6959beca205e15	broome	8a85d07d	python2	e809d907	palindrome	bytes	_
