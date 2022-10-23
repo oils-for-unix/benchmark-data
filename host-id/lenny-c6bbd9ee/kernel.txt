@@ -1,0 +1,2 @@
+5.4.0-131-generic
+#147~18.04.1-Ubuntu SMP Sat Oct 15 13:10:18 UTC 2022
