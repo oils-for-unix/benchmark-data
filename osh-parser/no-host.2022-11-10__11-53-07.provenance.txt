@@ -1,0 +1,5 @@
+2022-11-10__11-53-07 no-host c6bbd9ee bash 9af8f89f
+2022-11-10__11-53-07 no-host c6bbd9ee dash 9ff48631
+2022-11-10__11-53-07 no-host c6bbd9ee mksh e3755400
+2022-11-10__11-53-07 no-host c6bbd9ee zsh a785003a
+2022-11-10__11-53-07 no-host c6bbd9ee /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.12.9/_bin/cxx-opt-sh/osh_eval.stripped b4a35663
