@@ -1,0 +1,4 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.144909	0.132214	0.018811	3532	01a8a56b32f1fde2b1c1534d8ca922ca	broome	8a85d07d	bash	9af8f89f	word_freq	10	configure
+0	0.478172	0.318255	0.165917	409796	01a8a56b32f1fde2b1c1534d8ca922ca	broome	8a85d07d	/home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.12.9/_bin/cxx-opt-sh/osh_eval.stripped	b4a35663	word_freq	10	configure
+0	0.037212	0.027978	0.011799	7288	01a8a56b32f1fde2b1c1534d8ca922ca	broome	8a85d07d	python2	e809d907	word_freq	10	configure
