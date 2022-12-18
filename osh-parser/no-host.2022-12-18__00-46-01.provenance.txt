@@ -1,0 +1,5 @@
+2022-12-18__00-46-01 no-host 3063f657 bash 9af8f89f
+2022-12-18__00-46-01 no-host 3063f657 dash 9ff48631
+2022-12-18__00-46-01 no-host 3063f657 mksh e3755400
+2022-12-18__00-46-01 no-host 3063f657 zsh a785003a
+2022-12-18__00-46-01 no-host 3063f657 /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.13.0/_bin/cxx-opt-sh/osh_eval.stripped 601113b9
