@@ -1,0 +1,416 @@
+#!/bin/sh
+#
+# POSIX shell script to detect target system properties required by Oil.
+# Distributed with the source tarball.
+#
+# The only library Oil needs is readline.
+#
+# External utilities used: cc
+#
+# TODO: Should be able to run this from another directory.
+#
+# Other settings: LTO, PGO?  Consider moving prefix, LTO, PGO to build and
+# install steps.
+
+TMP=${TMPDIR:-/tmp}  # Assume that any system has $TMPDIR set or /tmp exists
+readonly TMP  # POSIX sh supports 'readonly'
+
+log() {
+  echo "$0: $@" 1>&2
+}
+
+info() {
+  echo "$0 INFO: $@" 1>&2
+}
+
+die() {
+  echo "$0 ERROR: $@" 1>&2
+  exit 1
+}
+
+show_help() {
+  cat <<'EOF'
+Usage: ./configure [OPTION...]
+
+Detects system settings before a build of Oil.
+
+Installation directories:
+  --prefix=PREFIX               Prefix for the bin/ directory [/usr/local]
+  --datarootdir=DATAROOTDIR     Prefix for data files, including man page [PREFIX/share]
+
+Optional features:
+  --with-readline               Fail unless readline is available.
+  --without-readline            Don't compile with readline, even if it's available.
+                                The shell won't have any interactive features.
+  --readline=DIR                An alternative readline installation to link against
+EOF
+}
+
+# This script roughly follows the GNU Standards
+# https://www.gnu.org/prep/standards/html_node/Configuration.html
+# https://www.gnu.org/prep/standards/html_node/Directory-Variables.html
+#
+# Default installation is /usr/local/bin/oil, but this can be changed with
+# --prefix.
+#
+# While this script only uses a handful of the standard directory variables
+# listed on the above documents, it accepts most of them in the --arg=value
+# form as noops. This helps automated build-systems passing preconfigured
+# sets of arguments to configure oil.
+FLAG_prefix='/usr/local'
+FLAG_datarootdir=''  # default initialized after processing flags
+FLAG_with_readline=''  # Fail if it's not available.
+FLAG_without_readline=''  # Don't even check if it's available
+FLAG_readline=''
+
+while true; do
+  case "$1" in
+    '')
+      break
+      ;;
+    --help)
+      # TODO: Fill out help
+      show_help
+      exit 0
+      ;;
+
+    --with-readline)
+      FLAG_with_readline=1
+      ;;
+
+    --without-readline)
+      FLAG_without_readline=1
+      ;;
+
+    --readline=*)
+      FLAG_readline="${1#*=}"
+      ;;
+    --readline)
+      if test $# -eq 1; then
+        die "--readline requires an argument"
+      fi
+      shift
+      FLAG_readline=$1
+      ;;
+
+    # TODO: Maybe prefix only needs to be part of the install step?  I'm not
+    # sure if we need it for building anything.
+    --prefix=*)
+      FLAG_prefix="${1#*=}"
+      ;;
+    --prefix)
+      if test $# -eq 1; then
+        die "--prefix requires an argument"
+      fi
+      shift
+      FLAG_prefix=$1
+      ;;
+
+    # Following autoconf's spelling of --mandir
+    --datarootdir=*)
+      FLAG_datarootdir="${1#*=}"
+      ;;
+    --datarootdir)
+      if test $# -eq 1; then
+        die "--datarootdir requires an argument"
+      fi
+      shift
+      FLAG_datarootdir=$1
+      ;;
+
+    --with-*|--enable-*)
+      info "Argument '$1' not used by this configure script"
+      ;;
+
+    --build=*|--host=*)
+      info "Argument '$1' not used by this configure script"
+      ;;
+
+    --exec-prefix=*|--bindir=*|--sbindir=*|--libexecdir=*|--sysconfdir=*)
+      info "Argument '$1' not used by this configure script"
+      ;;
+    --sharedstatedir=*|--localstatedir=*|--runstatedir=*)
+      info "Argument '$1' not used by this configure script"
+      ;;
+    --libdir=*|--includedir=*|--oldincludedir=*)
+      info "Argument '$1' not used by this configure script"
+      ;;
+    --datadir=*|--infodir=*|--localedir=*|--mandir=*|--docdir=*)
+      info "Argument '$1' not used by this configure script"
+      ;;
+    --htmldir=*|--dvidir=*|--pdfdir=*|--psdir=*)
+      info "Argument '$1' not used by this configure script"
+      ;;
+
+    *)
+      die "Invalid argument '$1'"
+      ;;
+  esac
+  shift
+done
+
+# If not set, fallback to --prefix
+FLAG_datarootdir=${FLAG_datarootdir:-$FLAG_prefix/share}
+
+
+# No output file, no logging, no stderr.
+# TODO: Maybe send stdout/stderr to config.log?
+cc_quiet() {
+  cc "$@" -o /dev/null >/dev/null 2>&1
+}
+
+cc_or_die() {
+  if ! cc "$@" >$TMP/cc.log 2>&1; then
+    log "Error running 'cc $@':"
+    cat $TMP/cc.log
+    die "Fatal compile error running feature test"
+  fi
+}
+
+# Check if a given program compiles
+cc_statement() {
+  local pp_var="$1"
+  local prog="$2"
+  local includes="$3"
+
+  cat >$TMP/cc_statement.c <<EOF
+$includes
+int main() {
+  $prog
+}
+EOF
+  # Return exit code of compiler
+  if cc_quiet $TMP/cc_statement.c; then
+    echo "#define $pp_var 1"
+    return 0
+  else
+    return 1
+  fi
+}
+
+# Check if a given library is installed via compilation
+cc_header_file() {
+  local pp_var="$1"
+  local c_lib="$2"
+
+  cc_statement "$pp_var" 'return 0;' "#include <$c_lib>"
+}
+
+# Write a shell script to standard out with variables, or fail.
+detect_readline() {
+  if test -n "$FLAG_readline"; then
+    if cc_quiet build/detect-readline.c \
+	-L "$FLAG_readline/lib" \
+	-I "$FLAG_readline/include" \
+	-l readline; then
+      echo "READLINE_DIR=$FLAG_readline"
+      echo 'HAVE_READLINE=1'
+      return 0
+    fi
+  else
+    if cc_quiet build/detect-readline.c -l readline; then
+      echo "READLINE_DIR="
+      echo 'HAVE_READLINE=1'
+      return 0
+    fi
+  fi
+
+  if test "$FLAG_with_readline" = 1; then
+    die 'readline was not detected on the system (--with-readline passed).'
+  fi
+  echo 'READLINE_DIR='
+  echo 'HAVE_READLINE='
+  return 1
+}
+
+detect_and_echo_vars() {
+  if test "$FLAG_without_readline" = 1; then
+    echo 'HAVE_READLINE='
+  else
+    detect_readline
+  fi
+  echo "PREFIX=$FLAG_prefix"
+  echo "DATAROOTDIR=$FLAG_datarootdir"
+}
+
+# c.m4 AC_LANG_INT_SAVE
+cc_print_expr() {
+  local c_expr="$1"
+  cat >$TMP/print_expr.c <<EOF
+#include <stdio.h>
+#include <sys/types.h>  /* size_t, pid_t */
+
+int main() {
+  printf("%lu", $c_expr);
+}
+EOF
+  cc_or_die -o $TMP/print_expr $TMP/print_expr.c
+  $TMP/print_expr > $TMP/print_expr.out
+}
+
+# Shell note:
+# - local is not POSIX, but most shells have it.
+# C note:
+# - autoconf uses ac_fn_compute_int (in sh) aka AC_COMPUTE_INT (in m4).
+#   - it uses different tests when cross compiling.
+#   - cross-compiling does binary search?
+#   - other one does AC_LANG_INT_SAVE
+#     - generates a C program that outputs to conftest.val!
+#     - well why not use exit code?
+# - QEMU configure doesn't do any tests
+
+# Hm, don't bother with cross compiling case for now.
+
+# Check if the size of a type is greater than a certain integer.
+check_sizeof() {
+  local pp_var="$1"
+  local c_type="$2"
+  local min_bytes="$3"
+
+  cc_print_expr "sizeof($c_type)"
+
+  local actual_bytes
+  actual_bytes=$(cat $TMP/print_expr.out)
+
+  if test -n "$min_bytes" && test "$actual_bytes" -lt "$min_bytes"; then
+    die "sizeof($c_type) should be at least $min_bytes; got $actual_bytes"
+  fi
+
+  # Echo to stdout!
+  echo "#define $pp_var $actual_bytes"
+}
+
+detect_c_language() {
+  # This is the equivalent of AC_CHECK_SIZEOF(int, 4)
+  check_sizeof SIZEOF_INT 'int' 4
+  check_sizeof SIZEOF_LONG 'long' 4
+  check_sizeof SIZEOF_VOID_P 'void *' 4
+  check_sizeof SIZEOF_SHORT 'short' 2
+  check_sizeof SIZEOF_FLOAT 'float' 4
+  check_sizeof SIZEOF_DOUBLE 'double' 8
+
+  check_sizeof SIZEOF_SIZE_T 'size_t' 4
+
+  # NOTE: This might only be relevant for large file support, which we don't
+  # have.
+  check_sizeof SIZEOF_FPOS_T 'fpos_t' 4
+  check_sizeof SIZEOF_PID_T 'pid_t' 4
+
+  check_sizeof SIZEOF_OFF_T 'off_t' ''
+  # autoconf checks if we have time.h, but the check isn't used.  We just
+  # assume it's there.
+  check_sizeof SIZEOF_TIME_T 'time_t' ''
+
+  if cc_statement HAVE_LONG_LONG 'long long x; x = (long long)0;'
+  then
+    check_sizeof SIZEOF_LONG_LONG 'long long' 8
+  fi
+  if cc_statement HAVE_LONG_DOUBLE 'long double x; x = (long double)0;'
+  then
+    check_sizeof SIZEOF_LONG_DOUBLE 'long double' 8
+  fi
+
+  if cc_statement HAVE_C99_BOOL '_Bool x; x = (_Bool)0;'
+  then
+    # NOTE: this is mainly used in ctypes.h, which we might not need.
+    check_sizeof SIZEOF__BOOL '_Bool' 1
+  fi
+  # NOTE: Python also has a check for C99 uintptr_t.  Just assume we don't
+  # have it?
+
+  #if cc_statement HAVE_C99_BOOL 'wchar_t x; x = (wchar_t)0;'
+  #then
+  #  check_sizeof SIZEOF_WCHAR_T 'wchar_t' 4
+  #fi
+
+  # TODO: Detect header and size.
+  echo '#define HAVE_WCHAR_H 1'
+  echo '#define SIZEOF_WCHAR_T 4'
+
+  cat >$TMP/detect_va_list.c <<EOF
+#include <stdarg.h>  /* C89 */
+int main() {
+  va_list list1, list2;
+  list1 = list2;
+}
+EOF
+  if cc_quiet $TMP/detect_va_list.c; then
+    echo ''  # not an array
+  else
+    echo '#define VA_LIST_IS_ARRAY 1'
+  fi
+
+  # TODO: are these feature checks really necessary, or can we
+  # strip these out of posixmodule.c entirely?
+  cc_header_file HAVE_PTY_H 'pty.h'
+  cc_header_file HAVE_LIBUTIL_H 'libutil.h'
+  cc_header_file HAVE_UTIL_H 'util.h'
+
+  # TODO: are these feature checks really necessary?
+  cc_statement HAVE_STAT_TV_NSEC \
+    'struct stat st; st.st_mtim.tv_nsec = 1; return 0;' \
+    '#include <sys/stat.h>'
+  cc_statement HAVE_STAT_TV_NSEC2 \
+    'struct stat st; st.st_mtimespec.tv_nsec = 1; return 0;' \
+    '#include <sys/stat.h>'
+
+  if test "$FLAG_without_readline" = 1; then
+    echo '#define HAVE_READLINE 0'
+  else
+    if test -n "$FLAG_readline"; then
+      if cc_quiet build/detect-readline.c \
+          -L "$FLAG_readline/lib" \
+          -I "$FLAG_readline/include" \
+          -l readline; then
+        echo '#define HAVE_READLINE 1'
+      fi
+    else
+      if cc_quiet build/detect-readline.c -l readline; then
+        echo '#define HAVE_READLINE 1'
+      fi
+    fi
+
+    if test "$FLAG_with_readline" = 1; then
+      die 'readline was not detected on the system (--with-readline passed).'
+    fi
+  fi
+}
+
+# Another way of working: set detected-config.mk ?
+# And set the default target as oil_readline, oil_no_readline, oil_lto,
+# oil_pgo, etc.?
+main() {
+  if ! cc_quiet build/detect-cc.c; then
+    die "Couldn't compile a basic C program (cc not installed?)"
+  fi
+
+  # The shell build actions will 'source _build/detected-config.sh'.  And then
+  # adjust flags to compiler (-D, -l, etc.)
+  mkdir -p _build
+  local sh_out=_build/detected-config.sh
+  local c_out=_build/detected-config.h
+
+  detect_and_echo_vars > $sh_out
+  detect_c_language > $c_out
+
+  log "Wrote $sh_out and $c_out"
+}
+
+unittest() {
+  cc_print_expr 'sizeof(int)'
+  local actual
+  actual=$(cat $TMP/print_expr.out)
+  test "$actual" = 4 || die "Expected 4, got $actual"
+
+  check_sizeof SIZEOF_INT 'int' 4 || die "FAILED"
+  # failing test
+  #check_sizeof SIZEOF_INT 'int' 8
+
+  cc_statement HAVE_INT 'int x = (int)0;' || die "FAILED"
+  cc_statement HAVE_FOO 'foo x = (foo)0;' && die "Expected to fail"
+
+  #detect_c_language
+}
+
+main "$@"
+#unittest "$@"
