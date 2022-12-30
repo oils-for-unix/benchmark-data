@@ -1,0 +1,28 @@
+==18073== Cachegrind, a cache and branch-prediction profiler
+==18073== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==18073== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==18073== Command: /home/andy/git/oilshell/oil/../benchmark-data/src/oil-native-0.13.1/_bin/cxx-opt-sh/osh_eval.stripped -n --ast-format none benchmarks/testdata/ltmain.sh
+==18073== Parent PID: 18065
+==18073== 
+--18073-- warning: L3 cache found, using its data for the LL simulation.
+--18073-- warning: specified LL cache: line_size 64  assoc 16  total_size 12,582,912
+--18073-- warning: simulated LL cache: line_size 64  assoc 24  total_size 12,582,912
+==18073== brk segment overflow in thread #1: can't grow to 0x4a67000
+==18073== (see section Limitations in user manual)
+==18073== NOTE: further instances of this message will not be shown
+==18073== 
+==18073== I   refs:      473,300,851
+==18073== I1  misses:      1,308,384
+==18073== LLi misses:          6,422
+==18073== I1  miss rate:        0.28%
+==18073== LLi miss rate:        0.00%
+==18073== 
+==18073== D   refs:      206,676,846  (116,153,639 rd   + 90,523,207 wr)
+==18073== D1  misses:      4,814,439  (  4,002,441 rd   +    811,998 wr)
+==18073== LLd misses:        799,629  (    392,679 rd   +    406,950 wr)
+==18073== D1  miss rate:         2.3% (        3.4%     +        0.9%  )
+==18073== LLd miss rate:         0.4% (        0.3%     +        0.4%  )
+==18073== 
+==18073== LL refs:         6,122,823  (  5,310,825 rd   +    811,998 wr)
+==18073== LL misses:         806,051  (    399,101 rd   +    406,950 wr)
+==18073== LL miss rate:          0.1% (        0.1%     +        0.4%  )

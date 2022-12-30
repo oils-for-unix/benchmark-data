@@ -1,25 +1,25 @@
-==13591== Cachegrind, a cache and branch-prediction profiler
-==13591== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
-==13591== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
-==13591== Command: mksh -n benchmarks/testdata/configure-coreutils
-==13591== Parent PID: 13583
-==13591== 
---13591-- warning: L3 cache found, using its data for the LL simulation.
---13591-- warning: specified LL cache: line_size 64  assoc 16  total_size 12,582,912
---13591-- warning: simulated LL cache: line_size 64  assoc 24  total_size 12,582,912
-==13591== 
-==13591== I   refs:      375,025,382
-==13591== I1  misses:         83,721
-==13591== LLi misses:          2,082
-==13591== I1  miss rate:        0.02%
-==13591== LLi miss rate:        0.00%
-==13591== 
-==13591== D   refs:      137,054,314  (86,744,306 rd   + 50,310,008 wr)
-==13591== D1  misses:      1,110,992  (   911,733 rd   +    199,259 wr)
-==13591== LLd misses:         11,016  (     3,370 rd   +      7,646 wr)
-==13591== D1  miss rate:         0.8% (       1.1%     +        0.4%  )
-==13591== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
-==13591== 
-==13591== LL refs:         1,194,713  (   995,454 rd   +    199,259 wr)
-==13591== LL misses:          13,098  (     5,452 rd   +      7,646 wr)
-==13591== LL miss rate:          0.0% (       0.0%     +        0.0%  )
+==17894== Cachegrind, a cache and branch-prediction profiler
+==17894== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==17894== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17894== Command: mksh -n benchmarks/testdata/configure-coreutils
+==17894== Parent PID: 17886
+==17894== 
+--17894-- warning: L3 cache found, using its data for the LL simulation.
+--17894-- warning: specified LL cache: line_size 64  assoc 16  total_size 12,582,912
+--17894-- warning: simulated LL cache: line_size 64  assoc 24  total_size 12,582,912
+==17894== 
+==17894== I   refs:      375,025,382
+==17894== I1  misses:         83,721
+==17894== LLi misses:          2,082
+==17894== I1  miss rate:        0.02%
+==17894== LLi miss rate:        0.00%
+==17894== 
+==17894== D   refs:      137,054,314  (86,744,306 rd   + 50,310,008 wr)
+==17894== D1  misses:      1,110,992  (   911,733 rd   +    199,259 wr)
+==17894== LLd misses:         11,016  (     3,370 rd   +      7,646 wr)
+==17894== D1  miss rate:         0.8% (       1.1%     +        0.4%  )
+==17894== LLd miss rate:         0.0% (       0.0%     +        0.0%  )
+==17894== 
+==17894== LL refs:         1,194,713  (   995,454 rd   +    199,259 wr)
+==17894== LL misses:          13,098  (     5,452 rd   +      7,646 wr)
+==17894== LL miss rate:          0.0% (       0.0%     +        0.0%  )
