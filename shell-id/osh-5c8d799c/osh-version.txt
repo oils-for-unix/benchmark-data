@@ -2,7 +2,7 @@ Oil version 0.13.1
 Release Date: -
 Arch: x86_64
 OS: Linux
-Platform: #148~18.04.1-Ubuntu SMP Mon Oct 24 20:41:14 UTC 2022
+Platform: #208-Ubuntu SMP Tue Nov 1 17:23:37 UTC 2022
 Compiler: GCC 7.5.0
 Interpreter: CPython
 Interpreter version: 2.7.17

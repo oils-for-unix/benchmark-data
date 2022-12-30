@@ -1,0 +1,17 @@
+  num live        =      71712
+  max survived    =      19948
+
+  num allocated   =     240840
+bytes allocated   =   20726576
+
+  num gc points   =        383
+  num collections =          2
+
+   gc threshold   =     100000
+  num growths     =          0
+
+  max gc millis   =        0.0
+total gc millis   =        0.0
+
+roots capacity    =       1024
+ objs capacity    =     163840
