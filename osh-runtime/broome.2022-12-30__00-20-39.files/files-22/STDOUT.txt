@@ -1,0 +1,21 @@
+Binary  directory   /usr/local/bin
+TinyCC directory    /usr/local/lib/tcc
+Library directory   /usr/local/lib
+Include directory   /usr/local/include
+Manual directory    /usr/local/share/man
+Info directory      /usr/local/share/info
+Doc directory       /usr/local/share/doc/tcc
+Target root prefix  
+Source path      /home/andy/git/oilshell/oil/_deps/osh-runtime/tcc-0.9.26
+C compiler       gcc
+Target OS        Linux
+CPU              x86-64
+Big Endian       no
+gprof enabled    no
+cross compilers  no
+use libgcc       no
+Creating config.mak and config.h
+config.h is unchanged
+COPYING to /home/andy/git/oilshell/oil/../benchmark-data/osh-runtime/broome.2022-12-30__00-20-39.files/files-22
+'./config.mak' -> '/home/andy/git/oilshell/oil/../benchmark-data/osh-runtime/broome.2022-12-30__00-20-39.files/files-22/config.mak'
+'./config.texi' -> '/home/andy/git/oilshell/oil/../benchmark-data/osh-runtime/broome.2022-12-30__00-20-39.files/files-22/config.texi'
