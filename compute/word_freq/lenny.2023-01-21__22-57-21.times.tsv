@@ -1,0 +1,4 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.095671	0.094290	0.003912	3596	1b02b1140711a09b93b9937dfc2ea65f	lenny	76afa3e0	bash	9af8f89f	word_freq	10	configure
+0	0.244950	0.224569	0.022959	42044	1b02b1140711a09b93b9937dfc2ea65f	lenny	76afa3e0	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.14.0/_bin/cxx-opt-sh/osh	f7cd6d82	word_freq	10	configure
+0	0.014380	0.009019	0.006292	7424	1b02b1140711a09b93b9937dfc2ea65f	lenny	76afa3e0	python2	e809d907	word_freq	10	configure
