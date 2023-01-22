@@ -1,0 +1,15 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	1.427521	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.14.0	configure
+0	28.390648	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.14.0	_bin/oil.ovm
+0	11.505828	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.14.0	_bin/oil.ovm-dbg
+0	16.185963	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.14.0	oils_cpp
+0	37.938840	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.14.0	oils_cpp.stripped
+0	1.423423	broome	7a69aabc	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.14.0	configure
+0	24.812670	broome	7a69aabc	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.14.0	_bin/oil.ovm
+0	10.291424	broome	7a69aabc	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.14.0	_bin/oil.ovm-dbg
+0	13.895854	broome	7a69aabc	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.14.0	oils_cpp
+0	37.327230	broome	7a69aabc	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.14.0	oils_cpp.stripped
+0	27.832802	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	37.742251	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	4.954942	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	5.254516	broome	7a69aabc	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make

@@ -1,0 +1,2 @@
+2023-01-22__04-15-14 broome 7a69aabc /usr/bin/gcc 1c62c53f
+2023-01-22__04-15-14 broome 7a69aabc /home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang dc55b135

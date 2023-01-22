@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+broome	5619744	_tmp/ovm-build/bin/clang/oils_cpp
+broome	6687344	_tmp/ovm-build/bin/gcc/oils_cpp
+broome	1235360	_tmp/ovm-build/bin/clang/oils_cpp.stripped
+broome	1098008	_tmp/ovm-build/bin/gcc/oils_cpp.stripped
