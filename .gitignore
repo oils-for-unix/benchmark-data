@@ -1,7 +1,8 @@
 .*.swp
 src/oil-native-*/_bin
 src/oil-native-*/_build/obj
-src/oil-native-*/_build/detected-*
 src/oils-for-unix-*/_bin
 src/oils-for-unix-*/_build/obj
-src/oils-for-unix-*/_build/detected-*
+
+# src/oil-native-*/_build/detected-*
+# src/oils-for-unix-*/_build/detected-*

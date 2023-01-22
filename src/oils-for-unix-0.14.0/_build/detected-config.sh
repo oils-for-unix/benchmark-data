@@ -1,0 +1,4 @@
+READLINE_DIR=
+HAVE_READLINE=1
+PREFIX=/usr/local
+DATAROOTDIR=/usr/local/share
