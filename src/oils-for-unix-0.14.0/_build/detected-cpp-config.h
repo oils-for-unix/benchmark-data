@@ -1,1 +1,0 @@
-#define HAVE_READLINE 1
