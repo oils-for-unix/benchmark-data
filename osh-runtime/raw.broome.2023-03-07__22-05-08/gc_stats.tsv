@@ -1,0 +1,7 @@
+host_name	join_id	num_live	max_survived	num_allocated	bytes_allocated	num_gc_points	num_collections	gc_threshold	num_growths	max_gc_millis	total_gc_millis	roots_capacity	objs_capacity
+broome	gc-18	950	0	950	52607	2	0	50000	0	0.0	0.0	1024	10240
+broome	gc-19	90488	66628	141324	4814424	477	3	133256	2	0.0	0.0	1024	163840
+broome	gc-20	435618	261806	3697536	105513446	38796	42	487576	5	0.0	0.0	1024	655360
+broome	gc-21	36226	34149	211294	6488793	1927	7	50000	0	0.0	0.0	1024	81920
+broome	gc-22	39002	0	39002	1268325	329	0	50000	0	0.0	0.0	1024	40960
+broome	gc-23	36819	24745	259444	7585897	2608	7	50000	0	0.0	0.0	1024	81920

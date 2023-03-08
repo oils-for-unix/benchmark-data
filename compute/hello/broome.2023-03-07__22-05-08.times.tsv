@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2
+0	0.002079	0.000000	0.002049	3124	b1946ac92492d2347c6235b4d2611184	broome	7a69aabc	bash	9af8f89f	hello	_	_
+0	0.001108	0.001042	0.000000	1756	b1946ac92492d2347c6235b4d2611184	broome	7a69aabc	dash	9ff48631	hello	_	_
+0	0.004154	0.004092	0.000000	5948	b1946ac92492d2347c6235b4d2611184	broome	7a69aabc	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.14.2/_bin/cxx-opt-sh/osh	7a6ca51a	hello	_	_
+0	0.016332	0.012200	0.004066	7236	b1946ac92492d2347c6235b4d2611184	broome	7a69aabc	python2	e809d907	hello	_	_
