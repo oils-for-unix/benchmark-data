@@ -1,0 +1,55 @@
+Name:	python2
+Umask:	0002
+State:	S (sleeping)
+Tgid:	18155
+Ngid:	0
+Pid:	18155
+PPid:	18135
+TracerPid:	0
+Uid:	3672	3672	3672	3672
+Gid:	3672	3672	3672	3672
+FDSize:	64
+Groups:	27 108 1001 3672 
+NStgid:	18155
+NSpid:	18155
+NSpgid:	12250
+NSsid:	26316
+VmPeak:	   62048 kB
+VmSize:	   61876 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	   16644 kB
+VmRSS:	   16644 kB
+RssAnon:	   10936 kB
+RssFile:	    5708 kB
+RssShmem:	       0 kB
+VmData:	   11096 kB
+VmStk:	     132 kB
+VmExe:	    3072 kB
+VmLib:	    4900 kB
+VmPTE:	     156 kB
+VmSwap:	       0 kB
+HugetlbPages:	       0 kB
+CoreDumping:	0
+Threads:	1
+SigQ:	1/62839
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000000000000
+SigIgn:	0000000001001000
+SigCgt:	0000000188000002
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	ffffff
+Cpus_allowed_list:	0-23
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	4
+nonvoluntary_ctxt_switches:	3
+ALIVE
