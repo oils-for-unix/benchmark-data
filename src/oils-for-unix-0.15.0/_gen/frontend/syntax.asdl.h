@@ -26,18 +26,16 @@ class Token;
 class loc_t;
 class bracket_op_t;
 class suffix_op_t;
-class braced_var_sub;
-class double_quoted;
-class single_quoted;
-class simple_var_sub;
-class command_sub;
-class sh_array_literal;
+class BracedVarSub;
+class DoubleQuoted;
+class SingleQuoted;
+class SimpleVarSub;
+class CommandSub;
+class ShArrayLiteral;
 class ArgList;
-class assoc_pair;
+class AssocPair;
 class word_part_t;
-class compound_word;
-class string_line;
-class triple_quoted;
+class CompoundWord;
 class rhs_word_t;
 class word_t;
 class sh_lhs_expr_t;
@@ -45,36 +43,36 @@ class arith_expr_t;
 class bool_expr_t;
 class redir_loc_t;
 class redir_param_t;
-class redir;
-class assign_pair;
-class env_pair;
+class Redir;
+class AssignPair;
+class EnvPair;
 class condition_t;
-class case_arm;
-class if_arm;
+class CaseArm;
+class IfArm;
 class for_iter_t;
 class BraceGroup;
 class BlockArg;
 class command_t;
 class variant_type_t;
-class variant;
+class Variant;
 class class_item_t;
-class import_name;
+class ImportName;
 class UntypedParam;
 class TypedParam;
 class proc_sig_t;
-class param;
+class Param;
 class glob_part_t;
 class printf_part_t;
 class type_expr_t;
-class name_type;
-class comprehension;
-class named_arg;
-class subscript;
-class attribute;
+class NameType;
+class Comprehension;
+class NamedArg;
+class Subscript;
+class Attribute;
 class place_expr_t;
 class expr_t;
-class posix_class;
-class perl_class;
+class PosixClass;
+class PerlClass;
 class class_literal_term_t;
 class CharCode;
 class char_class_term_t;
@@ -96,7 +94,7 @@ class parse_result_t {
   parse_result_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -186,7 +184,7 @@ class source_t {
   source_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -497,7 +495,7 @@ class loc_t {
   loc_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -647,7 +645,7 @@ class bracket_op_t {
   bracket_op_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -720,7 +718,7 @@ class suffix_op_t {
   suffix_op_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -775,7 +773,7 @@ class suffix_op__Static : public suffix_op_t {
 
 class suffix_op__PatSub : public suffix_op_t {
  public:
-  suffix_op__PatSub(compound_word* pat, rhs_word_t* replace, Id_t replace_mode,
+  suffix_op__PatSub(CompoundWord* pat, rhs_word_t* replace, Id_t replace_mode,
                     Token* slash_tok)
       : pat(pat),
         replace(replace),
@@ -793,7 +791,7 @@ class suffix_op__PatSub : public suffix_op_t {
     return ObjHeader::AsdlClass(static_cast<uint16_t>(suffix_op_e::PatSub), 3);
   }
 
-  compound_word* pat;
+  CompoundWord* pat;
   rhs_word_t* replace;
   Token* slash_tok;
   Id_t replace_mode;
@@ -860,7 +858,7 @@ class word_part_t {
   word_part_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -869,7 +867,7 @@ class word_part_t {
 
 class word_part__AssocArrayLiteral : public word_part_t {
  public:
-  word_part__AssocArrayLiteral(Token* left, List<assoc_pair*>* pairs)
+  word_part__AssocArrayLiteral(Token* left, List<AssocPair*>* pairs)
       : left(left),
         pairs(pairs),
         spids(Alloc<List<int>>()) {
@@ -877,7 +875,7 @@ class word_part__AssocArrayLiteral : public word_part_t {
 
   static word_part__AssocArrayLiteral* CreateNull(bool alloc_lists = false) { 
     return Alloc<word_part__AssocArrayLiteral>(nullptr, alloc_lists ?
-                                               Alloc<List<assoc_pair*>>() :
+                                               Alloc<List<AssocPair*>>() :
                                                nullptr);
   }
 
@@ -889,7 +887,7 @@ ObjHeader::AsdlClass(static_cast<uint16_t>(word_part_e::AssocArrayLiteral), 3);
   }
 
   Token* left;
-  List<assoc_pair*>* pairs;
+  List<AssocPair*>* pairs;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(word_part__AssocArrayLiteral)
@@ -973,14 +971,14 @@ class word_part__ArithSub : public word_part_t {
 
 class word_part__BracedTuple : public word_part_t {
  public:
-  word_part__BracedTuple(List<compound_word*>* words)
+  word_part__BracedTuple(List<CompoundWord*>* words)
       : words(words),
         spids(Alloc<List<int>>()) {
   }
 
   static word_part__BracedTuple* CreateNull(bool alloc_lists = false) { 
     return Alloc<word_part__BracedTuple>(alloc_lists ?
-                                         Alloc<List<compound_word*>>() :
+                                         Alloc<List<CompoundWord*>>() :
                                          nullptr);
   }
 
@@ -991,7 +989,7 @@ class word_part__BracedTuple : public word_part_t {
 ObjHeader::AsdlClass(static_cast<uint16_t>(word_part_e::BracedTuple), 2);
   }
 
-  List<compound_word*>* words;
+  List<CompoundWord*>* words;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(word_part__BracedTuple)
@@ -1029,7 +1027,7 @@ ObjHeader::AsdlClass(static_cast<uint16_t>(word_part_e::BracedRange), 3);
 
 class word_part__ExtGlob : public word_part_t {
  public:
-  word_part__ExtGlob(Token* op, List<compound_word*>* arms)
+  word_part__ExtGlob(Token* op, List<CompoundWord*>* arms)
       : op(op),
         arms(arms),
         spids(Alloc<List<int>>()) {
@@ -1037,7 +1035,7 @@ class word_part__ExtGlob : public word_part_t {
 
   static word_part__ExtGlob* CreateNull(bool alloc_lists = false) { 
     return Alloc<word_part__ExtGlob>(nullptr, alloc_lists ?
-                                     Alloc<List<compound_word*>>() : nullptr);
+                                     Alloc<List<CompoundWord*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -1047,7 +1045,7 @@ class word_part__ExtGlob : public word_part_t {
   }
 
   Token* op;
-  List<compound_word*>* arms;
+  List<CompoundWord*>* arms;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(word_part__ExtGlob)
@@ -1156,7 +1154,7 @@ class rhs_word_t {
   rhs_word_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1198,7 +1196,7 @@ class word_t {
   word_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1272,7 +1270,7 @@ class sh_lhs_expr_t {
   sh_lhs_expr_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1380,7 +1378,7 @@ class arith_expr_t {
   arith_expr_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1538,7 +1536,7 @@ class bool_expr_t {
   bool_expr_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1708,7 +1706,7 @@ class redir_loc_t {
   redir_loc_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1776,7 +1774,7 @@ class redir_param_t {
   redir_param_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1837,7 +1835,7 @@ class condition_t {
   condition_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1907,7 +1905,7 @@ class for_iter_t {
   for_iter_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1991,7 +1989,7 @@ ASDL_NAMES command_e {
   Pipeline = 7,
   AndOr = 8,
   DoGroup = 9,
-  BraceGroup = 84,
+  BraceGroup = 82,
   Subshell = 11,
   DParen = 12,
   DBracket = 13,
@@ -2028,7 +2026,7 @@ class command_t {
   command_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -2054,8 +2052,8 @@ class command__NoOp : public command_t {
 
 class command__Simple : public command_t {
  public:
-  command__Simple(List<word_t*>* words, List<redir*>* redirects,
-                  List<env_pair*>* more_env, ArgList* typed_args, BlockArg*
+  command__Simple(List<word_t*>* words, List<Redir*>* redirects,
+                  List<EnvPair*>* more_env, ArgList* typed_args, BlockArg*
                   block, bool do_fork)
       : words(words),
         redirects(redirects),
@@ -2068,9 +2066,9 @@ class command__Simple : public command_t {
 
   static command__Simple* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__Simple>(alloc_lists ? Alloc<List<word_t*>>() :
-                                  nullptr, alloc_lists ? Alloc<List<redir*>>()
+                                  nullptr, alloc_lists ? Alloc<List<Redir*>>()
                                   : nullptr, alloc_lists ?
-                                  Alloc<List<env_pair*>>() : nullptr, nullptr,
+                                  Alloc<List<EnvPair*>>() : nullptr, nullptr,
                                   nullptr, false);
   }
 
@@ -2081,8 +2079,8 @@ class command__Simple : public command_t {
   }
 
   List<word_t*>* words;
-  List<redir*>* redirects;
-  List<env_pair*>* more_env;
+  List<Redir*>* redirects;
+  List<EnvPair*>* more_env;
   ArgList* typed_args;
   BlockArg* block;
   List<int>* spids;
@@ -2093,8 +2091,8 @@ class command__Simple : public command_t {
 
 class command__ExpandedAlias : public command_t {
  public:
-  command__ExpandedAlias(command_t* child, List<redir*>* redirects,
-                         List<env_pair*>* more_env)
+  command__ExpandedAlias(command_t* child, List<Redir*>* redirects,
+                         List<EnvPair*>* more_env)
       : child(child),
         redirects(redirects),
         more_env(more_env),
@@ -2103,8 +2101,8 @@ class command__ExpandedAlias : public command_t {
 
   static command__ExpandedAlias* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__ExpandedAlias>(nullptr, alloc_lists ?
-                                         Alloc<List<redir*>>() : nullptr,
-                                         alloc_lists ? Alloc<List<env_pair*>>()
+                                         Alloc<List<Redir*>>() : nullptr,
+                                         alloc_lists ? Alloc<List<EnvPair*>>()
                                          : nullptr);
   }
 
@@ -2116,8 +2114,8 @@ ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::ExpandedAlias), 4);
   }
 
   command_t* child;
-  List<redir*>* redirects;
-  List<env_pair*>* more_env;
+  List<Redir*>* redirects;
+  List<EnvPair*>* more_env;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__ExpandedAlias)
@@ -2150,7 +2148,7 @@ class command__Sentence : public command_t {
 
 class command__ShAssignment : public command_t {
  public:
-  command__ShAssignment(List<assign_pair*>* pairs, List<redir*>* redirects)
+  command__ShAssignment(List<AssignPair*>* pairs, List<Redir*>* redirects)
       : pairs(pairs),
         redirects(redirects),
         spids(Alloc<List<int>>()) {
@@ -2158,8 +2156,8 @@ class command__ShAssignment : public command_t {
 
   static command__ShAssignment* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__ShAssignment>(alloc_lists ?
-                                        Alloc<List<assign_pair*>>() : nullptr,
-                                        alloc_lists ? Alloc<List<redir*>>() :
+                                        Alloc<List<AssignPair*>>() : nullptr,
+                                        alloc_lists ? Alloc<List<Redir*>>() :
                                         nullptr);
   }
 
@@ -2170,8 +2168,8 @@ class command__ShAssignment : public command_t {
                                 3);
   }
 
-  List<assign_pair*>* pairs;
-  List<redir*>* redirects;
+  List<AssignPair*>* pairs;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__ShAssignment)
@@ -2179,8 +2177,8 @@ class command__ShAssignment : public command_t {
 
 class command__ControlFlow : public command_t {
  public:
-  command__ControlFlow(Token* token, word_t* arg_word)
-      : token(token),
+  command__ControlFlow(Token* keyword, word_t* arg_word)
+      : keyword(keyword),
         arg_word(arg_word),
         spids(Alloc<List<int>>()) {
   }
@@ -2196,7 +2194,7 @@ class command__ControlFlow : public command_t {
                                 3);
   }
 
-  Token* token;
+  Token* keyword;
   word_t* arg_word;
   List<int>* spids;
 
@@ -2262,23 +2260,28 @@ class command__AndOr : public command_t {
 
 class command__DoGroup : public command_t {
  public:
-  command__DoGroup(List<command_t*>* children)
-      : children(children),
+  command__DoGroup(Token* left, List<command_t*>* children, Token* right)
+      : left(left),
+        children(children),
+        right(right),
         spids(Alloc<List<int>>()) {
   }
 
   static command__DoGroup* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__DoGroup>(alloc_lists ? Alloc<List<command_t*>>() :
+    return Alloc<command__DoGroup>(nullptr, alloc_lists ?
+                                   Alloc<List<command_t*>>() : nullptr,
                                    nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::DoGroup), 2);
+    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::DoGroup), 4);
   }
 
+  Token* left;
   List<command_t*>* children;
+  Token* right;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__DoGroup)
@@ -2286,7 +2289,7 @@ class command__DoGroup : public command_t {
 
 class command__Subshell : public command_t {
  public:
-  command__Subshell(command_t* child, List<redir*>* redirects)
+  command__Subshell(command_t* child, List<Redir*>* redirects)
       : child(child),
         redirects(redirects),
         spids(Alloc<List<int>>()) {
@@ -2294,7 +2297,7 @@ class command__Subshell : public command_t {
 
   static command__Subshell* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__Subshell>(nullptr, alloc_lists ?
-                                    Alloc<List<redir*>>() : nullptr);
+                                    Alloc<List<Redir*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -2304,7 +2307,7 @@ class command__Subshell : public command_t {
   }
 
   command_t* child;
-  List<redir*>* redirects;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__Subshell)
@@ -2312,14 +2315,14 @@ class command__Subshell : public command_t {
 
 class command__DParen : public command_t {
  public:
-  command__DParen(arith_expr_t* child, List<redir*>* redirects)
+  command__DParen(arith_expr_t* child, List<Redir*>* redirects)
       : child(child),
         redirects(redirects),
         spids(Alloc<List<int>>()) {
   }
 
   static command__DParen* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__DParen>(nullptr, alloc_lists ? Alloc<List<redir*>>()
+    return Alloc<command__DParen>(nullptr, alloc_lists ? Alloc<List<Redir*>>()
                                   : nullptr);
   }
 
@@ -2330,7 +2333,7 @@ class command__DParen : public command_t {
   }
 
   arith_expr_t* child;
-  List<redir*>* redirects;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__DParen)
@@ -2338,7 +2341,7 @@ class command__DParen : public command_t {
 
 class command__DBracket : public command_t {
  public:
-  command__DBracket(bool_expr_t* expr, List<redir*>* redirects)
+  command__DBracket(bool_expr_t* expr, List<Redir*>* redirects)
       : expr(expr),
         redirects(redirects),
         spids(Alloc<List<int>>()) {
@@ -2346,7 +2349,7 @@ class command__DBracket : public command_t {
 
   static command__DBracket* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__DBracket>(nullptr, alloc_lists ?
-                                    Alloc<List<redir*>>() : nullptr);
+                                    Alloc<List<Redir*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -2356,7 +2359,7 @@ class command__DBracket : public command_t {
   }
 
   bool_expr_t* expr;
-  List<redir*>* redirects;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__DBracket)
@@ -2364,9 +2367,10 @@ class command__DBracket : public command_t {
 
 class command__ForEach : public command_t {
  public:
-  command__ForEach(List<Str*>* iter_names, for_iter_t* iterable, command_t*
-                   body, List<redir*>* redirects)
-      : iter_names(iter_names),
+  command__ForEach(Token* keyword, List<Str*>* iter_names, for_iter_t*
+                   iterable, command_t* body, List<Redir*>* redirects)
+      : keyword(keyword),
+        iter_names(iter_names),
         iterable(iterable),
         body(body),
         redirects(redirects),
@@ -2374,21 +2378,22 @@ class command__ForEach : public command_t {
   }
 
   static command__ForEach* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__ForEach>(alloc_lists ? Alloc<List<Str*>>() : nullptr,
-                                   nullptr, nullptr, alloc_lists ?
-                                   Alloc<List<redir*>>() : nullptr);
+    return Alloc<command__ForEach>(nullptr, alloc_lists ? Alloc<List<Str*>>() :
+                                   nullptr, nullptr, nullptr, alloc_lists ?
+                                   Alloc<List<Redir*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::ForEach), 5);
+    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::ForEach), 6);
   }
 
+  Token* keyword;
   List<Str*>* iter_names;
   for_iter_t* iterable;
   command_t* body;
-  List<redir*>* redirects;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__ForEach)
@@ -2396,9 +2401,11 @@ class command__ForEach : public command_t {
 
 class command__ForExpr : public command_t {
  public:
-  command__ForExpr(arith_expr_t* init, arith_expr_t* cond, arith_expr_t*
-                   update, command_t* body, List<redir*>* redirects)
-      : init(init),
+  command__ForExpr(Token* keyword, arith_expr_t* init, arith_expr_t* cond,
+                   arith_expr_t* update, command_t* body, List<Redir*>*
+                   redirects)
+      : keyword(keyword),
+        init(init),
         cond(cond),
         update(update),
         body(body),
@@ -2407,22 +2414,23 @@ class command__ForExpr : public command_t {
   }
 
   static command__ForExpr* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__ForExpr>(nullptr, nullptr, nullptr, nullptr,
-                                   alloc_lists ? Alloc<List<redir*>>() :
+    return Alloc<command__ForExpr>(nullptr, nullptr, nullptr, nullptr, nullptr,
+                                   alloc_lists ? Alloc<List<Redir*>>() :
                                    nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::ForExpr), 6);
+    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::ForExpr), 7);
   }
 
+  Token* keyword;
   arith_expr_t* init;
   arith_expr_t* cond;
   arith_expr_t* update;
   command_t* body;
-  List<redir*>* redirects;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__ForExpr)
@@ -2431,7 +2439,7 @@ class command__ForExpr : public command_t {
 class command__WhileUntil : public command_t {
  public:
   command__WhileUntil(Token* keyword, condition_t* cond, command_t* body,
-                      List<redir*>* redirects)
+                      List<Redir*>* redirects)
       : keyword(keyword),
         cond(cond),
         body(body),
@@ -2441,7 +2449,7 @@ class command__WhileUntil : public command_t {
 
   static command__WhileUntil* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__WhileUntil>(nullptr, nullptr, nullptr, alloc_lists ?
-                                      Alloc<List<redir*>>() : nullptr);
+                                      Alloc<List<Redir*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -2454,7 +2462,7 @@ class command__WhileUntil : public command_t {
   Token* keyword;
   condition_t* cond;
   command_t* body;
-  List<redir*>* redirects;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__WhileUntil)
@@ -2462,30 +2470,37 @@ class command__WhileUntil : public command_t {
 
 class command__If : public command_t {
  public:
-  command__If(List<if_arm*>* arms, List<command_t*>* else_action, List<redir*>*
+  command__If(Token* if_kw, List<IfArm*>* arms, Token* else_kw,
+              List<command_t*>* else_action, Token* fi_kw, List<Redir*>*
               redirects)
-      : arms(arms),
+      : if_kw(if_kw),
+        arms(arms),
+        else_kw(else_kw),
         else_action(else_action),
+        fi_kw(fi_kw),
         redirects(redirects),
         spids(Alloc<List<int>>()) {
   }
 
   static command__If* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__If>(alloc_lists ? Alloc<List<if_arm*>>() : nullptr,
-                              alloc_lists ? Alloc<List<command_t*>>() :
-                              nullptr, alloc_lists ? Alloc<List<redir*>>() :
-                              nullptr);
+    return Alloc<command__If>(nullptr, alloc_lists ? Alloc<List<IfArm*>>() :
+                              nullptr, nullptr, alloc_lists ?
+                              Alloc<List<command_t*>>() : nullptr, nullptr,
+                              alloc_lists ? Alloc<List<Redir*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::If), 4);
+    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::If), 7);
   }
 
-  List<if_arm*>* arms;
+  Token* if_kw;
+  List<IfArm*>* arms;
+  Token* else_kw;
   List<command_t*>* else_action;
-  List<redir*>* redirects;
+  Token* fi_kw;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__If)
@@ -2493,8 +2508,7 @@ class command__If : public command_t {
 
 class command__Case : public command_t {
  public:
-  command__Case(word_t* to_match, List<case_arm*>* arms, List<redir*>*
-                redirects)
+  command__Case(word_t* to_match, List<CaseArm*>* arms, List<Redir*>* redirects)
       : to_match(to_match),
         arms(arms),
         redirects(redirects),
@@ -2502,8 +2516,8 @@ class command__Case : public command_t {
   }
 
   static command__Case* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__Case>(nullptr, alloc_lists ? Alloc<List<case_arm*>>()
-                                : nullptr, alloc_lists ? Alloc<List<redir*>>()
+    return Alloc<command__Case>(nullptr, alloc_lists ? Alloc<List<CaseArm*>>()
+                                : nullptr, alloc_lists ? Alloc<List<Redir*>>()
                                 : nullptr);
   }
 
@@ -2514,8 +2528,8 @@ class command__Case : public command_t {
   }
 
   word_t* to_match;
-  List<case_arm*>* arms;
-  List<redir*>* redirects;
+  List<CaseArm*>* arms;
+  List<Redir*>* redirects;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__Case)
@@ -2622,7 +2636,7 @@ class command__BareDecl : public command_t {
 
 class command__VarDecl : public command_t {
  public:
-  command__VarDecl(Token* keyword, List<name_type*>* lhs, expr_t* rhs)
+  command__VarDecl(Token* keyword, List<NameType*>* lhs, expr_t* rhs)
       : keyword(keyword),
         lhs(lhs),
         rhs(rhs),
@@ -2631,8 +2645,7 @@ class command__VarDecl : public command_t {
 
   static command__VarDecl* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__VarDecl>(nullptr, alloc_lists ?
-                                   Alloc<List<name_type*>>() : nullptr,
-                                   nullptr);
+                                   Alloc<List<NameType*>>() : nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -2642,7 +2655,7 @@ class command__VarDecl : public command_t {
   }
 
   Token* keyword;
-  List<name_type*>* lhs;
+  List<NameType*>* lhs;
   expr_t* rhs;
   List<int>* spids;
 
@@ -2709,23 +2722,25 @@ class command__Expr : public command_t {
 
 class command__Proc : public command_t {
  public:
-  command__Proc(Token* name, proc_sig_t* sig, command_t* body)
-      : name(name),
+  command__Proc(Token* keyword, Token* name, proc_sig_t* sig, command_t* body)
+      : keyword(keyword),
+        name(name),
         sig(sig),
         body(body),
         spids(Alloc<List<int>>()) {
   }
 
   static command__Proc* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__Proc>(nullptr, nullptr, nullptr);
+    return Alloc<command__Proc>(nullptr, nullptr, nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::Proc), 4);
+    return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::Proc), 5);
   }
 
+  Token* keyword;
   Token* name;
   proc_sig_t* sig;
   command_t* body;
@@ -2736,8 +2751,8 @@ class command__Proc : public command_t {
 
 class command__Func : public command_t {
  public:
-  command__Func(Token* name, List<param*>* pos_params, Token* pos_splat,
-                List<param*>* named_params, Token* named_splat,
+  command__Func(Token* name, List<Param*>* pos_params, Token* pos_splat,
+                List<Param*>* named_params, Token* named_splat,
                 List<type_expr_t*>* return_types, command_t* body)
       : name(name),
         pos_params(pos_params),
@@ -2750,9 +2765,9 @@ class command__Func : public command_t {
   }
 
   static command__Func* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__Func>(nullptr, alloc_lists ? Alloc<List<param*>>() :
+    return Alloc<command__Func>(nullptr, alloc_lists ? Alloc<List<Param*>>() :
                                 nullptr, nullptr, alloc_lists ?
-                                Alloc<List<param*>>() : nullptr, nullptr,
+                                Alloc<List<Param*>>() : nullptr, nullptr,
                                 alloc_lists ? Alloc<List<type_expr_t*>>() :
                                 nullptr, nullptr);
   }
@@ -2764,9 +2779,9 @@ class command__Func : public command_t {
   }
 
   Token* name;
-  List<param*>* pos_params;
+  List<Param*>* pos_params;
   Token* pos_splat;
-  List<param*>* named_params;
+  List<Param*>* named_params;
   Token* named_splat;
   List<type_expr_t*>* return_types;
   command_t* body;
@@ -2777,14 +2792,14 @@ class command__Func : public command_t {
 
 class command__Data : public command_t {
  public:
-  command__Data(Token* name, List<param*>* params)
+  command__Data(Token* name, List<Param*>* params)
       : name(name),
         params(params),
         spids(Alloc<List<int>>()) {
   }
 
   static command__Data* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__Data>(nullptr, alloc_lists ? Alloc<List<param*>>() :
+    return Alloc<command__Data>(nullptr, alloc_lists ? Alloc<List<Param*>>() :
                                 nullptr);
   }
 
@@ -2795,7 +2810,7 @@ class command__Data : public command_t {
   }
 
   Token* name;
-  List<param*>* params;
+  List<Param*>* params;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__Data)
@@ -2803,14 +2818,14 @@ class command__Data : public command_t {
 
 class command__Enum : public command_t {
  public:
-  command__Enum(Token* name, List<variant*>* variants)
+  command__Enum(Token* name, List<Variant*>* variants)
       : name(name),
         variants(variants),
         spids(Alloc<List<int>>()) {
   }
 
   static command__Enum* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__Enum>(nullptr, alloc_lists ? Alloc<List<variant*>>()
+    return Alloc<command__Enum>(nullptr, alloc_lists ? Alloc<List<Variant*>>()
                                 : nullptr);
   }
 
@@ -2821,7 +2836,7 @@ class command__Enum : public command_t {
   }
 
   Token* name;
-  List<variant*>* variants;
+  List<Variant*>* variants;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__Enum)
@@ -2857,7 +2872,7 @@ class command__Class : public command_t {
 
 class command__Import : public command_t {
  public:
-  command__Import(single_quoted* path, Token* alias, List<import_name*>* names)
+  command__Import(SingleQuoted* path, Token* alias, List<ImportName*>* names)
       : path(path),
         alias(alias),
         names(names),
@@ -2866,7 +2881,7 @@ class command__Import : public command_t {
 
   static command__Import* CreateNull(bool alloc_lists = false) { 
     return Alloc<command__Import>(nullptr, nullptr, alloc_lists ?
-                                  Alloc<List<import_name*>>() : nullptr);
+                                  Alloc<List<ImportName*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -2875,9 +2890,9 @@ class command__Import : public command_t {
     return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::Import), 4);
   }
 
-  single_quoted* path;
+  SingleQuoted* path;
   Token* alias;
-  List<import_name*>* names;
+  List<ImportName*>* names;
   List<int>* spids;
 
   DISALLOW_COPY_AND_ASSIGN(command__Import)
@@ -2885,7 +2900,7 @@ class command__Import : public command_t {
 
 class command__For : public command_t {
  public:
-  command__For(List<name_type*>* targets, expr_t* iterable, command_t* body)
+  command__For(List<NameType*>* targets, expr_t* iterable, command_t* body)
       : targets(targets),
         iterable(iterable),
         body(body),
@@ -2893,7 +2908,7 @@ class command__For : public command_t {
   }
 
   static command__For* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command__For>(alloc_lists ? Alloc<List<name_type*>>() :
+    return Alloc<command__For>(alloc_lists ? Alloc<List<NameType*>>() :
                                nullptr, nullptr, nullptr);
   }
 
@@ -2903,7 +2918,7 @@ class command__For : public command_t {
     return ObjHeader::AsdlClass(static_cast<uint16_t>(command_e::For), 4);
   }
 
-  List<name_type*>* targets;
+  List<NameType*>* targets;
   expr_t* iterable;
   command_t* body;
   List<int>* spids;
@@ -3045,7 +3060,7 @@ class variant_type_t {
   variant_type_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3054,12 +3069,12 @@ class variant_type_t {
 
 class variant_type__Anon : public variant_type_t {
  public:
-  variant_type__Anon(List<param*>* params)
+  variant_type__Anon(List<Param*>* params)
       : params(params) {
   }
 
   static variant_type__Anon* CreateNull(bool alloc_lists = false) { 
-    return Alloc<variant_type__Anon>(alloc_lists ? Alloc<List<param*>>() :
+    return Alloc<variant_type__Anon>(alloc_lists ? Alloc<List<Param*>>() :
                                      nullptr);
   }
 
@@ -3069,7 +3084,7 @@ class variant_type__Anon : public variant_type_t {
     return ObjHeader::AsdlClass(static_cast<uint16_t>(variant_type_e::Anon), 1);
   }
 
-  List<param*>* params;
+  List<Param*>* params;
 
   DISALLOW_COPY_AND_ASSIGN(variant_type__Anon)
 };
@@ -3114,7 +3129,7 @@ class class_item_t {
   class_item_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3123,14 +3138,14 @@ class class_item_t {
 
 class class_item__Data : public class_item_t {
  public:
-  class_item__Data(Token* keyword, List<name_type*>* fields)
+  class_item__Data(Token* keyword, List<NameType*>* fields)
       : keyword(keyword),
         fields(fields) {
   }
 
   static class_item__Data* CreateNull(bool alloc_lists = false) { 
     return Alloc<class_item__Data>(nullptr, alloc_lists ?
-                                   Alloc<List<name_type*>>() : nullptr);
+                                   Alloc<List<NameType*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -3140,7 +3155,7 @@ class class_item__Data : public class_item_t {
   }
 
   Token* keyword;
-  List<name_type*>* fields;
+  List<NameType*>* fields;
 
   DISALLOW_COPY_AND_ASSIGN(class_item__Data)
 };
@@ -3179,7 +3194,7 @@ class proc_sig_t {
   proc_sig_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3249,7 +3264,7 @@ class glob_part_t {
   glob_part_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3346,7 +3361,7 @@ class printf_part_t {
   printf_part_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3436,7 +3451,7 @@ class type_expr_t {
   type_expr_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3497,8 +3512,8 @@ ASDL_NAMES type_expr {
 ASDL_NAMES place_expr_e {
   enum no_name {
   Var = 1,
-  Subscript = 94,
-  Attribute = 95,
+  Subscript = 92,
+  Attribute = 93,
   };
 };
 
@@ -3509,7 +3524,7 @@ class place_expr_t {
   place_expr_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3552,7 +3567,7 @@ ASDL_NAMES expr_e {
   CommandSub = 72,
   SingleQuoted = 70,
   DoubleQuoted = 69,
-  BlockArg = 85,
+  BlockArg = 83,
   Lambda = 11,
   Unary = 12,
   Binary = 13,
@@ -3568,8 +3583,8 @@ ASDL_NAMES expr_e {
   GeneratorExp = 23,
   Range = 24,
   Slice = 25,
-  Subscript = 94,
-  Attribute = 95,
+  Subscript = 92,
+  Attribute = 93,
   Spread = 28,
   };
 };
@@ -3581,7 +3596,7 @@ class expr_t {
   expr_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -3661,13 +3676,13 @@ class expr__RegexLiteral : public expr_t {
 
 class expr__Lambda : public expr_t {
  public:
-  expr__Lambda(List<name_type*>* params, expr_t* body)
+  expr__Lambda(List<NameType*>* params, expr_t* body)
       : params(params),
         body(body) {
   }
 
   static expr__Lambda* CreateNull(bool alloc_lists = false) { 
-    return Alloc<expr__Lambda>(alloc_lists ? Alloc<List<name_type*>>() :
+    return Alloc<expr__Lambda>(alloc_lists ? Alloc<List<NameType*>>() :
                                nullptr, nullptr);
   }
 
@@ -3677,7 +3692,7 @@ class expr__Lambda : public expr_t {
     return ObjHeader::AsdlClass(static_cast<uint16_t>(expr_e::Lambda), 2);
   }
 
-  List<name_type*>* params;
+  List<NameType*>* params;
   expr_t* body;
 
   DISALLOW_COPY_AND_ASSIGN(expr__Lambda)
@@ -3895,14 +3910,14 @@ class expr__Implicit : public expr_t {
 
 class expr__ListComp : public expr_t {
  public:
-  expr__ListComp(expr_t* elt, List<comprehension*>* generators)
+  expr__ListComp(expr_t* elt, List<Comprehension*>* generators)
       : elt(elt),
         generators(generators) {
   }
 
   static expr__ListComp* CreateNull(bool alloc_lists = false) { 
     return Alloc<expr__ListComp>(nullptr, alloc_lists ?
-                                 Alloc<List<comprehension*>>() : nullptr);
+                                 Alloc<List<Comprehension*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -3912,14 +3927,14 @@ class expr__ListComp : public expr_t {
   }
 
   expr_t* elt;
-  List<comprehension*>* generators;
+  List<Comprehension*>* generators;
 
   DISALLOW_COPY_AND_ASSIGN(expr__ListComp)
 };
 
 class expr__DictComp : public expr_t {
  public:
-  expr__DictComp(expr_t* key, expr_t* value, List<comprehension*>* generators)
+  expr__DictComp(expr_t* key, expr_t* value, List<Comprehension*>* generators)
       : key(key),
         value(value),
         generators(generators) {
@@ -3927,7 +3942,7 @@ class expr__DictComp : public expr_t {
 
   static expr__DictComp* CreateNull(bool alloc_lists = false) { 
     return Alloc<expr__DictComp>(nullptr, nullptr, alloc_lists ?
-                                 Alloc<List<comprehension*>>() : nullptr);
+                                 Alloc<List<Comprehension*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -3938,21 +3953,21 @@ class expr__DictComp : public expr_t {
 
   expr_t* key;
   expr_t* value;
-  List<comprehension*>* generators;
+  List<Comprehension*>* generators;
 
   DISALLOW_COPY_AND_ASSIGN(expr__DictComp)
 };
 
 class expr__GeneratorExp : public expr_t {
  public:
-  expr__GeneratorExp(expr_t* elt, List<comprehension*>* generators)
+  expr__GeneratorExp(expr_t* elt, List<Comprehension*>* generators)
       : elt(elt),
         generators(generators) {
   }
 
   static expr__GeneratorExp* CreateNull(bool alloc_lists = false) { 
     return Alloc<expr__GeneratorExp>(nullptr, alloc_lists ?
-                                     Alloc<List<comprehension*>>() : nullptr);
+                                     Alloc<List<Comprehension*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -3962,7 +3977,7 @@ class expr__GeneratorExp : public expr_t {
   }
 
   expr_t* elt;
-  List<comprehension*>* generators;
+  List<Comprehension*>* generators;
 
   DISALLOW_COPY_AND_ASSIGN(expr__GeneratorExp)
 };
@@ -4060,8 +4075,8 @@ ASDL_NAMES expr {
 
 ASDL_NAMES class_literal_term_e {
   enum no_name {
-  PosixClass = 96,
-  PerlClass = 97,
+  PosixClass = 94,
+  PerlClass = 95,
   Range = 3,
   CharLiteral = 4,
   SimpleVarSub = 71,
@@ -4078,7 +4093,7 @@ class class_literal_term_t {
   class_literal_term_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -4140,10 +4155,10 @@ ASDL_NAMES class_literal_term {
 
 ASDL_NAMES char_class_term_e {
   enum no_name {
-  PosixClass = 96,
-  PerlClass = 97,
+  PosixClass = 94,
+  PerlClass = 95,
   Range = 3,
-  CharCode = 98,
+  CharCode = 96,
   };
 };
 
@@ -4154,7 +4169,7 @@ class char_class_term_t {
   char_class_term_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -4204,7 +4219,7 @@ class re_repeat_t {
   re_repeat_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -4285,8 +4300,8 @@ ASDL_NAMES re_repeat {
 ASDL_NAMES re_e {
   enum no_name {
   Token = 67,
-  PosixClass = 96,
-  PerlClass = 97,
+  PosixClass = 94,
+  PerlClass = 95,
   CharClassLiteral = 4,
   CharClass = 5,
   Splice = 6,
@@ -4312,7 +4327,7 @@ class re_t {
   re_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -4683,11 +4698,11 @@ word_t, public re_t {
   DISALLOW_COPY_AND_ASSIGN(Token)
 };
 
-class braced_var_sub : public word_part_t, public expr_t, public
+class BracedVarSub : public word_part_t, public expr_t, public
 class_literal_term_t, public re_t {
  public:
-  braced_var_sub(Token* left, Token* token, Str* var_name, Token* prefix_op,
-                 bracket_op_t* bracket_op, suffix_op_t* suffix_op, Token* right)
+  BracedVarSub(Token* left, Token* token, Str* var_name, Token* prefix_op,
+               bracket_op_t* bracket_op, suffix_op_t* suffix_op, Token* right)
       : left(left),
         token(token),
         var_name(var_name),
@@ -4697,9 +4712,9 @@ class_literal_term_t, public re_t {
         right(right) {
   }
 
-  static braced_var_sub* CreateNull(bool alloc_lists = false) { 
-    return Alloc<braced_var_sub>(nullptr, nullptr, kEmptyString, nullptr,
-                                 nullptr, nullptr, nullptr);
+  static BracedVarSub* CreateNull(bool alloc_lists = false) { 
+    return Alloc<BracedVarSub>(nullptr, nullptr, kEmptyString, nullptr,
+                               nullptr, nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4716,21 +4731,21 @@ class_literal_term_t, public re_t {
   suffix_op_t* suffix_op;
   Token* right;
 
-  DISALLOW_COPY_AND_ASSIGN(braced_var_sub)
+  DISALLOW_COPY_AND_ASSIGN(BracedVarSub)
 };
 
-class double_quoted : public word_part_t, public expr_t, public
+class DoubleQuoted : public word_part_t, public expr_t, public
 class_literal_term_t, public re_t {
  public:
-  double_quoted(Token* left, List<word_part_t*>* parts, Token* right)
+  DoubleQuoted(Token* left, List<word_part_t*>* parts, Token* right)
       : left(left),
         parts(parts),
         right(right) {
   }
 
-  static double_quoted* CreateNull(bool alloc_lists = false) { 
-    return Alloc<double_quoted>(nullptr, alloc_lists ?
-                                Alloc<List<word_part_t*>>() : nullptr, nullptr);
+  static DoubleQuoted* CreateNull(bool alloc_lists = false) { 
+    return Alloc<DoubleQuoted>(nullptr, alloc_lists ?
+                               Alloc<List<word_part_t*>>() : nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4743,21 +4758,21 @@ class_literal_term_t, public re_t {
   List<word_part_t*>* parts;
   Token* right;
 
-  DISALLOW_COPY_AND_ASSIGN(double_quoted)
+  DISALLOW_COPY_AND_ASSIGN(DoubleQuoted)
 };
 
-class single_quoted : public word_part_t, public expr_t, public
+class SingleQuoted : public word_part_t, public expr_t, public
 class_literal_term_t, public re_t {
  public:
-  single_quoted(Token* left, List<Token*>* tokens, Token* right)
+  SingleQuoted(Token* left, List<Token*>* tokens, Token* right)
       : left(left),
         tokens(tokens),
         right(right) {
   }
 
-  static single_quoted* CreateNull(bool alloc_lists = false) { 
-    return Alloc<single_quoted>(nullptr, alloc_lists ? Alloc<List<Token*>>() :
-                                nullptr, nullptr);
+  static SingleQuoted* CreateNull(bool alloc_lists = false) { 
+    return Alloc<SingleQuoted>(nullptr, alloc_lists ? Alloc<List<Token*>>() :
+                               nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4770,19 +4785,19 @@ class_literal_term_t, public re_t {
   List<Token*>* tokens;
   Token* right;
 
-  DISALLOW_COPY_AND_ASSIGN(single_quoted)
+  DISALLOW_COPY_AND_ASSIGN(SingleQuoted)
 };
 
-class simple_var_sub : public word_part_t, public arith_expr_t, public expr_t,
+class SimpleVarSub : public word_part_t, public arith_expr_t, public expr_t,
 public class_literal_term_t, public re_t {
  public:
-  simple_var_sub(Token* left, Str* var_name)
+  SimpleVarSub(Token* left, Str* var_name)
       : left(left),
         var_name(var_name) {
   }
 
-  static simple_var_sub* CreateNull(bool alloc_lists = false) { 
-    return Alloc<simple_var_sub>(nullptr, kEmptyString);
+  static SimpleVarSub* CreateNull(bool alloc_lists = false) { 
+    return Alloc<SimpleVarSub>(nullptr, kEmptyString);
   }
 
   hnode_t* PrettyTree();
@@ -4794,19 +4809,19 @@ public class_literal_term_t, public re_t {
   Token* left;
   Str* var_name;
 
-  DISALLOW_COPY_AND_ASSIGN(simple_var_sub)
+  DISALLOW_COPY_AND_ASSIGN(SimpleVarSub)
 };
 
-class command_sub : public word_part_t, public expr_t {
+class CommandSub : public word_part_t, public expr_t {
  public:
-  command_sub(Token* left_token, command_t* child, Token* right)
+  CommandSub(Token* left_token, command_t* child, Token* right)
       : left_token(left_token),
         child(child),
         right(right) {
   }
 
-  static command_sub* CreateNull(bool alloc_lists = false) { 
-    return Alloc<command_sub>(nullptr, nullptr, nullptr);
+  static CommandSub* CreateNull(bool alloc_lists = false) { 
+    return Alloc<CommandSub>(nullptr, nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4819,19 +4834,19 @@ class command_sub : public word_part_t, public expr_t {
   command_t* child;
   Token* right;
 
-  DISALLOW_COPY_AND_ASSIGN(command_sub)
+  DISALLOW_COPY_AND_ASSIGN(CommandSub)
 };
 
-class sh_array_literal : public word_part_t, public expr_t {
+class ShArrayLiteral : public word_part_t, public expr_t {
  public:
-  sh_array_literal(Token* left, List<word_t*>* words)
+  ShArrayLiteral(Token* left, List<word_t*>* words)
       : left(left),
         words(words) {
   }
 
-  static sh_array_literal* CreateNull(bool alloc_lists = false) { 
-    return Alloc<sh_array_literal>(nullptr, alloc_lists ?
-                                   Alloc<List<word_t*>>() : nullptr);
+  static ShArrayLiteral* CreateNull(bool alloc_lists = false) { 
+    return Alloc<ShArrayLiteral>(nullptr, alloc_lists ? Alloc<List<word_t*>>()
+                                 : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4843,12 +4858,12 @@ class sh_array_literal : public word_part_t, public expr_t {
   Token* left;
   List<word_t*>* words;
 
-  DISALLOW_COPY_AND_ASSIGN(sh_array_literal)
+  DISALLOW_COPY_AND_ASSIGN(ShArrayLiteral)
 };
 
 class ArgList {
  public:
-  ArgList(Token* left, List<expr_t*>* positional, List<named_arg*>* named,
+  ArgList(Token* left, List<expr_t*>* positional, List<NamedArg*>* named,
           Token* right)
       : left(left),
         positional(positional),
@@ -4858,7 +4873,7 @@ class ArgList {
 
   static ArgList* CreateNull(bool alloc_lists = false) { 
     return Alloc<ArgList>(nullptr, alloc_lists ? Alloc<List<expr_t*>>() :
-                          nullptr, alloc_lists ? Alloc<List<named_arg*>>() :
+                          nullptr, alloc_lists ? Alloc<List<NamedArg*>>() :
                           nullptr, nullptr);
   }
 
@@ -4870,21 +4885,21 @@ class ArgList {
 
   Token* left;
   List<expr_t*>* positional;
-  List<named_arg*>* named;
+  List<NamedArg*>* named;
   Token* right;
 
   DISALLOW_COPY_AND_ASSIGN(ArgList)
 };
 
-class assoc_pair {
+class AssocPair {
  public:
-  assoc_pair(compound_word* key, compound_word* value)
+  AssocPair(CompoundWord* key, CompoundWord* value)
       : key(key),
         value(value) {
   }
 
-  static assoc_pair* CreateNull(bool alloc_lists = false) { 
-    return Alloc<assoc_pair>(nullptr, nullptr);
+  static AssocPair* CreateNull(bool alloc_lists = false) { 
+    return Alloc<AssocPair>(nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4893,22 +4908,22 @@ class assoc_pair {
     return ObjHeader::AsdlClass(75, 2);
   }
 
-  compound_word* key;
-  compound_word* value;
+  CompoundWord* key;
+  CompoundWord* value;
 
-  DISALLOW_COPY_AND_ASSIGN(assoc_pair)
+  DISALLOW_COPY_AND_ASSIGN(AssocPair)
 };
 
-class compound_word : public rhs_word_t, public word_t, public arith_expr_t,
+class CompoundWord : public rhs_word_t, public word_t, public arith_expr_t,
 public redir_param_t {
  public:
-  compound_word(List<word_part_t*>* parts)
+  CompoundWord(List<word_part_t*>* parts)
       : parts(parts) {
   }
 
-  static compound_word* CreateNull(bool alloc_lists = false) { 
-    return Alloc<compound_word>(alloc_lists ? Alloc<List<word_part_t*>>() :
-                                nullptr);
+  static CompoundWord* CreateNull(bool alloc_lists = false) { 
+    return Alloc<CompoundWord>(alloc_lists ? Alloc<List<word_part_t*>>() :
+                               nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4919,67 +4934,74 @@ public redir_param_t {
 
   List<word_part_t*>* parts;
 
-  DISALLOW_COPY_AND_ASSIGN(compound_word)
+  DISALLOW_COPY_AND_ASSIGN(CompoundWord)
 };
 
-class string_line {
+class Redir {
  public:
-  string_line(int dedent, List<word_part_t*>* part)
-      : part(part),
-        dedent(dedent) {
-  }
-
-  static string_line* CreateNull(bool alloc_lists = false) { 
-    return Alloc<string_line>(-1, alloc_lists ? Alloc<List<word_part_t*>>() :
-                              nullptr);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(77, 1);
-  }
-
-  List<word_part_t*>* part;
-  int dedent;
-
-  DISALLOW_COPY_AND_ASSIGN(string_line)
-};
-
-class triple_quoted {
- public:
-  triple_quoted(int min_dedent, List<string_line*>* lines)
-      : lines(lines),
-        min_dedent(min_dedent) {
-  }
-
-  static triple_quoted* CreateNull(bool alloc_lists = false) { 
-    return Alloc<triple_quoted>(-1, alloc_lists ? Alloc<List<string_line*>>() :
-                                nullptr);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(78, 1);
-  }
-
-  List<string_line*>* lines;
-  int min_dedent;
-
-  DISALLOW_COPY_AND_ASSIGN(triple_quoted)
-};
-
-class redir {
- public:
-  redir(Token* op, redir_loc_t* loc, redir_param_t* arg)
+  Redir(Token* op, redir_loc_t* loc, redir_param_t* arg)
       : op(op),
         loc(loc),
         arg(arg) {
   }
 
-  static redir* CreateNull(bool alloc_lists = false) { 
-    return Alloc<redir>(nullptr, nullptr, nullptr);
+  static Redir* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Redir>(nullptr, nullptr, nullptr);
+  }
+
+  hnode_t* PrettyTree();
+
+  static constexpr ObjHeader obj_header() {
+    return ObjHeader::AsdlClass(77, 3);
+  }
+
+  Token* op;
+  redir_loc_t* loc;
+  redir_param_t* arg;
+
+  DISALLOW_COPY_AND_ASSIGN(Redir)
+};
+
+class AssignPair {
+ public:
+  AssignPair(sh_lhs_expr_t* lhs, assign_op_t op, rhs_word_t* rhs, List<int>*
+             spids)
+      : lhs(lhs),
+        rhs(rhs),
+        spids(spids),
+        op(op) {
+  }
+
+  static AssignPair* CreateNull(bool alloc_lists = false) { 
+    return Alloc<AssignPair>(nullptr, assign_op_e::Equal, nullptr, alloc_lists
+                             ? Alloc<List<int>>() : nullptr);
+  }
+
+  hnode_t* PrettyTree();
+
+  static constexpr ObjHeader obj_header() {
+    return ObjHeader::AsdlClass(78, 3);
+  }
+
+  sh_lhs_expr_t* lhs;
+  rhs_word_t* rhs;
+  List<int>* spids;
+  assign_op_t op;
+
+  DISALLOW_COPY_AND_ASSIGN(AssignPair)
+};
+
+class EnvPair {
+ public:
+  EnvPair(Str* name, rhs_word_t* val, List<int>* spids)
+      : name(name),
+        val(val),
+        spids(spids) {
+  }
+
+  static EnvPair* CreateNull(bool alloc_lists = false) { 
+    return Alloc<EnvPair>(kEmptyString, nullptr, alloc_lists ?
+                          Alloc<List<int>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -4988,26 +5010,25 @@ class redir {
     return ObjHeader::AsdlClass(79, 3);
   }
 
-  Token* op;
-  redir_loc_t* loc;
-  redir_param_t* arg;
+  Str* name;
+  rhs_word_t* val;
+  List<int>* spids;
 
-  DISALLOW_COPY_AND_ASSIGN(redir)
+  DISALLOW_COPY_AND_ASSIGN(EnvPair)
 };
 
-class assign_pair {
+class CaseArm {
  public:
-  assign_pair(sh_lhs_expr_t* lhs, assign_op_t op, rhs_word_t* rhs, List<int>*
-              spids)
-      : lhs(lhs),
-        rhs(rhs),
-        spids(spids),
-        op(op) {
+  CaseArm(List<word_t*>* pat_list, List<command_t*>* action, List<int>* spids)
+      : pat_list(pat_list),
+        action(action),
+        spids(spids) {
   }
 
-  static assign_pair* CreateNull(bool alloc_lists = false) { 
-    return Alloc<assign_pair>(nullptr, assign_op_e::Equal, nullptr, alloc_lists
-                              ? Alloc<List<int>>() : nullptr);
+  static CaseArm* CreateNull(bool alloc_lists = false) { 
+    return Alloc<CaseArm>(alloc_lists ? Alloc<List<word_t*>>() : nullptr,
+                          alloc_lists ? Alloc<List<command_t*>>() : nullptr,
+                          alloc_lists ? Alloc<List<int>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -5016,97 +5037,49 @@ class assign_pair {
     return ObjHeader::AsdlClass(80, 3);
   }
 
-  sh_lhs_expr_t* lhs;
-  rhs_word_t* rhs;
-  List<int>* spids;
-  assign_op_t op;
-
-  DISALLOW_COPY_AND_ASSIGN(assign_pair)
-};
-
-class env_pair {
- public:
-  env_pair(Str* name, rhs_word_t* val, List<int>* spids)
-      : name(name),
-        val(val),
-        spids(spids) {
-  }
-
-  static env_pair* CreateNull(bool alloc_lists = false) { 
-    return Alloc<env_pair>(kEmptyString, nullptr, alloc_lists ?
-                           Alloc<List<int>>() : nullptr);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(81, 3);
-  }
-
-  Str* name;
-  rhs_word_t* val;
-  List<int>* spids;
-
-  DISALLOW_COPY_AND_ASSIGN(env_pair)
-};
-
-class case_arm {
- public:
-  case_arm(List<word_t*>* pat_list, List<command_t*>* action, List<int>* spids)
-      : pat_list(pat_list),
-        action(action),
-        spids(spids) {
-  }
-
-  static case_arm* CreateNull(bool alloc_lists = false) { 
-    return Alloc<case_arm>(alloc_lists ? Alloc<List<word_t*>>() : nullptr,
-                           alloc_lists ? Alloc<List<command_t*>>() : nullptr,
-                           alloc_lists ? Alloc<List<int>>() : nullptr);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(82, 3);
-  }
-
   List<word_t*>* pat_list;
   List<command_t*>* action;
   List<int>* spids;
 
-  DISALLOW_COPY_AND_ASSIGN(case_arm)
+  DISALLOW_COPY_AND_ASSIGN(CaseArm)
 };
 
-class if_arm {
+class IfArm {
  public:
-  if_arm(condition_t* cond, List<command_t*>* action, List<int>* spids)
-      : cond(cond),
+  IfArm(Token* keyword, condition_t* cond, Token* then_kw, List<command_t*>*
+        action, List<int>* spids)
+      : keyword(keyword),
+        cond(cond),
+        then_kw(then_kw),
         action(action),
         spids(spids) {
   }
 
-  static if_arm* CreateNull(bool alloc_lists = false) { 
-    return Alloc<if_arm>(nullptr, alloc_lists ? Alloc<List<command_t*>>() :
-                         nullptr, alloc_lists ? Alloc<List<int>>() : nullptr);
+  static IfArm* CreateNull(bool alloc_lists = false) { 
+    return Alloc<IfArm>(nullptr, nullptr, nullptr, alloc_lists ?
+                        Alloc<List<command_t*>>() : nullptr, alloc_lists ?
+                        Alloc<List<int>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(83, 3);
+    return ObjHeader::AsdlClass(81, 5);
   }
 
+  Token* keyword;
   condition_t* cond;
+  Token* then_kw;
   List<command_t*>* action;
   List<int>* spids;
 
-  DISALLOW_COPY_AND_ASSIGN(if_arm)
+  DISALLOW_COPY_AND_ASSIGN(IfArm)
 };
 
 class BraceGroup : public command_t {
  public:
   BraceGroup(Token* left, Token* doc_token, List<command_t*>* children,
-             List<redir*>* redirects, Token* right)
+             List<Redir*>* redirects, Token* right)
       : left(left),
         doc_token(doc_token),
         children(children),
@@ -5117,19 +5090,19 @@ class BraceGroup : public command_t {
   static BraceGroup* CreateNull(bool alloc_lists = false) { 
     return Alloc<BraceGroup>(nullptr, nullptr, alloc_lists ?
                              Alloc<List<command_t*>>() : nullptr, alloc_lists ?
-                             Alloc<List<redir*>>() : nullptr, nullptr);
+                             Alloc<List<Redir*>>() : nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(84, 5);
+    return ObjHeader::AsdlClass(82, 5);
   }
 
   Token* left;
   Token* doc_token;
   List<command_t*>* children;
-  List<redir*>* redirects;
+  List<Redir*>* redirects;
   Token* right;
 
   DISALLOW_COPY_AND_ASSIGN(BraceGroup)
@@ -5150,7 +5123,7 @@ class BlockArg : public expr_t {
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(85, 2);
+    return ObjHeader::AsdlClass(83, 2);
   }
 
   BraceGroup* brace_group;
@@ -5159,50 +5132,50 @@ class BlockArg : public expr_t {
   DISALLOW_COPY_AND_ASSIGN(BlockArg)
 };
 
-class variant {
+class Variant {
  public:
-  variant(Token* tag_name, variant_type_t* typ)
+  Variant(Token* tag_name, variant_type_t* typ)
       : tag_name(tag_name),
         typ(typ) {
   }
 
-  static variant* CreateNull(bool alloc_lists = false) { 
-    return Alloc<variant>(nullptr, nullptr);
+  static Variant* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Variant>(nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(86, 2);
+    return ObjHeader::AsdlClass(84, 2);
   }
 
   Token* tag_name;
   variant_type_t* typ;
 
-  DISALLOW_COPY_AND_ASSIGN(variant)
+  DISALLOW_COPY_AND_ASSIGN(Variant)
 };
 
-class import_name {
+class ImportName {
  public:
-  import_name(Token* name, Token* alias)
+  ImportName(Token* name, Token* alias)
       : name(name),
         alias(alias) {
   }
 
-  static import_name* CreateNull(bool alloc_lists = false) { 
-    return Alloc<import_name>(nullptr, nullptr);
+  static ImportName* CreateNull(bool alloc_lists = false) { 
+    return Alloc<ImportName>(nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(87, 2);
+    return ObjHeader::AsdlClass(85, 2);
   }
 
   Token* name;
   Token* alias;
 
-  DISALLOW_COPY_AND_ASSIGN(import_name)
+  DISALLOW_COPY_AND_ASSIGN(ImportName)
 };
 
 class UntypedParam {
@@ -5220,7 +5193,7 @@ class UntypedParam {
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(88, 3);
+    return ObjHeader::AsdlClass(86, 3);
   }
 
   Token* ref;
@@ -5245,7 +5218,7 @@ class TypedParam {
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(89, 3);
+    return ObjHeader::AsdlClass(87, 3);
   }
 
   Token* name;
@@ -5255,23 +5228,23 @@ class TypedParam {
   DISALLOW_COPY_AND_ASSIGN(TypedParam)
 };
 
-class param {
+class Param {
  public:
-  param(Token* prefix, Token* name, type_expr_t* type, expr_t* default_val)
+  Param(Token* prefix, Token* name, type_expr_t* type, expr_t* default_val)
       : prefix(prefix),
         name(name),
         type(type),
         default_val(default_val) {
   }
 
-  static param* CreateNull(bool alloc_lists = false) { 
-    return Alloc<param>(nullptr, nullptr, nullptr, nullptr);
+  static Param* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Param>(nullptr, nullptr, nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(90, 4);
+    return ObjHeader::AsdlClass(88, 4);
   }
 
   Token* prefix;
@@ -5279,18 +5252,67 @@ class param {
   type_expr_t* type;
   expr_t* default_val;
 
-  DISALLOW_COPY_AND_ASSIGN(param)
+  DISALLOW_COPY_AND_ASSIGN(Param)
 };
 
-class name_type {
+class NameType {
  public:
-  name_type(Token* name, type_expr_t* typ)
+  NameType(Token* name, type_expr_t* typ)
       : name(name),
         typ(typ) {
   }
 
-  static name_type* CreateNull(bool alloc_lists = false) { 
-    return Alloc<name_type>(nullptr, nullptr);
+  static NameType* CreateNull(bool alloc_lists = false) { 
+    return Alloc<NameType>(nullptr, nullptr);
+  }
+
+  hnode_t* PrettyTree();
+
+  static constexpr ObjHeader obj_header() {
+    return ObjHeader::AsdlClass(89, 2);
+  }
+
+  Token* name;
+  type_expr_t* typ;
+
+  DISALLOW_COPY_AND_ASSIGN(NameType)
+};
+
+class Comprehension {
+ public:
+  Comprehension(List<NameType*>* lhs, expr_t* iter, expr_t* cond)
+      : lhs(lhs),
+        iter(iter),
+        cond(cond) {
+  }
+
+  static Comprehension* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Comprehension>(alloc_lists ? Alloc<List<NameType*>>() :
+                                nullptr, nullptr, nullptr);
+  }
+
+  hnode_t* PrettyTree();
+
+  static constexpr ObjHeader obj_header() {
+    return ObjHeader::AsdlClass(90, 3);
+  }
+
+  List<NameType*>* lhs;
+  expr_t* iter;
+  expr_t* cond;
+
+  DISALLOW_COPY_AND_ASSIGN(Comprehension)
+};
+
+class NamedArg {
+ public:
+  NamedArg(Token* name, expr_t* value)
+      : name(name),
+        value(value) {
+  }
+
+  static NamedArg* CreateNull(bool alloc_lists = false) { 
+    return Alloc<NamedArg>(nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -5300,70 +5322,72 @@ class name_type {
   }
 
   Token* name;
-  type_expr_t* typ;
-
-  DISALLOW_COPY_AND_ASSIGN(name_type)
-};
-
-class comprehension {
- public:
-  comprehension(List<name_type*>* lhs, expr_t* iter, expr_t* cond)
-      : lhs(lhs),
-        iter(iter),
-        cond(cond) {
-  }
-
-  static comprehension* CreateNull(bool alloc_lists = false) { 
-    return Alloc<comprehension>(alloc_lists ? Alloc<List<name_type*>>() :
-                                nullptr, nullptr, nullptr);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(92, 3);
-  }
-
-  List<name_type*>* lhs;
-  expr_t* iter;
-  expr_t* cond;
-
-  DISALLOW_COPY_AND_ASSIGN(comprehension)
-};
-
-class named_arg {
- public:
-  named_arg(Token* name, expr_t* value)
-      : name(name),
-        value(value) {
-  }
-
-  static named_arg* CreateNull(bool alloc_lists = false) { 
-    return Alloc<named_arg>(nullptr, nullptr);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(93, 2);
-  }
-
-  Token* name;
   expr_t* value;
 
-  DISALLOW_COPY_AND_ASSIGN(named_arg)
+  DISALLOW_COPY_AND_ASSIGN(NamedArg)
 };
 
-class subscript : public place_expr_t, public expr_t {
+class Subscript : public place_expr_t, public expr_t {
  public:
-  subscript(expr_t* obj, List<expr_t*>* indices)
+  Subscript(expr_t* obj, List<expr_t*>* indices)
       : obj(obj),
         indices(indices) {
   }
 
-  static subscript* CreateNull(bool alloc_lists = false) { 
-    return Alloc<subscript>(nullptr, alloc_lists ? Alloc<List<expr_t*>>() :
+  static Subscript* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Subscript>(nullptr, alloc_lists ? Alloc<List<expr_t*>>() :
                             nullptr);
+  }
+
+  hnode_t* PrettyTree();
+
+  static constexpr ObjHeader obj_header() {
+    return ObjHeader::AsdlClass(92, 2);
+  }
+
+  expr_t* obj;
+  List<expr_t*>* indices;
+
+  DISALLOW_COPY_AND_ASSIGN(Subscript)
+};
+
+class Attribute : public place_expr_t, public expr_t {
+ public:
+  Attribute(expr_t* obj, Token* op, Token* attr, expr_context_t ctx)
+      : obj(obj),
+        op(op),
+        attr(attr),
+        ctx(ctx) {
+  }
+
+  static Attribute* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Attribute>(nullptr, nullptr, nullptr, expr_context_e::Load);
+  }
+
+  hnode_t* PrettyTree();
+
+  static constexpr ObjHeader obj_header() {
+    return ObjHeader::AsdlClass(93, 3);
+  }
+
+  expr_t* obj;
+  Token* op;
+  Token* attr;
+  expr_context_t ctx;
+
+  DISALLOW_COPY_AND_ASSIGN(Attribute)
+};
+
+class PosixClass : public class_literal_term_t, public char_class_term_t,
+public re_t {
+ public:
+  PosixClass(Token* negated, Str* name)
+      : negated(negated),
+        name(name) {
+  }
+
+  static PosixClass* CreateNull(bool alloc_lists = false) { 
+    return Alloc<PosixClass>(nullptr, kEmptyString);
   }
 
   hnode_t* PrettyTree();
@@ -5372,85 +5396,34 @@ class subscript : public place_expr_t, public expr_t {
     return ObjHeader::AsdlClass(94, 2);
   }
 
-  expr_t* obj;
-  List<expr_t*>* indices;
+  Token* negated;
+  Str* name;
 
-  DISALLOW_COPY_AND_ASSIGN(subscript)
+  DISALLOW_COPY_AND_ASSIGN(PosixClass)
 };
 
-class attribute : public place_expr_t, public expr_t {
+class PerlClass : public class_literal_term_t, public char_class_term_t, public
+re_t {
  public:
-  attribute(expr_t* obj, Token* op, Token* attr, expr_context_t ctx)
-      : obj(obj),
-        op(op),
-        attr(attr),
-        ctx(ctx) {
-  }
-
-  static attribute* CreateNull(bool alloc_lists = false) { 
-    return Alloc<attribute>(nullptr, nullptr, nullptr, expr_context_e::Load);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(95, 3);
-  }
-
-  expr_t* obj;
-  Token* op;
-  Token* attr;
-  expr_context_t ctx;
-
-  DISALLOW_COPY_AND_ASSIGN(attribute)
-};
-
-class posix_class : public class_literal_term_t, public char_class_term_t,
-public re_t {
- public:
-  posix_class(Token* negated, Str* name)
+  PerlClass(Token* negated, Str* name)
       : negated(negated),
         name(name) {
   }
 
-  static posix_class* CreateNull(bool alloc_lists = false) { 
-    return Alloc<posix_class>(nullptr, kEmptyString);
+  static PerlClass* CreateNull(bool alloc_lists = false) { 
+    return Alloc<PerlClass>(nullptr, kEmptyString);
   }
 
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(96, 2);
+    return ObjHeader::AsdlClass(95, 2);
   }
 
   Token* negated;
   Str* name;
 
-  DISALLOW_COPY_AND_ASSIGN(posix_class)
-};
-
-class perl_class : public class_literal_term_t, public char_class_term_t,
-public re_t {
- public:
-  perl_class(Token* negated, Str* name)
-      : negated(negated),
-        name(name) {
-  }
-
-  static perl_class* CreateNull(bool alloc_lists = false) { 
-    return Alloc<perl_class>(nullptr, kEmptyString);
-  }
-
-  hnode_t* PrettyTree();
-
-  static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(97, 2);
-  }
-
-  Token* negated;
-  Str* name;
-
-  DISALLOW_COPY_AND_ASSIGN(perl_class)
+  DISALLOW_COPY_AND_ASSIGN(PerlClass)
 };
 
 class CharCode : public char_class_term_t {
@@ -5468,7 +5441,7 @@ class CharCode : public char_class_term_t {
   hnode_t* PrettyTree();
 
   static constexpr ObjHeader obj_header() {
-    return ObjHeader::AsdlClass(98, 0);
+    return ObjHeader::AsdlClass(96, 0);
   }
 
   int i;

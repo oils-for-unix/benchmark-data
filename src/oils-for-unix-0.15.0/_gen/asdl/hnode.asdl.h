@@ -11,7 +11,7 @@ namespace hnode_asdl {
 // use struct instead of namespace so 'using' works consistently
 #define ASDL_NAMES struct
 
-class field;
+class Field;
 class hnode_t;
 
 enum class color_e {
@@ -37,7 +37,7 @@ class hnode_t {
   hnode_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   DISALLOW_COPY_AND_ASSIGN(hnode_t)
@@ -45,7 +45,7 @@ class hnode_t {
 
 class hnode__Record : public hnode_t {
  public:
-  hnode__Record(Str* node_type, List<field*>* fields, bool abbrev, Str* left,
+  hnode__Record(Str* node_type, List<Field*>* fields, bool abbrev, Str* left,
                 Str* right, List<hnode_t*>* unnamed_fields)
       : node_type(node_type),
         fields(fields),
@@ -56,7 +56,7 @@ class hnode__Record : public hnode_t {
   }
 
   static hnode__Record* CreateNull(bool alloc_lists = false) { 
-    return Alloc<hnode__Record>(nullptr, alloc_lists ? Alloc<List<field*>>() :
+    return Alloc<hnode__Record>(nullptr, alloc_lists ? Alloc<List<Field*>>() :
                                 nullptr, false, kEmptyString, kEmptyString,
                                 alloc_lists ? Alloc<List<hnode_t*>>() :
                                 nullptr);
@@ -67,7 +67,7 @@ class hnode__Record : public hnode_t {
   }
 
   Str* node_type;
-  List<field*>* fields;
+  List<Field*>* fields;
   Str* left;
   Str* right;
   List<hnode_t*>* unnamed_fields;
@@ -149,15 +149,15 @@ enum class alloc_members_e {
 };
 typedef alloc_members_e alloc_members_t;
 
-class field {
+class Field {
  public:
-  field(Str* name, hnode_t* val)
+  Field(Str* name, hnode_t* val)
       : name(name),
         val(val) {
   }
 
-  static field* CreateNull(bool alloc_lists = false) { 
-    return Alloc<field>(kEmptyString, nullptr);
+  static Field* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Field>(kEmptyString, nullptr);
   }
 
   static constexpr ObjHeader obj_header() {
@@ -167,7 +167,7 @@ class field {
   Str* name;
   hnode_t* val;
 
-  DISALLOW_COPY_AND_ASSIGN(field)
+  DISALLOW_COPY_AND_ASSIGN(Field)
 };
 
 

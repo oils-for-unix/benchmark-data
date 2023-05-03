@@ -28,3 +28,10 @@
 #include "cpp/stdlib.h"
 #include "cpp/translation_stubs.h"
 #include "mycpp/runtime.h"  // runtime library e.g. with Python data structures
+
+// TODO: Why do we need these?
+using runtime_asdl::cmd_value;
+using runtime_asdl::lvalue;  // for builtin_assign.py and builtin_misc.py
+using runtime_asdl::value;
+using syntax_asdl::command;
+using syntax_asdl::expr;

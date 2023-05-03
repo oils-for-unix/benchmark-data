@@ -5,11 +5,8 @@
 #include "prebuilt/asdl/runtime.mycpp.h"  // generated code uses wrappers here
 
 // Generated code uses these types
-using hnode_asdl::hnode__Record;
-using hnode_asdl::hnode__Array;
-using hnode_asdl::hnode__External;
-using hnode_asdl::hnode__Leaf;
-using hnode_asdl::field;
+using hnode_asdl::hnode;
+using hnode_asdl::Field;
 using hnode_asdl::color_e;
 
 using id_kind_asdl::Id_str;
@@ -18,22 +15,22 @@ namespace syntax_asdl {
 
 
 hnode_t* BoolParamBox::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("BoolParamBox"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("BoolParamBox"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(this->b ? runtime::TRUE_STR :
+  hnode_t* x0 = Alloc<hnode::Leaf>(this->b ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("b"), x0));
+  L->append(Alloc<Field>(StrFromC("b"), x0));
 
   return out_node;
 }
 
 hnode_t* IntParamBox::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("IntParamBox"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("IntParamBox"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(str(this->i), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("i"), x0));
+  hnode_t* x0 = Alloc<hnode::Leaf>(str(this->i), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("i"), x0));
 
   return out_node;
 }
@@ -51,28 +48,28 @@ const char* parse_result_str(int tag) {
 }
 
 hnode_t* parse_result__EmptyLine::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("parse_result.EmptyLine"));
   return out_node;
 }
 
 hnode_t* parse_result__Eof::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("parse_result.Eof"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("parse_result.Eof"));
   return out_node;
 }
 
 hnode_t* parse_result__Node::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("parse_result.Node"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("parse_result.Node"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->cmd->PrettyTree();
-  L->append(Alloc<field>(StrFromC("cmd"), x0));
+  L->append(Alloc<Field>(StrFromC("cmd"), x0));
 
   return out_node;
 }
 
 hnode_t* parse_result_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case parse_result_e::EmptyLine: {
     parse_result__EmptyLine* obj = static_cast<parse_result__EmptyLine*>(this);
     return obj->PrettyTree();
@@ -123,140 +120,140 @@ const char* source_str(int tag) {
 }
 
 hnode_t* source__Interactive::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Interactive"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Interactive"));
   return out_node;
 }
 
 hnode_t* source__Headless::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Headless"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Headless"));
   return out_node;
 }
 
 hnode_t* source__Unused::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Unused"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Unused"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->comment, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("comment"), x0));
+  L->append(Alloc<Field>(StrFromC("comment"), x0));
 
   return out_node;
 }
 
 hnode_t* source__CFlag::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.CFlag"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.CFlag"));
   return out_node;
 }
 
 hnode_t* source__Stdin::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Stdin"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Stdin"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->comment, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("comment"), x0));
+  L->append(Alloc<Field>(StrFromC("comment"), x0));
 
   return out_node;
 }
 
 hnode_t* source__MainFile::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.MainFile"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.MainFile"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->path, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("path"), x0));
+  L->append(Alloc<Field>(StrFromC("path"), x0));
 
   return out_node;
 }
 
 hnode_t* source__SourcedFile::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.SourcedFile"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.SourcedFile"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->path, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("path"), x0));
+  L->append(Alloc<Field>(StrFromC("path"), x0));
 
   hnode_t* x1 = this->location->PrettyTree();
-  L->append(Alloc<field>(StrFromC("location"), x1));
+  L->append(Alloc<Field>(StrFromC("location"), x1));
 
   return out_node;
 }
 
 hnode_t* source__ArgvWord::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.ArgvWord"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.ArgvWord"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->what, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("what"), x0));
+  L->append(Alloc<Field>(StrFromC("what"), x0));
 
   hnode_t* x1 = this->location->PrettyTree();
-  L->append(Alloc<field>(StrFromC("location"), x1));
+  L->append(Alloc<Field>(StrFromC("location"), x1));
 
   return out_node;
 }
 
 hnode_t* source__Variable::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Variable"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Variable"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->var_name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("var_name"), x0));
+  L->append(Alloc<Field>(StrFromC("var_name"), x0));
 
   hnode_t* x1 = this->location->PrettyTree();
-  L->append(Alloc<field>(StrFromC("location"), x1));
+  L->append(Alloc<Field>(StrFromC("location"), x1));
 
   return out_node;
 }
 
 hnode_t* source__VarRef::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.VarRef"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.VarRef"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->orig_tok->PrettyTree();
-  L->append(Alloc<field>(StrFromC("orig_tok"), x0));
+  L->append(Alloc<Field>(StrFromC("orig_tok"), x0));
 
   return out_node;
 }
 
 hnode_t* source__Alias::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Alias"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Alias"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->argv0, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("argv0"), x0));
+  L->append(Alloc<Field>(StrFromC("argv0"), x0));
 
   hnode_t* x1 = this->argv0_loc->PrettyTree();
-  L->append(Alloc<field>(StrFromC("argv0_loc"), x1));
+  L->append(Alloc<Field>(StrFromC("argv0_loc"), x1));
 
   return out_node;
 }
 
 hnode_t* source__Reparsed::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Reparsed"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Reparsed"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->what, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("what"), x0));
+  L->append(Alloc<Field>(StrFromC("what"), x0));
 
   hnode_t* x1 = this->left_token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left_token"), x1));
+  L->append(Alloc<Field>(StrFromC("left_token"), x1));
 
   hnode_t* x2 = this->right_token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right_token"), x2));
+  L->append(Alloc<Field>(StrFromC("right_token"), x2));
 
   return out_node;
 }
 
 hnode_t* source__Synthetic::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("source.Synthetic"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("source.Synthetic"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->s, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("s"), x0));
+  L->append(Alloc<Field>(StrFromC("s"), x0));
 
   return out_node;
 }
 
 hnode_t* source_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case source_e::Interactive: {
     source__Interactive* obj = static_cast<source__Interactive*>(this);
     return obj->PrettyTree();
@@ -315,45 +312,45 @@ hnode_t* source_t::PrettyTree() {
 }
 
 hnode_t* SourceLine::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("SourceLine"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("SourceLine"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(str(this->line_num), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("line_num"), x0));
+  hnode_t* x0 = Alloc<hnode::Leaf>(str(this->line_num), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("line_num"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->content, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("content"), x1));
+  L->append(Alloc<Field>(StrFromC("content"), x1));
 
   hnode_t* x2 = this->src->PrettyTree();
-  L->append(Alloc<field>(StrFromC("src"), x2));
+  L->append(Alloc<Field>(StrFromC("src"), x2));
 
   return out_node;
 }
 
 hnode_t* Token::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("Token"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("Token"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("id"), x0));
+  L->append(Alloc<Field>(StrFromC("id"), x0));
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(str(this->col), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("col"), x1));
+  hnode_t* x1 = Alloc<hnode::Leaf>(str(this->col), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("col"), x1));
 
-  hnode_t* x2 = Alloc<hnode__Leaf>(str(this->length), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("length"), x2));
+  hnode_t* x2 = Alloc<hnode::Leaf>(str(this->length), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("length"), x2));
 
-  hnode_t* x3 = Alloc<hnode__Leaf>(str(this->span_id), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("span_id"), x3));
+  hnode_t* x3 = Alloc<hnode::Leaf>(str(this->span_id), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("span_id"), x3));
 
   if (this->line) {  // Optional
     hnode_t* x4 = this->line->PrettyTree();
-    L->append(Alloc<field>(StrFromC("line"), x4));
+    L->append(Alloc<Field>(StrFromC("line"), x4));
   }
 
   hnode_t* x5 = runtime::NewLeaf(this->tval, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("tval"), x5));
+  L->append(Alloc<Field>(StrFromC("tval"), x5));
 
   return out_node;
 }
@@ -379,62 +376,62 @@ const char* loc_str(int tag) {
 }
 
 hnode_t* loc__Missing::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("loc.Missing"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("loc.Missing"));
   return out_node;
 }
 
 hnode_t* loc__Span::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("loc.Span"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("loc.Span"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(str(this->span_id), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("span_id"), x0));
+  hnode_t* x0 = Alloc<hnode::Leaf>(str(this->span_id), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("span_id"), x0));
 
   return out_node;
 }
 
 hnode_t* loc__WordPart::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("loc.WordPart"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("loc.WordPart"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->p->PrettyTree();
-  L->append(Alloc<field>(StrFromC("p"), x0));
+  L->append(Alloc<Field>(StrFromC("p"), x0));
 
   return out_node;
 }
 
 hnode_t* loc__Word::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("loc.Word"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("loc.Word"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->w->PrettyTree();
-  L->append(Alloc<field>(StrFromC("w"), x0));
+  L->append(Alloc<Field>(StrFromC("w"), x0));
 
   return out_node;
 }
 
 hnode_t* loc__Arith::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("loc.Arith"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("loc.Arith"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->a->PrettyTree();
-  L->append(Alloc<field>(StrFromC("a"), x0));
+  L->append(Alloc<Field>(StrFromC("a"), x0));
 
   return out_node;
 }
 
 hnode_t* loc__Command::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("loc.Command"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("loc.Command"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->c->PrettyTree();
-  L->append(Alloc<field>(StrFromC("c"), x0));
+  L->append(Alloc<Field>(StrFromC("c"), x0));
 
   return out_node;
 }
 
 hnode_t* loc_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case loc_e::Missing: {
     loc__Missing* obj = static_cast<loc__Missing*>(this);
     return obj->PrettyTree();
@@ -479,30 +476,30 @@ const char* bracket_op_str(int tag) {
 }
 
 hnode_t* bracket_op__WholeArray::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("bracket_op.WholeArray"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   return out_node;
 }
 
 hnode_t* bracket_op__ArrayIndex::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("bracket_op.ArrayIndex"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->expr->PrettyTree();
-  L->append(Alloc<field>(StrFromC("expr"), x0));
+  L->append(Alloc<Field>(StrFromC("expr"), x0));
 
   return out_node;
 }
 
 hnode_t* bracket_op_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case bracket_op_e::WholeArray: {
     bracket_op__WholeArray* obj = static_cast<bracket_op__WholeArray*>(this);
     return obj->PrettyTree();
@@ -533,70 +530,70 @@ const char* suffix_op_str(int tag) {
 }
 
 hnode_t* suffix_op__Unary::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("suffix_op.Unary"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("suffix_op.Unary"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x0));
+  L->append(Alloc<Field>(StrFromC("op"), x0));
 
   hnode_t* x1 = this->arg_word->PrettyTree();
-  L->append(Alloc<field>(StrFromC("arg_word"), x1));
+  L->append(Alloc<Field>(StrFromC("arg_word"), x1));
 
   return out_node;
 }
 
 hnode_t* suffix_op__Static::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("suffix_op.Static"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("suffix_op.Static"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->tok->PrettyTree();
-  L->append(Alloc<field>(StrFromC("tok"), x0));
+  L->append(Alloc<Field>(StrFromC("tok"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->arg, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("arg"), x1));
+  L->append(Alloc<Field>(StrFromC("arg"), x1));
 
   return out_node;
 }
 
 hnode_t* suffix_op__PatSub::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("suffix_op.PatSub"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("suffix_op.PatSub"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->pat->PrettyTree();
-  L->append(Alloc<field>(StrFromC("pat"), x0));
+  L->append(Alloc<Field>(StrFromC("pat"), x0));
 
   hnode_t* x1 = this->replace->PrettyTree();
-  L->append(Alloc<field>(StrFromC("replace"), x1));
+  L->append(Alloc<Field>(StrFromC("replace"), x1));
 
-  hnode_t* x2 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->replace_mode)),
+  hnode_t* x2 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->replace_mode)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("replace_mode"), x2));
+  L->append(Alloc<Field>(StrFromC("replace_mode"), x2));
 
   hnode_t* x3 = this->slash_tok->PrettyTree();
-  L->append(Alloc<field>(StrFromC("slash_tok"), x3));
+  L->append(Alloc<Field>(StrFromC("slash_tok"), x3));
 
   return out_node;
 }
 
 hnode_t* suffix_op__Slice::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("suffix_op.Slice"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("suffix_op.Slice"));
+  List<Field*>* L = out_node->fields;
 
   if (this->begin) {  // Optional
     hnode_t* x0 = this->begin->PrettyTree();
-    L->append(Alloc<field>(StrFromC("begin"), x0));
+    L->append(Alloc<Field>(StrFromC("begin"), x0));
   }
 
   if (this->length) {  // Optional
     hnode_t* x1 = this->length->PrettyTree();
-    L->append(Alloc<field>(StrFromC("length"), x1));
+    L->append(Alloc<Field>(StrFromC("length"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* suffix_op_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case suffix_op_e::Nullary: {
     Token* obj = static_cast<Token*>(this);
     return obj->PrettyTree();
@@ -622,172 +619,172 @@ hnode_t* suffix_op_t::PrettyTree() {
   }
 }
 
-hnode_t* braced_var_sub::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("braced_var_sub"));
-  List<field*>* L = out_node->fields;
+hnode_t* BracedVarSub::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("BracedVarSub"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = this->token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("token"), x1));
+  L->append(Alloc<Field>(StrFromC("token"), x1));
 
   hnode_t* x2 = runtime::NewLeaf(this->var_name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("var_name"), x2));
+  L->append(Alloc<Field>(StrFromC("var_name"), x2));
 
   if (this->prefix_op) {  // Optional
     hnode_t* x3 = this->prefix_op->PrettyTree();
-    L->append(Alloc<field>(StrFromC("prefix_op"), x3));
+    L->append(Alloc<Field>(StrFromC("prefix_op"), x3));
   }
 
   if (this->bracket_op) {  // Optional
     hnode_t* x4 = this->bracket_op->PrettyTree();
-    L->append(Alloc<field>(StrFromC("bracket_op"), x4));
+    L->append(Alloc<Field>(StrFromC("bracket_op"), x4));
   }
 
   if (this->suffix_op) {  // Optional
     hnode_t* x5 = this->suffix_op->PrettyTree();
-    L->append(Alloc<field>(StrFromC("suffix_op"), x5));
+    L->append(Alloc<Field>(StrFromC("suffix_op"), x5));
   }
 
   hnode_t* x6 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x6));
+  L->append(Alloc<Field>(StrFromC("right"), x6));
 
   return out_node;
 }
 
-hnode_t* double_quoted::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("double_quoted"));
-  List<field*>* L = out_node->fields;
+hnode_t* DoubleQuoted::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("DoubleQuoted"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->parts != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_part_t*> it(this->parts); !it.Done(); it.Next()) {
       word_part_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("parts"), x1));
+    L->append(Alloc<Field>(StrFromC("parts"), x1));
   }
 
   hnode_t* x2 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x2));
+  L->append(Alloc<Field>(StrFromC("right"), x2));
 
   return out_node;
 }
 
-hnode_t* single_quoted::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("single_quoted"));
-  List<field*>* L = out_node->fields;
+hnode_t* SingleQuoted::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("SingleQuoted"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->tokens != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<Token*> it(this->tokens); !it.Done(); it.Next()) {
       Token* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("tokens"), x1));
+    L->append(Alloc<Field>(StrFromC("tokens"), x1));
   }
 
   hnode_t* x2 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x2));
+  L->append(Alloc<Field>(StrFromC("right"), x2));
 
   return out_node;
 }
 
-hnode_t* simple_var_sub::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("simple_var_sub"));
-  List<field*>* L = out_node->fields;
+hnode_t* SimpleVarSub::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("SimpleVarSub"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->var_name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("var_name"), x1));
+  L->append(Alloc<Field>(StrFromC("var_name"), x1));
 
   return out_node;
 }
 
-hnode_t* command_sub::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command_sub"));
-  List<field*>* L = out_node->fields;
+hnode_t* CommandSub::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("CommandSub"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left_token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left_token"), x0));
+  L->append(Alloc<Field>(StrFromC("left_token"), x0));
 
   hnode_t* x1 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x1));
+  L->append(Alloc<Field>(StrFromC("child"), x1));
 
   hnode_t* x2 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x2));
+  L->append(Alloc<Field>(StrFromC("right"), x2));
 
   return out_node;
 }
 
-hnode_t* sh_array_literal::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("sh_array_literal"));
-  List<field*>* L = out_node->fields;
+hnode_t* ShArrayLiteral::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("ShArrayLiteral"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->words != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_t*> it(this->words); !it.Done(); it.Next()) {
       word_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("words"), x1));
+    L->append(Alloc<Field>(StrFromC("words"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* ArgList::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("ArgList"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("ArgList"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->positional != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<expr_t*> it(this->positional); !it.Done(); it.Next()) {
       expr_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("positional"), x1));
+    L->append(Alloc<Field>(StrFromC("positional"), x1));
   }
 
   if (this->named != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<named_arg*> it(this->named); !it.Done(); it.Next()) {
-      named_arg* i2 = it.Value();
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<NamedArg*> it(this->named); !it.Done(); it.Next()) {
+      NamedArg* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("named"), x2));
+    L->append(Alloc<Field>(StrFromC("named"), x2));
   }
 
   hnode_t* x3 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x3));
+  L->append(Alloc<Field>(StrFromC("right"), x3));
 
   return out_node;
 }
 
-hnode_t* assoc_pair::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("assoc_pair"));
-  List<field*>* L = out_node->fields;
+hnode_t* AssocPair::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("AssocPair"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->key->PrettyTree();
-  L->append(Alloc<field>(StrFromC("key"), x0));
+  L->append(Alloc<Field>(StrFromC("key"), x0));
 
   hnode_t* x1 = this->value->PrettyTree();
-  L->append(Alloc<field>(StrFromC("value"), x1));
+  L->append(Alloc<Field>(StrFromC("value"), x1));
 
   return out_node;
 }
@@ -833,254 +830,254 @@ const char* word_part_str(int tag) {
 }
 
 hnode_t* word_part__AssocArrayLiteral::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("word_part.AssocArrayLiteral"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->pairs != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<assoc_pair*> it(this->pairs); !it.Done(); it.Next()) {
-      assoc_pair* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<AssocPair*> it(this->pairs); !it.Done(); it.Next()) {
+      AssocPair* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("pairs"), x1));
+    L->append(Alloc<Field>(StrFromC("pairs"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__EscapedLiteral::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("word_part.EscapedLiteral"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("token"), x0));
+  L->append(Alloc<Field>(StrFromC("token"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->ch, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("ch"), x1));
+  L->append(Alloc<Field>(StrFromC("ch"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__TildeSub::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word_part.TildeSub"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word_part.TildeSub"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("token"), x0));
+  L->append(Alloc<Field>(StrFromC("token"), x0));
 
   if (this->user_name) {  // Optional
     hnode_t* x1 = runtime::NewLeaf(this->user_name, color_e::StringConst);
-    L->append(Alloc<field>(StrFromC("user_name"), x1));
+    L->append(Alloc<Field>(StrFromC("user_name"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__ArithSub::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word_part.ArithSub"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word_part.ArithSub"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->anode->PrettyTree();
-  L->append(Alloc<field>(StrFromC("anode"), x0));
+  L->append(Alloc<Field>(StrFromC("anode"), x0));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i1 = it.Value();
-      x1->children->append(Alloc<hnode__Leaf>(str(i1), color_e::OtherConst));
+      x1->children->append(Alloc<hnode::Leaf>(str(i1), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x1));
+    L->append(Alloc<Field>(StrFromC("spids"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__BracedTuple::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("word_part.BracedTuple"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   if (this->words != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<compound_word*> it(this->words); !it.Done(); it.Next()) {
-      compound_word* i0 = it.Value();
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<CompoundWord*> it(this->words); !it.Done(); it.Next()) {
+      CompoundWord* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("words"), x0));
+    L->append(Alloc<Field>(StrFromC("words"), x0));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i1 = it.Value();
-      x1->children->append(Alloc<hnode__Leaf>(str(i1), color_e::OtherConst));
+      x1->children->append(Alloc<hnode::Leaf>(str(i1), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x1));
+    L->append(Alloc<Field>(StrFromC("spids"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__BracedRange::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("word_part.BracedRange"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->kind)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->kind)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("kind"), x0));
+  L->append(Alloc<Field>(StrFromC("kind"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->start, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("start"), x1));
+  L->append(Alloc<Field>(StrFromC("start"), x1));
 
   hnode_t* x2 = runtime::NewLeaf(this->end, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("end"), x2));
+  L->append(Alloc<Field>(StrFromC("end"), x2));
 
-  hnode_t* x3 = Alloc<hnode__Leaf>(str(this->step), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("step"), x3));
+  hnode_t* x3 = Alloc<hnode::Leaf>(str(this->step), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("step"), x3));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x4 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x4 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i4 = it.Value();
-      x4->children->append(Alloc<hnode__Leaf>(str(i4), color_e::OtherConst));
+      x4->children->append(Alloc<hnode::Leaf>(str(i4), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x4));
+    L->append(Alloc<Field>(StrFromC("spids"), x4));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__ExtGlob::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word_part.ExtGlob"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word_part.ExtGlob"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x0));
+  L->append(Alloc<Field>(StrFromC("op"), x0));
 
   if (this->arms != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<compound_word*> it(this->arms); !it.Done(); it.Next()) {
-      compound_word* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<CompoundWord*> it(this->arms); !it.Done(); it.Next()) {
+      CompoundWord* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("arms"), x1));
+    L->append(Alloc<Field>(StrFromC("arms"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__Splice::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word_part.Splice"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word_part.Splice"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->var_name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("var_name"), x1));
+  L->append(Alloc<Field>(StrFromC("var_name"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__FuncCall::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word_part.FuncCall"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word_part.FuncCall"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   hnode_t* x1 = this->args->PrettyTree();
-  L->append(Alloc<field>(StrFromC("args"), x1));
+  L->append(Alloc<Field>(StrFromC("args"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* word_part__ExprSub::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word_part.ExprSub"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word_part.ExprSub"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x1));
+  L->append(Alloc<Field>(StrFromC("child"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* word_part_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case word_part_e::ShArrayLiteral: {
-    sh_array_literal* obj = static_cast<sh_array_literal*>(this);
+    ShArrayLiteral* obj = static_cast<ShArrayLiteral*>(this);
     return obj->PrettyTree();
   }
   case word_part_e::AssocArrayLiteral: {
@@ -1098,23 +1095,23 @@ static_cast<word_part__EscapedLiteral*>(this);
     return obj->PrettyTree();
   }
   case word_part_e::SingleQuoted: {
-    single_quoted* obj = static_cast<single_quoted*>(this);
+    SingleQuoted* obj = static_cast<SingleQuoted*>(this);
     return obj->PrettyTree();
   }
   case word_part_e::DoubleQuoted: {
-    double_quoted* obj = static_cast<double_quoted*>(this);
+    DoubleQuoted* obj = static_cast<DoubleQuoted*>(this);
     return obj->PrettyTree();
   }
   case word_part_e::SimpleVarSub: {
-    simple_var_sub* obj = static_cast<simple_var_sub*>(this);
+    SimpleVarSub* obj = static_cast<SimpleVarSub*>(this);
     return obj->PrettyTree();
   }
   case word_part_e::BracedVarSub: {
-    braced_var_sub* obj = static_cast<braced_var_sub*>(this);
+    BracedVarSub* obj = static_cast<BracedVarSub*>(this);
     return obj->PrettyTree();
   }
   case word_part_e::CommandSub: {
-    command_sub* obj = static_cast<command_sub*>(this);
+    CommandSub* obj = static_cast<CommandSub*>(this);
     return obj->PrettyTree();
   }
   case word_part_e::TildeSub: {
@@ -1154,55 +1151,17 @@ static_cast<word_part__EscapedLiteral*>(this);
   }
 }
 
-hnode_t* compound_word::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("compound_word"));
-  List<field*>* L = out_node->fields;
+hnode_t* CompoundWord::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("CompoundWord"));
+  List<Field*>* L = out_node->fields;
 
   if (this->parts != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_part_t*> it(this->parts); !it.Done(); it.Next()) {
       word_part_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("parts"), x0));
-  }
-
-  return out_node;
-}
-
-hnode_t* string_line::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("string_line"));
-  List<field*>* L = out_node->fields;
-
-  hnode_t* x0 = Alloc<hnode__Leaf>(str(this->dedent), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("dedent"), x0));
-
-  if (this->part != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<word_part_t*> it(this->part); !it.Done(); it.Next()) {
-      word_part_t* i1 = it.Value();
-      x1->children->append(i1->PrettyTree());
-    }
-    L->append(Alloc<field>(StrFromC("part"), x1));
-  }
-
-  return out_node;
-}
-
-hnode_t* triple_quoted::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("triple_quoted"));
-  List<field*>* L = out_node->fields;
-
-  hnode_t* x0 = Alloc<hnode__Leaf>(str(this->min_dedent), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("min_dedent"), x0));
-
-  if (this->lines != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<string_line*> it(this->lines); !it.Done(); it.Next()) {
-      string_line* i1 = it.Value();
-      x1->children->append(i1->PrettyTree());
-    }
-    L->append(Alloc<field>(StrFromC("lines"), x1));
+    L->append(Alloc<Field>(StrFromC("parts"), x0));
   }
 
   return out_node;
@@ -1219,18 +1178,18 @@ const char* rhs_word_str(int tag) {
 }
 
 hnode_t* rhs_word__Empty::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("rhs_word.Empty"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("rhs_word.Empty"));
   return out_node;
 }
 
 hnode_t* rhs_word_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case rhs_word_e::Empty: {
     rhs_word__Empty* obj = static_cast<rhs_word__Empty*>(this);
     return obj->PrettyTree();
   }
   case rhs_word_e::Compound: {
-    compound_word* obj = static_cast<compound_word*>(this);
+    CompoundWord* obj = static_cast<CompoundWord*>(this);
     return obj->PrettyTree();
   }
   default:
@@ -1253,46 +1212,46 @@ const char* word_str(int tag) {
 }
 
 hnode_t* word__BracedTree::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word.BracedTree"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word.BracedTree"));
+  List<Field*>* L = out_node->fields;
 
   if (this->parts != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_part_t*> it(this->parts); !it.Done(); it.Next()) {
       word_part_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("parts"), x0));
+    L->append(Alloc<Field>(StrFromC("parts"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* word__String::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("word.String"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("word.String"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("id"), x0));
+  L->append(Alloc<Field>(StrFromC("id"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->s, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("s"), x1));
+  L->append(Alloc<Field>(StrFromC("s"), x1));
 
-  hnode_t* x2 = Alloc<hnode__Leaf>(str(this->span_id), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("span_id"), x2));
+  hnode_t* x2 = Alloc<hnode::Leaf>(str(this->span_id), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("span_id"), x2));
 
   return out_node;
 }
 
 hnode_t* word_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case word_e::Token: {
     Token* obj = static_cast<Token*>(this);
     return obj->PrettyTree();
   }
   case word_e::Compound: {
-    compound_word* obj = static_cast<compound_word*>(this);
+    CompoundWord* obj = static_cast<CompoundWord*>(this);
     return obj->PrettyTree();
   }
   case word_e::BracedTree: {
@@ -1321,54 +1280,54 @@ const char* sh_lhs_expr_str(int tag) {
 }
 
 hnode_t* sh_lhs_expr__Name::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("sh_lhs_expr.Name"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("sh_lhs_expr.Name"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   return out_node;
 }
 
 hnode_t* sh_lhs_expr__IndexedName::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("sh_lhs_expr.IndexedName"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   hnode_t* x2 = this->index->PrettyTree();
-  L->append(Alloc<field>(StrFromC("index"), x2));
+  L->append(Alloc<Field>(StrFromC("index"), x2));
 
   return out_node;
 }
 
 hnode_t* sh_lhs_expr__UnparsedIndex::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("sh_lhs_expr.UnparsedIndex"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   hnode_t* x2 = runtime::NewLeaf(this->index, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("index"), x2));
+  L->append(Alloc<Field>(StrFromC("index"), x2));
 
   return out_node;
 }
 
 hnode_t* sh_lhs_expr_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case sh_lhs_expr_e::Name: {
     sh_lhs_expr__Name* obj = static_cast<sh_lhs_expr__Name*>(this);
     return obj->PrettyTree();
@@ -1409,94 +1368,94 @@ const char* arith_expr_str(int tag) {
 }
 
 hnode_t* arith_expr__UnaryAssign::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("arith_expr.UnaryAssign"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   hnode_t* x1 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x1));
+  L->append(Alloc<Field>(StrFromC("child"), x1));
 
   return out_node;
 }
 
 hnode_t* arith_expr__BinaryAssign::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("arith_expr.BinaryAssign"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   hnode_t* x1 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x1));
+  L->append(Alloc<Field>(StrFromC("left"), x1));
 
   hnode_t* x2 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x2));
+  L->append(Alloc<Field>(StrFromC("right"), x2));
 
   return out_node;
 }
 
 hnode_t* arith_expr__Unary::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("arith_expr.Unary"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("arith_expr.Unary"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   hnode_t* x1 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x1));
+  L->append(Alloc<Field>(StrFromC("child"), x1));
 
   return out_node;
 }
 
 hnode_t* arith_expr__Binary::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("arith_expr.Binary"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("arith_expr.Binary"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   hnode_t* x1 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x1));
+  L->append(Alloc<Field>(StrFromC("left"), x1));
 
   hnode_t* x2 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x2));
+  L->append(Alloc<Field>(StrFromC("right"), x2));
 
   return out_node;
 }
 
 hnode_t* arith_expr__TernaryOp::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("arith_expr.TernaryOp"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->cond->PrettyTree();
-  L->append(Alloc<field>(StrFromC("cond"), x0));
+  L->append(Alloc<Field>(StrFromC("cond"), x0));
 
   hnode_t* x1 = this->true_expr->PrettyTree();
-  L->append(Alloc<field>(StrFromC("true_expr"), x1));
+  L->append(Alloc<Field>(StrFromC("true_expr"), x1));
 
   hnode_t* x2 = this->false_expr->PrettyTree();
-  L->append(Alloc<field>(StrFromC("false_expr"), x2));
+  L->append(Alloc<Field>(StrFromC("false_expr"), x2));
 
   return out_node;
 }
 
 hnode_t* arith_expr_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case arith_expr_e::VarSub: {
-    simple_var_sub* obj = static_cast<simple_var_sub*>(this);
+    SimpleVarSub* obj = static_cast<SimpleVarSub*>(this);
     return obj->PrettyTree();
   }
   case arith_expr_e::Word: {
-    compound_word* obj = static_cast<compound_word*>(this);
+    CompoundWord* obj = static_cast<CompoundWord*>(this);
     return obj->PrettyTree();
   }
   case arith_expr_e::UnaryAssign: {
@@ -1544,86 +1503,86 @@ const char* bool_expr_str(int tag) {
 }
 
 hnode_t* bool_expr__WordTest::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("bool_expr.WordTest"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("bool_expr.WordTest"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->w->PrettyTree();
-  L->append(Alloc<field>(StrFromC("w"), x0));
+  L->append(Alloc<Field>(StrFromC("w"), x0));
 
   return out_node;
 }
 
 hnode_t* bool_expr__Binary::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("bool_expr.Binary"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("bool_expr.Binary"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   hnode_t* x1 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x1));
+  L->append(Alloc<Field>(StrFromC("left"), x1));
 
   hnode_t* x2 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x2));
+  L->append(Alloc<Field>(StrFromC("right"), x2));
 
   return out_node;
 }
 
 hnode_t* bool_expr__Unary::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("bool_expr.Unary"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("bool_expr.Unary"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   hnode_t* x1 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x1));
+  L->append(Alloc<Field>(StrFromC("child"), x1));
 
   return out_node;
 }
 
 hnode_t* bool_expr__LogicalNot::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("bool_expr.LogicalNot"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   return out_node;
 }
 
 hnode_t* bool_expr__LogicalAnd::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("bool_expr.LogicalAnd"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x1));
+  L->append(Alloc<Field>(StrFromC("right"), x1));
 
   return out_node;
 }
 
 hnode_t* bool_expr__LogicalOr::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("bool_expr.LogicalOr"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("bool_expr.LogicalOr"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x1));
+  L->append(Alloc<Field>(StrFromC("right"), x1));
 
   return out_node;
 }
 
 hnode_t* bool_expr_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case bool_expr_e::WordTest: {
     bool_expr__WordTest* obj = static_cast<bool_expr__WordTest*>(this);
     return obj->PrettyTree();
@@ -1664,27 +1623,27 @@ const char* redir_loc_str(int tag) {
 }
 
 hnode_t* redir_loc__Fd::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("redir_loc.Fd"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("redir_loc.Fd"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(str(this->fd), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("fd"), x0));
+  hnode_t* x0 = Alloc<hnode::Leaf>(str(this->fd), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("fd"), x0));
 
   return out_node;
 }
 
 hnode_t* redir_loc__VarName::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("redir_loc.VarName"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("redir_loc.VarName"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   return out_node;
 }
 
 hnode_t* redir_loc_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case redir_loc_e::Fd: {
     redir_loc__Fd* obj = static_cast<redir_loc__Fd*>(this);
     return obj->PrettyTree();
@@ -1709,32 +1668,32 @@ const char* redir_param_str(int tag) {
 }
 
 hnode_t* redir_param__HereDoc::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("redir_param.HereDoc"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("redir_param.HereDoc"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->here_begin->PrettyTree();
-  L->append(Alloc<field>(StrFromC("here_begin"), x0));
+  L->append(Alloc<Field>(StrFromC("here_begin"), x0));
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(str(this->here_end_span_id),
+  hnode_t* x1 = Alloc<hnode::Leaf>(str(this->here_end_span_id),
                                    color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("here_end_span_id"), x1));
+  L->append(Alloc<Field>(StrFromC("here_end_span_id"), x1));
 
   if (this->stdin_parts != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_part_t*> it(this->stdin_parts); !it.Done(); it.Next()) {
       word_part_t* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("stdin_parts"), x2));
+    L->append(Alloc<Field>(StrFromC("stdin_parts"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* redir_param_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case redir_param_e::Word: {
-    compound_word* obj = static_cast<compound_word*>(this);
+    CompoundWord* obj = static_cast<CompoundWord*>(this);
     return obj->PrettyTree();
   }
   case redir_param_e::HereDoc: {
@@ -1746,18 +1705,18 @@ hnode_t* redir_param_t::PrettyTree() {
   }
 }
 
-hnode_t* redir::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("redir"));
-  List<field*>* L = out_node->fields;
+hnode_t* Redir::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("Redir"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x0));
+  L->append(Alloc<Field>(StrFromC("op"), x0));
 
   hnode_t* x1 = this->loc->PrettyTree();
-  L->append(Alloc<field>(StrFromC("loc"), x1));
+  L->append(Alloc<Field>(StrFromC("loc"), x1));
 
   hnode_t* x2 = this->arg->PrettyTree();
-  L->append(Alloc<field>(StrFromC("arg"), x2));
+  L->append(Alloc<Field>(StrFromC("arg"), x2));
 
   return out_node;
 }
@@ -1772,49 +1731,49 @@ const char* assign_op_str(assign_op_e tag) {
   }
 }
 
-hnode_t* assign_pair::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("assign_pair"));
-  List<field*>* L = out_node->fields;
+hnode_t* AssignPair::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("AssignPair"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->lhs->PrettyTree();
-  L->append(Alloc<field>(StrFromC("lhs"), x0));
+  L->append(Alloc<Field>(StrFromC("lhs"), x0));
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(StrFromC(assign_op_str(this->op)),
+  hnode_t* x1 = Alloc<hnode::Leaf>(StrFromC(assign_op_str(this->op)),
                                    color_e::TypeName);
-  L->append(Alloc<field>(StrFromC("op"), x1));
+  L->append(Alloc<Field>(StrFromC("op"), x1));
 
   hnode_t* x2 = this->rhs->PrettyTree();
-  L->append(Alloc<field>(StrFromC("rhs"), x2));
+  L->append(Alloc<Field>(StrFromC("rhs"), x2));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
-hnode_t* env_pair::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("env_pair"));
-  List<field*>* L = out_node->fields;
+hnode_t* EnvPair::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("EnvPair"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   hnode_t* x1 = this->val->PrettyTree();
-  L->append(Alloc<field>(StrFromC("val"), x1));
+  L->append(Alloc<Field>(StrFromC("val"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
@@ -1831,33 +1790,33 @@ const char* condition_str(int tag) {
 }
 
 hnode_t* condition__Shell::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("condition.Shell"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("condition.Shell"));
+  List<Field*>* L = out_node->fields;
 
   if (this->commands != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->commands); !it.Done(); it.Next()) {
       command_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("commands"), x0));
+    L->append(Alloc<Field>(StrFromC("commands"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* condition__Oil::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("condition.Oil"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("condition.Oil"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->e->PrettyTree();
-  L->append(Alloc<field>(StrFromC("e"), x0));
+  L->append(Alloc<Field>(StrFromC("e"), x0));
 
   return out_node;
 }
 
 hnode_t* condition_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case condition_e::Shell: {
     condition__Shell* obj = static_cast<condition__Shell*>(this);
     return obj->PrettyTree();
@@ -1871,63 +1830,71 @@ hnode_t* condition_t::PrettyTree() {
   }
 }
 
-hnode_t* case_arm::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("case_arm"));
-  List<field*>* L = out_node->fields;
+hnode_t* CaseArm::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("CaseArm"));
+  List<Field*>* L = out_node->fields;
 
   if (this->pat_list != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_t*> it(this->pat_list); !it.Done(); it.Next()) {
       word_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("pat_list"), x0));
+    L->append(Alloc<Field>(StrFromC("pat_list"), x0));
   }
 
   if (this->action != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->action); !it.Done(); it.Next()) {
       command_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("action"), x1));
+    L->append(Alloc<Field>(StrFromC("action"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
-hnode_t* if_arm::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("if_arm"));
-  List<field*>* L = out_node->fields;
+hnode_t* IfArm::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("IfArm"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = this->cond->PrettyTree();
-  L->append(Alloc<field>(StrFromC("cond"), x0));
+  hnode_t* x0 = this->keyword->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
+
+  hnode_t* x1 = this->cond->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("cond"), x1));
+
+  if (this->then_kw) {  // Optional
+    hnode_t* x2 = this->then_kw->PrettyTree();
+    L->append(Alloc<Field>(StrFromC("then_kw"), x2));
+  }
 
   if (this->action != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->action); !it.Done(); it.Next()) {
-      command_t* i1 = it.Value();
-      x1->children->append(i1->PrettyTree());
+      command_t* i3 = it.Value();
+      x3->children->append(i3->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("action"), x1));
+    L->append(Alloc<Field>(StrFromC("action"), x3));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x4 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
-      int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      int i4 = it.Value();
+      x4->children->append(Alloc<hnode::Leaf>(str(i4), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x4));
   }
 
   return out_node;
@@ -1946,41 +1913,41 @@ const char* for_iter_str(int tag) {
 }
 
 hnode_t* for_iter__Args::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("for_iter.Args"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("for_iter.Args"));
   return out_node;
 }
 
 hnode_t* for_iter__Words::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("for_iter.Words"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("for_iter.Words"));
+  List<Field*>* L = out_node->fields;
 
   if (this->words != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_t*> it(this->words); !it.Done(); it.Next()) {
       word_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("words"), x0));
+    L->append(Alloc<Field>(StrFromC("words"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* for_iter__Oil::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("for_iter.Oil"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("for_iter.Oil"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->e->PrettyTree();
-  L->append(Alloc<field>(StrFromC("e"), x0));
+  L->append(Alloc<Field>(StrFromC("e"), x0));
 
   hnode_t* x1 = this->blame->PrettyTree();
-  L->append(Alloc<field>(StrFromC("blame"), x1));
+  L->append(Alloc<Field>(StrFromC("blame"), x1));
 
   return out_node;
 }
 
 hnode_t* for_iter_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case for_iter_e::Args: {
     for_iter__Args* obj = static_cast<for_iter__Args*>(this);
     return obj->PrettyTree();
@@ -1999,55 +1966,55 @@ hnode_t* for_iter_t::PrettyTree() {
 }
 
 hnode_t* BraceGroup::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("BraceGroup"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("BraceGroup"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->doc_token) {  // Optional
     hnode_t* x1 = this->doc_token->PrettyTree();
-    L->append(Alloc<field>(StrFromC("doc_token"), x1));
+    L->append(Alloc<Field>(StrFromC("doc_token"), x1));
   }
 
   if (this->children != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->children); !it.Done(); it.Next()) {
       command_t* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("children"), x2));
+    L->append(Alloc<Field>(StrFromC("children"), x2));
   }
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i3 = it.Value();
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i3 = it.Value();
       x3->children->append(i3->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x3));
+    L->append(Alloc<Field>(StrFromC("redirects"), x3));
   }
 
   hnode_t* x4 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x4));
+  L->append(Alloc<Field>(StrFromC("right"), x4));
 
   return out_node;
 }
 
 hnode_t* BlockArg::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("BlockArg"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("BlockArg"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->brace_group->PrettyTree();
-  L->append(Alloc<field>(StrFromC("brace_group"), x0));
+  L->append(Alloc<Field>(StrFromC("brace_group"), x0));
 
   if (this->lines != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<SourceLine*> it(this->lines); !it.Done(); it.Next()) {
       SourceLine* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("lines"), x1));
+    L->append(Alloc<Field>(StrFromC("lines"), x1));
   }
 
   return out_node;
@@ -2132,1072 +2099,1100 @@ const char* command_str(int tag) {
 }
 
 hnode_t* command__NoOp::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.NoOp"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.NoOp"));
+  List<Field*>* L = out_node->fields;
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i0 = it.Value();
-      x0->children->append(Alloc<hnode__Leaf>(str(i0), color_e::OtherConst));
+      x0->children->append(Alloc<hnode::Leaf>(str(i0), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x0));
+    L->append(Alloc<Field>(StrFromC("spids"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* command__Simple::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Simple"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Simple"));
+  List<Field*>* L = out_node->fields;
 
   if (this->words != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<word_t*> it(this->words); !it.Done(); it.Next()) {
       word_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("words"), x0));
+    L->append(Alloc<Field>(StrFromC("words"), x0));
   }
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x1));
+    L->append(Alloc<Field>(StrFromC("redirects"), x1));
   }
 
   if (this->more_env != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<env_pair*> it(this->more_env); !it.Done(); it.Next()) {
-      env_pair* i2 = it.Value();
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<EnvPair*> it(this->more_env); !it.Done(); it.Next()) {
+      EnvPair* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("more_env"), x2));
+    L->append(Alloc<Field>(StrFromC("more_env"), x2));
   }
 
   if (this->typed_args) {  // Optional
     hnode_t* x3 = this->typed_args->PrettyTree();
-    L->append(Alloc<field>(StrFromC("typed_args"), x3));
+    L->append(Alloc<Field>(StrFromC("typed_args"), x3));
   }
 
   if (this->block) {  // Optional
     hnode_t* x4 = this->block->PrettyTree();
-    L->append(Alloc<field>(StrFromC("block"), x4));
+    L->append(Alloc<Field>(StrFromC("block"), x4));
   }
 
-  hnode_t* x5 = Alloc<hnode__Leaf>(this->do_fork ? runtime::TRUE_STR :
+  hnode_t* x5 = Alloc<hnode::Leaf>(this->do_fork ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("do_fork"), x5));
+  L->append(Alloc<Field>(StrFromC("do_fork"), x5));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x6 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x6 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i6 = it.Value();
-      x6->children->append(Alloc<hnode__Leaf>(str(i6), color_e::OtherConst));
+      x6->children->append(Alloc<hnode::Leaf>(str(i6), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x6));
+    L->append(Alloc<Field>(StrFromC("spids"), x6));
   }
 
   return out_node;
 }
 
 hnode_t* command__ExpandedAlias::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("command.ExpandedAlias"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x1));
+    L->append(Alloc<Field>(StrFromC("redirects"), x1));
   }
 
   if (this->more_env != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<env_pair*> it(this->more_env); !it.Done(); it.Next()) {
-      env_pair* i2 = it.Value();
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<EnvPair*> it(this->more_env); !it.Done(); it.Next()) {
+      EnvPair* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("more_env"), x2));
+    L->append(Alloc<Field>(StrFromC("more_env"), x2));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__Sentence::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Sentence"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Sentence"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   hnode_t* x1 = this->terminator->PrettyTree();
-  L->append(Alloc<field>(StrFromC("terminator"), x1));
+  L->append(Alloc<Field>(StrFromC("terminator"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__ShAssignment::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("command.ShAssignment"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   if (this->pairs != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<assign_pair*> it(this->pairs); !it.Done(); it.Next()) {
-      assign_pair* i0 = it.Value();
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<AssignPair*> it(this->pairs); !it.Done(); it.Next()) {
+      AssignPair* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("pairs"), x0));
+    L->append(Alloc<Field>(StrFromC("pairs"), x0));
   }
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x1));
+    L->append(Alloc<Field>(StrFromC("redirects"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__ControlFlow::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.ControlFlow"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.ControlFlow"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = this->token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("token"), x0));
+  hnode_t* x0 = this->keyword->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
 
   if (this->arg_word) {  // Optional
     hnode_t* x1 = this->arg_word->PrettyTree();
-    L->append(Alloc<field>(StrFromC("arg_word"), x1));
+    L->append(Alloc<Field>(StrFromC("arg_word"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__Pipeline::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Pipeline"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Pipeline"));
+  List<Field*>* L = out_node->fields;
 
   if (this->children != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->children); !it.Done(); it.Next()) {
       command_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("children"), x0));
+    L->append(Alloc<Field>(StrFromC("children"), x0));
   }
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(this->negated ? runtime::TRUE_STR :
+  hnode_t* x1 = Alloc<hnode::Leaf>(this->negated ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("negated"), x1));
+  L->append(Alloc<Field>(StrFromC("negated"), x1));
 
   if (this->stderr_indices != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->stderr_indices); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("stderr_indices"), x2));
+    L->append(Alloc<Field>(StrFromC("stderr_indices"), x2));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__AndOr::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.AndOr"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.AndOr"));
+  List<Field*>* L = out_node->fields;
 
   if (this->ops != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<Id_t> it(this->ops); !it.Done(); it.Next()) {
       Id_t i0 = it.Value();
-      x0->children->append(Alloc<hnode__Leaf>(StrFromC(Id_str(i0)),
+      x0->children->append(Alloc<hnode::Leaf>(StrFromC(Id_str(i0)),
                            color_e::UserType));
     }
-    L->append(Alloc<field>(StrFromC("ops"), x0));
+    L->append(Alloc<Field>(StrFromC("ops"), x0));
   }
 
   if (this->children != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->children); !it.Done(); it.Next()) {
       command_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("children"), x1));
+    L->append(Alloc<Field>(StrFromC("children"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__DoGroup::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.DoGroup"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.DoGroup"));
+  List<Field*>* L = out_node->fields;
+
+  hnode_t* x0 = this->left->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->children != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->children); !it.Done(); it.Next()) {
-      command_t* i0 = it.Value();
-      x0->children->append(i0->PrettyTree());
+      command_t* i1 = it.Value();
+      x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("children"), x0));
+    L->append(Alloc<Field>(StrFromC("children"), x1));
   }
 
+  hnode_t* x2 = this->right->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("right"), x2));
+
   if (this->spids != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
-      int i1 = it.Value();
-      x1->children->append(Alloc<hnode__Leaf>(str(i1), color_e::OtherConst));
+      int i3 = it.Value();
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x1));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__Subshell::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Subshell"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Subshell"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x1));
+    L->append(Alloc<Field>(StrFromC("redirects"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__DParen::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.DParen"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.DParen"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x1));
+    L->append(Alloc<Field>(StrFromC("redirects"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__DBracket::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.DBracket"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.DBracket"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->expr->PrettyTree();
-  L->append(Alloc<field>(StrFromC("expr"), x0));
+  L->append(Alloc<Field>(StrFromC("expr"), x0));
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x1));
+    L->append(Alloc<Field>(StrFromC("redirects"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__ForEach::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.ForEach"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.ForEach"));
+  List<Field*>* L = out_node->fields;
+
+  hnode_t* x0 = this->keyword->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
 
   if (this->iter_names != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<Str*> it(this->iter_names); !it.Done(); it.Next()) {
-      Str* i0 = it.Value();
-      x0->children->append(runtime::NewLeaf(i0, color_e::StringConst));
+      Str* i1 = it.Value();
+      x1->children->append(runtime::NewLeaf(i1, color_e::StringConst));
     }
-    L->append(Alloc<field>(StrFromC("iter_names"), x0));
+    L->append(Alloc<Field>(StrFromC("iter_names"), x1));
   }
 
-  hnode_t* x1 = this->iterable->PrettyTree();
-  L->append(Alloc<field>(StrFromC("iterable"), x1));
+  hnode_t* x2 = this->iterable->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("iterable"), x2));
 
-  hnode_t* x2 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x2));
+  hnode_t* x3 = this->body->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("body"), x3));
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i3 = it.Value();
-      x3->children->append(i3->PrettyTree());
+    hnode::Array* x4 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i4 = it.Value();
+      x4->children->append(i4->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x3));
+    L->append(Alloc<Field>(StrFromC("redirects"), x4));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x4 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x5 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
-      int i4 = it.Value();
-      x4->children->append(Alloc<hnode__Leaf>(str(i4), color_e::OtherConst));
+      int i5 = it.Value();
+      x5->children->append(Alloc<hnode::Leaf>(str(i5), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x4));
+    L->append(Alloc<Field>(StrFromC("spids"), x5));
   }
 
   return out_node;
 }
 
 hnode_t* command__ForExpr::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.ForExpr"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.ForExpr"));
+  List<Field*>* L = out_node->fields;
+
+  hnode_t* x0 = this->keyword->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
 
   if (this->init) {  // Optional
-    hnode_t* x0 = this->init->PrettyTree();
-    L->append(Alloc<field>(StrFromC("init"), x0));
+    hnode_t* x1 = this->init->PrettyTree();
+    L->append(Alloc<Field>(StrFromC("init"), x1));
   }
 
   if (this->cond) {  // Optional
-    hnode_t* x1 = this->cond->PrettyTree();
-    L->append(Alloc<field>(StrFromC("cond"), x1));
+    hnode_t* x2 = this->cond->PrettyTree();
+    L->append(Alloc<Field>(StrFromC("cond"), x2));
   }
 
   if (this->update) {  // Optional
-    hnode_t* x2 = this->update->PrettyTree();
-    L->append(Alloc<field>(StrFromC("update"), x2));
+    hnode_t* x3 = this->update->PrettyTree();
+    L->append(Alloc<Field>(StrFromC("update"), x3));
   }
 
   if (this->body) {  // Optional
-    hnode_t* x3 = this->body->PrettyTree();
-    L->append(Alloc<field>(StrFromC("body"), x3));
+    hnode_t* x4 = this->body->PrettyTree();
+    L->append(Alloc<Field>(StrFromC("body"), x4));
   }
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x4 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i4 = it.Value();
-      x4->children->append(i4->PrettyTree());
+    hnode::Array* x5 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i5 = it.Value();
+      x5->children->append(i5->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x4));
+    L->append(Alloc<Field>(StrFromC("redirects"), x5));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x5 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x6 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
-      int i5 = it.Value();
-      x5->children->append(Alloc<hnode__Leaf>(str(i5), color_e::OtherConst));
+      int i6 = it.Value();
+      x6->children->append(Alloc<hnode::Leaf>(str(i6), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x5));
+    L->append(Alloc<Field>(StrFromC("spids"), x6));
   }
 
   return out_node;
 }
 
 hnode_t* command__WhileUntil::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.WhileUntil"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.WhileUntil"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->keyword->PrettyTree();
-  L->append(Alloc<field>(StrFromC("keyword"), x0));
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
 
   hnode_t* x1 = this->cond->PrettyTree();
-  L->append(Alloc<field>(StrFromC("cond"), x1));
+  L->append(Alloc<Field>(StrFromC("cond"), x1));
 
   hnode_t* x2 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x2));
+  L->append(Alloc<Field>(StrFromC("body"), x2));
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i3 = it.Value();
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i3 = it.Value();
       x3->children->append(i3->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x3));
+    L->append(Alloc<Field>(StrFromC("redirects"), x3));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x4 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x4 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i4 = it.Value();
-      x4->children->append(Alloc<hnode__Leaf>(str(i4), color_e::OtherConst));
+      x4->children->append(Alloc<hnode::Leaf>(str(i4), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x4));
+    L->append(Alloc<Field>(StrFromC("spids"), x4));
   }
 
   return out_node;
 }
 
 hnode_t* command__If::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.If"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.If"));
+  List<Field*>* L = out_node->fields;
+
+  hnode_t* x0 = this->if_kw->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("if_kw"), x0));
 
   if (this->arms != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<if_arm*> it(this->arms); !it.Done(); it.Next()) {
-      if_arm* i0 = it.Value();
-      x0->children->append(i0->PrettyTree());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<IfArm*> it(this->arms); !it.Done(); it.Next()) {
+      IfArm* i1 = it.Value();
+      x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("arms"), x0));
+    L->append(Alloc<Field>(StrFromC("arms"), x1));
+  }
+
+  if (this->else_kw) {  // Optional
+    hnode_t* x2 = this->else_kw->PrettyTree();
+    L->append(Alloc<Field>(StrFromC("else_kw"), x2));
   }
 
   if (this->else_action != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->else_action); !it.Done(); it.Next()) {
-      command_t* i1 = it.Value();
-      x1->children->append(i1->PrettyTree());
+      command_t* i3 = it.Value();
+      x3->children->append(i3->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("else_action"), x1));
+    L->append(Alloc<Field>(StrFromC("else_action"), x3));
+  }
+
+  if (this->fi_kw) {  // Optional
+    hnode_t* x4 = this->fi_kw->PrettyTree();
+    L->append(Alloc<Field>(StrFromC("fi_kw"), x4));
   }
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i2 = it.Value();
-      x2->children->append(i2->PrettyTree());
+    hnode::Array* x5 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i5 = it.Value();
+      x5->children->append(i5->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x2));
+    L->append(Alloc<Field>(StrFromC("redirects"), x5));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x6 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
-      int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      int i6 = it.Value();
+      x6->children->append(Alloc<hnode::Leaf>(str(i6), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x6));
   }
 
   return out_node;
 }
 
 hnode_t* command__Case::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Case"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Case"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->to_match->PrettyTree();
-  L->append(Alloc<field>(StrFromC("to_match"), x0));
+  L->append(Alloc<Field>(StrFromC("to_match"), x0));
 
   if (this->arms != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<case_arm*> it(this->arms); !it.Done(); it.Next()) {
-      case_arm* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<CaseArm*> it(this->arms); !it.Done(); it.Next()) {
+      CaseArm* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("arms"), x1));
+    L->append(Alloc<Field>(StrFromC("arms"), x1));
   }
 
   if (this->redirects != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<redir*> it(this->redirects); !it.Done(); it.Next()) {
-      redir* i2 = it.Value();
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Redir*> it(this->redirects); !it.Done(); it.Next()) {
+      Redir* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("redirects"), x2));
+    L->append(Alloc<Field>(StrFromC("redirects"), x2));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__ShFunction::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.ShFunction"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.ShFunction"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   hnode_t* x1 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x1));
+  L->append(Alloc<Field>(StrFromC("body"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__TimeBlock::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.TimeBlock"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.TimeBlock"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->pipeline->PrettyTree();
-  L->append(Alloc<field>(StrFromC("pipeline"), x0));
+  L->append(Alloc<Field>(StrFromC("pipeline"), x0));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i1 = it.Value();
-      x1->children->append(Alloc<hnode__Leaf>(str(i1), color_e::OtherConst));
+      x1->children->append(Alloc<hnode::Leaf>(str(i1), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x1));
+    L->append(Alloc<Field>(StrFromC("spids"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* command__CommandList::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.CommandList"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.CommandList"));
+  List<Field*>* L = out_node->fields;
 
   if (this->children != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<command_t*> it(this->children); !it.Done(); it.Next()) {
       command_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("children"), x0));
+    L->append(Alloc<Field>(StrFromC("children"), x0));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i1 = it.Value();
-      x1->children->append(Alloc<hnode__Leaf>(str(i1), color_e::OtherConst));
+      x1->children->append(Alloc<hnode::Leaf>(str(i1), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x1));
+    L->append(Alloc<Field>(StrFromC("spids"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* command__BareDecl::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.BareDecl"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.BareDecl"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->lhs->PrettyTree();
-  L->append(Alloc<field>(StrFromC("lhs"), x0));
+  L->append(Alloc<Field>(StrFromC("lhs"), x0));
 
   hnode_t* x1 = this->rhs->PrettyTree();
-  L->append(Alloc<field>(StrFromC("rhs"), x1));
+  L->append(Alloc<Field>(StrFromC("rhs"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__VarDecl::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.VarDecl"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.VarDecl"));
+  List<Field*>* L = out_node->fields;
 
   if (this->keyword) {  // Optional
     hnode_t* x0 = this->keyword->PrettyTree();
-    L->append(Alloc<field>(StrFromC("keyword"), x0));
+    L->append(Alloc<Field>(StrFromC("keyword"), x0));
   }
 
   if (this->lhs != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<name_type*> it(this->lhs); !it.Done(); it.Next()) {
-      name_type* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<NameType*> it(this->lhs); !it.Done(); it.Next()) {
+      NameType* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("lhs"), x1));
+    L->append(Alloc<Field>(StrFromC("lhs"), x1));
   }
 
   hnode_t* x2 = this->rhs->PrettyTree();
-  L->append(Alloc<field>(StrFromC("rhs"), x2));
+  L->append(Alloc<Field>(StrFromC("rhs"), x2));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__PlaceMutation::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("command.PlaceMutation"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   if (this->keyword) {  // Optional
     hnode_t* x0 = this->keyword->PrettyTree();
-    L->append(Alloc<field>(StrFromC("keyword"), x0));
+    L->append(Alloc<Field>(StrFromC("keyword"), x0));
   }
 
   if (this->lhs != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<place_expr_t*> it(this->lhs); !it.Done(); it.Next()) {
       place_expr_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("lhs"), x1));
+    L->append(Alloc<Field>(StrFromC("lhs"), x1));
   }
 
   hnode_t* x2 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x2));
+  L->append(Alloc<Field>(StrFromC("op"), x2));
 
   hnode_t* x3 = this->rhs->PrettyTree();
-  L->append(Alloc<field>(StrFromC("rhs"), x3));
+  L->append(Alloc<Field>(StrFromC("rhs"), x3));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x4 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x4 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i4 = it.Value();
-      x4->children->append(Alloc<hnode__Leaf>(str(i4), color_e::OtherConst));
+      x4->children->append(Alloc<hnode::Leaf>(str(i4), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x4));
+    L->append(Alloc<Field>(StrFromC("spids"), x4));
   }
 
   return out_node;
 }
 
 hnode_t* command__Expr::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Expr"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Expr"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->keyword->PrettyTree();
-  L->append(Alloc<field>(StrFromC("keyword"), x0));
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
 
   hnode_t* x1 = this->e->PrettyTree();
-  L->append(Alloc<field>(StrFromC("e"), x1));
+  L->append(Alloc<Field>(StrFromC("e"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__Proc::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Proc"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Proc"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  hnode_t* x0 = this->keyword->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
 
-  hnode_t* x1 = this->sig->PrettyTree();
-  L->append(Alloc<field>(StrFromC("sig"), x1));
+  hnode_t* x1 = this->name->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
-  hnode_t* x2 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x2));
+  hnode_t* x2 = this->sig->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("sig"), x2));
+
+  hnode_t* x3 = this->body->PrettyTree();
+  L->append(Alloc<Field>(StrFromC("body"), x3));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x4 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
-      int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      int i4 = it.Value();
+      x4->children->append(Alloc<hnode::Leaf>(str(i4), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x4));
   }
 
   return out_node;
 }
 
 hnode_t* command__Func::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Func"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Func"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   if (this->pos_params != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<param*> it(this->pos_params); !it.Done(); it.Next()) {
-      param* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Param*> it(this->pos_params); !it.Done(); it.Next()) {
+      Param* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("pos_params"), x1));
+    L->append(Alloc<Field>(StrFromC("pos_params"), x1));
   }
 
   if (this->pos_splat) {  // Optional
     hnode_t* x2 = this->pos_splat->PrettyTree();
-    L->append(Alloc<field>(StrFromC("pos_splat"), x2));
+    L->append(Alloc<Field>(StrFromC("pos_splat"), x2));
   }
 
   if (this->named_params != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<param*> it(this->named_params); !it.Done(); it.Next()) {
-      param* i3 = it.Value();
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Param*> it(this->named_params); !it.Done(); it.Next()) {
+      Param* i3 = it.Value();
       x3->children->append(i3->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("named_params"), x3));
+    L->append(Alloc<Field>(StrFromC("named_params"), x3));
   }
 
   if (this->named_splat) {  // Optional
     hnode_t* x4 = this->named_splat->PrettyTree();
-    L->append(Alloc<field>(StrFromC("named_splat"), x4));
+    L->append(Alloc<Field>(StrFromC("named_splat"), x4));
   }
 
   if (this->return_types != nullptr) {  // List
-    hnode__Array* x5 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x5 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<type_expr_t*> it(this->return_types); !it.Done(); it.Next()) {
       type_expr_t* i5 = it.Value();
       x5->children->append(i5->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("return_types"), x5));
+    L->append(Alloc<Field>(StrFromC("return_types"), x5));
   }
 
   hnode_t* x6 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x6));
+  L->append(Alloc<Field>(StrFromC("body"), x6));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x7 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x7 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i7 = it.Value();
-      x7->children->append(Alloc<hnode__Leaf>(str(i7), color_e::OtherConst));
+      x7->children->append(Alloc<hnode::Leaf>(str(i7), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x7));
+    L->append(Alloc<Field>(StrFromC("spids"), x7));
   }
 
   return out_node;
 }
 
 hnode_t* command__Data::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Data"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Data"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   if (this->params != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<param*> it(this->params); !it.Done(); it.Next()) {
-      param* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Param*> it(this->params); !it.Done(); it.Next()) {
+      Param* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("params"), x1));
+    L->append(Alloc<Field>(StrFromC("params"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__Enum::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Enum"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Enum"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   if (this->variants != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<variant*> it(this->variants); !it.Done(); it.Next()) {
-      variant* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Variant*> it(this->variants); !it.Done(); it.Next()) {
+      Variant* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("variants"), x1));
+    L->append(Alloc<Field>(StrFromC("variants"), x1));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__Class::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Class"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Class"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   if (this->extends) {  // Optional
     hnode_t* x1 = this->extends->PrettyTree();
-    L->append(Alloc<field>(StrFromC("extends"), x1));
+    L->append(Alloc<Field>(StrFromC("extends"), x1));
   }
 
   if (this->items != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<class_item_t*> it(this->items); !it.Done(); it.Next()) {
       class_item_t* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("items"), x2));
+    L->append(Alloc<Field>(StrFromC("items"), x2));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__Import::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Import"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Import"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->path->PrettyTree();
-  L->append(Alloc<field>(StrFromC("path"), x0));
+  L->append(Alloc<Field>(StrFromC("path"), x0));
 
   if (this->alias) {  // Optional
     hnode_t* x1 = this->alias->PrettyTree();
-    L->append(Alloc<field>(StrFromC("alias"), x1));
+    L->append(Alloc<Field>(StrFromC("alias"), x1));
   }
 
   if (this->names != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<import_name*> it(this->names); !it.Done(); it.Next()) {
-      import_name* i2 = it.Value();
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<ImportName*> it(this->names); !it.Done(); it.Next()) {
+      ImportName* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("names"), x2));
+    L->append(Alloc<Field>(StrFromC("names"), x2));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__For::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.For"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.For"));
+  List<Field*>* L = out_node->fields;
 
   if (this->targets != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<name_type*> it(this->targets); !it.Done(); it.Next()) {
-      name_type* i0 = it.Value();
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<NameType*> it(this->targets); !it.Done(); it.Next()) {
+      NameType* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("targets"), x0));
+    L->append(Alloc<Field>(StrFromC("targets"), x0));
   }
 
   hnode_t* x1 = this->iterable->PrettyTree();
-  L->append(Alloc<field>(StrFromC("iterable"), x1));
+  L->append(Alloc<Field>(StrFromC("iterable"), x1));
 
   hnode_t* x2 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x2));
+  L->append(Alloc<Field>(StrFromC("body"), x2));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x3 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x3 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i3 = it.Value();
-      x3->children->append(Alloc<hnode__Leaf>(str(i3), color_e::OtherConst));
+      x3->children->append(Alloc<hnode::Leaf>(str(i3), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x3));
+    L->append(Alloc<Field>(StrFromC("spids"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* command__While::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.While"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.While"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->test->PrettyTree();
-  L->append(Alloc<field>(StrFromC("test"), x0));
+  L->append(Alloc<Field>(StrFromC("test"), x0));
 
   hnode_t* x1 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x1));
+  L->append(Alloc<Field>(StrFromC("body"), x1));
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i2 = it.Value();
-      x2->children->append(Alloc<hnode__Leaf>(str(i2), color_e::OtherConst));
+      x2->children->append(Alloc<hnode::Leaf>(str(i2), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x2));
+    L->append(Alloc<Field>(StrFromC("spids"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* command__Break::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Break"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Break"));
+  List<Field*>* L = out_node->fields;
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i0 = it.Value();
-      x0->children->append(Alloc<hnode__Leaf>(str(i0), color_e::OtherConst));
+      x0->children->append(Alloc<hnode::Leaf>(str(i0), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x0));
+    L->append(Alloc<Field>(StrFromC("spids"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* command__Continue::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Continue"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Continue"));
+  List<Field*>* L = out_node->fields;
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i0 = it.Value();
-      x0->children->append(Alloc<hnode__Leaf>(str(i0), color_e::OtherConst));
+      x0->children->append(Alloc<hnode::Leaf>(str(i0), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x0));
+    L->append(Alloc<Field>(StrFromC("spids"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* command__Return::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("command.Return"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("command.Return"));
+  List<Field*>* L = out_node->fields;
 
   if (this->value) {  // Optional
     hnode_t* x0 = this->value->PrettyTree();
-    L->append(Alloc<field>(StrFromC("value"), x0));
+    L->append(Alloc<Field>(StrFromC("value"), x0));
   }
 
   if (this->spids != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<int> it(this->spids); !it.Done(); it.Next()) {
       int i1 = it.Value();
-      x1->children->append(Alloc<hnode__Leaf>(str(i1), color_e::OtherConst));
+      x1->children->append(Alloc<hnode::Leaf>(str(i1), color_e::OtherConst));
     }
-    L->append(Alloc<field>(StrFromC("spids"), x1));
+    L->append(Alloc<Field>(StrFromC("spids"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* command_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case command_e::NoOp: {
     command__NoOp* obj = static_cast<command__NoOp*>(this);
     return obj->PrettyTree();
@@ -3358,33 +3353,33 @@ const char* variant_type_str(int tag) {
 }
 
 hnode_t* variant_type__Anon::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("variant_type.Anon"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("variant_type.Anon"));
+  List<Field*>* L = out_node->fields;
 
   if (this->params != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<param*> it(this->params); !it.Done(); it.Next()) {
-      param* i0 = it.Value();
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Param*> it(this->params); !it.Done(); it.Next()) {
+      Param* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("params"), x0));
+    L->append(Alloc<Field>(StrFromC("params"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* variant_type__Ref::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("variant_type.Ref"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("variant_type.Ref"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->type_name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("type_name"), x0));
+  L->append(Alloc<Field>(StrFromC("type_name"), x0));
 
   return out_node;
 }
 
 hnode_t* variant_type_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case variant_type_e::Anon: {
     variant_type__Anon* obj = static_cast<variant_type__Anon*>(this);
     return obj->PrettyTree();
@@ -3398,16 +3393,16 @@ hnode_t* variant_type_t::PrettyTree() {
   }
 }
 
-hnode_t* variant::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("variant"));
-  List<field*>* L = out_node->fields;
+hnode_t* Variant::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("Variant"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->tag_name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("tag_name"), x0));
+  L->append(Alloc<Field>(StrFromC("tag_name"), x0));
 
   if (this->typ) {  // Optional
     hnode_t* x1 = this->typ->PrettyTree();
-    L->append(Alloc<field>(StrFromC("typ"), x1));
+    L->append(Alloc<Field>(StrFromC("typ"), x1));
   }
 
   return out_node;
@@ -3424,31 +3419,31 @@ const char* class_item_str(int tag) {
 }
 
 hnode_t* class_item__Data::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("class_item.Data"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("class_item.Data"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->keyword->PrettyTree();
-  L->append(Alloc<field>(StrFromC("keyword"), x0));
+  L->append(Alloc<Field>(StrFromC("keyword"), x0));
 
   if (this->fields != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<name_type*> it(this->fields); !it.Done(); it.Next()) {
-      name_type* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<NameType*> it(this->fields); !it.Done(); it.Next()) {
+      NameType* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("fields"), x1));
+    L->append(Alloc<Field>(StrFromC("fields"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* class_item__Method::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("class_item.Method"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("class_item.Method"));
   return out_node;
 }
 
 hnode_t* class_item_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case class_item_e::Data: {
     class_item__Data* obj = static_cast<class_item__Data*>(this);
     return obj->PrettyTree();
@@ -3462,54 +3457,54 @@ hnode_t* class_item_t::PrettyTree() {
   }
 }
 
-hnode_t* import_name::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("import_name"));
-  List<field*>* L = out_node->fields;
+hnode_t* ImportName::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("ImportName"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   if (this->alias) {  // Optional
     hnode_t* x1 = this->alias->PrettyTree();
-    L->append(Alloc<field>(StrFromC("alias"), x1));
+    L->append(Alloc<Field>(StrFromC("alias"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* UntypedParam::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("UntypedParam"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("UntypedParam"));
+  List<Field*>* L = out_node->fields;
 
   if (this->ref) {  // Optional
     hnode_t* x0 = this->ref->PrettyTree();
-    L->append(Alloc<field>(StrFromC("ref"), x0));
+    L->append(Alloc<Field>(StrFromC("ref"), x0));
   }
 
   hnode_t* x1 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   if (this->default_val) {  // Optional
     hnode_t* x2 = this->default_val->PrettyTree();
-    L->append(Alloc<field>(StrFromC("default_val"), x2));
+    L->append(Alloc<Field>(StrFromC("default_val"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* TypedParam::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("TypedParam"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("TypedParam"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   hnode_t* x1 = this->type->PrettyTree();
-  L->append(Alloc<field>(StrFromC("type"), x1));
+  L->append(Alloc<Field>(StrFromC("type"), x1));
 
   if (this->default_val) {  // Optional
     hnode_t* x2 = this->default_val->PrettyTree();
-    L->append(Alloc<field>(StrFromC("default_val"), x2));
+    L->append(Alloc<Field>(StrFromC("default_val"), x2));
   }
 
   return out_node;
@@ -3526,42 +3521,42 @@ const char* proc_sig_str(int tag) {
 }
 
 hnode_t* proc_sig__Open::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("proc_sig.Open"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("proc_sig.Open"));
   return out_node;
 }
 
 hnode_t* proc_sig__Closed::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("proc_sig.Closed"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("proc_sig.Closed"));
+  List<Field*>* L = out_node->fields;
 
   if (this->untyped != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<UntypedParam*> it(this->untyped); !it.Done(); it.Next()) {
       UntypedParam* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("untyped"), x0));
+    L->append(Alloc<Field>(StrFromC("untyped"), x0));
   }
 
   if (this->rest) {  // Optional
     hnode_t* x1 = this->rest->PrettyTree();
-    L->append(Alloc<field>(StrFromC("rest"), x1));
+    L->append(Alloc<Field>(StrFromC("rest"), x1));
   }
 
   if (this->typed != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<TypedParam*> it(this->typed); !it.Done(); it.Next()) {
       TypedParam* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("typed"), x2));
+    L->append(Alloc<Field>(StrFromC("typed"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* proc_sig_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case proc_sig_e::Open: {
     proc_sig__Open* obj = static_cast<proc_sig__Open*>(this);
     return obj->PrettyTree();
@@ -3575,26 +3570,26 @@ hnode_t* proc_sig_t::PrettyTree() {
   }
 }
 
-hnode_t* param::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("param"));
-  List<field*>* L = out_node->fields;
+hnode_t* Param::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("Param"));
+  List<Field*>* L = out_node->fields;
 
   if (this->prefix) {  // Optional
     hnode_t* x0 = this->prefix->PrettyTree();
-    L->append(Alloc<field>(StrFromC("prefix"), x0));
+    L->append(Alloc<Field>(StrFromC("prefix"), x0));
   }
 
   hnode_t* x1 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   if (this->type) {  // Optional
     hnode_t* x2 = this->type->PrettyTree();
-    L->append(Alloc<field>(StrFromC("type"), x2));
+    L->append(Alloc<Field>(StrFromC("type"), x2));
   }
 
   if (this->default_val) {  // Optional
     hnode_t* x3 = this->default_val->PrettyTree();
-    L->append(Alloc<field>(StrFromC("default_val"), x3));
+    L->append(Alloc<Field>(StrFromC("default_val"), x3));
   }
 
   return out_node;
@@ -3613,52 +3608,52 @@ const char* glob_part_str(int tag) {
 }
 
 hnode_t* glob_part__Literal::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("glob_part.Literal"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("glob_part.Literal"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("id"), x0));
+  L->append(Alloc<Field>(StrFromC("id"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->s, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("s"), x1));
+  L->append(Alloc<Field>(StrFromC("s"), x1));
 
   return out_node;
 }
 
 hnode_t* glob_part__Operator::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("glob_part.Operator"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("glob_part.Operator"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->op_id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->op_id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("op_id"), x0));
+  L->append(Alloc<Field>(StrFromC("op_id"), x0));
 
   return out_node;
 }
 
 hnode_t* glob_part__CharClass::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("glob_part.CharClass"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("glob_part.CharClass"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(this->negated ? runtime::TRUE_STR :
+  hnode_t* x0 = Alloc<hnode::Leaf>(this->negated ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("negated"), x0));
+  L->append(Alloc<Field>(StrFromC("negated"), x0));
 
   if (this->strs != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<Str*> it(this->strs); !it.Done(); it.Next()) {
       Str* i1 = it.Value();
       x1->children->append(runtime::NewLeaf(i1, color_e::StringConst));
     }
-    L->append(Alloc<field>(StrFromC("strs"), x1));
+    L->append(Alloc<Field>(StrFromC("strs"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* glob_part_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case glob_part_e::Literal: {
     glob_part__Literal* obj = static_cast<glob_part__Literal*>(this);
     return obj->PrettyTree();
@@ -3687,46 +3682,46 @@ const char* printf_part_str(int tag) {
 }
 
 hnode_t* printf_part__Literal::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("printf_part.Literal"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("printf_part.Literal"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->token->PrettyTree();
-  L->append(Alloc<field>(StrFromC("token"), x0));
+  L->append(Alloc<Field>(StrFromC("token"), x0));
 
   return out_node;
 }
 
 hnode_t* printf_part__Percent::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("printf_part.Percent"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("printf_part.Percent"));
+  List<Field*>* L = out_node->fields;
 
   if (this->flags != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<Token*> it(this->flags); !it.Done(); it.Next()) {
       Token* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("flags"), x0));
+    L->append(Alloc<Field>(StrFromC("flags"), x0));
   }
 
   if (this->width) {  // Optional
     hnode_t* x1 = this->width->PrettyTree();
-    L->append(Alloc<field>(StrFromC("width"), x1));
+    L->append(Alloc<Field>(StrFromC("width"), x1));
   }
 
   if (this->precision) {  // Optional
     hnode_t* x2 = this->precision->PrettyTree();
-    L->append(Alloc<field>(StrFromC("precision"), x2));
+    L->append(Alloc<Field>(StrFromC("precision"), x2));
   }
 
   hnode_t* x3 = this->type->PrettyTree();
-  L->append(Alloc<field>(StrFromC("type"), x3));
+  L->append(Alloc<Field>(StrFromC("type"), x3));
 
   return out_node;
 }
 
 hnode_t* printf_part_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case printf_part_e::Literal: {
     printf_part__Literal* obj = static_cast<printf_part__Literal*>(this);
     return obj->PrettyTree();
@@ -3769,36 +3764,36 @@ const char* type_expr_str(int tag) {
 }
 
 hnode_t* type_expr__Simple::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("type_expr.Simple"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("type_expr.Simple"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   return out_node;
 }
 
 hnode_t* type_expr__Compound::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("type_expr.Compound"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("type_expr.Compound"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   if (this->params != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<type_expr_t*> it(this->params); !it.Done(); it.Next()) {
       type_expr_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("params"), x1));
+    L->append(Alloc<Field>(StrFromC("params"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* type_expr_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case type_expr_e::Simple: {
     type_expr__Simple* obj = static_cast<type_expr__Simple*>(this);
     return obj->PrettyTree();
@@ -3812,95 +3807,95 @@ hnode_t* type_expr_t::PrettyTree() {
   }
 }
 
-hnode_t* name_type::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("name_type"));
-  List<field*>* L = out_node->fields;
+hnode_t* NameType::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("NameType"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   if (this->typ) {  // Optional
     hnode_t* x1 = this->typ->PrettyTree();
-    L->append(Alloc<field>(StrFromC("typ"), x1));
+    L->append(Alloc<Field>(StrFromC("typ"), x1));
   }
 
   return out_node;
 }
 
-hnode_t* comprehension::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("comprehension"));
-  List<field*>* L = out_node->fields;
+hnode_t* Comprehension::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("Comprehension"));
+  List<Field*>* L = out_node->fields;
 
   if (this->lhs != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<name_type*> it(this->lhs); !it.Done(); it.Next()) {
-      name_type* i0 = it.Value();
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<NameType*> it(this->lhs); !it.Done(); it.Next()) {
+      NameType* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("lhs"), x0));
+    L->append(Alloc<Field>(StrFromC("lhs"), x0));
   }
 
   hnode_t* x1 = this->iter->PrettyTree();
-  L->append(Alloc<field>(StrFromC("iter"), x1));
+  L->append(Alloc<Field>(StrFromC("iter"), x1));
 
   if (this->cond) {  // Optional
     hnode_t* x2 = this->cond->PrettyTree();
-    L->append(Alloc<field>(StrFromC("cond"), x2));
+    L->append(Alloc<Field>(StrFromC("cond"), x2));
   }
 
   return out_node;
 }
 
-hnode_t* named_arg::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("named_arg"));
-  List<field*>* L = out_node->fields;
+hnode_t* NamedArg::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("NamedArg"));
+  List<Field*>* L = out_node->fields;
 
   if (this->name) {  // Optional
     hnode_t* x0 = this->name->PrettyTree();
-    L->append(Alloc<field>(StrFromC("name"), x0));
+    L->append(Alloc<Field>(StrFromC("name"), x0));
   }
 
   hnode_t* x1 = this->value->PrettyTree();
-  L->append(Alloc<field>(StrFromC("value"), x1));
+  L->append(Alloc<Field>(StrFromC("value"), x1));
 
   return out_node;
 }
 
-hnode_t* subscript::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("subscript"));
-  List<field*>* L = out_node->fields;
+hnode_t* Subscript::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("Subscript"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->obj->PrettyTree();
-  L->append(Alloc<field>(StrFromC("obj"), x0));
+  L->append(Alloc<Field>(StrFromC("obj"), x0));
 
   if (this->indices != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<expr_t*> it(this->indices); !it.Done(); it.Next()) {
       expr_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("indices"), x1));
+    L->append(Alloc<Field>(StrFromC("indices"), x1));
   }
 
   return out_node;
 }
 
-hnode_t* attribute::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("attribute"));
-  List<field*>* L = out_node->fields;
+hnode_t* Attribute::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("Attribute"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->obj->PrettyTree();
-  L->append(Alloc<field>(StrFromC("obj"), x0));
+  L->append(Alloc<Field>(StrFromC("obj"), x0));
 
   hnode_t* x1 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x1));
+  L->append(Alloc<Field>(StrFromC("op"), x1));
 
   hnode_t* x2 = this->attr->PrettyTree();
-  L->append(Alloc<field>(StrFromC("attr"), x2));
+  L->append(Alloc<Field>(StrFromC("attr"), x2));
 
-  hnode_t* x3 = Alloc<hnode__Leaf>(StrFromC(expr_context_str(this->ctx)),
+  hnode_t* x3 = Alloc<hnode::Leaf>(StrFromC(expr_context_str(this->ctx)),
                                    color_e::TypeName);
-  L->append(Alloc<field>(StrFromC("ctx"), x3));
+  L->append(Alloc<Field>(StrFromC("ctx"), x3));
 
   return out_node;
 }
@@ -3918,27 +3913,27 @@ const char* place_expr_str(int tag) {
 }
 
 hnode_t* place_expr__Var::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("place_expr.Var"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("place_expr.Var"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   return out_node;
 }
 
 hnode_t* place_expr_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case place_expr_e::Var: {
     place_expr__Var* obj = static_cast<place_expr__Var*>(this);
     return obj->PrettyTree();
   }
   case place_expr_e::Subscript: {
-    subscript* obj = static_cast<subscript*>(this);
+    Subscript* obj = static_cast<Subscript*>(this);
     return obj->PrettyTree();
   }
   case place_expr_e::Attribute: {
-    attribute* obj = static_cast<attribute*>(this);
+    Attribute* obj = static_cast<Attribute*>(this);
     return obj->PrettyTree();
   }
   default:
@@ -4009,333 +4004,333 @@ const char* expr_str(int tag) {
 }
 
 hnode_t* expr__Var::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Var"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Var"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   return out_node;
 }
 
 hnode_t* expr__Const::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Const"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Const"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->c->PrettyTree();
-  L->append(Alloc<field>(StrFromC("c"), x0));
+  L->append(Alloc<Field>(StrFromC("c"), x0));
 
   return out_node;
 }
 
 hnode_t* expr__RegexLiteral::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.RegexLiteral"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.RegexLiteral"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   hnode_t* x1 = this->regex->PrettyTree();
-  L->append(Alloc<field>(StrFromC("regex"), x1));
+  L->append(Alloc<Field>(StrFromC("regex"), x1));
 
   if (this->flags != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<Token*> it(this->flags); !it.Done(); it.Next()) {
       Token* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("flags"), x2));
+    L->append(Alloc<Field>(StrFromC("flags"), x2));
   }
 
   if (this->trans_pref) {  // Optional
     hnode_t* x3 = this->trans_pref->PrettyTree();
-    L->append(Alloc<field>(StrFromC("trans_pref"), x3));
+    L->append(Alloc<Field>(StrFromC("trans_pref"), x3));
   }
 
   return out_node;
 }
 
 hnode_t* expr__Lambda::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Lambda"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Lambda"));
+  List<Field*>* L = out_node->fields;
 
   if (this->params != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<name_type*> it(this->params); !it.Done(); it.Next()) {
-      name_type* i0 = it.Value();
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<NameType*> it(this->params); !it.Done(); it.Next()) {
+      NameType* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("params"), x0));
+    L->append(Alloc<Field>(StrFromC("params"), x0));
   }
 
   hnode_t* x1 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x1));
+  L->append(Alloc<Field>(StrFromC("body"), x1));
 
   return out_node;
 }
 
 hnode_t* expr__Unary::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Unary"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Unary"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x0));
+  L->append(Alloc<Field>(StrFromC("op"), x0));
 
   hnode_t* x1 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x1));
+  L->append(Alloc<Field>(StrFromC("child"), x1));
 
   return out_node;
 }
 
 hnode_t* expr__Binary::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Binary"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Binary"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x0));
+  L->append(Alloc<Field>(StrFromC("op"), x0));
 
   hnode_t* x1 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x1));
+  L->append(Alloc<Field>(StrFromC("left"), x1));
 
   hnode_t* x2 = this->right->PrettyTree();
-  L->append(Alloc<field>(StrFromC("right"), x2));
+  L->append(Alloc<Field>(StrFromC("right"), x2));
 
   return out_node;
 }
 
 hnode_t* expr__Compare::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Compare"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Compare"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->left->PrettyTree();
-  L->append(Alloc<field>(StrFromC("left"), x0));
+  L->append(Alloc<Field>(StrFromC("left"), x0));
 
   if (this->ops != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<Token*> it(this->ops); !it.Done(); it.Next()) {
       Token* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("ops"), x1));
+    L->append(Alloc<Field>(StrFromC("ops"), x1));
   }
 
   if (this->comparators != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<expr_t*> it(this->comparators); !it.Done(); it.Next()) {
       expr_t* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("comparators"), x2));
+    L->append(Alloc<Field>(StrFromC("comparators"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* expr__FuncCall::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.FuncCall"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.FuncCall"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->func->PrettyTree();
-  L->append(Alloc<field>(StrFromC("func"), x0));
+  L->append(Alloc<Field>(StrFromC("func"), x0));
 
   hnode_t* x1 = this->args->PrettyTree();
-  L->append(Alloc<field>(StrFromC("args"), x1));
+  L->append(Alloc<Field>(StrFromC("args"), x1));
 
   return out_node;
 }
 
 hnode_t* expr__IfExp::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.IfExp"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.IfExp"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->test->PrettyTree();
-  L->append(Alloc<field>(StrFromC("test"), x0));
+  L->append(Alloc<Field>(StrFromC("test"), x0));
 
   hnode_t* x1 = this->body->PrettyTree();
-  L->append(Alloc<field>(StrFromC("body"), x1));
+  L->append(Alloc<Field>(StrFromC("body"), x1));
 
   hnode_t* x2 = this->orelse->PrettyTree();
-  L->append(Alloc<field>(StrFromC("orelse"), x2));
+  L->append(Alloc<Field>(StrFromC("orelse"), x2));
 
   return out_node;
 }
 
 hnode_t* expr__Tuple::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Tuple"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Tuple"));
+  List<Field*>* L = out_node->fields;
 
   if (this->elts != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<expr_t*> it(this->elts); !it.Done(); it.Next()) {
       expr_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("elts"), x0));
+    L->append(Alloc<Field>(StrFromC("elts"), x0));
   }
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(StrFromC(expr_context_str(this->ctx)),
+  hnode_t* x1 = Alloc<hnode::Leaf>(StrFromC(expr_context_str(this->ctx)),
                                    color_e::TypeName);
-  L->append(Alloc<field>(StrFromC("ctx"), x1));
+  L->append(Alloc<Field>(StrFromC("ctx"), x1));
 
   return out_node;
 }
 
 hnode_t* expr__List::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.List"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.List"));
+  List<Field*>* L = out_node->fields;
 
   if (this->elts != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<expr_t*> it(this->elts); !it.Done(); it.Next()) {
       expr_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("elts"), x0));
+    L->append(Alloc<Field>(StrFromC("elts"), x0));
   }
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(StrFromC(expr_context_str(this->ctx)),
+  hnode_t* x1 = Alloc<hnode::Leaf>(StrFromC(expr_context_str(this->ctx)),
                                    color_e::TypeName);
-  L->append(Alloc<field>(StrFromC("ctx"), x1));
+  L->append(Alloc<Field>(StrFromC("ctx"), x1));
 
   return out_node;
 }
 
 hnode_t* expr__Dict::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Dict"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Dict"));
+  List<Field*>* L = out_node->fields;
 
   if (this->keys != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<expr_t*> it(this->keys); !it.Done(); it.Next()) {
       expr_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("keys"), x0));
+    L->append(Alloc<Field>(StrFromC("keys"), x0));
   }
 
   if (this->values != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<expr_t*> it(this->values); !it.Done(); it.Next()) {
       expr_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("values"), x1));
+    L->append(Alloc<Field>(StrFromC("values"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* expr__Implicit::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Implicit"));
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Implicit"));
   return out_node;
 }
 
 hnode_t* expr__ListComp::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.ListComp"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.ListComp"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->elt->PrettyTree();
-  L->append(Alloc<field>(StrFromC("elt"), x0));
+  L->append(Alloc<Field>(StrFromC("elt"), x0));
 
   if (this->generators != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<comprehension*> it(this->generators); !it.Done(); it.Next()) {
-      comprehension* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Comprehension*> it(this->generators); !it.Done(); it.Next()) {
+      Comprehension* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("generators"), x1));
+    L->append(Alloc<Field>(StrFromC("generators"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* expr__DictComp::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.DictComp"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.DictComp"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->key->PrettyTree();
-  L->append(Alloc<field>(StrFromC("key"), x0));
+  L->append(Alloc<Field>(StrFromC("key"), x0));
 
   hnode_t* x1 = this->value->PrettyTree();
-  L->append(Alloc<field>(StrFromC("value"), x1));
+  L->append(Alloc<Field>(StrFromC("value"), x1));
 
   if (this->generators != nullptr) {  // List
-    hnode__Array* x2 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<comprehension*> it(this->generators); !it.Done(); it.Next()) {
-      comprehension* i2 = it.Value();
+    hnode::Array* x2 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Comprehension*> it(this->generators); !it.Done(); it.Next()) {
+      Comprehension* i2 = it.Value();
       x2->children->append(i2->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("generators"), x2));
+    L->append(Alloc<Field>(StrFromC("generators"), x2));
   }
 
   return out_node;
 }
 
 hnode_t* expr__GeneratorExp::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.GeneratorExp"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.GeneratorExp"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->elt->PrettyTree();
-  L->append(Alloc<field>(StrFromC("elt"), x0));
+  L->append(Alloc<Field>(StrFromC("elt"), x0));
 
   if (this->generators != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
-    for (ListIter<comprehension*> it(this->generators); !it.Done(); it.Next()) {
-      comprehension* i1 = it.Value();
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
+    for (ListIter<Comprehension*> it(this->generators); !it.Done(); it.Next()) {
+      Comprehension* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("generators"), x1));
+    L->append(Alloc<Field>(StrFromC("generators"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* expr__Range::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Range"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Range"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->lower->PrettyTree();
-  L->append(Alloc<field>(StrFromC("lower"), x0));
+  L->append(Alloc<Field>(StrFromC("lower"), x0));
 
   hnode_t* x1 = this->upper->PrettyTree();
-  L->append(Alloc<field>(StrFromC("upper"), x1));
+  L->append(Alloc<Field>(StrFromC("upper"), x1));
 
   return out_node;
 }
 
 hnode_t* expr__Slice::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Slice"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Slice"));
+  List<Field*>* L = out_node->fields;
 
   if (this->lower) {  // Optional
     hnode_t* x0 = this->lower->PrettyTree();
-    L->append(Alloc<field>(StrFromC("lower"), x0));
+    L->append(Alloc<Field>(StrFromC("lower"), x0));
   }
 
   if (this->upper) {  // Optional
     hnode_t* x1 = this->upper->PrettyTree();
-    L->append(Alloc<field>(StrFromC("upper"), x1));
+    L->append(Alloc<Field>(StrFromC("upper"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* expr__Spread::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("expr.Spread"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("expr.Spread"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(StrFromC(expr_context_str(this->ctx)),
+  hnode_t* x1 = Alloc<hnode::Leaf>(StrFromC(expr_context_str(this->ctx)),
                                    color_e::TypeName);
-  L->append(Alloc<field>(StrFromC("ctx"), x1));
+  L->append(Alloc<Field>(StrFromC("ctx"), x1));
 
   return out_node;
 }
 
 hnode_t* expr_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case expr_e::Var: {
     expr__Var* obj = static_cast<expr__Var*>(this);
     return obj->PrettyTree();
@@ -4345,7 +4340,7 @@ hnode_t* expr_t::PrettyTree() {
     return obj->PrettyTree();
   }
   case expr_e::ShArrayLiteral: {
-    sh_array_literal* obj = static_cast<sh_array_literal*>(this);
+    ShArrayLiteral* obj = static_cast<ShArrayLiteral*>(this);
     return obj->PrettyTree();
   }
   case expr_e::RegexLiteral: {
@@ -4353,23 +4348,23 @@ hnode_t* expr_t::PrettyTree() {
     return obj->PrettyTree();
   }
   case expr_e::SimpleVarSub: {
-    simple_var_sub* obj = static_cast<simple_var_sub*>(this);
+    SimpleVarSub* obj = static_cast<SimpleVarSub*>(this);
     return obj->PrettyTree();
   }
   case expr_e::BracedVarSub: {
-    braced_var_sub* obj = static_cast<braced_var_sub*>(this);
+    BracedVarSub* obj = static_cast<BracedVarSub*>(this);
     return obj->PrettyTree();
   }
   case expr_e::CommandSub: {
-    command_sub* obj = static_cast<command_sub*>(this);
+    CommandSub* obj = static_cast<CommandSub*>(this);
     return obj->PrettyTree();
   }
   case expr_e::SingleQuoted: {
-    single_quoted* obj = static_cast<single_quoted*>(this);
+    SingleQuoted* obj = static_cast<SingleQuoted*>(this);
     return obj->PrettyTree();
   }
   case expr_e::DoubleQuoted: {
-    double_quoted* obj = static_cast<double_quoted*>(this);
+    DoubleQuoted* obj = static_cast<DoubleQuoted*>(this);
     return obj->PrettyTree();
   }
   case expr_e::BlockArg: {
@@ -4437,11 +4432,11 @@ hnode_t* expr_t::PrettyTree() {
     return obj->PrettyTree();
   }
   case expr_e::Subscript: {
-    subscript* obj = static_cast<subscript*>(this);
+    Subscript* obj = static_cast<Subscript*>(this);
     return obj->PrettyTree();
   }
   case expr_e::Attribute: {
-    attribute* obj = static_cast<attribute*>(this);
+    Attribute* obj = static_cast<Attribute*>(this);
     return obj->PrettyTree();
   }
   case expr_e::Spread: {
@@ -4453,32 +4448,32 @@ hnode_t* expr_t::PrettyTree() {
   }
 }
 
-hnode_t* posix_class::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("posix_class"));
-  List<field*>* L = out_node->fields;
+hnode_t* PosixClass::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("PosixClass"));
+  List<Field*>* L = out_node->fields;
 
   if (this->negated) {  // Optional
     hnode_t* x0 = this->negated->PrettyTree();
-    L->append(Alloc<field>(StrFromC("negated"), x0));
+    L->append(Alloc<Field>(StrFromC("negated"), x0));
   }
 
   hnode_t* x1 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   return out_node;
 }
 
-hnode_t* perl_class::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("perl_class"));
-  List<field*>* L = out_node->fields;
+hnode_t* PerlClass::PrettyTree() {
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("PerlClass"));
+  List<Field*>* L = out_node->fields;
 
   if (this->negated) {  // Optional
     hnode_t* x0 = this->negated->PrettyTree();
-    L->append(Alloc<field>(StrFromC("negated"), x0));
+    L->append(Alloc<Field>(StrFromC("negated"), x0));
   }
 
   hnode_t* x1 = runtime::NewLeaf(this->name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   return out_node;
 }
@@ -4506,38 +4501,38 @@ const char* class_literal_term_str(int tag) {
 }
 
 hnode_t* class_literal_term__Range::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("class_literal_term.Range"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->start->PrettyTree();
-  L->append(Alloc<field>(StrFromC("start"), x0));
+  L->append(Alloc<Field>(StrFromC("start"), x0));
 
   hnode_t* x1 = this->end->PrettyTree();
-  L->append(Alloc<field>(StrFromC("end"), x1));
+  L->append(Alloc<Field>(StrFromC("end"), x1));
 
   return out_node;
 }
 
 hnode_t* class_literal_term__CharLiteral::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("class_literal_term.CharLiteral"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->tok->PrettyTree();
-  L->append(Alloc<field>(StrFromC("tok"), x0));
+  L->append(Alloc<Field>(StrFromC("tok"), x0));
 
   return out_node;
 }
 
 hnode_t* class_literal_term_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case class_literal_term_e::PosixClass: {
-    posix_class* obj = static_cast<posix_class*>(this);
+    PosixClass* obj = static_cast<PosixClass*>(this);
     return obj->PrettyTree();
   }
   case class_literal_term_e::PerlClass: {
-    perl_class* obj = static_cast<perl_class*>(this);
+    PerlClass* obj = static_cast<PerlClass*>(this);
     return obj->PrettyTree();
   }
   case class_literal_term_e::Range: {
@@ -4551,19 +4546,19 @@ static_cast<class_literal_term__CharLiteral*>(this);
     return obj->PrettyTree();
   }
   case class_literal_term_e::SimpleVarSub: {
-    simple_var_sub* obj = static_cast<simple_var_sub*>(this);
+    SimpleVarSub* obj = static_cast<SimpleVarSub*>(this);
     return obj->PrettyTree();
   }
   case class_literal_term_e::BracedVarSub: {
-    braced_var_sub* obj = static_cast<braced_var_sub*>(this);
+    BracedVarSub* obj = static_cast<BracedVarSub*>(this);
     return obj->PrettyTree();
   }
   case class_literal_term_e::SingleQuoted: {
-    single_quoted* obj = static_cast<single_quoted*>(this);
+    SingleQuoted* obj = static_cast<SingleQuoted*>(this);
     return obj->PrettyTree();
   }
   case class_literal_term_e::DoubleQuoted: {
-    double_quoted* obj = static_cast<double_quoted*>(this);
+    DoubleQuoted* obj = static_cast<DoubleQuoted*>(this);
     return obj->PrettyTree();
   }
   default:
@@ -4572,18 +4567,18 @@ static_cast<class_literal_term__CharLiteral*>(this);
 }
 
 hnode_t* CharCode::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("CharCode"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("CharCode"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(str(this->i), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("i"), x0));
+  hnode_t* x0 = Alloc<hnode::Leaf>(str(this->i), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("i"), x0));
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(this->u_braced ? runtime::TRUE_STR :
+  hnode_t* x1 = Alloc<hnode::Leaf>(this->u_braced ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("u_braced"), x1));
+  L->append(Alloc<Field>(StrFromC("u_braced"), x1));
 
-  hnode_t* x2 = Alloc<hnode__Leaf>(str(this->spid), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("spid"), x2));
+  hnode_t* x2 = Alloc<hnode::Leaf>(str(this->spid), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("spid"), x2));
 
   return out_node;
 }
@@ -4603,27 +4598,27 @@ const char* char_class_term_str(int tag) {
 }
 
 hnode_t* char_class_term__Range::PrettyTree() {
-  hnode__Record* out_node =
+  hnode::Record* out_node =
 runtime::NewRecord(StrFromC("char_class_term.Range"));
-  List<field*>* L = out_node->fields;
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->start->PrettyTree();
-  L->append(Alloc<field>(StrFromC("start"), x0));
+  L->append(Alloc<Field>(StrFromC("start"), x0));
 
   hnode_t* x1 = this->end->PrettyTree();
-  L->append(Alloc<field>(StrFromC("end"), x1));
+  L->append(Alloc<Field>(StrFromC("end"), x1));
 
   return out_node;
 }
 
 hnode_t* char_class_term_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case char_class_term_e::PosixClass: {
-    posix_class* obj = static_cast<posix_class*>(this);
+    PosixClass* obj = static_cast<PosixClass*>(this);
     return obj->PrettyTree();
   }
   case char_class_term_e::PerlClass: {
-    perl_class* obj = static_cast<perl_class*>(this);
+    PerlClass* obj = static_cast<PerlClass*>(this);
     return obj->PrettyTree();
   }
   case char_class_term_e::Range: {
@@ -4652,44 +4647,44 @@ const char* re_repeat_str(int tag) {
 }
 
 hnode_t* re_repeat__Op::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re_repeat.Op"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re_repeat.Op"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x0));
+  L->append(Alloc<Field>(StrFromC("op"), x0));
 
   return out_node;
 }
 
 hnode_t* re_repeat__Num::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re_repeat.Num"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re_repeat.Num"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->times->PrettyTree();
-  L->append(Alloc<field>(StrFromC("times"), x0));
+  L->append(Alloc<Field>(StrFromC("times"), x0));
 
   return out_node;
 }
 
 hnode_t* re_repeat__Range::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re_repeat.Range"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re_repeat.Range"));
+  List<Field*>* L = out_node->fields;
 
   if (this->lower) {  // Optional
     hnode_t* x0 = this->lower->PrettyTree();
-    L->append(Alloc<field>(StrFromC("lower"), x0));
+    L->append(Alloc<Field>(StrFromC("lower"), x0));
   }
 
   if (this->upper) {  // Optional
     hnode_t* x1 = this->upper->PrettyTree();
-    L->append(Alloc<field>(StrFromC("upper"), x1));
+    L->append(Alloc<Field>(StrFromC("upper"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* re_repeat_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case re_repeat_e::Op: {
     re_repeat__Op* obj = static_cast<re_repeat__Op*>(this);
     return obj->PrettyTree();
@@ -4750,182 +4745,182 @@ const char* re_str(int tag) {
 }
 
 hnode_t* re__CharClassLiteral::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.CharClassLiteral"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.CharClassLiteral"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(this->negated ? runtime::TRUE_STR :
+  hnode_t* x0 = Alloc<hnode::Leaf>(this->negated ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("negated"), x0));
+  L->append(Alloc<Field>(StrFromC("negated"), x0));
 
   if (this->terms != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<class_literal_term_t*> it(this->terms); !it.Done();
          it.Next()) {
       class_literal_term_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("terms"), x1));
+    L->append(Alloc<Field>(StrFromC("terms"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* re__CharClass::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.CharClass"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.CharClass"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(this->negated ? runtime::TRUE_STR :
+  hnode_t* x0 = Alloc<hnode::Leaf>(this->negated ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("negated"), x0));
+  L->append(Alloc<Field>(StrFromC("negated"), x0));
 
   if (this->terms != nullptr) {  // List
-    hnode__Array* x1 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x1 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<char_class_term_t*> it(this->terms); !it.Done(); it.Next()) {
       char_class_term_t* i1 = it.Value();
       x1->children->append(i1->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("terms"), x1));
+    L->append(Alloc<Field>(StrFromC("terms"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* re__Splice::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Splice"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Splice"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x0));
+  L->append(Alloc<Field>(StrFromC("name"), x0));
 
   hnode_t* x1 = runtime::NewLeaf(this->var_name, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("var_name"), x1));
+  L->append(Alloc<Field>(StrFromC("var_name"), x1));
 
   return out_node;
 }
 
 hnode_t* re__Repeat::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Repeat"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Repeat"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   hnode_t* x1 = this->op->PrettyTree();
-  L->append(Alloc<field>(StrFromC("op"), x1));
+  L->append(Alloc<Field>(StrFromC("op"), x1));
 
   return out_node;
 }
 
 hnode_t* re__Seq::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Seq"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Seq"));
+  List<Field*>* L = out_node->fields;
 
   if (this->children != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<re_t*> it(this->children); !it.Done(); it.Next()) {
       re_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("children"), x0));
+    L->append(Alloc<Field>(StrFromC("children"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* re__Alt::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Alt"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Alt"));
+  List<Field*>* L = out_node->fields;
 
   if (this->children != nullptr) {  // List
-    hnode__Array* x0 = Alloc<hnode__Array>(Alloc<List<hnode_t*>>());
+    hnode::Array* x0 = Alloc<hnode::Array>(Alloc<List<hnode_t*>>());
     for (ListIter<re_t*> it(this->children); !it.Done(); it.Next()) {
       re_t* i0 = it.Value();
       x0->children->append(i0->PrettyTree());
     }
-    L->append(Alloc<field>(StrFromC("children"), x0));
+    L->append(Alloc<Field>(StrFromC("children"), x0));
   }
 
   return out_node;
 }
 
 hnode_t* re__Group::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Group"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Group"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   return out_node;
 }
 
 hnode_t* re__Capture::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Capture"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Capture"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x0));
+  L->append(Alloc<Field>(StrFromC("child"), x0));
 
   if (this->var_name) {  // Optional
     hnode_t* x1 = this->var_name->PrettyTree();
-    L->append(Alloc<field>(StrFromC("var_name"), x1));
+    L->append(Alloc<Field>(StrFromC("var_name"), x1));
   }
 
   return out_node;
 }
 
 hnode_t* re__Backtracking::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Backtracking"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Backtracking"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(this->negated ? runtime::TRUE_STR :
+  hnode_t* x0 = Alloc<hnode::Leaf>(this->negated ? runtime::TRUE_STR :
                                    runtime::FALSE_STR, color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("negated"), x0));
+  L->append(Alloc<Field>(StrFromC("negated"), x0));
 
   hnode_t* x1 = this->name->PrettyTree();
-  L->append(Alloc<field>(StrFromC("name"), x1));
+  L->append(Alloc<Field>(StrFromC("name"), x1));
 
   hnode_t* x2 = this->child->PrettyTree();
-  L->append(Alloc<field>(StrFromC("child"), x2));
+  L->append(Alloc<Field>(StrFromC("child"), x2));
 
   return out_node;
 }
 
 hnode_t* re__Primitive::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.Primitive"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.Primitive"));
+  List<Field*>* L = out_node->fields;
 
-  hnode_t* x0 = Alloc<hnode__Leaf>(StrFromC(Id_str(this->id)),
+  hnode_t* x0 = Alloc<hnode::Leaf>(StrFromC(Id_str(this->id)),
                                    color_e::UserType);
-  L->append(Alloc<field>(StrFromC("id"), x0));
+  L->append(Alloc<Field>(StrFromC("id"), x0));
 
   return out_node;
 }
 
 hnode_t* re__LiteralChars::PrettyTree() {
-  hnode__Record* out_node = runtime::NewRecord(StrFromC("re.LiteralChars"));
-  List<field*>* L = out_node->fields;
+  hnode::Record* out_node = runtime::NewRecord(StrFromC("re.LiteralChars"));
+  List<Field*>* L = out_node->fields;
 
   hnode_t* x0 = runtime::NewLeaf(this->s, color_e::StringConst);
-  L->append(Alloc<field>(StrFromC("s"), x0));
+  L->append(Alloc<Field>(StrFromC("s"), x0));
 
-  hnode_t* x1 = Alloc<hnode__Leaf>(str(this->spid), color_e::OtherConst);
-  L->append(Alloc<field>(StrFromC("spid"), x1));
+  hnode_t* x1 = Alloc<hnode::Leaf>(str(this->spid), color_e::OtherConst);
+  L->append(Alloc<Field>(StrFromC("spid"), x1));
 
   return out_node;
 }
 
 hnode_t* re_t::PrettyTree() {
-  switch (this->tag_()) {
+  switch (this->tag()) {
   case re_e::Token: {
     Token* obj = static_cast<Token*>(this);
     return obj->PrettyTree();
   }
   case re_e::PosixClass: {
-    posix_class* obj = static_cast<posix_class*>(this);
+    PosixClass* obj = static_cast<PosixClass*>(this);
     return obj->PrettyTree();
   }
   case re_e::PerlClass: {
-    perl_class* obj = static_cast<perl_class*>(this);
+    PerlClass* obj = static_cast<PerlClass*>(this);
     return obj->PrettyTree();
   }
   case re_e::CharClassLiteral: {
@@ -4941,19 +4936,19 @@ hnode_t* re_t::PrettyTree() {
     return obj->PrettyTree();
   }
   case re_e::SimpleVarSub: {
-    simple_var_sub* obj = static_cast<simple_var_sub*>(this);
+    SimpleVarSub* obj = static_cast<SimpleVarSub*>(this);
     return obj->PrettyTree();
   }
   case re_e::BracedVarSub: {
-    braced_var_sub* obj = static_cast<braced_var_sub*>(this);
+    BracedVarSub* obj = static_cast<BracedVarSub*>(this);
     return obj->PrettyTree();
   }
   case re_e::SingleQuoted: {
-    single_quoted* obj = static_cast<single_quoted*>(this);
+    SingleQuoted* obj = static_cast<SingleQuoted*>(this);
     return obj->PrettyTree();
   }
   case re_e::DoubleQuoted: {
-    double_quoted* obj = static_cast<double_quoted*>(this);
+    DoubleQuoted* obj = static_cast<DoubleQuoted*>(this);
     return obj->PrettyTree();
   }
   case re_e::Repeat: {

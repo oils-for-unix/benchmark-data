@@ -19,23 +19,23 @@ namespace runtime_asdl {
 // use struct instead of namespace so 'using' works consistently
 #define ASDL_NAMES struct
 
-class assign_arg;
+class AssignArg;
 class cmd_value_t;
 class part_value_t;
 class value_t;
 class a_index_t;
 class VTestPlace;
 class VarSubState;
-class cell;
+class Cell;
 class lvalue_t;
 class redirect_arg_t;
-class redirect;
+class RedirValue;
 class Proc;
 class StatusArray;
 class CommandStatus;
 class wait_status_t;
 class trace_t;
-class hay_node;
+class HayNode;
 
 ASDL_NAMES cmd_value_e {
   enum no_name {
@@ -51,7 +51,7 @@ class cmd_value_t {
   cmd_value_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -90,7 +90,7 @@ class cmd_value__Argv : public cmd_value_t {
 class cmd_value__Assign : public cmd_value_t {
  public:
   cmd_value__Assign(int builtin_id, List<Str*>* argv,
-                    List<syntax_asdl::loc_t*>* arg_locs, List<assign_arg*>*
+                    List<syntax_asdl::loc_t*>* arg_locs, List<AssignArg*>*
                     pairs)
       : argv(argv),
         arg_locs(arg_locs),
@@ -103,7 +103,7 @@ class cmd_value__Assign : public cmd_value_t {
                                     nullptr, alloc_lists ?
                                     Alloc<List<syntax_asdl::loc_t*>>() :
                                     nullptr, alloc_lists ?
-                                    Alloc<List<assign_arg*>>() : nullptr);
+                                    Alloc<List<AssignArg*>>() : nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -114,7 +114,7 @@ class cmd_value__Assign : public cmd_value_t {
 
   List<Str*>* argv;
   List<syntax_asdl::loc_t*>* arg_locs;
-  List<assign_arg*>* pairs;
+  List<AssignArg*>* pairs;
   int builtin_id;
 
   DISALLOW_COPY_AND_ASSIGN(cmd_value__Assign)
@@ -140,7 +140,7 @@ class part_value_t {
   part_value_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -247,7 +247,7 @@ class value_t {
   value_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -533,7 +533,7 @@ class a_index_t {
   a_index_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -616,7 +616,7 @@ class lvalue_t {
   lvalue_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -767,7 +767,7 @@ class redirect_arg_t {
   redirect_arg_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -900,7 +900,7 @@ class wait_status_t {
   wait_status_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1083,7 +1083,7 @@ class trace_t {
   trace_t() {
   }
  public:
-  int tag_() const {
+  int tag() const {
     return ObjHeader::FromObject(this)->type_tag;
   }
   hnode_t* PrettyTree();
@@ -1222,18 +1222,18 @@ typedef word_style_e word_style_t;
 
 const char* word_style_str(word_style_e tag);
 
-class assign_arg {
+class AssignArg {
  public:
-  assign_arg(Str* var_name, value_t* rval, bool plus_eq, syntax_asdl::word_t*
-             blame_word)
+  AssignArg(Str* var_name, value_t* rval, bool plus_eq, syntax_asdl::word_t*
+            blame_word)
       : var_name(var_name),
         rval(rval),
         blame_word(blame_word),
         plus_eq(plus_eq) {
   }
 
-  static assign_arg* CreateNull(bool alloc_lists = false) { 
-    return Alloc<assign_arg>(kEmptyString, nullptr, false, nullptr);
+  static AssignArg* CreateNull(bool alloc_lists = false) { 
+    return Alloc<AssignArg>(kEmptyString, nullptr, false, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -1247,7 +1247,7 @@ class assign_arg {
   syntax_asdl::word_t* blame_word;
   bool plus_eq;
 
-  DISALLOW_COPY_AND_ASSIGN(assign_arg)
+  DISALLOW_COPY_AND_ASSIGN(AssignArg)
 };
 
 class VTestPlace {
@@ -1296,17 +1296,17 @@ class VarSubState {
   DISALLOW_COPY_AND_ASSIGN(VarSubState)
 };
 
-class cell {
+class Cell {
  public:
-  cell(bool exported, bool readonly, bool nameref, value_t* val)
+  Cell(bool exported, bool readonly, bool nameref, value_t* val)
       : val(val),
         exported(exported),
         readonly(readonly),
         nameref(nameref) {
   }
 
-  static cell* CreateNull(bool alloc_lists = false) { 
-    return Alloc<cell>(false, false, false, nullptr);
+  static Cell* CreateNull(bool alloc_lists = false) { 
+    return Alloc<Cell>(false, false, false, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -1320,21 +1320,21 @@ class cell {
   bool readonly;
   bool nameref;
 
-  DISALLOW_COPY_AND_ASSIGN(cell)
+  DISALLOW_COPY_AND_ASSIGN(Cell)
 };
 
-class redirect {
+class RedirValue {
  public:
-  redirect(Id_t op_id, syntax_asdl::loc_t* op_loc, syntax_asdl::redir_loc_t*
-           loc, redirect_arg_t* arg)
+  RedirValue(Id_t op_id, syntax_asdl::loc_t* op_loc, syntax_asdl::redir_loc_t*
+             loc, redirect_arg_t* arg)
       : op_loc(op_loc),
         loc(loc),
         arg(arg),
         op_id(op_id) {
   }
 
-  static redirect* CreateNull(bool alloc_lists = false) { 
-    return Alloc<redirect>(-1, nullptr, nullptr, nullptr);
+  static RedirValue* CreateNull(bool alloc_lists = false) { 
+    return Alloc<RedirValue>(-1, nullptr, nullptr, nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -1348,7 +1348,7 @@ class redirect {
   redirect_arg_t* arg;
   Id_t op_id;
 
-  DISALLOW_COPY_AND_ASSIGN(redirect)
+  DISALLOW_COPY_AND_ASSIGN(RedirValue)
 };
 
 class Proc {
@@ -1438,14 +1438,14 @@ class CommandStatus {
   DISALLOW_COPY_AND_ASSIGN(CommandStatus)
 };
 
-class hay_node {
+class HayNode {
  public:
-  hay_node(Dict<Str*, hay_node*>* children)
+  HayNode(Dict<Str*, HayNode*>* children)
       : children(children) {
   }
 
-  static hay_node* CreateNull(bool alloc_lists = false) { 
-    return Alloc<hay_node>(nullptr);
+  static HayNode* CreateNull(bool alloc_lists = false) { 
+    return Alloc<HayNode>(nullptr);
   }
 
   hnode_t* PrettyTree();
@@ -1454,9 +1454,9 @@ class hay_node {
     return ObjHeader::AsdlClass(72, 1);
   }
 
-  Dict<Str*, hay_node*>* children;
+  Dict<Str*, HayNode*>* children;
 
-  DISALLOW_COPY_AND_ASSIGN(hay_node)
+  DISALLOW_COPY_AND_ASSIGN(HayNode)
 };
 
 

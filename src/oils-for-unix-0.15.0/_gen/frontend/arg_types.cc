@@ -54,7 +54,7 @@ DefaultPair_c defaults_13[] = {
     {},
 };
 
-const char* arity0_15[] = {"c", nullptr};
+const char* arity0_15[] = {"a", "c", "r", nullptr};
 
 Action_c arity1_15[] = {
     {"d", ActionType_c::SetToInt, "d", nullptr},
@@ -62,8 +62,10 @@ Action_c arity1_15[] = {
 };
 
 DefaultPair_c defaults_15[] = {
+    {"a", flag_type_e::Bool, {.b = false}},
     {"c", flag_type_e::Bool, {.b = false}},
     {"d", flag_type_e::Int, {.i = -1}},
+    {"r", flag_type_e::Bool, {.b = false}},
     {},
 };
 

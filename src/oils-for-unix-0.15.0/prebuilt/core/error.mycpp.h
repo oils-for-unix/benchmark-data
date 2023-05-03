@@ -19,16 +19,13 @@ namespace error {  // forward declare
   class Strict;
   class ErrExit;
   class Expr;
+  class InvalidType;
 
 }  // forward declare namespace error
 
-namespace pyerror {  // forward declare
-
-
-}  // forward declare namespace pyerror
-
 namespace error {  // declare
 
+using syntax_asdl::loc;
 class _ErrorWithLocation {
  public:
   _ErrorWithLocation(Str* msg, syntax_asdl::loc_t* location);
@@ -187,13 +184,21 @@ class Expr : public FatalRuntime {
   DISALLOW_COPY_AND_ASSIGN(Expr)
 };
 
+class InvalidType : public Expr {
+ public:
+  InvalidType(Str* msg, syntax_asdl::loc_t* location);
+  
+  static constexpr uint32_t field_mask() {
+    return Expr::field_mask();
+  }
 
+  static constexpr ObjHeader obj_header() {
+    return ObjHeader::ClassFixed(field_mask(), sizeof(InvalidType));
+  }
 
-}  // declare namespace error
+  DISALLOW_COPY_AND_ASSIGN(InvalidType)
+};
 
-namespace pyerror {  // declare
-
-extern int NO_SPID;
 [[noreturn]] void e_usage(Str* msg, syntax_asdl::loc_t* location);
 [[noreturn]] void e_strict(Str* msg, syntax_asdl::loc_t* location);
 [[noreturn]] void p_die(Str* msg, syntax_asdl::loc_t* location);
@@ -201,6 +206,6 @@ extern int NO_SPID;
 [[noreturn]] void e_die_status(int status, Str* msg, syntax_asdl::loc_t* location = nullptr);
 
 
-}  // declare namespace pyerror
+}  // declare namespace error
 
 #endif  // CORE_ERROR_MYCPP_H
