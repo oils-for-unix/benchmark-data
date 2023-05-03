@@ -4474,6 +4474,7 @@ class ErrorFormatter {
   void OneLineErrExit();
   syntax_asdl::loc_t* CurrentLocation();
   void PrefixPrint(Str* msg, Str* prefix, syntax_asdl::loc_t* blame_loc);
+  syntax_asdl::loc_t* _FallbackLocation(syntax_asdl::loc_t* blame_loc);
   void Print_(Str* msg, syntax_asdl::loc_t* blame_loc = nullptr);
   void PrintMessage(Str* msg, syntax_asdl::loc_t* blame_loc = nullptr);
   void StderrLine(Str* msg);
@@ -6225,7 +6226,7 @@ Tuple2<bool, bool> _AppendParts(Str* s, List<Tuple2<runtime_asdl::span_t, int>*>
 Str* _ReadN(int num_bytes, cmd_eval::CommandEvaluator* cmd_ev);
 Tuple2<Str*, bool> _ReadUntilDelim(int delim_byte, cmd_eval::CommandEvaluator* cmd_ev);
 Str* _ReadLineSlowly(cmd_eval::CommandEvaluator* cmd_ev);
-Str* _ReadAll();
+Str* ReadAll();
 class Read : public vm::_Builtin {
  public:
   Read(split::SplitContext* splitter, state::Mem* mem, parse_lib::ParseContext* parse_ctx, cmd_eval::CommandEvaluator* cmd_ev, ui::ErrorFormatter* errfmt);
@@ -15948,22 +15949,28 @@ void ErrorFormatter::PrefixPrint(Str* msg, Str* prefix, syntax_asdl::loc_t* blam
   _PrintWithLocation(prefix, msg, blame_loc, this->arena, true);
 }
 
+syntax_asdl::loc_t* ErrorFormatter::_FallbackLocation(syntax_asdl::loc_t* blame_loc) {
+  StackRoots _roots({&blame_loc});
+
+  if (blame_loc == nullptr) {
+    return this->CurrentLocation();
+  }
+  if (blame_loc->tag() == loc_e::Missing) {
+    blame_loc = this->CurrentLocation();
+  }
+  return blame_loc;
+}
+
 void ErrorFormatter::Print_(Str* msg, syntax_asdl::loc_t* blame_loc) {
   StackRoots _roots({&msg, &blame_loc});
 
-  if (!blame_loc) {
-    blame_loc = Alloc<loc::Missing>();
-  }
-  _PrintWithLocation(str493, msg, blame_loc, this->arena, true);
+  _PrintWithLocation(str493, msg, this->_FallbackLocation(blame_loc), this->arena, true);
 }
 
 void ErrorFormatter::PrintMessage(Str* msg, syntax_asdl::loc_t* blame_loc) {
   StackRoots _roots({&msg, &blame_loc});
 
-  if (!blame_loc) {
-    blame_loc = Alloc<loc::Missing>();
-  }
-  _PrintWithLocation(str494, msg, blame_loc, this->arena, false);
+  _PrintWithLocation(str494, msg, this->_FallbackLocation(blame_loc), this->arena, false);
 }
 
 void ErrorFormatter::StderrLine(Str* msg) {
@@ -23327,7 +23334,7 @@ Str* _ReadLineSlowly(cmd_eval::CommandEvaluator* cmd_ev) {
   return pyutil::ChArrayToString(ch_array);
 }
 
-Str* _ReadAll() {
+Str* ReadAll() {
   List<Str*>* chunks = nullptr;
   int n;
   int err_num;
@@ -23420,7 +23427,7 @@ int Read::_All(Str* var_name) {
   lvalue::Named* lhs = nullptr;
   StackRoots _roots({&var_name, &contents, &lhs});
 
-  contents = _ReadAll();
+  contents = ReadAll();
   lhs = location::LName(var_name);
   this->mem->SetValue(lhs, Alloc<value::Str>(contents), scope_e::LocalOnly);
   return 0;
