@@ -1,0 +1,9 @@
+OSH version 0.17.0
+Release Date: -
+Arch: x86_64
+OS: Linux
+Platform: #167~18.04.1-Ubuntu SMP Wed May 24 00:51:42 UTC 2023
+Compiler: GCC 7.5.0
+Interpreter: CPython
+Interpreter version: 2.7.17
+Bytecode: -
