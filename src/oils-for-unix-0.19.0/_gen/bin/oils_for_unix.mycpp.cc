@@ -1087,339 +1087,339 @@ GLOBAL_STR(str1076, "> ");
 GLOBAL_STR(str1077, "Here docs aren't allowed in expressions");
 GLOBAL_STR(str1078, "\n");
 GLOBAL_STR(str1079, "");
-GLOBAL_STR(str1080, "\n");
-GLOBAL_STR(str1081, "\n");
-GLOBAL_STR(str1082, "^D");
-GLOBAL_STR(str1083, "got unexpected typed args");
-GLOBAL_STR(str1084, "Expected at least %d typed args, but only got %d");
-GLOBAL_STR(str1085, "Arg %d should be a Str");
-GLOBAL_STR(str1086, "Arg %d should be a Bool");
-GLOBAL_STR(str1087, "Arg %d should be an Int");
-GLOBAL_STR(str1088, "Arg %d should be a Float");
-GLOBAL_STR(str1089, "Arg %d should be a List");
-GLOBAL_STR(str1090, "Arg %d should be a Dict");
-GLOBAL_STR(str1091, "Arg %d should be a Place");
-GLOBAL_STR(str1092, "Arg %d should be IO");
-GLOBAL_STR(str1093, "Arg %d should be a Expr");
-GLOBAL_STR(str1094, "Arg %d should be a Command");
-GLOBAL_STR(str1095, "Arg %d should be a LiteralBlock");
-GLOBAL_STR(str1096, "Named arg %r should be a Str");
-GLOBAL_STR(str1097, "Named arg %r should be a Bool");
-GLOBAL_STR(str1098, "Named arg %r should be a Int");
-GLOBAL_STR(str1099, "Named arg %r should be a Float");
-GLOBAL_STR(str1100, "Named arg %r should be a List");
-GLOBAL_STR(str1101, "Named arg %r should be a Dict");
-GLOBAL_STR(str1102, "Expected %d typed args, but got %d");
-GLOBAL_STR(str1103, ", ");
-GLOBAL_STR(str1104, "Got unexpected named args: %s");
-GLOBAL_STR(str1105, "The [ operator doesn't apply to this expression");
-GLOBAL_STR(str1106, "Expected ]]");
-GLOBAL_STR(str1107, "Unexpected trailing word %s");
-GLOBAL_STR(str1108, "Invalid argument to unary operator");
-GLOBAL_STR(str1109, "Expected ), got %s");
-GLOBAL_STR(str1110, "Unexpected token in boolean expression (%s)");
-GLOBAL_STR(str1111, "");
-GLOBAL_STR(str1112, "Expected %d, got %d");
-GLOBAL_STR(str1113, "Step can't be 0");
-GLOBAL_STR(str1114, "Invalid step %d for ascending integer range");
-GLOBAL_STR(str1115, "Invalid step %d for descending integer range");
-GLOBAL_STR(str1116, "Invalid step %d for ascending character range");
-GLOBAL_STR(str1117, "Invalid step %d for descending character range");
-GLOBAL_STR(str1118, "Mismatched cases in character range");
-GLOBAL_STR(str1119, "");
-GLOBAL_STR(str1120, "0");
-GLOBAL_STR(str1121, "0");
-GLOBAL_STR(str1122, "bool");
-GLOBAL_STR(str1123, "Bool");
-GLOBAL_STR(str1124, "int");
-GLOBAL_STR(str1125, "Int");
-GLOBAL_STR(str1126, "float");
-GLOBAL_STR(str1127, "Float");
-GLOBAL_STR(str1128, "str");
-GLOBAL_STR(str1129, "Str");
-GLOBAL_STR(str1130, "tuple");
-GLOBAL_STR(str1131, "Tuple");
-GLOBAL_STR(str1132, "list");
-GLOBAL_STR(str1133, "List");
-GLOBAL_STR(str1134, "dict");
-GLOBAL_STR(str1135, "Dict");
-GLOBAL_STR(str1136, "");
-GLOBAL_STR(str1137, "Can't append array to string");
-GLOBAL_STR(str1138, "Can't append string to array");
-GLOBAL_STR(str1139, "Can't append to value of type %s");
-GLOBAL_STR(str1140, "Assignment builtin %r not configured");
-GLOBAL_STR(str1141, "%r ");
-GLOBAL_STR(str1142, "%s failed with status %d");
-GLOBAL_STR(str1143, "Brace expansion not allowed (try adding quotes)");
-GLOBAL_STR(str1144, "Can't redirect to zero files");
-GLOBAL_STR(str1145, "Can't redirect to more than one file");
-GLOBAL_STR(str1146, "Redirect descriptor can't be empty");
-GLOBAL_STR(str1147, "-");
-GLOBAL_STR(str1148, "-");
-GLOBAL_STR(str1149, "Invalid descriptor %r.  Expected D, -, or D- where D is an integer");
-GLOBAL_STR(str1150, "\n");
-GLOBAL_STR(str1151, "Unknown redirect op");
-GLOBAL_STR(str1152, "Unknown redirect type");
-GLOBAL_STR(str1153, "for -Wreturn-type in C++");
+GLOBAL_STR(str1080, "^D");
+GLOBAL_STR(str1081, "got unexpected typed args");
+GLOBAL_STR(str1082, "Expected at least %d typed args, but only got %d");
+GLOBAL_STR(str1083, "Arg %d should be a Str");
+GLOBAL_STR(str1084, "Arg %d should be a Bool");
+GLOBAL_STR(str1085, "Arg %d should be an Int");
+GLOBAL_STR(str1086, "Arg %d should be a Float");
+GLOBAL_STR(str1087, "Arg %d should be a List");
+GLOBAL_STR(str1088, "Arg %d should be a Dict");
+GLOBAL_STR(str1089, "Arg %d should be a Place");
+GLOBAL_STR(str1090, "Arg %d should be IO");
+GLOBAL_STR(str1091, "Arg %d should be a Expr");
+GLOBAL_STR(str1092, "Arg %d should be a Command");
+GLOBAL_STR(str1093, "Arg %d should be a LiteralBlock");
+GLOBAL_STR(str1094, "Named arg %r should be a Str");
+GLOBAL_STR(str1095, "Named arg %r should be a Bool");
+GLOBAL_STR(str1096, "Named arg %r should be a Int");
+GLOBAL_STR(str1097, "Named arg %r should be a Float");
+GLOBAL_STR(str1098, "Named arg %r should be a List");
+GLOBAL_STR(str1099, "Named arg %r should be a Dict");
+GLOBAL_STR(str1100, "Expected %d typed args, but got %d");
+GLOBAL_STR(str1101, ", ");
+GLOBAL_STR(str1102, "Got unexpected named args: %s");
+GLOBAL_STR(str1103, "The [ operator doesn't apply to this expression");
+GLOBAL_STR(str1104, "Expected ]]");
+GLOBAL_STR(str1105, "Unexpected trailing word %s");
+GLOBAL_STR(str1106, "Invalid argument to unary operator");
+GLOBAL_STR(str1107, "Expected ), got %s");
+GLOBAL_STR(str1108, "Unexpected token in boolean expression (%s)");
+GLOBAL_STR(str1109, "");
+GLOBAL_STR(str1110, "Expected %d, got %d");
+GLOBAL_STR(str1111, "Step can't be 0");
+GLOBAL_STR(str1112, "Invalid step %d for ascending integer range");
+GLOBAL_STR(str1113, "Invalid step %d for descending integer range");
+GLOBAL_STR(str1114, "Invalid step %d for ascending character range");
+GLOBAL_STR(str1115, "Invalid step %d for descending character range");
+GLOBAL_STR(str1116, "Mismatched cases in character range");
+GLOBAL_STR(str1117, "");
+GLOBAL_STR(str1118, "0");
+GLOBAL_STR(str1119, "0");
+GLOBAL_STR(str1120, "bool");
+GLOBAL_STR(str1121, "Bool");
+GLOBAL_STR(str1122, "int");
+GLOBAL_STR(str1123, "Int");
+GLOBAL_STR(str1124, "float");
+GLOBAL_STR(str1125, "Float");
+GLOBAL_STR(str1126, "str");
+GLOBAL_STR(str1127, "Str");
+GLOBAL_STR(str1128, "tuple");
+GLOBAL_STR(str1129, "Tuple");
+GLOBAL_STR(str1130, "list");
+GLOBAL_STR(str1131, "List");
+GLOBAL_STR(str1132, "dict");
+GLOBAL_STR(str1133, "Dict");
+GLOBAL_STR(str1134, "");
+GLOBAL_STR(str1135, "Can't append array to string");
+GLOBAL_STR(str1136, "Can't append string to array");
+GLOBAL_STR(str1137, "Can't append to value of type %s");
+GLOBAL_STR(str1138, "Assignment builtin %r not configured");
+GLOBAL_STR(str1139, "%r ");
+GLOBAL_STR(str1140, "%s failed with status %d");
+GLOBAL_STR(str1141, "Brace expansion not allowed (try adding quotes)");
+GLOBAL_STR(str1142, "Can't redirect to zero files");
+GLOBAL_STR(str1143, "Can't redirect to more than one file");
+GLOBAL_STR(str1144, "Redirect descriptor can't be empty");
+GLOBAL_STR(str1145, "-");
+GLOBAL_STR(str1146, "-");
+GLOBAL_STR(str1147, "Invalid descriptor %r.  Expected D, -, or D- where D is an integer");
+GLOBAL_STR(str1148, "\n");
+GLOBAL_STR(str1149, "Unknown redirect op");
+GLOBAL_STR(str1150, "Unknown redirect type");
+GLOBAL_STR(str1151, "for -Wreturn-type in C++");
+GLOBAL_STR(str1152, "strict_errexit only allows simple commands in conditionals (got %s). ");
+GLOBAL_STR(str1153, "strict_errexit only allows a single command.  Hint: use 'try'.");
 GLOBAL_STR(str1154, "strict_errexit only allows simple commands in conditionals (got %s). ");
-GLOBAL_STR(str1155, "strict_errexit only allows a single command.  Hint: use 'try'.");
-GLOBAL_STR(str1156, "strict_errexit only allows simple commands in conditionals (got %s). ");
+GLOBAL_STR(str1155, "Destructuring assignment expected List");
+GLOBAL_STR(str1156, "Got %d places on the left, but %d values on right");
 GLOBAL_STR(str1157, "Destructuring assignment expected List");
-GLOBAL_STR(str1158, "Got %d places on the left, but %d values on right");
-GLOBAL_STR(str1159, "Destructuring assignment expected List");
-GLOBAL_STR(str1160, "Got %d places on the left, but %d values on the right");
-GLOBAL_STR(str1161, "List index should be Int");
-GLOBAL_STR(str1162, "Dict index should be Str");
-GLOBAL_STR(str1163, "obj[index] expected List or Dict");
-GLOBAL_STR(str1164, "");
-GLOBAL_STR(str1165, "ShAssignment builtins don't accept blocks");
-GLOBAL_STR(str1166, "|& isn't supported");
-GLOBAL_STR(str1167, "");
-GLOBAL_STR(str1168, "%r expected a number, got %r");
-GLOBAL_STR(str1169, "Invalid control flow at top level");
-GLOBAL_STR(str1170, "warning: ");
-GLOBAL_STR(str1171, "List iteration expects at most 2 loop variables");
-GLOBAL_STR(str1172, "Range iteration expects at most 2 loop variables");
-GLOBAL_STR(str1173, "for loop expected List or Dict");
-GLOBAL_STR(str1174, "Argv iteration expects at most 2 loop variables");
-GLOBAL_STR(str1175, "Function %s was already defined (redefine_proc_func)");
-GLOBAL_STR(str1176, "Proc %s was already defined (redefine_proc_func)");
-GLOBAL_STR(str1177, "Func %s was already defined (redefine_proc_func)");
-GLOBAL_STR(str1178, "trap");
-GLOBAL_STR(str1179, "failglob: ");
-GLOBAL_STR(str1180, "failglob: ");
-GLOBAL_STR(str1181, "Loop and control flow can't be in different processes");
-GLOBAL_STR(str1182, "fatal: ");
-GLOBAL_STR(str1183, "Unexpected control flow in block");
-GLOBAL_STR(str1184, "EXIT");
-GLOBAL_STR(str1185, "trap EXIT");
-GLOBAL_STR(str1186, "DEBUG");
-GLOBAL_STR(str1187, "trap DEBUG");
-GLOBAL_STR(str1188, "ERR");
-GLOBAL_STR(str1189, "trap ERR");
-GLOBAL_STR(str1190, "Unexpected %r (in proc call)");
-GLOBAL_STR(str1191, "Attempted to exit from completion hook.");
-GLOBAL_STR(str1192, "Couldn't find terminator for here doc that starts here");
-GLOBAL_STR(str1193, "\t");
-GLOBAL_STR(str1194, "Invalid here doc delimiter");
-GLOBAL_STR(str1195, "");
-GLOBAL_STR(str1196, "%s != %s");
-GLOBAL_STR(str1197, "array LHS");
-GLOBAL_STR(str1198, "Environment binding shouldn't look like an array assignment");
-GLOBAL_STR(str1199, "Expected = in environment binding, got +=");
-GLOBAL_STR(str1200, "Environment bindings can't contain array literals");
-GLOBAL_STR(str1201, "procs must be defined at the top level");
-GLOBAL_STR(str1202, "funcs must be defined at the top level");
-GLOBAL_STR(str1203, "shell functions can't be defined inside proc or func");
-GLOBAL_STR(str1204, "%r was already declared");
-GLOBAL_STR(str1205, "setvar couldn't find matching 'var %s'");
-GLOBAL_STR(str1206, "Expected word type %s, got %s");
-GLOBAL_STR(str1207, "{");
-GLOBAL_STR(str1208, "}");
-GLOBAL_STR(str1209, "Invalid token after redirect operator");
-GLOBAL_STR(str1210, "=word isn't allowed.  Hint: add a space after =, or quote it");
-GLOBAL_STR(str1211, "Space required before (");
-GLOBAL_STR(str1212, "Unexpected left paren (might need a space before it)");
-GLOBAL_STR(str1213, "Empty arg list not allowed");
-GLOBAL_STR(str1214, " ");
-GLOBAL_STR(str1215, " ");
-GLOBAL_STR(str1216, "");
+GLOBAL_STR(str1158, "Got %d places on the left, but %d values on the right");
+GLOBAL_STR(str1159, "List index should be Int");
+GLOBAL_STR(str1160, "Dict index should be Str");
+GLOBAL_STR(str1161, "obj[index] expected List or Dict");
+GLOBAL_STR(str1162, "");
+GLOBAL_STR(str1163, "ShAssignment builtins don't accept blocks");
+GLOBAL_STR(str1164, "|& isn't supported");
+GLOBAL_STR(str1165, "");
+GLOBAL_STR(str1166, "%r expected a number, got %r");
+GLOBAL_STR(str1167, "Invalid control flow at top level");
+GLOBAL_STR(str1168, "warning: ");
+GLOBAL_STR(str1169, "List iteration expects at most 2 loop variables");
+GLOBAL_STR(str1170, "Range iteration expects at most 2 loop variables");
+GLOBAL_STR(str1171, "for loop expected List or Dict");
+GLOBAL_STR(str1172, "Argv iteration expects at most 2 loop variables");
+GLOBAL_STR(str1173, "Function %s was already defined (redefine_proc_func)");
+GLOBAL_STR(str1174, "Proc %s was already defined (redefine_proc_func)");
+GLOBAL_STR(str1175, "Func %s was already defined (redefine_proc_func)");
+GLOBAL_STR(str1176, "trap");
+GLOBAL_STR(str1177, "failglob: ");
+GLOBAL_STR(str1178, "failglob: ");
+GLOBAL_STR(str1179, "Loop and control flow can't be in different processes");
+GLOBAL_STR(str1180, "fatal: ");
+GLOBAL_STR(str1181, "Unexpected control flow in block");
+GLOBAL_STR(str1182, "EXIT");
+GLOBAL_STR(str1183, "trap EXIT");
+GLOBAL_STR(str1184, "DEBUG");
+GLOBAL_STR(str1185, "trap DEBUG");
+GLOBAL_STR(str1186, "ERR");
+GLOBAL_STR(str1187, "trap ERR");
+GLOBAL_STR(str1188, "Unexpected %r (in proc call)");
+GLOBAL_STR(str1189, "Attempted to exit from completion hook.");
+GLOBAL_STR(str1190, "Couldn't find terminator for here doc that starts here");
+GLOBAL_STR(str1191, "\t");
+GLOBAL_STR(str1192, "Invalid here doc delimiter");
+GLOBAL_STR(str1193, "");
+GLOBAL_STR(str1194, "%s != %s");
+GLOBAL_STR(str1195, "array LHS");
+GLOBAL_STR(str1196, "Environment binding shouldn't look like an array assignment");
+GLOBAL_STR(str1197, "Expected = in environment binding, got +=");
+GLOBAL_STR(str1198, "Environment bindings can't contain array literals");
+GLOBAL_STR(str1199, "procs must be defined at the top level");
+GLOBAL_STR(str1200, "funcs must be defined at the top level");
+GLOBAL_STR(str1201, "shell functions can't be defined inside proc or func");
+GLOBAL_STR(str1202, "%r was already declared");
+GLOBAL_STR(str1203, "setvar couldn't find matching 'var %s'");
+GLOBAL_STR(str1204, "Expected word type %s, got %s");
+GLOBAL_STR(str1205, "{");
+GLOBAL_STR(str1206, "}");
+GLOBAL_STR(str1207, "Invalid token after redirect operator");
+GLOBAL_STR(str1208, "=word isn't allowed.  Hint: add a space after =, or quote it");
+GLOBAL_STR(str1209, "Space required before (");
+GLOBAL_STR(str1210, "Unexpected left paren (might need a space before it)");
+GLOBAL_STR(str1211, "Empty arg list not allowed");
+GLOBAL_STR(str1212, " ");
+GLOBAL_STR(str1213, " ");
+GLOBAL_STR(str1214, "");
+GLOBAL_STR(str1215, "Unexpected typed args");
+GLOBAL_STR(str1216, "Use var/setvar to assign in YSH");
 GLOBAL_STR(str1217, "Unexpected typed args");
-GLOBAL_STR(str1218, "Use var/setvar to assign in YSH");
-GLOBAL_STR(str1219, "Unexpected typed args");
-GLOBAL_STR(str1220, "Shell-style returns not allowed here");
-GLOBAL_STR(str1221, "Typed return is only allowed inside func");
-GLOBAL_STR(str1222, "Typed return expects one argument");
-GLOBAL_STR(str1223, "Typed return doesn't take named arguments");
-GLOBAL_STR(str1224, "Unexpected typed args");
-GLOBAL_STR(str1225, "Control flow shouldn't have redirects");
-GLOBAL_STR(str1226, "Control flow shouldn't have environment bindings");
-GLOBAL_STR(str1227, "Unexpected argument to %r");
-GLOBAL_STR(str1228, "Invalid word in for loop");
-GLOBAL_STR(str1229, "Invalid word after for expression");
-GLOBAL_STR(str1230, "Expected loop variable (a constant word)");
-GLOBAL_STR(str1231, ",");
-GLOBAL_STR(str1232, "Loop variables look like x, y (fix spaces)");
-GLOBAL_STR(str1233, "Invalid loop variable name %r");
-GLOBAL_STR(str1234, "Unexpected word after 3 loop variables");
-GLOBAL_STR(str1235, "Expected { after iterable expression");
-GLOBAL_STR(str1236, "Surround this word with either parens or quotes (parse_bare_word)");
-GLOBAL_STR(str1237, "Expected at most 2 loop variables");
-GLOBAL_STR(str1238, "Unexpected word after for loop variable");
-GLOBAL_STR(str1239, "Bash for loops aren't allowed (parse_dparen)");
-GLOBAL_STR(str1240, "Expected a condition");
+GLOBAL_STR(str1218, "Shell-style returns not allowed here");
+GLOBAL_STR(str1219, "Typed return is only allowed inside func");
+GLOBAL_STR(str1220, "Typed return expects one argument");
+GLOBAL_STR(str1221, "Typed return doesn't take named arguments");
+GLOBAL_STR(str1222, "Unexpected typed args");
+GLOBAL_STR(str1223, "Control flow shouldn't have redirects");
+GLOBAL_STR(str1224, "Control flow shouldn't have environment bindings");
+GLOBAL_STR(str1225, "Unexpected argument to %r");
+GLOBAL_STR(str1226, "Invalid word in for loop");
+GLOBAL_STR(str1227, "Invalid word after for expression");
+GLOBAL_STR(str1228, "Expected loop variable (a constant word)");
+GLOBAL_STR(str1229, ",");
+GLOBAL_STR(str1230, "Loop variables look like x, y (fix spaces)");
+GLOBAL_STR(str1231, "Invalid loop variable name %r");
+GLOBAL_STR(str1232, "Unexpected word after 3 loop variables");
+GLOBAL_STR(str1233, "Expected { after iterable expression");
+GLOBAL_STR(str1234, "Surround this word with either parens or quotes (parse_bare_word)");
+GLOBAL_STR(str1235, "Expected at most 2 loop variables");
+GLOBAL_STR(str1236, "Unexpected word after for loop variable");
+GLOBAL_STR(str1237, "Bash for loops aren't allowed (parse_dparen)");
+GLOBAL_STR(str1238, "Expected a condition");
+GLOBAL_STR(str1239, "Expected case pattern");
+GLOBAL_STR(str1240, "Expected ;; or esac");
 GLOBAL_STR(str1241, "Expected case pattern");
-GLOBAL_STR(str1242, "Expected ;; or esac");
-GLOBAL_STR(str1243, "Expected case pattern");
-GLOBAL_STR(str1244, "This is a constant string.  You may want a variable like $x (parse_bare_word)");
-GLOBAL_STR(str1245, "Expected a word to match against");
-GLOBAL_STR(str1246, "You may want a space between parens (parse_dparen)");
-GLOBAL_STR(str1247, "Unexpected word while parsing compound command");
-GLOBAL_STR(str1248, "Invalid function name");
-GLOBAL_STR(str1249, "Expected ) in function definition");
-GLOBAL_STR(str1250, "Invalid KSH-style function name");
-GLOBAL_STR(str1251, "Unexpected word when parsing command");
-GLOBAL_STR(str1252, "const can't be inside proc or func.  Use var instead.");
-GLOBAL_STR(str1253, "Unexpected right brace");
-GLOBAL_STR(str1254, "Unexpected = (Hint: use var/setvar, or quote it)");
-GLOBAL_STR(str1255, "Unexpected EOF while parsing command");
-GLOBAL_STR(str1256, "Invalid word while parsing command");
-GLOBAL_STR(str1257, "Invalid word while parsing command line");
-GLOBAL_STR(str1258, "Invalid word while parsing command list");
-GLOBAL_STR(str1259, "Unterminated here doc began here");
-GLOBAL_STR(str1260, "\\");
-GLOBAL_STR(str1261, "*");
-GLOBAL_STR(str1262, "?");
-GLOBAL_STR(str1263, "[");
-GLOBAL_STR(str1264, "]");
-GLOBAL_STR(str1265, "\\*?[]-:!()|");
-GLOBAL_STR(str1266, "\\?*+{}^$.()|[]");
-GLOBAL_STR(str1267, "\\");
-GLOBAL_STR(str1268, "Unexpected escaped character %r");
-GLOBAL_STR(str1269, "");
-GLOBAL_STR(str1270, "");
-GLOBAL_STR(str1271, "Malformed character class; treating as literal");
-GLOBAL_STR(str1272, "Got unescaped right bracket");
-GLOBAL_STR(str1273, "Got unescaped trailing backslash");
-GLOBAL_STR(str1274, ".|^$()+*?[]{}\\");
-GLOBAL_STR(str1275, "\\");
-GLOBAL_STR(str1276, "\\");
-GLOBAL_STR(str1277, "\\[");
-GLOBAL_STR(str1278, "\\]");
-GLOBAL_STR(str1279, "\\\\");
-GLOBAL_STR(str1280, "^");
-GLOBAL_STR(str1281, ".");
-GLOBAL_STR(str1282, ".*");
-GLOBAL_STR(str1283, "[");
-GLOBAL_STR(str1284, "^");
-GLOBAL_STR(str1285, "\\-");
-GLOBAL_STR(str1286, "\\]");
+GLOBAL_STR(str1242, "This is a constant string.  You may want a variable like $x (parse_bare_word)");
+GLOBAL_STR(str1243, "Expected a word to match against");
+GLOBAL_STR(str1244, "You may want a space between parens (parse_dparen)");
+GLOBAL_STR(str1245, "Unexpected word while parsing compound command");
+GLOBAL_STR(str1246, "Invalid function name");
+GLOBAL_STR(str1247, "Expected ) in function definition");
+GLOBAL_STR(str1248, "Invalid KSH-style function name");
+GLOBAL_STR(str1249, "Unexpected word when parsing command");
+GLOBAL_STR(str1250, "const can't be inside proc or func.  Use var instead.");
+GLOBAL_STR(str1251, "Unexpected right brace");
+GLOBAL_STR(str1252, "Unexpected = (Hint: use var/setvar, or quote it)");
+GLOBAL_STR(str1253, "Unexpected EOF while parsing command");
+GLOBAL_STR(str1254, "Invalid word while parsing command");
+GLOBAL_STR(str1255, "Invalid word while parsing command line");
+GLOBAL_STR(str1256, "Invalid word while parsing command list");
+GLOBAL_STR(str1257, "Unterminated here doc began here");
+GLOBAL_STR(str1258, "\\");
+GLOBAL_STR(str1259, "*");
+GLOBAL_STR(str1260, "?");
+GLOBAL_STR(str1261, "[");
+GLOBAL_STR(str1262, "]");
+GLOBAL_STR(str1263, "\\*?[]-:!()|");
+GLOBAL_STR(str1264, "\\?*+{}^$.()|[]");
+GLOBAL_STR(str1265, "\\");
+GLOBAL_STR(str1266, "Unexpected escaped character %r");
+GLOBAL_STR(str1267, "");
+GLOBAL_STR(str1268, "");
+GLOBAL_STR(str1269, "Malformed character class; treating as literal");
+GLOBAL_STR(str1270, "Got unescaped right bracket");
+GLOBAL_STR(str1271, "Got unescaped trailing backslash");
+GLOBAL_STR(str1272, ".|^$()+*?[]{}\\");
+GLOBAL_STR(str1273, "\\");
+GLOBAL_STR(str1274, "\\");
+GLOBAL_STR(str1275, "\\[");
+GLOBAL_STR(str1276, "\\]");
+GLOBAL_STR(str1277, "\\\\");
+GLOBAL_STR(str1278, "^");
+GLOBAL_STR(str1279, ".");
+GLOBAL_STR(str1280, ".*");
+GLOBAL_STR(str1281, "[");
+GLOBAL_STR(str1282, "^");
+GLOBAL_STR(str1283, "\\-");
+GLOBAL_STR(str1284, "\\]");
+GLOBAL_STR(str1285, "]");
+GLOBAL_STR(str1286, "-");
 GLOBAL_STR(str1287, "]");
-GLOBAL_STR(str1288, "-");
-GLOBAL_STR(str1289, "]");
-GLOBAL_STR(str1290, "");
-GLOBAL_STR(str1291, "Error expanding glob %r: %s");
-GLOBAL_STR(str1292, "-");
-GLOBAL_STR(str1293, "history length = %d");
-GLOBAL_STR(str1294, "!");
-GLOBAL_STR(str1295, "Couldn't parse historical command %r: %s");
-GLOBAL_STR(str1296, "^");
-GLOBAL_STR(str1297, "No first word in %r");
-GLOBAL_STR(str1298, "$");
-GLOBAL_STR(str1299, "No last word in %r");
-GLOBAL_STR(str1300, "*");
-GLOBAL_STR(str1301, "Couldn't find words in %r");
-GLOBAL_STR(str1302, "%s: not found");
-GLOBAL_STR(str1303, "");
-GLOBAL_STR(str1304, "?");
-GLOBAL_STR(str1305, "%r found no results");
-GLOBAL_STR(str1306, "");
-GLOBAL_STR(str1307, "! %s");
-GLOBAL_STR(str1308, "<Error: %s> ");
-GLOBAL_STR(str1309, "Unbalanced \\[ and \\]");
+GLOBAL_STR(str1288, "");
+GLOBAL_STR(str1289, "Error expanding glob %r: %s");
+GLOBAL_STR(str1290, "-");
+GLOBAL_STR(str1291, "history length = %d");
+GLOBAL_STR(str1292, "!");
+GLOBAL_STR(str1293, "Couldn't parse historical command %r: %s");
+GLOBAL_STR(str1294, "^");
+GLOBAL_STR(str1295, "No first word in %r");
+GLOBAL_STR(str1296, "$");
+GLOBAL_STR(str1297, "No last word in %r");
+GLOBAL_STR(str1298, "*");
+GLOBAL_STR(str1299, "Couldn't find words in %r");
+GLOBAL_STR(str1300, "%s: not found");
+GLOBAL_STR(str1301, "");
+GLOBAL_STR(str1302, "?");
+GLOBAL_STR(str1303, "%r found no results");
+GLOBAL_STR(str1304, "");
+GLOBAL_STR(str1305, "! %s");
+GLOBAL_STR(str1306, "<Error: %s> ");
+GLOBAL_STR(str1307, "Unbalanced \\[ and \\]");
+GLOBAL_STR(str1308, "$");
+GLOBAL_STR(str1309, "#");
 GLOBAL_STR(str1310, "$");
-GLOBAL_STR(str1311, "#");
-GLOBAL_STR(str1312, "$");
-GLOBAL_STR(str1313, "hostname");
-GLOBAL_STR(str1314, "user");
-GLOBAL_STR(str1315, "D");
-GLOBAL_STR(str1316, "\\D{} not in promptVal()");
-GLOBAL_STR(str1317, "$");
-GLOBAL_STR(str1318, "$");
-GLOBAL_STR(str1319, "u");
-GLOBAL_STR(str1320, "user");
-GLOBAL_STR(str1321, "h");
-GLOBAL_STR(str1322, "hostname");
-GLOBAL_STR(str1323, ".");
-GLOBAL_STR(str1324, "H");
-GLOBAL_STR(str1325, "hostname");
-GLOBAL_STR(str1326, "s");
-GLOBAL_STR(str1327, "v");
-GLOBAL_STR(str1328, "A");
-GLOBAL_STR(str1329, "%H:%M");
-GLOBAL_STR(str1330, "D");
-GLOBAL_STR(str1331, "%X");
-GLOBAL_STR(str1332, "w");
-GLOBAL_STR(str1333, "PWD");
-GLOBAL_STR(str1334, "HOME");
-GLOBAL_STR(str1335, "W");
-GLOBAL_STR(str1336, "PWD");
-GLOBAL_STR(str1337, "PWD is not a string");
-GLOBAL_STR(str1338, "\\%s not implemented in $PS1");
-GLOBAL_STR(str1339, "\u0001");
-GLOBAL_STR(str1340, "\u0002");
-GLOBAL_STR(str1341, "D");
-GLOBAL_STR(str1342, "$");
-GLOBAL_STR(str1343, "\\$");
-GLOBAL_STR(str1344, "Invalid token %r %r");
-GLOBAL_STR(str1345, "");
-GLOBAL_STR(str1346, "");
-GLOBAL_STR(str1347, "<ERROR: Can't parse PS1: %s>");
-GLOBAL_STR(str1348, "renderPrompt");
-GLOBAL_STR(str1349, "renderPrompt() should return Str, got %s");
-GLOBAL_STR(str1350, "PS1");
-GLOBAL_STR(str1351, "ysh");
-GLOBAL_STR(str1352, "ysh ");
-GLOBAL_STR(str1353, "PROMPT_COMMAND");
-GLOBAL_STR(str1354, "Undefined variable %r");
+GLOBAL_STR(str1311, "hostname");
+GLOBAL_STR(str1312, "user");
+GLOBAL_STR(str1313, "D");
+GLOBAL_STR(str1314, "\\D{} not in promptVal()");
+GLOBAL_STR(str1315, "$");
+GLOBAL_STR(str1316, "$");
+GLOBAL_STR(str1317, "u");
+GLOBAL_STR(str1318, "user");
+GLOBAL_STR(str1319, "h");
+GLOBAL_STR(str1320, "hostname");
+GLOBAL_STR(str1321, ".");
+GLOBAL_STR(str1322, "H");
+GLOBAL_STR(str1323, "hostname");
+GLOBAL_STR(str1324, "s");
+GLOBAL_STR(str1325, "v");
+GLOBAL_STR(str1326, "A");
+GLOBAL_STR(str1327, "%H:%M");
+GLOBAL_STR(str1328, "D");
+GLOBAL_STR(str1329, "%X");
+GLOBAL_STR(str1330, "w");
+GLOBAL_STR(str1331, "PWD");
+GLOBAL_STR(str1332, "HOME");
+GLOBAL_STR(str1333, "W");
+GLOBAL_STR(str1334, "PWD");
+GLOBAL_STR(str1335, "PWD is not a string");
+GLOBAL_STR(str1336, "\\%s not implemented in $PS1");
+GLOBAL_STR(str1337, "\u0001");
+GLOBAL_STR(str1338, "\u0002");
+GLOBAL_STR(str1339, "D");
+GLOBAL_STR(str1340, "$");
+GLOBAL_STR(str1341, "\\$");
+GLOBAL_STR(str1342, "Invalid token %r %r");
+GLOBAL_STR(str1343, "");
+GLOBAL_STR(str1344, "");
+GLOBAL_STR(str1345, "<ERROR: Can't parse PS1: %s>");
+GLOBAL_STR(str1346, "renderPrompt");
+GLOBAL_STR(str1347, "renderPrompt() should return Str, got %s");
+GLOBAL_STR(str1348, "PS1");
+GLOBAL_STR(str1349, "ysh");
+GLOBAL_STR(str1350, "ysh ");
+GLOBAL_STR(str1351, "PROMPT_COMMAND");
+GLOBAL_STR(str1352, "Undefined variable %r");
+GLOBAL_STR(str1353, "Can't use [] on value of type %s");
+GLOBAL_STR(str1354, "");
 GLOBAL_STR(str1355, "Can't use [] on value of type %s");
 GLOBAL_STR(str1356, "");
-GLOBAL_STR(str1357, "Can't use [] on value of type %s");
-GLOBAL_STR(str1358, "");
-GLOBAL_STR(str1359, "Invalid variable name %r (parse_sh_arith is off)");
-GLOBAL_STR(str1360, "dynamic LHS");
-GLOBAL_STR(str1361, "got invalid LHS expression");
-GLOBAL_STR(str1362, "Invalid var ref expression");
-GLOBAL_STR(str1363, "0x");
-GLOBAL_STR(str1364, "Invalid hex constant %r");
-GLOBAL_STR(str1365, "0");
-GLOBAL_STR(str1366, "Invalid octal constant %r");
-GLOBAL_STR(str1367, "#");
-GLOBAL_STR(str1368, "#");
-GLOBAL_STR(str1369, "Invalid base for numeric constant %r");
-GLOBAL_STR(str1370, "a");
-GLOBAL_STR(str1371, "A");
-GLOBAL_STR(str1372, "@");
-GLOBAL_STR(str1373, "_");
-GLOBAL_STR(str1374, "Invalid digits for numeric constant %r");
-GLOBAL_STR(str1375, "Digits %r out of range for base %d");
-GLOBAL_STR(str1376, "Parse error in recursive arithmetic");
+GLOBAL_STR(str1357, "Invalid variable name %r (parse_sh_arith is off)");
+GLOBAL_STR(str1358, "dynamic LHS");
+GLOBAL_STR(str1359, "got invalid LHS expression");
+GLOBAL_STR(str1360, "Invalid var ref expression");
+GLOBAL_STR(str1361, "0x");
+GLOBAL_STR(str1362, "Invalid hex constant %r");
+GLOBAL_STR(str1363, "0");
+GLOBAL_STR(str1364, "Invalid octal constant %r");
+GLOBAL_STR(str1365, "#");
+GLOBAL_STR(str1366, "#");
+GLOBAL_STR(str1367, "Invalid base for numeric constant %r");
+GLOBAL_STR(str1368, "a");
+GLOBAL_STR(str1369, "A");
+GLOBAL_STR(str1370, "@");
+GLOBAL_STR(str1371, "_");
+GLOBAL_STR(str1372, "Invalid digits for numeric constant %r");
+GLOBAL_STR(str1373, "Digits %r out of range for base %d");
+GLOBAL_STR(str1374, "Parse error in recursive arithmetic");
+GLOBAL_STR(str1375, "Invalid integer constant %r");
+GLOBAL_STR(str1376, "Invalid integer constant %r");
 GLOBAL_STR(str1377, "Invalid integer constant %r");
-GLOBAL_STR(str1378, "Invalid integer constant %r");
-GLOBAL_STR(str1379, "Invalid integer constant %r");
-GLOBAL_STR(str1380, "Undefined value in arithmetic context");
-GLOBAL_STR(str1381, "Expected a value convertible to integer, got %s");
-GLOBAL_STR(str1382, "0");
-GLOBAL_STR(str1383, "Undefined variable %r");
-GLOBAL_STR(str1384, "Divide by zero");
+GLOBAL_STR(str1378, "Undefined value in arithmetic context");
+GLOBAL_STR(str1379, "Expected a value convertible to integer, got %s");
+GLOBAL_STR(str1380, "0");
+GLOBAL_STR(str1381, "Undefined variable %r");
+GLOBAL_STR(str1382, "Divide by zero");
+GLOBAL_STR(str1383, "Divide by zero");
+GLOBAL_STR(str1384, "Expected array or assoc in index expression, got %s");
 GLOBAL_STR(str1385, "Divide by zero");
-GLOBAL_STR(str1386, "Expected array or assoc in index expression, got %s");
-GLOBAL_STR(str1387, "Divide by zero");
-GLOBAL_STR(str1388, "Divide by zero");
-GLOBAL_STR(str1389, "Exponent can't be a negative number");
-GLOBAL_STR(str1390, "for -Wreturn-type in C++");
-GLOBAL_STR(str1391, "Associative array keys must be strings: $x 'x' \"$x\" etc.");
-GLOBAL_STR(str1392, "Invalid variable name %r");
-GLOBAL_STR(str1393, "Invalid LHS to modify");
-GLOBAL_STR(str1394, "%s isn't implemented");
-GLOBAL_STR(str1395, "Invalid regex %r: %s");
-GLOBAL_STR(str1396, " \t\n");
-GLOBAL_STR(str1397, "IFS");
-GLOBAL_STR(str1398, "IFS shouldn't be an array");
-GLOBAL_STR(str1399, " \t\n");
-GLOBAL_STR(str1400, "IFS");
-GLOBAL_STR(str1401, " ");
-GLOBAL_STR(str1402, "");
-GLOBAL_STR(str1403, "IFS shouldn't be an array");
-GLOBAL_STR(str1404, "for -Wreturn-type in C++");
-GLOBAL_STR(str1405, "\\");
-GLOBAL_STR(str1406, "\\");
-GLOBAL_STR(str1407, "Invalid transition from %r with %r");
-GLOBAL_STR(str1408, "\u00ef\u00bf\u00bd");
-GLOBAL_STR(str1409, "");
-GLOBAL_STR(str1410, "Incomplete UTF-8 character");
-GLOBAL_STR(str1411, "Invalid UTF-8 continuation byte");
-GLOBAL_STR(str1412, "Invalid start of UTF-8 character");
+GLOBAL_STR(str1386, "Divide by zero");
+GLOBAL_STR(str1387, "Exponent can't be a negative number");
+GLOBAL_STR(str1388, "for -Wreturn-type in C++");
+GLOBAL_STR(str1389, "Associative array keys must be strings: $x 'x' \"$x\" etc.");
+GLOBAL_STR(str1390, "Invalid variable name %r");
+GLOBAL_STR(str1391, "Invalid LHS to modify");
+GLOBAL_STR(str1392, "%s isn't implemented");
+GLOBAL_STR(str1393, "Invalid regex %r: %s");
+GLOBAL_STR(str1394, " \t\n");
+GLOBAL_STR(str1395, "IFS");
+GLOBAL_STR(str1396, "IFS shouldn't be an array");
+GLOBAL_STR(str1397, " \t\n");
+GLOBAL_STR(str1398, "IFS");
+GLOBAL_STR(str1399, " ");
+GLOBAL_STR(str1400, "");
+GLOBAL_STR(str1401, "IFS shouldn't be an array");
+GLOBAL_STR(str1402, "for -Wreturn-type in C++");
+GLOBAL_STR(str1403, "\\");
+GLOBAL_STR(str1404, "\\");
+GLOBAL_STR(str1405, "Invalid transition from %r with %r");
+GLOBAL_STR(str1406, "\u00ef\u00bf\u00bd");
+GLOBAL_STR(str1407, "");
+GLOBAL_STR(str1408, "Incomplete UTF-8 character");
+GLOBAL_STR(str1409, "Invalid UTF-8 continuation byte");
+GLOBAL_STR(str1410, "Invalid start of UTF-8 character");
+GLOBAL_STR(str1411, "");
+GLOBAL_STR(str1412, "%s can't have an argument");
 GLOBAL_STR(str1413, "");
 GLOBAL_STR(str1414, "%s can't have an argument");
 GLOBAL_STR(str1415, "");
@@ -1427,24 +1427,24 @@ GLOBAL_STR(str1416, "%s can't have an argument");
 GLOBAL_STR(str1417, "");
 GLOBAL_STR(str1418, "%s can't have an argument");
 GLOBAL_STR(str1419, "");
-GLOBAL_STR(str1420, "%s can't have an argument");
-GLOBAL_STR(str1421, "");
-GLOBAL_STR(str1422, "<_GlobReplacer regex %r r %r>");
-GLOBAL_STR(str1423, "(%s)");
-GLOBAL_STR(str1424, "Error matching regex %r: %s");
-GLOBAL_STR(str1425, "^");
-GLOBAL_STR(str1426, "$");
-GLOBAL_STR(str1427, "\r");
-GLOBAL_STR(str1428, "<INVALID CR>");
-GLOBAL_STR(str1429, "\n");
-GLOBAL_STR(str1430, "<INVALID NEWLINE>");
-GLOBAL_STR(str1431, " `~!$&*()[]{}\\|;'\"<>?");
-GLOBAL_STR(str1432, "Left-hand side of this assignment is invalid");
-GLOBAL_STR(str1433, "Token can't be used in prefix position");
-GLOBAL_STR(str1434, "Token can't be used in infix position");
-GLOBAL_STR(str1435, "Parser expected %s, got %s");
-GLOBAL_STR(str1436, "Unexpected end of input");
-GLOBAL_STR(str1437, "POSIX shell arithmetic isn't allowed (parse_sh_arith)");
+GLOBAL_STR(str1420, "<_GlobReplacer regex %r r %r>");
+GLOBAL_STR(str1421, "(%s)");
+GLOBAL_STR(str1422, "Error matching regex %r: %s");
+GLOBAL_STR(str1423, "^");
+GLOBAL_STR(str1424, "$");
+GLOBAL_STR(str1425, "\r");
+GLOBAL_STR(str1426, "<INVALID CR>");
+GLOBAL_STR(str1427, "\n");
+GLOBAL_STR(str1428, "<INVALID NEWLINE>");
+GLOBAL_STR(str1429, " `~!$&*()[]{}\\|;'\"<>?");
+GLOBAL_STR(str1430, "Left-hand side of this assignment is invalid");
+GLOBAL_STR(str1431, "Token can't be used in prefix position");
+GLOBAL_STR(str1432, "Token can't be used in infix position");
+GLOBAL_STR(str1433, "Parser expected %s, got %s");
+GLOBAL_STR(str1434, "Unexpected end of input");
+GLOBAL_STR(str1435, "POSIX shell arithmetic isn't allowed (parse_sh_arith)");
+GLOBAL_STR(str1436, "");
+GLOBAL_STR(str1437, "");
 GLOBAL_STR(str1438, "");
 GLOBAL_STR(str1439, "");
 GLOBAL_STR(str1440, "");
@@ -1452,682 +1452,680 @@ GLOBAL_STR(str1441, "");
 GLOBAL_STR(str1442, "");
 GLOBAL_STR(str1443, "");
 GLOBAL_STR(str1444, "");
-GLOBAL_STR(str1445, "");
-GLOBAL_STR(str1446, "");
-GLOBAL_STR(str1447, "/");
-GLOBAL_STR(str1448, "/");
+GLOBAL_STR(str1445, "/");
+GLOBAL_STR(str1446, "/");
+GLOBAL_STR(str1447, "");
+GLOBAL_STR(str1448, "EOF");
 GLOBAL_STR(str1449, "");
-GLOBAL_STR(str1450, "EOF");
-GLOBAL_STR(str1451, "");
-GLOBAL_STR(str1452, "");
-GLOBAL_STR(str1453, " \t");
+GLOBAL_STR(str1450, "");
+GLOBAL_STR(str1451, " \t");
+GLOBAL_STR(str1452, "\n");
+GLOBAL_STR(str1453, "\n");
 GLOBAL_STR(str1454, "\n");
 GLOBAL_STR(str1455, "\n");
-GLOBAL_STR(str1456, "\n");
-GLOBAL_STR(str1457, "\n");
-GLOBAL_STR(str1458, "BASH_SOURCE");
-GLOBAL_STR(str1459, "FUNCNAME");
-GLOBAL_STR(str1460, "BASH_LINENO");
-GLOBAL_STR(str1461, "0");
-GLOBAL_STR(str1462, "0");
-GLOBAL_STR(str1463, "^([a-zA-Z_][a-zA-Z0-9_]*)((=|\\+=)(.*))?$");
-GLOBAL_STR(str1464, "Assignment builtin expected NAME=value, got %r");
-GLOBAL_STR(str1465, "+");
-GLOBAL_STR(str1466, "\\");
-GLOBAL_STR(str1467, "\\\\");
-GLOBAL_STR(str1468, "");
-GLOBAL_STR(str1469, "Can't substitute into word");
-GLOBAL_STR(str1470, "for -Wreturn-type in C++");
-GLOBAL_STR(str1471, "");
-GLOBAL_STR(str1472, "The length index of a array slice can't be negative: %d");
-GLOBAL_STR(str1473, "Can't slice associative arrays");
-GLOBAL_STR(str1474, "Slice op expected Str or BashArray");
-GLOBAL_STR(str1475, "i");
-GLOBAL_STR(str1476, "e");
-GLOBAL_STR(str1477, "f");
-GLOBAL_STR(str1478, "n");
-GLOBAL_STR(str1479, "u");
-GLOBAL_STR(str1480, "x");
-GLOBAL_STR(str1481, "C");
-GLOBAL_STR(str1482, "");
-GLOBAL_STR(str1483, "HOME");
-GLOBAL_STR(str1484, "Error expanding tilde (e.g. invalid user)");
-GLOBAL_STR(str1485, "Can't assign to special variable");
-GLOBAL_STR(str1486, "unset variable %r");
-GLOBAL_STR(str1487, "warning: ");
-GLOBAL_STR(str1488, "-1");
-GLOBAL_STR(str1489, "Length op expected Str, BashArray, BashAssoc");
-GLOBAL_STR(str1490, "Keys op expected Str");
-GLOBAL_STR(str1491, "Indirect expansion of array");
-GLOBAL_STR(str1492, "Indirect expansion of assoc array");
-GLOBAL_STR(str1493, "Var Ref op expected Str");
-GLOBAL_STR(str1494, "Unary op expected Str, BashArray, BashAssoc");
-GLOBAL_STR(str1495, "extended globs not supported in ${x//GLOB/}");
-GLOBAL_STR(str1496, "");
-GLOBAL_STR(str1497, "Pat Sub op expected Str, BashArray, BashAssoc");
-GLOBAL_STR(str1498, "warning: ");
+GLOBAL_STR(str1456, "BASH_SOURCE");
+GLOBAL_STR(str1457, "FUNCNAME");
+GLOBAL_STR(str1458, "BASH_LINENO");
+GLOBAL_STR(str1459, "0");
+GLOBAL_STR(str1460, "0");
+GLOBAL_STR(str1461, "^([a-zA-Z_][a-zA-Z0-9_]*)((=|\\+=)(.*))?$");
+GLOBAL_STR(str1462, "Assignment builtin expected NAME=value, got %r");
+GLOBAL_STR(str1463, "+");
+GLOBAL_STR(str1464, "\\");
+GLOBAL_STR(str1465, "\\\\");
+GLOBAL_STR(str1466, "");
+GLOBAL_STR(str1467, "Can't substitute into word");
+GLOBAL_STR(str1468, "for -Wreturn-type in C++");
+GLOBAL_STR(str1469, "");
+GLOBAL_STR(str1470, "The length index of a array slice can't be negative: %d");
+GLOBAL_STR(str1471, "Can't slice associative arrays");
+GLOBAL_STR(str1472, "Slice op expected Str or BashArray");
+GLOBAL_STR(str1473, "i");
+GLOBAL_STR(str1474, "e");
+GLOBAL_STR(str1475, "f");
+GLOBAL_STR(str1476, "n");
+GLOBAL_STR(str1477, "u");
+GLOBAL_STR(str1478, "x");
+GLOBAL_STR(str1479, "C");
+GLOBAL_STR(str1480, "");
+GLOBAL_STR(str1481, "HOME");
+GLOBAL_STR(str1482, "Error expanding tilde (e.g. invalid user)");
+GLOBAL_STR(str1483, "Can't assign to special variable");
+GLOBAL_STR(str1484, "unset variable %r");
+GLOBAL_STR(str1485, "warning: ");
+GLOBAL_STR(str1486, "-1");
+GLOBAL_STR(str1487, "Length op expected Str, BashArray, BashAssoc");
+GLOBAL_STR(str1488, "Keys op expected Str");
+GLOBAL_STR(str1489, "Indirect expansion of array");
+GLOBAL_STR(str1490, "Indirect expansion of assoc array");
+GLOBAL_STR(str1491, "Var Ref op expected Str");
+GLOBAL_STR(str1492, "Unary op expected Str, BashArray, BashAssoc");
+GLOBAL_STR(str1493, "extended globs not supported in ${x//GLOB/}");
+GLOBAL_STR(str1494, "");
+GLOBAL_STR(str1495, "Pat Sub op expected Str, BashArray, BashAssoc");
+GLOBAL_STR(str1496, "warning: ");
+GLOBAL_STR(str1497, "");
+GLOBAL_STR(str1498, "\u0001");
 GLOBAL_STR(str1499, "");
-GLOBAL_STR(str1500, "\u0001");
+GLOBAL_STR(str1500, "\u0002");
 GLOBAL_STR(str1501, "");
-GLOBAL_STR(str1502, "\u0002");
-GLOBAL_STR(str1503, "");
-GLOBAL_STR(str1504, "Can't use @P on %s");
-GLOBAL_STR(str1505, " ");
-GLOBAL_STR(str1506, "Can't use @Q on %s");
-GLOBAL_STR(str1507, "a");
-GLOBAL_STR(str1508, "A");
-GLOBAL_STR(str1509, "r");
-GLOBAL_STR(str1510, "x");
-GLOBAL_STR(str1511, "n");
-GLOBAL_STR(str1512, "");
-GLOBAL_STR(str1513, "Var op %r not implemented");
-GLOBAL_STR(str1514, "Can't index string with @");
-GLOBAL_STR(str1515, "Can't index string with *");
-GLOBAL_STR(str1516, "Can't index string %r with integer");
-GLOBAL_STR(str1517, "Index op expected BashArray, BashAssoc");
-GLOBAL_STR(str1518, "");
-GLOBAL_STR(str1519, "");
-GLOBAL_STR(str1520, "$");
-GLOBAL_STR(str1521, "Undefined variable %r");
-GLOBAL_STR(str1522, "Undefined array %r");
-GLOBAL_STR(str1523, "Array %r can't be referred to as a scalar (without @ or *)");
-GLOBAL_STR(str1524, "Test operation not allowed with ${!array[@]}");
-GLOBAL_STR(str1525, "Not implemented");
-GLOBAL_STR(str1526, "Illegal array word part (strict_array)");
-GLOBAL_STR(str1527, " ");
-GLOBAL_STR(str1528, "");
-GLOBAL_STR(str1529, "Array %r can't be referred to as a scalar (without @ or *)");
-GLOBAL_STR(str1530, "@(");
-GLOBAL_STR(str1531, "|");
-GLOBAL_STR(str1532, ")");
-GLOBAL_STR(str1533, "Extended globs and arrays can't appear in the same word");
-GLOBAL_STR(str1534, "*");
-GLOBAL_STR(str1535, "Unexpected array literal");
-GLOBAL_STR(str1536, "Unexpected associative array literal");
+GLOBAL_STR(str1502, "Can't use @P on %s");
+GLOBAL_STR(str1503, " ");
+GLOBAL_STR(str1504, "Can't use @Q on %s");
+GLOBAL_STR(str1505, "a");
+GLOBAL_STR(str1506, "A");
+GLOBAL_STR(str1507, "r");
+GLOBAL_STR(str1508, "x");
+GLOBAL_STR(str1509, "n");
+GLOBAL_STR(str1510, "");
+GLOBAL_STR(str1511, "Var op %r not implemented");
+GLOBAL_STR(str1512, "Can't index string with @");
+GLOBAL_STR(str1513, "Can't index string with *");
+GLOBAL_STR(str1514, "Can't index string %r with integer");
+GLOBAL_STR(str1515, "Index op expected BashArray, BashAssoc");
+GLOBAL_STR(str1516, "");
+GLOBAL_STR(str1517, "");
+GLOBAL_STR(str1518, "$");
+GLOBAL_STR(str1519, "Undefined variable %r");
+GLOBAL_STR(str1520, "Undefined array %r");
+GLOBAL_STR(str1521, "Array %r can't be referred to as a scalar (without @ or *)");
+GLOBAL_STR(str1522, "Test operation not allowed with ${!array[@]}");
+GLOBAL_STR(str1523, "Not implemented");
+GLOBAL_STR(str1524, "Illegal array word part (strict_array)");
+GLOBAL_STR(str1525, " ");
+GLOBAL_STR(str1526, "");
+GLOBAL_STR(str1527, "Array %r can't be referred to as a scalar (without @ or *)");
+GLOBAL_STR(str1528, "@(");
+GLOBAL_STR(str1529, "|");
+GLOBAL_STR(str1530, ")");
+GLOBAL_STR(str1531, "Extended globs and arrays can't appear in the same word");
+GLOBAL_STR(str1532, "*");
+GLOBAL_STR(str1533, "Unexpected array literal");
+GLOBAL_STR(str1534, "Unexpected associative array literal");
+GLOBAL_STR(str1535, "");
+GLOBAL_STR(str1536, "");
 GLOBAL_STR(str1537, "");
-GLOBAL_STR(str1538, "");
-GLOBAL_STR(str1539, "");
-GLOBAL_STR(str1540, "Extended glob %r matched no files");
-GLOBAL_STR(str1541, "Extended glob not allowed in this word");
-GLOBAL_STR(str1542, "This word should yield a string, but it contains an array");
-GLOBAL_STR(str1543, " ");
-GLOBAL_STR(str1544, "extended glob not allowed in this word");
+GLOBAL_STR(str1538, "Extended glob %r matched no files");
+GLOBAL_STR(str1539, "Extended glob not allowed in this word");
+GLOBAL_STR(str1540, "This word should yield a string, but it contains an array");
+GLOBAL_STR(str1541, " ");
+GLOBAL_STR(str1542, "extended glob not allowed in this word");
+GLOBAL_STR(str1543, "");
+GLOBAL_STR(str1544, "");
 GLOBAL_STR(str1545, "");
-GLOBAL_STR(str1546, "");
-GLOBAL_STR(str1547, "");
-GLOBAL_STR(str1548, "<Runtime error: %s>");
-GLOBAL_STR(str1549, "<I/O error: %s>");
-GLOBAL_STR(str1550, "<Ctrl-C>");
+GLOBAL_STR(str1546, "<Runtime error: %s>");
+GLOBAL_STR(str1547, "<I/O error: %s>");
+GLOBAL_STR(str1548, "<Ctrl-C>");
+GLOBAL_STR(str1549, "");
+GLOBAL_STR(str1550, "");
 GLOBAL_STR(str1551, "");
 GLOBAL_STR(str1552, "");
-GLOBAL_STR(str1553, "");
+GLOBAL_STR(str1553, "Pattern %r matched no files");
 GLOBAL_STR(str1554, "");
-GLOBAL_STR(str1555, "Pattern %r matched no files");
-GLOBAL_STR(str1556, "");
-GLOBAL_STR(str1557, "LHS array not allowed in assignment builtin");
-GLOBAL_STR(str1558, "-");
-GLOBAL_STR(str1559, "+");
-GLOBAL_STR(str1560, "f");
-GLOBAL_STR(str1561, "F");
-GLOBAL_STR(str1562, "Pattern %r matched no files");
-GLOBAL_STR(str1563, "");
-GLOBAL_STR(str1564, "__NO_COMMAND_SUB__");
-GLOBAL_STR(str1565, "__NO_PROCESS_SUB__");
-GLOBAL_STR(str1566, "Expected : or } in slice");
-GLOBAL_STR(str1567, "Expected } after replacement string, got %s");
-GLOBAL_STR(str1568, "Expected ] to close subscript");
-GLOBAL_STR(str1569, "Expected } to close ${");
+GLOBAL_STR(str1555, "LHS array not allowed in assignment builtin");
+GLOBAL_STR(str1556, "-");
+GLOBAL_STR(str1557, "+");
+GLOBAL_STR(str1558, "f");
+GLOBAL_STR(str1559, "F");
+GLOBAL_STR(str1560, "Pattern %r matched no files");
+GLOBAL_STR(str1561, "");
+GLOBAL_STR(str1562, "__NO_COMMAND_SUB__");
+GLOBAL_STR(str1563, "__NO_PROCESS_SUB__");
+GLOBAL_STR(str1564, "Expected : or } in slice");
+GLOBAL_STR(str1565, "Expected } after replacement string, got %s");
+GLOBAL_STR(str1566, "Expected ] to close subscript");
+GLOBAL_STR(str1567, "Expected } to close ${");
+GLOBAL_STR(str1568, "Expected } to close ${");
+GLOBAL_STR(str1569, "Expected a constant argument");
 GLOBAL_STR(str1570, "Expected } to close ${");
-GLOBAL_STR(str1571, "Expected a constant argument");
-GLOBAL_STR(str1572, "Expected } to close ${");
-GLOBAL_STR(str1573, "Expected } to close ${");
+GLOBAL_STR(str1571, "Expected } to close ${");
+GLOBAL_STR(str1572, "Unexpected token in ${} (%s)");
+GLOBAL_STR(str1573, "VOp2");
 GLOBAL_STR(str1574, "Unexpected token in ${} (%s)");
-GLOBAL_STR(str1575, "VOp2");
-GLOBAL_STR(str1576, "Unexpected token in ${} (%s)");
-GLOBAL_STR(str1577, "VOp3");
-GLOBAL_STR(str1578, "Expected } to close ${");
-GLOBAL_STR(str1579, "Expected } after length expression");
-GLOBAL_STR(str1580, "TODO: ${.myproc builtin sub}");
-GLOBAL_STR(str1581, "Unexpected token in ${}");
-GLOBAL_STR(str1582, "\\");
-GLOBAL_STR(str1583, "Strings with backslashes should look like r'\\n' or $'\\n'");
-GLOBAL_STR(str1584, "Use \\xhh or \\u{...} instead of octal escapes in YSH strings");
-GLOBAL_STR(str1585, "Invalid hex escape in YSH string (must be \\xHH)");
-GLOBAL_STR(str1586, "Invalid char escape in C-style string literal");
-GLOBAL_STR(str1587, "Unexpected EOF in single-quoted string that began here");
-GLOBAL_STR(str1588, "\"");
-GLOBAL_STR(str1589, "'");
-GLOBAL_STR(str1590, "Unexpected EOF reading extended glob that began here");
-GLOBAL_STR(str1591, "Invalid char escape in double quoted string");
-GLOBAL_STR(str1592, "Literal $ should be quoted like \\$");
-GLOBAL_STR(str1593, "Invalid backtick: use $(cmd) or \\` in YSH strings");
-GLOBAL_STR(str1594, "Unexpected EOF reading double-quoted string that began here");
-GLOBAL_STR(str1595, "Use $(cmd) instead of backticks (parse_backticks)");
-GLOBAL_STR(str1596, "Unexpected EOF while looking for closing backtick");
-GLOBAL_STR(str1597, "");
-GLOBAL_STR(str1598, "backticks");
-GLOBAL_STR(str1599, "Invalid proc name %s");
-GLOBAL_STR(str1600, "Unexpected token after arithmetic expression (%s != %s)");
-GLOBAL_STR(str1601, "Expected second ) to end arith sub");
-GLOBAL_STR(str1602, "Expected second ) to end arith statement");
-GLOBAL_STR(str1603, "Expected ; here");
-GLOBAL_STR(str1604, "Expected ; here");
-GLOBAL_STR(str1605, "Expected ) to end for loop expression");
-GLOBAL_STR(str1606, "Expected ( after =");
-GLOBAL_STR(str1607, "Unexpected token in array literal");
-GLOBAL_STR(str1608, "Expected associative array pair");
-GLOBAL_STR(str1609, "Invalid char escape (parse_backslash)");
-GLOBAL_STR(str1610, "Unexpected token after array literal");
-GLOBAL_STR(str1611, "Unexpected token after array splice");
-GLOBAL_STR(str1612, "Unexpected token after expr splice");
-GLOBAL_STR(str1613, "TODO: @{.myproc builtin sub}");
-GLOBAL_STR(str1614, "Literal @ starting a word must be quoted (parse_at_all)");
-GLOBAL_STR(str1615, "/");
-GLOBAL_STR(str1616, "next_byte %r");
-GLOBAL_STR(str1617, "Literal $ should be quoted like \\$");
-GLOBAL_STR(str1618, "Unexpected token after @()");
-GLOBAL_STR(str1619, "Word has unbalanced { }.  Maybe add a space or quote it like \\{");
-GLOBAL_STR(str1620, "Unexpected parts after triple quoted string");
-GLOBAL_STR(str1621, "Unexpected token while parsing arithmetic: %r");
-GLOBAL_STR(str1622, "Invalid blank line in multiline mode");
-GLOBAL_STR(str1623, "r");
-GLOBAL_STR(str1624, "Unhandled: %s (%s)");
-GLOBAL_STR(str1625, "Expected var name");
-GLOBAL_STR(str1626, "Expected end of var ref expression");
-GLOBAL_STR(str1627, "%s: type=%d, tok=%r");
-GLOBAL_STR(str1628, "too much input");
-GLOBAL_STR(str1629, "bad input");
-GLOBAL_STR(str1630, "&");
-GLOBAL_STR(str1631, "&amp;");
-GLOBAL_STR(str1632, "<");
-GLOBAL_STR(str1633, "&lt;");
-GLOBAL_STR(str1634, ">");
-GLOBAL_STR(str1635, "&gt;");
-GLOBAL_STR(str1636, ".");
+GLOBAL_STR(str1575, "VOp3");
+GLOBAL_STR(str1576, "Expected } to close ${");
+GLOBAL_STR(str1577, "Expected } after length expression");
+GLOBAL_STR(str1578, "TODO: ${.myproc builtin sub}");
+GLOBAL_STR(str1579, "Unexpected token in ${}");
+GLOBAL_STR(str1580, "\\");
+GLOBAL_STR(str1581, "Strings with backslashes should look like r'\\n' or $'\\n'");
+GLOBAL_STR(str1582, "Use \\xhh or \\u{...} instead of octal escapes in YSH strings");
+GLOBAL_STR(str1583, "Invalid hex escape in YSH string (must be \\xHH)");
+GLOBAL_STR(str1584, "Invalid char escape in C-style string literal");
+GLOBAL_STR(str1585, "Unexpected EOF in single-quoted string that began here");
+GLOBAL_STR(str1586, "\"");
+GLOBAL_STR(str1587, "'");
+GLOBAL_STR(str1588, "Unexpected EOF reading extended glob that began here");
+GLOBAL_STR(str1589, "Invalid char escape in double quoted string");
+GLOBAL_STR(str1590, "Literal $ should be quoted like \\$");
+GLOBAL_STR(str1591, "Invalid backtick: use $(cmd) or \\` in YSH strings");
+GLOBAL_STR(str1592, "Unexpected EOF reading double-quoted string that began here");
+GLOBAL_STR(str1593, "Use $(cmd) instead of backticks (parse_backticks)");
+GLOBAL_STR(str1594, "Unexpected EOF while looking for closing backtick");
+GLOBAL_STR(str1595, "");
+GLOBAL_STR(str1596, "backticks");
+GLOBAL_STR(str1597, "Invalid proc name %s");
+GLOBAL_STR(str1598, "Unexpected token after arithmetic expression (%s != %s)");
+GLOBAL_STR(str1599, "Expected second ) to end arith sub");
+GLOBAL_STR(str1600, "Expected second ) to end arith statement");
+GLOBAL_STR(str1601, "Expected ; here");
+GLOBAL_STR(str1602, "Expected ; here");
+GLOBAL_STR(str1603, "Expected ) to end for loop expression");
+GLOBAL_STR(str1604, "Expected ( after =");
+GLOBAL_STR(str1605, "Unexpected token in array literal");
+GLOBAL_STR(str1606, "Expected associative array pair");
+GLOBAL_STR(str1607, "Invalid char escape (parse_backslash)");
+GLOBAL_STR(str1608, "Unexpected token after array literal");
+GLOBAL_STR(str1609, "Unexpected token after array splice");
+GLOBAL_STR(str1610, "Unexpected token after expr splice");
+GLOBAL_STR(str1611, "TODO: @{.myproc builtin sub}");
+GLOBAL_STR(str1612, "Literal @ starting a word must be quoted (parse_at_all)");
+GLOBAL_STR(str1613, "/");
+GLOBAL_STR(str1614, "next_byte %r");
+GLOBAL_STR(str1615, "Literal $ should be quoted like \\$");
+GLOBAL_STR(str1616, "Unexpected token after @()");
+GLOBAL_STR(str1617, "Word has unbalanced { }.  Maybe add a space or quote it like \\{");
+GLOBAL_STR(str1618, "Unexpected parts after triple quoted string");
+GLOBAL_STR(str1619, "Unexpected token while parsing arithmetic: %r");
+GLOBAL_STR(str1620, "Invalid blank line in multiline mode");
+GLOBAL_STR(str1621, "r");
+GLOBAL_STR(str1622, "Unhandled: %s (%s)");
+GLOBAL_STR(str1623, "Expected var name");
+GLOBAL_STR(str1624, "Expected end of var ref expression");
+GLOBAL_STR(str1625, "%s: type=%d, tok=%r");
+GLOBAL_STR(str1626, "too much input");
+GLOBAL_STR(str1627, "bad input");
+GLOBAL_STR(str1628, "&");
+GLOBAL_STR(str1629, "&amp;");
+GLOBAL_STR(str1630, "<");
+GLOBAL_STR(str1631, "&lt;");
+GLOBAL_STR(str1632, ">");
+GLOBAL_STR(str1633, "&gt;");
+GLOBAL_STR(str1634, ".");
+GLOBAL_STR(str1635, "/");
+GLOBAL_STR(str1636, "/");
 GLOBAL_STR(str1637, "/");
-GLOBAL_STR(str1638, "/");
+GLOBAL_STR(str1638, "%s/%s");
 GLOBAL_STR(str1639, "/");
-GLOBAL_STR(str1640, "%s/%s");
+GLOBAL_STR(str1640, "");
 GLOBAL_STR(str1641, "/");
-GLOBAL_STR(str1642, "");
+GLOBAL_STR(str1642, "/");
 GLOBAL_STR(str1643, "/");
-GLOBAL_STR(str1644, "/");
-GLOBAL_STR(str1645, "/");
-GLOBAL_STR(str1646, ".");
-GLOBAL_STR(str1647, "");
-GLOBAL_STR(str1648, "/");
-GLOBAL_STR(str1649, "//");
-GLOBAL_STR(str1650, "///");
-GLOBAL_STR(str1651, "/");
-GLOBAL_STR(str1652, ".");
-GLOBAL_STR(str1653, "..");
-GLOBAL_STR(str1654, "..");
-GLOBAL_STR(str1655, "/");
-GLOBAL_STR(str1656, "Empty file with EOF token on invalid line:");
-GLOBAL_STR(str1657, "%s");
-GLOBAL_STR(str1658, "%5d %-20s %r");
-GLOBAL_STR(str1659, "(%d tokens)");
-GLOBAL_STR(str1660, "SPID %d = %r");
-GLOBAL_STR(str1661, "Invalid here doc delimiter");
-GLOBAL_STR(str1662, "<<<");
-GLOBAL_STR(str1663, " '''");
-GLOBAL_STR(str1664, " \"\"\"");
-GLOBAL_STR(str1665, "'''\n");
-GLOBAL_STR(str1666, "\"\"\"\n");
+GLOBAL_STR(str1644, ".");
+GLOBAL_STR(str1645, "");
+GLOBAL_STR(str1646, "/");
+GLOBAL_STR(str1647, "//");
+GLOBAL_STR(str1648, "///");
+GLOBAL_STR(str1649, "/");
+GLOBAL_STR(str1650, ".");
+GLOBAL_STR(str1651, "..");
+GLOBAL_STR(str1652, "..");
+GLOBAL_STR(str1653, "/");
+GLOBAL_STR(str1654, "Empty file with EOF token on invalid line:");
+GLOBAL_STR(str1655, "%s");
+GLOBAL_STR(str1656, "%5d %-20s %r");
+GLOBAL_STR(str1657, "(%d tokens)");
+GLOBAL_STR(str1658, "SPID %d = %r");
+GLOBAL_STR(str1659, "Invalid here doc delimiter");
+GLOBAL_STR(str1660, "<<<");
+GLOBAL_STR(str1661, " '''");
+GLOBAL_STR(str1662, " \"\"\"");
+GLOBAL_STR(str1663, "'''\n");
+GLOBAL_STR(str1664, "\"\"\"\n");
+GLOBAL_STR(str1665, "setvar ");
+GLOBAL_STR(str1666, "set ");
 GLOBAL_STR(str1667, "setvar ");
-GLOBAL_STR(str1668, "set ");
-GLOBAL_STR(str1669, "setvar ");
-GLOBAL_STR(str1670, " = ");
-GLOBAL_STR(str1671, "''");
-GLOBAL_STR(str1672, ",");
-GLOBAL_STR(str1673, "[");
-GLOBAL_STR(str1674, "]");
-GLOBAL_STR(str1675, "test");
-GLOBAL_STR(str1676, "Got [ without ]");
-GLOBAL_STR(str1677, ".");
-GLOBAL_STR(str1678, "source");
-GLOBAL_STR(str1679, "do {");
-GLOBAL_STR(str1680, "shell {");
-GLOBAL_STR(str1681, "}");
-GLOBAL_STR(str1682, "proc %s ");
-GLOBAL_STR(str1683, "{");
-GLOBAL_STR(str1684, "}");
-GLOBAL_STR(str1685, "for %s in @ARGV ");
-GLOBAL_STR(str1686, "while !");
+GLOBAL_STR(str1668, " = ");
+GLOBAL_STR(str1669, "''");
+GLOBAL_STR(str1670, ",");
+GLOBAL_STR(str1671, "[");
+GLOBAL_STR(str1672, "]");
+GLOBAL_STR(str1673, "test");
+GLOBAL_STR(str1674, "Got [ without ]");
+GLOBAL_STR(str1675, ".");
+GLOBAL_STR(str1676, "source");
+GLOBAL_STR(str1677, "do {");
+GLOBAL_STR(str1678, "shell {");
+GLOBAL_STR(str1679, "}");
+GLOBAL_STR(str1680, "proc %s ");
+GLOBAL_STR(str1681, "{");
+GLOBAL_STR(str1682, "}");
+GLOBAL_STR(str1683, "for %s in @ARGV ");
+GLOBAL_STR(str1684, "while !");
+GLOBAL_STR(str1685, "} ");
+GLOBAL_STR(str1686, "{");
 GLOBAL_STR(str1687, "} ");
-GLOBAL_STR(str1688, "{");
-GLOBAL_STR(str1689, "} ");
-GLOBAL_STR(str1690, " {");
-GLOBAL_STR(str1691, "}");
-GLOBAL_STR(str1692, " (");
-GLOBAL_STR(str1693, ") ");
-GLOBAL_STR(str1694, "{");
-GLOBAL_STR(str1695, " {");
+GLOBAL_STR(str1688, " {");
+GLOBAL_STR(str1689, "}");
+GLOBAL_STR(str1690, " (");
+GLOBAL_STR(str1691, ") ");
+GLOBAL_STR(str1692, "{");
+GLOBAL_STR(str1693, " {");
+GLOBAL_STR(str1694, "}");
+GLOBAL_STR(str1695, "}\n");
 GLOBAL_STR(str1696, "}");
-GLOBAL_STR(str1697, "}\n");
-GLOBAL_STR(str1698, "}");
-GLOBAL_STR(str1699, "''");
-GLOBAL_STR(str1700, "'");
-GLOBAL_STR(str1701, "'");
-GLOBAL_STR(str1702, "\"");
-GLOBAL_STR(str1703, "\"");
-GLOBAL_STR(str1704, "@ARGV");
-GLOBAL_STR(str1705, "\n");
-GLOBAL_STR(str1706, "'%s'");
-GLOBAL_STR(str1707, "WARNING: %s has no span_id");
-GLOBAL_STR(str1708, "$[join(ARGV)]");
-GLOBAL_STR(str1709, "$[join(ARGV)]");
-GLOBAL_STR(str1710, "$Argc");
-GLOBAL_STR(str1711, "$(");
-GLOBAL_STR(str1712, ")");
-GLOBAL_STR(str1713, "Undefined variable %r");
-GLOBAL_STR(str1714, "List index should be Int");
-GLOBAL_STR(str1715, "Dict index should be Str");
-GLOBAL_STR(str1716, "obj[index] expected List or Dict");
-GLOBAL_STR(str1717, "Expr splice ");
-GLOBAL_STR(str1718, "<Runtime error: %s>");
-GLOBAL_STR(str1719, "<I/O error: %s>");
-GLOBAL_STR(str1720, "<Ctrl-C>");
-GLOBAL_STR(str1721, "Splice ");
-GLOBAL_STR(str1722, "_");
-GLOBAL_STR(str1723, "");
-GLOBAL_STR(str1724, "Negation expected Int or Float");
-GLOBAL_STR(str1725, "~ expected Int");
-GLOBAL_STR(str1726, "for C++ compiler");
-GLOBAL_STR(str1727, "Divide by zero");
-GLOBAL_STR(str1728, "Divide by zero");
-GLOBAL_STR(str1729, "Binary operator expected numbers, got %s and %s");
-GLOBAL_STR(str1730, "Left operand should be Int");
-GLOBAL_STR(str1731, "Right operand should be Int");
-GLOBAL_STR(str1732, "Divide by zero");
-GLOBAL_STR(str1733, "Divide by zero");
-GLOBAL_STR(str1734, "Exponent can't be a negative number");
-GLOBAL_STR(str1735, "Expected Str ++ Str or List ++ List, got %s ++ %s");
-GLOBAL_STR(str1736, "Comparison operator expected numbers, got %s and %s");
-GLOBAL_STR(str1737, "Mismatched types");
-GLOBAL_STR(str1738, "Mismatched types");
+GLOBAL_STR(str1697, "''");
+GLOBAL_STR(str1698, "'");
+GLOBAL_STR(str1699, "'");
+GLOBAL_STR(str1700, "\"");
+GLOBAL_STR(str1701, "\"");
+GLOBAL_STR(str1702, "@ARGV");
+GLOBAL_STR(str1703, "\n");
+GLOBAL_STR(str1704, "'%s'");
+GLOBAL_STR(str1705, "WARNING: %s has no span_id");
+GLOBAL_STR(str1706, "$[join(ARGV)]");
+GLOBAL_STR(str1707, "$[join(ARGV)]");
+GLOBAL_STR(str1708, "$Argc");
+GLOBAL_STR(str1709, "$(");
+GLOBAL_STR(str1710, ")");
+GLOBAL_STR(str1711, "Undefined variable %r");
+GLOBAL_STR(str1712, "List index should be Int");
+GLOBAL_STR(str1713, "Dict index should be Str");
+GLOBAL_STR(str1714, "obj[index] expected List or Dict");
+GLOBAL_STR(str1715, "Expr splice ");
+GLOBAL_STR(str1716, "<Runtime error: %s>");
+GLOBAL_STR(str1717, "<I/O error: %s>");
+GLOBAL_STR(str1718, "<Ctrl-C>");
+GLOBAL_STR(str1719, "Splice ");
+GLOBAL_STR(str1720, "_");
+GLOBAL_STR(str1721, "");
+GLOBAL_STR(str1722, "Negation expected Int or Float");
+GLOBAL_STR(str1723, "~ expected Int");
+GLOBAL_STR(str1724, "for C++ compiler");
+GLOBAL_STR(str1725, "Divide by zero");
+GLOBAL_STR(str1726, "Divide by zero");
+GLOBAL_STR(str1727, "Binary operator expected numbers, got %s and %s");
+GLOBAL_STR(str1728, "Left operand should be Int");
+GLOBAL_STR(str1729, "Right operand should be Int");
+GLOBAL_STR(str1730, "Divide by zero");
+GLOBAL_STR(str1731, "Divide by zero");
+GLOBAL_STR(str1732, "Exponent can't be a negative number");
+GLOBAL_STR(str1733, "Expected Str ++ Str or List ++ List, got %s ++ %s");
+GLOBAL_STR(str1734, "Comparison operator expected numbers, got %s and %s");
+GLOBAL_STR(str1735, "Mismatched types");
+GLOBAL_STR(str1736, "Mismatched types");
+GLOBAL_STR(str1737, "LHS must be Str");
+GLOBAL_STR(str1738, "RHS must be Str");
 GLOBAL_STR(str1739, "LHS must be Str");
 GLOBAL_STR(str1740, "RHS must be Str");
-GLOBAL_STR(str1741, "LHS must be Str");
-GLOBAL_STR(str1742, "RHS must be Str");
-GLOBAL_STR(str1743, "~== expects a string on the left");
-GLOBAL_STR(str1744, "true");
-GLOBAL_STR(str1745, "false");
-GLOBAL_STR(str1746, "left %r left2 %r");
-GLOBAL_STR(str1747, "~== expects Str, Int, or Bool on the right");
-GLOBAL_STR(str1748, "Invalid regex %r");
-GLOBAL_STR(str1749, "Expected a function or method");
-GLOBAL_STR(str1750, "Shouldn't have been bound");
+GLOBAL_STR(str1741, "~== expects a string on the left");
+GLOBAL_STR(str1742, "true");
+GLOBAL_STR(str1743, "false");
+GLOBAL_STR(str1744, "left %r left2 %r");
+GLOBAL_STR(str1745, "~== expects Str, Int, or Bool on the right");
+GLOBAL_STR(str1746, "Invalid regex %r");
+GLOBAL_STR(str1747, "Expected a function or method");
+GLOBAL_STR(str1748, "Shouldn't have been bound");
+GLOBAL_STR(str1749, "index out of range");
+GLOBAL_STR(str1750, "Str index expected Int or Slice");
 GLOBAL_STR(str1751, "index out of range");
-GLOBAL_STR(str1752, "Str index expected Int or Slice");
-GLOBAL_STR(str1753, "index out of range");
-GLOBAL_STR(str1754, "List index expected Int or Slice");
-GLOBAL_STR(str1755, "Dict index expected Str");
-GLOBAL_STR(str1756, "dict entry not found");
-GLOBAL_STR(str1757, "Subscript expected Str, List, or Dict");
-GLOBAL_STR(str1758, "Method %r does not exist on type %s");
-GLOBAL_STR(str1759, "Fat arrow => expects method or function");
-GLOBAL_STR(str1760, "dict entry not found");
-GLOBAL_STR(str1761, "Dot operator expected Dict");
-GLOBAL_STR(str1762, "Slice begin should be Int");
-GLOBAL_STR(str1763, "Slice end should be Int");
-GLOBAL_STR(str1764, "Range begin should be Int");
-GLOBAL_STR(str1765, "Range end should be Int");
-GLOBAL_STR(str1766, "Dict keys must be strings");
-GLOBAL_STR(str1767, "List comprehension reserved but not implemented");
-GLOBAL_STR(str1768, "Generator expression reserved but not implemented");
-GLOBAL_STR(str1769, "Lambda reserved but not implemented");
-GLOBAL_STR(str1770, "Eggex char class splice expected Str");
-GLOBAL_STR(str1771, "Use unquoted char literal for byte %d, which is >= 128 (avoid confusing a set of bytes with a sequence)");
-GLOBAL_STR(str1772, "dot");
-GLOBAL_STR(str1773, "%start");
-GLOBAL_STR(str1774, "%end");
-GLOBAL_STR(str1775, "Eggex splice expected Str or Eggex");
-GLOBAL_STR(str1776, "Use === to be exact, or ~== to convert types");
-GLOBAL_STR(str1777, "");
-GLOBAL_STR(str1778, " (%s)");
-GLOBAL_STR(str1779, "Unexpected token in expression mode%s");
-GLOBAL_STR(str1780, "Expected ) to close");
-GLOBAL_STR(str1781, "Expected ) to close");
-GLOBAL_STR(str1782, "Unexpected token in array literal");
-GLOBAL_STR(str1783, "Syntax error in expression (near %s)");
-GLOBAL_STR(str1784, "d");
-GLOBAL_STR(str1785, "d");
-GLOBAL_STR(str1786, "w");
+GLOBAL_STR(str1752, "List index expected Int or Slice");
+GLOBAL_STR(str1753, "Dict index expected Str");
+GLOBAL_STR(str1754, "dict entry not found");
+GLOBAL_STR(str1755, "Subscript expected Str, List, or Dict");
+GLOBAL_STR(str1756, "Method %r does not exist on type %s");
+GLOBAL_STR(str1757, "Fat arrow => expects method or function");
+GLOBAL_STR(str1758, "dict entry not found");
+GLOBAL_STR(str1759, "Dot operator expected Dict");
+GLOBAL_STR(str1760, "Slice begin should be Int");
+GLOBAL_STR(str1761, "Slice end should be Int");
+GLOBAL_STR(str1762, "Range begin should be Int");
+GLOBAL_STR(str1763, "Range end should be Int");
+GLOBAL_STR(str1764, "Dict keys must be strings");
+GLOBAL_STR(str1765, "List comprehension reserved but not implemented");
+GLOBAL_STR(str1766, "Generator expression reserved but not implemented");
+GLOBAL_STR(str1767, "Lambda reserved but not implemented");
+GLOBAL_STR(str1768, "Eggex char class splice expected Str");
+GLOBAL_STR(str1769, "Use unquoted char literal for byte %d, which is >= 128 (avoid confusing a set of bytes with a sequence)");
+GLOBAL_STR(str1770, "dot");
+GLOBAL_STR(str1771, "%start");
+GLOBAL_STR(str1772, "%end");
+GLOBAL_STR(str1773, "Eggex splice expected Str or Eggex");
+GLOBAL_STR(str1774, "Use === to be exact, or ~== to convert types");
+GLOBAL_STR(str1775, "");
+GLOBAL_STR(str1776, " (%s)");
+GLOBAL_STR(str1777, "Unexpected token in expression mode%s");
+GLOBAL_STR(str1778, "Expected ) to close");
+GLOBAL_STR(str1779, "Expected ) to close");
+GLOBAL_STR(str1780, "Unexpected token in array literal");
+GLOBAL_STR(str1781, "Syntax error in expression (near %s)");
+GLOBAL_STR(str1782, "d");
+GLOBAL_STR(str1783, "d");
+GLOBAL_STR(str1784, "w");
+GLOBAL_STR(str1785, "w");
+GLOBAL_STR(str1786, "word");
 GLOBAL_STR(str1787, "w");
-GLOBAL_STR(str1788, "word");
-GLOBAL_STR(str1789, "w");
-GLOBAL_STR(str1790, "s");
-GLOBAL_STR(str1791, "s");
-GLOBAL_STR(str1792, "alnum");
-GLOBAL_STR(str1793, "cntrl");
-GLOBAL_STR(str1794, "lower");
-GLOBAL_STR(str1795, "space");
-GLOBAL_STR(str1796, "alpha");
-GLOBAL_STR(str1797, "digit");
-GLOBAL_STR(str1798, "print");
-GLOBAL_STR(str1799, "upper");
-GLOBAL_STR(str1800, "blank");
-GLOBAL_STR(str1801, "graph");
-GLOBAL_STR(str1802, "punct");
-GLOBAL_STR(str1803, "xdigit");
-GLOBAL_STR(str1804, "Range start/end shouldn't have more than one character");
-GLOBAL_STR(str1805, "Only 1 subscript is accepted");
-GLOBAL_STR(str1806, "Invalid trailing comma");
-GLOBAL_STR(str1807, "testlist_comp");
-GLOBAL_STR(str1808, "Places in containers not implemented yet");
-GLOBAL_STR(str1809, "Units suffix not implemented");
-GLOBAL_STR(str1810, "unix suffix implemented");
-GLOBAL_STR(str1811, "In expressions, remove $ and use `%s`, or sometimes \"$%s\"");
-GLOBAL_STR(str1812, "PNode type %d (%s) wasn't handled");
-GLOBAL_STR(str1813, "Can't assign to this attribute expr");
-GLOBAL_STR(str1814, "Can't assign to this expression");
-GLOBAL_STR(str1815, "Multiple assignment must use =");
-GLOBAL_STR(str1816, "Positional args must come before the semi-colon");
-GLOBAL_STR(str1817, "Positional args must come before the semi-colon");
-GLOBAL_STR(str1818, "Str");
-GLOBAL_STR(str1819, "Ref");
-GLOBAL_STR(str1820, "Word params may only have type Str or Ref");
-GLOBAL_STR(str1821, "Unexpected type parameters");
-GLOBAL_STR(str1822, "Only 1 block param is allowed");
-GLOBAL_STR(str1823, "Rest param isn't allowed for blocks");
-GLOBAL_STR(str1824, "Command");
-GLOBAL_STR(str1825, "Block param must have type Command");
-GLOBAL_STR(str1826, "Unexpected type parameters");
-GLOBAL_STR(str1827, "dot");
+GLOBAL_STR(str1788, "s");
+GLOBAL_STR(str1789, "s");
+GLOBAL_STR(str1790, "alnum");
+GLOBAL_STR(str1791, "cntrl");
+GLOBAL_STR(str1792, "lower");
+GLOBAL_STR(str1793, "space");
+GLOBAL_STR(str1794, "alpha");
+GLOBAL_STR(str1795, "digit");
+GLOBAL_STR(str1796, "print");
+GLOBAL_STR(str1797, "upper");
+GLOBAL_STR(str1798, "blank");
+GLOBAL_STR(str1799, "graph");
+GLOBAL_STR(str1800, "punct");
+GLOBAL_STR(str1801, "xdigit");
+GLOBAL_STR(str1802, "Range start/end shouldn't have more than one character");
+GLOBAL_STR(str1803, "Only 1 subscript is accepted");
+GLOBAL_STR(str1804, "Invalid trailing comma");
+GLOBAL_STR(str1805, "testlist_comp");
+GLOBAL_STR(str1806, "Places in containers not implemented yet");
+GLOBAL_STR(str1807, "Units suffix not implemented");
+GLOBAL_STR(str1808, "unix suffix implemented");
+GLOBAL_STR(str1809, "In expressions, remove $ and use `%s`, or sometimes \"$%s\"");
+GLOBAL_STR(str1810, "PNode type %d (%s) wasn't handled");
+GLOBAL_STR(str1811, "Can't assign to this attribute expr");
+GLOBAL_STR(str1812, "Can't assign to this expression");
+GLOBAL_STR(str1813, "Multiple assignment must use =");
+GLOBAL_STR(str1814, "Positional args must come before the semi-colon");
+GLOBAL_STR(str1815, "Positional args must come before the semi-colon");
+GLOBAL_STR(str1816, "Str");
+GLOBAL_STR(str1817, "Ref");
+GLOBAL_STR(str1818, "Word params may only have type Str or Ref");
+GLOBAL_STR(str1819, "Unexpected type parameters");
+GLOBAL_STR(str1820, "Only 1 block param is allowed");
+GLOBAL_STR(str1821, "Rest param isn't allowed for blocks");
+GLOBAL_STR(str1822, "Command");
+GLOBAL_STR(str1823, "Block param must have type Command");
+GLOBAL_STR(str1824, "Unexpected type parameters");
+GLOBAL_STR(str1825, "dot");
+GLOBAL_STR(str1826, "Can't negate this symbol");
+GLOBAL_STR(str1827, "%r isn't a character class");
 GLOBAL_STR(str1828, "Can't negate this symbol");
 GLOBAL_STR(str1829, "%r isn't a character class");
-GLOBAL_STR(str1830, "Can't negate this symbol");
-GLOBAL_STR(str1831, "%r isn't a character class");
-GLOBAL_STR(str1832, "%start");
-GLOBAL_STR(str1833, "%end");
-GLOBAL_STR(str1834, "dot");
-GLOBAL_STR(str1835, "Unexpected token %r in regex");
-GLOBAL_STR(str1836, "Backtracking with !! isn't implemented (requires Python/PCRE)");
-GLOBAL_STR(str1837, "Default values can't be mutable");
-GLOBAL_STR(str1838, "Default val for word param must be Str");
-GLOBAL_STR(str1839, "Default value for block should be Command or Null");
-GLOBAL_STR(str1840, "Spread expected a List");
-GLOBAL_STR(str1841, "Spread expected a Dict");
-GLOBAL_STR(str1842, "proc %r wasn't passed word param %r");
-GLOBAL_STR(str1843, "proc %r takes %d words, but got %d");
-GLOBAL_STR(str1844, "%r wasn't passed typed param %r");
-GLOBAL_STR(str1845, "%r wasn't passed block param %r");
-GLOBAL_STR(str1846, "%r takes %d typed args, but got %d");
-GLOBAL_STR(str1847, "%r wasn't passed named param %r");
-GLOBAL_STR(str1848, "%r takes %d named args, but got %d");
-GLOBAL_STR(str1849, "Func %r takes no positional args, but got %d");
-GLOBAL_STR(str1850, "Func %r takes no named args, but got %d");
-GLOBAL_STR(str1851, "Proc %r takes no word args, but got %d");
-GLOBAL_STR(str1852, "Proc %r takes no typed args, but got %d");
-GLOBAL_STR(str1853, "Proc %r takes no named args, but got %d");
-GLOBAL_STR(str1854, "IntControlFlow in func");
-GLOBAL_STR(str1855, "unreachable");
-GLOBAL_STR(str1856, "d");
-GLOBAL_STR(str1857, "[:digit:]");
-GLOBAL_STR(str1858, "w");
-GLOBAL_STR(str1859, "[:alpha:][:digit:]_");
-GLOBAL_STR(str1860, "s");
-GLOBAL_STR(str1861, "[:space:]");
-GLOBAL_STR(str1862, "ERE can't express char code %d");
-GLOBAL_STR(str1863, "Can't use char %d as start of range in ERE syntax");
-GLOBAL_STR(str1864, "-");
-GLOBAL_STR(str1865, "Can't use char %d as end of range in ERE syntax");
-GLOBAL_STR(str1866, "Perl classes can't be negated in ERE");
-GLOBAL_STR(str1867, "%s");
-GLOBAL_STR(str1868, "POSIX classes can't be negated in ERE");
-GLOBAL_STR(str1869, "[:%s:]");
-GLOBAL_STR(str1870, ".");
-GLOBAL_STR(str1871, "^");
-GLOBAL_STR(str1872, "$");
-GLOBAL_STR(str1873, "|");
-GLOBAL_STR(str1874, "POSIX EREs don't have groups without capture, so this node needs () around it.");
-GLOBAL_STR(str1875, "+");
-GLOBAL_STR(str1876, "*");
-GLOBAL_STR(str1877, "?");
-GLOBAL_STR(str1878, "{%s}");
-GLOBAL_STR(str1879, "");
-GLOBAL_STR(str1880, "");
-GLOBAL_STR(str1881, "{%s,%s}");
-GLOBAL_STR(str1882, "(");
-GLOBAL_STR(str1883, ")");
-GLOBAL_STR(str1884, "[^%s]");
-GLOBAL_STR(str1885, "[%s]");
-GLOBAL_STR(str1886, "[^[:%s:]]");
-GLOBAL_STR(str1887, "[[:%s:]]");
-GLOBAL_STR(str1888, "[");
-GLOBAL_STR(str1889, "^");
-GLOBAL_STR(str1890, "]");
-GLOBAL_STR(str1891, "\\\\");
-GLOBAL_STR(str1892, "^");
-GLOBAL_STR(str1893, "-");
-GLOBAL_STR(str1894, "]");
-GLOBAL_STR(str1895, "");
-GLOBAL_STR(str1896, "");
-GLOBAL_STR(str1897, "null");
-GLOBAL_STR(str1898, "true");
-GLOBAL_STR(str1899, "false");
-GLOBAL_STR(str1900, "%sexpected Null, Bool, Int, Float, Eggex");
-GLOBAL_STR(str1901, "");
-GLOBAL_STR(str1902, "%sexpected List");
-GLOBAL_STR(str1903, "Shouldn't have called this");
-GLOBAL_STR(str1904, "Equality isn't defined on Float");
-GLOBAL_STR(str1905, "Can't compare two values of type %s");
-GLOBAL_STR(str1906, "LHS of 'in' should be Str");
-GLOBAL_STR(str1907, "RHS of 'in' should be Dict");
-GLOBAL_STR(str1908, "Expected Str or Regex for RHS of ~");
-GLOBAL_STR(str1909, "LHS must be a string");
-GLOBAL_STR(str1910, "");
-GLOBAL_STR(str1911, "!");
-GLOBAL_STR(str1912, "--");
-GLOBAL_STR(str1913, "--dir");
-GLOBAL_STR(str1914, "--exists");
-GLOBAL_STR(str1915, "--file");
-GLOBAL_STR(str1916, "--symlink");
-GLOBAL_STR(str1917, "Expected unary operator, got %r (2 args)");
-GLOBAL_STR(str1918, "-a");
-GLOBAL_STR(str1919, "-o");
-GLOBAL_STR(str1920, "!");
-GLOBAL_STR(str1921, "(");
-GLOBAL_STR(str1922, ")");
-GLOBAL_STR(str1923, "Expected binary operator, got %r (3 args)");
-GLOBAL_STR(str1924, "should be invoked as 'test' (simple_test_builtin)");
-GLOBAL_STR(str1925, "]");
-GLOBAL_STR(str1926, "missing closing ]");
-GLOBAL_STR(str1927, "should only have 3 arguments or fewer (simple_test_builtin)");
-GLOBAL_STR(str1928, "!");
-GLOBAL_STR(str1929, "(");
-GLOBAL_STR(str1930, ")");
-GLOBAL_STR(str1931, "(test) ");
-GLOBAL_STR(str1932, "(test) ");
-GLOBAL_STR(str1933, "FixedWordsAction ");
-GLOBAL_STR(str1934, "DynamicProcDictAction ");
-GLOBAL_STR(str1935, "DynamicStrDictAction ");
-GLOBAL_STR(str1936, "function %r not found");
-GLOBAL_STR(str1937, "osh warning: complete -C not implemented");
-GLOBAL_STR(str1938, "alias");
-GLOBAL_STR(str1939, "binding");
-GLOBAL_STR(str1940, "vi-delete");
-GLOBAL_STR(str1941, "builtin");
-GLOBAL_STR(str1942, "command");
-GLOBAL_STR(str1943, "directory");
-GLOBAL_STR(str1944, "file");
-GLOBAL_STR(str1945, "function");
-GLOBAL_STR(str1946, "job");
-GLOBAL_STR(str1947, "jobs-not-implemented");
-GLOBAL_STR(str1948, "user");
-GLOBAL_STR(str1949, "variable");
-GLOBAL_STR(str1950, "helptopic");
-GLOBAL_STR(str1951, "setopt");
-GLOBAL_STR(str1952, "shopt");
-GLOBAL_STR(str1953, "signal");
-GLOBAL_STR(str1954, "TODO:signals");
-GLOBAL_STR(str1955, "stopped");
-GLOBAL_STR(str1956, "jobs-not-implemented");
-GLOBAL_STR(str1957, "plusdirs");
-GLOBAL_STR(str1958, "default");
-GLOBAL_STR(str1959, "dirnames");
-GLOBAL_STR(str1960, "No actions defined in completion: %s");
-GLOBAL_STR(str1961, " ");
-GLOBAL_STR(str1962, "!");
-GLOBAL_STR(str1963, "");
-GLOBAL_STR(str1964, "");
-GLOBAL_STR(str1965, "complete");
-GLOBAL_STR(str1966, "__fallback");
-GLOBAL_STR(str1967, "__first");
-GLOBAL_STR(str1968, "expected 1 or more commands");
-GLOBAL_STR(str1969, "compgen");
-GLOBAL_STR(str1970, "");
+GLOBAL_STR(str1830, "%start");
+GLOBAL_STR(str1831, "%end");
+GLOBAL_STR(str1832, "dot");
+GLOBAL_STR(str1833, "Unexpected token %r in regex");
+GLOBAL_STR(str1834, "Backtracking with !! isn't implemented (requires Python/PCRE)");
+GLOBAL_STR(str1835, "Default values can't be mutable");
+GLOBAL_STR(str1836, "Default val for word param must be Str");
+GLOBAL_STR(str1837, "Default value for block should be Command or Null");
+GLOBAL_STR(str1838, "Spread expected a List");
+GLOBAL_STR(str1839, "Spread expected a Dict");
+GLOBAL_STR(str1840, "proc %r wasn't passed word param %r");
+GLOBAL_STR(str1841, "proc %r takes %d words, but got %d");
+GLOBAL_STR(str1842, "%r wasn't passed typed param %r");
+GLOBAL_STR(str1843, "%r wasn't passed block param %r");
+GLOBAL_STR(str1844, "%r takes %d typed args, but got %d");
+GLOBAL_STR(str1845, "%r wasn't passed named param %r");
+GLOBAL_STR(str1846, "%r takes %d named args, but got %d");
+GLOBAL_STR(str1847, "Func %r takes no positional args, but got %d");
+GLOBAL_STR(str1848, "Func %r takes no named args, but got %d");
+GLOBAL_STR(str1849, "Proc %r takes no word args, but got %d");
+GLOBAL_STR(str1850, "Proc %r takes no typed args, but got %d");
+GLOBAL_STR(str1851, "Proc %r takes no named args, but got %d");
+GLOBAL_STR(str1852, "IntControlFlow in func");
+GLOBAL_STR(str1853, "unreachable");
+GLOBAL_STR(str1854, "d");
+GLOBAL_STR(str1855, "[:digit:]");
+GLOBAL_STR(str1856, "w");
+GLOBAL_STR(str1857, "[:alpha:][:digit:]_");
+GLOBAL_STR(str1858, "s");
+GLOBAL_STR(str1859, "[:space:]");
+GLOBAL_STR(str1860, "ERE can't express char code %d");
+GLOBAL_STR(str1861, "Can't use char %d as start of range in ERE syntax");
+GLOBAL_STR(str1862, "-");
+GLOBAL_STR(str1863, "Can't use char %d as end of range in ERE syntax");
+GLOBAL_STR(str1864, "Perl classes can't be negated in ERE");
+GLOBAL_STR(str1865, "%s");
+GLOBAL_STR(str1866, "POSIX classes can't be negated in ERE");
+GLOBAL_STR(str1867, "[:%s:]");
+GLOBAL_STR(str1868, ".");
+GLOBAL_STR(str1869, "^");
+GLOBAL_STR(str1870, "$");
+GLOBAL_STR(str1871, "|");
+GLOBAL_STR(str1872, "POSIX EREs don't have groups without capture, so this node needs () around it.");
+GLOBAL_STR(str1873, "+");
+GLOBAL_STR(str1874, "*");
+GLOBAL_STR(str1875, "?");
+GLOBAL_STR(str1876, "{%s}");
+GLOBAL_STR(str1877, "");
+GLOBAL_STR(str1878, "");
+GLOBAL_STR(str1879, "{%s,%s}");
+GLOBAL_STR(str1880, "(");
+GLOBAL_STR(str1881, ")");
+GLOBAL_STR(str1882, "[^%s]");
+GLOBAL_STR(str1883, "[%s]");
+GLOBAL_STR(str1884, "[^[:%s:]]");
+GLOBAL_STR(str1885, "[[:%s:]]");
+GLOBAL_STR(str1886, "[");
+GLOBAL_STR(str1887, "^");
+GLOBAL_STR(str1888, "]");
+GLOBAL_STR(str1889, "\\\\");
+GLOBAL_STR(str1890, "^");
+GLOBAL_STR(str1891, "-");
+GLOBAL_STR(str1892, "]");
+GLOBAL_STR(str1893, "");
+GLOBAL_STR(str1894, "");
+GLOBAL_STR(str1895, "null");
+GLOBAL_STR(str1896, "true");
+GLOBAL_STR(str1897, "false");
+GLOBAL_STR(str1898, "%sexpected Null, Bool, Int, Float, Eggex");
+GLOBAL_STR(str1899, "");
+GLOBAL_STR(str1900, "%sexpected List");
+GLOBAL_STR(str1901, "Shouldn't have called this");
+GLOBAL_STR(str1902, "Equality isn't defined on Float");
+GLOBAL_STR(str1903, "Can't compare two values of type %s");
+GLOBAL_STR(str1904, "LHS of 'in' should be Str");
+GLOBAL_STR(str1905, "RHS of 'in' should be Dict");
+GLOBAL_STR(str1906, "Expected Str or Regex for RHS of ~");
+GLOBAL_STR(str1907, "LHS must be a string");
+GLOBAL_STR(str1908, "");
+GLOBAL_STR(str1909, "!");
+GLOBAL_STR(str1910, "--");
+GLOBAL_STR(str1911, "--dir");
+GLOBAL_STR(str1912, "--exists");
+GLOBAL_STR(str1913, "--file");
+GLOBAL_STR(str1914, "--symlink");
+GLOBAL_STR(str1915, "Expected unary operator, got %r (2 args)");
+GLOBAL_STR(str1916, "-a");
+GLOBAL_STR(str1917, "-o");
+GLOBAL_STR(str1918, "!");
+GLOBAL_STR(str1919, "(");
+GLOBAL_STR(str1920, ")");
+GLOBAL_STR(str1921, "Expected binary operator, got %r (3 args)");
+GLOBAL_STR(str1922, "should be invoked as 'test' (simple_test_builtin)");
+GLOBAL_STR(str1923, "]");
+GLOBAL_STR(str1924, "missing closing ]");
+GLOBAL_STR(str1925, "should only have 3 arguments or fewer (simple_test_builtin)");
+GLOBAL_STR(str1926, "!");
+GLOBAL_STR(str1927, "(");
+GLOBAL_STR(str1928, ")");
+GLOBAL_STR(str1929, "(test) ");
+GLOBAL_STR(str1930, "(test) ");
+GLOBAL_STR(str1931, "FixedWordsAction ");
+GLOBAL_STR(str1932, "DynamicProcDictAction ");
+GLOBAL_STR(str1933, "DynamicStrDictAction ");
+GLOBAL_STR(str1934, "function %r not found");
+GLOBAL_STR(str1935, "osh warning: complete -C not implemented");
+GLOBAL_STR(str1936, "alias");
+GLOBAL_STR(str1937, "binding");
+GLOBAL_STR(str1938, "vi-delete");
+GLOBAL_STR(str1939, "builtin");
+GLOBAL_STR(str1940, "command");
+GLOBAL_STR(str1941, "directory");
+GLOBAL_STR(str1942, "file");
+GLOBAL_STR(str1943, "function");
+GLOBAL_STR(str1944, "job");
+GLOBAL_STR(str1945, "jobs-not-implemented");
+GLOBAL_STR(str1946, "user");
+GLOBAL_STR(str1947, "variable");
+GLOBAL_STR(str1948, "helptopic");
+GLOBAL_STR(str1949, "setopt");
+GLOBAL_STR(str1950, "shopt");
+GLOBAL_STR(str1951, "signal");
+GLOBAL_STR(str1952, "TODO:signals");
+GLOBAL_STR(str1953, "stopped");
+GLOBAL_STR(str1954, "jobs-not-implemented");
+GLOBAL_STR(str1955, "plusdirs");
+GLOBAL_STR(str1956, "default");
+GLOBAL_STR(str1957, "dirnames");
+GLOBAL_STR(str1958, "No actions defined in completion: %s");
+GLOBAL_STR(str1959, " ");
+GLOBAL_STR(str1960, "!");
+GLOBAL_STR(str1961, "");
+GLOBAL_STR(str1962, "");
+GLOBAL_STR(str1963, "complete");
+GLOBAL_STR(str1964, "__fallback");
+GLOBAL_STR(str1965, "__first");
+GLOBAL_STR(str1966, "expected 1 or more commands");
+GLOBAL_STR(str1967, "compgen");
+GLOBAL_STR(str1968, "");
+GLOBAL_STR(str1969, "");
+GLOBAL_STR(str1970, "compgen");
 GLOBAL_STR(str1971, "");
-GLOBAL_STR(str1972, "compgen");
-GLOBAL_STR(str1973, "");
-GLOBAL_STR(str1974, "compopt");
-GLOBAL_STR(str1975, "compopt: not currently executing a completion function");
-GLOBAL_STR(str1976, "compadjust");
-GLOBAL_STR(str1977, "cur");
-GLOBAL_STR(str1978, "prev");
-GLOBAL_STR(str1979, "words");
-GLOBAL_STR(str1980, "cword");
-GLOBAL_STR(str1981, "Invalid output variable name %r");
-GLOBAL_STR(str1982, "COMP_ARGV");
-GLOBAL_STR(str1983, "COMP_ARGV should be an array");
-GLOBAL_STR(str1984, ":");
-GLOBAL_STR(str1985, "=");
-GLOBAL_STR(str1986, "=");
-GLOBAL_STR(str1987, "");
-GLOBAL_STR(str1988, "words");
-GLOBAL_STR(str1989, "words");
-GLOBAL_STR(str1990, "");
-GLOBAL_STR(str1991, "--");
-GLOBAL_STR(str1992, "=");
-GLOBAL_STR(str1993, "=");
-GLOBAL_STR(str1994, "true");
-GLOBAL_STR(str1995, "false");
-GLOBAL_STR(str1996, "split");
-GLOBAL_STR(str1997, "cur");
-GLOBAL_STR(str1998, "cur");
-GLOBAL_STR(str1999, "prev");
-GLOBAL_STR(str2000, "prev");
-GLOBAL_STR(str2001, "cword");
-GLOBAL_STR(str2002, "cword");
-GLOBAL_STR(str2003, "-E");
-GLOBAL_STR(str2004, "-A");
-GLOBAL_STR(str2005, "command");
-GLOBAL_STR(str2006, "-D");
-GLOBAL_STR(str2007, "-A");
-GLOBAL_STR(str2008, "file");
-GLOBAL_STR(str2009, "foo.py");
-GLOBAL_STR(str2010, "foo");
-GLOBAL_STR(str2011, "bar.py");
-GLOBAL_STR(str2012, "m%d");
-GLOBAL_STR(str2013, "");
-GLOBAL_STR(str2014, "");
-GLOBAL_STR(str2015, "slowc");
-GLOBAL_STR(str2016, "vi");
-GLOBAL_STR(str2017, "emacs");
-GLOBAL_STR(str2018, "set editing-mode ");
-GLOBAL_STR(str2019, "Warning: Can't set option %r because shell wasn't compiled with GNU readline");
-GLOBAL_STR(str2020, "vi");
-GLOBAL_STR(str2021, "emacs");
-GLOBAL_STR(str2022, "osh");
-GLOBAL_STR(str2023, "HISTFILE");
-GLOBAL_STR(str2024, "YSH_HISTFILE");
-GLOBAL_STR(str2025, ".local/share/oils/%s_history");
-GLOBAL_STR(str2026, "main");
-GLOBAL_STR(str2027, "%s usage error: %s");
-GLOBAL_STR(str2028, "%s-usage");
-GLOBAL_STR(str2029, "cat-em");
-GLOBAL_STR(str2030, "cat-em: %r not found");
-GLOBAL_STR(str2031, "ysh");
-GLOBAL_STR(str2032, "ysh:all");
-GLOBAL_STR(str2033, "--one-pass-parse requires noexec (-n)");
-GLOBAL_STR(str2034, "completion");
-GLOBAL_STR(str2035, "history");
-GLOBAL_STR(str2036, "");
-GLOBAL_STR(str2037, "OILS_DEBUG_DIR");
-GLOBAL_STR(str2038, "%d-osh.log");
-GLOBAL_STR(str2039, "%s: Couldn't open %r: %s");
-GLOBAL_STR(str2040, "Writing logs to %r");
-GLOBAL_STR(str2041, "OILS_HIJACK_SHEBANG");
+GLOBAL_STR(str1972, "compopt");
+GLOBAL_STR(str1973, "compopt: not currently executing a completion function");
+GLOBAL_STR(str1974, "compadjust");
+GLOBAL_STR(str1975, "cur");
+GLOBAL_STR(str1976, "prev");
+GLOBAL_STR(str1977, "words");
+GLOBAL_STR(str1978, "cword");
+GLOBAL_STR(str1979, "Invalid output variable name %r");
+GLOBAL_STR(str1980, "COMP_ARGV");
+GLOBAL_STR(str1981, "COMP_ARGV should be an array");
+GLOBAL_STR(str1982, ":");
+GLOBAL_STR(str1983, "=");
+GLOBAL_STR(str1984, "=");
+GLOBAL_STR(str1985, "");
+GLOBAL_STR(str1986, "words");
+GLOBAL_STR(str1987, "words");
+GLOBAL_STR(str1988, "");
+GLOBAL_STR(str1989, "--");
+GLOBAL_STR(str1990, "=");
+GLOBAL_STR(str1991, "=");
+GLOBAL_STR(str1992, "true");
+GLOBAL_STR(str1993, "false");
+GLOBAL_STR(str1994, "split");
+GLOBAL_STR(str1995, "cur");
+GLOBAL_STR(str1996, "cur");
+GLOBAL_STR(str1997, "prev");
+GLOBAL_STR(str1998, "prev");
+GLOBAL_STR(str1999, "cword");
+GLOBAL_STR(str2000, "cword");
+GLOBAL_STR(str2001, "-E");
+GLOBAL_STR(str2002, "-A");
+GLOBAL_STR(str2003, "command");
+GLOBAL_STR(str2004, "-D");
+GLOBAL_STR(str2005, "-A");
+GLOBAL_STR(str2006, "file");
+GLOBAL_STR(str2007, "foo.py");
+GLOBAL_STR(str2008, "foo");
+GLOBAL_STR(str2009, "bar.py");
+GLOBAL_STR(str2010, "m%d");
+GLOBAL_STR(str2011, "");
+GLOBAL_STR(str2012, "");
+GLOBAL_STR(str2013, "slowc");
+GLOBAL_STR(str2014, "vi");
+GLOBAL_STR(str2015, "emacs");
+GLOBAL_STR(str2016, "set editing-mode ");
+GLOBAL_STR(str2017, "Warning: Can't set option %r because shell wasn't compiled with GNU readline");
+GLOBAL_STR(str2018, "vi");
+GLOBAL_STR(str2019, "emacs");
+GLOBAL_STR(str2020, "osh");
+GLOBAL_STR(str2021, "HISTFILE");
+GLOBAL_STR(str2022, "YSH_HISTFILE");
+GLOBAL_STR(str2023, ".local/share/oils/%s_history");
+GLOBAL_STR(str2024, "main");
+GLOBAL_STR(str2025, "%s usage error: %s");
+GLOBAL_STR(str2026, "%s-usage");
+GLOBAL_STR(str2027, "cat-em");
+GLOBAL_STR(str2028, "cat-em: %r not found");
+GLOBAL_STR(str2029, "ysh");
+GLOBAL_STR(str2030, "ysh:all");
+GLOBAL_STR(str2031, "--one-pass-parse requires noexec (-n)");
+GLOBAL_STR(str2032, "completion");
+GLOBAL_STR(str2033, "history");
+GLOBAL_STR(str2034, "");
+GLOBAL_STR(str2035, "OILS_DEBUG_DIR");
+GLOBAL_STR(str2036, "%d-osh.log");
+GLOBAL_STR(str2037, "%s: Couldn't open %r: %s");
+GLOBAL_STR(str2038, "Writing logs to %r");
+GLOBAL_STR(str2039, "OILS_HIJACK_SHEBANG");
+GLOBAL_STR(str2040, "");
+GLOBAL_STR(str2041, "OILS_CRASH_DUMP_DIR");
 GLOBAL_STR(str2042, "");
-GLOBAL_STR(str2043, "OILS_CRASH_DUMP_DIR");
-GLOBAL_STR(str2044, "");
-GLOBAL_STR(str2045, "%s: Failed to get home dir from $HOME or getpwuid()");
-GLOBAL_STR(str2046, "startsWith");
-GLOBAL_STR(str2047, "endsWith");
-GLOBAL_STR(str2048, "trim");
-GLOBAL_STR(str2049, "trimLeft");
-GLOBAL_STR(str2050, "trimRight");
-GLOBAL_STR(str2051, "trimPrefix");
-GLOBAL_STR(str2052, "trimSuffix");
-GLOBAL_STR(str2053, "upper");
-GLOBAL_STR(str2054, "lower");
-GLOBAL_STR(str2055, "find");
-GLOBAL_STR(str2056, "match");
-GLOBAL_STR(str2057, "replace");
-GLOBAL_STR(str2058, "get");
-GLOBAL_STR(str2059, "erase");
-GLOBAL_STR(str2060, "keys");
-GLOBAL_STR(str2061, "values");
-GLOBAL_STR(str2062, "inc");
-GLOBAL_STR(str2063, "accum");
-GLOBAL_STR(str2064, "reverse");
-GLOBAL_STR(str2065, "append");
-GLOBAL_STR(str2066, "extend");
-GLOBAL_STR(str2067, "pop");
-GLOBAL_STR(str2068, "insert");
-GLOBAL_STR(str2069, "remove");
-GLOBAL_STR(str2070, "find");
-GLOBAL_STR(str2071, "join");
-GLOBAL_STR(str2072, "eval");
-GLOBAL_STR(str2073, "captureStdout");
-GLOBAL_STR(str2074, "promptVal");
-GLOBAL_STR(str2075, "getcwd");
-GLOBAL_STR(str2076, "getUserName");
-GLOBAL_STR(str2077, "getHostName");
-GLOBAL_STR(str2078, "setValue");
-GLOBAL_STR(str2079, "export");
-GLOBAL_STR(str2080, "parseHay");
-GLOBAL_STR(str2081, "evalHay");
-GLOBAL_STR(str2082, "_hay");
-GLOBAL_STR(str2083, "len");
-GLOBAL_STR(str2084, "_match");
-GLOBAL_STR(str2085, "_start");
-GLOBAL_STR(str2086, "_end");
-GLOBAL_STR(str2087, "join");
-GLOBAL_STR(str2088, "maybe");
-GLOBAL_STR(str2089, "type");
-GLOBAL_STR(str2090, "evalExpr");
-GLOBAL_STR(str2091, "bool");
-GLOBAL_STR(str2092, "int");
-GLOBAL_STR(str2093, "float");
-GLOBAL_STR(str2094, "str");
-GLOBAL_STR(str2095, "list");
-GLOBAL_STR(str2096, "dict");
-GLOBAL_STR(str2097, "split");
-GLOBAL_STR(str2098, "shSplit");
-GLOBAL_STR(str2099, "glob");
-GLOBAL_STR(str2100, "shvarGet");
-GLOBAL_STR(str2101, "assert_");
-GLOBAL_STR(str2102, "_io");
-GLOBAL_STR(str2103, " -i");
-GLOBAL_STR(str2104, "");
-GLOBAL_STR(str2105, "%s: Couldn't open %r: %s");
-GLOBAL_STR(str2106, ".config/oils");
-GLOBAL_STR(str2107, "%s/%src");
-GLOBAL_STR(str2108, "%s/%src.d");
-GLOBAL_STR(str2109, "*");
-GLOBAL_STR(str2110, "%s warning: --rcfile ignored with --norc");
-GLOBAL_STR(str2111, "%s warning: --rcdir ignored with --norc");
-GLOBAL_STR(str2112, "nice");
-GLOBAL_STR(str2113, "%s warning: --rcfile ignored in non-interactive shell");
-GLOBAL_STR(str2114, "%s warning: --rcdir ignored in non-interactive shell");
-GLOBAL_STR(str2115, "syntax-tree");
-GLOBAL_STR(str2116, "syntax-tree");
-GLOBAL_STR(str2117, "tokens");
-GLOBAL_STR(str2118, "arena");
-GLOBAL_STR(str2119, "ysh-ify");
-GLOBAL_STR(str2120, "deps");
+GLOBAL_STR(str2043, "%s: Failed to get home dir from $HOME or getpwuid()");
+GLOBAL_STR(str2044, "startsWith");
+GLOBAL_STR(str2045, "endsWith");
+GLOBAL_STR(str2046, "trim");
+GLOBAL_STR(str2047, "trimLeft");
+GLOBAL_STR(str2048, "trimRight");
+GLOBAL_STR(str2049, "trimPrefix");
+GLOBAL_STR(str2050, "trimSuffix");
+GLOBAL_STR(str2051, "upper");
+GLOBAL_STR(str2052, "lower");
+GLOBAL_STR(str2053, "find");
+GLOBAL_STR(str2054, "match");
+GLOBAL_STR(str2055, "replace");
+GLOBAL_STR(str2056, "get");
+GLOBAL_STR(str2057, "erase");
+GLOBAL_STR(str2058, "keys");
+GLOBAL_STR(str2059, "values");
+GLOBAL_STR(str2060, "inc");
+GLOBAL_STR(str2061, "accum");
+GLOBAL_STR(str2062, "reverse");
+GLOBAL_STR(str2063, "append");
+GLOBAL_STR(str2064, "extend");
+GLOBAL_STR(str2065, "pop");
+GLOBAL_STR(str2066, "insert");
+GLOBAL_STR(str2067, "remove");
+GLOBAL_STR(str2068, "find");
+GLOBAL_STR(str2069, "join");
+GLOBAL_STR(str2070, "eval");
+GLOBAL_STR(str2071, "captureStdout");
+GLOBAL_STR(str2072, "promptVal");
+GLOBAL_STR(str2073, "getcwd");
+GLOBAL_STR(str2074, "getUserName");
+GLOBAL_STR(str2075, "getHostName");
+GLOBAL_STR(str2076, "setValue");
+GLOBAL_STR(str2077, "export");
+GLOBAL_STR(str2078, "parseHay");
+GLOBAL_STR(str2079, "evalHay");
+GLOBAL_STR(str2080, "_hay");
+GLOBAL_STR(str2081, "len");
+GLOBAL_STR(str2082, "_match");
+GLOBAL_STR(str2083, "_start");
+GLOBAL_STR(str2084, "_end");
+GLOBAL_STR(str2085, "join");
+GLOBAL_STR(str2086, "maybe");
+GLOBAL_STR(str2087, "type");
+GLOBAL_STR(str2088, "evalExpr");
+GLOBAL_STR(str2089, "bool");
+GLOBAL_STR(str2090, "int");
+GLOBAL_STR(str2091, "float");
+GLOBAL_STR(str2092, "str");
+GLOBAL_STR(str2093, "list");
+GLOBAL_STR(str2094, "dict");
+GLOBAL_STR(str2095, "split");
+GLOBAL_STR(str2096, "shSplit");
+GLOBAL_STR(str2097, "glob");
+GLOBAL_STR(str2098, "shvarGet");
+GLOBAL_STR(str2099, "assert_");
+GLOBAL_STR(str2100, "_io");
+GLOBAL_STR(str2101, " -i");
+GLOBAL_STR(str2102, "");
+GLOBAL_STR(str2103, "%s: Couldn't open %r: %s");
+GLOBAL_STR(str2104, ".config/oils");
+GLOBAL_STR(str2105, "%s/%src");
+GLOBAL_STR(str2106, "%s/%src.d");
+GLOBAL_STR(str2107, "*");
+GLOBAL_STR(str2108, "%s warning: --rcfile ignored with --norc");
+GLOBAL_STR(str2109, "%s warning: --rcdir ignored with --norc");
+GLOBAL_STR(str2110, "nice");
+GLOBAL_STR(str2111, "%s warning: --rcfile ignored in non-interactive shell");
+GLOBAL_STR(str2112, "%s warning: --rcdir ignored in non-interactive shell");
+GLOBAL_STR(str2113, "syntax-tree");
+GLOBAL_STR(str2114, "syntax-tree");
+GLOBAL_STR(str2115, "tokens");
+GLOBAL_STR(str2116, "arena");
+GLOBAL_STR(str2117, "ysh-ify");
+GLOBAL_STR(str2118, "deps");
 
 namespace runtime {  // forward declare
 
@@ -8081,7 +8079,7 @@ class VirtualLineReader : public _Reader {
   DISALLOW_COPY_AND_ASSIGN(VirtualLineReader)
 };
 
-BigStr* _readline_no_tty(BigStr* prompt);
+BigStr* _PlainPromptInput(BigStr* prompt);
 class InteractiveLineReader : public _Reader {
  public:
   InteractiveLineReader(alloc::Arena* arena, prompt::Evaluator* prompt_ev, history::Evaluator* hist_ev, py_readline::Readline* line_input, comp_ui::PromptState* prompt_state);
@@ -9675,8 +9673,8 @@ BigStr* ToStr(value_asdl::value_t* val, BigStr* msg, syntax_asdl::loc_t* blame_l
 List<value_asdl::value_t*>* ToList(value_asdl::value_t* val, BigStr* msg, syntax_asdl::loc_t* blame_loc);
 Dict<BigStr*, value_asdl::value_t*>* ToDict(value_asdl::value_t* val, BigStr* msg, syntax_asdl::loc_t* blame_loc);
 syntax_asdl::command_t* ToCommand(value_asdl::value_t* val, BigStr* msg, syntax_asdl::loc_t* blame_loc);
-BigStr* Stringify(value_asdl::value_t* val, syntax_asdl::loc_t* blame_loc, BigStr* prefix = str1896);
-List<BigStr*>* ToShellArray(value_asdl::value_t* val, syntax_asdl::loc_t* blame_loc, BigStr* prefix = str1901);
+BigStr* Stringify(value_asdl::value_t* val, syntax_asdl::loc_t* blame_loc, BigStr* prefix = str1894);
+List<BigStr*>* ToShellArray(value_asdl::value_t* val, syntax_asdl::loc_t* blame_loc, BigStr* prefix = str1899);
 class _ContainerIter {
  public:
   _ContainerIter();
@@ -27655,7 +27653,7 @@ Tuple2<syntax_asdl::SourceLine*, int> VirtualLineReader::GetLine() {
   return Tuple2<syntax_asdl::SourceLine*, int>(src_line, start_offset);
 }
 
-BigStr* _readline_no_tty(BigStr* prompt) {
+BigStr* _PlainPromptInput(BigStr* prompt) {
   mylib::Writer* w = nullptr;
   BigStr* line = nullptr;
   StackRoot _root0(&prompt);
@@ -27666,7 +27664,7 @@ BigStr* _readline_no_tty(BigStr* prompt) {
   w->write(prompt);
   w->flush();
   line = mylib::Stdin()->readline();
-  if ((line == nullptr or len(line) == 0)) {
+  if (len(line) == 0) {
     throw Alloc<EOFError>();
   }
   return line;
@@ -27696,15 +27694,15 @@ BigStr* InteractiveLineReader::_GetLine() {
   }
   line = nullptr;
   try {
-    if ((!mylib::Stdout()->isatty() or !mylib::Stdin()->isatty())) {
-      line = str_concat(_readline_no_tty(this->prompt_str), str1080);
+    if ((!this->line_input or (!mylib::Stdout()->isatty() or !mylib::Stdin()->isatty()))) {
+      line = _PlainPromptInput(this->prompt_str);
     }
     else {
-      line = str_concat(raw_input(this->prompt_str), str1081);
+      line = this->line_input->prompt_input(this->prompt_str);
     }
   }
   catch (EOFError*) {
-    print(str1082);
+    print(str1080);
   }
   if (line != nullptr) {
     line = this->hist_ev->Eval(line);
@@ -27739,7 +27737,7 @@ void DoesNotAccept(syntax_asdl::ArgList* arg_list) {
   StackRoot _root0(&arg_list);
 
   if (arg_list != nullptr) {
-    e_usage(str1083, arg_list->left);
+    e_usage(str1081, arg_list->left);
   }
 }
 
@@ -28233,7 +28231,7 @@ void Reader::Done() {
     throw Alloc<error::TypeErrVerbose>(StrFormat("Expected %d typed args, but got %d", n, (n + len(this->pos_args))), this->BlamePos());
   }
   if (len(this->named_args)) {
-    bad_args = str1103->join(this->named_args->keys());
+    bad_args = str1101->join(this->named_args->keys());
     blame = this->arg_list->semi_tok;
     if (blame == nullptr) {
       blame = this->LeastSpecificLocation();
@@ -28315,7 +28313,7 @@ syntax_asdl::arith_expr_t* LeftIndex(tdop::TdopParser* p, syntax_asdl::word_t* w
   StackRoot _root3(&index);
 
   if (!tdop::IsIndexable(left)) {
-    p_die(str1105, Alloc<loc::Word>(w));
+    p_die(str1103, Alloc<loc::Word>(w));
   }
   index = p->ParseUntil(0);
   p->Eat(Id::Arith_RBracket);
@@ -28420,7 +28418,7 @@ Tuple2<syntax_asdl::bool_expr_t*, syntax_asdl::Token*> BoolParser::Parse() {
   this->_Next();
   node = this->ParseExpr();
   if (this->bool_id != Id::Lit_DRightBracket) {
-    p_die(str1106, Alloc<loc::Word>(this->cur_word));
+    p_die(str1104, Alloc<loc::Word>(this->cur_word));
   }
   right = word_::LiteralToken(this->cur_word);
   return Tuple2<syntax_asdl::bool_expr_t*, syntax_asdl::Token*>(node, right);
@@ -28515,7 +28513,7 @@ syntax_asdl::bool_expr_t* BoolParser::ParseFactor() {
     w = this->cur_word;
     tag = w->tag();
     if ((tag != word_e::Compound and tag != word_e::String)) {
-      p_die(str1108, Alloc<loc::Word>(w));
+      p_die(str1106, Alloc<loc::Word>(w));
     }
     this->_Next();
     tilde = word_::TildeDetect(w);
@@ -28602,7 +28600,7 @@ _RangeParser::_RangeParser(match::SimpleLexer* lexer, syntax_asdl::Token* blame_
   this->lexer = lexer;
   this->blame_tok = blame_tok;
   this->token_type = Id::Undefined_Tok;
-  this->token_val = str1111;
+  this->token_val = str1109;
 }
 
 void _RangeParser::_Next() {
@@ -28628,7 +28626,7 @@ int _RangeParser::_ParseStep() {
   this->_Next();
   step = to_int(this->_Eat(Id::Range_Int));
   if (step == 0) {
-    p_die(str1113, this->blame_tok);
+    p_die(str1111, this->blame_tok);
   }
   return step;
 }
@@ -28722,11 +28720,11 @@ word_part::BracedRange* _RangeParser::Parse() {
       upper1 = part->start->isupper();
       upper2 = part->end->isupper();
       if (upper1 != upper2) {
-        p_die(str1118, this->blame_tok);
+        p_die(str1116, this->blame_tok);
       }
     }
     else {
-      throw Alloc<_NotARange>(str1119);
+      throw Alloc<_NotARange>(str1117);
     }
   }
   this->_Eat(Id::Eol_Tok);
@@ -28889,7 +28887,7 @@ int _LeadingZeros(BigStr* s) {
   for (StrIter it(s); !it.Done(); it.Next()) {
     BigStr* c = it.Value();
     StackRoot _for(&c  );
-    if (str_equals(c, str1120)) {
+    if (str_equals(c, str1118)) {
       n += 1;
     }
     else {
@@ -28909,7 +28907,7 @@ BigStr* _IntToString(int i, int width) {
   s = str(i);
   n = len(s);
   if (n < width) {
-    pad = str_repeat(str1121, (width - n));
+    pad = str_repeat(str1119, (width - n));
     return str_concat(pad, s);
   }
   else {
@@ -29216,7 +29214,7 @@ using error::e_die_status;
 int IsMainProgram = (1 << 0);
 int RaiseControlFlow = (1 << 1);
 int Optimize = (1 << 2);
-GLOBAL_DICT(YSH_TYPE_NAMES, BigStr*, BigStr*, 7, {str1122 COMMA str1124 COMMA str1126 COMMA str1128 COMMA str1130 COMMA str1132 COMMA str1134}, {str1123 COMMA str1125 COMMA str1127 COMMA str1129 COMMA str1131 COMMA str1133 COMMA str1135});
+GLOBAL_DICT(YSH_TYPE_NAMES, BigStr*, BigStr*, 7, {str1120 COMMA str1122 COMMA str1124 COMMA str1126 COMMA str1128 COMMA str1130 COMMA str1132}, {str1121 COMMA str1123 COMMA str1125 COMMA str1127 COMMA str1129 COMMA str1131 COMMA str1133});
 
 cmd_value::Argv* MakeBuiltinArgv(List<BigStr*>* argv1) {
   List<BigStr*>* argv = nullptr;
@@ -29225,7 +29223,7 @@ cmd_value::Argv* MakeBuiltinArgv(List<BigStr*>* argv1) {
   StackRoot _root1(&argv);
   StackRoot _root2(&missing);
 
-  argv = NewList<BigStr*>(std::initializer_list<BigStr*>{str1136});
+  argv = NewList<BigStr*>(std::initializer_list<BigStr*>{str1134});
   argv->extend(argv1);
   missing = nullptr;
   return Alloc<cmd_value::Argv>(argv, list_repeat(missing, len(argv)), nullptr, nullptr, nullptr);
@@ -29295,7 +29293,7 @@ value_asdl::value_t* PlusEquals(value_asdl::value_t* old_val, value_asdl::value_
       }
       else {
         if (tag == value_e::BashArray) {
-          e_die(str1137);
+          e_die(str1135);
         }
         else {
           assert(0);  // AssertionError
@@ -29305,7 +29303,7 @@ value_asdl::value_t* PlusEquals(value_asdl::value_t* old_val, value_asdl::value_
       break;
     case value_e::BashArray: {
       if (tag == value_e::Str) {
-        e_die(str1138);
+        e_die(str1136);
       }
       else {
         if (tag == value_e::BashArray) {
@@ -29490,15 +29488,15 @@ runtime_asdl::RedirValue* CommandEvaluator::_EvalRedirect(syntax_asdl::Redir* r)
       if (redir_type == redir_arg_type_e::Path) {
         b = braces::BraceDetect(arg_word);
         if (b != nullptr) {
-          throw Alloc<error::RedirectEval>(str1143, arg_word);
+          throw Alloc<error::RedirectEval>(str1141, arg_word);
         }
         files = this->word_ev->EvalWordSequence(NewList<syntax_asdl::CompoundWord*>(std::initializer_list<syntax_asdl::CompoundWord*>{arg_word}));
         n = len(files);
         if (n == 0) {
-          throw Alloc<error::RedirectEval>(str1144, arg_word);
+          throw Alloc<error::RedirectEval>(str1142, arg_word);
         }
         if (n > 1) {
-          throw Alloc<error::RedirectEval>(str1145, arg_word);
+          throw Alloc<error::RedirectEval>(str1143, arg_word);
         }
         result->arg = Alloc<redirect_arg::Path>(files->at(0));
         return result;
@@ -29508,15 +29506,15 @@ runtime_asdl::RedirValue* CommandEvaluator::_EvalRedirect(syntax_asdl::Redir* r)
           val = this->word_ev->EvalWordToString(arg_word);
           t = val->s;
           if (len(t) == 0) {
-            throw Alloc<error::RedirectEval>(str1146, arg_word);
+            throw Alloc<error::RedirectEval>(str1144, arg_word);
             return nullptr;
           }
           try {
-            if (str_equals(t, str1147)) {
+            if (str_equals(t, str1145)) {
               result->arg = redirect_arg::CloseFd;
             }
             else {
-              if (str_equals(t->at(-1), str1148)) {
+              if (str_equals(t->at(-1), str1146)) {
                 target_fd = to_int(t->slice(0, -1));
                 result->arg = Alloc<redirect_arg::MoveFd>(target_fd);
               }
@@ -29534,7 +29532,7 @@ runtime_asdl::RedirValue* CommandEvaluator::_EvalRedirect(syntax_asdl::Redir* r)
         else {
           if (redir_type == redir_arg_type_e::Here) {
             val = this->word_ev->EvalWordToString(arg_word);
-            result->arg = Alloc<redirect_arg::HereDoc>(str_concat(val->s, str1150));
+            result->arg = Alloc<redirect_arg::HereDoc>(str_concat(val->s, str1148));
             return result;
           }
           else {
@@ -29707,7 +29705,7 @@ void CommandEvaluator::_StrictErrExitList(List<syntax_asdl::command_t*>* node_li
     return ;
   }
   if (len(node_list) > 1) {
-    e_die(str1155, Alloc<loc::Command>(node_list->at(0)));
+    e_die(str1153, Alloc<loc::Command>(node_list->at(0)));
   }
   node = node_list->at(0);
   if (_HasManyStatuses(node)) {
@@ -29820,7 +29818,7 @@ int CommandEvaluator::_DoVarDecl(command::VarDecl* node) {
       rhs_vals = NewList<value_asdl::value_t*>(std::initializer_list<value_asdl::value_t*>{right_val});
     }
     else {
-      items = val_ops::ToList(right_val, str1157, node->keyword);
+      items = val_ops::ToList(right_val, str1155, node->keyword);
       num_rhs = len(items);
       if (num_lhs != num_rhs) {
         throw Alloc<error::Expr>(StrFormat("Got %d places on the left, but %d values on right", num_lhs, num_rhs), node->keyword);
@@ -29901,7 +29899,7 @@ void CommandEvaluator::_DoMutation(command::Mutation* node) {
       rhs_vals = NewList<value_asdl::value_t*>(std::initializer_list<value_asdl::value_t*>{right_val});
     }
     else {
-      items = val_ops::ToList(right_val, str1159, node->keyword);
+      items = val_ops::ToList(right_val, str1157, node->keyword);
       num_rhs = len(items);
       if (num_lhs != num_rhs) {
         throw Alloc<error::Expr>(StrFormat("Got %d places on the left, but %d values on the right", num_lhs, num_rhs), node->keyword);
@@ -29934,18 +29932,18 @@ void CommandEvaluator::_DoMutation(command::Mutation* node) {
           switch (obj->tag()) {
             case value_e::List: {
               value::List* obj = static_cast<value::List*>(UP_obj);
-              index = val_ops::ToInt(lval->index, str1161, loc::Missing);
+              index = val_ops::ToInt(lval->index, str1159, loc::Missing);
               obj->items->set(index, rval);
             }
               break;
             case value_e::Dict: {
               value::Dict* obj = static_cast<value::Dict*>(UP_obj);
-              key = val_ops::ToStr(lval->index, str1162, loc::Missing);
+              key = val_ops::ToStr(lval->index, str1160, loc::Missing);
               obj->d->set(key, rval);
             }
               break;
             default: {
-              throw Alloc<error::TypeErr>(obj, str1163, loc::Missing);
+              throw Alloc<error::TypeErr>(obj, str1161, loc::Missing);
             }
           }
         }
@@ -29985,7 +29983,7 @@ int CommandEvaluator::_DoSimple(command::Simple* node, runtime_asdl::CommandStat
       this->mem->SetLastArgument(cmd_val->argv->at(-1));
     }
     else {
-      this->mem->SetLastArgument(str1164);
+      this->mem->SetLastArgument(str1162);
     }
     if ((node->typed_args or node->block)) {
       func_proc::EvalTypedArgsToProc(this->expr_ev, this->mutable_opts, node, cmd_val);
@@ -29993,7 +29991,7 @@ int CommandEvaluator::_DoSimple(command::Simple* node, runtime_asdl::CommandStat
   }
   else {
     if (node->block) {
-      e_die(str1165, node->block->brace_group->left);
+      e_die(str1163, node->block->brace_group->left);
     }
     cmd_value::Assign* cmd_val = static_cast<cmd_value::Assign*>(UP_cmd_val);
   }
@@ -30056,10 +30054,10 @@ int CommandEvaluator::_DoPipeline(command::Pipeline* node, runtime_asdl::Command
     syntax_asdl::Token* op = it.Value();
     StackRoot _for(&op  );
     if (op->id != Id::Op_Pipe) {
-      e_die(str1166, op);
+      e_die(str1164, op);
     }
   }
-  this->mem->SetLastArgument(str1167);
+  this->mem->SetLastArgument(str1165);
   status = -1;
   if (node->negated != nullptr) {
     this->_StrictErrExit(node);
@@ -30211,12 +30209,12 @@ int CommandEvaluator::_DoControlFlow(command::ControlFlow* node) {
   }
   this->tracer->OnControlFlow(keyword->tval, arg);
   if (((keyword->id == Id::ControlFlow_Break || keyword->id == Id::ControlFlow_Continue) and this->loop_level == 0)) {
-    msg = str1169;
+    msg = str1167;
     if (this->exec_opts->strict_control_flow()) {
       e_die(msg, keyword);
     }
     else {
-      this->errfmt->PrefixPrint(msg, str1170, keyword);
+      this->errfmt->PrefixPrint(msg, str1168, keyword);
       return 0;
     }
   }
@@ -30394,7 +30392,7 @@ int CommandEvaluator::_DoForEach(command::ForEach* node) {
             name1 = location::LName(node->iter_names->at(1));
           }
           else {
-            e_die_status(2, str1171, node->keyword);
+            e_die_status(2, str1169, node->keyword);
           }
         }
       }
@@ -30435,13 +30433,13 @@ int CommandEvaluator::_DoForEach(command::ForEach* node) {
             name1 = location::LName(node->iter_names->at(1));
           }
           else {
-            e_die_status(2, str1172, node->keyword);
+            e_die_status(2, str1170, node->keyword);
           }
         }
       }
         break;
       default: {
-        throw Alloc<error::TypeErr>(val, str1173, node->keyword);
+        throw Alloc<error::TypeErr>(val, str1171, node->keyword);
       }
     }
   }
@@ -30456,7 +30454,7 @@ int CommandEvaluator::_DoForEach(command::ForEach* node) {
         name1 = location::LName(node->iter_names->at(1));
       }
       else {
-        e_die_status(2, str1174, node->keyword);
+        e_die_status(2, str1172, node->keyword);
       }
     }
   }
@@ -30935,7 +30933,7 @@ void CommandEvaluator::RunPendingTraps() {
           state::ctx_Registers ctx{this->mem};
 
           {  // with
-            dev::ctx_Tracer ctx{this->tracer, str1178, nullptr};
+            dev::ctx_Tracer ctx{this->tracer, str1176, nullptr};
 
             this->_Execute(trap_node);
           }
@@ -30995,7 +30993,7 @@ int CommandEvaluator::_Execute(syntax_asdl::command_t* node) {
       if (!e->HasLocation()) {
         e->location = this->mem->GetFallbackLocation();
       }
-      this->errfmt->PrettyPrintError(e, str1179);
+      this->errfmt->PrettyPrintError(e, str1177);
       redirects = nullptr;
     }
     if (redirects == nullptr) {
@@ -31014,7 +31012,7 @@ int CommandEvaluator::_Execute(syntax_asdl::command_t* node) {
             if (!e->HasLocation()) {
               e->location = this->mem->GetFallbackLocation();
             }
-            this->errfmt->PrettyPrintError(e, str1180);
+            this->errfmt->PrettyPrintError(e, str1178);
             status = 1;
             check_errexit = true;
           }
@@ -31175,7 +31173,7 @@ Tuple2<bool, bool> CommandEvaluator::ExecuteAndCatch(syntax_asdl::command_t* nod
         status = e->StatusCode();
       }
       else {
-        this->errfmt->Print_(str1181, e->token);
+        this->errfmt->Print_(str1179, e->token);
         is_fatal = true;
         status = 1;
       }
@@ -31205,7 +31203,7 @@ Tuple2<bool, bool> CommandEvaluator::ExecuteAndCatch(syntax_asdl::command_t* nod
       }
     }
     else {
-      this->errfmt->PrettyPrintError(err, str1182);
+      this->errfmt->PrettyPrintError(err, str1180);
     }
   }
   this->dumper->MaybeDump(status);
@@ -31226,7 +31224,7 @@ int CommandEvaluator::EvalCommand(syntax_asdl::command_t* block) {
       status = e->StatusCode();
     }
     else {
-      e_die(str1183, e->token);
+      e_die(str1181, e->token);
     }
   }
   return status;
@@ -31239,10 +31237,10 @@ void CommandEvaluator::MaybeRunExitTrap(syntax_asdl::IntParamBox* mut_status) {
   StackRoot _root0(&mut_status);
   StackRoot _root1(&node);
 
-  node = this->trap_state->GetHook(str1184);
+  node = this->trap_state->GetHook(str1182);
   if (node) {
     {  // with
-      dev::ctx_Tracer ctx{this->tracer, str1185, nullptr};
+      dev::ctx_Tracer ctx{this->tracer, str1183, nullptr};
 
       try {
         Tuple2<bool, bool> tup3 = this->ExecuteAndCatch(node);
@@ -31267,10 +31265,10 @@ void CommandEvaluator::_MaybeRunDebugTrap() {
   if (!this->mem->ShouldRunDebugTrap()) {
     return ;
   }
-  node = this->trap_state->GetHook(str1186);
+  node = this->trap_state->GetHook(str1184);
   if (node) {
     {  // with
-      dev::ctx_Tracer ctx{this->tracer, str1187, nullptr};
+      dev::ctx_Tracer ctx{this->tracer, str1185, nullptr};
 
       {  // with
         state::ctx_Registers ctx{this->mem};
@@ -31292,10 +31290,10 @@ void CommandEvaluator::_MaybeRunErrTrap() {
   if (this->running_err_trap) {
     return ;
   }
-  node = this->trap_state->GetHook(str1188);
+  node = this->trap_state->GetHook(str1186);
   if (node) {
     {  // with
-      dev::ctx_Tracer ctx{this->tracer, str1189, nullptr};
+      dev::ctx_Tracer ctx{this->tracer, str1187, nullptr};
 
       {  // with
         ctx_ErrTrap ctx{this};
@@ -31361,7 +31359,7 @@ int CommandEvaluator::RunFuncForCompletion(value::Proc* proc, List<BigStr*>* arg
     status = e->ExitStatus();
   }
   catch (vm::IntControlFlow* e) {
-    this->errfmt->Print_(str1191, e->token);
+    this->errfmt->Print_(str1189, e->token);
     status = 1;
   }
   return status;
@@ -31447,7 +31445,7 @@ Tuple2<List<Tuple2<syntax_asdl::SourceLine*, int>*>*, Tuple2<syntax_asdl::Source
     Tuple2<syntax_asdl::SourceLine*, int> tup0 = line_reader->GetLine();
     src_line = tup0.at0();
     if (src_line == nullptr) {
-      p_die(str1192, h->op);
+      p_die(str1190, h->op);
     }
     line = src_line->content;
     start_offset = 0;
@@ -31455,7 +31453,7 @@ Tuple2<List<Tuple2<syntax_asdl::SourceLine*, int>*>*, Tuple2<syntax_asdl::Source
       n = len(line);
       i = 0;
       while (i < n) {
-        if (!(str_equals(line->at(i), str1193))) {
+        if (!(str_equals(line->at(i), str1191))) {
           break;
         }
         i += 1;
@@ -31518,7 +31516,7 @@ void _ParseHereDocBody(parse_lib::ParseContext* parse_ctx, syntax_asdl::Redir* r
   delimiter = tup2.at1();
   delim_quoted = tup2.at2();
   if (!ok) {
-    p_die(str1194, Alloc<loc::Word>(h->here_begin));
+    p_die(str1192, Alloc<loc::Word>(h->here_begin));
   }
   Tuple2<List<Tuple2<syntax_asdl::SourceLine*, int>*>*, Tuple2<syntax_asdl::SourceLine*, int>*> tup3 = _ReadHereLines(line_reader, r, delimiter);
   here_lines = tup3.at0();
@@ -31534,7 +31532,7 @@ void _ParseHereDocBody(parse_lib::ParseContext* parse_ctx, syntax_asdl::Redir* r
   Tuple2<syntax_asdl::SourceLine*, int>* tup4 = last_line;
   end_line = tup4->at0();
   end_pos = tup4->at1();
-  h->here_end_tok = arena->NewToken(Id::Undefined_Tok, end_pos, len(end_line->content), end_line, str1195);
+  h->here_end_tok = arena->NewToken(Id::Undefined_Tok, end_pos, len(end_line->content), end_line, str1193);
 }
 
 syntax_asdl::AssignPair* _MakeAssignPair(parse_lib::ParseContext* parse_ctx, syntax_asdl::ParsedAssignment* preparsed, alloc::Arena* arena) {
@@ -31615,7 +31613,7 @@ syntax_asdl::AssignPair* _MakeAssignPair(parse_lib::ParseContext* parse_ctx, syn
           FAIL(kNotImplemented);  // Python NotImplementedError
         }
         a_parser = parse_ctx->MakeArithParser(code_str);
-        src = Alloc<source::Reparsed>(str1197, left_token, close_token);
+        src = Alloc<source::Reparsed>(str1195, left_token, close_token);
         {  // with
           alloc::ctx_SourceCode ctx{arena, src};
 
@@ -31661,10 +31659,10 @@ void _AppendMoreEnv(List<syntax_asdl::ParsedAssignment*>* preparsed_list, List<s
     StackRoot _for(&preparsed  );
     left_token = preparsed->left;
     if (left_token->id != Id::Lit_VarLike) {
-      p_die(str1198, left_token);
+      p_die(str1196, left_token);
     }
     if (lexer::IsPlusEquals(left_token)) {
-      p_die(str1199, left_token);
+      p_die(str1197, left_token);
     }
     var_name = lexer::TokenSliceRight(left_token, -1);
     parts = preparsed->w->parts;
@@ -31739,7 +31737,7 @@ command::Simple* _MakeSimpleCommand(List<syntax_asdl::ParsedAssignment*>* prepar
     syntax_asdl::ParsedAssignment* preparsed = it.Value();
     StackRoot _for(&preparsed  );
     if (word_::HasArrayPart(preparsed->w)) {
-      p_die(str1200, Alloc<loc::Word>(preparsed->w));
+      p_die(str1198, Alloc<loc::Word>(preparsed->w));
     }
   }
   part0 = suffix_words->at(0)->parts->at(0);
@@ -31763,13 +31761,13 @@ void VarChecker::Push(syntax_asdl::Token* blame_tok) {
 
   if (len(this->tokens) != 0) {
     if (blame_tok->id == Id::KW_Proc) {
-      p_die(str1201, blame_tok);
+      p_die(str1199, blame_tok);
     }
     if (blame_tok->id == Id::KW_Func) {
-      p_die(str1202, blame_tok);
+      p_die(str1200, blame_tok);
     }
     if ((this->tokens->at(0)->id == Id::KW_Proc || this->tokens->at(0)->id == Id::KW_Func)) {
-      p_die(str1203, blame_tok);
+      p_die(str1201, blame_tok);
     }
   }
   this->tokens->append(blame_tok);
@@ -31948,8 +31946,8 @@ syntax_asdl::Redir* CommandParser::ParseRedirect() {
   this->_GetWord();
   Token* op_tok = static_cast<Token*>(this->cur_word);
   op_val = lexer::TokenVal(op_tok);
-  if (str_equals(op_val->at(0), str1207)) {
-    pos = op_val->find(str1208);
+  if (str_equals(op_val->at(0), str1205)) {
+    pos = op_val->find(str1206);
     where = Alloc<redir_loc::VarName>(op_val->slice(1, pos));
   }
   else {
@@ -31967,7 +31965,7 @@ syntax_asdl::Redir* CommandParser::ParseRedirect() {
   this->_SetNext();
   this->_GetWord();
   if (this->c_kind != Kind::Word) {
-    p_die(str1209, Alloc<loc::Word>(this->cur_word));
+    p_die(str1207, Alloc<loc::Word>(this->cur_word));
   }
   if ((op_tok->id == Id::Redir_DLess || op_tok->id == Id::Redir_DLessDash)) {
     arg = redir_param::HereDoc::CreateNull();
@@ -32069,7 +32067,7 @@ Tuple4<List<syntax_asdl::Redir*>*, List<syntax_asdl::CompoundWord*>*, syntax_asd
           if (part0->tag() == word_part_e::Literal) {
             Token* tok = static_cast<Token*>(part0);
             if (tok->id == Id::Lit_Equals) {
-              p_die(str1210, tok);
+              p_die(str1208, tok);
             }
           }
           Tuple3<bool, BigStr*, bool> tup6 = word_::StaticEval(w);
@@ -32087,15 +32085,15 @@ Tuple4<List<syntax_asdl::Redir*>*, List<syntax_asdl::CompoundWord*>*, syntax_asd
           prev_byte = this->lexer->ByteLookBack();
           if ((prev_byte != SPACE_CH && prev_byte != TAB_CH)) {
             if (this->parse_opts->parse_at()) {
-              p_die(str1211, Alloc<loc::Word>(this->cur_word));
+              p_die(str1209, Alloc<loc::Word>(this->cur_word));
             }
             else {
-              p_die(str1212, Alloc<loc::Word>(this->cur_word));
+              p_die(str1210, Alloc<loc::Word>(this->cur_word));
             }
           }
           next_id = this->lexer->LookPastSpace(lex_mode_e::ShCommand);
           if (next_id == Id::Op_RParen) {
-            p_die(str1213, Alloc<loc::Word>(this->cur_word));
+            p_die(str1211, Alloc<loc::Word>(this->cur_word));
           }
           typed_args = this->w_parser->ParseProcCallArgs(grammar_nt::ysh_eager_arglist);
         }
@@ -32182,8 +32180,8 @@ syntax_asdl::command_t* CommandParser::_MaybeExpandAliases(List<syntax_asdl::Com
     aliases_in_flight->append((Alloc<Tuple2<BigStr*, int>>(word_str, i)));
     expanded->append(alias_exp);
     i += 1;
-    if (!alias_exp->endswith(str1214)) {
-      expanded->append(str1215);
+    if (!alias_exp->endswith(str1212)) {
+      expanded->append(str1213);
       break;
     }
   }
@@ -32196,7 +32194,7 @@ syntax_asdl::command_t* CommandParser::_MaybeExpandAliases(List<syntax_asdl::Com
     words_str = this->arena->SnipCodeString(left_tok, right_tok);
     expanded->append(words_str);
   }
-  code_str = str1216->join(expanded);
+  code_str = str1214->join(expanded);
   arena = this->arena;
   line_reader = reader::StringLineReader(code_str, arena);
   cp = this->parse_ctx->MakeOshParser(line_reader);
@@ -32268,7 +32266,7 @@ syntax_asdl::command_t* CommandParser::ParseSimpleCommand() {
   }
   if (len(words) == 0) {
     if (typed_loc != nullptr) {
-      p_die(str1217, typed_loc);
+      p_die(str1215, typed_loc);
     }
     simple = command::Simple::CreateNull();
     simple->blame_tok = redirects->at(0)->op;
@@ -32283,14 +32281,14 @@ syntax_asdl::command_t* CommandParser::ParseSimpleCommand() {
   if (len(preparsed_list)) {
     if (len(suffix_words) == 0) {
       if ((this->cmd_mode != cmd_mode_e::Shell or (len(this->hay_attrs_stack) and this->hay_attrs_stack->at(-1)))) {
-        p_die(str1218, preparsed_list->at(0)->left);
+        p_die(str1216, preparsed_list->at(0)->left);
       }
     }
   }
   this->parse_ctx->trail->SetLatestWords(suffix_words, redirects);
   if (len(suffix_words) == 0) {
     if (typed_loc != nullptr) {
-      p_die(str1219, typed_loc);
+      p_die(str1217, typed_loc);
     }
     pairs = Alloc<List<syntax_asdl::AssignPair*>>();
     for (ListIter<syntax_asdl::ParsedAssignment*> it(preparsed_list); !it.Done(); it.Next()) {
@@ -32308,30 +32306,30 @@ syntax_asdl::command_t* CommandParser::ParseSimpleCommand() {
     if (kw_token->id == Id::ControlFlow_Return) {
       if (typed_args == nullptr) {
         if ((this->cmd_mode != cmd_mode_e::Shell && this->cmd_mode != cmd_mode_e::Proc)) {
-          p_die(str1220, kw_token);
+          p_die(str1218, kw_token);
         }
       }
       else {
         if (this->cmd_mode != cmd_mode_e::Func) {
-          p_die(str1221, typed_loc);
+          p_die(str1219, typed_loc);
         }
         if (len(typed_args->pos_args) != 1) {
-          p_die(str1222, typed_loc);
+          p_die(str1220, typed_loc);
         }
         if (len(typed_args->named_args) != 0) {
-          p_die(str1223, typed_loc);
+          p_die(str1221, typed_loc);
         }
         return Alloc<command::Retval>(kw_token, typed_args->pos_args->at(0));
       }
     }
     if (typed_loc != nullptr) {
-      p_die(str1224, typed_loc);
+      p_die(str1222, typed_loc);
     }
     if ((!this->parse_opts->parse_ignored() and len(redirects))) {
-      p_die(str1225, kw_token);
+      p_die(str1223, kw_token);
     }
     if (len(preparsed_list)) {
-      p_die(str1226, preparsed_list->at(0)->left);
+      p_die(str1224, preparsed_list->at(0)->left);
     }
     if (len(suffix_words) == 1) {
       arg_word = nullptr;
@@ -32440,7 +32438,7 @@ Tuple2<List<syntax_asdl::CompoundWord*>*, syntax_asdl::Token*> CommandParser::Pa
       }
     }
     if (this->cur_word->tag() != word_e::Compound) {
-      p_die(str1228, Alloc<loc::Word>(this->cur_word));
+      p_die(str1226, Alloc<loc::Word>(this->cur_word));
     }
     CompoundWord* w2 = static_cast<CompoundWord*>(this->cur_word);
     words->append(w2);
@@ -32475,7 +32473,7 @@ command::ForExpr* CommandParser::_ParseForExprLoop(syntax_asdl::Token* for_kw) {
           ;  // pass
         }
         else {
-          p_die(str1229, Alloc<loc::Word>(this->cur_word));
+          p_die(str1227, Alloc<loc::Word>(this->cur_word));
         }
       }
     }
@@ -32534,11 +32532,11 @@ command::ForEach* CommandParser::_ParseForEachLoop(syntax_asdl::Token* for_kw) {
     iter_name = tup11.at1();
     quoted = tup11.at2();
     if ((!ok or quoted)) {
-      p_die(str1230, Alloc<loc::Word>(w));
+      p_die(str1228, Alloc<loc::Word>(w));
     }
     if (!match::IsValidVarName(iter_name)) {
-      if (str_contains(iter_name, str1231)) {
-        p_die(str1232, Alloc<loc::Word>(w));
+      if (str_contains(iter_name, str1229)) {
+        p_die(str1230, Alloc<loc::Word>(w));
       }
       p_die(StrFormat("Invalid loop variable name %r", iter_name), Alloc<loc::Word>(w));
     }
@@ -32550,7 +32548,7 @@ command::ForEach* CommandParser::_ParseForEachLoop(syntax_asdl::Token* for_kw) {
       break;
     }
     if (num_iter_names == 3) {
-      p_die(str1234, Alloc<loc::Word>(this->cur_word));
+      p_die(str1232, Alloc<loc::Word>(this->cur_word));
     }
   }
   this->_NewlineOk();
@@ -32563,7 +32561,7 @@ command::ForEach* CommandParser::_ParseForEachLoop(syntax_asdl::Token* for_kw) {
       node->iterable = Alloc<for_iter::YshExpr>(enode, expr_blame);
       this->_GetWord();
       if (this->c_id != Id::Lit_LBrace) {
-        p_die(str1235, Alloc<loc::Word>(this->cur_word));
+        p_die(str1233, Alloc<loc::Word>(this->cur_word));
       }
     }
     else {
@@ -32578,14 +32576,14 @@ command::ForEach* CommandParser::_ParseForEachLoop(syntax_asdl::Token* for_kw) {
         s = tup13.at1();
         quoted = tup13.at2();
         if ((ok and (match::IsValidVarName(s) and !quoted))) {
-          p_die(str1236, Alloc<loc::Word>(iter_words->at(0)));
+          p_die(str1234, Alloc<loc::Word>(iter_words->at(0)));
         }
       }
       words2 = braces::BraceDetectAll(iter_words);
       words3 = word_::TildeDetectAll(words2);
       node->iterable = Alloc<for_iter::Words>(words3);
       if (num_iter_names > 2) {
-        p_die(str1237, for_kw);
+        p_die(str1235, for_kw);
       }
     }
   }
@@ -32599,7 +32597,7 @@ command::ForEach* CommandParser::_ParseForEachLoop(syntax_asdl::Token* for_kw) {
         this->_SetNext();
       }
       else {
-        p_die(str1238, Alloc<loc::Word>(this->cur_word));
+        p_die(str1236, Alloc<loc::Word>(this->cur_word));
       }
     }
   }
@@ -32628,7 +32626,7 @@ syntax_asdl::command_t* CommandParser::ParseFor() {
   this->_GetWord();
   if (this->c_id == Id::Op_DLeftParen) {
     if (!this->parse_opts->parse_dparen()) {
-      p_die(str1239, Alloc<loc::Word>(this->cur_word));
+      p_die(str1237, Alloc<loc::Word>(this->cur_word));
     }
     n1 = this->_ParseForExprLoop(for_kw);
     n1->redirects = this->_ParseRedirectList();
@@ -32649,7 +32647,7 @@ syntax_asdl::condition_t* CommandParser::_ParseConditionList() {
   commands = this->_ParseCommandList();
   this->allow_block = true;
   if (len(commands->children) == 0) {
-    p_die(str1240, Alloc<loc::Word>(this->cur_word));
+    p_die(str1238, Alloc<loc::Word>(this->cur_word));
   }
   return Alloc<condition::Shell>(commands->children);
 }
@@ -32706,7 +32704,7 @@ syntax_asdl::CaseArm* CommandParser::ParseCaseArm() {
   while (true) {
     this->_GetWord();
     if (this->c_kind != Kind::Word) {
-      p_die(str1241, Alloc<loc::Word>(this->cur_word));
+      p_die(str1239, Alloc<loc::Word>(this->cur_word));
     }
     pat_words->append(this->cur_word);
     this->_SetNext();
@@ -32740,7 +32738,7 @@ syntax_asdl::CaseArm* CommandParser::ParseCaseArm() {
       this->_SetNext();
     }
     else {
-      p_die(str1242, Alloc<loc::Word>(this->cur_word));
+      p_die(str1240, Alloc<loc::Word>(this->cur_word));
     }
   }
   this->_NewlineOk();
@@ -32769,7 +32767,7 @@ syntax_asdl::CaseArm* CommandParser::ParseYshCaseArm(int discriminant) {
     while (true) {
       this->_GetWord();
       if (this->c_kind != Kind::Word) {
-        p_die(str1243, Alloc<loc::Word>(this->cur_word));
+        p_die(str1241, Alloc<loc::Word>(this->cur_word));
       }
       pat_words->append(this->cur_word);
       this->_SetNext();
@@ -32857,11 +32855,11 @@ command::Case* CommandParser::ParseOldCase(syntax_asdl::Token* case_kw) {
     s = tup15.at1();
     quoted = tup15.at2();
     if ((ok and !quoted)) {
-      p_die(str1244, Alloc<loc::Word>(w));
+      p_die(str1242, Alloc<loc::Word>(w));
     }
   }
   if (w->tag() != word_e::Compound) {
-    p_die(str1245, Alloc<loc::Word>(w));
+    p_die(str1243, Alloc<loc::Word>(w));
   }
   to_match = Alloc<case_arg::Word>(w);
   this->_SetNext();
@@ -33123,7 +33121,7 @@ syntax_asdl::command_t* CommandParser::ParseCompoundCommand() {
   }
   if (this->c_id == Id::Op_DLeftParen) {
     if (!this->parse_opts->parse_dparen()) {
-      p_die(str1246, Alloc<loc::Word>(this->cur_word));
+      p_die(str1244, Alloc<loc::Word>(this->cur_word));
     }
     n7 = this->ParseDParen();
     n7->redirects = this->_ParseRedirectList();
@@ -33132,7 +33130,7 @@ syntax_asdl::command_t* CommandParser::ParseCompoundCommand() {
   if (this->c_id == Id::KW_Time) {
     return this->ParseTime();
   }
-  p_die(str1247, Alloc<loc::Word>(this->cur_word));
+  p_die(str1245, Alloc<loc::Word>(this->cur_word));
 }
 
 command::ShFunction* CommandParser::ParseFunctionDef() {
@@ -33146,7 +33144,7 @@ command::ShFunction* CommandParser::ParseFunctionDef() {
   CompoundWord* word0 = static_cast<CompoundWord*>(this->cur_word);
   name = word_::ShFunctionName(word0);
   if (len(name) == 0) {
-    p_die(str1248, Alloc<loc::Word>(word0));
+    p_die(str1246, Alloc<loc::Word>(word0));
   }
   part0 = word0->parts->at(0);
   Token* blame_tok = static_cast<Token*>(part0);
@@ -33169,7 +33167,7 @@ command::ShFunction* CommandParser::ParseFunctionDef() {
     return func;
   }
   else {
-    p_die(str1249, Alloc<loc::Word>(this->cur_word));
+    p_die(str1247, Alloc<loc::Word>(this->cur_word));
     return nullptr;
   }
 }
@@ -33190,7 +33188,7 @@ command::ShFunction* CommandParser::ParseKshFunctionDef() {
   CompoundWord* cur_word = static_cast<CompoundWord*>(this->cur_word);
   name = word_::ShFunctionName(cur_word);
   if (len(name) == 0) {
-    p_die(str1250, Alloc<loc::Word>(cur_word));
+    p_die(str1248, Alloc<loc::Word>(cur_word));
   }
   name_word = this->cur_word;
   this->_SetNext();
@@ -33429,7 +33427,7 @@ syntax_asdl::command_t* CommandParser::ParseCommand() {
   StackRoot _root6(&part0);
 
   if (this->_AtSecondaryKeyword()) {
-    p_die(str1251, Alloc<loc::Word>(this->cur_word));
+    p_die(str1249, Alloc<loc::Word>(this->cur_word));
   }
   if (this->c_id == Id::KW_Proc) {
     if (this->parse_opts->parse_proc()) {
@@ -33442,7 +33440,7 @@ syntax_asdl::command_t* CommandParser::ParseCommand() {
     }
   }
   if ((this->c_id == Id::KW_Const and this->cmd_mode != cmd_mode_e::Shell)) {
-    p_die(str1252, Alloc<loc::Word>(this->cur_word));
+    p_die(str1250, Alloc<loc::Word>(this->cur_word));
   }
   if ((this->c_id == Id::KW_Var || this->c_id == Id::KW_Const)) {
     keyword_id = this->c_id;
@@ -33475,7 +33473,7 @@ syntax_asdl::command_t* CommandParser::ParseCommand() {
     return this->ParseCompoundCommand();
   }
   if (this->c_id == Id::Lit_RBrace) {
-    p_die(str1253, Alloc<loc::Word>(this->cur_word));
+    p_die(str1251, Alloc<loc::Word>(this->cur_word));
   }
   if (this->c_kind == Kind::Redir) {
     return this->ParseSimpleCommand();
@@ -33499,7 +33497,7 @@ syntax_asdl::command_t* CommandParser::ParseCommand() {
           else {
             this->_SetNext();
             this->_GetWord();
-            p_die(str1254, Alloc<loc::Word>(this->cur_word));
+            p_die(str1252, Alloc<loc::Word>(this->cur_word));
           }
         }
       }
@@ -33507,9 +33505,9 @@ syntax_asdl::command_t* CommandParser::ParseCommand() {
     return this->ParseSimpleCommand();
   }
   if (this->c_kind == Kind::Eof) {
-    p_die(str1255, Alloc<loc::Word>(this->cur_word));
+    p_die(str1253, Alloc<loc::Word>(this->cur_word));
   }
-  p_die(str1256, Alloc<loc::Word>(this->cur_word));
+  p_die(str1254, Alloc<loc::Word>(this->cur_word));
 }
 
 syntax_asdl::command_t* CommandParser::ParsePipeline() {
@@ -33637,7 +33635,7 @@ syntax_asdl::command_t* CommandParser::_ParseCommandLine() {
         done = true;
       }
       else {
-        p_die(str1257, Alloc<loc::Word>(this->cur_word));
+        p_die(str1255, Alloc<loc::Word>(this->cur_word));
       }
     }
     children->append(child);
@@ -33704,7 +33702,7 @@ command::CommandList* CommandParser::_ParseCommandTerm() {
           }
           else {
             if (this->c_kind != Kind::Word) {
-              p_die(str1258, Alloc<loc::Word>(this->cur_word));
+              p_die(str1256, Alloc<loc::Word>(this->cur_word));
             }
           }
         }
@@ -33773,7 +33771,7 @@ void CommandParser::CheckForPendingHereDocs() {
   if (len(this->pending_here_docs)) {
     node = this->pending_here_docs->at(0);
     redir_param::HereDoc* h = static_cast<redir_param::HereDoc*>(node->arg);
-    p_die(str1259, Alloc<loc::Word>(h->here_begin));
+    p_die(str1257, Alloc<loc::Word>(h->here_begin));
   }
 }
 
@@ -33804,19 +33802,19 @@ bool LooksLikeGlob(BigStr* s) {
   n = len(s);
   while (i < n) {
     c = s->at(i);
-    if (str_equals(c, str1260)) {
+    if (str_equals(c, str1258)) {
       i += 1;
     }
     else {
-      if ((str_equals(c, str1261) or str_equals(c, str1262))) {
+      if ((str_equals(c, str1259) or str_equals(c, str1260))) {
         return true;
       }
       else {
-        if (str_equals(c, str1263)) {
+        if (str_equals(c, str1261)) {
           left_bracket = true;
         }
         else {
-          if ((str_equals(c, str1264) and left_bracket)) {
+          if ((str_equals(c, str1262) and left_bracket)) {
             return true;
           }
         }
@@ -33855,14 +33853,14 @@ bool LooksLikeStaticGlob(syntax_asdl::CompoundWord* w) {
   }
   return false;
 }
-BigStr* GLOB_META_CHARS = str1265;
+BigStr* GLOB_META_CHARS = str1263;
 
 BigStr* GlobEscape(BigStr* s) {
   StackRoot _root0(&s);
 
   return pyutil::BackslashEscape(s, GLOB_META_CHARS);
 }
-BigStr* ERE_META_CHARS = str1266;
+BigStr* ERE_META_CHARS = str1264;
 
 BigStr* ExtendedRegexEscape(BigStr* s) {
   StackRoot _root0(&s);
@@ -33886,7 +33884,7 @@ BigStr* GlobUnescape(BigStr* s) {
   n = len(s);
   while (i < n) {
     c = s->at(i);
-    if ((str_equals(c, str1267) and i != (n - 1))) {
+    if ((str_equals(c, str1265) and i != (n - 1))) {
       i += 1;
       c2 = s->at(i);
       if (str_contains(GLOB_META_CHARS, c2)) {
@@ -33901,13 +33899,13 @@ BigStr* GlobUnescape(BigStr* s) {
     }
     i += 1;
   }
-  return str1269->join(unescaped);
+  return str1267->join(unescaped);
 }
 
 _GlobParser::_GlobParser(match::SimpleLexer* lexer) {
   this->lexer = lexer;
   this->token_type = Id::Undefined_Tok;
-  this->token_val = str1270;
+  this->token_val = str1268;
   this->warnings = Alloc<List<BigStr*>>();
 }
 
@@ -33939,7 +33937,7 @@ List<syntax_asdl::glob_part_t*>* _GlobParser::_ParseCharClass() {
   while (true) {
     this->_Next();
     if (this->token_type == Id::Eol_Tok) {
-      this->warnings->append(str1271);
+      this->warnings->append(str1269);
       parts = NewList<syntax_asdl::glob_part_t*>(std::initializer_list<syntax_asdl::glob_part_t*>{first_token});
       for (ListIter<Tuple2<int, BigStr*>*> it(tokens); !it.Done(); it.Next()) {
         Tuple2<int, BigStr*>* tup1 = it.Value();
@@ -34007,15 +34005,15 @@ Tuple2<List<syntax_asdl::glob_part_t*>*, List<BigStr*>*> _GlobParser::Parse() {
       }
     }
     if (id_ == Id::Glob_RBracket) {
-      this->warnings->append(str1272);
+      this->warnings->append(str1270);
     }
     if (id_ == Id::Glob_BadBackslash) {
-      this->warnings->append(str1273);
+      this->warnings->append(str1271);
     }
   }
   return Tuple2<List<syntax_asdl::glob_part_t*>*, List<BigStr*>*>(parts, this->warnings);
 }
-BigStr* _REGEX_CHARS_TO_ESCAPE = str1274;
+BigStr* _REGEX_CHARS_TO_ESCAPE = str1272;
 
 BigStr* _GenerateERE(List<syntax_asdl::glob_part_t*>* parts) {
   List<BigStr*>* out = nullptr;
@@ -34042,7 +34040,7 @@ BigStr* _GenerateERE(List<syntax_asdl::glob_part_t*>* parts) {
       if (part->id == Id::Glob_EscapedChar) {
         c = part->s->at(1);
         if (str_contains(_REGEX_CHARS_TO_ESCAPE, c)) {
-          out->append(str1275);
+          out->append(str1273);
         }
         out->append(c);
       }
@@ -34054,25 +34052,25 @@ BigStr* _GenerateERE(List<syntax_asdl::glob_part_t*>* parts) {
           if ((part->id == Id::Glob_OtherLiteral || part->id == Id::Glob_Caret)) {
             c = part->s;
             if (str_contains(_REGEX_CHARS_TO_ESCAPE, c)) {
-              out->append(str1276);
+              out->append(str1274);
             }
             out->append(c);
           }
           else {
             if (part->id == Id::Glob_LBracket) {
-              out->append(str1277);
+              out->append(str1275);
             }
             else {
               if (part->id == Id::Glob_RBracket) {
-                out->append(str1278);
+                out->append(str1276);
               }
               else {
                 if (part->id == Id::Glob_BadBackslash) {
-                  out->append(str1279);
+                  out->append(str1277);
                 }
                 else {
                   if (part->id == Id::Glob_Caret) {
-                    out->append(str1280);
+                    out->append(str1278);
                   }
                   else {
                     assert(0);  // AssertionError
@@ -34088,11 +34086,11 @@ BigStr* _GenerateERE(List<syntax_asdl::glob_part_t*>* parts) {
       if (tag == glob_part_e::Operator) {
         glob_part::Operator* part = static_cast<glob_part::Operator*>(UP_part);
         if (part->op_id == Id::Glob_QMark) {
-          out->append(str1281);
+          out->append(str1279);
         }
         else {
           if (part->op_id == Id::Glob_Star) {
-            out->append(str1282);
+            out->append(str1280);
           }
           else {
             assert(0);  // AssertionError
@@ -34102,9 +34100,9 @@ BigStr* _GenerateERE(List<syntax_asdl::glob_part_t*>* parts) {
       else {
         if (tag == glob_part_e::CharClass) {
           glob_part::CharClass* part = static_cast<glob_part::CharClass*>(UP_part);
-          out->append(str1283);
+          out->append(str1281);
           if (part->negated) {
-            out->append(str1284);
+            out->append(str1282);
           }
           good = Alloc<List<BigStr*>>();
           literal_hyphen = false;
@@ -34112,29 +34110,29 @@ BigStr* _GenerateERE(List<syntax_asdl::glob_part_t*>* parts) {
           for (ListIter<BigStr*> it(part->strs); !it.Done(); it.Next()) {
             BigStr* s = it.Value();
             StackRoot _for(&s          );
-            if (str_equals(s, str1285)) {
+            if (str_equals(s, str1283)) {
               literal_hyphen = true;
               continue;
             }
-            if (str_equals(s, str1286)) {
+            if (str_equals(s, str1284)) {
               literal_rbracket = true;
               continue;
             }
             good->append(s);
           }
           if (literal_rbracket) {
-            out->append(str1287);
+            out->append(str1285);
           }
           out->extend(good);
           if (literal_hyphen) {
-            out->append(str1288);
+            out->append(str1286);
           }
-          out->append(str1289);
+          out->append(str1287);
         }
       }
     }
   }
-  return str1290->join(out);
+  return str1288->join(out);
 }
 
 Tuple2<BigStr*, List<BigStr*>*> GlobToERE(BigStr* pat) {
@@ -34188,7 +34186,7 @@ int Globber::_Glob(BigStr* arg, List<BigStr*>* out) {
       tmp = Alloc<List<BigStr*>>();
       for (ListIter<BigStr*> it(results); !it.Done(); it.Next()) {
         BigStr* s = it.Value();
-        if (!s->startswith(str1292)) {
+        if (!s->startswith(str1290)) {
           tmp->append(s);
         }
       }
@@ -34357,7 +34355,7 @@ BigStr* Evaluator::Eval(BigStr* line) {
       if (id_ == Id::History_Op) {
         prev = this->readline->get_history_item(history_len);
         ch = val->at(1);
-        if (str_equals(ch, str1294)) {
+        if (str_equals(ch, str1292)) {
           out = prev;
         }
         else {
@@ -34371,7 +34369,7 @@ BigStr* Evaluator::Eval(BigStr* line) {
             this->debug_f->writeln(StrFormat("Couldn't parse historical command %r: %s", prev, e->UserErrorString()));
           }
           words = this->parse_ctx->trail->words;
-          if (str_equals(ch, str1296)) {
+          if (str_equals(ch, str1294)) {
             try {
               w = words->at(1);
             }
@@ -34382,7 +34380,7 @@ BigStr* Evaluator::Eval(BigStr* line) {
             tok2 = location::RightTokenForWord(w);
           }
           else {
-            if (str_equals(ch, str1298)) {
+            if (str_equals(ch, str1296)) {
               try {
                 w = words->at(-1);
               }
@@ -34393,7 +34391,7 @@ BigStr* Evaluator::Eval(BigStr* line) {
               tok2 = location::RightTokenForWord(w);
             }
             else {
-              if (str_equals(ch, str1300)) {
+              if (str_equals(ch, str1298)) {
                 try {
                   w1 = words->at(1);
                   w2 = words->at(-1);
@@ -34433,8 +34431,8 @@ BigStr* Evaluator::Eval(BigStr* line) {
             last_char = val->at(-1);
             val = val->slice(0, -1);
             prefix = nullptr;
-            substring = str1303;
-            if (str_equals(val->at(1), str1304)) {
+            substring = str1301;
+            if (str_equals(val->at(1), str1302)) {
               substring = val->slice(2);
             }
             else {
@@ -34466,7 +34464,7 @@ BigStr* Evaluator::Eval(BigStr* line) {
     }
     parts->append(out);
   }
-  line = str1306->join(parts);
+  line = str1304->join(parts);
   print(StrFormat("! %s", line));
   return line;
 }
@@ -34484,8 +34482,8 @@ using syntax_asdl::CompoundWord;
 using value_asdl::value;
 using value_asdl::value_e;
 using value_asdl::value_t;
-BigStr* _ERROR_FMT = str1308;
-BigStr* _UNBALANCED_ERROR = str1309;
+BigStr* _ERROR_FMT = str1306;
+BigStr* _UNBALANCED_ERROR = str1307;
 
 _PromptEvaluatorCache::_PromptEvaluatorCache() {
   this->cache = Alloc<Dict<BigStr*, BigStr*>>();
@@ -34507,15 +34505,15 @@ BigStr* _PromptEvaluatorCache::Get(BigStr* name) {
   if (dict_contains(this->cache, name)) {
     return this->cache->at(name);
   }
-  if (str_equals(name, str1310)) {
-    value = this->_GetEuid() == 0 ? str1311 : str1312;
+  if (str_equals(name, str1308)) {
+    value = this->_GetEuid() == 0 ? str1309 : str1310;
   }
   else {
-    if (str_equals(name, str1313)) {
+    if (str_equals(name, str1311)) {
       value = libc::gethostname();
     }
     else {
-      if (str_equals(name, str1314)) {
+      if (str_equals(name, str1312)) {
         value = pyos::GetUserName(this->_GetEuid());
       }
       else {
@@ -34546,8 +34544,8 @@ void Evaluator::CheckCircularDeps() {
 BigStr* Evaluator::PromptVal(BigStr* what) {
   StackRoot _root0(&what);
 
-  if (str_equals(what, str1315)) {
-    return StrFormat(_ERROR_FMT, str1316);
+  if (str_equals(what, str1313)) {
+    return StrFormat(_ERROR_FMT, str1314);
   }
   else {
     return this->PromptSubst(what);
@@ -34571,41 +34569,41 @@ BigStr* Evaluator::PromptSubst(BigStr* ch, BigStr* arg) {
   StackRoot _root6(&home);
   StackRoot _root7(&val);
 
-  if (str_equals(ch, str1317)) {
-    r = this->cache->Get(str1318);
+  if (str_equals(ch, str1315)) {
+    r = this->cache->Get(str1316);
   }
   else {
-    if (str_equals(ch, str1319)) {
-      r = this->cache->Get(str1320);
+    if (str_equals(ch, str1317)) {
+      r = this->cache->Get(str1318);
     }
     else {
-      if (str_equals(ch, str1321)) {
-        hostname = this->cache->Get(str1322);
-        Tuple2<BigStr*, BigStr*> tup0 = mylib::split_once(hostname, str1323);
+      if (str_equals(ch, str1319)) {
+        hostname = this->cache->Get(str1320);
+        Tuple2<BigStr*, BigStr*> tup0 = mylib::split_once(hostname, str1321);
         r = tup0.at0();
       }
       else {
-        if (str_equals(ch, str1324)) {
-          r = this->cache->Get(str1325);
+        if (str_equals(ch, str1322)) {
+          r = this->cache->Get(str1323);
         }
         else {
-          if (str_equals(ch, str1326)) {
+          if (str_equals(ch, str1324)) {
             r = this->lang;
           }
           else {
-            if (str_equals(ch, str1327)) {
+            if (str_equals(ch, str1325)) {
               r = this->version_str;
             }
             else {
-              if (str_equals(ch, str1328)) {
+              if (str_equals(ch, str1326)) {
                 now = time_::time();
-                r = time_::strftime(str1329, time_::localtime(now));
+                r = time_::strftime(str1327, time_::localtime(now));
               }
               else {
-                if (str_equals(ch, str1330)) {
+                if (str_equals(ch, str1328)) {
                   now = time_::time();
                   if (len(arg) == 0) {
-                    fmt = str1331;
+                    fmt = str1329;
                   }
                   else {
                     fmt = arg;
@@ -34613,10 +34611,10 @@ BigStr* Evaluator::PromptSubst(BigStr* ch, BigStr* arg) {
                   r = time_::strftime(fmt, time_::localtime(now));
                 }
                 else {
-                  if (str_equals(ch, str1332)) {
+                  if (str_equals(ch, str1330)) {
                     try {
-                      pwd = state::GetString(this->mem, str1333);
-                      home = state::MaybeString(this->mem, str1334);
+                      pwd = state::GetString(this->mem, str1331);
+                      home = state::MaybeString(this->mem, str1332);
                       r = ui::PrettyDir(pwd, home);
                     }
                     catch (error::Runtime* e) {
@@ -34624,14 +34622,14 @@ BigStr* Evaluator::PromptSubst(BigStr* ch, BigStr* arg) {
                     }
                   }
                   else {
-                    if (str_equals(ch, str1335)) {
-                      val = this->mem->GetValue(str1336);
+                    if (str_equals(ch, str1333)) {
+                      val = this->mem->GetValue(str1334);
                       if (val->tag() == value_e::Str) {
                         value::Str* str_val = static_cast<value::Str*>(val);
                         r = os_path::basename(str_val->s);
                       }
                       else {
-                        r = StrFormat(_ERROR_FMT, str1337);
+                        r = StrFormat(_ERROR_FMT, str1335);
                       }
                     }
                     else {
@@ -34685,7 +34683,7 @@ BigStr* Evaluator::_ReplaceBackslashCodes(List<Tuple2<int, BigStr*>*>* tokens) {
       else {
         if (id_ == Id::PS_LBrace) {
           non_printing += 1;
-          ret->append(str1339);
+          ret->append(str1337);
         }
         else {
           if (id_ == Id::PS_RBrace) {
@@ -34693,17 +34691,17 @@ BigStr* Evaluator::_ReplaceBackslashCodes(List<Tuple2<int, BigStr*>*>* tokens) {
             if (non_printing < 0) {
               return StrFormat(_ERROR_FMT, _UNBALANCED_ERROR);
             }
-            ret->append(str1340);
+            ret->append(str1338);
           }
           else {
             if (id_ == Id::PS_Subst) {
               ch = s->at(1);
               arg = nullptr;
-              if (str_equals(ch, str1341)) {
+              if (str_equals(ch, str1339)) {
                 arg = s->slice(3, -1);
               }
               r = this->PromptSubst(ch, arg);
-              ret->append(r->replace(str1342, str1343));
+              ret->append(r->replace(str1340, str1341));
             }
             else {
               assert(0);  // AssertionError
@@ -34716,7 +34714,7 @@ BigStr* Evaluator::_ReplaceBackslashCodes(List<Tuple2<int, BigStr*>*>* tokens) {
   if (non_printing != 0) {
     return StrFormat(_ERROR_FMT, _UNBALANCED_ERROR);
   }
-  return str1345->join(ret);
+  return str1343->join(ret);
 }
 
 BigStr* Evaluator::EvalPrompt(value_asdl::value_t* UP_val) {
@@ -34733,7 +34731,7 @@ BigStr* Evaluator::EvalPrompt(value_asdl::value_t* UP_val) {
   StackRoot _root5(&val2);
 
   if (UP_val->tag() != value_e::Str) {
-    return str1346;
+    return str1344;
   }
   value::Str* val = static_cast<value::Str*>(UP_val);
   tokens = this->tokens_cache->get(val->s);
@@ -34773,7 +34771,7 @@ BigStr* Evaluator::EvalFirstPrompt() {
   StackRoot _root5(&ps1_val);
   StackRoot _root6(&prompt_str);
 
-  UP_func_val = this->mem->GetValue(str1348);
+  UP_func_val = this->mem->GetValue(str1346);
   if (UP_func_val->tag() == value_e::Func) {
     value::Func* func_val = static_cast<value::Func*>(UP_func_val);
     pos_args = NewList<value_asdl::value_t*>(std::initializer_list<value_asdl::value_t*>{this->global_io});
@@ -34791,14 +34789,14 @@ BigStr* Evaluator::EvalFirstPrompt() {
       }
     }
   }
-  ps1_val = this->mem->GetValue(str1350);
+  ps1_val = this->mem->GetValue(str1348);
   prompt_str = this->EvalPrompt(ps1_val);
-  if (str_equals(this->lang, str1351)) {
-    prompt_str = str_concat(str1352, prompt_str);
+  if (str_equals(this->lang, str1349)) {
+    prompt_str = str_concat(str1350, prompt_str);
   }
   return prompt_str;
 }
-BigStr* PROMPT_COMMAND = str1353;
+BigStr* PROMPT_COMMAND = str1351;
 
 UserPlugin::UserPlugin(state::Mem* mem, parse_lib::ParseContext* parse_ctx, cmd_eval::CommandEvaluator* cmd_ev, ui::ErrorFormatter* errfmt) {
   this->mem = mem;
@@ -34960,7 +34958,7 @@ value_asdl::value_t* OldValue(value_asdl::sh_lvalue_t* lval, state::Mem* mem, op
       }
       s = word_eval::GetArrayItem(array_val->strs, lval->index);
       if (s == nullptr) {
-        val = Alloc<value::Str>(str1356);
+        val = Alloc<value::Str>(str1354);
       }
       else {
         val = Alloc<value::Str>(s);
@@ -34986,7 +34984,7 @@ value_asdl::value_t* OldValue(value_asdl::sh_lvalue_t* lval, state::Mem* mem, op
       }
       s = assoc_val->d->get(lval->key);
       if (s == nullptr) {
-        val = Alloc<value::Str>(str1358);
+        val = Alloc<value::Str>(str1356);
       }
       else {
         val = Alloc<value::Str>(s);
@@ -35028,14 +35026,14 @@ value_asdl::sh_lvalue_t* UnsafeArith::ParseLValue(BigStr* s, syntax_asdl::loc_t*
   }
   a_parser = this->parse_ctx->MakeArithParser(s);
   {  // with
-    alloc::ctx_SourceCode ctx{this->arena, Alloc<source::ArgvWord>(str1360, location)};
+    alloc::ctx_SourceCode ctx{this->arena, Alloc<source::ArgvWord>(str1358, location)};
 
     try {
       anode = a_parser->Parse();
     }
     catch (error::Parse* e) {
       this->errfmt->PrettyPrintError(e);
-      e_usage(str1361, location);
+      e_usage(str1359, location);
     }
   }
   if (this->exec_opts->eval_unsafe_arith()) {
@@ -35077,7 +35075,7 @@ syntax_asdl::BracedVarSub* UnsafeArith::ParseVarRef(BigStr* ref_str, syntax_asdl
     }
     catch (error::Parse* e) {
       this->errfmt->PrettyPrintError(e);
-      e_die(str1362, blame_tok);
+      e_die(str1360, blame_tok);
     }
   }
   return bvs_part;
@@ -35112,7 +35110,7 @@ int ArithEvaluator::_StringToInteger(BigStr* s, syntax_asdl::loc_t* blame_loc) {
   StackRoot _root5(&a_parser);
   StackRoot _root6(&node2);
 
-  if (s->startswith(str1363)) {
+  if (s->startswith(str1361)) {
     try {
       integer = to_int(s, 16);
     }
@@ -35121,7 +35119,7 @@ int ArithEvaluator::_StringToInteger(BigStr* s, syntax_asdl::loc_t* blame_loc) {
     }
     return integer;
   }
-  if (s->startswith(str1365)) {
+  if (s->startswith(str1363)) {
     try {
       integer = to_int(s, 8);
     }
@@ -35130,8 +35128,8 @@ int ArithEvaluator::_StringToInteger(BigStr* s, syntax_asdl::loc_t* blame_loc) {
     }
     return integer;
   }
-  if (str_contains(s, str1367)) {
-    Tuple2<BigStr*, BigStr*> tup0 = mylib::split_once(s, str1368);
+  if (str_contains(s, str1365)) {
+    Tuple2<BigStr*, BigStr*> tup0 = mylib::split_once(s, str1366);
     b = tup0.at0();
     digits = tup0.at1();
     try {
@@ -35145,18 +35143,18 @@ int ArithEvaluator::_StringToInteger(BigStr* s, syntax_asdl::loc_t* blame_loc) {
       BigStr* ch = it.Value();
       StackRoot _for(&ch    );
       if (IsLower(ch)) {
-        digit = ((ord(ch) - ord(str1370)) + 10);
+        digit = ((ord(ch) - ord(str1368)) + 10);
       }
       else {
         if (IsUpper(ch)) {
-          digit = ((ord(ch) - ord(str1371)) + 36);
+          digit = ((ord(ch) - ord(str1369)) + 36);
         }
         else {
-          if (str_equals(ch, str1372)) {
+          if (str_equals(ch, str1370)) {
             digit = 62;
           }
           else {
-            if (str_equals(ch, str1373)) {
+            if (str_equals(ch, str1371)) {
               digit = 63;
             }
             else {
@@ -35195,7 +35193,7 @@ int ArithEvaluator::_StringToInteger(BigStr* s, syntax_asdl::loc_t* blame_loc) {
         }
         catch (error::Parse* e) {
           this->errfmt->PrettyPrintError(e);
-          e_die(str1376, e->location);
+          e_die(str1374, e->location);
         }
       }
       if (node2->tag() == arith_expr_e::Word) {
@@ -35234,7 +35232,7 @@ int ArithEvaluator::_ValToIntOrError(value_asdl::value_t* val, syntax_asdl::arit
     UP_val = val;
     switch (val->tag()) {
       case value_e::Undef: {
-        e_strict(str1380, Alloc<loc::Arith>(blame));
+        e_strict(str1378, Alloc<loc::Arith>(blame));
       }
         break;
       case value_e::Int: {
@@ -35278,7 +35276,7 @@ Tuple2<int, value_asdl::sh_lvalue_t*> ArithEvaluator::_EvalLhsAndLookupArith(syn
       }
       else {
         if (val->tag() == value_e::BashAssoc) {
-          lval = Alloc<sh_lvalue::Keyed>(named_lval->name, str1382, loc::Missing);
+          lval = Alloc<sh_lvalue::Keyed>(named_lval->name, str1380, loc::Missing);
         }
       }
       val = word_eval::DecayArray(val);
@@ -35419,14 +35417,14 @@ value_asdl::value_t* ArithEvaluator::Eval(syntax_asdl::arith_expr_t* node) {
           else {
             if (op_id == Id::Arith_SlashEqual) {
               if (rhs == 0) {
-                e_die(str1384);
+                e_die(str1382);
               }
               new_int = (old_int / rhs);
             }
             else {
               if (op_id == Id::Arith_PercentEqual) {
                 if (rhs == 0) {
-                  e_die(str1385);
+                  e_die(str1383);
                 }
                 new_int = (old_int % rhs);
               }
@@ -35568,21 +35566,21 @@ value_asdl::value_t* ArithEvaluator::Eval(syntax_asdl::arith_expr_t* node) {
           else {
             if (op_id == Id::Arith_Slash) {
               if (rhs == 0) {
-                e_die(str1387, Alloc<loc::Arith>(node->right));
+                e_die(str1385, Alloc<loc::Arith>(node->right));
               }
               ret = (lhs / rhs);
             }
             else {
               if (op_id == Id::Arith_Percent) {
                 if (rhs == 0) {
-                  e_die(str1388, Alloc<loc::Arith>(node->right));
+                  e_die(str1386, Alloc<loc::Arith>(node->right));
                 }
                 ret = (lhs % rhs);
               }
               else {
                 if (op_id == Id::Arith_DStar) {
                   if (rhs < 0) {
-                    e_die(str1389, Alloc<loc::Arith>(node->right));
+                    e_die(str1387, Alloc<loc::Arith>(node->right));
                   }
                   ret = 1;
                   for (int i = 0; i < rhs; ++i) {
@@ -35687,7 +35685,7 @@ BigStr* ArithEvaluator::EvalWordToString(syntax_asdl::arith_expr_t* node) {
     return val->s;
   }
   else {
-    e_die(str1391);
+    e_die(str1389);
   }
 }
 
@@ -35804,7 +35802,7 @@ value_asdl::sh_lvalue_t* ArithEvaluator::EvalArithLhs(syntax_asdl::arith_expr_t*
   if (var_name != nullptr) {
     return Alloc<LeftName>(var_name, location);
   }
-  e_die_status(2, str1393, location);
+  e_die_status(2, str1391, location);
 }
 
 BoolEvaluator::BoolEvaluator(state::Mem* mem, optview::Exec* exec_opts, state::MutableOpts* mutable_opts, parse_lib::ParseContext* parse_ctx, ui::ErrorFormatter* errfmt, bool always_strict) : ArithEvaluator(mem, exec_opts, mutable_opts, parse_ctx, errfmt) {
@@ -36049,7 +36047,7 @@ using runtime_asdl::state_i;
 using value_asdl::value;
 using value_asdl::value_e;
 using value_asdl::value_t;
-BigStr* DEFAULT_IFS = str1396;
+BigStr* DEFAULT_IFS = str1394;
 
 List<BigStr*>* _SpansToParts(BigStr* s, List<Tuple2<runtime_asdl::span_t, int>*>* spans) {
   List<mylib::BufWriter*>* parts = nullptr;
@@ -36126,7 +36124,7 @@ split::IfsSplitter* SplitContext::_GetSplitter(BigStr* ifs) {
   StackRoot _root5(&ifs_other);
 
   if (ifs == nullptr) {
-    val = this->mem->GetValue(str1397, scope_e::Dynamic);
+    val = this->mem->GetValue(str1395, scope_e::Dynamic);
     UP_val = val;
     switch (val->tag()) {
       case value_e::Undef: {
@@ -36150,7 +36148,7 @@ split::IfsSplitter* SplitContext::_GetSplitter(BigStr* ifs) {
     for (StrIter it(ifs); !it.Done(); it.Next()) {
       BigStr* c = it.Value();
       StackRoot _for(&c    );
-      if (str_contains(str1399, c)) {
+      if (str_contains(str1397, c)) {
         ifs_whitespace->write(c);
       }
       else {
@@ -36169,11 +36167,11 @@ BigStr* SplitContext::GetJoinChar() {
   StackRoot _root0(&val);
   StackRoot _root1(&UP_val);
 
-  val = this->mem->GetValue(str1400, scope_e::Dynamic);
+  val = this->mem->GetValue(str1398, scope_e::Dynamic);
   UP_val = val;
   switch (val->tag()) {
     case value_e::Undef: {
-      return str1401;
+      return str1399;
     }
       break;
     case value_e::Str: {
@@ -36182,7 +36180,7 @@ BigStr* SplitContext::GetJoinChar() {
         return val->s->at(0);
       }
       else {
-        return str1402;
+        return str1400;
       }
     }
       break;
@@ -36225,7 +36223,7 @@ List<Tuple2<runtime_asdl::span_t, int>*>* SplitContext::SplitForRead(BigStr* lin
 }
 
 _BaseSplitter::_BaseSplitter(BigStr* escape_chars) {
-  this->escape_chars = str_concat(escape_chars, str1405);
+  this->escape_chars = str_concat(escape_chars, str1403);
 }
 
 BigStr* _BaseSplitter::Escape(BigStr* s) {
@@ -36285,7 +36283,7 @@ List<Tuple2<runtime_asdl::span_t, int>*>* IfsSplitter::Split(BigStr* s, bool all
           ch = char_kind_i::DE_Gray;
         }
         else {
-          if ((allow_escape and str_equals(c, str1406))) {
+          if ((allow_escape and str_equals(c, str1404))) {
             ch = char_kind_i::Backslash;
           }
           else {
@@ -36377,7 +36375,7 @@ BigStr* Utf8Encode(int code) {
           num_cont_bytes = 3;
         }
         else {
-          return str1408;
+          return str1406;
         }
       }
     }
@@ -36395,11 +36393,11 @@ BigStr* Utf8Encode(int code) {
     int b = it.Value();
     tmp->append(chr((b & 255)));
   }
-  return str1409->join(tmp);
+  return str1407->join(tmp);
 }
-BigStr* INCOMPLETE_CHAR = str1410;
-BigStr* INVALID_CONT = str1411;
-BigStr* INVALID_START = str1412;
+BigStr* INCOMPLETE_CHAR = str1408;
+BigStr* INVALID_CONT = str1409;
+BigStr* INVALID_START = str1410;
 
 void _CheckContinuationByte(BigStr* byte) {
   StackRoot _root0(&byte);
@@ -36534,7 +36532,7 @@ BigStr* DoUnarySuffixOp(BigStr* s, syntax_asdl::Token* op_tok, BigStr* arg, bool
       }
       else {
         if (id_ == Id::VOp1_Comma) {
-          if (!(str_equals(arg, str1413))) {
+          if (!(str_equals(arg, str1411))) {
             e_die(StrFormat("%s can't have an argument", ui::PrettyId(id_)), op_tok);
           }
           if (len(s)) {
@@ -36546,14 +36544,14 @@ BigStr* DoUnarySuffixOp(BigStr* s, syntax_asdl::Token* op_tok, BigStr* arg, bool
         }
         else {
           if (id_ == Id::VOp1_DComma) {
-            if (!(str_equals(arg, str1415))) {
+            if (!(str_equals(arg, str1413))) {
               e_die(StrFormat("%s can't have an argument", ui::PrettyId(id_)), op_tok);
             }
             return s->lower();
           }
           else {
             if (id_ == Id::VOp1_Caret) {
-              if (!(str_equals(arg, str1417))) {
+              if (!(str_equals(arg, str1415))) {
                 e_die(StrFormat("%s can't have an argument", ui::PrettyId(id_)), op_tok);
               }
               if (len(s)) {
@@ -36565,7 +36563,7 @@ BigStr* DoUnarySuffixOp(BigStr* s, syntax_asdl::Token* op_tok, BigStr* arg, bool
             }
             else {
               if (id_ == Id::VOp1_DCaret) {
-                if (!(str_equals(arg, str1419))) {
+                if (!(str_equals(arg, str1417))) {
                   e_die(StrFormat("%s can't have an argument", ui::PrettyId(id_)), op_tok);
                 }
                 return s->upper();
@@ -36693,7 +36691,7 @@ BigStr* _PatSubAll(BigStr* s, BigStr* regex, BigStr* replace_str) {
     prev_end = end;
   }
   parts->append(s->slice(prev_end));
-  return str1421->join(parts);
+  return str1419->join(parts);
 }
 
 GlobReplacer::GlobReplacer(BigStr* regex, BigStr* replace_str, syntax_asdl::Token* slash_tok) {
@@ -36728,11 +36726,11 @@ BigStr* GlobReplacer::Replace(BigStr* s, suffix_op::PatSub* op) {
     }
   }
   if (op->replace_mode == Id::Lit_Pound) {
-    regex = str_concat(str1425, regex);
+    regex = str_concat(str1423, regex);
   }
   else {
     if (op->replace_mode == Id::Lit_Percent) {
-      regex = str_concat(regex, str1426);
+      regex = str_concat(regex, str1424);
     }
   }
   m = libc::regex_first_group_match(regex, s, 0);
@@ -36748,8 +36746,8 @@ BigStr* GlobReplacer::Replace(BigStr* s, suffix_op::PatSub* op) {
 BigStr* ShellQuoteB(BigStr* s) {
   StackRoot _root0(&s);
 
-  s = s->replace(str1427, str1428)->replace(str1429, str1430);
-  return pyutil::BackslashEscape(s, str1431);
+  s = s->replace(str1425, str1426)->replace(str1427, str1428);
+  return pyutil::BackslashEscape(s, str1429);
 }
 
 }  // define namespace string_ops
@@ -36796,14 +36794,14 @@ void CheckLhsExpr(syntax_asdl::arith_expr_t* node, syntax_asdl::word_t* blame_wo
   if (IsIndexable(node)) {
     return ;
   }
-  p_die(str1432, Alloc<loc::Word>(blame_word));
+  p_die(str1430, Alloc<loc::Word>(blame_word));
 }
 
 syntax_asdl::arith_expr_t* NullError(tdop::TdopParser* p, syntax_asdl::word_t* t, int bp) {
   StackRoot _root0(&p);
   StackRoot _root1(&t);
 
-  p_die(str1433, Alloc<loc::Word>(t));
+  p_die(str1431, Alloc<loc::Word>(t));
   return nullptr;
 }
 
@@ -36846,7 +36844,7 @@ syntax_asdl::arith_expr_t* LeftError(tdop::TdopParser* p, syntax_asdl::word_t* t
   StackRoot _root1(&t);
   StackRoot _root2(&left);
 
-  p_die(str1434, Alloc<loc::Word>(t));
+  p_die(str1432, Alloc<loc::Word>(t));
   return nullptr;
 }
 
@@ -36907,7 +36905,7 @@ syntax_asdl::arith_expr_t* TdopParser::ParseUntil(int rbp) {
   StackRoot _root3(&left_info);
 
   if ((this->op_id == Id::Eof_Real || this->op_id == Id::Eof_RParen || this->op_id == Id::Eof_Backtick)) {
-    p_die(str1436, Alloc<loc::Word>(this->cur_word));
+    p_die(str1434, Alloc<loc::Word>(this->cur_word));
   }
   t = this->cur_word;
   null_info = this->spec->LookupNud(this->op_id);
@@ -36928,7 +36926,7 @@ syntax_asdl::arith_expr_t* TdopParser::ParseUntil(int rbp) {
 syntax_asdl::arith_expr_t* TdopParser::Parse() {
   this->Next();
   if (!this->parse_opts->parse_sh_arith()) {
-    p_die(str1437, Alloc<loc::Word>(this->cur_word));
+    p_die(str1435, Alloc<loc::Word>(this->cur_word));
   }
   return this->ParseUntil(0);
 }
@@ -36985,11 +36983,11 @@ Tuple3<bool, BigStr*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
   UP_part = part;
   switch (part->tag()) {
     case word_part_e::ShArrayLiteral: {
-      return Tuple3<bool, BigStr*, bool>(false, str1438, false);
+      return Tuple3<bool, BigStr*, bool>(false, str1436, false);
     }
       break;
     case word_part_e::BashAssocLiteral: {
-      return Tuple3<bool, BigStr*, bool>(false, str1439, false);
+      return Tuple3<bool, BigStr*, bool>(false, str1437, false);
     }
       break;
     case word_part_e::Literal: {
@@ -37011,7 +37009,7 @@ Tuple3<bool, BigStr*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
         syntax_asdl::Token* t = it.Value();
         tmp->append(t->tval);
       }
-      s = str1440->join(tmp);
+      s = str1438->join(tmp);
       return Tuple3<bool, BigStr*, bool>(true, s, true);
     }
       break;
@@ -37025,11 +37023,11 @@ Tuple3<bool, BigStr*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
         ok = tup0.at0();
         s = tup0.at1();
         if (!ok) {
-          return Tuple3<bool, BigStr*, bool>(false, str1441, true);
+          return Tuple3<bool, BigStr*, bool>(false, str1439, true);
         }
         strs->append(s);
       }
-      return Tuple3<bool, BigStr*, bool>(true, str1442->join(strs), true);
+      return Tuple3<bool, BigStr*, bool>(true, str1440->join(strs), true);
     }
       break;
     case word_part_e::CommandSub: 
@@ -37040,7 +37038,7 @@ Tuple3<bool, BigStr*, bool> _EvalWordPart(syntax_asdl::word_part_t* part) {
     case word_part_e::ExtGlob: 
     case word_part_e::Splice: 
     case word_part_e::ExprSub: {
-      return Tuple3<bool, BigStr*, bool>(false, str1443, false);
+      return Tuple3<bool, BigStr*, bool>(false, str1441, false);
     }
       break;
     default: {
@@ -37095,7 +37093,7 @@ Tuple3<bool, BigStr*, bool> StaticEval(syntax_asdl::word_t* UP_w) {
 
   quoted = false;
   if (UP_w->tag() != word_e::Compound) {
-    return Tuple3<bool, BigStr*, bool>(false, str1444, quoted);
+    return Tuple3<bool, BigStr*, bool>(false, str1442, quoted);
   }
   CompoundWord* w = static_cast<CompoundWord*>(UP_w);
   strs = Alloc<List<BigStr*>>();
@@ -37107,14 +37105,14 @@ Tuple3<bool, BigStr*, bool> StaticEval(syntax_asdl::word_t* UP_w) {
     s = tup1.at1();
     q = tup1.at2();
     if (!ok) {
-      return Tuple3<bool, BigStr*, bool>(false, str1445, quoted);
+      return Tuple3<bool, BigStr*, bool>(false, str1443, quoted);
     }
     if (q) {
       quoted = true;
     }
     strs->append(s);
   }
-  return Tuple3<bool, BigStr*, bool>(true, str1446->join(strs), quoted);
+  return Tuple3<bool, BigStr*, bool>(true, str1444->join(strs), quoted);
 }
 
 word_part::TildeSub* _MakeTildeSub(syntax_asdl::Token* tok) {
@@ -37166,7 +37164,7 @@ syntax_asdl::CompoundWord* TildeDetect(syntax_asdl::word_t* UP_w) {
     new_parts->extend(w->parts->slice(1));
     return Alloc<CompoundWord>(new_parts);
   }
-  if ((id_ == Id::Lit_Chars and static_cast<Token*>(part1)->tval->startswith(str1447))) {
+  if ((id_ == Id::Lit_Chars and static_cast<Token*>(part1)->tval->startswith(str1445))) {
     new_parts->extend(w->parts->slice(1));
     return Alloc<CompoundWord>(new_parts);
   }
@@ -37194,7 +37192,7 @@ void TildeDetectAssign(syntax_asdl::CompoundWord* w) {
     if ((do_expand and LiteralId(cur) == Id::Lit_TildeLike)) {
       next_part = parts->at((i + 1));
       if (next_part) {
-        is_tilde = (LiteralId(next_part) == Id::Lit_Colon or (LiteralId(next_part) == Id::Lit_Chars and static_cast<Token*>(next_part)->tval->startswith(str1448)));
+        is_tilde = (LiteralId(next_part) == Id::Lit_Colon or (LiteralId(next_part) == Id::Lit_Chars and static_cast<Token*>(next_part)->tval->startswith(str1446)));
       }
       else {
         is_tilde = true;
@@ -37256,7 +37254,7 @@ BigStr* ShFunctionName(syntax_asdl::CompoundWord* w) {
   s = tup2.at1();
   quoted = tup2.at2();
   if ((!ok or quoted)) {
-    return str1449;
+    return str1447;
   }
   return s;
 }
@@ -37561,7 +37559,7 @@ BigStr* Pretty(syntax_asdl::word_t* w) {
   if (w->tag() == word_e::String) {
     word::String* w = static_cast<word::String*>(UP_w);
     if (w->id == Id::Eof_Real) {
-      return str1450;
+      return str1448;
     }
     else {
       return repr(w->s);
@@ -37730,7 +37728,7 @@ BigStr* EvalSingleQuoted(syntax_asdl::SingleQuoted* part) {
       syntax_asdl::Token* t = it.Value();
       tmp->append(t->tval);
     }
-    s = str1451->join(tmp);
+    s = str1449->join(tmp);
   }
   else {
     if ((part->left->id == Id::Left_DollarSingleQuote || part->left->id == Id::Left_DollarTSingleQuote)) {
@@ -37739,7 +37737,7 @@ BigStr* EvalSingleQuoted(syntax_asdl::SingleQuoted* part) {
         syntax_asdl::Token* t = it.Value();
         tmp->append(EvalCStringToken(t));
       }
-      s = str1452->join(tmp);
+      s = str1450->join(tmp);
     }
     else {
       assert(0);  // AssertionError
@@ -37754,7 +37752,7 @@ bool IsLeadingSpace(BigStr* s) {
   for (StrIter it(s); !it.Done(); it.Next()) {
     BigStr* ch = it.Value();
     StackRoot _for(&ch  );
-    if (!str_contains(str1453, ch)) {
+    if (!str_contains(str1451, ch)) {
       return false;
     }
   }
@@ -37782,7 +37780,7 @@ void RemoveLeadingSpaceDQ(List<syntax_asdl::word_part_t*>* parts) {
     if (qsn_native::IsWhitespace(first->tval)) {
       parts->pop(0);
     }
-    if (first->tval->endswith(str1454)) {
+    if (first->tval->endswith(str1452)) {
       line_ended = true;
     }
   }
@@ -37811,7 +37809,7 @@ void RemoveLeadingSpaceDQ(List<syntax_asdl::word_part_t*>* parts) {
         }
       }
       line_ended = false;
-      if (p->tval->endswith(str1455)) {
+      if (p->tval->endswith(str1453)) {
         line_ended = true;
       }
     }
@@ -37838,7 +37836,7 @@ void RemoveLeadingSpaceSQ(List<syntax_asdl::Token*>* tokens) {
     if (qsn_native::IsWhitespace(first->tval)) {
       tokens->pop(0);
     }
-    if (first->tval->endswith(str1456)) {
+    if (first->tval->endswith(str1454)) {
       line_ended = true;
     }
   }
@@ -37865,7 +37863,7 @@ void RemoveLeadingSpaceSQ(List<syntax_asdl::Token*>* tokens) {
         }
       }
       line_ended = false;
-      if (tok->tval->endswith(str1457)) {
+      if (tok->tval->endswith(str1455)) {
         line_ended = true;
       }
     }
@@ -37925,7 +37923,7 @@ int EXTGLOB_MATCH = (1 << 3);
 int EXTGLOB_NESTED = (1 << 4);
 int QUOTE_FNMATCH = (1 << 5);
 int QUOTE_ERE = (1 << 6);
-GLOBAL_LIST(_STRING_AND_ARRAY, BigStr*, 3, {str1458 COMMA str1459 COMMA str1460});
+GLOBAL_LIST(_STRING_AND_ARRAY, BigStr*, 3, {str1456 COMMA str1457 COMMA str1458});
 
 bool ShouldArrayDecay(BigStr* var_name, optview::Exec* exec_opts, bool is_plain_var_sub) {
   StackRoot _root0(&var_name);
@@ -37946,7 +37944,7 @@ value_asdl::value_t* DecayArray(value_asdl::value_t* val) {
   else {
     if (val->tag() == value_e::BashAssoc) {
       value::BashAssoc* assoc_val = static_cast<value::BashAssoc*>(val);
-      s = dict_contains(assoc_val->d, str1461) ? assoc_val->d->at(str1462) : nullptr;
+      s = dict_contains(assoc_val->d, str1459) ? assoc_val->d->at(str1460) : nullptr;
     }
     else {
       assert(0);  // AssertionError
@@ -37978,7 +37976,7 @@ BigStr* GetArrayItem(List<BigStr*>* strs, int index) {
   }
   return s;
 }
-BigStr* ASSIGN_ARG_RE = str1463;
+BigStr* ASSIGN_ARG_RE = str1461;
 
 runtime_asdl::AssignArg* _SplitAssignArg(BigStr* arg, syntax_asdl::CompoundWord* blame_word) {
   List<BigStr*>* m = nullptr;
@@ -38001,7 +37999,7 @@ runtime_asdl::AssignArg* _SplitAssignArg(BigStr* arg, syntax_asdl::CompoundWord*
   op = m->at(3);
   if (len(op)) {
     val = Alloc<value::Str>(m->at(4));
-    append = str_equals(op->at(0), str1465);
+    append = str_equals(op->at(0), str1463);
   }
   else {
     val = nullptr;
@@ -38013,7 +38011,7 @@ runtime_asdl::AssignArg* _SplitAssignArg(BigStr* arg, syntax_asdl::CompoundWord*
 BigStr* _BackslashEscape(BigStr* s) {
   StackRoot _root0(&s);
 
-  return s->replace(str1466, str1467);
+  return s->replace(str1464, str1465);
 }
 
 runtime_asdl::part_value_t* _ValueToPartValue(value_asdl::value_t* val, bool quoted, syntax_asdl::word_part_t* part_loc) {
@@ -38027,7 +38025,7 @@ runtime_asdl::part_value_t* _ValueToPartValue(value_asdl::value_t* val, bool quo
   UP_val = val;
   switch (val->tag()) {
     case value_e::Undef: {
-      return Alloc<part_value::String>(str1468, quoted, !quoted);
+      return Alloc<part_value::String>(str1466, quoted, !quoted);
     }
       break;
     case value_e::Str: {
@@ -38055,7 +38053,7 @@ runtime_asdl::part_value_t* _ValueToPartValue(value_asdl::value_t* val, bool quo
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(val, str1469, Alloc<loc::WordPart>(part_loc));
+      throw Alloc<error::TypeErr>(val, str1467, Alloc<loc::WordPart>(part_loc));
     }
   }
   assert(0);  // AssertionError
@@ -38152,7 +38150,7 @@ BigStr* _DecayPartValuesToString(List<runtime_asdl::part_value_t*>* part_vals, B
       }
     }
   }
-  return str1471->join(out);
+  return str1469->join(out);
 }
 
 value_asdl::value_t* _PerformSlice(value_asdl::value_t* val, int begin, int length, bool has_length, syntax_asdl::BracedVarSub* part, value::Str* arg0_val) {
@@ -38249,11 +38247,11 @@ value_asdl::value_t* _PerformSlice(value_asdl::value_t* val, int begin, int leng
     }
       break;
     case value_e::BashAssoc: {
-      e_die(str1473, Alloc<loc::WordPart>(part));
+      e_die(str1471, Alloc<loc::WordPart>(part));
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(val, str1474, Alloc<loc::WordPart>(part));
+      throw Alloc<error::TypeErr>(val, str1472, Alloc<loc::WordPart>(part));
     }
   }
   return result;
@@ -38276,27 +38274,27 @@ BigStr* _GetDollarHyphen(optview::Exec* exec_opts) {
 
   chars = Alloc<List<BigStr*>>();
   if (exec_opts->interactive()) {
-    chars->append(str1475);
+    chars->append(str1473);
   }
   if (exec_opts->errexit()) {
-    chars->append(str1476);
+    chars->append(str1474);
   }
   if (exec_opts->noglob()) {
-    chars->append(str1477);
+    chars->append(str1475);
   }
   if (exec_opts->noexec()) {
-    chars->append(str1478);
+    chars->append(str1476);
   }
   if (exec_opts->nounset()) {
-    chars->append(str1479);
+    chars->append(str1477);
   }
   if (exec_opts->xtrace()) {
-    chars->append(str1480);
+    chars->append(str1478);
   }
   if (exec_opts->noclobber()) {
-    chars->append(str1481);
+    chars->append(str1479);
   }
-  return str1482->join(chars);
+  return str1480->join(chars);
 }
 
 TildeEvaluator::TildeEvaluator(state::Mem* mem, optview::Exec* exec_opts) {
@@ -38310,7 +38308,7 @@ BigStr* TildeEvaluator::GetMyHomeDir() {
   StackRoot _root0(&val);
   StackRoot _root1(&UP_val);
 
-  val = this->mem->GetValue(str1483);
+  val = this->mem->GetValue(str1481);
   UP_val = val;
   if (val->tag() == value_e::Str) {
     value::Str* val = static_cast<value::Str*>(UP_val);
@@ -38332,7 +38330,7 @@ BigStr* TildeEvaluator::Eval(word_part::TildeSub* part) {
   }
   if (result == nullptr) {
     if (this->exec_opts->strict_tilde()) {
-      e_die(str1484, part->token);
+      e_die(str1482, part->token);
     }
     else {
       return lexer::TokenVal(part->token);
@@ -38493,7 +38491,7 @@ bool AbstractWordEvaluator::_ApplyTestOp(value_asdl::value_t* val, suffix_op::Un
           this->_EvalRhsWordToParts(op->arg_word, assign_part_vals, eval_flags);
           part_vals->extend(assign_part_vals);
           if (vtest_place->name == nullptr) {
-            e_die(str1485);
+            e_die(str1483);
           }
           else {
             rhs_str = _DecayPartValuesToString(assign_part_vals, this->splitter->GetJoinChar());
@@ -38568,8 +38566,8 @@ value_asdl::value_t* AbstractWordEvaluator::_Length(value_asdl::value_t* val, sy
           throw ;
         }
         else {
-          this->errfmt->PrettyPrintError(e, str1487);
-          return Alloc<value::Str>(str1488);
+          this->errfmt->PrettyPrintError(e, str1485);
+          return Alloc<value::Str>(str1486);
         }
       }
     }
@@ -38592,7 +38590,7 @@ value_asdl::value_t* AbstractWordEvaluator::_Length(value_asdl::value_t* val, sy
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(val, str1489, token);
+      throw Alloc<error::TypeErr>(val, str1487, token);
     }
   }
   return Alloc<value::Str>(str(length));
@@ -38629,7 +38627,7 @@ value_asdl::value_t* AbstractWordEvaluator::_Keys(value_asdl::value_t* val, synt
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(val, str1490, token);
+      throw Alloc<error::TypeErr>(val, str1488, token);
     }
   }
 }
@@ -38657,15 +38655,15 @@ value_asdl::value_t* AbstractWordEvaluator::_EvalVarRef(value_asdl::value_t* val
     }
       break;
     case value_e::BashArray: {
-      e_die(str1491);
+      e_die(str1489);
     }
       break;
     case value_e::BashAssoc: {
-      e_die(str1492);
+      e_die(str1490);
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(val, str1493, blame_tok);
+      throw Alloc<error::TypeErr>(val, str1491, blame_tok);
     }
   }
 }
@@ -38724,7 +38722,7 @@ value_asdl::value_t* AbstractWordEvaluator::_ApplyUnarySuffixOp(value_asdl::valu
       }
         break;
       default: {
-        throw Alloc<error::TypeErr>(val, str1494, op->op);
+        throw Alloc<error::TypeErr>(val, str1492, op->op);
       }
     }
   }
@@ -38759,14 +38757,14 @@ value_asdl::value_t* AbstractWordEvaluator::_PatSub(value_asdl::value_t* val, su
   pat_val = tup1.at0();
   has_extglob = tup1.at1();
   if (has_extglob) {
-    e_die(str1495, op->pat);
+    e_die(str1493, op->pat);
   }
   if (op->replace) {
     replace_val = this->EvalRhsWord(op->replace);
     replace_str = static_cast<value::Str*>(replace_val)->s;
   }
   else {
-    replace_str = str1496;
+    replace_str = str1494;
   }
   Tuple2<BigStr*, List<BigStr*>*> tup2 = glob_::GlobToERE(pat_val->s);
   regex = tup2.at0();
@@ -38807,7 +38805,7 @@ value_asdl::value_t* AbstractWordEvaluator::_PatSub(value_asdl::value_t* val, su
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(val, str1497, op->slash_tok);
+      throw Alloc<error::TypeErr>(val, str1495, op->slash_tok);
     }
   }
   return val;
@@ -38848,10 +38846,10 @@ value_asdl::value_t* AbstractWordEvaluator::_Slice(value_asdl::value_t* val, suf
       throw ;
     }
     else {
-      this->errfmt->PrettyPrintError(e, str1498);
+      this->errfmt->PrettyPrintError(e, str1496);
       switch (val->tag()) {
         case value_e::Str: {
-          val = Alloc<value::Str>(str1499);
+          val = Alloc<value::Str>(str1497);
         }
           break;
         case value_e::BashArray: {
@@ -38896,7 +38894,7 @@ Tuple2<value::Str*, bool> AbstractWordEvaluator::_Nullary(value_asdl::value_t* v
       case value_e::Str: {
         value::Str* str_val = static_cast<value::Str*>(UP_val);
         prompt = this->prompt_ev->EvalPrompt(str_val);
-        p = prompt->replace(str1500, str1501)->replace(str1502, str1503);
+        p = prompt->replace(str1498, str1499)->replace(str1500, str1501);
         result = Alloc<value::Str>(p);
       }
         break;
@@ -38921,7 +38919,7 @@ Tuple2<value::Str*, bool> AbstractWordEvaluator::_Nullary(value_asdl::value_t* v
             BigStr* s = it.Value();
             tmp->append(qsn::maybe_shell_encode(s));
           }
-          result = Alloc<value::Str>(str1505->join(tmp));
+          result = Alloc<value::Str>(str1503->join(tmp));
         }
           break;
         default: {
@@ -38934,11 +38932,11 @@ Tuple2<value::Str*, bool> AbstractWordEvaluator::_Nullary(value_asdl::value_t* v
         chars = Alloc<List<BigStr*>>();
         switch (val->tag()) {
           case value_e::BashArray: {
-            chars->append(str1507);
+            chars->append(str1505);
           }
             break;
           case value_e::BashAssoc: {
-            chars->append(str1508);
+            chars->append(str1506);
           }
             break;
         }
@@ -38946,17 +38944,17 @@ Tuple2<value::Str*, bool> AbstractWordEvaluator::_Nullary(value_asdl::value_t* v
           cell = this->mem->GetCell(var_name);
           if (cell) {
             if (cell->readonly) {
-              chars->append(str1509);
+              chars->append(str1507);
             }
             if (cell->exported) {
-              chars->append(str1510);
+              chars->append(str1508);
             }
             if (cell->nameref) {
-              chars->append(str1511);
+              chars->append(str1509);
             }
           }
         }
-        result = Alloc<value::Str>(str1512->join(chars));
+        result = Alloc<value::Str>(str1510->join(chars));
       }
       else {
         e_die(StrFormat("Var op %r not implemented", lexer::TokenVal(op)), op);
@@ -38985,7 +38983,7 @@ value_asdl::value_t* AbstractWordEvaluator::_WholeArray(value_asdl::value_t* val
         break;
       case value_e::Str: {
         value::Str* val = static_cast<value::Str*>(UP_val);
-        e_die(str1514, Alloc<loc::WordPart>(part));
+        e_die(str1512, Alloc<loc::WordPart>(part));
       }
         break;
       case value_e::BashArray: {
@@ -39006,7 +39004,7 @@ value_asdl::value_t* AbstractWordEvaluator::_WholeArray(value_asdl::value_t* val
           break;
         case value_e::Str: {
           value::Str* val = static_cast<value::Str*>(UP_val);
-          e_die(str1515, Alloc<loc::WordPart>(part));
+          e_die(str1513, Alloc<loc::WordPart>(part));
         }
           break;
         case value_e::BashArray: {
@@ -39075,7 +39073,7 @@ value_asdl::value_t* AbstractWordEvaluator::_ArrayIndex(value_asdl::value_t* val
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(val, str1517, Alloc<loc::WordPart>(part));
+      throw Alloc<error::TypeErr>(val, str1515, Alloc<loc::WordPart>(part));
     }
   }
   return val;
@@ -39088,7 +39086,7 @@ void AbstractWordEvaluator::_EvalDoubleQuoted(List<syntax_asdl::word_part_t*>* p
   StackRoot _root2(&v);
 
   if (len(parts) == 0) {
-    v = Alloc<part_value::String>(str1518, true, false);
+    v = Alloc<part_value::String>(str1516, true, false);
     part_vals->append(v);
     return ;
   }
@@ -39139,10 +39137,10 @@ value_asdl::value_t* AbstractWordEvaluator::_EmptyStrOrError(value_asdl::value_t
     return val;
   }
   if (!this->exec_opts->nounset()) {
-    return Alloc<value::Str>(str1519);
+    return Alloc<value::Str>(str1517);
   }
   tok_str = lexer::TokenVal(token);
-  name = tok_str->startswith(str1520) ? tok_str->slice(1) : tok_str;
+  name = tok_str->startswith(str1518) ? tok_str->slice(1) : tok_str;
   e_die(StrFormat("Undefined variable %r", name), token);
 }
 
@@ -39319,7 +39317,7 @@ void AbstractWordEvaluator::_EvalBracedVarSub(syntax_asdl::BracedVarSub* part, L
         if ((part->bracket_op and part->bracket_op->tag() == bracket_op_e::WholeArray)) {
           if (suffix_is_test) {
             op_tok = static_cast<suffix_op::Unary*>(UP_op)->op;
-            e_die(str1524, op_tok);
+            e_die(str1522, op_tok);
           }
           val = this->_Keys(val, part->token);
         }
@@ -39377,7 +39375,7 @@ void AbstractWordEvaluator::_EvalBracedVarSub(syntax_asdl::BracedVarSub* part, L
         break;
       case suffix_op_e::Static: {
         suffix_op::Static* op = static_cast<suffix_op::Static*>(UP_op);
-        e_die(str1525, op->tok);
+        e_die(str1523, op->tok);
       }
         break;
       default: {
@@ -39425,7 +39423,7 @@ BigStr* AbstractWordEvaluator::_ConcatPartVals(List<runtime_asdl::part_value_t*>
       case part_value_e::Array: {
         part_value::Array* part_val = static_cast<part_value::Array*>(UP_part_val);
         if (this->exec_opts->strict_array()) {
-          e_die(str1526, location);
+          e_die(str1524, location);
         }
         else {
           tmp = Alloc<List<BigStr*>>();
@@ -39435,7 +39433,7 @@ BigStr* AbstractWordEvaluator::_ConcatPartVals(List<runtime_asdl::part_value_t*>
               tmp->append(s);
             }
           }
-          s = str1527->join(tmp);
+          s = str1525->join(tmp);
         }
       }
         break;
@@ -39445,7 +39443,7 @@ BigStr* AbstractWordEvaluator::_ConcatPartVals(List<runtime_asdl::part_value_t*>
     }
     strs->append(s);
   }
-  return str1528->join(strs);
+  return str1526->join(strs);
 }
 
 BigStr* AbstractWordEvaluator::EvalBracedVarSubToString(syntax_asdl::BracedVarSub* part) {
@@ -39534,7 +39532,7 @@ void AbstractWordEvaluator::_EvalExtGlob(word_part::ExtGlob* part, List<runtime_
 
   op = part->op;
   if (op->id == Id::ExtGlob_Comma) {
-    op_str = str1530;
+    op_str = str1528;
   }
   else {
     op_str = lexer::TokenVal(op);
@@ -39545,11 +39543,11 @@ void AbstractWordEvaluator::_EvalExtGlob(word_part::ExtGlob* part, List<runtime_
     syntax_asdl::CompoundWord* w = it.Value();
     StackRoot _for(&w  );
     if (i != 0) {
-      part_vals->append(Alloc<part_value::String>(str1531, false, false));
+      part_vals->append(Alloc<part_value::String>(str1529, false, false));
     }
     this->_EvalWordToParts(w, part_vals, EXTGLOB_NESTED);
   }
-  part_vals->append(Alloc<part_value::String>(str1532, false, false));
+  part_vals->append(Alloc<part_value::String>(str1530, false, false));
 }
 
 void AbstractWordEvaluator::_TranslateExtGlob(List<runtime_asdl::part_value_t*>* part_vals, syntax_asdl::CompoundWord* w, List<BigStr*>* glob_parts, List<BigStr*>* fnmatch_parts) {
@@ -39582,13 +39580,13 @@ void AbstractWordEvaluator::_TranslateExtGlob(List<runtime_asdl::part_value_t*>*
       }
         break;
       case part_value_e::Array: {
-        e_die(str1533, w);
+        e_die(str1531, w);
       }
         break;
       case part_value_e::ExtGlob: {
         part_value::ExtGlob* part_val = static_cast<part_value::ExtGlob*>(UP_part_val);
         this->_TranslateExtGlob(part_val->part_vals, w, Alloc<List<BigStr*>>(), fnmatch_parts);
-        glob_parts->append(str1534);
+        glob_parts->append(str1532);
       }
         break;
       default: {
@@ -39628,12 +39626,12 @@ void AbstractWordEvaluator::_EvalWordPart(syntax_asdl::word_part_t* part, List<r
   switch (part->tag()) {
     case word_part_e::ShArrayLiteral: {
       ShArrayLiteral* part = static_cast<ShArrayLiteral*>(UP_part);
-      e_die(str1535, Alloc<loc::WordPart>(part));
+      e_die(str1533, Alloc<loc::WordPart>(part));
     }
       break;
     case word_part_e::BashAssocLiteral: {
       word_part::BashAssocLiteral* part = static_cast<word_part::BashAssocLiteral*>(UP_part);
-      e_die(str1536, Alloc<loc::WordPart>(part));
+      e_die(str1534, Alloc<loc::WordPart>(part));
     }
       break;
     case word_part_e::Literal: {
@@ -39738,7 +39736,7 @@ void AbstractWordEvaluator::_EvalRhsWordToParts(syntax_asdl::rhs_word_t* w, List
   UP_w = w;
   switch (w->tag()) {
     case rhs_word_e::Empty: {
-      part_vals->append(Alloc<part_value::String>(str1537, quoted, !quoted));
+      part_vals->append(Alloc<part_value::String>(str1535, quoted, !quoted));
     }
       break;
     case rhs_word_e::Compound: {
@@ -39785,8 +39783,8 @@ void AbstractWordEvaluator::_EvalWordToParts(syntax_asdl::CompoundWord* w, List<
       glob_parts = Alloc<List<BigStr*>>();
       fnmatch_parts = Alloc<List<BigStr*>>();
       this->_TranslateExtGlob(word_part_vals, w, glob_parts, fnmatch_parts);
-      glob_pat = str1538->join(glob_parts);
-      fnmatch_pat = str1539->join(fnmatch_parts);
+      glob_pat = str1536->join(glob_parts);
+      fnmatch_pat = str1537->join(fnmatch_parts);
       results = Alloc<List<BigStr*>>();
       n = this->globber->ExpandExtended(glob_pat, fnmatch_pat, results);
       if (n < 0) {
@@ -39799,7 +39797,7 @@ void AbstractWordEvaluator::_EvalWordToParts(syntax_asdl::CompoundWord* w, List<
         part_vals->extend(word_part_vals);
       }
       else {
-        e_die(str1541, w);
+        e_die(str1539, w);
       }
     }
   }
@@ -39843,7 +39841,7 @@ void AbstractWordEvaluator::_PartValsToString(List<runtime_asdl::part_value_t*>*
       case part_value_e::Array: {
         part_value::Array* part_val = static_cast<part_value::Array*>(UP_part_val);
         if (this->exec_opts->strict_array()) {
-          e_die(str1542, w);
+          e_die(str1540, w);
         }
         else {
           tmp = Alloc<List<BigStr*>>();
@@ -39853,7 +39851,7 @@ void AbstractWordEvaluator::_PartValsToString(List<runtime_asdl::part_value_t*>*
               tmp->append(s);
             }
           }
-          s = str1543->join(tmp);
+          s = str1541->join(tmp);
           strs->append(s);
         }
       }
@@ -39861,7 +39859,7 @@ void AbstractWordEvaluator::_PartValsToString(List<runtime_asdl::part_value_t*>*
       case part_value_e::ExtGlob: {
         part_value::ExtGlob* part_val = static_cast<part_value::ExtGlob*>(UP_part_val);
         if (!to_bool((eval_flags & QUOTE_FNMATCH))) {
-          e_die(str1544, w);
+          e_die(str1542, w);
         }
         this->_PartValsToString(part_val->part_vals, w, eval_flags, strs);
       }
@@ -39897,7 +39895,7 @@ value::Str* AbstractWordEvaluator::EvalWordToString(syntax_asdl::word_t* UP_w, i
   }
   strs = Alloc<List<BigStr*>>();
   this->_PartValsToString(part_vals, w, eval_flags, strs);
-  return Alloc<value::Str>(str1545->join(strs));
+  return Alloc<value::Str>(str1543->join(strs));
 }
 
 Tuple2<value::Str*, bool> AbstractWordEvaluator::EvalWordToPattern(syntax_asdl::rhs_word_t* UP_w) {
@@ -39909,7 +39907,7 @@ Tuple2<value::Str*, bool> AbstractWordEvaluator::EvalWordToPattern(syntax_asdl::
   StackRoot _root2(&strs);
 
   if (UP_w->tag() == rhs_word_e::Empty) {
-    return Tuple2<value::Str*, bool>(Alloc<value::Str>(str1546), false);
+    return Tuple2<value::Str*, bool>(Alloc<value::Str>(str1544), false);
   }
   CompoundWord* w = static_cast<CompoundWord*>(UP_w);
   has_extglob = false;
@@ -39924,7 +39922,7 @@ Tuple2<value::Str*, bool> AbstractWordEvaluator::EvalWordToPattern(syntax_asdl::
   }
   strs = Alloc<List<BigStr*>>();
   this->_PartValsToString(part_vals, w, QUOTE_FNMATCH, strs);
-  return Tuple2<value::Str*, bool>(Alloc<value::Str>(str1547->join(strs)), has_extglob);
+  return Tuple2<value::Str*, bool>(Alloc<value::Str>(str1545->join(strs)), has_extglob);
 }
 
 value::Str* AbstractWordEvaluator::EvalForPlugin(syntax_asdl::CompoundWord* w) {
@@ -39945,7 +39943,7 @@ value::Str* AbstractWordEvaluator::EvalForPlugin(syntax_asdl::CompoundWord* w) {
       val = Alloc<value::Str>(StrFormat("<I/O error: %s>", pyutil::strerror(e)));
     }
     catch (KeyboardInterrupt*) {
-      val = Alloc<value::Str>(str1550);
+      val = Alloc<value::Str>(str1548);
     }
   }
   return val;
@@ -39972,7 +39970,7 @@ value_asdl::value_t* AbstractWordEvaluator::EvalRhsWord(syntax_asdl::rhs_word_t*
   StackRoot _root8(&v);
 
   if (UP_w->tag() == rhs_word_e::Empty) {
-    return Alloc<value::Str>(str1551);
+    return Alloc<value::Str>(str1549);
   }
   CompoundWord* w = static_cast<CompoundWord*>(UP_w);
   if (len(w->parts) == 1) {
@@ -40054,7 +40052,7 @@ void AbstractWordEvaluator::_EvalWordFrame(List<Tuple3<BigStr*, bool, bool>*>* f
       s = tup5->at0();
       tmp->append(s);
     }
-    a = str1552->join(tmp);
+    a = str1550->join(tmp);
     argv->append(a);
     return ;
   }
@@ -40079,10 +40077,10 @@ void AbstractWordEvaluator::_EvalWordFrame(List<Tuple3<BigStr*, bool, bool>*>* f
     }
     frags->append(frag);
   }
-  flat = str1553->join(frags);
+  flat = str1551->join(frags);
   args = this->splitter->SplitForWordEval(flat);
   if ((len(args) == 0 and any_quoted)) {
-    argv->append(str1554);
+    argv->append(str1552);
     return ;
   }
   for (ListIter<BigStr*> it(args); !it.Done(); it.Next()) {
@@ -40127,7 +40125,7 @@ List<BigStr*>* AbstractWordEvaluator::_EvalWordToArgv(syntax_asdl::CompoundWord*
         s = tup7->at0();
         tmp->append(s);
       }
-      argv->append(str1556->join(tmp));
+      argv->append(str1554->join(tmp));
     }
   }
   return argv;
@@ -40184,7 +40182,7 @@ cmd_value::Assign* AbstractWordEvaluator::_EvalAssignBuiltin(int builtin_id, Big
       part_offset = tup8.at2();
       if (left_token) {
         if (left_token->id != Id::Lit_VarLike) {
-          e_die(str1557, w);
+          e_die(str1555, w);
         }
         if (lexer::IsPlusEquals(left_token)) {
           var_name = lexer::TokenSliceRight(left_token, -2);
@@ -40225,10 +40223,10 @@ cmd_value::Assign* AbstractWordEvaluator::_EvalAssignBuiltin(int builtin_id, Big
       for (ListIter<BigStr*> it(argv); !it.Done(); it.Next()) {
         BigStr* arg = it.Value();
         StackRoot _for(&arg      );
-        if ((arg->startswith(str1558) or arg->startswith(str1559))) {
+        if ((arg->startswith(str1556) or arg->startswith(str1557))) {
           flags->append(arg);
           flag_locs->append(w);
-          if ((str_contains(arg, str1560) or str_contains(arg, str1561))) {
+          if ((str_contains(arg, str1558) or str_contains(arg, str1559))) {
             eval_to_pairs = false;
           }
         }
@@ -40319,7 +40317,7 @@ runtime_asdl::cmd_value_t* AbstractWordEvaluator::SimpleEvalWordSequence2(List<s
           s = tup9->at0();
           tmp->append(s);
         }
-        strs->append(str1563->join(tmp));
+        strs->append(str1561->join(tmp));
         locs->append(w);
       }
     }
@@ -40442,7 +40440,7 @@ part_value::String* NormalWordEvaluator::_EvalProcessSub(syntax_asdl::CommandSub
   dev_path = this->shell_ex->RunProcessSub(cs_part);
   return Alloc<part_value::String>(dev_path, true, false);
 }
-BigStr* _DUMMY = str1564;
+BigStr* _DUMMY = str1562;
 
 CompletionWordEvaluator::CompletionWordEvaluator(state::Mem* mem, optview::Exec* exec_opts, state::MutableOpts* mutable_opts, word_eval::TildeEvaluator* tilde_ev, split::SplitContext* splitter, ui::ErrorFormatter* errfmt) : AbstractWordEvaluator(mem, exec_opts, mutable_opts, tilde_ev, splitter, errfmt) {
 }
@@ -40464,7 +40462,7 @@ runtime_asdl::part_value_t* CompletionWordEvaluator::_EvalCommandSub(syntax_asdl
 part_value::String* CompletionWordEvaluator::_EvalProcessSub(syntax_asdl::CommandSub* cs_part) {
   StackRoot _root0(&cs_part);
 
-  return Alloc<part_value::String>(str1565, true, false);
+  return Alloc<part_value::String>(str1563, true, false);
 }
 
 }  // define namespace word_eval
@@ -40626,7 +40624,7 @@ suffix_op::Slice* WordParser::_ReadSliceVarOp() {
     length = this->_ReadArithExpr(Id::Arith_RBrace);
     return Alloc<suffix_op::Slice>(begin, length);
   }
-  p_die(str1566, this->cur_token);
+  p_die(str1564, this->cur_token);
   assert(0);  // AssertionError
 }
 
@@ -40688,7 +40686,7 @@ syntax_asdl::bracket_op_t* WordParser::_ReadSubscript() {
     op = Alloc<bracket_op::ArrayIndex>(anode);
   }
   if (this->token_type != Id::Arith_RBracket) {
-    p_die(str1568, this->cur_token);
+    p_die(str1566, this->cur_token);
   }
   this->_SetNext(lex_mode_e::VSub_2);
   this->_GetToken();
@@ -40749,7 +40747,7 @@ syntax_asdl::BracedVarSub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t arg_
     tok = this->cur_token;
     arg_word = this->_ReadVarOpArg(arg_lex_mode);
     if (this->token_type != Id::Right_DollarBrace) {
-      p_die(str1569, this->cur_token);
+      p_die(str1567, this->cur_token);
     }
     part->suffix_op = Alloc<suffix_op::Unary>(tok, arg_word);
   }
@@ -40758,7 +40756,7 @@ syntax_asdl::BracedVarSub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t arg_
       tok = this->cur_token;
       arg_word = this->_ReadVarOpArg(arg_lex_mode);
       if (this->token_type != Id::Right_DollarBrace) {
-        p_die(str1570, this->cur_token);
+        p_die(str1568, this->cur_token);
       }
       UP_arg_word = arg_word;
       switch (arg_word->tag()) {
@@ -40773,7 +40771,7 @@ syntax_asdl::BracedVarSub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t arg_
           arg = tup0.at1();
           quoted = tup0.at2();
           if ((!ok or quoted)) {
-            p_die(str1571, Alloc<loc::Word>(arg_word));
+            p_die(str1569, Alloc<loc::Word>(arg_word));
           }
         }
           break;
@@ -40791,7 +40789,7 @@ syntax_asdl::BracedVarSub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t arg_
           tok = this->cur_token;
           arg_word = this->_ReadVarOpArg(lex_mode_e::VSub_ArgUnquoted);
           if (this->token_type != Id::Right_DollarBrace) {
-            p_die(str1572, this->cur_token);
+            p_die(str1570, this->cur_token);
           }
           part->suffix_op = Alloc<suffix_op::Unary>(tok, arg_word);
         }
@@ -40806,11 +40804,11 @@ syntax_asdl::BracedVarSub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t arg_
               if (this->token_type == Id::VOp2_Colon) {
                 part->suffix_op = this->_ReadSliceVarOp();
                 if (this->token_type != Id::Arith_RBrace) {
-                  p_die(str1573, this->cur_token);
+                  p_die(str1571, this->cur_token);
                 }
               }
               else {
-                p_die(StrFormat("Unexpected token in ${} (%s)", str1575), this->cur_token);
+                p_die(StrFormat("Unexpected token in ${} (%s)", str1573), this->cur_token);
               }
             }
           }
@@ -40822,7 +40820,7 @@ syntax_asdl::BracedVarSub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t arg_
                 this->_GetToken();
               }
               else {
-                p_die(StrFormat("Unexpected token in ${} (%s)", str1577), this->cur_token);
+                p_die(StrFormat("Unexpected token in ${} (%s)", str1575), this->cur_token);
               }
             }
           }
@@ -40831,7 +40829,7 @@ syntax_asdl::BracedVarSub* WordParser::_ParseVarExpr(types_asdl::lex_mode_t arg_
     }
   }
   if ((this->token_type != Id::Right_DollarBrace && this->token_type != Id::Arith_RBrace)) {
-    p_die(str1578, this->cur_token);
+    p_die(str1576, this->cur_token);
   }
   return part;
 }
@@ -40875,7 +40873,7 @@ syntax_asdl::BracedVarSub* WordParser::_ReadBracedVarSub(syntax_asdl::Token* lef
       part = this->_ParseVarOf();
       this->_GetToken();
       if (this->token_type != Id::Right_DollarBrace) {
-        p_die(str1579, this->cur_token);
+        p_die(str1577, this->cur_token);
       }
       part->prefix_op = first_tok;
     }
@@ -40897,14 +40895,14 @@ syntax_asdl::BracedVarSub* WordParser::_ReadBracedVarSub(syntax_asdl::Token* lef
     }
     else {
       if (ty == Id::VSub_Dot) {
-        p_die(str1580, this->cur_token);
+        p_die(str1578, this->cur_token);
       }
       else {
         if (this->token_kind == Kind::VSub) {
           part = this->_ParseVarExpr(arg_lex_mode);
         }
         else {
-          p_die(str1581, this->cur_token);
+          p_die(str1579, this->cur_token);
         }
       }
     }
@@ -40947,15 +40945,15 @@ syntax_asdl::Token* WordParser::ReadSingleQuoted(types_asdl::lex_mode_t lex_mode
     this->_GetToken();
     if ((this->token_kind == Kind::Lit || this->token_kind == Kind::Char)) {
       tok = this->cur_token;
-      if ((no_backslashes and str_contains(tok->tval, str1582))) {
-        p_die(str1583, tok);
+      if ((no_backslashes and str_contains(tok->tval, str1580))) {
+        p_die(str1581, tok);
       }
       if (is_oil_expr) {
         if (this->token_type == Id::Char_Octal3) {
-          p_die(str1584, tok);
+          p_die(str1582, tok);
         }
         if ((this->token_type == Id::Char_Hex and this->cur_token->length != 4)) {
-          p_die(str1585, tok);
+          p_die(str1583, tok);
         }
       }
       tokens->append(tok);
@@ -40964,13 +40962,13 @@ syntax_asdl::Token* WordParser::ReadSingleQuoted(types_asdl::lex_mode_t lex_mode
       if (this->token_kind == Kind::Unknown) {
         tok = this->cur_token;
         if ((is_oil_expr or !this->parse_opts->parse_backslash())) {
-          p_die(str1586, tok);
+          p_die(str1584, tok);
         }
         tokens->append(tok);
       }
       else {
         if (this->token_kind == Kind::Eof) {
-          p_die(str1587, left_token);
+          p_die(str1585, left_token);
         }
         else {
           if (this->token_kind == Kind::Right) {
@@ -41035,7 +41033,7 @@ syntax_asdl::word_part_t* WordParser::_ReadUnquotedLeftParts(syntax_asdl::BoolPa
   if ((this->token_type == Id::Left_DoubleQuote || this->token_type == Id::Left_DollarDoubleQuote)) {
     dq_part = this->_ReadDoubleQuoted(this->cur_token);
     if ((triple_out and len(dq_part->parts) == 0)) {
-      if (str_equals(this->lexer->ByteLookAhead(), str1588)) {
+      if (str_equals(this->lexer->ByteLookAhead(), str1586)) {
         this->_SetNext(lex_mode_e::ShCommand);
         this->_GetToken();
         left_dq_token = this->cur_token;
@@ -41057,7 +41055,7 @@ syntax_asdl::word_part_t* WordParser::_ReadUnquotedLeftParts(syntax_asdl::BoolPa
     }
     sq_part = this->_ReadSingleQuoted(this->cur_token, lexer_mode);
     if ((triple_out and len(sq_part->tokens) == 0)) {
-      if (str_equals(this->lexer->ByteLookAhead(), str1589)) {
+      if (str_equals(this->lexer->ByteLookAhead(), str1587)) {
         this->_SetNext(lex_mode_e::ShCommand);
         this->_GetToken();
         left_sq_token = this->cur_token;
@@ -41125,7 +41123,7 @@ word_part::ExtGlob* WordParser::_ReadExtGlob() {
         }
         else {
           if (this->token_kind == Kind::Eof) {
-            p_die(str1590, left_token);
+            p_die(str1588, left_token);
           }
           else {
             assert(0);  // AssertionError
@@ -41168,13 +41166,13 @@ void WordParser::_ReadLikeDQ(syntax_asdl::Token* left_token, bool is_oil_expr, L
       else {
         if (this->token_type == Id::Lit_BadBackslash) {
           if ((is_oil_expr or !this->parse_opts->parse_backslash())) {
-            p_die(str1591, this->cur_token);
+            p_die(str1589, this->cur_token);
           }
         }
         else {
           if (this->token_type == Id::Lit_Dollar) {
             if ((is_oil_expr or !this->parse_opts->parse_dollar())) {
-              p_die(str1592, this->cur_token);
+              p_die(str1590, this->cur_token);
             }
           }
         }
@@ -41185,7 +41183,7 @@ void WordParser::_ReadLikeDQ(syntax_asdl::Token* left_token, bool is_oil_expr, L
     else {
       if (this->token_kind == Kind::Left) {
         if ((this->token_type == Id::Left_Backtick and is_oil_expr)) {
-          p_die(str1593, this->cur_token);
+          p_die(str1591, this->cur_token);
         }
         part = this->_ReadDoubleQuotedLeftParts();
         out_parts->append(part);
@@ -41206,7 +41204,7 @@ void WordParser::_ReadLikeDQ(syntax_asdl::Token* left_token, bool is_oil_expr, L
           else {
             if (this->token_kind == Kind::Eof) {
               if (left_token) {
-                p_die(str1594, left_token);
+                p_die(str1592, left_token);
               }
               else {
                 break;
@@ -41300,7 +41298,7 @@ syntax_asdl::CommandSub* WordParser::_ReadCommandSub(int left_id, bool d_quoted)
     else {
       if (left_id == Id::Left_Backtick) {
         if (!this->parse_opts->parse_backticks()) {
-          p_die(str1595, left_token);
+          p_die(str1593, left_token);
         }
         this->_SetNext(lex_mode_e::Backtick);
         parts = Alloc<List<BigStr*>>();
@@ -41328,7 +41326,7 @@ syntax_asdl::CommandSub* WordParser::_ReadCommandSub(int left_id, bool d_quoted)
                 }
                 else {
                   if (this->token_type == Id::Eof_Real) {
-                    p_die(str1596, left_token);
+                    p_die(str1594, left_token);
                   }
                   else {
                     assert(0);  // AssertionError
@@ -41340,11 +41338,11 @@ syntax_asdl::CommandSub* WordParser::_ReadCommandSub(int left_id, bool d_quoted)
           this->_SetNext(lex_mode_e::Backtick);
         }
         right_token = this->cur_token;
-        code_str = str1597->join(parts);
+        code_str = str1595->join(parts);
         arena = this->parse_ctx->arena;
         line_reader = reader::StringLineReader(code_str, arena);
         c_parser = this->parse_ctx->MakeOshParser(line_reader);
-        src = Alloc<source::Reparsed>(str1598, left_token, right_token);
+        src = Alloc<source::Reparsed>(str1596, left_token, right_token);
         {  // with
           alloc::ctx_SourceCode ctx{arena, src};
 
@@ -41590,7 +41588,7 @@ word_part::ArithSub* WordParser::_ReadArithSub() {
   this->_SetNext(lex_mode_e::ShCommand);
   this->_GetToken();
   if (this->token_type != Id::Right_DollarDParen) {
-    p_die(str1601, this->cur_token);
+    p_die(str1599, this->cur_token);
   }
   right_tok = this->cur_token;
   return Alloc<word_part::ArithSub>(left_tok, anode, right_tok);
@@ -41609,7 +41607,7 @@ Tuple2<syntax_asdl::arith_expr_t*, syntax_asdl::Token*> WordParser::ReadDParen()
   this->_GetToken();
   right = this->cur_token;
   if (this->token_type != Id::Op_DRightParen) {
-    p_die(str1602, this->cur_token);
+    p_die(str1600, this->cur_token);
   }
   this->_SetNext(lex_mode_e::ShCommand);
   return Tuple2<syntax_asdl::arith_expr_t*, syntax_asdl::Token*>(anode, right);
@@ -41648,7 +41646,7 @@ command::ForExpr* WordParser::ReadForExpression() {
   }
   this->_SetNextNonSpace();
   if (cur_id != Id::Arith_Semi) {
-    p_die(str1603, Alloc<loc::Word>(this->a_parser->cur_word));
+    p_die(str1601, Alloc<loc::Word>(this->a_parser->cur_word));
   }
   this->_GetToken();
   cur_id = this->token_type;
@@ -41661,7 +41659,7 @@ command::ForExpr* WordParser::ReadForExpression() {
   }
   this->_SetNextNonSpace();
   if (cur_id != Id::Arith_Semi) {
-    p_die(str1604, Alloc<loc::Word>(this->a_parser->cur_word));
+    p_die(str1602, Alloc<loc::Word>(this->a_parser->cur_word));
   }
   this->_GetToken();
   cur_id = this->token_type;
@@ -41674,7 +41672,7 @@ command::ForExpr* WordParser::ReadForExpression() {
   this->_SetNextNonSpace();
   this->_GetToken();
   if (this->token_type != Id::Arith_RParen) {
-    p_die(str1605, this->cur_token);
+    p_die(str1603, this->cur_token);
   }
   this->_SetNext(lex_mode_e::ShCommand);
   node = command::ForExpr::CreateNull();
@@ -41715,7 +41713,7 @@ syntax_asdl::word_part_t* WordParser::_ReadArrayLiteral() {
   this->_SetNext(lex_mode_e::ShCommand);
   this->_GetToken();
   if (this->cur_token->id != Id::Op_LParen) {
-    p_die(str1606, this->cur_token);
+    p_die(str1604, this->cur_token);
   }
   left_token = this->cur_token;
   right_token = nullptr;
@@ -41736,7 +41734,7 @@ syntax_asdl::word_part_t* WordParser::_ReadArrayLiteral() {
             continue;
           }
           else {
-            p_die(str1607, Alloc<loc::Word>(w));
+            p_die(str1605, Alloc<loc::Word>(w));
           }
         }
       }
@@ -41764,7 +41762,7 @@ syntax_asdl::word_part_t* WordParser::_ReadArrayLiteral() {
       w2 = words->at(i);
       pair = word_::DetectAssocPair(w2);
       if (!pair) {
-        p_die(str1608, Alloc<loc::Word>(w2));
+        p_die(str1606, Alloc<loc::Word>(w2));
       }
       pairs->append(pair);
     }
@@ -41807,7 +41805,7 @@ bool WordParser::_MaybeReadWordPart(bool is_first, types_asdl::lex_mode_t lex_mo
     ch = lexer::TokenSliceLeft(tok, 1);
     if (!this->parse_opts->parse_backslash()) {
       if (!pyutil::IsValidCharEscape(ch)) {
-        p_die(str1609, this->cur_token);
+        p_die(str1607, this->cur_token);
       }
     }
     part = Alloc<word_part::EscapedLiteral>(this->cur_token, ch);
@@ -41825,7 +41823,7 @@ bool WordParser::_MaybeReadWordPart(bool is_first, types_asdl::lex_mode_t lex_mo
       this->_SetNext(lex_mode);
       this->_GetToken();
       if (!list_contains(KINDS_THAT_END_WORDS, this->token_kind)) {
-        p_die(str1610, this->cur_token);
+        p_die(str1608, this->cur_token);
       }
       done = true;
     }
@@ -41838,7 +41836,7 @@ bool WordParser::_MaybeReadWordPart(bool is_first, types_asdl::lex_mode_t lex_mo
       this->_SetNext(lex_mode);
       this->_GetToken();
       if (!list_contains(KINDS_THAT_END_WORDS, this->token_kind)) {
-        p_die(str1611, this->cur_token);
+        p_die(str1609, this->cur_token);
       }
       done = true;
     }
@@ -41849,17 +41847,17 @@ bool WordParser::_MaybeReadWordPart(bool is_first, types_asdl::lex_mode_t lex_mo
         this->_SetNext(lex_mode);
         this->_GetToken();
         if (!list_contains(KINDS_THAT_END_WORDS, this->token_kind)) {
-          p_die(str1612, this->cur_token);
+          p_die(str1610, this->cur_token);
         }
         done = true;
       }
       else {
         if ((is_first and (this->parse_opts->parse_at() and this->token_type == Id::Lit_AtLBraceDot))) {
-          p_die(str1613, this->cur_token);
+          p_die(str1611, this->cur_token);
         }
         else {
           if ((is_first and (this->parse_opts->parse_at_all() and this->token_type == Id::Lit_At))) {
-            p_die(str1614, this->cur_token);
+            p_die(str1612, this->cur_token);
           }
           else {
             parts->append(part);
@@ -41919,11 +41917,11 @@ syntax_asdl::CompoundWord* WordParser::_ReadCompoundWord3(types_asdl::lex_mode_t
               if (!this->parse_opts->parse_dollar()) {
                 if ((num_parts == 0 and lex_mode == lex_mode_e::ShCommand)) {
                   next_byte = this->lexer->ByteLookAhead();
-                  if (str_equals(next_byte, str1615)) {
+                  if (str_equals(next_byte, str1613)) {
                     mylib::print_stderr(StrFormat("next_byte %r", next_byte));
                   }
                 }
-                p_die(str1617, this->cur_token);
+                p_die(str1615, this->cur_token);
               }
             }
           }
@@ -41944,7 +41942,7 @@ syntax_asdl::CompoundWord* WordParser::_ReadCompoundWord3(types_asdl::lex_mode_t
               part = cs_part;
               this->_GetToken();
               if (!list_contains(KINDS_THAT_END_WORDS, this->token_kind)) {
-                p_die(str1618, this->cur_token);
+                p_die(str1616, this->cur_token);
               }
               done = true;
             }
@@ -42007,10 +42005,10 @@ syntax_asdl::CompoundWord* WordParser::_ReadCompoundWord3(types_asdl::lex_mode_t
     }
   }
   if ((this->parse_opts->parse_brace() and (num_parts > 1 and brace_count != 0))) {
-    p_die(str1619, Alloc<loc::Word>(w));
+    p_die(str1617, Alloc<loc::Word>(w));
   }
   if ((is_triple_quoted and (is_triple_quoted->b and num_parts > 1))) {
-    p_die(str1620, Alloc<loc::WordPart>(w->parts->at(-1)));
+    p_die(str1618, Alloc<loc::WordPart>(w->parts->at(-1)));
   }
   return w;
 }
@@ -42068,7 +42066,7 @@ syntax_asdl::word_t* WordParser::_ReadWord(types_asdl::lex_mode_t word_mode) {
       if (this->token_type == Id::Op_Newline) {
         if (this->multiline) {
           if (this->newline_state > 1) {
-            p_die(str1622, this->cur_token);
+            p_die(str1620, this->cur_token);
           }
           return nullptr;
         }
@@ -42114,7 +42112,7 @@ syntax_asdl::word_t* WordParser::_ReadWord(types_asdl::lex_mode_t word_mode) {
                 return nullptr;
               }
               else {
-                if ((this->parse_opts->parse_raw_string() and (this->token_type == Id::Lit_Chars and str_equals(this->cur_token->tval, str1623)))) {
+                if ((this->parse_opts->parse_raw_string() and (this->token_type == Id::Lit_Chars and str_equals(this->cur_token->tval, str1621)))) {
                   if (this->lexer->LookAheadOne(lex_mode_e::ShCommand) == Id::Left_SingleQuote) {
                     this->_SetNext(lex_mode_e::ShCommand);
                   }
@@ -42139,14 +42137,14 @@ syntax_asdl::BracedVarSub* WordParser::ParseVarRef() {
   this->_SetNext(lex_mode_e::VSub_1);
   this->_GetToken();
   if (this->token_kind != Kind::VSub) {
-    p_die(str1625, this->cur_token);
+    p_die(str1623, this->cur_token);
   }
   part = this->_ParseVarOf();
   part->left = part->token;
   part->right = part->token;
   this->_GetToken();
   if (this->token_type != Id::Eof_Real) {
-    p_die(str1626, this->cur_token);
+    p_die(str1624, this->cur_token);
   }
   return part;
 }
@@ -42350,13 +42348,13 @@ bool Parser::addtoken(int typ, syntax_asdl::Token* opaque, int ilabel) {
         if ((left == 0 and right == state)) {
           this->pop();
           if (len(this->stack) == 0) {
-            throw Alloc<ParseError>(str1628, typ, opaque);
+            throw Alloc<ParseError>(str1626, typ, opaque);
           }
           found2 = true;
         }
       }
       if (!found2) {
-        throw Alloc<ParseError>(str1629, typ, opaque);
+        throw Alloc<ParseError>(str1627, typ, opaque);
       }
     }
   }
@@ -42416,9 +42414,9 @@ namespace cgi {  // define
 BigStr* escape(BigStr* s) {
   StackRoot _root0(&s);
 
+  s = s->replace(str1628, str1629);
   s = s->replace(str1630, str1631);
   s = s->replace(str1632, str1633);
-  s = s->replace(str1634, str1635);
   return s;
 }
 
@@ -42426,17 +42424,17 @@ BigStr* escape(BigStr* s) {
 
 namespace os_path {  // define
 
-BigStr* extsep = str1636;
-BigStr* sep = str1637;
+BigStr* extsep = str1634;
+BigStr* sep = str1635;
 
 BigStr* join(BigStr* s1, BigStr* s2) {
   StackRoot _root0(&s1);
   StackRoot _root1(&s2);
 
-  if ((s2->startswith(str1638) or len(s1) == 0)) {
+  if ((s2->startswith(str1636) or len(s1) == 0)) {
     return s2;
   }
-  if (s1->endswith(str1639)) {
+  if (s1->endswith(str1637)) {
     return str_concat(s1, s2);
   }
   return StrFormat("%s/%s", s1, s2);
@@ -42450,7 +42448,7 @@ Tuple2<BigStr*, BigStr*> split(BigStr* p) {
   StackRoot _root1(&head);
   StackRoot _root2(&tail);
 
-  i = (p->rfind(str1641) + 1);
+  i = (p->rfind(str1639) + 1);
   head = p->slice(0, i);
   tail = p->slice(i);
   head = rstrip_slashes(head);
@@ -42476,7 +42474,7 @@ Tuple2<BigStr*, BigStr*> _splitext(BigStr* p, BigStr* sep, BigStr* extsep) {
       filenameIndex += 1;
     }
   }
-  return Tuple2<BigStr*, BigStr*>(p, str1642);
+  return Tuple2<BigStr*, BigStr*>(p, str1640);
 }
 
 Tuple2<BigStr*, BigStr*> splitext(BigStr* p) {
@@ -42489,7 +42487,7 @@ BigStr* basename(BigStr* p) {
   int i;
   StackRoot _root0(&p);
 
-  i = (p->rfind(str1643) + 1);
+  i = (p->rfind(str1641) + 1);
   return p->slice(i);
 }
 
@@ -42499,7 +42497,7 @@ BigStr* dirname(BigStr* p) {
   StackRoot _root0(&p);
   StackRoot _root1(&head);
 
-  i = (p->rfind(str1644) + 1);
+  i = (p->rfind(str1642) + 1);
   head = p->slice(0, i);
   head = rstrip_slashes(head);
   return head;
@@ -42517,24 +42515,24 @@ BigStr* normpath(BigStr* path) {
   StackRoot _root3(&comps);
   StackRoot _root4(&new_comps);
 
-  slash = str1645;
-  dot = str1646;
-  if (str_equals(path, str1647)) {
+  slash = str1643;
+  dot = str1644;
+  if (str_equals(path, str1645)) {
     return dot;
   }
-  initial_slashes = path->startswith(str1648);
-  if ((initial_slashes and (path->startswith(str1649) and !path->startswith(str1650)))) {
+  initial_slashes = path->startswith(str1646);
+  if ((initial_slashes and (path->startswith(str1647) and !path->startswith(str1648)))) {
     initial_slashes = 2;
   }
-  comps = path->split(str1651);
+  comps = path->split(str1649);
   new_comps = Alloc<List<BigStr*>>();
   for (ListIter<BigStr*> it(comps); !it.Done(); it.Next()) {
     BigStr* comp = it.Value();
     StackRoot _for(&comp  );
-    if ((len(comp) == 0 or str_equals(comp, str1652))) {
+    if ((len(comp) == 0 or str_equals(comp, str1650))) {
       continue;
     }
-    if ((!(str_equals(comp, str1653)) or ((initial_slashes == 0 and len(new_comps) == 0) or (len(new_comps) and str_equals(new_comps->at(-1), str1654))))) {
+    if ((!(str_equals(comp, str1651)) or ((initial_slashes == 0 and len(new_comps) == 0) or (len(new_comps) and str_equals(new_comps->at(-1), str1652))))) {
       new_comps->append(comp);
     }
     else {
@@ -42554,7 +42552,7 @@ BigStr* normpath(BigStr* path) {
 bool isabs(BigStr* s) {
   StackRoot _root0(&s);
 
-  return s->startswith(str1655);
+  return s->startswith(str1653);
 }
 
 BigStr* abspath(BigStr* path) {
@@ -42679,7 +42677,7 @@ void PrintTokens(alloc::Arena* arena) {
   StackRoot _root1(&piece);
 
   if (len(arena->tokens) == 1) {
-    print(str1656);
+    print(str1654);
     print(StrFormat("%s", arena->tokens->at(0)));
     return ;
   }
@@ -42811,14 +42809,14 @@ void OilPrinter::DoRedirect(syntax_asdl::Redir* node, Dict<BigStr*, bool>* local
     delimiter = tup0.at1();
     delim_quoted = tup0.at2();
     if (!ok) {
-      p_die(str1661, Alloc<loc::Word>(here_begin));
+      p_die(str1659, Alloc<loc::Word>(here_begin));
     }
-    this->f->write(str1662);
+    this->f->write(str1660);
     if (delim_quoted) {
-      this->f->write(str1663);
+      this->f->write(str1661);
     }
     else {
-      this->f->write(str1664);
+      this->f->write(str1662);
     }
     delim_end_tok = location::RightTokenForWord(here_begin);
     this->cursor->SkipPast(delim_end_tok);
@@ -42829,10 +42827,10 @@ void OilPrinter::DoRedirect(syntax_asdl::Redir* node, Dict<BigStr*, bool>* local
     }
     this->cursor->SkipPast(here_doc->here_end_tok);
     if (delim_quoted) {
-      this->f->write(str1665);
+      this->f->write(str1663);
     }
     else {
-      this->f->write(str1666);
+      this->f->write(str1664);
     }
   }
   else {
@@ -42869,14 +42867,14 @@ void OilPrinter::DoShAssignment(command::ShAssignment* node, bool at_top_level, 
       has_array_index->append(pair->lhs->tag() == sh_lhs_e::UnparsedIndex);
     }
     if (at_top_level) {
-      this->f->write(str1667);
+      this->f->write(str1665);
     }
     else {
       if (defined_locally) {
-        this->f->write(str1668);
+        this->f->write(str1666);
       }
       else {
-        this->f->write(str1669);
+        this->f->write(str1667);
       }
     }
   }
@@ -42893,9 +42891,9 @@ void OilPrinter::DoShAssignment(command::ShAssignment* node, bool at_top_level, 
         this->cursor->PrintUntil(pair->left);
         this->cursor->SkipPast(pair->left);
         this->f->write(lhs->name);
-        this->f->write(str1670);
+        this->f->write(str1668);
         if (pair->rhs->tag() == rhs_word_e::Empty) {
-          this->f->write(str1671);
+          this->f->write(str1669);
         }
         else {
           this->DoRhsWord(pair->rhs, local_symbols);
@@ -42911,7 +42909,7 @@ void OilPrinter::DoShAssignment(command::ShAssignment* node, bool at_top_level, 
       }
     }
     if (i != (n - 1)) {
-      this->f->write(str1672);
+      this->f->write(str1670);
     }
   }
 }
@@ -42987,16 +42985,16 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
         quoted = tup1.at2();
         word0_tok = location::LeftTokenForWord(first_word);
         if ((ok and !quoted)) {
-          if (str_equals(val, str1673)) {
+          if (str_equals(val, str1671)) {
             last_word = node->words->at(-1);
             Tuple3<bool, BigStr*, bool> tup2 = word_::StaticEval(last_word);
             ok = tup2.at0();
             val = tup2.at1();
             quoted = tup2.at2();
-            if ((ok and (!quoted and str_equals(val, str1674)))) {
+            if ((ok and (!quoted and str_equals(val, str1672)))) {
               this->cursor->PrintUntil(word0_tok);
               this->cursor->SkipPast(word0_tok);
-              this->f->write(str1675);
+              this->f->write(str1673);
               for (ListIter<syntax_asdl::word_t*> it(node->words->slice(1, -1)); !it.Done(); it.Next()) {
                 syntax_asdl::word_t* w = it.Value();
                 StackRoot _for(&w              );
@@ -43008,14 +43006,14 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
               return ;
             }
             else {
-              throw Alloc<RuntimeError>(str1676);
+              throw Alloc<RuntimeError>(str1674);
             }
           }
           else {
-            if (str_equals(val, str1677)) {
+            if (str_equals(val, str1675)) {
               this->cursor->PrintUntil(word0_tok);
               this->cursor->SkipPast(word0_tok);
-              this->f->write(str1678);
+              this->f->write(str1676);
               return ;
             }
           }
@@ -43065,7 +43063,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       BraceGroup* node = static_cast<BraceGroup*>(UP_node);
       this->cursor->PrintUntil(node->left);
       this->cursor->SkipPast(node->left);
-      this->f->write(str1679);
+      this->f->write(str1677);
       for (ListIter<syntax_asdl::command_t*> it(node->children); !it.Done(); it.Next()) {
         syntax_asdl::command_t* child = it.Value();
         StackRoot _for(&child      );
@@ -43077,11 +43075,11 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       command::Subshell* node = static_cast<command::Subshell*>(UP_node);
       this->cursor->PrintUntil(node->left);
       this->cursor->SkipPast(node->left);
-      this->f->write(str1680);
+      this->f->write(str1678);
       this->DoCommand(node->child, local_symbols);
       this->cursor->PrintUntil(node->right);
       this->cursor->SkipPast(node->right);
-      this->f->write(str1681);
+      this->f->write(str1679);
     }
       break;
     case command_e::ShFunction: {
@@ -43116,7 +43114,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       command::DoGroup* node = static_cast<command::DoGroup*>(UP_node);
       this->cursor->PrintUntil(node->left);
       this->cursor->SkipPast(node->left);
-      this->f->write(str1683);
+      this->f->write(str1681);
       for (ListIter<syntax_asdl::command_t*> it(node->children); !it.Done(); it.Next()) {
         syntax_asdl::command_t* child = it.Value();
         StackRoot _for(&child      );
@@ -43124,7 +43122,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       }
       this->cursor->PrintUntil(node->right);
       this->cursor->SkipPast(node->right);
-      this->f->write(str1684);
+      this->f->write(str1682);
     }
       break;
     case command_e::ForEach: {
@@ -43158,7 +43156,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       if (node->keyword->id == Id::KW_Until) {
         this->cursor->PrintUntil(node->keyword);
         this->cursor->SkipPast(node->keyword);
-        this->f->write(str1686);
+        this->f->write(str1684);
       }
       if (node->cond->tag() == condition_e::Shell) {
         commands = static_cast<condition::Shell*>(node->cond)->commands;
@@ -43187,7 +43185,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
         then_spid = arm->spids->at(1);
         if (i != 0) {
           this->cursor->PrintUntilSpid(elif_spid);
-          this->f->write(str1687);
+          this->f->write(str1685);
         }
         cond = arm->cond;
         if (cond->tag() == condition_e::Shell) {
@@ -43208,7 +43206,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
         }
         this->cursor->PrintUntilSpid(then_spid);
         this->cursor->SkipUntilSpid((then_spid + 1));
-        this->f->write(str1688);
+        this->f->write(str1686);
         for (ListIter<syntax_asdl::command_t*> it(arm->action); !it.Done(); it.Next()) {
           syntax_asdl::command_t* child = it.Value();
           StackRoot _for(&child        );
@@ -43217,9 +43215,9 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       }
       if (len(node->else_action)) {
         this->cursor->PrintUntil(node->else_kw);
-        this->f->write(str1689);
+        this->f->write(str1687);
         this->cursor->PrintUntilSpid((node->else_kw->span_id + 1));
-        this->f->write(str1690);
+        this->f->write(str1688);
         for (ListIter<syntax_asdl::command_t*> it(node->else_action); !it.Done(); it.Next()) {
           syntax_asdl::command_t* child = it.Value();
           StackRoot _for(&child        );
@@ -43228,7 +43226,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       }
       this->cursor->PrintUntil(node->fi_kw);
       this->cursor->SkipPast(node->fi_kw);
-      this->f->write(str1691);
+      this->f->write(str1689);
     }
       break;
     case command_e::Case: {
@@ -43276,18 +43274,18 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
           break;
       }
       if (var_part) {
-        this->f->write(str1692);
+        this->f->write(str1690);
         this->f->write(var_part->var_name);
-        this->f->write(str1693);
+        this->f->write(str1691);
       }
       this->cursor->SkipPast(node->arms_start);
-      this->f->write(str1694);
+      this->f->write(str1692);
       missing_last_dsemi = false;
       for (ListIter<syntax_asdl::CaseArm*> it(node->arms); !it.Done(); it.Next()) {
         syntax_asdl::CaseArm* case_arm = it.Value();
         StackRoot _for(&case_arm      );
         this->cursor->PrintUntil(case_arm->middle);
-        this->f->write(str1695);
+        this->f->write(str1693);
         this->cursor->SkipPast(case_arm->middle);
         for (ListIter<syntax_asdl::command_t*> it(case_arm->action); !it.Done(); it.Next()) {
           syntax_asdl::command_t* child = it.Value();
@@ -43296,7 +43294,7 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
         }
         if (case_arm->right) {
           this->cursor->PrintUntil(case_arm->right);
-          this->f->write(str1696);
+          this->f->write(str1694);
           this->cursor->SkipPast(case_arm->right);
         }
         else {
@@ -43305,10 +43303,10 @@ void OilPrinter::DoCommand(syntax_asdl::command_t* node, Dict<BigStr*, bool>* lo
       }
       this->cursor->PrintUntil(node->arms_end);
       if (missing_last_dsemi) {
-        this->f->write(str1697);
+        this->f->write(str1695);
       }
       this->cursor->SkipPast(node->arms_end);
-      this->f->write(str1698);
+      this->f->write(str1696);
     }
       break;
     case command_e::TimeBlock: {
@@ -43342,22 +43340,22 @@ void OilPrinter::DoRhsWord(syntax_asdl::rhs_word_t* node, Dict<BigStr*, bool>* l
   UP_node = node;
   switch (node->tag()) {
     case rhs_word_e::Empty: {
-      this->f->write(str1699);
+      this->f->write(str1697);
     }
       break;
     case rhs_word_e::Compound: {
       CompoundWord* node = static_cast<CompoundWord*>(UP_node);
       style = _GetRhsStyle(node);
       if (style == word_style_e::SQ) {
-        this->f->write(str1700);
+        this->f->write(str1698);
         this->DoWordInCommand(node, local_symbols);
-        this->f->write(str1701);
+        this->f->write(str1699);
       }
       else {
         if (style == word_style_e::DQ) {
-          this->f->write(str1702);
+          this->f->write(str1700);
           this->DoWordInCommand(node, local_symbols);
-          this->f->write(str1703);
+          this->f->write(str1701);
         }
         else {
           if (word_::IsVarSub(node)) {
@@ -43394,7 +43392,7 @@ void OilPrinter::DoWordInCommand(syntax_asdl::word_t* node, Dict<BigStr*, bool>*
             if (vsub_part->left->id == Id::VSub_At) {
               this->cursor->PrintUntil(dq_part->left);
               this->cursor->SkipPast(dq_part->right);
-              this->f->write(str1704);
+              this->f->write(str1702);
               return ;
             }
             if ((vsub_part->left->id == Id::VSub_Number || vsub_part->left->id == Id::VSub_DollarName)) {
@@ -43476,7 +43474,7 @@ void OilPrinter::DoWordPart(syntax_asdl::word_part_t* node, Dict<BigStr*, bool>*
       else {
         t = node->token;
         val = t->tval->slice(1);
-        if (!(str_equals(val, str1705))) {
+        if (!(str_equals(val, str1703))) {
           this->cursor->PrintUntil(t);
           this->cursor->SkipPast(t);
           this->f->write(StrFormat("'%s'", val));
@@ -43524,17 +43522,17 @@ void OilPrinter::DoWordPart(syntax_asdl::word_part_t* node, Dict<BigStr*, bool>*
         }
         else {
           if (op_id == Id::VSub_At) {
-            this->f->write(str1708);
+            this->f->write(str1706);
             this->cursor->SkipPast(node->left);
           }
           else {
             if (op_id == Id::VSub_Star) {
-              this->f->write(str1709);
+              this->f->write(str1707);
               this->cursor->SkipPast(node->left);
             }
             else {
               if (op_id == Id::VSub_Pound) {
-                this->f->write(str1710);
+                this->f->write(str1708);
                 this->cursor->SkipPast(node->left);
               }
               else {
@@ -43569,11 +43567,11 @@ void OilPrinter::DoWordPart(syntax_asdl::word_part_t* node, Dict<BigStr*, bool>*
       CommandSub* node = static_cast<CommandSub*>(UP_node);
       if (node->left_token->id == Id::Left_Backtick) {
         this->cursor->PrintUntil(node->left_token);
-        this->f->write(str1711);
+        this->f->write(str1709);
         this->cursor->SkipPast(node->left_token);
         this->DoCommand(node->child, local_symbols);
         this->cursor->SkipPast(node->right);
-        this->f->write(str1712);
+        this->f->write(str1710);
       }
       else {
         this->cursor->PrintIncluding(node->right);
@@ -43815,18 +43813,18 @@ void ExprEvaluator::EvalAugmented(value_asdl::y_lvalue_t* lval, value_asdl::valu
       switch (obj->tag()) {
         case value_e::List: {
           value::List* obj = static_cast<value::List*>(UP_obj);
-          index = val_ops::ToInt(lval->index, str1714, loc::Missing);
+          index = val_ops::ToInt(lval->index, str1712, loc::Missing);
           lhs_val_ = obj->items->at(index);
         }
           break;
         case value_e::Dict: {
           value::Dict* obj = static_cast<value::Dict*>(UP_obj);
-          key = val_ops::ToStr(lval->index, str1715, loc::Missing);
+          key = val_ops::ToStr(lval->index, str1713, loc::Missing);
           lhs_val_ = obj->d->at(key);
         }
           break;
         default: {
-          throw Alloc<error::TypeErr>(obj, str1716, loc::Missing);
+          throw Alloc<error::TypeErr>(obj, str1714, loc::Missing);
         }
       }
       if ((op->id == Id::Arith_PlusEqual || op->id == Id::Arith_MinusEqual || op->id == Id::Arith_StarEqual || op->id == Id::Arith_SlashEqual)) {
@@ -43938,7 +43936,7 @@ runtime_asdl::part_value_t* ExprEvaluator::EvalExprSub(word_part::ExprSub* part)
     }
       break;
     case Id::Lit_AtLBracket: {
-      strs = val_ops::ToShellArray(val, Alloc<loc::WordPart>(part), str1717);
+      strs = val_ops::ToShellArray(val, Alloc<loc::WordPart>(part), str1715);
       return Alloc<part_value::Array>(strs);
     }
       break;
@@ -43979,7 +43977,7 @@ value_asdl::value_t* ExprEvaluator::PluginCall(value::Func* func_val, List<value
         val = Alloc<value::Str>(StrFormat("<I/O error: %s>", pyutil::strerror(e)));
       }
       catch (KeyboardInterrupt*) {
-        val = Alloc<value::Str>(str1720);
+        val = Alloc<value::Str>(str1718);
       }
     }
   }
@@ -43990,7 +43988,7 @@ List<BigStr*>* ExprEvaluator::SpliceValue(value_asdl::value_t* val, word_part::S
   StackRoot _root0(&val);
   StackRoot _root1(&part);
 
-  return val_ops::ToShellArray(val, Alloc<loc::WordPart>(part), str1721);
+  return val_ops::ToShellArray(val, Alloc<loc::WordPart>(part), str1719);
 }
 
 value_asdl::value_t* ExprEvaluator::_EvalConst(expr::Const* node) {
@@ -44003,7 +44001,7 @@ value_asdl::value_t* ExprEvaluator::_EvalConst(expr::Const* node) {
   StackRoot _root2(&s);
   StackRoot _root3(&byte);
 
-  c_under = node->c->tval->replace(str1722, str1723);
+  c_under = node->c->tval->replace(str1720, str1721);
   id_ = node->c->id;
   if (id_ == Id::Expr_DecInt) {
     return Alloc<value::Int>(to_int(c_under));
@@ -44069,11 +44067,11 @@ value_asdl::value_t* ExprEvaluator::_EvalUnary(expr::Unary* node) {
       if (c1 == coerced_e::Float) {
         return Alloc<value::Float>(-f1);
       }
-      throw Alloc<error::TypeErr>(val, str1724, node->op);
+      throw Alloc<error::TypeErr>(val, str1722, node->op);
     }
       break;
     case Id::Arith_Tilde: {
-      i = _ConvertToInt(val, str1725, node->op);
+      i = _ConvertToInt(val, str1723, node->op);
       return Alloc<value::Int>(~i);
     }
       break;
@@ -44131,7 +44129,7 @@ value_asdl::value_t* ExprEvaluator::_ArithIntFloat(value_asdl::value_t* left, va
       case Id::Arith_Slash: 
       case Id::Arith_SlashEqual: {
         if (i2 == 0) {
-          throw Alloc<error::Expr>(str1727, op);
+          throw Alloc<error::Expr>(str1725, op);
         }
         return Alloc<value::Float>((to_float(i1) / to_float(i2)));
       }
@@ -44162,7 +44160,7 @@ value_asdl::value_t* ExprEvaluator::_ArithIntFloat(value_asdl::value_t* left, va
         case Id::Arith_Slash: 
         case Id::Arith_SlashEqual: {
           if (f2 == 0.0) {
-            throw Alloc<error::Expr>(str1728, op);
+            throw Alloc<error::Expr>(str1726, op);
           }
           return Alloc<value::Float>((f1 / f2));
         }
@@ -44186,13 +44184,13 @@ value_asdl::value_t* ExprEvaluator::_ArithIntOnly(value_asdl::value_t* left, val
   StackRoot _root1(&right);
   StackRoot _root2(&op);
 
-  i1 = _ConvertToInt(left, str1730, op);
-  i2 = _ConvertToInt(right, str1731, op);
+  i1 = _ConvertToInt(left, str1728, op);
+  i2 = _ConvertToInt(right, str1729, op);
   switch (op->id) {
     case Id::Arith_Percent: 
     case Id::Arith_PercentEqual: {
       if (i2 == 0) {
-        throw Alloc<error::Expr>(str1732, op);
+        throw Alloc<error::Expr>(str1730, op);
       }
       return Alloc<value::Int>((i1 % i2));
     }
@@ -44200,7 +44198,7 @@ value_asdl::value_t* ExprEvaluator::_ArithIntOnly(value_asdl::value_t* left, val
     case Id::Expr_DSlash: 
     case Id::Expr_DSlashEqual: {
       if (i2 == 0) {
-        throw Alloc<error::Expr>(str1733, op);
+        throw Alloc<error::Expr>(str1731, op);
       }
       return Alloc<value::Int>((i1 / i2));
     }
@@ -44208,7 +44206,7 @@ value_asdl::value_t* ExprEvaluator::_ArithIntOnly(value_asdl::value_t* left, val
     case Id::Arith_DStar: 
     case Id::Expr_DStarEqual: {
       if (i2 < 0) {
-        throw Alloc<error::Expr>(str1734, op);
+        throw Alloc<error::Expr>(str1732, op);
       }
       ret = 1;
       for (int i = 0; i < i2; ++i) {
@@ -44452,24 +44450,24 @@ value_asdl::value_t* ExprEvaluator::_EvalCompare(expr::Compare* node) {
             else {
               if (op->id == Id::Expr_Is) {
                 if (left->tag() != right->tag()) {
-                  throw Alloc<error::TypeErrVerbose>(str1737, op);
+                  throw Alloc<error::TypeErrVerbose>(str1735, op);
                 }
                 result = left == right;
               }
               else {
                 if (op->id == Id::Node_IsNot) {
                   if (left->tag() != right->tag()) {
-                    throw Alloc<error::TypeErrVerbose>(str1738, op);
+                    throw Alloc<error::TypeErrVerbose>(str1736, op);
                   }
                   result = left != right;
                 }
                 else {
                   if (op->id == Id::Expr_DTilde) {
                     if (left->tag() != value_e::Str) {
-                      throw Alloc<error::TypeErrVerbose>(str1739, op);
+                      throw Alloc<error::TypeErrVerbose>(str1737, op);
                     }
                     if (right->tag() != value_e::Str) {
-                      throw Alloc<error::TypeErrVerbose>(str1740, op);
+                      throw Alloc<error::TypeErrVerbose>(str1738, op);
                     }
                     UP_left = left;
                     UP_right = right;
@@ -44480,10 +44478,10 @@ value_asdl::value_t* ExprEvaluator::_EvalCompare(expr::Compare* node) {
                   else {
                     if (op->id == Id::Expr_NotDTilde) {
                       if (left->tag() != value_e::Str) {
-                        throw Alloc<error::TypeErrVerbose>(str1741, op);
+                        throw Alloc<error::TypeErrVerbose>(str1739, op);
                       }
                       if (right->tag() != value_e::Str) {
-                        throw Alloc<error::TypeErrVerbose>(str1742, op);
+                        throw Alloc<error::TypeErrVerbose>(str1740, op);
                       }
                       UP_left = left;
                       UP_right = right;
@@ -44495,7 +44493,7 @@ value_asdl::value_t* ExprEvaluator::_EvalCompare(expr::Compare* node) {
                       if (op->id == Id::Expr_TildeDEqual) {
                         UP_left = left;
                         if (left->tag() != value_e::Str) {
-                          e_die(str1743, op);
+                          e_die(str1741, op);
                         }
                         value::Str* left = static_cast<value::Str*>(UP_left);
                         left2 = left->s->strip();
@@ -44510,11 +44508,11 @@ value_asdl::value_t* ExprEvaluator::_EvalCompare(expr::Compare* node) {
                             value::Bool* right = static_cast<value::Bool*>(UP_right);
                             left2 = left2->lower();
                             lb = false;
-                            if (str_equals(left2, str1744)) {
+                            if (str_equals(left2, str1742)) {
                               lb = true;
                             }
                             else {
-                              if (str_equals(left2, str1745)) {
+                              if (str_equals(left2, str1743)) {
                                 lb = false;
                               }
                               else {
@@ -44534,7 +44532,7 @@ value_asdl::value_t* ExprEvaluator::_EvalCompare(expr::Compare* node) {
                           }
                             break;
                         }
-                        e_die(str1747, op);
+                        e_die(str1745, op);
                       }
                       else {
                         try {
@@ -44610,7 +44608,7 @@ value_asdl::value_t* ExprEvaluator::_EvalFuncCall(expr::FuncCall* node) {
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(func, str1749, node->args->left);
+      throw Alloc<error::TypeErr>(func, str1747, node->args->left);
     }
   }
   UP_to_call = to_call;
@@ -44667,12 +44665,12 @@ value_asdl::value_t* ExprEvaluator::_EvalSubscript(syntax_asdl::Subscript* node)
             return Alloc<value::Str>(obj->s->at(index->i));
           }
           catch (IndexError*) {
-            throw Alloc<error::Expr>(str1751, loc::Missing);
+            throw Alloc<error::Expr>(str1749, loc::Missing);
           }
         }
           break;
         default: {
-          throw Alloc<error::TypeErr>(index, str1752, loc::Missing);
+          throw Alloc<error::TypeErr>(index, str1750, loc::Missing);
         }
       }
     }
@@ -44693,12 +44691,12 @@ value_asdl::value_t* ExprEvaluator::_EvalSubscript(syntax_asdl::Subscript* node)
             return obj->items->at(index->i);
           }
           catch (IndexError*) {
-            throw Alloc<error::Expr>(str1753, loc::Missing);
+            throw Alloc<error::Expr>(str1751, loc::Missing);
           }
         }
           break;
         default: {
-          throw Alloc<error::TypeErr>(index, str1754, loc::Missing);
+          throw Alloc<error::TypeErr>(index, str1752, loc::Missing);
         }
       }
     }
@@ -44706,19 +44704,19 @@ value_asdl::value_t* ExprEvaluator::_EvalSubscript(syntax_asdl::Subscript* node)
     case value_e::Dict: {
       value::Dict* obj = static_cast<value::Dict*>(UP_obj);
       if (index->tag() != value_e::Str) {
-        throw Alloc<error::TypeErr>(index, str1755, loc::Missing);
+        throw Alloc<error::TypeErr>(index, str1753, loc::Missing);
       }
       value::Str* index = static_cast<value::Str*>(UP_index);
       try {
         return obj->d->at(index->s);
       }
       catch (KeyError*) {
-        throw Alloc<error::Expr>(str1756, loc::Missing);
+        throw Alloc<error::Expr>(str1754, loc::Missing);
       }
     }
       break;
   }
-  throw Alloc<error::TypeErr>(obj, str1757, loc::Missing);
+  throw Alloc<error::TypeErr>(obj, str1755, loc::Missing);
 }
 
 value_asdl::value_t* ExprEvaluator::_EvalAttribute(syntax_asdl::Attribute* node) {
@@ -44763,7 +44761,7 @@ value_asdl::value_t* ExprEvaluator::_EvalAttribute(syntax_asdl::Attribute* node)
         }
           break;
         default: {
-          throw Alloc<error::TypeErr>(val, str1759, node->attr);
+          throw Alloc<error::TypeErr>(val, str1757, node->attr);
         }
       }
     }
@@ -44777,12 +44775,12 @@ value_asdl::value_t* ExprEvaluator::_EvalAttribute(syntax_asdl::Attribute* node)
             result = o->d->at(name);
           }
           catch (KeyError*) {
-            throw Alloc<error::Expr>(str1760, node->op);
+            throw Alloc<error::Expr>(str1758, node->op);
           }
         }
           break;
         default: {
-          throw Alloc<error::TypeErr>(o, str1761, node->op);
+          throw Alloc<error::TypeErr>(o, str1759, node->op);
         }
       }
       return result;
@@ -44917,12 +44915,12 @@ value_asdl::value_t* ExprEvaluator::_EvalExpr(syntax_asdl::expr_t* node) {
       lower = nullptr;
       upper = nullptr;
       if (node->lower) {
-        msg = str1762;
+        msg = str1760;
         i = val_ops::ToInt(this->_EvalExpr(node->lower), msg, loc::Missing);
         lower = Alloc<IntBox>(i);
       }
       if (node->upper) {
-        msg = str1763;
+        msg = str1761;
         i = val_ops::ToInt(this->_EvalExpr(node->upper), msg, loc::Missing);
         upper = Alloc<IntBox>(i);
       }
@@ -44931,9 +44929,9 @@ value_asdl::value_t* ExprEvaluator::_EvalExpr(syntax_asdl::expr_t* node) {
       break;
     case expr_e::Range: {
       expr::Range* node = static_cast<expr::Range*>(UP_node);
-      msg = str1764;
+      msg = str1762;
       i = val_ops::ToInt(this->_EvalExpr(node->lower), msg, loc::Missing);
-      msg = str1765;
+      msg = str1763;
       j = val_ops::ToInt(this->_EvalExpr(node->upper), msg, loc::Missing);
       return Alloc<value::Range>(i, j);
     }
@@ -45000,18 +44998,18 @@ value_asdl::value_t* ExprEvaluator::_EvalExpr(syntax_asdl::expr_t* node) {
       for (ListIter<value_asdl::value_t*> it(kvals); !it.Done(); it.Next(), ++i) {
         value_asdl::value_t* kval = it.Value();
         StackRoot _for(&kval      );
-        k = val_ops::ToStr(kval, str1766, loc::Missing);
+        k = val_ops::ToStr(kval, str1764, loc::Missing);
         d->set(k, values->at(i));
       }
       return Alloc<value::Dict>(d);
     }
       break;
     case expr_e::ListComp: {
-      e_die_status(2, str1767);
+      e_die_status(2, str1765);
     }
       break;
     case expr_e::GeneratorExp: {
-      e_die_status(2, str1768);
+      e_die_status(2, str1766);
     }
       break;
     case expr_e::Literal: {
@@ -45020,7 +45018,7 @@ value_asdl::value_t* ExprEvaluator::_EvalExpr(syntax_asdl::expr_t* node) {
     }
       break;
     case expr_e::Lambda: {
-      e_die_status(2, str1769);
+      e_die_status(2, str1767);
     }
       break;
     case expr_e::FuncCall: {
@@ -45105,7 +45103,7 @@ void ExprEvaluator::_EvalClassLiteralTerm(syntax_asdl::class_literal_term_t* ter
     case class_literal_term_e::Splice: {
       class_literal_term::Splice* term = static_cast<class_literal_term::Splice*>(UP_term);
       val = this->_LookupVar(term->var_name, term->name);
-      s = val_ops::ToStr(val, str1770, term->name);
+      s = val_ops::ToStr(val, str1768, term->name);
       char_code_tok = term->name;
     }
       break;
@@ -45204,16 +45202,16 @@ syntax_asdl::re_t* ExprEvaluator::_EvalRegex(syntax_asdl::re_t* node) {
         return Alloc<re::Primitive>(Id::Re_End);
       }
       if (id_ == Id::Expr_Name) {
-        if (str_equals(tval, str1772)) {
+        if (str_equals(tval, str1770)) {
           return Alloc<re::Primitive>(Id::Re_Dot);
         }
         FAIL(kNotImplemented);  // Python NotImplementedError
       }
       if (id_ == Id::Expr_Symbol) {
-        if (str_equals(tval, str1773)) {
+        if (str_equals(tval, str1771)) {
           return Alloc<re::Primitive>(Id::Re_Start);
         }
-        if (str_equals(tval, str1774)) {
+        if (str_equals(tval, str1772)) {
           return Alloc<re::Primitive>(Id::Re_End);
         }
         FAIL(kNotImplemented);  // Python NotImplementedError
@@ -45245,7 +45243,7 @@ syntax_asdl::re_t* ExprEvaluator::_EvalRegex(syntax_asdl::re_t* node) {
         }
           break;
         default: {
-          throw Alloc<error::TypeErr>(val, str1775, node->name);
+          throw Alloc<error::TypeErr>(val, str1773, node->name);
         }
       }
       return to_splice;
@@ -45301,10 +45299,10 @@ int _Classify(grammar::Grammar* gr, syntax_asdl::Token* tok, bool tea_keywords) 
     return gr->tokens->at(tok->id);
   }
   if (tok->id == Id::Unknown_DEqual) {
-    p_die(str1776, tok);
+    p_die(str1774, tok);
   }
   if (tok->id == Id::Unknown_Tok) {
-    type_str = str1777;
+    type_str = str1775;
   }
   else {
     type_str = StrFormat(" (%s)", ui::PrettyId(tok->id));
@@ -45418,7 +45416,7 @@ syntax_asdl::Token* _PushOilTokens(parse_lib::ParseContext* parse_ctx, grammar::
             Token* tok = reinterpret_cast<Token*>(w);
             if (tok->id == Id::Right_ShArrayLiteral) {
               if (left_tok->id != Id::Left_PercentParen) {
-                p_die(str1780, left_tok);
+                p_die(str1778, left_tok);
               }
               close_tok = tok;
               done = true;
@@ -45426,7 +45424,7 @@ syntax_asdl::Token* _PushOilTokens(parse_lib::ParseContext* parse_ctx, grammar::
             else {
               if (tok->id == Id::Op_Pipe) {
                 if (left_tok->id != Id::Left_ColonPipe) {
-                  p_die(str1781, left_tok);
+                  p_die(str1779, left_tok);
                 }
                 close_tok = tok;
                 done = true;
@@ -45436,7 +45434,7 @@ syntax_asdl::Token* _PushOilTokens(parse_lib::ParseContext* parse_ctx, grammar::
                   continue;
                 }
                 else {
-                  p_die(str1782, Alloc<loc::Word>(w));
+                  p_die(str1780, Alloc<loc::Word>(w));
                 }
               }
             }
@@ -45601,9 +45599,9 @@ using syntax_asdl::pat_t;
 using syntax_asdl::TypeExpr;
 using syntax_asdl::Func;
 using error::p_die;
-GLOBAL_DICT(PERL_CLASSES, BigStr*, BigStr*, 4, {str1784 COMMA str1786 COMMA str1788 COMMA str1790}, {str1785 COMMA str1787 COMMA str1789 COMMA str1791});
-GLOBAL_LIST(POSIX_CLASSES, BigStr*, 12, {str1792 COMMA str1793 COMMA str1794 COMMA str1795 COMMA str1796 COMMA str1797 COMMA str1798 COMMA str1799 COMMA str1800 COMMA str1801 COMMA str1802 COMMA str1803});
-BigStr* RANGE_POINT_TOO_LONG = str1804;
+GLOBAL_DICT(PERL_CLASSES, BigStr*, BigStr*, 4, {str1782 COMMA str1784 COMMA str1786 COMMA str1788}, {str1783 COMMA str1785 COMMA str1787 COMMA str1789});
+GLOBAL_LIST(POSIX_CLASSES, BigStr*, 12, {str1790 COMMA str1791 COMMA str1792 COMMA str1793 COMMA str1794 COMMA str1795 COMMA str1796 COMMA str1797 COMMA str1798 COMMA str1799 COMMA str1800 COMMA str1801});
+BigStr* RANGE_POINT_TOO_LONG = str1802;
 int NT_OFFSET = 256;
 
 bool ISNONTERMINAL(int x) {
@@ -45674,7 +45672,7 @@ syntax_asdl::expr_t* Transformer::_Trailer(syntax_asdl::expr_t* base, pnode::PNo
     p_args = p_trailer->GetChild(1);
     n = p_args->NumChildren();
     if (n > 1) {
-      p_die(str1805, p_args->GetChild(1)->tok);
+      p_die(str1803, p_args->GetChild(1)->tok);
     }
     a = p_args->GetChild(0);
     return Alloc<Subscript>(op_tok, base, this->_Subscript(a));
@@ -45771,7 +45769,7 @@ syntax_asdl::expr_t* Transformer::_Tuple(pnode::PNode* parent) {
     return this->Expr(parent->GetChild(0));
   }
   if (n == 2) {
-    p_die(str1806, parent->GetChild(1)->tok);
+    p_die(str1804, parent->GetChild(1)->tok);
   }
   elts = Alloc<List<syntax_asdl::expr_t*>>();
   for (int i = 0; i < n; i += 2) {
@@ -45870,7 +45868,7 @@ syntax_asdl::expr_t* Transformer::_Atom(pnode::PNode* parent) {
   if (id_ == Id::Arith_Amp) {
     n = parent->NumChildren();
     if (n >= 3) {
-      p_die(str1808, parent->GetChild(2)->tok);
+      p_die(str1806, parent->GetChild(2)->tok);
     }
     name_tok = parent->GetChild(1)->tok;
     return Alloc<expr::Place>(name_tok, lexer::TokenVal(name_tok), Alloc<List<syntax_asdl::place_op_t*>>());
@@ -45879,10 +45877,10 @@ syntax_asdl::expr_t* Transformer::_Atom(pnode::PNode* parent) {
     return Alloc<expr::Lambda>(Alloc<List<syntax_asdl::NameType*>>(), expr::Implicit);
   }
   if (id_ == Id::Expr_DecInt) {
-    p_die(str1809, parent->GetChild(1)->tok);
+    p_die(str1807, parent->GetChild(1)->tok);
   }
   if (id_ == Id::Expr_Float) {
-    p_die(str1810, parent->GetChild(1)->tok);
+    p_die(str1808, parent->GetChild(1)->tok);
   }
   FAIL(kNotImplemented);  // Python NotImplementedError
 }
@@ -46310,7 +46308,7 @@ List<syntax_asdl::y_lhs_t*>* Transformer::_LhsExprList(pnode::PNode* p_node) {
       case expr_e::Attribute: {
         Attribute* e = static_cast<Attribute*>(UP_e);
         if (e->op->id != Id::Expr_Dot) {
-          p_die(str1813, e->op);
+          p_die(str1811, e->op);
         }
         lhs_list->append(e);
       }
@@ -46323,7 +46321,7 @@ List<syntax_asdl::y_lhs_t*>* Transformer::_LhsExprList(pnode::PNode* p_node) {
         else {
           blame = loc::Missing;
         }
-        p_die(str1814, blame);
+        p_die(str1812, blame);
       }
     }
   }
@@ -46363,7 +46361,7 @@ command::Mutation* Transformer::MakeMutation(pnode::PNode* p_node) {
   lhs_list = this->_LhsExprList(p_node->GetChild(0));
   op_tok = p_node->GetChild(1)->tok;
   if ((len(lhs_list) > 1 and op_tok->id != Id::Arith_Equal)) {
-    p_die(str1815, op_tok);
+    p_die(str1813, op_tok);
   }
   rhs = this->Expr(p_node->GetChild(2));
   return Alloc<command::Mutation>(nullptr, lhs_list, op_tok, rhs);
@@ -46443,7 +46441,7 @@ void Transformer::_Argument(pnode::PNode* p_node, bool after_semi, syntax_asdl::
   if (n == 1) {
     child = p_node->GetChild(0);
     if (after_semi) {
-      p_die(str1816, child->tok);
+      p_die(str1814, child->tok);
     }
     arg = this->Expr(child);
     pos_args->append(arg);
@@ -46464,7 +46462,7 @@ void Transformer::_Argument(pnode::PNode* p_node, bool after_semi, syntax_asdl::
     if (p_node->GetChild(1)->typ == grammar_nt::comp_for) {
       child = p_node->GetChild(0);
       if (after_semi) {
-        p_die(str1817, child->tok);
+        p_die(str1815, child->tok);
       }
       elt = this->Expr(child);
       comp = this->_CompFor(p_node->GetChild(1));
@@ -46659,11 +46657,11 @@ syntax_asdl::proc_sig_t* Transformer::Proc(pnode::PNode* p_node) {
       syntax_asdl::Param* word = it.Value();
       StackRoot _for(&word    );
       if (word->type) {
-        if ((!str_equals(word->type->name, str1818) && !str_equals(word->type->name, str1819))) {
-          p_die(str1820, word->type->tok);
+        if ((!str_equals(word->type->name, str1816) && !str_equals(word->type->name, str1817))) {
+          p_die(str1818, word->type->tok);
         }
         if (word->type->params != nullptr) {
-          p_die(str1821, word->type->tok);
+          p_die(str1819, word->type->tok);
         }
       }
     }
@@ -46702,18 +46700,18 @@ syntax_asdl::proc_sig_t* Transformer::Proc(pnode::PNode* p_node) {
     group = this->_ParamGroup(p_node->GetChild(i));
     params = group->params;
     if (len(params) > 1) {
-      p_die(str1822, params->at(1)->blame_tok);
+      p_die(str1820, params->at(1)->blame_tok);
     }
     if (group->rest_of) {
-      p_die(str1823, group->rest_of->blame_tok);
+      p_die(str1821, group->rest_of->blame_tok);
     }
     if (len(params) == 1) {
       if (params->at(0)->type) {
-        if (!(str_equals(params->at(0)->type->name, str1824))) {
-          p_die(str1825, params->at(0)->type->tok);
+        if (!(str_equals(params->at(0)->type->name, str1822))) {
+          p_die(str1823, params->at(0)->type->tok);
         }
         if (params->at(0)->type->params != nullptr) {
-          p_die(str1826, params->at(0)->type->tok);
+          p_die(str1824, params->at(0)->type->tok);
         }
       }
       sig->block_param = params->at(0);
@@ -46874,9 +46872,9 @@ syntax_asdl::re_t* Transformer::_NameInRegex(syntax_asdl::Token* negated_tok, sy
   StackRoot _root3(&perl);
 
   tok_str = tok->tval;
-  if (str_equals(tok_str, str1827)) {
+  if (str_equals(tok_str, str1825)) {
     if (negated_tok) {
-      p_die(str1828, tok);
+      p_die(str1826, tok);
     }
     return tok;
   }
@@ -46904,7 +46902,7 @@ syntax_asdl::class_literal_term_t* Transformer::_NameInClass(syntax_asdl::Token*
   tok_str = tok->tval;
   if (len(tok_str) == 1) {
     if (negated_tok) {
-      p_die(str1830, tok);
+      p_die(str1828, tok);
     }
     return Alloc<class_literal_term::CharLiteral>(tok);
   }
@@ -46954,7 +46952,7 @@ syntax_asdl::re_t* Transformer::_ReAtom(pnode::PNode* p_atom) {
       return this->_NameInRegex(nullptr, tok);
     }
     if (tok->id == Id::Expr_Symbol) {
-      if ((str_equals(tok->tval, str1832) || str_equals(tok->tval, str1833) || str_equals(tok->tval, str1834))) {
+      if ((str_equals(tok->tval, str1830) || str_equals(tok->tval, str1831) || str_equals(tok->tval, str1832))) {
         return tok;
       }
       p_die(StrFormat("Unexpected token %r in regex", tok->tval), tok);
@@ -46975,7 +46973,7 @@ syntax_asdl::re_t* Transformer::_ReAtom(pnode::PNode* p_atom) {
         }
       }
       else {
-        p_die(str1836, p_atom->GetChild(1)->tok);
+        p_die(str1834, p_atom->GetChild(1)->tok);
       }
     }
     if (tok->id == Id::Op_LParen) {
@@ -47117,7 +47115,7 @@ void _DisallowMutableDefault(value_asdl::value_t* val, syntax_asdl::loc_t* blame
   StackRoot _root1(&blame_loc);
 
   if ((val->tag() == value_e::List || val->tag() == value_e::Dict)) {
-    throw Alloc<error::TypeErr>(val, str1837, blame_loc);
+    throw Alloc<error::TypeErr>(val, str1835, blame_loc);
   }
 }
 
@@ -47220,7 +47218,7 @@ value_asdl::ProcDefaults* EvalProcDefaults(expr_eval::ExprEvaluator* expr_ev, pr
       if (p->default_val) {
         val = expr_ev->EvalExpr(p->default_val, p->blame_tok);
         if (val->tag() != value_e::Str) {
-          throw Alloc<error::TypeErr>(val, str1838, p->blame_tok);
+          throw Alloc<error::TypeErr>(val, str1836, p->blame_tok);
         }
         word_defaults->set(i, val);
       }
@@ -47240,7 +47238,7 @@ value_asdl::ProcDefaults* EvalProcDefaults(expr_eval::ExprEvaluator* expr_ev, pr
     if (exp) {
       val = expr_ev->EvalExpr(exp, sig->block_param->blame_tok);
       if ((val->tag() != value_e::Null && val->tag() != value_e::Command)) {
-        throw Alloc<error::TypeErr>(val, str1839, sig->block_param->blame_tok);
+        throw Alloc<error::TypeErr>(val, str1837, sig->block_param->blame_tok);
       }
     }
     else {
@@ -47277,7 +47275,7 @@ void _EvalPosArgs(expr_eval::ExprEvaluator* expr_ev, List<syntax_asdl::expr_t*>*
       expr::Spread* e = static_cast<expr::Spread*>(UP_e);
       val = expr_ev->_EvalExpr(e->child);
       if (val->tag() != value_e::List) {
-        throw Alloc<error::TypeErr>(val, str1840, e->left);
+        throw Alloc<error::TypeErr>(val, str1838, e->left);
       }
       pos_args->extend(static_cast<value::List*>(val)->items);
     }
@@ -47311,7 +47309,7 @@ Dict<BigStr*, value_asdl::value_t*>* _EvalNamedArgs(expr_eval::ExprEvaluator* ex
       expr::Spread* val_expr = static_cast<expr::Spread*>(UP_val_expr);
       val = expr_ev->_EvalExpr(val_expr->child);
       if (val->tag() != value_e::Dict) {
-        throw Alloc<error::TypeErr>(val, str1841, val_expr->left);
+        throw Alloc<error::TypeErr>(val, str1839, val_expr->left);
       }
       named_args->update(static_cast<value::Dict*>(val)->d);
     }
@@ -47735,7 +47733,7 @@ using syntax_asdl::re_repeat_e;
 using id_kind_asdl::Id;
 using value_asdl::value;
 using error::e_die;
-GLOBAL_DICT(PERL_CLASS, BigStr*, BigStr*, 3, {str1856 COMMA str1858 COMMA str1860}, {str1857 COMMA str1859 COMMA str1861});
+GLOBAL_DICT(PERL_CLASS, BigStr*, BigStr*, 3, {str1854 COMMA str1856 COMMA str1858}, {str1855 COMMA str1857 COMMA str1859});
 int CH_RBRACKET = 93;
 int CH_BACKSLASH = 92;
 int CH_CARET = 94;
@@ -47805,7 +47803,7 @@ void _CharClassTermToEre(syntax_asdl::char_class_term_t* term, List<BigStr*>* pa
       if (range_no_special->at(0) != 0) {
         e_die(StrFormat("Can't use char %d as start of range in ERE syntax", term->start->i), term->start->blame_tok);
       }
-      parts->append(str1864);
+      parts->append(str1862);
       _CharCodeToEre(term->end, parts, range_no_special);
       if (range_no_special->at(0) != 0) {
         e_die(StrFormat("Can't use char %d as end of range in ERE syntax", term->end->i), term->end->blame_tok);
@@ -47822,7 +47820,7 @@ void _CharClassTermToEre(syntax_asdl::char_class_term_t* term, List<BigStr*>* pa
       n = term->name;
       chars = PERL_CLASS->at(term->name);
       if (term->negated) {
-        e_die(str1866, term->negated);
+        e_die(str1864, term->negated);
       }
       else {
         pat = StrFormat("%s", chars);
@@ -47834,7 +47832,7 @@ void _CharClassTermToEre(syntax_asdl::char_class_term_t* term, List<BigStr*>* pa
       PosixClass* term = static_cast<PosixClass*>(UP_term);
       n = term->name;
       if (term->negated) {
-        e_die(str1868, term->negated);
+        e_die(str1866, term->negated);
       }
       else {
         pat = StrFormat("[:%s:]", n);
@@ -47881,15 +47879,15 @@ void _AsPosixEre(syntax_asdl::re_t* node, List<BigStr*>* parts) {
   if (tag == re_e::Primitive) {
     re::Primitive* node = static_cast<re::Primitive*>(UP_node);
     if (node->id == Id::Re_Dot) {
-      parts->append(str1870);
+      parts->append(str1868);
     }
     else {
       if (node->id == Id::Re_Start) {
-        parts->append(str1871);
+        parts->append(str1869);
       }
       else {
         if (node->id == Id::Re_End) {
-          parts->append(str1872);
+          parts->append(str1870);
         }
         else {
           assert(0);  // AssertionError
@@ -47919,7 +47917,7 @@ void _AsPosixEre(syntax_asdl::re_t* node, List<BigStr*>* parts) {
       syntax_asdl::re_t* c = it.Value();
       StackRoot _for(&c    );
       if (i != 0) {
-        parts->append(str1873);
+        parts->append(str1871);
       }
       _AsPosixEre(c, parts);
     }
@@ -47930,7 +47928,7 @@ void _AsPosixEre(syntax_asdl::re_t* node, List<BigStr*>* parts) {
     if (node->child->tag() == re_e::LiteralChars) {
       re::LiteralChars* child = static_cast<re::LiteralChars*>(node->child);
       if (len(child->s) > 1) {
-        e_die(str1874, child->blame_tok);
+        e_die(str1872, child->blame_tok);
       }
     }
     _AsPosixEre(node->child, parts);
@@ -47941,15 +47939,15 @@ void _AsPosixEre(syntax_asdl::re_t* node, List<BigStr*>* parts) {
       re_repeat::Op* op = static_cast<re_repeat::Op*>(UP_op);
       op_id = op->op->id;
       if (op_id == Id::Arith_Plus) {
-        parts->append(str1875);
+        parts->append(str1873);
       }
       else {
         if (op_id == Id::Arith_Star) {
-          parts->append(str1876);
+          parts->append(str1874);
         }
         else {
           if (op_id == Id::Arith_QMark) {
-            parts->append(str1877);
+            parts->append(str1875);
           }
           else {
             assert(0);  // AssertionError
@@ -47965,8 +47963,8 @@ void _AsPosixEre(syntax_asdl::re_t* node, List<BigStr*>* parts) {
     }
     if (op_tag == re_repeat_e::Range) {
       re_repeat::Range* op = static_cast<re_repeat::Range*>(UP_op);
-      lower = op->lower ? op->lower->tval : str1879;
-      upper = op->upper ? op->upper->tval : str1880;
+      lower = op->lower ? op->lower->tval : str1877;
+      upper = op->upper ? op->upper->tval : str1878;
       parts->append(StrFormat("{%s,%s}", lower, upper));
       return ;
     }
@@ -47974,9 +47972,9 @@ void _AsPosixEre(syntax_asdl::re_t* node, List<BigStr*>* parts) {
   }
   if ((tag == re_e::Group || tag == re_e::Capture)) {
     re::Group* node = static_cast<re::Group*>(UP_node);
-    parts->append(str1882);
+    parts->append(str1880);
     _AsPosixEre(node->child, parts);
-    parts->append(str1883);
+    parts->append(str1881);
     return ;
   }
   if (tag == re_e::PerlClass) {
@@ -48013,24 +48011,24 @@ void _AsPosixEre(syntax_asdl::re_t* node, List<BigStr*>* parts) {
       StackRoot _for(&term    );
       _CharClassTermToEre(term, non_special_parts, special_char_flags);
     }
-    parts->append(str1888);
+    parts->append(str1886);
     if (node->negated) {
-      parts->append(str1889);
+      parts->append(str1887);
     }
     if ((special_char_flags->at(0) & FLAG_RBRACKET)) {
-      parts->append(str1890);
+      parts->append(str1888);
     }
     parts->extend(non_special_parts);
     if ((special_char_flags->at(0) & FLAG_BACKSLASH)) {
-      parts->append(str1891);
+      parts->append(str1889);
     }
     if ((special_char_flags->at(0) & FLAG_CARET)) {
-      parts->append(str1892);
+      parts->append(str1890);
     }
     if ((special_char_flags->at(0) & FLAG_HYPHEN)) {
-      parts->append(str1893);
+      parts->append(str1891);
     }
-    parts->append(str1894);
+    parts->append(str1892);
     return ;
   }
   FAIL(kNotImplemented);  // Python NotImplementedError
@@ -48046,7 +48044,7 @@ BigStr* AsPosixEre(value::Eggex* eggex) {
   }
   parts = Alloc<List<BigStr*>>();
   _AsPosixEre(eggex->expr, parts);
-  eggex->as_ere = str1895->join(parts);
+  eggex->as_ere = str1893->join(parts);
   return eggex->as_ere;
 }
 
@@ -48171,12 +48169,12 @@ BigStr* Stringify(value_asdl::value_t* val, syntax_asdl::loc_t* blame_loc, BigSt
     }
       break;
     case value_e::Null: {
-      s = str1897;
+      s = str1895;
     }
       break;
     case value_e::Bool: {
       value::Bool* val = static_cast<value::Bool*>(UP_val);
-      s = val->b ? str1898 : str1899;
+      s = val->b ? str1896 : str1897;
     }
       break;
     case value_e::Int: {
@@ -48411,7 +48409,7 @@ bool ExactlyEqual(value_asdl::value_t* left, value_asdl::value_t* right, syntax_
     }
       break;
     case value_e::Float: {
-      throw Alloc<error::TypeErrVerbose>(str1904, blame_loc);
+      throw Alloc<error::TypeErrVerbose>(str1902, blame_loc);
     }
       break;
     case value_e::Str: {
@@ -48496,12 +48494,12 @@ bool Contains(value_asdl::value_t* needle, value_asdl::value_t* haystack) {
   switch (haystack->tag()) {
     case value_e::Dict: {
       value::Dict* haystack = static_cast<value::Dict*>(UP_haystack);
-      s = ToStr(needle, str1906, loc::Missing);
+      s = ToStr(needle, str1904, loc::Missing);
       return dict_contains(haystack->d, s);
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(haystack, str1907, loc::Missing);
+      throw Alloc<error::TypeErr>(haystack, str1905, loc::Missing);
     }
   }
   return false;
@@ -48536,7 +48534,7 @@ bool RegexMatch(value_asdl::value_t* left, value_asdl::value_t* right, state::Me
     }
       break;
     default: {
-      throw Alloc<error::TypeErr>(right, str1908, loc::Missing);
+      throw Alloc<error::TypeErr>(right, str1906, loc::Missing);
     }
   }
   UP_left = left;
@@ -48548,7 +48546,7 @@ bool RegexMatch(value_asdl::value_t* left, value_asdl::value_t* right, state::Me
     }
       break;
     default: {
-      throw Alloc<error::TypeErrVerbose>(str1909, loc::Missing);
+      throw Alloc<error::TypeErrVerbose>(str1907, loc::Missing);
     }
   }
   matches = libc::regex_match(right_s, left_s);
@@ -48597,7 +48595,7 @@ word::String* _StringWordEmitter::ReadWord(types_asdl::lex_mode_t unused_lex_mod
   StackRoot _root2(&arg_loc);
 
   if (this->i == this->n) {
-    w = Alloc<word::String>(Id::Eof_Real, str1910, nullptr);
+    w = Alloc<word::String>(Id::Eof_Real, str1908, nullptr);
     return w;
   }
   s = this->cmd_val->argv->at(this->i);
@@ -48651,24 +48649,24 @@ syntax_asdl::bool_expr_t* _TwoArgs(bracket_osh::_StringWordEmitter* w_parser) {
   w0 = w_parser->Read();
   w1 = w_parser->Read();
   s0 = w0->s;
-  if (str_equals(s0, str1911)) {
+  if (str_equals(s0, str1909)) {
     return Alloc<bool_expr::LogicalNot>(Alloc<bool_expr::WordTest>(w1));
   }
   unary_id = Id::Undefined_Tok;
-  if (w0->s->startswith(str1912)) {
-    if (str_equals(s0, str1913)) {
+  if (w0->s->startswith(str1910)) {
+    if (str_equals(s0, str1911)) {
       unary_id = Id::BoolUnary_d;
     }
     else {
-      if (str_equals(s0, str1914)) {
+      if (str_equals(s0, str1912)) {
         unary_id = Id::BoolUnary_e;
       }
       else {
-        if (str_equals(s0, str1915)) {
+        if (str_equals(s0, str1913)) {
           unary_id = Id::BoolUnary_f;
         }
         else {
-          if (str_equals(s0, str1916)) {
+          if (str_equals(s0, str1914)) {
             unary_id = Id::BoolUnary_L;
           }
         }
@@ -48703,18 +48701,18 @@ syntax_asdl::bool_expr_t* _ThreeArgs(bracket_osh::_StringWordEmitter* w_parser) 
   if (binary_id != Id::Undefined_Tok) {
     return Alloc<bool_expr::Binary>(binary_id, w0, w2);
   }
-  if (str_equals(w1->s, str1918)) {
+  if (str_equals(w1->s, str1916)) {
     return Alloc<bool_expr::LogicalAnd>(Alloc<bool_expr::WordTest>(w0), Alloc<bool_expr::WordTest>(w2));
   }
-  if (str_equals(w1->s, str1919)) {
+  if (str_equals(w1->s, str1917)) {
     return Alloc<bool_expr::LogicalOr>(Alloc<bool_expr::WordTest>(w0), Alloc<bool_expr::WordTest>(w2));
   }
-  if (str_equals(w0->s, str1920)) {
+  if (str_equals(w0->s, str1918)) {
     w_parser->Rewind(2);
     child = _TwoArgs(w_parser);
     return Alloc<bool_expr::LogicalNot>(child);
   }
-  if ((str_equals(w0->s, str1921) and str_equals(w2->s, str1922))) {
+  if ((str_equals(w0->s, str1919) and str_equals(w2->s, str1920))) {
     return Alloc<bool_expr::WordTest>(w1);
   }
   p_die(StrFormat("Expected binary operator, got %r (3 args)", w1->s), Alloc<loc::Word>(w1));
@@ -48753,11 +48751,11 @@ int Test::Run(cmd_value::Argv* cmd_val) {
 
   if (this->need_right_bracket) {
     if (this->exec_opts->simple_test_builtin()) {
-      e_usage(str1924, loc::Missing);
+      e_usage(str1922, loc::Missing);
     }
     strs = cmd_val->argv;
-    if ((len(strs) == 0 or !(str_equals(strs->at(-1), str1925)))) {
-      this->errfmt->Print_(str1926, cmd_val->arg_locs->at(0));
+    if ((len(strs) == 0 or !(str_equals(strs->at(-1), str1923)))) {
+      this->errfmt->Print_(str1924, cmd_val->arg_locs->at(0));
       return 2;
     }
     cmd_val->argv->pop();
@@ -48769,7 +48767,7 @@ int Test::Run(cmd_value::Argv* cmd_val) {
   bool_node = nullptr;
   n = (len(cmd_val->argv) - 1);
   if ((this->exec_opts->simple_test_builtin() and n > 3)) {
-    e_usage(str1927, loc::Missing);
+    e_usage(str1925, loc::Missing);
   }
   try {
     if (n == 0) {
@@ -48793,13 +48791,13 @@ int Test::Run(cmd_value::Argv* cmd_val) {
     }
     if (n == 4) {
       a0 = w_parser->Peek(0);
-      if (str_equals(a0, str1928)) {
+      if (str_equals(a0, str1926)) {
         w_parser->Read();
         child = _ThreeArgs(w_parser);
         bool_node = Alloc<bool_expr::LogicalNot>(child);
       }
       else {
-        if ((str_equals(a0, str1929) and str_equals(w_parser->Peek(3), str1930))) {
+        if ((str_equals(a0, str1927) and str_equals(w_parser->Peek(3), str1928))) {
           w_parser->Read();
           bool_node = _TwoArgs(w_parser);
         }
@@ -48813,7 +48811,7 @@ int Test::Run(cmd_value::Argv* cmd_val) {
     }
   }
   catch (error::Parse* e) {
-    this->errfmt->PrettyPrintError(e, str1931);
+    this->errfmt->PrettyPrintError(e, str1929);
     return 2;
   }
   word_ev = Alloc<_WordEvaluator>();
@@ -48824,7 +48822,7 @@ int Test::Run(cmd_value::Argv* cmd_val) {
     b = bool_ev->EvalB(bool_node);
   }
   catch (error::_ErrorWithLocation* e) {
-    this->errfmt->PrettyPrintError(e, str1932);
+    this->errfmt->PrettyPrintError(e, str1930);
     return 2;
   }
   status = b ? 0 : 1;
@@ -48860,7 +48858,7 @@ void _FixedWordsAction::Matches(completion::Api* comp, List<BigStr*>* _out_yield
 void _FixedWordsAction::Print(mylib::BufWriter* f) {
   StackRoot _root0(&f);
 
-  f->write(str1933);
+  f->write(str1931);
 }
 
 _DynamicProcDictAction::_DynamicProcDictAction(Dict<BigStr*, value::Proc*>* d) {
@@ -48883,7 +48881,7 @@ void _DynamicProcDictAction::Matches(completion::Api* comp, List<BigStr*>* _out_
 void _DynamicProcDictAction::Print(mylib::BufWriter* f) {
   StackRoot _root0(&f);
 
-  f->write(str1934);
+  f->write(str1932);
 }
 
 _DynamicStrDictAction::_DynamicStrDictAction(Dict<BigStr*, BigStr*>* d) {
@@ -48906,7 +48904,7 @@ void _DynamicStrDictAction::Matches(completion::Api* comp, List<BigStr*>* _out_y
 void _DynamicStrDictAction::Print(mylib::BufWriter* f) {
   StackRoot _root0(&f);
 
-  f->write(str1935);
+  f->write(str1933);
 }
 
 SpecBuilder::SpecBuilder(cmd_eval::CommandEvaluator* cmd_ev, parse_lib::ParseContext* parse_ctx, word_eval::NormalWordEvaluator* word_ev, split::SplitContext* splitter, completion::Lookup* comp_lookup, Dict<BigStr*, BigStr*>* help_data, ui::ErrorFormatter* errfmt) {
@@ -48969,24 +48967,24 @@ completion::UserSpec* SpecBuilder::Build(List<BigStr*>* argv, args::_Attributes*
   if (arg->C != nullptr) {
     command = arg->C;
     actions->append(Alloc<completion::CommandAction>(cmd_ev, command));
-    print_stderr(str1937);
+    print_stderr(str1935);
   }
   for (ListIter<BigStr*> it(attrs->actions); !it.Done(); it.Next()) {
     BigStr* name = it.Value();
     StackRoot _for(&name  );
-    if (str_equals(name, str1938)) {
+    if (str_equals(name, str1936)) {
       a = Alloc<_DynamicStrDictAction>(this->parse_ctx->aliases);
     }
     else {
-      if (str_equals(name, str1939)) {
-        a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1940}));
+      if (str_equals(name, str1937)) {
+        a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1938}));
       }
       else {
-        if (str_equals(name, str1941)) {
+        if (str_equals(name, str1939)) {
           a = Alloc<_FixedWordsAction>(consts::BUILTIN_NAMES);
         }
         else {
-          if (str_equals(name, str1942)) {
+          if (str_equals(name, str1940)) {
             actions->append(Alloc<_FixedWordsAction>(consts::BUILTIN_NAMES));
             actions->append(Alloc<_DynamicStrDictAction>(this->parse_ctx->aliases));
             actions->append(Alloc<_DynamicProcDictAction>(cmd_ev->procs));
@@ -48995,51 +48993,51 @@ completion::UserSpec* SpecBuilder::Build(List<BigStr*>* argv, args::_Attributes*
             a = Alloc<completion::ExternalCommandAction>(cmd_ev->mem);
           }
           else {
-            if (str_equals(name, str1943)) {
+            if (str_equals(name, str1941)) {
               a = Alloc<completion::FileSystemAction>(true, false, false);
             }
             else {
-              if (str_equals(name, str1944)) {
+              if (str_equals(name, str1942)) {
                 a = Alloc<completion::FileSystemAction>(false, false, false);
               }
               else {
-                if (str_equals(name, str1945)) {
+                if (str_equals(name, str1943)) {
                   a = Alloc<_DynamicProcDictAction>(cmd_ev->procs);
                 }
                 else {
-                  if (str_equals(name, str1946)) {
-                    a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1947}));
+                  if (str_equals(name, str1944)) {
+                    a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1945}));
                   }
                   else {
-                    if (str_equals(name, str1948)) {
+                    if (str_equals(name, str1946)) {
                       a = Alloc<completion::UsersAction>();
                     }
                     else {
-                      if (str_equals(name, str1949)) {
+                      if (str_equals(name, str1947)) {
                         a = Alloc<completion::VariablesAction>(cmd_ev->mem);
                       }
                       else {
-                        if (str_equals(name, str1950)) {
+                        if (str_equals(name, str1948)) {
                           if (this->topic_list == nullptr) {
                             this->topic_list = this->help_data->keys();
                           }
                           a = Alloc<_FixedWordsAction>(this->topic_list);
                         }
                         else {
-                          if (str_equals(name, str1951)) {
+                          if (str_equals(name, str1949)) {
                             a = Alloc<_FixedWordsAction>(consts::SET_OPTION_NAMES);
                           }
                           else {
-                            if (str_equals(name, str1952)) {
+                            if (str_equals(name, str1950)) {
                               a = Alloc<_FixedWordsAction>(consts::SHOPT_OPTION_NAMES);
                             }
                             else {
-                              if (str_equals(name, str1953)) {
-                                a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1954}));
+                              if (str_equals(name, str1951)) {
+                                a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1952}));
                               }
                               else {
-                                if (str_equals(name, str1955)) {
-                                  a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1956}));
+                                if (str_equals(name, str1953)) {
+                                  a = Alloc<_FixedWordsAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str1954}));
                                 }
                                 else {
                                   assert(0);  // AssertionError
@@ -49073,23 +49071,23 @@ completion::UserSpec* SpecBuilder::Build(List<BigStr*>* argv, args::_Attributes*
     actions->append(a);
   }
   extra_actions = Alloc<List<completion::CompletionAction*>>();
-  if (base_opts->get(str1957, false)) {
+  if (base_opts->get(str1955, false)) {
     extra_actions->append(Alloc<completion::FileSystemAction>(true, false, false));
   }
   else_actions = Alloc<List<completion::CompletionAction*>>();
-  if (base_opts->get(str1958, false)) {
+  if (base_opts->get(str1956, false)) {
     else_actions->append(Alloc<completion::FileSystemAction>(false, false, false));
   }
-  if (base_opts->get(str1959, false)) {
+  if (base_opts->get(str1957, false)) {
     else_actions->append(Alloc<completion::FileSystemAction>(true, false, false));
   }
   if ((len(actions) == 0 and len(else_actions) == 0)) {
-    throw Alloc<error::Usage>(StrFormat("No actions defined in completion: %s", str1961->join(argv)), loc::Missing);
+    throw Alloc<error::Usage>(StrFormat("No actions defined in completion: %s", str1959->join(argv)), loc::Missing);
   }
   p = Alloc<completion::DefaultPredicate>();
   if (arg->X != nullptr) {
     filter_pat = arg->X;
-    if (filter_pat->startswith(str1962)) {
+    if (filter_pat->startswith(str1960)) {
       p = Alloc<completion::GlobPredicate>(false, filter_pat->slice(1));
     }
     else {
@@ -49098,11 +49096,11 @@ completion::UserSpec* SpecBuilder::Build(List<BigStr*>* argv, args::_Attributes*
   }
   prefix = arg->P;
   if (prefix == nullptr) {
-    prefix = str1963;
+    prefix = str1961;
   }
   suffix = arg->S;
   if (suffix == nullptr) {
-    suffix = str1964;
+    suffix = str1962;
   }
   return Alloc<completion::UserSpec>(actions, extra_actions, else_actions, p, prefix, suffix);
 }
@@ -49131,14 +49129,14 @@ int Complete::Run(cmd_value::Argv* cmd_val) {
 
   arg_r = Alloc<args::Reader>(cmd_val->argv, cmd_val->arg_locs);
   arg_r->Next();
-  attrs = flag_spec::ParseMore(str1965, arg_r);
+  attrs = flag_spec::ParseMore(str1963, arg_r);
   arg = Alloc<arg_types::complete>(attrs->attrs);
   commands = arg_r->Rest();
   if (arg->D) {
-    commands->append(str1966);
+    commands->append(str1964);
   }
   if (arg->E) {
-    commands->append(str1967);
+    commands->append(str1965);
   }
   if (len(commands) == 0) {
     if (len(cmd_val->argv) == 1) {
@@ -49146,7 +49144,7 @@ int Complete::Run(cmd_value::Argv* cmd_val) {
       return 0;
     }
     else {
-      throw Alloc<error::Usage>(str1968, loc::Missing);
+      throw Alloc<error::Usage>(str1966, loc::Missing);
     }
   }
   base_opts = dict(attrs->opt_changes);
@@ -49194,9 +49192,9 @@ int CompGen::Run(cmd_value::Argv* cmd_val) {
 
   arg_r = Alloc<args::Reader>(cmd_val->argv, cmd_val->arg_locs);
   arg_r->Next();
-  arg = flag_spec::ParseMore(str1969, arg_r);
+  arg = flag_spec::ParseMore(str1967, arg_r);
   if (arg_r->AtEnd()) {
-    to_complete = str1970;
+    to_complete = str1968;
   }
   else {
     to_complete = arg_r->Peek();
@@ -49211,8 +49209,8 @@ int CompGen::Run(cmd_value::Argv* cmd_val) {
     return 2;
   }
   matched = false;
-  comp = Alloc<completion::Api>(str1971, 0, 0);
-  comp->Update(str1972, to_complete, str1973, -1, nullptr);
+  comp = Alloc<completion::Api>(str1969, 0, 0);
+  comp->Update(str1970, to_complete, str1971, -1, nullptr);
   try {
     List<Tuple2<BigStr*, runtime_asdl::comp_action_t>*> _for_yield_acc0;
     user_spec->AllMatches(comp, &_for_yield_acc0);
@@ -49243,9 +49241,9 @@ int CompOpt::Run(cmd_value::Argv* cmd_val) {
 
   arg_r = Alloc<args::Reader>(cmd_val->argv, cmd_val->arg_locs);
   arg_r->Next();
-  arg = flag_spec::ParseMore(str1974, arg_r);
+  arg = flag_spec::ParseMore(str1972, arg_r);
   if (!this->comp_state->currently_completing) {
-    this->errfmt->Print_(str1975);
+    this->errfmt->Print_(str1973);
     return 1;
   }
   this->comp_state->dynamic_opts->update(arg->opt_changes);
@@ -49286,28 +49284,28 @@ int CompAdjust::Run(cmd_value::Argv* cmd_val) {
 
   arg_r = Alloc<args::Reader>(cmd_val->argv, cmd_val->arg_locs);
   arg_r->Next();
-  attrs = flag_spec::ParseMore(str1976, arg_r);
+  attrs = flag_spec::ParseMore(str1974, arg_r);
   arg = Alloc<arg_types::compadjust>(attrs->attrs);
   var_names = arg_r->Rest();
   for (ListIter<BigStr*> it(var_names); !it.Done(); it.Next()) {
     BigStr* name = it.Value();
     StackRoot _for(&name  );
-    if (!list_contains(NewList<BigStr*>(std::initializer_list<BigStr*>{str1977, str1978, str1979, str1980}), name)) {
+    if (!list_contains(NewList<BigStr*>(std::initializer_list<BigStr*>{str1975, str1976, str1977, str1978}), name)) {
       throw Alloc<error::Usage>(StrFormat("Invalid output variable name %r", name), loc::Missing);
     }
   }
-  val = this->mem->GetValue(str1982);
+  val = this->mem->GetValue(str1980);
   if (val->tag() != value_e::BashArray) {
-    throw Alloc<error::Usage>(str1983, loc::Missing);
+    throw Alloc<error::Usage>(str1981, loc::Missing);
   }
   comp_argv = static_cast<value::BashArray*>(val)->strs;
-  break_chars = NewList<BigStr*>(std::initializer_list<BigStr*>{str1984, str1985});
+  break_chars = NewList<BigStr*>(std::initializer_list<BigStr*>{str1982, str1983});
   if (arg->s) {
-    break_chars->remove(str1986);
+    break_chars->remove(str1984);
   }
   omit_chars = arg->n;
   if (omit_chars == nullptr) {
-    omit_chars = str1987;
+    omit_chars = str1985;
   }
   for (StrIter it(omit_chars); !it.Done(); it.Next()) {
     BigStr* c = it.Value();
@@ -49322,32 +49320,32 @@ int CompAdjust::Run(cmd_value::Argv* cmd_val) {
     StackRoot _for(&a  );
     completion::AdjustArg(a, break_chars, adjusted_argv);
   }
-  if (list_contains(var_names, str1988)) {
-    state::BuiltinSetArray(this->mem, str1989, adjusted_argv);
+  if (list_contains(var_names, str1986)) {
+    state::BuiltinSetArray(this->mem, str1987, adjusted_argv);
   }
   n = len(adjusted_argv);
   cur = adjusted_argv->at(-1);
-  prev = n < 2 ? str1990 : adjusted_argv->at(-2);
+  prev = n < 2 ? str1988 : adjusted_argv->at(-2);
   if (arg->s) {
-    if ((cur->startswith(str1991) and str_contains(cur, str1992))) {
-      Tuple2<BigStr*, BigStr*> tup2 = mylib::split_once(cur, str1993);
+    if ((cur->startswith(str1989) and str_contains(cur, str1990))) {
+      Tuple2<BigStr*, BigStr*> tup2 = mylib::split_once(cur, str1991);
       prev = tup2.at0();
       cur = tup2.at1();
-      split = str1994;
+      split = str1992;
     }
     else {
-      split = str1995;
+      split = str1993;
     }
-    state::BuiltinSetString(this->mem, str1996, split);
+    state::BuiltinSetString(this->mem, str1994, split);
+  }
+  if (list_contains(var_names, str1995)) {
+    state::BuiltinSetString(this->mem, str1996, cur);
   }
   if (list_contains(var_names, str1997)) {
-    state::BuiltinSetString(this->mem, str1998, cur);
+    state::BuiltinSetString(this->mem, str1998, prev);
   }
   if (list_contains(var_names, str1999)) {
-    state::BuiltinSetString(this->mem, str2000, prev);
-  }
-  if (list_contains(var_names, str2001)) {
-    state::BuiltinSetString(this->mem, str2002, str((n - 1)));
+    state::BuiltinSetString(this->mem, str2000, str((n - 1)));
   }
   return 0;
 }
@@ -49374,8 +49372,8 @@ void _InitDefaultCompletions(cmd_eval::CommandEvaluator* cmd_ev, completion_osh:
   StackRoot _root1(&complete_builtin);
   StackRoot _root2(&comp_lookup);
 
-  complete_builtin->Run(cmd_eval::MakeBuiltinArgv(NewList<BigStr*>(std::initializer_list<BigStr*>{str2003, str2004, str2005})));
-  complete_builtin->Run(cmd_eval::MakeBuiltinArgv(NewList<BigStr*>(std::initializer_list<BigStr*>{str2006, str2007, str2008})));
+  complete_builtin->Run(cmd_eval::MakeBuiltinArgv(NewList<BigStr*>(std::initializer_list<BigStr*>{str2001, str2002, str2003})));
+  complete_builtin->Run(cmd_eval::MakeBuiltinArgv(NewList<BigStr*>(std::initializer_list<BigStr*>{str2004, str2005, str2006})));
 }
 
 void _CompletionDemo(completion::Lookup* comp_lookup) {
@@ -49389,14 +49387,14 @@ void _CompletionDemo(completion::Lookup* comp_lookup) {
   StackRoot _root3(&A2);
   StackRoot _root4(&C1);
 
-  A1 = Alloc<completion::TestAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str2009, str2010, str2011}), 0.0);
+  A1 = Alloc<completion::TestAction>(NewList<BigStr*>(std::initializer_list<BigStr*>{str2007, str2008, str2009}), 0.0);
   l = Alloc<List<BigStr*>>();
   for (int i = 0; i < 5; ++i) {
     l->append(StrFormat("m%d", i));
   }
   A2 = Alloc<completion::TestAction>(l, 0.1);
-  C1 = Alloc<completion::UserSpec>(NewList<completion::CompletionAction*>(std::initializer_list<completion::CompletionAction*>{A1, A2}), Alloc<List<completion::CompletionAction*>>(), Alloc<List<completion::CompletionAction*>>(), Alloc<completion::DefaultPredicate>(), str2013, str2014);
-  comp_lookup->RegisterName(str2015, Alloc<Dict<BigStr*, bool>>(), C1);
+  C1 = Alloc<completion::UserSpec>(NewList<completion::CompletionAction*>(std::initializer_list<completion::CompletionAction*>{A1, A2}), Alloc<List<completion::CompletionAction*>>(), Alloc<List<completion::CompletionAction*>>(), Alloc<completion::DefaultPredicate>(), str2011, str2012);
+  comp_lookup->RegisterName(str2013, Alloc<Dict<BigStr*, bool>>(), C1);
 }
 
 void SourceStartupFile(process::FdState* fd_state, BigStr* rc_path, BigStr* lang, parse_lib::ParseContext* parse_ctx, cmd_eval::CommandEvaluator* cmd_ev, ui::ErrorFormatter* errfmt) {
@@ -49444,19 +49442,19 @@ bool ShellOptHook::OnChange(List<bool>* opt0_array, BigStr* opt_name, bool b) {
   StackRoot _root0(&opt0_array);
   StackRoot _root1(&opt_name);
 
-  if ((str_equals(opt_name, str2016) or str_equals(opt_name, str2017))) {
+  if ((str_equals(opt_name, str2014) or str_equals(opt_name, str2015))) {
     if (this->readline) {
-      this->readline->parse_and_bind(str_concat(str2018, opt_name));
+      this->readline->parse_and_bind(str_concat(str2016, opt_name));
     }
     else {
       print_stderr(StrFormat("Warning: Can't set option %r because shell wasn't compiled with GNU readline", opt_name));
       return false;
     }
-    if (str_equals(opt_name, str2020)) {
+    if (str_equals(opt_name, str2018)) {
       opt0_array->set(option_i::emacs, !b);
     }
     else {
-      if (str_equals(opt_name, str2021)) {
+      if (str_equals(opt_name, str2019)) {
         opt0_array->set(option_i::vi, !b);
       }
     }
@@ -49499,7 +49497,7 @@ ShellFiles::ShellFiles(BigStr* lang, BigStr* home_dir, state::Mem* mem, arg_type
 }
 
 BigStr* ShellFiles::_HistVar() {
-  return str_equals(this->lang, str2022) ? str2023 : str2024;
+  return str_equals(this->lang, str2020) ? str2021 : str2022;
 }
 
 BigStr* ShellFiles::_DefaultHistoryFile() {
@@ -49736,7 +49734,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
   argv0 = arg_r->Peek();
   arg_r->Next();
   try {
-    attrs = flag_spec::ParseMore(str2026, arg_r);
+    attrs = flag_spec::ParseMore(str2024, arg_r);
   }
   catch (error::Usage* e) {
     print_stderr(StrFormat("%s usage error: %s", lang, e->msg));
@@ -49753,7 +49751,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
     util::VersionFlag(loader, mylib::Stdout());
     return 0;
   }
-  if (maybe_str_equals(flag->tool, str2029)) {
+  if (maybe_str_equals(flag->tool, str2027)) {
     paths = arg_r->Rest();
     status = 0;
     for (ListIter<BigStr*> it(paths); !it.Done(); it.Next()) {
@@ -49795,24 +49793,24 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
     mutable_opts->ShowOptions(Alloc<List<BigStr*>>());
     return 0;
   }
-  if (str_equals(lang, str2031)) {
-    mutable_opts->SetAnyOption(str2032, true);
+  if (str_equals(lang, str2029)) {
+    mutable_opts->SetAnyOption(str2030, true);
   }
   pure_osh::SetOptionsFromFlags(mutable_opts, attrs->opt_changes, attrs->shopt_changes);
   aliases = Alloc<Dict<BigStr*, BigStr*>>();
   ysh_grammar = pyutil::LoadYshGrammar(loader);
   if ((flag->one_pass_parse and !exec_opts->noexec())) {
-    throw Alloc<error::Usage>(str2033, loc::Missing);
+    throw Alloc<error::Usage>(str2031, loc::Missing);
   }
   one_pass_parse = len(flag->tool) ? true : flag->one_pass_parse;
   parse_ctx = Alloc<parse_lib::ParseContext>(arena, parse_opts, aliases, ysh_grammar, one_pass_parse);
   comp_arena = Alloc<alloc::Arena>();
-  comp_arena->PushSource(Alloc<source::Unused>(str2034));
+  comp_arena->PushSource(Alloc<source::Unused>(str2032));
   trail1 = Alloc<parse_lib::Trail>();
   comp_ctx = Alloc<parse_lib::ParseContext>(comp_arena, parse_opts, aliases, ysh_grammar, true);
   comp_ctx->Init_Trail(trail1);
   hist_arena = Alloc<alloc::Arena>();
-  hist_arena->PushSource(Alloc<source::Unused>(str2035));
+  hist_arena->PushSource(Alloc<source::Unused>(str2033));
   trail2 = Alloc<parse_lib::Trail>();
   hist_ctx = Alloc<parse_lib::ParseContext>(hist_arena, parse_opts, aliases, ysh_grammar);
   hist_ctx->Init_Trail(trail2);
@@ -49822,8 +49820,8 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
   job_list = Alloc<process::JobList>();
   fd_state = Alloc<process::FdState>(errfmt, job_control, job_list, mem, nullptr, nullptr);
   my_pid = posix::getpid();
-  debug_path = str2036;
-  debug_dir = environ->get(str2037);
+  debug_path = str2034;
+  debug_dir = environ->get(str2035);
   if (flag->debug_file != nullptr) {
     debug_path = flag->debug_file;
   }
@@ -49860,12 +49858,12 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
   if (len(debug_path)) {
     debug_f->writeln(StrFormat("Writing logs to %r", debug_path));
   }
-  interp = environ->get(str2041, str2042);
+  interp = environ->get(str2039, str2040);
   search_path = Alloc<state::SearchPath>(mem);
   ext_prog = Alloc<process::ExternalProgram>(interp, fd_state, errfmt, debug_f);
   splitter = Alloc<split::SplitContext>(mem);
   globber = Alloc<glob_::Globber>(exec_opts);
-  crash_dump_dir = environ->get(str2043, str2044);
+  crash_dump_dir = environ->get(str2041, str2042);
   cmd_deps->dumper = Alloc<dev::CrashDumper>(crash_dump_dir);
   comp_lookup = Alloc<completion::Lookup>();
   compopt_state = Alloc<completion::OptionState>();
@@ -49979,38 +49977,38 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
   comp_ev->CheckCircularDeps();
   root_comp = Alloc<completion::RootCompleter>(comp_ev, mem, comp_lookup, compopt_state, comp_ui_state, comp_ctx, debug_f);
   b->set(builtin_i::compexport, Alloc<completion_ysh::CompExport>(root_comp));
-  methods->set(value_e::Str, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2046, str2047, str2048, str2049, str2050, str2051, str2052, str2053, str2054, str2055, str2056, str2057}, std::initializer_list<vm::_Callable*>{Alloc<method_str::StartsWith>(), nullptr, Alloc<method_str::Trim>(), nullptr, nullptr, nullptr, nullptr, Alloc<method_str::Upper>(), nullptr, nullptr, nullptr, nullptr}));
-  methods->set(value_e::Dict, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2058, str2059, str2060, str2061, str2062, str2063}, std::initializer_list<vm::_Callable*>{nullptr, nullptr, Alloc<method_dict::Keys>(), nullptr, nullptr, nullptr}));
-  methods->set(value_e::List, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2064, str2065, str2066, str2067, str2068, str2069, str2070, str2071}, std::initializer_list<vm::_Callable*>{Alloc<method_list::Reverse>(), Alloc<method_list::Append>(), Alloc<method_list::Extend>(), Alloc<method_list::Pop>(), nullptr, nullptr, nullptr, Alloc<func_misc::Join>()}));
-  methods->set(value_e::IO, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2072, str2073, str2074, str2075, str2076, str2077}, std::initializer_list<vm::_Callable*>{nullptr, nullptr, Alloc<method_io::PromptVal>(), nullptr, nullptr, nullptr}));
-  methods->set(value_e::Place, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2078}, std::initializer_list<vm::_Callable*>{Alloc<method_other::SetValue>(mem)}));
-  methods->set(value_e::Command, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2079}, std::initializer_list<vm::_Callable*>{nullptr}));
+  methods->set(value_e::Str, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2044, str2045, str2046, str2047, str2048, str2049, str2050, str2051, str2052, str2053, str2054, str2055}, std::initializer_list<vm::_Callable*>{Alloc<method_str::StartsWith>(), nullptr, Alloc<method_str::Trim>(), nullptr, nullptr, nullptr, nullptr, Alloc<method_str::Upper>(), nullptr, nullptr, nullptr, nullptr}));
+  methods->set(value_e::Dict, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2056, str2057, str2058, str2059, str2060, str2061}, std::initializer_list<vm::_Callable*>{nullptr, nullptr, Alloc<method_dict::Keys>(), nullptr, nullptr, nullptr}));
+  methods->set(value_e::List, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2062, str2063, str2064, str2065, str2066, str2067, str2068, str2069}, std::initializer_list<vm::_Callable*>{Alloc<method_list::Reverse>(), Alloc<method_list::Append>(), Alloc<method_list::Extend>(), Alloc<method_list::Pop>(), nullptr, nullptr, nullptr, Alloc<func_misc::Join>()}));
+  methods->set(value_e::IO, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2070, str2071, str2072, str2073, str2074, str2075}, std::initializer_list<vm::_Callable*>{nullptr, nullptr, Alloc<method_io::PromptVal>(), nullptr, nullptr, nullptr}));
+  methods->set(value_e::Place, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2076}, std::initializer_list<vm::_Callable*>{Alloc<method_other::SetValue>(mem)}));
+  methods->set(value_e::Command, Alloc<Dict<BigStr*, vm::_Callable*>>(std::initializer_list<BigStr*>{str2077}, std::initializer_list<vm::_Callable*>{nullptr}));
   parse_hay = Alloc<func_hay::ParseHay>(fd_state, parse_ctx, errfmt);
   eval_hay = Alloc<func_hay::EvalHay>(hay_state, mutable_opts, mem, cmd_ev);
   hay_func = Alloc<func_hay::HayFunc>(hay_state);
-  _SetGlobalFunc(mem, str2080, parse_hay);
-  _SetGlobalFunc(mem, str2081, eval_hay);
-  _SetGlobalFunc(mem, str2082, hay_func);
-  _SetGlobalFunc(mem, str2083, Alloc<func_misc::Len>());
-  _SetGlobalFunc(mem, str2084, Alloc<func_eggex::Match>(mem));
-  _SetGlobalFunc(mem, str2085, Alloc<func_eggex::Start>(mem));
-  _SetGlobalFunc(mem, str2086, Alloc<func_eggex::End>(mem));
-  _SetGlobalFunc(mem, str2087, Alloc<func_misc::Join>());
-  _SetGlobalFunc(mem, str2088, Alloc<func_misc::Maybe>());
-  _SetGlobalFunc(mem, str2089, Alloc<func_misc::Type>());
-  _SetGlobalFunc(mem, str2090, Alloc<func_misc::EvalExpr>(expr_ev));
-  _SetGlobalFunc(mem, str2091, Alloc<func_misc::Bool>());
-  _SetGlobalFunc(mem, str2092, Alloc<func_misc::Int>());
-  _SetGlobalFunc(mem, str2093, Alloc<func_misc::Float>());
-  _SetGlobalFunc(mem, str2094, Alloc<func_misc::Str_>());
-  _SetGlobalFunc(mem, str2095, Alloc<func_misc::List_>());
-  _SetGlobalFunc(mem, str2096, Alloc<func_misc::Dict_>());
-  _SetGlobalFunc(mem, str2097, Alloc<func_misc::Split>(splitter));
-  _SetGlobalFunc(mem, str2098, Alloc<func_misc::Split>(splitter));
-  _SetGlobalFunc(mem, str2099, Alloc<func_misc::Glob>(globber));
-  _SetGlobalFunc(mem, str2100, Alloc<func_misc::Shvar_get>(mem));
-  _SetGlobalFunc(mem, str2101, Alloc<func_misc::Assert>());
-  mem->SetNamed(location::LName(str2102), global_io, scope_e::GlobalOnly);
+  _SetGlobalFunc(mem, str2078, parse_hay);
+  _SetGlobalFunc(mem, str2079, eval_hay);
+  _SetGlobalFunc(mem, str2080, hay_func);
+  _SetGlobalFunc(mem, str2081, Alloc<func_misc::Len>());
+  _SetGlobalFunc(mem, str2082, Alloc<func_eggex::Match>(mem));
+  _SetGlobalFunc(mem, str2083, Alloc<func_eggex::Start>(mem));
+  _SetGlobalFunc(mem, str2084, Alloc<func_eggex::End>(mem));
+  _SetGlobalFunc(mem, str2085, Alloc<func_misc::Join>());
+  _SetGlobalFunc(mem, str2086, Alloc<func_misc::Maybe>());
+  _SetGlobalFunc(mem, str2087, Alloc<func_misc::Type>());
+  _SetGlobalFunc(mem, str2088, Alloc<func_misc::EvalExpr>(expr_ev));
+  _SetGlobalFunc(mem, str2089, Alloc<func_misc::Bool>());
+  _SetGlobalFunc(mem, str2090, Alloc<func_misc::Int>());
+  _SetGlobalFunc(mem, str2091, Alloc<func_misc::Float>());
+  _SetGlobalFunc(mem, str2092, Alloc<func_misc::Str_>());
+  _SetGlobalFunc(mem, str2093, Alloc<func_misc::List_>());
+  _SetGlobalFunc(mem, str2094, Alloc<func_misc::Dict_>());
+  _SetGlobalFunc(mem, str2095, Alloc<func_misc::Split>(splitter));
+  _SetGlobalFunc(mem, str2096, Alloc<func_misc::Split>(splitter));
+  _SetGlobalFunc(mem, str2097, Alloc<func_misc::Glob>(globber));
+  _SetGlobalFunc(mem, str2098, Alloc<func_misc::Shvar_get>(mem));
+  _SetGlobalFunc(mem, str2099, Alloc<func_misc::Assert>());
+  mem->SetNamed(location::LName(str2100), global_io, scope_e::GlobalOnly);
   hist_ev = Alloc<history::Evaluator>(readline, hist_ctx, debug_f);
   if (flag->c != nullptr) {
     src = source::CFlag;
@@ -50021,7 +50019,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
   }
   else {
     if (flag->i) {
-      src = Alloc<source::Stdin>(str2103);
+      src = Alloc<source::Stdin>(str2101);
       line_reader = Alloc<reader::InteractiveLineReader>(arena, prompt_ev, hist_ev, readline, prompt_state);
       mutable_opts->set_interactive();
     }
@@ -50039,7 +50037,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
             mutable_opts->set_interactive();
           }
           else {
-            src = Alloc<source::Stdin>(str2104);
+            src = Alloc<source::Stdin>(str2102);
             line_reader = Alloc<reader::FileLineReader>(stdin_, arena);
           }
         }
@@ -50064,7 +50062,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
     }
   }
   arena->PushSource(src);
-  config_dir = str2106;
+  config_dir = str2104;
   rc_paths = Alloc<List<BigStr*>>();
   if ((!flag->norc and (flag->headless or exec_opts->interactive()))) {
     rc_path = flag->rcfile;
@@ -50078,7 +50076,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
     if (rc_dir == nullptr) {
       rc_dir = os_path::join(home_dir, StrFormat("%s/%src.d", config_dir, lang));
     }
-    rc_paths->extend(libc::glob(os_path::join(rc_dir, str2109)));
+    rc_paths->extend(libc::glob(os_path::join(rc_dir, str2107)));
   }
   else {
     if (flag->rcfile != nullptr) {
@@ -50127,7 +50125,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
     mutable_opts->set_redefine_module();
     if (readline) {
       term_width = 0;
-      if (maybe_str_equals(flag->completion_display, str2112)) {
+      if (maybe_str_equals(flag->completion_display, str2110)) {
         try {
           term_width = libc::get_terminal_width();
         }
@@ -50199,7 +50197,7 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
   if (flag->rcdir != nullptr) {
     print_stderr(StrFormat("%s warning: --rcdir ignored in non-interactive shell", lang));
   }
-  tool_name = exec_opts->noexec() ? str2115 : flag->tool;
+  tool_name = exec_opts->noexec() ? str2113 : flag->tool;
   if (len(tool_name)) {
     arena->SaveTokens();
     try {
@@ -50209,23 +50207,23 @@ int Main(BigStr* lang, args::Reader* arg_r, Dict<BigStr*, BigStr*>* environ, boo
       errfmt->PrettyPrintError(e);
       return 2;
     }
-    if (maybe_str_equals(tool_name, str2116)) {
+    if (maybe_str_equals(tool_name, str2114)) {
       ui::PrintAst(node, flag);
     }
     else {
-      if (maybe_str_equals(tool_name, str2117)) {
+      if (maybe_str_equals(tool_name, str2115)) {
         ysh_ify::PrintTokens(arena);
       }
       else {
-        if (maybe_str_equals(tool_name, str2118)) {
+        if (maybe_str_equals(tool_name, str2116)) {
           ysh_ify::PrintArena(arena);
         }
         else {
-          if (maybe_str_equals(tool_name, str2119)) {
+          if (maybe_str_equals(tool_name, str2117)) {
             ysh_ify::PrintAsOil(arena, node);
           }
           else {
-            if (maybe_str_equals(tool_name, str2120)) {
+            if (maybe_str_equals(tool_name, str2118)) {
             }
             else {
               assert(0);  // AssertionError

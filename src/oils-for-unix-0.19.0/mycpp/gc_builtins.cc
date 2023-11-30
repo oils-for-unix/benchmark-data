@@ -422,26 +422,3 @@ int max(List<int>* elems) {
 
   return ret;
 }
-
-BigStr* raw_input(BigStr* prompt) {
-#if HAVE_READLINE
-  BigStr* ret = py_readline::readline(prompt);
-#else
-  // Print until first NUL, like print()
-  fputs(prompt->data_, stdout);
-
-  // Plain read from stdin, without GNU readline.
-
-  // Same as pyos::ReadLineBuffered()
-  // For now, test with
-  //    ./configure  --without-readline
-  BigStr* ret = mylib::gStdin->readline();
-#endif
-
-  DCHECK(ret != nullptr);
-  // Like Python, EOF is indicated with empty string.
-  if (len(ret) == 0) {
-    throw Alloc<EOFError>();
-  }
-  return ret;
-}
