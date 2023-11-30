@@ -1,0 +1,10 @@
+Oils 0.19.0		https://www.oilshell.org/
+
+Release Date: 2023-11-30 04:51:29+00:00
+Arch: x86_64
+OS: Linux
+Platform: #1 SMP PREEMPT_DYNAMIC Debian 6.1.27-1 (2023-05-08)
+Compiler: GCC 12.2.0
+Interpreter: OVM
+Interpreter version: 2.7.13
+Bytecode: bytecode-opy.zip

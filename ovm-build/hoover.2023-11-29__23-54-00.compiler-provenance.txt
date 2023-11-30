@@ -1,0 +1,2 @@
+2023-11-29__23-54-00 hoover 94601b4f /usr/bin/gcc 869a96ef
+2023-11-29__23-54-00 hoover 94601b4f /home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang dc55b135

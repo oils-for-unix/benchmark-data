@@ -1,0 +1,9 @@
+job_id	host_name	host_hash	sh_path	shell_hash
+2023-11-29__23-52-09	hoover	94601b4f	bash	0d42a1ee
+2023-11-29__23-52-09	hoover	94601b4f	dash	d40a0412
+2023-11-29__23-52-09	hoover	94601b4f	mksh	84e6599c
+2023-11-29__23-52-09	hoover	94601b4f	zsh	25b8aadb
+2023-11-29__23-52-09	hoover	94601b4f	bin/osh	f0f9f2ff
+2023-11-29__23-52-09	hoover	94601b4f	/home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.19.0/_bin/osh	a4393a85
+2023-11-29__23-52-09	hoover	94601b4f	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.19.0/_bin/cxx-opt-sh/osh	864c7127
+2023-11-29__23-52-09	hoover	94601b4f	python2	e2e2dfb7
