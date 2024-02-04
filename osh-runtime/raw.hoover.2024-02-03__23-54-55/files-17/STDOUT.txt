@@ -1,0 +1,66 @@
+checking operating system... linux
+checking POSIX conformance... 200809
+checking SUS conformance... 700
+checking whether the compiler works... yes
+checking whether the compiler accepts -O2 flag... yes
+checking whether make supports include statements... yes
+checking whether make sets $SHELL macro... yes
+checking for the pax command... no
+checking for the install command... yes
+checking what values _POSIX_C_SOURCE and _XOPEN_SOURCE should have... _POSIX_C_SOURCE=200809L, _XOPEN_SOURCE=700
+checking whether _XOPEN_SOURCE_EXTENDED should be defined... yes
+checking if loader flag -lm can be omitted... no
+checking for socket library... yes
+checking for ngettext... yes
+checking for gettext library... yes
+checking for curses.h... yes
+checking for term.h... yes
+checking for terminfo library... with -ltinfo
+checking for /proc/self/exe... no
+checking for /proc/curproc/file... no
+checking for /proc/$$/object/a.out... no
+checking for strnlen... yes
+checking for wcsnlen... yes
+checking for wcscasecmp... yes
+checking for wcsnrtombs... yes
+checking for wcstold... yes
+checking for wcwidth... yes
+checking if <sys/stat.h> defines S_ISVTX... yes
+checking if unsetenv returns int... yes
+checking for st_atim... yes
+checking for st_mtim... yes
+checking for WCONTINUED and WIFCONTINUED... yes
+checking for faccessat... yes
+checking for strsingal... yes
+checking for setpwent/getpwent/endpwent... yes
+checking for pw_gecos... yes
+checking for setgrent/getgrent/endgrent... yes
+checking for sethostent/gethostent/endhostent... yes
+checking for paths.h... yes
+checking if getcwd(NULL,0) returns malloc'ed string... yes
+checking if ioctl supports TIOCGWINSZ... yes
+checking if wide-oriented I/O is fully working... yes
+checking if fgetws is fully working... yes
+checking for getrlimit and setrlimit... yes
+checking for RLIM_SAVED_CUR... yes
+checking for RLIM_SAVED_MAX... yes
+checking for RLIMIT_AS... yes
+checking for RLIMIT_LOCKS... yes
+checking for RLIMIT_MEMLOCK... yes
+checking for RLIMIT_MSGQUEUE... yes
+checking for RLIMIT_NICE... yes
+checking for RLIMIT_NPROC... yes
+checking for RLIMIT_RSS... yes
+checking for RLIMIT_RTPRIO... yes
+checking for RLIMIT_SIGPENDING... yes
+checking if ctags accepts --recurse option... yes
+checking if etags accepts --recurse option... yes
+creating config.status... done
+creating config.h... done
+creating ./Makefile... done
+creating builtins/Makefile... done
+creating doc/Makefile... done
+creating doc/ja/Makefile... done
+creating lineedit/Makefile... done
+creating po/Makefile... done
+creating tests/Makefile... done
