@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+lenny	5602555	_tmp/ovm-build/bin/clang/oil.ovm
+lenny	7284003	_tmp/ovm-build/bin/clang/oil.ovm-dbg
+lenny	5768707	_tmp/ovm-build/bin/gcc/oil.ovm
+lenny	7478659	_tmp/ovm-build/bin/gcc/oil.ovm-dbg
