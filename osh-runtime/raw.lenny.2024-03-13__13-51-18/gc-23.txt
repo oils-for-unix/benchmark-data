@@ -1,0 +1,40 @@
+  num live         =        102
+  max survived     =          0
+
+  num allocated    =        102
+  num in heap      =         24
+  num in pool 1    =         38
+  num in pool 2    =         40
+bytes allocated    =      36726
+
+  num gc points    =          0
+  num collections  =          0
+
+   gc threshold    =      50000
+  num growths      =          0
+
+  max gc millis    =        0.0
+total gc millis    =        0.0
+
+roots capacity     =       1024
+ objs capacity     =      10240
+  num live         =      25114
+  max survived     =       9122
+
+  num allocated    =     150678
+  num in heap      =       7410
+  num in pool 1    =      79484
+  num in pool 2    =      63784
+bytes allocated    =    2902256
+
+  num gc points    =       2608
+  num collections  =          3
+
+   gc threshold    =      50000
+  num growths      =          0
+
+  max gc millis    =        0.0
+total gc millis    =        0.0
+
+roots capacity     =       1024
+ objs capacity     =      10240

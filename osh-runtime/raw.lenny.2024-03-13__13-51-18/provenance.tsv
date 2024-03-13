@@ -1,0 +1,9 @@
+job_id	host_name	host_hash	sh_path	shell_hash
+2024-03-13__13-51-18	lenny	098a8e52	bash	9af8f89f
+2024-03-13__13-51-18	lenny	098a8e52	dash	9ff48631
+2024-03-13__13-51-18	lenny	098a8e52	mksh	e3755400
+2024-03-13__13-51-18	lenny	098a8e52	zsh	a785003a
+2024-03-13__13-51-18	lenny	098a8e52	bin/osh	507204c4
+2024-03-13__13-51-18	lenny	098a8e52	/home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.21.0/_bin/osh	f63a5766
+2024-03-13__13-51-18	lenny	098a8e52	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.21.0/_bin/cxx-opt-sh/osh	8b178b8a
+2024-03-13__13-51-18	lenny	098a8e52	python2	e809d907
