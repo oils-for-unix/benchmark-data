@@ -1,0 +1,2 @@
+#define HAVE_READLINE 1
+#define HAVE_PWENT 1
