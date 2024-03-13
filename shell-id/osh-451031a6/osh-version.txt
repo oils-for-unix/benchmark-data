@@ -1,0 +1,10 @@
+Oils 0.21.0		https://www.oilshell.org/
+
+Release Date: -
+Arch: x86_64
+OS: Linux
+Platform: #1 SMP PREEMPT_DYNAMIC Debian 6.1.27-1 (2023-05-08)
+Compiler: GCC 12.2.0
+Interpreter: CPython
+Interpreter version: 2.7.18
+Bytecode: -

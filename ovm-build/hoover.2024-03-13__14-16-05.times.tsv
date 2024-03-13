@@ -1,0 +1,15 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	0.627851	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.21.0	configure
+0	18.754500	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.21.0	_bin/oil.ovm
+0	6.800817	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.21.0	_bin/oil.ovm-dbg
+0	10.899717	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.21.0	oils-for-unix
+0	33.028352	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.21.0	oils-for-unix.stripped
+0	0.615841	hoover	94601b4f	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.21.0	configure
+0	13.677089	hoover	94601b4f	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.21.0	_bin/oil.ovm
+0	5.374390	hoover	94601b4f	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oil-0.21.0	_bin/oil.ovm-dbg
+0	7.827502	hoover	94601b4f	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.21.0	oils-for-unix
+0	40.128628	hoover	94601b4f	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.21.0	oils-for-unix.stripped
+0	14.520852	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	26.961484	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
+0	2.683517	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	3.179219	hoover	94601b4f	/usr/bin/gcc	869a96ef	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make

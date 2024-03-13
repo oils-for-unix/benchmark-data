@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+hoover	5751673	_tmp/ovm-build/bin/clang/oil.ovm
+hoover	7424153	_tmp/ovm-build/bin/clang/oil.ovm-dbg
+hoover	5771769	_tmp/ovm-build/bin/gcc/oil.ovm
+hoover	7429273	_tmp/ovm-build/bin/gcc/oil.ovm-dbg
