@@ -1,0 +1,9 @@
+job_id	host_name	host_hash	sh_path	shell_hash
+2024-05-31__00-35-36	hoover	ecba003d	bash	0d42a1ee
+2024-05-31__00-35-36	hoover	ecba003d	dash	d40a0412
+2024-05-31__00-35-36	hoover	ecba003d	mksh	84e6599c
+2024-05-31__00-35-36	hoover	ecba003d	zsh	25b8aadb
+2024-05-31__00-35-36	hoover	ecba003d	bin/osh	a83a5d4f
+2024-05-31__00-35-36	hoover	ecba003d	/home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.22.0/_bin/osh	a18d1f9f
+2024-05-31__00-35-36	hoover	ecba003d	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.22.0/_bin/cxx-opt-sh/osh	1fe436f0
+2024-05-31__00-35-36	hoover	ecba003d	python2	e2e2dfb7
