@@ -1,0 +1,3 @@
+#define HAVE_READLINE 1
+#define HAVE_SYSTEMTAP_SDT 1
+#define HAVE_PWENT 1
