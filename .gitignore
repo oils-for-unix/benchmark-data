@@ -4,5 +4,5 @@ src/oil-native-*/_build/obj
 src/oils-for-unix-*/_bin
 src/oils-for-unix-*/_build/obj
 
-# src/oil-native-*/_build/detected-*
-# src/oils-for-unix-*/_build/detected-*
+# 2024-08 - these files are generated, and may differ across machines
+src/oils-for-unix-*/_build/detected-*
