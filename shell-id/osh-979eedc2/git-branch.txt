@@ -1,1 +1,1 @@
-dev-mercer
+release/0.23.0
