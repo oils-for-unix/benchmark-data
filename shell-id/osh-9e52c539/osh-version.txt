@@ -1,10 +1,10 @@
 Oils 0.23.0		https://www.oilshell.org/
 
-Release Date: 2024-08-25 15:48:18+00:00
+Release Date: 2024-08-25 15:48:31+00:00
 Arch: x86_64
 OS: Linux
-Platform: #122-Ubuntu SMP Thu May 23 07:48:21 UTC 2024
-Compiler: GCC 11.4.0
+Platform: #1 SMP PREEMPT_DYNAMIC Debian 6.1.27-1 (2023-05-08)
+Compiler: GCC 12.2.0
 Interpreter: OVM
 Interpreter version: 2.7.13
 Bytecode: bytecode-opy.zip
