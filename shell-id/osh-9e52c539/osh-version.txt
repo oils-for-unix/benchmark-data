@@ -1,0 +1,10 @@
+Oils 0.23.0		https://www.oilshell.org/
+
+Release Date: 2024-08-24 16:07:04+00:00
+Arch: x86_64
+OS: Linux
+Platform: #122-Ubuntu SMP Thu May 23 07:48:21 UTC 2024
+Compiler: GCC 11.4.0
+Interpreter: OVM
+Interpreter version: 2.7.13
+Bytecode: bytecode-opy.zip
