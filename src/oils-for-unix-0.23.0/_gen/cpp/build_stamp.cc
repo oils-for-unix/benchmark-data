@@ -1,1 +1,1 @@
-const char* gCommitHash = "f5e935db84bf493520a77e9236b7119a617e8812";
+const char* gCommitHash = "30f7d6a33c655e9e32b97aabc9240ace42a11d8e";
