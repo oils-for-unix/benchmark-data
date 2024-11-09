@@ -1,0 +1,3 @@
+Linux
+5.15.0-124-generic
+#134-Ubuntu SMP Fri Sep 27 20:20:17 UTC 2024

@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.353901	0.352338	0.001209	3792	304f7b9574921ad21a2bc72f200483d7	mercer	9a086e68	bash	7a134b76	bubble_sort	int	200	stdout-bash-int-200.txt
+0	0.340376	0.332322	0.008300	3728	85509743b2f5735b32a108dbba770ee4	mercer	9a086e68	bash	7a134b76	bubble_sort	bytes	200	stdout-bash-bytes-200.txt
+0	0.252261	0.248522	0.004006	8556	304f7b9574921ad21a2bc72f200483d7	mercer	9a086e68	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.24.0/_bin/cxx-opt-sh/osh	ccb57ea6	bubble_sort	int	200	stdout-osh-int-200.txt
+0	0.270586	0.265320	0.005568	8656	85509743b2f5735b32a108dbba770ee4	mercer	9a086e68	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.24.0/_bin/cxx-opt-sh/osh	ccb57ea6	bubble_sort	bytes	200	stdout-osh-bytes-200.txt
+0	0.051701	0.040907	0.010461	6520	304f7b9574921ad21a2bc72f200483d7	mercer	9a086e68	python2	5980d1a0	bubble_sort	int	200	stdout-py-int-200.txt
+0	0.025595	0.015123	0.010801	6312	85509743b2f5735b32a108dbba770ee4	mercer	9a086e68	python2	5980d1a0	bubble_sort	bytes	200	stdout-py-bytes-200.txt

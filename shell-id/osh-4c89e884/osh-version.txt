@@ -1,0 +1,10 @@
+Oils 0.24.0		https://www.oilshell.org/
+
+Release Date: -
+Arch: x86_64
+OS: Linux
+Platform: #134-Ubuntu SMP Fri Sep 27 20:20:17 UTC 2024
+Compiler: GCC 11.4.0
+Interpreter: CPython
+Interpreter version: 2.7.18
+Bytecode: -
