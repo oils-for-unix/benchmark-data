@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.009842	0.007490	0.002620	3828	1afe5984e4dfa04a5c2084811ccc370b	mercer	9a086e68	bash	7a134b76	parse_help	ls-short	_	stdout-bash-ls-short-_.txt
+0	0.021406	0.018134	0.003497	3844	2d4cfb983a4bde9516c34bef6bfe656b	mercer	9a086e68	bash	7a134b76	parse_help	ls	_	stdout-bash-ls-_.txt
+0	0.025875	0.021632	0.004464	3852	3307e41430578aa391c4dc7b9923b6c1	mercer	9a086e68	bash	7a134b76	parse_help	mypy	_	stdout-bash-mypy-_.txt
+0	0.012905	0.009692	0.003450	7508	1afe5984e4dfa04a5c2084811ccc370b	mercer	9a086e68	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.24.0/_bin/cxx-opt-sh/osh	12c35600	parse_help	ls-short	_	stdout-osh-ls-short-_.txt
+0	0.042298	0.034267	0.008275	9380	2d4cfb983a4bde9516c34bef6bfe656b	mercer	9a086e68	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.24.0/_bin/cxx-opt-sh/osh	12c35600	parse_help	ls	_	stdout-osh-ls-_.txt
+0	0.052539	0.034617	0.018196	9548	3307e41430578aa391c4dc7b9923b6c1	mercer	9a086e68	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.24.0/_bin/cxx-opt-sh/osh	12c35600	parse_help	mypy	_	stdout-osh-mypy-_.txt

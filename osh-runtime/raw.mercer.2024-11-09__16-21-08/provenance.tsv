@@ -1,0 +1,9 @@
+job_id	host_name	host_hash	sh_path	shell_hash
+2024-11-09__16-21-08	mercer	9a086e68	bash	7a134b76
+2024-11-09__16-21-08	mercer	9a086e68	dash	cca104f5
+2024-11-09__16-21-08	mercer	9a086e68	mksh	c5e36f1e
+2024-11-09__16-21-08	mercer	9a086e68	zsh	69237459
+2024-11-09__16-21-08	mercer	9a086e68	bin/osh	de9392a8
+2024-11-09__16-21-08	mercer	9a086e68	/home/andy/git/oilshell/oil/_tmp/oil-tar-test/oil-0.24.0/_bin/osh	f38851b3
+2024-11-09__16-21-08	mercer	9a086e68	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.24.0/_bin/cxx-opt-sh/osh	12c35600
+2024-11-09__16-21-08	mercer	9a086e68	python2	5980d1a0

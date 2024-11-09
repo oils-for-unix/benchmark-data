@@ -1,0 +1,9 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	18.182335	mercer	9a086e68	/usr/bin/gcc	6c17b189	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.24.0	oils-for-unix
+0	53.121406	mercer	9a086e68	/usr/bin/gcc	6c17b189	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.24.0	oils-for-unix.stripped
+0	24.619266	mercer	9a086e68	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.24.0	oils-for-unix
+0	48.002957	mercer	9a086e68	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.24.0	oils-for-unix.stripped
+0	3.961160	mercer	9a086e68	/usr/bin/gcc	6c17b189	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	5.263416	mercer	9a086e68	/usr/bin/gcc	6c17b189	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make
+0	21.953835	mercer	9a086e68	/usr/bin/gcc	6c17b189	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	41.506415	mercer	9a086e68	/usr/bin/gcc	6c17b189	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
