@@ -1495,7 +1495,7 @@ GLOBAL_STR(S_sea, "help");
 GLOBAL_STR(S_yqg, "helptopic");
 GLOBAL_STR(S_gBD, "history");
 GLOBAL_STR(S_qBe, "hostname");
-GLOBAL_STR(S_xst, "https://www.oilshell.org/release");
+GLOBAL_STR(S_Bql, "https://oils.pub/release");
 GLOBAL_STR(S_eil, "i");
 GLOBAL_STR(S_huA, "id");
 GLOBAL_STR(S_dnf, "id() expected List, Dict, or Obj");
@@ -16750,7 +16750,7 @@ int Help::_ShowTopic(BigStr* topic_id, syntax_asdl::loc_t* blame_loc) {
   StackRoot _root3(&chapter_name);
   StackRoot _root4(&lower);
 
-  prefix = S_xst;
+  prefix = S_Bql;
   chapter_name = this->help_data->get(topic_id);
   if (chapter_name != nullptr) {
     util::PrintTopicHeader(topic_id, this->f);
@@ -16795,7 +16795,7 @@ int Help::Run(cmd_value::Argv* cmd_val) {
   if (topic_id == nullptr) {
     unused_found = this->_ShowTopic(S_sea, blame_loc) == 0;
     unused_found = this->_ShowTopic(StrFormat("%s-chapters", this->lang), blame_loc) == 0;
-    print(StrFormat("All docs: https://www.oilshell.org/release/%s/doc/", this->version_str));
+    print(StrFormat("All docs: https://oils.pub/release/%s/doc/", this->version_str));
     print(S_Aoo);
     return 0;
   }
@@ -29168,7 +29168,7 @@ void _PrintVersionLine(pyutil::_ResourceLoader* loader, mylib::Writer* f) {
   StackRoot _root2(&v);
 
   v = pyutil::GetVersion(loader);
-  f->write(StrFormat("Oils %s\t\thttps://www.oilshell.org/\n", v));
+  f->write(StrFormat("Oils %s\t\thttps://oils.pub/\n", v));
 }
 
 void HelpFlag(pyutil::_ResourceLoader* loader, BigStr* topic_id, mylib::Writer* f) {
