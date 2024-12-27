@@ -1,0 +1,20 @@
+  num live         =      64521
+  max survived     =      42708
+
+  num allocated    =     116457
+  num in heap      =       4568
+  num in pool 1    =      54618
+  num in pool 2    =      57271
+bytes allocated    =    2837522
+
+  num gc points    =        277
+  num collections  =          3
+
+   gc threshold    =      85416
+  num growths      =          1
+
+  max gc millis    =        0.0
+total gc millis    =        0.0
+
+roots capacity     =       1024
+ objs capacity     =      10240

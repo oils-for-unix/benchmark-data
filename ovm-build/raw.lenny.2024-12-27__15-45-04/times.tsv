@@ -1,0 +1,9 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	12.375787	lenny	1ff4d011	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.25.0	oils-for-unix
+0	36.884402	lenny	1ff4d011	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.25.0	oils-for-unix.stripped
+0	18.643097	lenny	1ff4d011	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.25.0	oils-for-unix
+0	40.353429	lenny	1ff4d011	/home/andy/git/oilshell/oil/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oilshell/oil/_deps/ovm-build/oils-for-unix-0.25.0	oils-for-unix.stripped
+0	3.199069	lenny	1ff4d011	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	configure
+0	3.186575	lenny	1ff4d011	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/dash-0.5.9.1	make
+0	16.112668	lenny	1ff4d011	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	configure
+0	26.483462	lenny	1ff4d011	/usr/bin/gcc	1c62c53f	/home/andy/git/oilshell/oil/_deps/ovm-build/bash-4.4	make
