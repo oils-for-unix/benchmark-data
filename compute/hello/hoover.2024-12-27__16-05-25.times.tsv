@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.000846	0.000756	0.000000	2996	b1946ac92492d2347c6235b4d2611184	hoover	ecba003d	bash	36833674	hello	_	_	stdout-bash-_-_.txt
+0	0.000909	0.000000	0.000557	1752	b1946ac92492d2347c6235b4d2611184	hoover	ecba003d	dash	cea41b3e	hello	_	_	stdout-dash-_-_.txt
+0	0.001955	0.001872	0.000000	6660	b1946ac92492d2347c6235b4d2611184	hoover	ecba003d	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.25.0/_bin/cxx-opt-sh/osh	2c1d854b	hello	_	_	stdout-osh-_-_.txt
+0	0.005315	0.005222	0.000000	5888	b1946ac92492d2347c6235b4d2611184	hoover	ecba003d	python2	5980d1a0	hello	_	_	stdout-py-_-_.txt

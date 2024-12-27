@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.004894	0.003704	0.001347	3196	1afe5984e4dfa04a5c2084811ccc370b	hoover	ecba003d	bash	36833674	parse_help	ls-short	_	stdout-bash-ls-short-_.txt
+0	0.009998	0.009568	0.000536	3320	2d4cfb983a4bde9516c34bef6bfe656b	hoover	ecba003d	bash	36833674	parse_help	ls	_	stdout-bash-ls-_.txt
+0	0.010274	0.009841	0.000468	3212	3307e41430578aa391c4dc7b9923b6c1	hoover	ecba003d	bash	36833674	parse_help	mypy	_	stdout-bash-mypy-_.txt
+0	0.005932	0.003497	0.002415	7164	1afe5984e4dfa04a5c2084811ccc370b	hoover	ecba003d	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.25.0/_bin/cxx-opt-sh/osh	2c1d854b	parse_help	ls-short	_	stdout-osh-ls-short-_.txt
+0	0.017288	0.016797	0.000449	9056	2d4cfb983a4bde9516c34bef6bfe656b	hoover	ecba003d	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.25.0/_bin/cxx-opt-sh/osh	2c1d854b	parse_help	ls	_	stdout-osh-ls-_.txt
+0	0.021380	0.021286	0.000000	9104	3307e41430578aa391c4dc7b9923b6c1	hoover	ecba003d	/home/andy/git/oilshell/oil/../benchmark-data/src/oils-for-unix-0.25.0/_bin/cxx-opt-sh/osh	2c1d854b	parse_help	mypy	_	stdout-osh-mypy-_.txt
