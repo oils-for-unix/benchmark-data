@@ -1,0 +1,4 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.091474	0.092389	0.001547	3120	be46000e725347268f52d4b9cd1c1f1f	lenny	1ff4d011	bash	f4a82186	word_freq	10	configure	stdout-bash-10-configure.txt
+0	0.069385	0.063717	0.008024	8732	be46000e725347268f52d4b9cd1c1f1f	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.26.0/_bin/cxx-opt-sh/osh	7f395194	word_freq	10	configure	stdout-osh-10-configure.txt
+0	0.013561	0.014109	0.000315	6936	be46000e725347268f52d4b9cd1c1f1f	lenny	1ff4d011	python2	87fe4631	word_freq	10	configure	stdout-py-10-configure.txt

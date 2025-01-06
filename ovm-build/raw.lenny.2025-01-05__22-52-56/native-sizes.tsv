@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+lenny	8946200	_tmp/ovm-build/bin/clang/oils-for-unix
+lenny	10918952	_tmp/ovm-build/bin/gcc/oils-for-unix
+lenny	2346072	_tmp/ovm-build/bin/clang/oils-for-unix.stripped
+lenny	2244928	_tmp/ovm-build/bin/gcc/oils-for-unix.stripped
