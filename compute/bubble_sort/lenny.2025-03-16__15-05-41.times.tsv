@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.230665	0.230437	0.000328	3128	304f7b9574921ad21a2bc72f200483d7	lenny	1ff4d011	bash	f4a82186	bubble_sort	int	200	stdout-bash-int-200.txt
+0	0.275473	0.275767	0.000000	3124	85509743b2f5735b32a108dbba770ee4	lenny	1ff4d011	bash	f4a82186	bubble_sort	bytes	200	stdout-bash-bytes-200.txt
+0	0.192231	0.184205	0.008310	7812	304f7b9574921ad21a2bc72f200483d7	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.28.0/_bin/cxx-opt-sh/osh	65c1ffc4	bubble_sort	int	200	stdout-osh-int-200.txt
+0	0.230726	0.231011	0.000000	7784	85509743b2f5735b32a108dbba770ee4	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.28.0/_bin/cxx-opt-sh/osh	65c1ffc4	bubble_sort	bytes	200	stdout-osh-bytes-200.txt
+0	0.026543	0.026642	0.000000	6764	304f7b9574921ad21a2bc72f200483d7	lenny	1ff4d011	python2	87fe4631	bubble_sort	int	200	stdout-py-int-200.txt
+0	0.013459	0.013336	0.000418	6744	85509743b2f5735b32a108dbba770ee4	lenny	1ff4d011	python2	87fe4631	bubble_sort	bytes	200	stdout-py-bytes-200.txt
