@@ -1,0 +1,3 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.367315	0.367259	0.000000	2980	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	bash	f4a82186	control_flow	do_return	200	stdout-bash-do_return-200.txt
+0	0.081528	0.081487	0.000000	1764	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	dash	f5780e2f	control_flow	do_return	200	stdout-dash-do_return-200.txt

@@ -1,0 +1,4 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.263810	0.263769	0.000000	3016	85b2d8b92c123a3d0f5b8bce5d79d39b	lenny	1ff4d011	bash	f4a82186	for_loop	50000	_	stdout-bash-50000-_.txt
+0	0.094116	0.094077	0.000000	1632	85b2d8b92c123a3d0f5b8bce5d79d39b	lenny	1ff4d011	dash	f5780e2f	for_loop	50000	_	stdout-dash-50000-_.txt
+0	0.009405	0.009368	0.000000	6460	85b2d8b92c123a3d0f5b8bce5d79d39b	lenny	1ff4d011	python2	87fe4631	for_loop	50000	_	stdout-py-50000-_.txt
