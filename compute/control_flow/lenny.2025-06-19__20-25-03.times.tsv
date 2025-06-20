@@ -1,0 +1,4 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.373556	0.373287	0.000000	2976	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	bash	f4a82186	control_flow	do_return	200	stdout-bash-do_return-200.txt
+0	0.083566	0.083529	0.000000	1620	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	dash	f5780e2f	control_flow	do_return	200	stdout-dash-do_return-200.txt
+0	1.127127	1.123072	0.003996	8152	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.30.0/_bin/cxx-opt-sh/osh	8206f6f3	control_flow	do_return	200	stdout-osh-do_return-200.txt
