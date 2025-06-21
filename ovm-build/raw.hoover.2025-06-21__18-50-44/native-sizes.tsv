@@ -1,0 +1,5 @@
+host_label	num_bytes	path
+hoover	9214384	_tmp/ovm-build/bin/clang/oils-for-unix
+hoover	11072184	_tmp/ovm-build/bin/gcc/oils-for-unix
+hoover	2423432	_tmp/ovm-build/bin/clang/oils-for-unix.stripped
+hoover	2407040	_tmp/ovm-build/bin/gcc/oils-for-unix.stripped

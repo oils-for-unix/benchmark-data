@@ -1,0 +1,7 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.161235	0.159491	0.001589	3304	304f7b9574921ad21a2bc72f200483d7	hoover	ecba003d	bash	36833674	bubble_sort	int	200	stdout-bash-int-200.txt
+0	0.181945	0.181928	0.000000	3284	85509743b2f5735b32a108dbba770ee4	hoover	ecba003d	bash	36833674	bubble_sort	bytes	200	stdout-bash-bytes-200.txt
+0	0.121443	0.121425	0.000000	8296	304f7b9574921ad21a2bc72f200483d7	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.31.0/_bin/cxx-opt-sh/osh	29bb39fa	bubble_sort	int	200	stdout-osh-int-200.txt
+0	0.131694	0.131612	0.000000	8380	85509743b2f5735b32a108dbba770ee4	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.31.0/_bin/cxx-opt-sh/osh	29bb39fa	bubble_sort	bytes	200	stdout-osh-bytes-200.txt
+0	0.029308	0.021718	0.007688	6108	304f7b9574921ad21a2bc72f200483d7	hoover	ecba003d	python2	5980d1a0	bubble_sort	int	200	stdout-py-int-200.txt
+0	0.015838	0.005253	0.010300	5964	85509743b2f5735b32a108dbba770ee4	hoover	ecba003d	python2	5980d1a0	bubble_sort	bytes	200	stdout-py-bytes-200.txt
