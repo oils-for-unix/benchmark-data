@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.059526	0.059406	0.000000	2896	ddce9d5262dc4820e4e538b12a61f9d4	lenny	1ff4d011	bash	f4a82186	fib	200	44	stdout-bash-200-44.txt
+0	0.017398	0.017362	0.000000	1680	ddce9d5262dc4820e4e538b12a61f9d4	lenny	1ff4d011	dash	f5780e2f	fib	200	44	stdout-dash-200-44.txt
+0	0.059710	0.059674	0.000000	7868	ddce9d5262dc4820e4e538b12a61f9d4	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.32.0/_bin/cxx-opt-sh/osh	7266ab3b	fib	200	44	stdout-osh-200-44.txt
+0	0.007199	0.003475	0.003475	6496	ddce9d5262dc4820e4e538b12a61f9d4	lenny	1ff4d011	python2	87fe4631	fib	200	44	stdout-py-200-44.txt
