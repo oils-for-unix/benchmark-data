@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.066553	0.063207	0.004845	3256	a00fe32d8df01df1b0b8c717423a3eda	hoover	ecba003d	bash	36833674	word_freq	10	configure	stdout-bash-10-configure.txt
+0	0.047812	0.042789	0.006433	9324	a00fe32d8df01df1b0b8c717423a3eda	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.32.0/_bin/cxx-opt-sh/osh	edd4459d	word_freq	10	configure	stdout-osh-10-configure.txt
+0	0.046033	0.046886	0.000495	8900	a00fe32d8df01df1b0b8c717423a3eda	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.32.0/_bin/cxx-opt-sh/mycpp-souffle/osh	d2b75992	word_freq	10	configure	stdout-osh-10-configure.txt
+0	0.012886	0.013518	0.000000	6124	a00fe32d8df01df1b0b8c717423a3eda	hoover	ecba003d	python2	c702e940	word_freq	10	configure	stdout-py-10-configure.txt
