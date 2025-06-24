@@ -1,0 +1,3 @@
+Oils 0.32.0		https://oils.pub/
+
+git commit = a3c50d4acdd587325fb54a26e38464f315fadc17
