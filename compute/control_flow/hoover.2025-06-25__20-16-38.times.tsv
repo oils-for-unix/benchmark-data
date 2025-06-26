@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.254701	0.253101	0.000000	2988	9f43a6ed22efca2b6ebf407b181af6b0	hoover	ecba003d	bash	36833674	control_flow	do_return	200	stdout-bash-do_return-200.txt
+0	0.058061	0.057986	0.000000	1640	9f43a6ed22efca2b6ebf407b181af6b0	hoover	ecba003d	dash	cea41b3e	control_flow	do_return	200	stdout-dash-do_return-200.txt
+0	0.551237	0.550953	0.000000	8092	9f43a6ed22efca2b6ebf407b181af6b0	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.33.0/_bin/cxx-opt-sh/osh	7cbf04fb	control_flow	do_return	200	stdout-osh-do_return-200.txt
+0	0.572702	0.564642	0.007952	8640	9f43a6ed22efca2b6ebf407b181af6b0	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.33.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	90a177bb	control_flow	do_return	200	stdout-osh-do_return-200.txt
