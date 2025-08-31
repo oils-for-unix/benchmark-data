@@ -1,0 +1,9 @@
+status	elapsed_secs	host_name	host_hash	compiler_path	compiler_hash	src_dir	action
+0	11.865184	hoover	ecba003d	/usr/bin/gcc	46838ea2	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/oils-for-unix-0.35.0	oils-for-unix
+0	36.633076	hoover	ecba003d	/usr/bin/gcc	46838ea2	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/oils-for-unix-0.35.0	oils-for-unix.stripped
+0	12.402467	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/oils-for-unix-0.35.0	oils-for-unix
+0	27.301621	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../oil_DEPS/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin/clang	dc55b135	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/oils-for-unix-0.35.0	oils-for-unix.stripped
+0	2.882856	hoover	ecba003d	/usr/bin/gcc	46838ea2	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/dash-0.5.9.1	configure
+0	3.235701	hoover	ecba003d	/usr/bin/gcc	46838ea2	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/dash-0.5.9.1	make
+0	14.470547	hoover	ecba003d	/usr/bin/gcc	46838ea2	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/bash-4.4	configure
+0	25.333750	hoover	ecba003d	/usr/bin/gcc	46838ea2	/home/andy/git/oils-for-unix/oils/_deps/ovm-build/bash-4.4	make

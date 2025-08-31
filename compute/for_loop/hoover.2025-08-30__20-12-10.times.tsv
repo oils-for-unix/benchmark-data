@@ -1,0 +1,6 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.187501	0.183434	0.003987	2980	85b2d8b92c123a3d0f5b8bce5d79d39b	hoover	ecba003d	bash	36833674	for_loop	50000	_	stdout-bash-50000-_.txt
+0	0.064725	0.064289	0.000000	1692	85b2d8b92c123a3d0f5b8bce5d79d39b	hoover	ecba003d	dash	cea41b3e	for_loop	50000	_	stdout-dash-50000-_.txt
+0	0.171844	0.167737	0.003993	8424	85b2d8b92c123a3d0f5b8bce5d79d39b	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/osh	286712c9	for_loop	50000	_	stdout-osh-50000-_.txt
+0	0.171275	0.167193	0.003980	8412	85b2d8b92c123a3d0f5b8bce5d79d39b	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	e835747b	for_loop	50000	_	stdout-osh-50000-_.txt
+0	0.007760	0.007675	0.000000	5860	85b2d8b92c123a3d0f5b8bce5d79d39b	hoover	ecba003d	python2	c702e940	for_loop	50000	_	stdout-py-50000-_.txt
