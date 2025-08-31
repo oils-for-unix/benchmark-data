@@ -1,0 +1,5 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.385617	0.385362	0.000000	2844	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	bash	f4a82186	control_flow	do_return	200	stdout-bash-do_return-200.txt
+0	0.083982	0.083945	0.000000	1676	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	dash	f5780e2f	control_flow	do_return	200	stdout-dash-do_return-200.txt
+0	1.080546	1.076483	0.004001	8164	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/osh	286712c9	control_flow	do_return	200	stdout-osh-do_return-200.txt
+0	1.135138	1.131063	0.003996	8208	9f43a6ed22efca2b6ebf407b181af6b0	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	e835747b	control_flow	do_return	200	stdout-osh-do_return-200.txt

@@ -1,0 +1,9 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.157409	0.139177	0.018191	3260	ef69a4a6287351d77e6959beca205e15	lenny	1ff4d011	bash	f4a82186	palindrome	unicode	_	stdout-bash-unicode-_.txt
+0	0.146569	0.127949	0.018822	3252	ef69a4a6287351d77e6959beca205e15	lenny	1ff4d011	bash	f4a82186	palindrome	bytes	_	stdout-bash-bytes-_.txt
+0	0.228879	0.217052	0.012032	8336	c716827d1eac3e2e0ff0d7d4356e842c	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/osh	286712c9	palindrome	unicode	_	stdout-osh-unicode-_.txt
+0	0.229032	0.225238	0.004013	8444	c716827d1eac3e2e0ff0d7d4356e842c	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/osh	286712c9	palindrome	bytes	_	stdout-osh-bytes-_.txt
+0	0.229117	0.213284	0.016052	8348	c716827d1eac3e2e0ff0d7d4356e842c	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	e835747b	palindrome	unicode	_	stdout-osh-unicode-_.txt
+0	0.234368	0.233708	0.000841	8256	c716827d1eac3e2e0ff0d7d4356e842c	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.35.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	e835747b	palindrome	bytes	_	stdout-osh-bytes-_.txt
+0	0.016213	0.016214	0.000000	6456	c716827d1eac3e2e0ff0d7d4356e842c	lenny	1ff4d011	python2	31dd8d0b	palindrome	unicode	_	stdout-py-unicode-_.txt
+0	0.013360	0.010514	0.003037	6668	ef69a4a6287351d77e6959beca205e15	lenny	1ff4d011	python2	31dd8d0b	palindrome	bytes	_	stdout-py-bytes-_.txt
