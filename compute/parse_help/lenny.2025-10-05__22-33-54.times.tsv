@@ -1,0 +1,10 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.008758	0.006323	0.002249	3216	1afe5984e4dfa04a5c2084811ccc370b	lenny	1ff4d011	bash	f4a82186	parse_help	ls-short	_	stdout-bash-ls-short-_.txt
+0	0.013610	0.013710	0.000000	3204	2d4cfb983a4bde9516c34bef6bfe656b	lenny	1ff4d011	bash	f4a82186	parse_help	ls	_	stdout-bash-ls-_.txt
+0	0.014295	0.014332	0.000000	3316	3307e41430578aa391c4dc7b9923b6c1	lenny	1ff4d011	bash	f4a82186	parse_help	mypy	_	stdout-bash-mypy-_.txt
+0	0.007270	0.006969	0.000492	6644	1afe5984e4dfa04a5c2084811ccc370b	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/osh	64f72b07	parse_help	ls-short	_	stdout-osh-ls-short-_.txt
+0	0.023519	0.016584	0.007123	8600	2d4cfb983a4bde9516c34bef6bfe656b	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/osh	64f72b07	parse_help	ls	_	stdout-osh-ls-_.txt
+0	0.031855	0.032046	0.000000	8820	3307e41430578aa391c4dc7b9923b6c1	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/osh	64f72b07	parse_help	mypy	_	stdout-osh-mypy-_.txt
+0	0.008037	0.008241	0.000000	6632	1afe5984e4dfa04a5c2084811ccc370b	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	f35cd62a	parse_help	ls-short	_	stdout-osh-ls-short-_.txt
+0	0.025960	0.021946	0.004223	8712	2d4cfb983a4bde9516c34bef6bfe656b	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	f35cd62a	parse_help	ls	_	stdout-osh-ls-_.txt
+0	0.032698	0.032385	0.000538	8776	3307e41430578aa391c4dc7b9923b6c1	lenny	1ff4d011	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	f35cd62a	parse_help	mypy	_	stdout-osh-mypy-_.txt
