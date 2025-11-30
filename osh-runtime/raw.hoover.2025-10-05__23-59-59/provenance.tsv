@@ -1,0 +1,11 @@
+job_id	host_name	host_hash	sh_path	shell_hash
+2025-10-05__23-59-59	hoover	ecba003d	bash	36833674
+2025-10-05__23-59-59	hoover	ecba003d	dash	cea41b3e
+2025-10-05__23-59-59	hoover	ecba003d	mksh	5acb0439
+2025-10-05__23-59-59	hoover	ecba003d	zsh	66d12f9f
+2025-10-05__23-59-59	hoover	ecba003d	bin/osh	0aa2c433
+2025-10-05__23-59-59	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/_tmp/oils-ref-tar-test/oils-ref-0.36.0/_bin/osh	7f01d949
+2025-10-05__23-59-59	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/osh	64f72b07
+2025-10-05__23-59-59	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	f35cd62a
+2025-10-05__23-59-59	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/osh-static	5f80fabc
+2025-10-05__23-59-59	hoover	ecba003d	python2	c702e940

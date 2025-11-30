@@ -1,0 +1,9 @@
+status	elapsed_secs	user_secs	sys_secs	max_rss_KiB	stdout_md5sum	host_name	host_hash	runtime_name	runtime_hash	task_name	arg1	arg2	stdout_filename
+0	0.154151	0.154210	0.000000	3324	304f7b9574921ad21a2bc72f200483d7	hoover	ecba003d	bash	36833674	bubble_sort	int	200	stdout-bash-int-200.txt
+0	0.167624	0.167422	0.000000	3356	85509743b2f5735b32a108dbba770ee4	hoover	ecba003d	bash	36833674	bubble_sort	bytes	200	stdout-bash-bytes-200.txt
+0	0.113028	0.113072	0.000000	8300	304f7b9574921ad21a2bc72f200483d7	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/osh	64f72b07	bubble_sort	int	200	stdout-osh-int-200.txt
+0	0.118335	0.117989	0.000000	8276	85509743b2f5735b32a108dbba770ee4	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/osh	64f72b07	bubble_sort	bytes	200	stdout-osh-bytes-200.txt
+0	0.109394	0.109336	0.000000	8376	304f7b9574921ad21a2bc72f200483d7	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	f35cd62a	bubble_sort	int	200	stdout-osh-int-200.txt
+0	0.125605	0.125101	0.000000	8280	85509743b2f5735b32a108dbba770ee4	hoover	ecba003d	/home/andy/git/oils-for-unix/oils/../benchmark-data/src/oils-for-unix-0.36.0/_bin/cxx-opt-sh/mycpp-nosouffle/osh	f35cd62a	bubble_sort	bytes	200	stdout-osh-bytes-200.txt
+0	0.025133	0.023257	0.001702	6216	304f7b9574921ad21a2bc72f200483d7	hoover	ecba003d	python2	c702e940	bubble_sort	int	200	stdout-py-int-200.txt
+0	0.019709	0.015421	0.000000	6080	85509743b2f5735b32a108dbba770ee4	hoover	ecba003d	python2	c702e940	bubble_sort	bytes	200	stdout-py-bytes-200.txt
